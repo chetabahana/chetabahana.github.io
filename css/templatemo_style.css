@@ -527,25 +527,25 @@ a:hover .social-icon-fb {
 }
 
 .social-icon-twitter {
-    background: url('http://sites.hyip.world/base/images/icon/brand/twitter/twitter-42.png') no-repeat;
+    background: url('../images/social-icon-twitter.png') no-repeat;
     width: 42px;
     height: 42px;
     display: block;
 }
 
 a:hover .social-icon-twitter {
-    background: url('http://sites.hyip.world/base/images/icon/brand/twitter/twitter-42-hover.png') no-repeat;
+    background: url('../images/social-icon-twitter-over.png') no-repeat;
 }
 
 .social-icon-gplus {
-    background: url('http://sites.hyip.world/base/images/icon/brand/google+/g+42.png') no-repeat;
+    background: url('../images/social-icon-dribbble.png') no-repeat;
     width: 42px;
     height: 42px;
     display: block;
 }
 
 a:hover .social-icon-gplus {
-    background: url('http://sites.hyip.world/base/images/icon/brand/google+/g+42-hover.png') no-repeat;
+    background: url('../images/social-icon-dribbble-over.png') no-repeat;
 }
 
 .social-icon-linkedin {
