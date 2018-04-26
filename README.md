@@ -1,12 +1,17 @@
 |[![The HYIP Project](https://avatars1.githubusercontent.com/u/8466209?v=10&s=20)](https://github.com/hyip) |This [repo](https://github.com/hyipworld/hyipworld.github.io "Repository") is courtesy of [The HYIP Project](https://github.com/hyip "High Yard Investment Program"). Find all of them on [The Project Map](https://github.com/hyip/info/wiki/maps#project-map "Project Mapping").|[![The HYIP Project](https://tophyipmonitor.files.wordpress.com/2014/11/elephant.png?w=20)](https://tophyipmonitor.wordpress.com/hyip-world/nature-6/#main) |
 |:----|----|----:|
 
-# Hyip World
+# Project Chetabahana
 
 [![Build Status](https://travis-ci.org/guard/guard.svg)](https://travis-ci.org/guard/guard) [![Dependency Status](https://gemnasium.com/guard/guard.png)](https://gemnasium.com/guard/guard) [![Code Climate](https://codeclimate.com/github/guard/guard/badges/gpa.svg)](https://codeclimate.com/github/guard/guard) [![Test Coverage](https://codeclimate.com/github/guard/guard/badges/coverage.svg)](https://codeclimate.com/github/guard/guard) [![Inline docs](http://inch-ci.org/github/guard/guard.svg)](http://inch-ci.org/github/guard/guard)
 
 We start our documentation by a tutorial how we start to get our site up and running on Github.
 
+## Cara Simple
+Langsung Fork aja, kasi nama reponya `<akun>/<akun>.github.io` ke terus Settings. Tunggu 10 menit.
+Lalu klik `https://<akun>.github.io`. Jika masih muncul 404 coba lihat [_cara solusinya_](https://stackoverflow.com/questions/11577147/how-to-fix-page-404-on-github-page/50034409#50034409.
+
+## Cara 
 Open Github account here:    
 https://github.com/join
 
