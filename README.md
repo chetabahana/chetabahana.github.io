@@ -9,7 +9,7 @@ We start our documentation by a tutorial how we start to get our site up and run
 
 ## Cara Simple
 Langsung [_Fork_](https://github.com/chetabahana/chetabahana.github.io#fork-destination-box) aja ke akunnya. Beri nama reponya `<akun>/<akun>.github.io` ke terus lakukan [_Settings_](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages).  
-Tunggu 10 menit. Lalu klik `https://<akun>.github.io`. Jika masih belum muncul coba lihat [_cara solusi `Page Error 404`_](https://stackoverflow.com/questions/11577147/how-to-fix-page-404-on-github-page/50034409#50034409).
+Tunggu 10 menit. Lalu klik `https://<akun>.github.io`. Jika masih belum muncul coba lihat cara solusi [_Page Error 404_](https://stackoverflow.com/questions/11577147/how-to-fix-page-404-on-github-page/50034409#50034409).
 
 ## Cara Standar
 Open Github account here:    
