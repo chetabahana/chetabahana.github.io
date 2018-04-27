@@ -561,7 +561,6 @@ http://www.templatemo.com/preview/templatemo_395_urbanic
             </div><!-- /.container -->
         </div><!-- /#templatemo-contact -->
 
-
         <div class="templatemo-team" id="templatemo-about">
             <div class="container">
                 <div class="row">
@@ -582,12 +581,15 @@ http://www.templatemo.com/preview/templatemo_395_urbanic
                                     <p class="team-inner-subtext">{{ page.team1_subtext }}</p>
                                 </div>
                                 <div class="member-thumb">
-                                    <div class="{{ page.team1_dataclass }}" data-rel="{{ page.team1_datarel }}" data-href="{{ page.team1_datahref }}" data-width="250"></div>
-                                    <div class="thumb-overlay">
-                                        <a href="{{ page.team1_fb }}"><span class="social-icon-fb"></span></a>
-                                        <a href="{{ page.team1_twitter }}"><span class="social-icon-twitter"></span></a>
-                                        <a href="{{ page.team1_gplus }}"><span class="social-icon-gplus"></span></a>
-                                    </div>
+                                    <div id="fb-root"></div>
+					<script>(function(d, s, id) {
+					  var js, fjs = d.getElementsByTagName(s)[0];
+					  if (d.getElementById(id)) return;
+					  js = d.createElement(s); js.id = id;
+					  js.src = 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.12';
+					  fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));</script>
+					<div class="fb-page" data-href="https://www.facebook.com/chetabahana" data-tabs="timeline" data-width="250" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/chetabahana" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/chetabahana">Chetabahana</a></blockquote></div>
                                 </div>
                             </div>
                         </li>
