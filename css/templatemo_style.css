@@ -45,6 +45,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 .templatemo-top-menu {
+    text-transform: uppercase;
     min-height:110px;
     background-color:#ffffff;
     z-index: 5000;
