@@ -301,6 +301,8 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 .templatemo-line-header {
     margin-top: 0px;
     margin-bottom: 80px;
+    text-transform: uppercase;
+
 }
 
 .member-thumb:hover .thumb-overlay {
