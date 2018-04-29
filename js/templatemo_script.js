@@ -35,7 +35,7 @@ jQuery(function($) {
             return false;
         });
 
-        $('.templatemo-carousel a, .templatemo-service a').click(function(e){
+        $('.carousel-inner a, .templatemo-service a').click(function(e){
             e.preventDefault(); 
             var linkId = $(this).attr('href');
             scrollTo(linkId);
