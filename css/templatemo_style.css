@@ -246,9 +246,8 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    background-color: #d35400;
-    border-bottom: 2px solid #ff7600;
-    color:#fff;
+    background-color: #fff;
+    color: #d35400;
 }
 
 .navbar {
