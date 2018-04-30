@@ -694,9 +694,11 @@
                                 <li class="col-sm-2 col-md-2 templatemo-partner-item">
                                     <a href="{{ page.partner5_href }}" title="{{ page.partner5_title }}"><img src="{{ page.partner5_src }}" class="img-responsive" alt="{{ page.partner5_alt }}" /></a>
                                 </li>
+{% for i in (1..6) %}
                                 <li class="col-sm-2 col-md-2 templatemo-partner-item">
-                                    <a href="{{ page.partner6_href }}" title="{{ page.partner6_title }}"><img src="{{ page.partner6_src }}" class="img-responsive" alt="{{ page.partner6_alt }}" /></a>
+                                    <a href="{{ page.partner[{{ i }} + '_href'] }}" title="{{ page.partner[{{ i }} + '_title'] }}"><img src="{{ page.partner[{{ i }} + '_src'] }}" class="img-responsive" alt="{{ page.partner[{{ i }} + '_alt'] }}" /></a>
                                 </li>
+{% endfor %}
                             </ul>
 
                         </div>
@@ -706,9 +708,8 @@
             </div>
         </div>
 
-{% for i in (1..10) %}
-    {{ i }}
-{% endfor %}
+	    
+	    
         <div class="templatemo-footer" >
             <div class="container">
                 <div class="row">
