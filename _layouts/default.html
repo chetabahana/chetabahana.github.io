@@ -696,7 +696,7 @@
                                 </li>
 {% for i in (1..6) %}
                                 <li class="col-sm-2 col-md-2 templatemo-partner-item">
-                                    <a href="{{ ['page.partner' + {{ i }} + '_href'] }}" title="{{ page.partner[{{ i }} + '_title'] }}"><img src="{{ page.partner[{{ i }} + '_src'] }}" class="img-responsive" alt="{{ page.partner[{{ i }} + '_alt'] }}" /></a>
+                                    <a href="{{ ['page.partner' + {{ i }} + '_href'] }}" title="{{ page.partner[{{ i }} + '_title'] }}"><img src="{{ page.partner[{{ i }} + '_src'] }}" class="img-responsive" alt="{{ page.partner_alt'[{{ i }}] }}" /></a>
                                 </li>
 {% endfor %}
                             </ul>
