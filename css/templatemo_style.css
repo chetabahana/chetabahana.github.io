@@ -23,10 +23,6 @@ body {
 	-webkit-text-size-adjust: 100%;
 }
 
-a:hover {
-    text-decoration:none;
-}
-
 h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif; }
 
 * {
