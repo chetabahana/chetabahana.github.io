@@ -68,10 +68,11 @@ Here are the URLs as samples that pointing to our [forked projects](https://gith
 
 
 See more details about Github & Jeckyll here:  
-Github Repository of Jeckyll: https://github.com/mojombo/tpw  
-Setup GitHub Pages branchs: https://gist.github.com/chrisjacob/833223  
-Concept: http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html    
-Site of Jeckyll Author, Tom Preston-Werner, GitHub's co-founder.: http://tom.preston-werner.com
+- Github Repository of Jeckyll: https://github.com/mojombo/tpw  
+- Setup GitHub Pages branchs: https://gist.github.com/chrisjacob/833223  
+- Jekyll & Liquid Cheatsheet: https://gist.github.com/smutnyleszek/9803727
+- Concept: http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html    
+- Site of Jeckyll Author, Tom Preston-Werner, GitHub's co-founder.: http://tom.preston-werner.com
 ***
 |[:arrow_backward:]((https://github.com/hyip/info)) [Prev](https://github.com/hyip/info)|[Next](https://github.com/hyipworld/hyipworld.github.io/wiki/Home) [:arrow_forward:](https://github.com/hyipworld/hyipworld.github.io/wiki/Home)|
 |:----|----:|
