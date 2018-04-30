@@ -1,5 +1,5 @@
 
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css);
 [class*="fontawesome-"]:before {font-family: 'fontawesome', sans-serif;}
 
 section {
