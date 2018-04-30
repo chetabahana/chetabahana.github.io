@@ -694,12 +694,9 @@
                                 <li class="col-sm-2 col-md-2 templatemo-partner-item">
                                     <a href="{{ page.partner5_href }}" title="{{ page.partner5_title }}"><img src="{{ page.partner5_src }}" class="img-responsive" alt="{{ page.partner5_alt }}" /></a>
                                 </li>
-{% for i in (1..6) %}
                                 <li class="col-sm-2 col-md-2 templatemo-partner-item">
-					{% capture full-name %}page.partner{{ i }}_href{% endcapture %}
-                                    <a href="{{ full-name }}" title="{{ page.partner[{{ i }} + '_title'] }}"><img src="{{ page.partner[{{ i }} + '_src'] }}" class="img-responsive" alt="{{ page.partner_alt[{{ i }}] }}" /></a>
+                                    <a href="{{ page.partner6_href }}" title="{{ page.partner6_title }}"><img src="{{ page.partner6_src }}" class="img-responsive" alt="{{ page.partner6_alt }}" /></a>
                                 </li>
-{% endfor %}
                             </ul>
 
                         </div>
