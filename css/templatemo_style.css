@@ -177,8 +177,8 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 
 .btn-orange {
-    background-color: #d35400;
-    border-bottom:2px solid #ff7600;
+    background-color: #e58042;
+    border-top:2px solid #ff7600;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
     background-color: #fff;
-    color: #d35400;
+    color: #e58042;
 }
 
 .navbar {
