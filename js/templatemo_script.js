@@ -1,16 +1,18 @@
 var top_menu_height = 0;
-jQuery(function($) {
-		$(window).load( function() {
-			$('.external-link').unbind('click');	
-		});
-		
-        $(document).ready( function() {
 
-            // load google map
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize';
-        document.body.appendChild(script);
+jQuery(function($) {
+
+    $(window).load( function() {
+        $('.external-link').unbind('click');	
+    });
+		
+    $(document).ready( function() {
+
+        // load google map
+        //var script = document.createElement('script');
+        //script.type = 'text/javascript';
+        //script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize';
+        //document.body.appendChild(script);
 
         top_menu_height = $('.templatemo-top-menu').height();
         // scroll spy to auto active the nav item
@@ -61,10 +63,9 @@ jQuery(function($) {
 
         //gallery light box setup
         $('a.colorbox').colorbox({
-                                    rel: function(){
-                                        return $(this).data('group');
-
-                                    }
+            rel: function(){
+                return $(this).data('group');
+            }
         });
     });
 });
@@ -78,11 +79,9 @@ function initialize() {
 // scroll animation 
 function scrollTo(selectors)
 {
-
     if(!$(selectors).size()) return;
     var selector_top = $(selectors).offset().top - top_menu_height;
     $('html,body').animate({ scrollTop: selector_top }, 'slow');
-
 }
 
 
