@@ -119,8 +119,8 @@
                                 <li><a href="#templatemo-blog">{{ page.service_title2 }}</a></li>
                                 <li><a href="#templatemo-portfolio">{{ page.service_title3 }}</a></li>
                                 <li><a href="#templatemo-about">{{ page.service_title4 }}</a></li>
-                                <li><a href="#templatemo-bottom">{{ page.service_title5 }}</a></li>
-                                <li><a href="#templatemo-disqus">{{ page.service_title6 }}</a></li>
+                                <li><a href="#templatemo-partners">{{ page.service_title5 }}</a></li>
+                                <li><a href="#templatemo-footer"">{{ page.service_title6 }}</a></li>
                             </ul>
                         </div><!--/.nav-collapse -->
                     </div><!--/.container-fluid -->
@@ -663,10 +663,9 @@
             </div>
         </div><!-- /.templatemo-team -->
 
-        <div class="templatemo-partners" id="templatemo-bottom">
+        <div class="templatemo-partners" id="templatemo-partners">
             <div class="container">
                 <div class="row">
-
 
                     <div class="templatemo-line-header" >
                         <div class="text-center">
@@ -708,10 +707,20 @@
             </div>
         </div>	    
 	    
-        <div class="templatemo-footer" >
-            <div id="disqus_thread"></div>
+        <div class="templatemo-footer" id="templatemo-footer">
+                    <div class="templatemo-line-header" >
+                        <div class="text-center">
+                            <hr class="team_hr team_hr_left hr_gray"/>
+                            <span class="txt_darkgrey">{{ page.service_title5 }}</span>
+                            <hr class="team_hr team_hr_right hr_gray" />
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+					 
             <div class="container">
                 <div class="row">
+                    <div id="disqus_thread"></div>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                     <div class="text-center">
 
                         <div class="footer_container">
@@ -785,10 +794,8 @@
 				}];
 			};		
 		</script>
-		
-		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-			
-		<script type="text/javascript" src="js/jquery.min.js"></script>
+					
+        <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/stickUp.min.js"></script>
         <script type="text/javascript" src="js/prefixfree.min.js"></script>
