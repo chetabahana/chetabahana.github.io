@@ -461,9 +461,9 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 #templatemo-contact {
 	margin-top:100px; 
-	border-top: 1px solid #cccccc; 
 	font-size:14px;
 }
+
 .templatemo-contact-map {
     margin-bottom: 15px;
     height: 378px;
@@ -495,16 +495,11 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 	float: right;
 }
 
-.templatemo-partners {
-	border-top: 2px solid #cccccc;
-}
-
 .templatemo-partners .templatemo-partner-item {
     margin-bottom: 5px;
 }
 
 .templatemo-footer {
-	border-top: 2px solid #cccccc; 
 	margin-top: 100px;
 }
 
