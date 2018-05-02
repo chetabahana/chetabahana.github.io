@@ -67,21 +67,20 @@
     
     <body>
 	    
-	<!-- Facebook JSSDK (noscript) -->
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.12';
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
-	<!-- End Facebook JSSDK (noscript) -->       
+		<!-- Facebook JSSDK (noscript) -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.12';
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<!-- End Facebook JSSDK (noscript) -->       
 
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKD75D8"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->       
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKD75D8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->       
 	    
         <div class="templatemo-top-bar" id="templatemo-top">
             <div class="container">
@@ -97,6 +96,7 @@
                 </div>
             </div>
         </div>
+		
         <div class="templatemo-top-menu">
             <div class="container">
                 <!-- Static navbar -->
@@ -127,7 +127,7 @@
             </div> <!-- /container -->
         </div>
         
-        <div>
+        <div class="templatemo-slide">
             <!-- Carousel -->
             <div id="templatemo-carousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
@@ -220,7 +220,7 @@
                     <div class="col-md-4">
                         <div class="templatemo-service-item">
                             <div>
-                                <a href="{{ page.service_item_link2 }}" class="external-link target="_blank""><img src="/images/battery.png" alt="icon"/></a>
+                                <a href="{{ page.service_item_link2 }}" class="external-link target="_blank"><img src="/images/battery.png" alt="icon"/></a>
                                 <span class="templatemo-service-item-header">{{ page.service_item2 }}</span>
                             </div>
                             <p>{{ page.service_item2_description }}</p>
@@ -231,6 +231,148 @@
                         </div>
                         <br class="clearfix"/>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="templatemo-contact">
+            <div class="container">
+                <div class="row">
+                    <div class="templatemo-line-header head_contact">
+                        <div class="text-center">
+                            <hr class="team_hr team_hr_left hr_gray"/>
+                            <span class="txt_darkgrey">{{ page.service_title3 }}</span>
+                            <hr class="team_hr team_hr_right hr_gray"/>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 contact_left">
+                        <p>A unique <a href="https://tophyipmonitor.wordpress.com/hyip-world/mapping/" class="link_orange"><span class="txt_orange">mapping</span></a> system of our project based on a concept on achieving a settlement.</p>
+                        <p><img src="images/location.png" alt="icon 1" /><a href="https://github.com/hyip" class="link_orange"><span class="txt_orange">The HYIP Project</span></a></p>
+                        <p><img src="images/email.png"  alt="icon 2" /><a href="https://tophyipmonitor.wordpress.com/" class="link_orange"><span class="txt_orange">Subscribe to our Blog!</span></a></p>
+                        <p><img src="images/globe.png" alt="icon 3" /><a href="https://en.wikipedia.org/wiki/User:Hyipworld" class="link_orange"><span class="txt_orange">Hyip World on Wikipedia</span></a></p>
+                        <form class="form-horizontal" action="#">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your Name..." maxlength="40" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your Email..." maxlength="40" />
+                            </div>
+                            <div class="form-group">
+                                <textarea  class="form-control" style="height: 130px;" placeholder="Write down your message..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-orange pull-left">SEND</button>
+                        </form>
+                    </div>
+                    <div class="col-md-8">
+                    	<a href="https://bramp.github.io/js-sequence-diagrams/" title="Project Map">
+                            <div class="templatemo-contact-map" id="map-canvas"></div>
+                        </a>    
+                        <div class="clearfix"></div>
+                        <i>You can find the <a href="https://github.com/hyip/info/wiki/Mapping-Overall" title="Overall Project Mapping" class="link_orange"><span class="txt_orange">Overall Project Map</span></a> and our <a href="https://github.com/hyip/info/wiki/Mapping" title="mapping concept" class="link_orange"><span class="txt_orange">Mapping Concept</span></a> on our <a href="https://github.com/hyip/info/wiki" title="wiki documentation" class="link_orange"><span class="txt_orange">Project Wiki</span></a>.</i>
+                    </div>
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div><!-- /#templatemo-contact -->
+
+        <div id="templatemo-blog">
+            <div class="container">
+                <div class="row">
+                    <div class="templatemo-line-header" style="margin-top: 0px;" >
+                        <div class="text-center">
+                            <hr class="team_hr team_hr_left hr_gray"/><span class="span_blog txt_darkgrey">{{ page.service_title2 }}</span>
+                            <hr class="team_hr team_hr_right hr_gray" />
+                        </div>
+                    </div>
+                    <br class="clearfix"/>
+                </div>
+                
+                <div class="blog_box">
+                    <div class="col-sm-5 col-md-6 blog_post">
+                        <ul itemscope itemtype="http://schema.org/Article" class="list-inline">
+                            <li class="col-md-4"><a href="{{ page.blogpost_item1_link }}">
+                                    <img itemprop="image" class="img-thumbnail" src="{{ page.blogpost_item1_image }}" alt="{{ page.blogpost_item1_title }}" />
+                                </a>
+                            </li>
+                            <li  class="col-md-8">
+                                <div class="pull-left">
+                                    <span class="blog_header"><a class="link_darkgrey" href="{{ page.blogpost_item1_link }}"><span itemprop="headline" class="txt_darkgrey">{{ page.blogpost_item1_title }}</span></a></span><br/>
+                                    <span>Hosted by : <a class="link_blue" href="http://toko.chetabahana.com/"><span itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">google.com</span></span></a></span>
+                                </div>
+                                <div class="pull-right">
+                                    <a class="btn btn-orange" href="https://github.com/MarketLeader/Toko-Chetabahana/wiki" role="button"><span itemprop="articleSection">EXPLORE WIKI</span></a>
+                                </div>
+                                <div class="clearfix"> </div>
+                                <p itemprop="articleBody" class="blog_text">{{ page.blogpost_item1_description }}</p>
+                                <meta itemprop="datePublished" content="2015-09-06T08:00:00+18:42"/>
+                            </li>
+                        </ul>
+                    </div> <!-- /.blog_post 1 -->
+                    
+                    <div class="col-sm-5 col-md-6 blog_post">
+                        <ul itemscope itemtype="http://schema.org/Article" class="list-inline">
+                            <li class="col-md-4"><a href="{{ page.blogpost_item2_link }}">
+                                <img itemprop="image" class="img-thumbnail" src="{{ page.blogpost_item2_image }}" alt="{{ page.blogpost_item2_title }}" /></a>
+                            </li>
+                            <li class="col-md-8">
+                                <div class="pull-left">
+                                    <span class="blog_header"><a class="link_darkgrey" href="{{ page.blogpost_item2_link }}"><span itemprop="headline" class="txt_darkgrey">{{ page.blogpost_item2_title }}</span></a></span><br/>
+                                    <span>Hosted by : <a class="link_blue" href="https://chetabahana.blogspot.com/"><span itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">blogger.com</span></span></a></span>
+                                </div>
+                                <div class="pull-right">
+                                    <a class="btn btn-orange" href="https://github.com/MarketLeader/Google-Sites-API/wikis" role="button"><span itemprop="articleSection">EXPLORE WIKI</span></a>
+                                </div>
+                                <div class="clearfix"> </div>
+                                <p itemprop="articleBody" class="blog_text">{{ page.blogpost_item2_description }}</p>
+                                <meta itemprop="datePublished" content="2015-06-06T08:00:00+12:34"/>
+                            </li>
+                        </ul>	
+                    </div><!-- /.blog_post 2 -->
+                    
+                    <div class="templatemo_clear"></div>
+                    
+                    <div class="col-sm-5 col-md-6 blog_post">
+                        <ul itemscope itemtype="http://schema.org/Article" class="list-inline">
+                            <li class="col-md-4"><a href="{{ page.blogpost_item3_link }}">
+                                <img itemprop="image" class="img-thumbnail" src="{{ page.blogpost_item3_image }}" alt="{{ page.blogpost_item3_title }}" /></a>
+                            </li>
+                            <li class="col-md-8">
+                                <div class="pull-left">
+                                    <span class="blog_header"><a class="link_darkgrey" href="{{ page.blogpost_item3_link }}"><span itemprop="headline" class="txt_darkgrey">{{ page.blogpost_item3_title }}</span></a></span><br/>
+                                    <span>Hosted by : <a class="link_blue" href="https://chetabahana.wordpress.com/"><span itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">wordpress.com</span></span></a></span>
+                                </div>
+                                <div class="pull-right">
+                                    <a class="btn btn-orange" href="https://github.com/MarketLeader/Google-Content-API/wiki" role="button"><span itemprop="articleSection">EXPLORE WIKI</span></a>
+                                </div>
+                                <div class="clearfix"> </div>
+                                <p itemprop="articleBody" class="blog_text">{{ page.blogpost_item3_description }}</p>
+                                <meta itemprop="datePublished" content="2015-06-05T03:00:00+01:46"/>
+                            </li>
+                        </ul>	
+                    </div><!-- /.blog_post 3 -->
+                    
+                    <div class="col-sm-5 col-md-6 blog_post">
+                        <ul itemscope itemtype="http://schema.org/Article" class="list-inline">
+                            <li class="col-md-4">
+                                <a href="{{ page.blogpost_item4_link }}">
+                                    <img itemprop="image" class="img-thumbnail" src="{{ page.blogpost_item4_image }}"  alt="{{ page.blogpost_item4_title }}" />
+                                </a>
+                            </li>
+                            <li class="col-md-8">
+                                <div class="pull-left">
+                                    <span class="blog_header"><a class="link_darkgrey" href="{{ page.blogpost_item4_link }}"><span itemprop="headline" class="txt_darkgrey">{{ page.blogpost_item4_title }}</span></a></span><br/>
+                                    <span>Hosted by : <a class="link_blue" href="https://chetabahana.github.io/"><span itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">github.com</span></span></a></span>
+                                </div>
+                                <div class="pull-right">
+                                    <a class="btn btn-orange" href="https://github.com/MarketLeader/Google-AdWords-API/wiki" role="button"><span itemprop="articleSection">EXPLORE WIKI</span></a>
+                                </div>
+                                <div class="clearfix"> </div>
+                                <p itemprop="articleBody" class="blog_text">{{ page.blogpost_item4_description }}</p>
+                                <meta itemprop="datePublished" content="2015-06-02T08:00:00+14:40"/>
+                            </li>
+                        </ul>
+                    </div> <!-- /.blog_post 4 -->
+                    
                 </div>
             </div>
         </div>
@@ -459,148 +601,6 @@
             </div><!-- /.container -->
         </div>
 
-        <div id="templatemo-blog">
-            <div class="container">
-                <div class="row">
-                    <div class="templatemo-line-header" style="margin-top: 0px;" >
-                        <div class="text-center">
-                            <hr class="team_hr team_hr_left hr_gray"/><span class="span_blog txt_darkgrey">{{ page.service_title2 }}</span>
-                            <hr class="team_hr team_hr_right hr_gray" />
-                        </div>
-                    </div>
-                    <br class="clearfix"/>
-                </div>
-                
-                <div class="blog_box">
-                    <div class="col-sm-5 col-md-6 blog_post">
-                        <ul itemscope itemtype="http://schema.org/Article" class="list-inline">
-                            <li class="col-md-4"><a href="{{ page.blogpost_item1_link }}">
-                                    <img itemprop="image" class="img-thumbnail" src="{{ page.blogpost_item1_image }}" alt="{{ page.blogpost_item1_title }}" />
-                                </a>
-                            </li>
-                            <li  class="col-md-8">
-                                <div class="pull-left">
-                                    <span class="blog_header"><a class="link_darkgrey" href="{{ page.blogpost_item1_link }}"><span itemprop="headline" class="txt_darkgrey">{{ page.blogpost_item1_title }}</span></a></span><br/>
-                                    <span>Hosted by : <a class="link_blue" href="http://toko.chetabahana.com/"><span itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">google.com</span></span></a></span>
-                                </div>
-                                <div class="pull-right">
-                                    <a class="btn btn-orange" href="https://github.com/MarketLeader/Toko-Chetabahana/wiki" role="button"><span itemprop="articleSection">EXPLORE WIKI</span></a>
-                                </div>
-                                <div class="clearfix"> </div>
-                                <p itemprop="articleBody" class="blog_text">{{ page.blogpost_item1_description }}</p>
-                                <meta itemprop="datePublished" content="2015-09-06T08:00:00+18:42"/>
-                            </li>
-                        </ul>
-                    </div> <!-- /.blog_post 1 -->
-                    
-                    <div class="col-sm-5 col-md-6 blog_post">
-                        <ul itemscope itemtype="http://schema.org/Article" class="list-inline">
-                            <li class="col-md-4"><a href="{{ page.blogpost_item2_link }}">
-                                <img itemprop="image" class="img-thumbnail" src="{{ page.blogpost_item2_image }}" alt="{{ page.blogpost_item2_title }}" /></a>
-                            </li>
-                            <li class="col-md-8">
-                                <div class="pull-left">
-                                    <span class="blog_header"><a class="link_darkgrey" href="{{ page.blogpost_item2_link }}"><span itemprop="headline" class="txt_darkgrey">{{ page.blogpost_item2_title }}</span></a></span><br/>
-                                    <span>Hosted by : <a class="link_blue" href="https://chetabahana.blogspot.com/"><span itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">blogger.com</span></span></a></span>
-                                </div>
-                                <div class="pull-right">
-                                    <a class="btn btn-orange" href="https://github.com/MarketLeader/Google-Sites-API/wikis" role="button"><span itemprop="articleSection">EXPLORE WIKI</span></a>
-                                </div>
-                                <div class="clearfix"> </div>
-                                <p itemprop="articleBody" class="blog_text">{{ page.blogpost_item2_description }}</p>
-                                <meta itemprop="datePublished" content="2015-06-06T08:00:00+12:34"/>
-                            </li>
-                        </ul>	
-                    </div><!-- /.blog_post 2 -->
-                    
-                    <div class="templatemo_clear"></div>
-                    
-                    <div class="col-sm-5 col-md-6 blog_post">
-                        <ul itemscope itemtype="http://schema.org/Article" class="list-inline">
-                            <li class="col-md-4"><a href="{{ page.blogpost_item3_link }}">
-                                <img itemprop="image" class="img-thumbnail" src="{{ page.blogpost_item3_image }}" alt="{{ page.blogpost_item3_title }}" /></a>
-                            </li>
-                            <li class="col-md-8">
-                                <div class="pull-left">
-                                    <span class="blog_header"><a class="link_darkgrey" href="{{ page.blogpost_item3_link }}"><span itemprop="headline" class="txt_darkgrey">{{ page.blogpost_item3_title }}</span></a></span><br/>
-                                    <span>Hosted by : <a class="link_blue" href="https://chetabahana.wordpress.com/"><span itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">wordpress.com</span></span></a></span>
-                                </div>
-                                <div class="pull-right">
-                                    <a class="btn btn-orange" href="https://github.com/MarketLeader/Google-Content-API/wiki" role="button"><span itemprop="articleSection">EXPLORE WIKI</span></a>
-                                </div>
-                                <div class="clearfix"> </div>
-                                <p itemprop="articleBody" class="blog_text">{{ page.blogpost_item3_description }}</p>
-                                <meta itemprop="datePublished" content="2015-06-05T03:00:00+01:46"/>
-                            </li>
-                        </ul>	
-                    </div><!-- /.blog_post 3 -->
-                    
-                    <div class="col-sm-5 col-md-6 blog_post">
-                        <ul itemscope itemtype="http://schema.org/Article" class="list-inline">
-                            <li class="col-md-4">
-                                <a href="{{ page.blogpost_item4_link }}">
-                                    <img itemprop="image" class="img-thumbnail" src="{{ page.blogpost_item4_image }}"  alt="{{ page.blogpost_item4_title }}" />
-                                </a>
-                            </li>
-                            <li class="col-md-8">
-                                <div class="pull-left">
-                                    <span class="blog_header"><a class="link_darkgrey" href="{{ page.blogpost_item4_link }}"><span itemprop="headline" class="txt_darkgrey">{{ page.blogpost_item4_title }}</span></a></span><br/>
-                                    <span>Hosted by : <a class="link_blue" href="https://chetabahana.github.io/"><span itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">github.com</span></span></a></span>
-                                </div>
-                                <div class="pull-right">
-                                    <a class="btn btn-orange" href="https://github.com/MarketLeader/Google-AdWords-API/wiki" role="button"><span itemprop="articleSection">EXPLORE WIKI</span></a>
-                                </div>
-                                <div class="clearfix"> </div>
-                                <p itemprop="articleBody" class="blog_text">{{ page.blogpost_item4_description }}</p>
-                                <meta itemprop="datePublished" content="2015-06-02T08:00:00+14:40"/>
-                            </li>
-                        </ul>
-                    </div> <!-- /.blog_post 4 -->
-                    
-                </div>
-            </div>
-        </div>
-
-        <div id="templatemo-contact">
-            <div class="container">
-                <div class="row">
-                    <div class="templatemo-line-header head_contact">
-                        <div class="text-center">
-                            <hr class="team_hr team_hr_left hr_gray"/>
-                            <span class="txt_darkgrey">{{ page.service_title3 }}</span>
-                            <hr class="team_hr team_hr_right hr_gray"/>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 contact_left">
-                        <p>A unique <a href="https://tophyipmonitor.wordpress.com/hyip-world/mapping/" class="link_orange"><span class="txt_orange">mapping</span></a> system of our project based on a concept on achieving a settlement.</p>
-                        <p><img src="images/location.png" alt="icon 1" /><a href="https://github.com/hyip" class="link_orange"><span class="txt_orange">The HYIP Project</span></a></p>
-                        <p><img src="images/email.png"  alt="icon 2" /><a href="https://tophyipmonitor.wordpress.com/" class="link_orange"><span class="txt_orange">Subscribe to our Blog!</span></a></p>
-                        <p><img src="images/globe.png" alt="icon 3" /><a href="https://en.wikipedia.org/wiki/User:Hyipworld" class="link_orange"><span class="txt_orange">Hyip World on Wikipedia</span></a></p>
-                        <form class="form-horizontal" action="#">
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Your Name..." maxlength="40" />
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Your Email..." maxlength="40" />
-                            </div>
-                            <div class="form-group">
-                                <textarea  class="form-control" style="height: 130px;" placeholder="Write down your message..."></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-orange pull-left">SEND</button>
-                        </form>
-                    </div>
-                    <div class="col-md-8">
-                    	<a href="https://bramp.github.io/js-sequence-diagrams/" title="Project Map">
-                            <div class="templatemo-contact-map" id="map-canvas"></div>
-                        </a>    
-                        <div class="clearfix"></div>
-                        <i>You can find the <a href="https://github.com/hyip/info/wiki/Mapping-Overall" title="Overall Project Mapping" class="link_orange"><span class="txt_orange">Overall Project Map</span></a> and our <a href="https://github.com/hyip/info/wiki/Mapping" title="mapping concept" class="link_orange"><span class="txt_orange">Mapping Concept</span></a> on our <a href="https://github.com/hyip/info/wiki" title="wiki documentation" class="link_orange"><span class="txt_orange">Project Wiki</span></a>.</i>
-                    </div>
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </div><!-- /#templatemo-contact -->
-
         <div class="templatemo-team" id="templatemo-about">
             <div class="container">
                 <div class="row">
@@ -621,7 +621,7 @@
                                     <p class="team-inner-subtext">{{ page.team1_subtext }}</p>
                                 </div>
                                 <div class="member-thumb">
-				    <div class="fb-page" data-href="https://www.facebook.com/chetabahana" data-tabs="timeline" data-width="250" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/chetabahana" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/chetabahana">Chetabahana</a></blockquote></div>
+									<div class="fb-page" data-href="https://www.facebook.com/chetabahana" data-tabs="timeline" data-width="250" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/chetabahana" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/chetabahana">Chetabahana</a></blockquote></div>
                                 </div>
                             </div>
                         </li>
@@ -632,9 +632,10 @@
                                     <p class="team-inner-subtext">{{ page.team2_subtext }}</p>
                                 </div>
                                 <div class="member-thumb">
-				    <div class="fb-page" data-href="https://www.facebook.com/team.winmarket" data-tabs="timeline" data-width="250" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/team.winmarket" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/team.winmarketa">Tim WinMarket</a></blockquote></div>
+									<div class="fb-page" data-href="https://www.facebook.com/team.winmarket" data-tabs="timeline" data-width="250" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/team.winmarket" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/team.winmarket">Tim WinMarket</a></blockquote></div>
                                 </div>
                             </div>
+                        </li>
                         <li class="col-lg-3 col-md-3 col-sm-6 ">
                             <div class="text-center">
                                 <div class="team-inner">
@@ -642,7 +643,7 @@
                                     <p class="team-inner-subtext">{{ page.team3_subtext }}</p>
                                 </div>
                                 <div class="member-thumb">
-				    <div class="fb-page" data-href="https://www.facebook.com/tim.bebasbayar" data-tabs="timeline" data-width="250" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/tim.bebasbayar" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/tim.bebasbayar">Tim BebasBayar</a></blockquote></div>
+									<div class="fb-page" data-href="https://www.facebook.com/tim.bebasbayar" data-tabs="timeline" data-width="250" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/tim.bebasbayar" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/tim.bebasbayar">Tim BebasBayar</a></blockquote></div>
                                 </div>
                             </div>
                         </li>
@@ -653,7 +654,7 @@
                                     <p class="team-inner-subtext">{{ page.team4_subtext }}</p>
                                 </div>
                                 <div class="member-thumb">
-				    <div class="fb-page" data-href="https://www.facebook.com/menuju.indonesia.emas" data-tabs="timeline" data-width="250" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/menuju.indonesia.emas" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/menuju.indonesia.emas">Indonesia Emas</a></blockquote></div>
+									<div class="fb-page" data-href="https://www.facebook.com/menuju.indonesia.emas" data-tabs="timeline" data-width="250" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/menuju.indonesia.emas" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/menuju.indonesia.emas">Indonesia Emas</a></blockquote></div>
                                 </div>
                             </div>
                         </li>
@@ -704,9 +705,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-	    
+        </div>	    
 	    
         <div class="templatemo-footer" >
             <div class="container">
@@ -745,6 +744,7 @@
                             <a class="btn btn-lg btn-orange" href="#" role="button" id="btn-back-to-top">Back To Top</a>
                             <div class="height30"></div>
                         </div>
+						<div id="disqus_thread"></div>
                         <div class="footer_bottom_content">
                        		Copyright © 2015 <a class="link_orange" href="http://chetabahana.github.io/">Project Chetabahana</a>
                         </div>
@@ -753,49 +753,47 @@
             </div>
         </div>
 
-	<div id="disqus_thread"></div>
-	<script>
-
-	/**
-	*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-	*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-	/*
-	var disqus_config = function () {
-	this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-	this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-	};
-	*/
-	(function() { // DON'T EDIT BELOW THIS LINE
-	var d = document, s = d.createElement('script');
-	s.src = 'https://chetabahana.disqus.com/embed.js';
-	s.setAttribute('data-timestamp', +new Date());
-	(d.head || d.body).appendChild(s);
-	})();
+		<script>
+			/**
+			*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+			*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+			/*
+			var disqus_config = function () {
+			this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+			this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+			};
+			*/
+			(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = 'https://chetabahana.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+			})();
+				
+			// Adds the onNewComment callback to the disqus_config of the embed code
+			// that sends 'New Comment' events over to Google Analytics.
+			// The callback can also be used for any other analytics service like Parse.ly, Chartbeat, Mixpanel
+			var disqus_config = function() {
+				this.callbacks.onNewComment = [function(comment) {
+					  ga('send', {
+					'hitType': 'event',            // Required.
+					'eventCategory': 'Comments',   // Required.
+					'eventAction': 'New Comment',  // Required.
+					'eventLabel': 'New Comment'
+					});
+				}];
+			};		
+		</script>
 		
-	// Adds the onNewComment callback to the disqus_config of the embed code
-	// that sends 'New Comment' events over to Google Analytics.
-	// The callback can also be used for any other analytics service like Parse.ly, Chartbeat, Mixpanel
-	var disqus_config = function() {
-		this.callbacks.onNewComment = [function(comment) {
-		      ga('send', {
-			'hitType': 'event',            // Required.
-			'eventCategory': 'Comments',   // Required.
-			'eventAction': 'New Comment',  // Required.
-			'eventLabel': 'New Comment'
-		    });
-		}];
-	  };		
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-	    
-	<script type="text/javascript" src="js/jquery.min.js"></script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			
+		<script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/stickUp.min.js"></script>
         <script type="text/javascript" src="js/prefixfree.min.js"></script>
         <script type="text/javascript" src="js/colorbox/jquery.colorbox-min.js"></script>
-        <script type="text/javascript" src="js/templatemo_script.js"></script>
+        <script type="text/javascript" src="js/templatemo_script.js"></script>		
         <script type="text/javascript" src="//apis.google.com/js/platform.js" async defer></script>
-        <!-- script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55dc7c7d2cb90e21" async="async"></script -->
         <script async>(function(s,u,m,o,j,v){j=u.createElement(m);v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='a64eb64a5b18adc22a6de2f5c67601eae2d2f77fbcfbd0467842733e5b7b0437';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumo.com/');</script>
 
     </body>
