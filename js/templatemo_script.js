@@ -80,7 +80,7 @@ function scrollTo(selectors)
 
 function initialize() {
 	
-        var div = document.getElementById('example3');
+        var div = document.getElementById('example1');
         var editor_div = div.find(".editor");
         var diagram_div = div.find(".diagram");
         var theme_div = div.find(".theme");
