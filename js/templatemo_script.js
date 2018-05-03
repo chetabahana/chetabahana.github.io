@@ -11,7 +11,7 @@ jQuery(function($) {
         /* load google map*/
         var script = document.createElement('script');
         script.type = 'text/javascript';
-        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.5/ace.js&sensor=false&callback=initialize';
+        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.5/ace.js?sensor=false&callback=initialize';
         document.body.appendChild(script);
 	    
         //setup_editor($('#example1'));
