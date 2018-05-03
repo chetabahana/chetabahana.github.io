@@ -13,7 +13,9 @@ jQuery(function($) {
         script.type = 'text/javascript';
         script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize';
         document.body.appendChild(script);*/
-
+	    
+        $('.diagram').sequenceDiagram();
+	    
         top_menu_height = $('.templatemo-top-menu').height();
         // scroll spy to auto active the nav item
         $('body').scrollspy({ target: '#templatemo-nav-bar', offset: top_menu_height + 10 });
