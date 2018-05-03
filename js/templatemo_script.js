@@ -8,18 +8,18 @@ jQuery(function($) {
 		
     $(document).ready( function() {
 
-        /* load google map
+        /* load google map*/
         var script = document.createElement('script');
         script.type = 'text/javascript';
-        script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize';
-        document.body.appendChild(script);*/
+        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.5/ace.js&sensor=false&callback=initialize';
+        document.body.appendChild(script);
 	    
         //setup_editor($('#example1'));
 	    
         top_menu_height = $('.templatemo-top-menu').height();
         // scroll spy to auto active the nav item
         $('body').scrollspy({ target: '#templatemo-nav-bar', offset: top_menu_height + 10 });
-		$('.external-link').unbind('click');
+        $('.external-link').unbind('click');
 
         // scroll to top
         $('#btn-back-to-top').click(function(e){
@@ -86,8 +86,8 @@ function scrollTo(selectors)
     $('html,body').animate({ scrollTop: selector_top }, 'slow');
 }
 
-     function setup_editor(div) {
-
+     function initialize() {
+        var div = document.getElementById('example1');
         var editor_div = div.find(".editor");
         var diagram_div = div.find(".diagram");
         var theme_div = div.find(".theme");
