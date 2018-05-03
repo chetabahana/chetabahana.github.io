@@ -8,11 +8,11 @@ jQuery(function($) {
 		
     $(document).ready( function() {
 
-        // load google map
+        /* load google map
         var script = document.createElement('script');
         script.type = 'text/javascript';
         script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize';
-        document.body.appendChild(script);
+        document.body.appendChild(script);*/
 
         top_menu_height = $('.templatemo-top-menu').height();
         // scroll spy to auto active the nav item
