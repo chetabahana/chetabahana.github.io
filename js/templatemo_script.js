@@ -14,7 +14,7 @@ jQuery(function($) {
         script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize';
         document.body.appendChild(script);*/
 	    
-        setup_editor($('#example1'));
+        //setup_editor($('#example1'));
 	    
         top_menu_height = $('.templatemo-top-menu').height();
         // scroll spy to auto active the nav item
