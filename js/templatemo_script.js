@@ -9,10 +9,13 @@ jQuery(function($) {
     $(document).ready( function() {
 
         // load google map
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize';
-        document.body.appendChild(script);
+        //var script = document.createElement('script');
+        //script.type = 'text/javascript';
+        //script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize';
+        //document.body.appendChild(script);
+	
+	// load chetabahana map  
+	initialize($('#example1'));    
 
         top_menu_height = $('.templatemo-top-menu').height();
         // scroll spy to auto active the nav item
@@ -78,9 +81,8 @@ function scrollTo(selectors)
     $('html,body').animate({ scrollTop: selector_top }, 'slow');
 }
 
-function initialize() {
+function initialize(div) {
 	
-        var div = document.getElementById('example1');
         var editor_div = div.find(".editor");
         var diagram_div = div.find(".diagram");
         var theme_div = div.find(".theme");
