@@ -8,13 +8,13 @@ jQuery(function($) {
 		
     $(document).ready( function() {
 
-        /*Needed for the text editor */
+        /*Needed for the text editor 
         var script = document.createElement('script');
         script.type = 'text/javascript';
         script.src = 'https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.5/ace.js?callback=initialize';
-        document.body.appendChild(script);
+        document.body.appendChild(script);*/
 	    
-        //setup_editor($('#example1'));
+        initialize($('#example1'));
 	    
         top_menu_height = $('.templatemo-top-menu').height();
         // scroll spy to auto active the nav item
@@ -81,9 +81,8 @@ function scrollTo(selectors)
 }
 
 // Setup the editor diagram
-function initialize() {
+function initialize(div) {
 	
-	var div = document.getElementById('example1');
 	var editor_div = div.find(".editor");
 	var diagram_div = div.find(".diagram");
 	var theme_div = div.find(".theme");
