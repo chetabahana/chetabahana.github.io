@@ -126,7 +126,14 @@ function initialize(div) {
 
 		// Draw
 		diagram.drawSVG(diagram_div.get(0), options);
-		diagram_div.querySelector("g").css('cursor','pointer');
+		  
+var highlightedItems = diagram_div.querySelectorAll("g");
+
+highlightedItems.forEach(function(userItem) {
+
+		userItem.css('cursor','pointer');
+});		  
+		  
 
 	  } catch(err) {
 		var annotation = {
