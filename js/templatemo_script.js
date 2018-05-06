@@ -120,7 +120,7 @@ function initialize(div) {
 
 		var options = {
 		  theme: theme_div.val(),
-		  scale: 0.5
+		  scale: 1
 		};
 
 		// Draw
