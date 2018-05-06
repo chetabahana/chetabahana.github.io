@@ -15,7 +15,8 @@ jQuery(function($) {
         document.body.appendChild(script);*/
 	    
         initialize($('#chetabahana-skema'));
-        $( "tspan:contains('Buka Toko')" ).css( "cursor","pointer" );
+        //$( "tspan:contains('Buka Toko')" ).css( "cursor","pointer" );
+	    $( "tspan:contains('Buka Toko')" ).css( "text-decoration", "underline" );
 	    
         top_menu_height = $('.templatemo-top-menu').height();
         // scroll spy to auto active the nav item
