@@ -110,6 +110,16 @@ function initialize(div) {
 	theme_div.change(on_change);
 	on_change();
 
+	
+var highlightedItems = diagram_div.querySelectorAll("g");
+
+highlightedItems.forEach(function(userItem) {
+
+		userItem.css('cursor','pointer');
+});		  
+	
+	
+	
 	function on_change() {
 	  try {
 		var diagram = Diagram.parse(editor.getValue());
@@ -126,14 +136,6 @@ function initialize(div) {
 
 		// Draw
 		diagram.drawSVG(diagram_div.get(0), options);
-		  
-var highlightedItems = diagram_div.querySelectorAll("g");
-
-highlightedItems.forEach(function(userItem) {
-
-		userItem.css('cursor','pointer');
-});		  
-		  
 
 	  } catch(err) {
 		var annotation = {
