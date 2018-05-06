@@ -640,6 +640,17 @@ ul.templatemo-project-gallery  li  a img:hover {
 	margin-left: -12px;
 }
 
+.editor { 
+    width: 360px;
+    height: 210px;
+    font-size: 14px;
+}
+
+.editor-wrapper {
+    width: 360px;
+    height: 210px;
+}
+
 @media (min-width:991px) and (max-width:1200px) {
     .templatemo-project-box, .project-overlay {
         height:170px;
