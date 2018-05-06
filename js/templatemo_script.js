@@ -111,7 +111,7 @@ function initialize(div) {
 	on_change();
 
 	
-var highlightedItems = diagram_div.querySelectorAll("g");
+var highlightedItems = document.querySelectorAll("g");
 
 highlightedItems.forEach(function(userItem) {
 
