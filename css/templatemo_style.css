@@ -642,13 +642,13 @@ ul.templatemo-project-gallery  li  a img:hover {
 
 .editor { 
     width: 360px;
-    height: 210px;
+    height: 310px;
     font-size: 14px;
 }
 
 .editor-wrapper {
     width: 360px;
-    height: 210px;
+    height: 310px;
 }
 
 @media (min-width:991px) and (max-width:1200px) {
