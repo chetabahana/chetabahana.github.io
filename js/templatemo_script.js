@@ -89,7 +89,7 @@ function initialize(div) {
 	var download_link = div.find('.download');
 	
 	//editor_div.replace(/\t/g, '');
-	var editor = ace.edit(editor_div.replace(/\t/g, '').get(0));
+	var editor = ace.edit(editor_div.get(0));
 	editor.setTheme("ace/theme/crimson_editor");
 	editor.getSession().setMode("ace/mode/asciidoc");
 	editor.getSession().on('change', _.debounce(on_change, 100));
