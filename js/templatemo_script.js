@@ -14,7 +14,7 @@ jQuery(function($) {
         script.src = 'https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.5/ace.js?callback=initialize';
         document.body.appendChild(script);*/
 	    
-        initialize($('#templatemo-contact'));
+        initialize($('#chetabahana-skema'));
 	    
         top_menu_height = $('.templatemo-top-menu').height();
         // scroll spy to auto active the nav item
