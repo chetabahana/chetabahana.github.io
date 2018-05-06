@@ -120,7 +120,7 @@ function initialize(div) {
 
 		var options = {
 		  theme: theme_div.val(),
-		  scale: 1
+		  'font-size': 12,
 		};
 
 		// Draw
