@@ -126,7 +126,7 @@ function initialize(div) {
 
 		// Draw
 		diagram.drawSVG(diagram_div.get(0), options);
-		diagram.querySelector("g").css('cursor','pointer');
+		diagram_div.querySelector("g").css('cursor','pointer');
 
 	  } catch(err) {
 		var annotation = {
