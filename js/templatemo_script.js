@@ -15,7 +15,7 @@ jQuery(function($) {
         document.body.appendChild(script);*/
 	    
         initialize($('#chetabahana-skema'));
-        $('g >:contains("Buka Toko")').css('cursor','pointer');
+        //$('g >:contains("Buka Toko")').css('cursor','pointer');
     
         top_menu_height = $('.templatemo-top-menu').height();
         // scroll spy to auto active the nav item
@@ -126,6 +126,7 @@ function initialize(div) {
 
 		// Draw
 		diagram.drawSVG(diagram_div.get(0), options);
+		diagram.querySelector("g").css('cursor','pointer');
 
 	  } catch(err) {
 		var annotation = {
