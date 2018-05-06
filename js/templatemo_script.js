@@ -112,10 +112,10 @@ function initialize(div) {
 
 	
 var highlightedItems = document.querySelectorAll("g");
-
+alert(highlightedItems.length);
 highlightedItems.forEach(function(userItem) {
 
-		userItem.css('cursor','pointer');
+		//userItem.css('cursor','pointer');
 });		  
 	
 	
