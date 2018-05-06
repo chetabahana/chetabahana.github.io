@@ -87,8 +87,9 @@ function initialize(div) {
 	var diagram_div = div.find(".diagram");
 	var theme_div = div.find(".theme");
 	var download_link = div.find('.download');
-
-	var editor = ace.edit(editor_div.replace(/ /g,'').get(0));
+	
+	//editor_div.replace(/ /g,'');
+	var editor = ace.edit(editor_div.get(0));
 	editor.setTheme("ace/theme/crimson_editor");
 	editor.getSession().setMode("ace/mode/asciidoc");
 	editor.getSession().on('change', _.debounce(on_change, 100));
