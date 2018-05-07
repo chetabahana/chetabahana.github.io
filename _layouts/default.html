@@ -367,9 +367,8 @@ Portfolio->>Stok Barang: Google-AppEngine
             </div>
         </div>
 												  
-{% for type in site.data.gallery %}
-    {% assign item = type[1] %}											  
-    title: {{ item.title }}
+{% for item in site.data.gallery.Graphic %}										  
+    Title: {{ item.title }}
 {% endfor %}											  
 												  
         <div class="templatemo-portfolio" id="templatemo-portfolio" >
