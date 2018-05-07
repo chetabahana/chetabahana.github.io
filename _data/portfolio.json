@@ -1,6 +1,7 @@
 {
    "method": "load-data-from-json-in-jekyll",
    "href": "https://stackoverflow.com/a/50218559/4058484",
+   "loc": "https://chetabahana.github.io/#chetabahana-portfolio",
    "gallery":[
       {
          "group":"Graphic",
