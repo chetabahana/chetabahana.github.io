@@ -367,8 +367,9 @@ Portfolio->>Stok Barang: Google-AppEngine
             </div>
         </div>
 												  
-{% for item in site.data.portfolio.gallery %}
-    {% for entry in item %}												  
+{% for product in site.data.portfolio.gallery %}
+    Group: {{ product.group }}												  
+    {% for item in product.items %}												  
     Title: {{ item.title }}
     {% endfor %}											  											  
 {% endfor %}											  
