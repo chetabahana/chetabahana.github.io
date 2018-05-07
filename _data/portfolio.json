@@ -1,0 +1,19 @@
+{
+   "gallery":[
+      {
+         "Graphic":[
+            {
+               "href":"images/full-gallery-image-1.jpg",
+               "src":"images/gallery-image-1.jpg",
+               "title":"TEA POT"
+            },
+            {
+               "href":"images/full-gallery-image-9.jpg",
+               "src":"images/gallery-image-9.jpg",
+               "title":"NATURE"
+            }
+         ]
+      }
+   ]
+}
+   
