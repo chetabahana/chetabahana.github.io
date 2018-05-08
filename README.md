@@ -70,7 +70,7 @@ Here are the URLs as samples that pointing to our [forked projects](https://gith
 See more details about Github & Jeckyll here:  
 - Github Repository of Jeckyll: https://github.com/mojombo/tpw  
 - Setup GitHub Pages branchs: https://gist.github.com/chrisjacob/833223  
-- Jekyll & Liquid Cheatsheet: https://gist.github.com/smutnyleszek/9803727
+- Using Liquid in Jekyll: https://flinhong.com/2016/08/20/using-liquid-in-jekyll/
 - Concept: http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html    
 - Site of Jeckyll Author, Tom Preston-Werner, GitHub's co-founder.: http://tom.preston-werner.com
 ***
