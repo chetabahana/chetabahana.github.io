@@ -393,7 +393,7 @@ Portfolio->>Stok Barang: Google-AppEngine
                                 <div class="templatemo-project-box">
                                     <img src="{{ item.src }}" class="img-responsive" alt="gallery" />
                                     <div class="project-overlay">
-                                        <h5>{{ item.group }}</h5>
+                                        <h5>{{ item.group }}{% cycle item.group: 1, 2, 3 %}						</h5>
                                         <hr />
                                         <h4>{{ item.title }}</h4>
                                     </div>
