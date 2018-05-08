@@ -379,7 +379,7 @@ Portfolio->>Stok Barang: Google-AppEngine
                     <div class="clearfix"></div>
                     <div class="templatemo-gallery-category" style="font-size:16px;">
                         <div class="text-center">
-                            <a class="active" href=".gallery">all</a> / <a href=".gallery-design">design </a>/ <a href=".gallery-graphic">graphic</a> / <a href=".gallery-inspiration">inspiration</a> / <a href=".gallery-creative">creative</a>
+                            <a class="active" href=".gallery-all">all</a> / <a href=".gallery-design">design </a>/ <a href=".gallery-graphic">graphic</a> / <a href=".gallery-inspiration">inspiration</a> / <a href=".gallery-creative">creative</a>
                         </div>
                     </div>
                 </div> <!-- /.row -->
@@ -388,7 +388,7 @@ Portfolio->>Stok Barang: Google-AppEngine
                     <ul class="templatemo-project-gallery" >
                         <!-- load-data-from-json-in-jekyll https://stackoverflow.com/a/50218559/4058484 -->
                         {% for product in site.data.portfolio.gallery %}{% for item in product.items %}	
-                        <li class="col-lg-2 col-md-2 col-sm-2 {% if forloop.index <=1 %}gallery {% endif %}gallery-{{ item.group }}" {% if forloop.index >1 %}style="display: none;"{% endif %}>
+                        <li class="col-lg-2 col-md-2 col-sm-2 gallery {% if forloop.index <=1 %}gallery-all {% endif %}gallery-{{ item.group }}" {% if forloop.index >1 %}style="display: none;"{% endif %}>
                             <a class="colorbox" href="{{ item.href }}" data-group="gallery-{{ item.group }}">
                                 <div class="templatemo-project-box">
                                     <img src="{{ item.src }}" class="img-responsive" alt="gallery" />
