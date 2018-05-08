@@ -367,14 +367,6 @@ Portfolio->>Stok Barang: Google-AppEngine
             </div>
         </div>
 
-<!-- load-data-from-json-in-jekyll https://stackoverflow.com/a/50218559/4058484 -->												  
-{% for product in site.data.portfolio.gallery %}
-    Group: {{ product.group }}												  
-    {% for item in product.items %}												  
-    Title: {{ item.title }}
-    {% endfor %}											  											  
-{% endfor %}											  
-												  
         <div class="templatemo-portfolio" id="templatemo-portfolio" >
             <div class="container">
                 <div class="row">
@@ -403,176 +395,35 @@ Portfolio->>Stok Barang: Google-AppEngine
                         <label for="list" class="fontawesome-calendar"></label>
                         <label for="data" class="fontawesome-list-alt"></label>
                     </nav>
+								      
                     <article class="api">
-                <!-- div class="clearfix"></div -->
-                <div class="text-center">
-                    <ul class="templatemo-project-gallery" >
+                    <!-- div class="clearfix"></div -->
+                    <div class="text-center">
+                        <ul class="templatemo-project-gallery" >
+							  
+                        <!-- load-data-from-json-in-jekyll https://stackoverflow.com/a/50218559/4058484 -->												  
+                        {% for product in site.data.portfolio.gallery %}
+                        {% for item in product.items %}												  
                         <li class="col-lg-2 col-md-2 col-sm-2  gallery gallery-graphic" >
-                            <a class="colorbox" href="images/full-gallery-image-1.jpg" data-group="gallery-graphic">
+                            <a class="colorbox" href="{{ item.href }}" data-group="gallery-graphic">
                                 <div class="templatemo-project-box">
-                                    <img src="images/gallery-image-1.jpg" class="img-responsive" alt="gallery" />
+                                    <img src="{{ item.src }}" class="img-responsive" alt="gallery" />
                                     <div class="project-overlay">
-                                        <h5>Graphic</h5>
+                                        <h5>{{ item.group }}</h5>
                                         <hr />
-                                        <h4>TEA POT</h4>
+                                        <h4>{{ item.title }}</h4>
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="col-lg-2 col-md-2 col-sm-2  gallery gallery-creative" >
-                            <a class="colorbox" href="images/full-gallery-image-2.jpg" data-group="gallery-creative">
-                                <div class="templatemo-project-box">
-                                    <img src="images/gallery-image-2.jpg" class="img-responsive" alt="gallery" />
-                                    <div class="project-overlay">
-                                        <h5>Creative</h5>
-                                        <hr />
-                                        <h4>BREAKFAST</h4>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="col-lg-2 col-md-2 col-sm-2  gallery gallery-inspiration" >
-                            <a class="colorbox" href="images/full-gallery-image-3.jpg" data-group="gallery-inspiration">
-                                <div class="templatemo-project-box">
-                                    <img src="images/gallery-image-3.jpg" class="img-responsive" alt="gallery" />
-                                    <div class="project-overlay">
-                                        <h5>Inspiration</h5>
-                                        <hr />
-                                        <h4>GREEN COLORS</h4>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="col-lg-2 col-md-2 col-sm-2  gallery gallery-design" >
-                            <a class="colorbox" href="images/full-gallery-image-4.jpg" data-group="gallery-design">
-                                <div class="templatemo-project-box">
-                                    <img src="images/gallery-image-4.jpg" class="img-responsive" alt="gallery" />
-                                    <div class="project-overlay">
-                                        <h5>Web Design</h5>
-                                        <hr />
-                                        <h4>CAMERA</h4>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="col-lg-2 col-md-2 col-sm-2  gallery gallery-inspiration" >
-                            <a class="colorbox" href="images/full-gallery-image-5.jpg" data-group="gallery-inspiration">
-                                <div class="templatemo-project-box">
-                                    <img src="images/gallery-image-5.jpg" class="img-responsive" alt="gallery" />
-                                    <div class="project-overlay">
-                                        <h5>Inspiration</h5>
-                                        <hr />
-                                        <h4>PLANT</h4>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="col-lg-2 col-md-2 col-sm-2  gallery gallery-inspiration" >
-                            <a class="colorbox" href="images/full-gallery-image-6.jpg" data-group="gallery-inspiration">
-                                <div class="templatemo-project-box">
-                                    <img src="images/gallery-image-6.jpg" class="img-responsive" alt="gallery" />
-                                    <div class="project-overlay">
-                                        <h5>Inspiration</h5>
-                                        <hr />
-                                        <h4>CABLE TRAIN</h4>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="col-lg-2 col-md-2 col-sm-2 gallery gallery-design" >
-                            <a class="colorbox" href="images/full-gallery-image-7.jpg" data-group="gallery-design">
-                                <div class="templatemo-project-box">
-                                    <img src="images/gallery-image-7.jpg" class="img-responsive" alt="gallery" />
-                                    <div class="project-overlay">
-                                        <h5>Web Design</h5>
-                                        <hr />
-                                        <h4>CITY</h4>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="col-lg-2 col-md-2 col-sm-2 gallery gallery-creative" >
-                            <a class="colorbox" href="images/full-gallery-image-8.jpg" data-group="gallery-creative">
-                                <div class="templatemo-project-box">
-                                    <img src="images/gallery-image-8.jpg" class="img-responsive" alt="gallery" />
-                                    <div class="project-overlay">
-                                        <h5>Creative</h5>
-                                        <hr />
-                                        <h4>BIRDS</h4>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="col-lg-2 col-md-2 col-sm-2 gallery gallery-graphic" >
-                            <a class="colorbox" href="images/full-gallery-image-9.jpg" data-group="gallery-graphic">
-                                <div class="templatemo-project-box">
-                                    <img src="images/gallery-image-9.jpg" class="img-responsive" alt="gallery" />
-                                    <div class="project-overlay">
-                                        <h5>Graphic</h5>
-                                        <hr />
-                                        <h4>NATURE</h4>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="col-lg-2 col-md-2 col-sm-2 gallery gallery-inspiration" >
-                            <a class="colorbox" href="images/full-gallery-image-10.jpg" data-group="gallery-inspiration">
-                                <div class="templatemo-project-box">
-                                    <img src="images/gallery-image-10.jpg" class="img-responsive" alt="gallery" />
-                                    <div class="project-overlay">
-                                        <h5>Inspiration</h5>
-                                        <hr />
-                                        <h4>DOGGY</h4>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul><!-- /.gallery -->
-                </div>
-                <div class="clearfix"></div>
-                <div class="row text-center">
+                        {% endfor %}											  											  
+                        {% endfor %}											  
+                        </ul><!-- /.gallery -->
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="row text-center">
                     <a class="btn_loadmore btn btn-lg btn-orange" href="#" role="button">LOAD MORE</a>
-                </div>
-                    </article>
-                    
-                    <article class="json fontawesome-wrench">
-                        <h2>
-                            <img alt="" src="https://lh3.googleusercontent.com/-wy4VbKjl-28/UXVqrCC_cCI/AAAAAAAAGi0/JZZvb9IaLCc/s550-no/K-bg-2.jpg" />
-                            	KsesoCss
-                            <span>Spanish Css blog</span></h2>
-                        <footer>
-                            <ul>
-                                <li class="fontawesome-link"></li>
-                                <li class="fontawesome-paper-clip"></li>
-                                <li class="fontawesome-sitemap"></li>
-                                <li class="fontawesome-wrench"></li>
-                                <li class="fontawesome-magic"></li>
-                            </ul>
-                        </footer>
-                    </article>
-					  
-                    <article class="rss fontawesome-file-alt">
-                        <ol>
-                            <li>Dimensionado de imágenes y objetos en CSS</li>
-                            <li>Evita pulsaciones no deseadas al hacer scroll</li>
-                            <li>¿Qué es CSS?</li>
-                            <li>CSS Style Attributes. La especificación</li>
-                            <li>Múltiples labels por cada input </li>
-                            <li>Sintaxis de Css y Glosario de términos</li>
-                        </ol>
-                    </article>
-					  
-                    <article class="xml fontawesome-copy">
-                        <dl>
-                            <dt>Guía de Transiciones Css</dt>
-                            <dd>Todas y cada una de las propiedades css que componen el grupo de las transitions con demos.</dd>
-                            <dt>@Font-face y sus problemas</dt>
-                            <dd>Los problemas más comunes y sus soluciones, que suelen presentarse al utilizar la regla @font-face de Css para mostrar los textos en tipografías distintas a las safety fonts.</dd>
-                        </dl>
+                    </div>
                     </article>
                 </section>
             </div><!-- /.container -->
