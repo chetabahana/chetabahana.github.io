@@ -387,13 +387,13 @@ Portfolio->>Stok Barang: Google-AppEngine
                 <div class="text-center">
                     <ul class="templatemo-project-gallery" >
                         <!-- load-data-from-json-in-jekyll https://stackoverflow.com/a/50218559/4058484 -->
-                        {% for product in site.data.portfolio.gallery %}{% for item in product.items %}
+                        {% for product in site.data.portfolio.gallery %}{% for item in product.items %}{% increment item.group.my_counter %}
                         <li class="col-lg-2 col-md-2 col-sm-2 gallery {% if forloop.index <=1 %}gallery-all {% endif %}gallery-{{ item.group }}"{% if forloop.index >1 %} style="display: none;"{% endif %}>
                             <a class="colorbox" href="{{ item.href }}" data-group="gallery-{{ item.group }}">
                                 <div class="templatemo-project-box">
                                     <img src="{{ item.src }}" class="img-responsive" alt="gallery" />
                                     <div class="project-overlay">
-                                        <h5>{{ item.group }}{% cycle item.group: 1, 2, 3 %}						</h5>
+                                        <h5>{{ item.group }}{{ item.group.my_counter }}</h5>
                                         <hr />
                                         <h4>{{ item.title }}</h4>
                                     </div>
