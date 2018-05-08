@@ -4,17 +4,19 @@
    "loc": "https://chetabahana.github.io/#chetabahana-portfolio",
    "gallery":[
       {
-         "group":"Graphic",
+         "lastmod":"2015-10-28T08:03:27+00:00,
          "items":[
             {
+               "title":"TEA POT",
                "href":"images/full-gallery-image-1.jpg",
                "src":"images/gallery-image-1.jpg",
-               "title":"TEA POT"
+               "group":"Graphic"
             },
             {
+               "title":"NATURE",
                "href":"images/full-gallery-image-9.jpg",
                "src":"images/gallery-image-9.jpg",
-               "title":"NATURE"
+               "group":"Inspiration"
             }
          ]
       }
