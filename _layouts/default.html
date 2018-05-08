@@ -380,32 +380,18 @@ Portfolio->>Stok Barang: Google-AppEngine
                     <div class="clearfix"></div>
                     <div class="templatemo-gallery-category" style="font-size:16px;">
                         <div class="text-center">
-                            <a class="active" href=".gallery">All</a> / <a href=".gallery-design">Web Design </a>/ <a href=".gallery-graphic">Graphic</a> / <a href=".gallery-inspiration">Inspiration</a> / <a href=".gallery-creative">Creative</a>							
+                            <a class="active" href=".gallery">All</a> / <a href=".gallery-design">Web Design </a>/ <a href=".gallery-graphic">Graphic</a> / <a href=".gallery-inspiration">Inspiration</a> / <a href=".gallery-creative">Creative</a>
                         </div>
                     </div>
                 </div> <!-- /.row -->
-                <section>
-                   <input type="radio" id="thumb" value="1" name="tractor" checked="checked" />    
-                   <input type="radio" id="post" value="2" name="tractor" />      
-                   <input type="radio" id="list" value="3" name="tractor" />
-                   <input type="radio" id="data" value="4" name="tractor" />
-                   <nav>   
-                        <label for="thumb" class="fontawesome-camera-retro"></label>
-                        <label for="post" class="fontawesome-film"></label>
-                        <label for="list" class="fontawesome-calendar"></label>
-                        <label for="data" class="fontawesome-list-alt"></label>
-                    </nav>
-								      
-                    <article class="api">
-                    <!-- div class="clearfix"></div -->
-                    <div class="text-center">
-                        <ul class="templatemo-project-gallery" >
-							  
-                        <!-- load-data-from-json-in-jekyll https://stackoverflow.com/a/50218559/4058484 -->												  
+                <!-- div class="clearfix"></div -->
+                <div class="text-center">
+                    <ul class="templatemo-project-gallery" >
+                        <!-- load-data-from-json-in-jekyll https://stackoverflow.com/a/50218559/4058484 -->
                         {% for product in site.data.portfolio.gallery %}
-                        {% for item in product.items %}												  
+                        {% for item in product.items %}	
                         <li class="col-lg-2 col-md-2 col-sm-2  gallery gallery-graphic" >
-                            <a class="colorbox" href="{{ item.href }}" data-group="gallery-graphic">
+                            <a class="colorbox" href="{{ item.href }}" data-group="gallery-{{ item.group }}">
                                 <div class="templatemo-project-box">
                                     <img src="{{ item.src }}" class="img-responsive" alt="gallery" />
                                     <div class="project-overlay">
@@ -416,15 +402,14 @@ Portfolio->>Stok Barang: Google-AppEngine
                                 </div>
                             </a>
                         </li>
-                        {% endfor %}											  											  
+                        {% endfor %}
                         {% endfor %}											  
-                        </ul><!-- /.gallery -->
+                    </ul><!-- /.gallery -->
                     </div>
                     <div class="clearfix"></div>
                     <div class="row text-center">
-                    <a class="btn_loadmore btn btn-lg btn-orange" href="#" role="button">LOAD MORE</a>
+                        <a class="btn_loadmore btn btn-lg btn-orange" href="#" role="button">LOAD MORE</a>
                     </div>
-                    </article>
                 </section>
             </div><!-- /.container -->
         </div> <!-- /.templatemo-portfolio -->
