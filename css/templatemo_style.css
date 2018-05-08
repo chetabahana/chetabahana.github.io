@@ -280,7 +280,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     border: 1px solid #cccccc; 
 }
 
-.templatemo-team, .templatemo-portfolio {
+.templatemo-team, {
     background: url('../images/background.png') ; 
     font-family:  'Open Sans', sans-serif;
     min-height: 455px;
