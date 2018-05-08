@@ -10,13 +10,13 @@
                "title":"TEA POT",
                "href":"images/full-gallery-image-1.jpg",
                "src":"images/gallery-image-1.jpg",
-               "group":"Graphic"
+               "group":"graphic"
             },
             {
                "title":"NATURE",
                "href":"images/full-gallery-image-9.jpg",
                "src":"images/gallery-image-9.jpg",
-               "group":"Inspiration"
+               "group":"inspiration"
             }
          ]
       }
