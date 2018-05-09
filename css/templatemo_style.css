@@ -39,6 +39,10 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 	height: 30px;
 }
 
+.vglnk {
+    color:#ffffff;
+}
+
 .templatemo-top-bar {
     min-height: 40px;
     background-color:#eeeeee;
