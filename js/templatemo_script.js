@@ -1,5 +1,5 @@
 var top_menu_height = 0;
-var feed = new Instafeed({ get: 'user', userId: 6982272811, limit:12, sortBy:'random', accessToken: '6982272811.1677ed0.b6dcfc26877b4ad3854d1a276fdf4de6',template: '<li><a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="insta-likes"><div style="display: table; vertical-align: middle; height: 100%; width: 100%;"><span style="display: table-cell; vertical-align: middle; height: 100%; width: 100%;">{{likes}} <i class="fa fa-heart"></i><br/>{{comments}} <i class="fa fa-comment"></i></span></div></div></a></li>', resolution: 'standard_resolution' });feed.run();
+var feed = new Instafeed({ get: 'user', userId: 6982272811, limit:12, sortBy:'random', accessToken: '6982272811.1677ed0.b6dcfc26877b4ad3854d1a276fdf4de6',template: '<li><a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="insta-likes"><div style="display: table; vertical-align: middle; height: 100%; width: 100%;"><span style="display: table-cell; vertical-align: middle; height: 100%; width: 100%;">{{likes}} <i class="fa fa-heart"></i><br/>{{comments}} <i class="fa fa-comment"></i></span></div></div></a></li>', resolution: 'thumbnail' });feed.run();
 
 // scroll animation 
 function scrollTo(selectors)
