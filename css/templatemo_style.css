@@ -470,8 +470,11 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 #instafeed {
-    width: 200px;
-    height: 100px;
+    width: 300px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
 }
 
 .twitter_user {
