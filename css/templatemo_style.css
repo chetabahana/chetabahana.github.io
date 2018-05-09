@@ -475,6 +475,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     margin: 0;
     padding: 0;
     line-height: 0;
+    margin-top: 20px;
 }
 
 #instafeed li {
@@ -630,8 +631,13 @@ ul.templatemo-project-gallery  li  a img:hover {
     background-color: #8996a0;
     min-height:200px;
     font-family:  'Open Sans', sans-serif;
-    font-size:20px;
+    font-size: 16px;
     color:#ffffff;
+}
+
+.templatemo-tweets .row {
+    margin-top: 20px;   
+    margin-bottom: 20px;   
 }
 
 .form-control {
