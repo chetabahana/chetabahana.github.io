@@ -468,19 +468,19 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 .contact_right img {
-	margin-right:5px;
+    margin-right:5px;
 }
 
 .contact_right form {
-	padding-left:15px;
-	padding-right:15px
+    padding-left:15px;
+    padding-right:15px
 }
 
 .tweet_txt {
     border-left:2px solid #ffffff; 
     min-height:160px;
     width: 600px;
-    height: 200px;
+    height: 220px;
     overflow: hidden;
 }
 
