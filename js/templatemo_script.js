@@ -1,5 +1,43 @@
 var top_menu_height = 0;
-var feed = new Instafeed({ get: 'user', userId: 6982272811, limit:12, sortBy:'random', accessToken: '6982272811.1677ed0.b6dcfc26877b4ad3854d1a276fdf4de6',template: '<li><a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="insta-likes"><div style="display: table; vertical-align: middle; height: 100%; width: 100%;"><span style="display: table-cell; vertical-align: middle; height: 100%; width: 100%;">{{likes}} <i class="fa fa-heart"></i><br/>{{comments}} <i class="fa fa-comment"></i></span></div></div></a></li>', resolution: 'thumbnail' });feed.run();
+var loadButton = document.getElementById('load-more');
+var feed = new Instafeed({
+    get: 'user',
+    limit: 11,
+    sortBy:'most-recent',
+    userId: 6982272811,
+    resolution: 'standard_resolution',
+    accessToken: '6982272811.1677ed0.b6dcfc26877b4ad3854d1a276fdf4de6',
+    template: '<div><a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="insta-likes"><div style="display: table; vertical-align: middle; height: 100%; width: 100%;"><span style="vertical-align: middle; height: 100%; width: 100%;">{{likes}} <i class="fa fa-heart"></i><br/>{{comments}} <i class="fa fa-comment"></i></span></div></div></a></div>',
+  
+  after: function() {
+ 
+    // run slick for scrolling
+    $('#instafeed').slick({
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+  
+    // every time we load more, run this function
+    if (!this.hasNext()) {
+     // disable button if no more results to load
+     loadButton.setAttribute('disabled', 'disabled');
+    }
+  },
+  
+  success: function() {
+  //called when Instagram returns valid json data
+  },
+});
+
+// bind the load more button
+loadButton.addEventListener('click', function() {
+  feed.next();
+});
+
+// run instafeed!
+feed.run();
 
 // scroll animation 
 function scrollTo(selectors)
