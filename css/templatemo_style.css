@@ -477,10 +477,10 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 .tweet_txt {
-	border-left:2px solid #ffffff; 
-	min-height:160px;
+    border-left:2px solid #ffffff; 
+    min-height:160px;
     width: 600px;
-    height: 100px;
+    height: 200px;
     overflow: hidden;
 }
 
