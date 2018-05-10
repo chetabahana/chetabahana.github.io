@@ -53,7 +53,9 @@
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.css" rel='stylesheet' type='text/css'>
 
-        <!-- Sequence diagram CSS -->
+        <!-- Sequence diagram and others CSS -->
+        <link href="slick/slick/slick.css" rel='stylesheet' type='text/css' media="screen" />
+        <link href="slick/slick/slick-theme.css" rel='stylesheet' type='text/css' media="screen" />
         <link href="mapping/css/sequence-diagram-min.css" rel='stylesheet' type='text/css' media="screen" />
 
         <!-- Custom styles for this template -->
@@ -431,17 +433,16 @@ Portfolio->>Stok Barang: Google-AppEngine
 			<div class="templatemo-tweets">
 			    <div class="container">
 				<div class="row">
-					<div class="col-md-2">
-					</div>
-					<div class="col-md-1">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-1">
 					<img src="images/quote.png" alt="icon" />
-					</div>
-					<div class="col-md-7 tweet_txt" >
+                                    </div>
+                                    <div class="col-md-7 tweet_txt" >
 					<span>Tentang Kami:<br><a class="vglnk" href="https://chetabahana.com">Chetabahana.com</a> | Situs Belanja Jual-Beli Barang & Promo Aneka Produk Fashion, Busana Muslim, Bayi & Anak-anak, Kecantikan, Tas, Sepatu, Peralatan Rumah Tangga, Elektronik, Makanan & Minuman Kemasan, dll. Soon The E-Shop Market Leader Will Be Owned Here! </span>
-					<div id='instafeed'/></div>						
-					</div>
-					<div class="col-md-2">
-					</div>
+					<div id='instafeed'/></div>
+					<button type="button" id="load-more">Load More</button>
+                                    </div>
+                                    <div class="col-md-2"></div>
 				 </div><!-- /.row -->
 			    </div><!-- /.container -->
 			</div>
@@ -595,13 +596,14 @@ Portfolio->>Stok Barang: Google-AppEngine
         <script type="text/javascript" src="js/colorbox/jquery.colorbox-min.js"></script>
         <script type="text/javascript" src="js/chetabahana-skema.js"></script>
         <script type="text/javascript" src="feed/js/instafeed.min.js"></script>
+        <script type="text/javascript" src="slick/slick/slick.min.js"></script>
         <script type="text/javascript" src="mapping/js/webfont.js"></script>
         <script type="text/javascript" src="mapping/js/snap.svg-min.js"></script>
         <script type="text/javascript" src="mapping/js/underscore-min.js"></script>
         <script type="text/javascript" src="mapping/js/sequence-diagram-snap-min.js"></script>
         <script type="text/javascript" src="mapping/js/svginnerhtml.min.js"></script>
         <script type="text/javascript" src="js/templatemo_script.js"></script>		
-        <script src="https://apis.google.com/js/platform.js" async defer>{lang: 'id'}</script>
+        <script type="text/javascript" src="https://apis.google.com/js/platform.js" async defer>{lang: 'id'}</script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.5/ace.js" charset="utf-8"></script>	
      </body>
 </html>
