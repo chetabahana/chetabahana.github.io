@@ -63,7 +63,10 @@ jQuery(function($) {
 	    
         // chetabahana-skema
         setup_editor($('#chetabahana-skema'));
-    
+
+        // chetabahana-portfolio
+        $(".templatemo-project-gallery").simplyScroll(); 
+	    
         // scroll spy to auto active the nav item
         top_menu_height = $('.templatemo-top-menu').height();
         $('body').scrollspy({ target: '#templatemo-nav-bar', offset: top_menu_height + 10 });
