@@ -395,7 +395,7 @@ Portfolio->>Stok Barang: Google-AppEngine
                 <div class="text-center">
                     <ul class="templatemo-project-gallery" >
                         <!-- load-data-from-json-in-jekyll https://stackoverflow.com/a/50218559/4058484 -->
-                        {% for product in site.data.demo.response.gallery %}{% for item in product.items %}
+                        {% for product in site.data.response.gallery %}{% for item in product.items %}
                         <li class="col-lg-2 col-md-2 col-sm-2 gallery {% if forloop.index <=5 %}gallery-all {% endif %}gallery-{{ item.group }}"{% if forloop.index >5 %} style="display: none;"{% endif %}>
                             <a class="colorbox" href="{{ item.href }}" data-group="gallery-{{ item.group }}">
                                 <div class="templatemo-project-box">
