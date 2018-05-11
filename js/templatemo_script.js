@@ -64,7 +64,7 @@ jQuery(function($) {
         // chetabahana-skema
         setup_editor($('#chetabahana-skema'));
 
-        // chetabahana-portfolio
+        // chetabahana-portfolio https://stackoverflow.com/a/50299022/4058484
         $(".templatemo-project-gallery").simplyScroll(); 
 	    
         // scroll spy to auto active the nav item
