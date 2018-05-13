@@ -24,11 +24,7 @@ var feed = new Instafeed({
      // disable button if no more results to load
      loadButton.setAttribute('disabled', 'disabled');
     }
-  },
-  
-  success: function() {
-  //called when Instagram returns valid json data
-  },
+  }
 });
 
 // bind the load more button
@@ -49,17 +45,12 @@ function scrollTo(selectors)
 
 jQuery(function($) {
     
-    $(window).on('load', function(){
-        $('.external-link').unbind('click');	
+    $(window).on('load', function(){        
+        $('.templatemo-top-menu').stickUp(); // to stick navbar on top
+        $('.external-link').unbind('click'); // unbind external link
     });
 		
     $(document).ready( function() {
-
-        /*Needed for the text editor 
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.5/ace.js?callback=initialize';
-        document.body.appendChild(script);*/
 	    
         // chetabahana-skema
         setup_editor($('#chetabahana-skema'));
@@ -70,7 +61,6 @@ jQuery(function($) {
         // scroll spy to auto active the nav item
         top_menu_height = $('.templatemo-top-menu').height();
         $('body').scrollspy({ target: '#templatemo-nav-bar', offset: top_menu_height + 10 });
-        $('.external-link').unbind('click');
 
         // scroll to top
         $('#btn-back-to-top').click(function(e){
@@ -90,15 +80,13 @@ jQuery(function($) {
             return false;
         });
 
-        $('.carousel-inner a, .templatemo-service a').click(function(e){
+        // scroll to specific id when click on link
+	    $('.carousel-inner a, .templatemo-service a, ').click(function(e){
             e.preventDefault(); 
             var linkId = $(this).attr('href');
             scrollTo(linkId);
             return false;
         });
-
-        // to stick navbar on top
-        $('.templatemo-top-menu ').stickUp();
 
         // gallery category
         $('.templatemo-gallery-category a').click(function(e){
