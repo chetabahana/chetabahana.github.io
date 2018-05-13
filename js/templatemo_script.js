@@ -48,8 +48,8 @@ function scrollTo(selectors)
 }
 
 jQuery(function($) {
-
-    $(window).load( function() {
+    
+    $(window).on('load', function(){
         $('.external-link').unbind('click');	
     });
 		
