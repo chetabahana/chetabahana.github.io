@@ -46,11 +46,13 @@ function scrollTo(selectors)
 jQuery(function($) {
     
     $(window).on('load', function(){        
-        $('.templatemo-top-menu').stickUp(); // to stick navbar on top
         $('.external-link').unbind('click'); // unbind external link
     });
 		
     $(document).ready( function() {
+	    
+        // to stick navbar on top
+        $('.templatemo-top-menu').stickUp(); 
 	    
         // chetabahana-skema
         setup_editor($('#chetabahana-skema'));
@@ -68,6 +70,14 @@ jQuery(function($) {
             scrollTo('#templatemo-top');
         });
 
+        // scroll to specific id when click on link
+	    $('.internal-link, .carousel-inner a, .templatemo-service a').click(function(e){
+            e.preventDefault(); 
+            var linkId = $(this).attr('href');
+            scrollTo(linkId);
+            return false;
+        });
+
         // scroll to specific id when click on menu
         $('.templatemo-top-menu .navbar-nav a').click(function(e){
             e.preventDefault(); 
@@ -79,13 +89,11 @@ jQuery(function($) {
             $(this).blur();
             return false;
         });
-
-        // scroll to specific id when click on link
-	    $('.internal-link, .carousel-inner a, .templatemo-service a').click(function(e){
-            e.preventDefault(); 
-            var linkId = $(this).attr('href');
-            scrollTo(linkId);
-            return false;
+        //gallery light box setup
+        $('a.colorbox').colorbox({
+            rel: function(){
+                return $(this).data('group');
+            }
         });
 
         // gallery category
@@ -101,13 +109,7 @@ jQuery(function($) {
             });
             $(linkClass).fadeIn();  
         });
-
-        //gallery light box setup
-        $('a.colorbox').colorbox({
-            rel: function(){
-                return $(this).data('group');
-            }
-        });
+	    
     });
 });
 
