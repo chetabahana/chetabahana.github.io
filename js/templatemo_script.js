@@ -42,7 +42,7 @@ feed.run();
 // scroll animation 
 function scrollTo(selectors)
 {
-    if(!$(selectors).size()) return;
+    if(!$(selectors).length) return;
     var selector_top = $(selectors).offset().top - top_menu_height;
     $('html,body').animate({ scrollTop: selector_top }, 'slow');
 }
