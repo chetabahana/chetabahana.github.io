@@ -1,4 +1,4 @@
-window.find = document.querySelector.bind(document);
+//window.find = document.querySelector.bind(document);
 window.addEventListener('load', initialProcess, false);
 find('.input').addEventListener('input', jsRailroad, false);
 
