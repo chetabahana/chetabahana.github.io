@@ -54,9 +54,7 @@ jQuery(function($) {
         // to stick navbar on top and hash
         $('.templatemo-top-menu').stickUp(); 
         if( location.hash && location.hash.length ) {
-            //e.preventDefault(); 
-            var linkId = decodeURIComponent(location.hash.substr(1));
-            scrollTo(linkId);
+            scrollTo(location.hash);
             return false;
 	}	    
 	    
