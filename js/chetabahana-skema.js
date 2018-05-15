@@ -1,5 +1,5 @@
-//window.find = document.querySelector.bind(document);
 window.addEventListener('load', initialProcess, false);
+window.find = document.querySelector.bind(document);
 find('.input').addEventListener('input', jsRailroad, false);
 
 var url = "https://chetabahana.github.io";
