@@ -49,7 +49,7 @@ jQuery(function($) {
         $('.external-link').unbind('click'); // unbind external link
         if( location.hash && location.hash.length ) {
             var linkId = decodeURIComponent(location.hash.substr(1));
-            e.preventDefault(); 
+            //e.preventDefault(); 
             scrollTo(linkId);
             return false;
 	}	    
