@@ -57,9 +57,6 @@ jQuery(function($) {
             scrollTo(location.hash);
             return false;
 	}	    
-	    
-        // chetabahana-skema
-        jsSequence();
 
         // chetabahana-portfolio https://stackoverflow.com/a/50299022/4058484
         $(".templatemo-project-gallery").simplyScroll(); 
