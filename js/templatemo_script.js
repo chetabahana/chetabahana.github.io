@@ -48,8 +48,10 @@ jQuery(function($) {
     $(window).on('load', function(){        
         $('.external-link').unbind('click'); // unbind external link
         if( location.hash && location.hash.length ) {
-           var content = decodeURIComponent(location.hash.substr(1));
-           console.log('locatio hash'+location.hash);
+            var linkId = decodeURIComponent(location.hash.substr(1));
+            e.preventDefault(); 
+            scrollTo(linkId);
+            return false;
 	}	    
 	    
 	    
