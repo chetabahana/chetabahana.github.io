@@ -55,8 +55,7 @@ function jsSequence() {
   function trydrawSVG(val) {
     try {
       var diagram = Diagram.parse(editor.getValue());
-       console.log(diagram);
-     editor.getSession().setAnnotations([]);
+      editor.getSession().setAnnotations([]);
 
       // Clear out old diagram
       $(".diagram").html('');
