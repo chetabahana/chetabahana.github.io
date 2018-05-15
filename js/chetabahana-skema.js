@@ -1,6 +1,6 @@
 window.find = document.querySelector.bind(document);
-window.addEventListener('load', jsSequence, false);
-find('.input').addEventListener('input', jsRailroad, false);
+//window.addEventListener('load', jsSequence, false);
+//find('.input').addEventListener('input', jsRailroad, false);
 
 var url = "https://chetabahana.github.io";
 $.urlR = url + "/diagrams/railroad-diagrams.js";
