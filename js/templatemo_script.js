@@ -53,7 +53,7 @@ jQuery(function($) {
 	    
         // to stick navbar on top and hash
         $('.templatemo-top-menu').stickUp(); 
-        if( location.hash && location.hash.length ) {
+        if( location.hash && location.hash.length ) {console.log(location.hash);
             scrollTo(location.hash);
             return false;
 	}	    
