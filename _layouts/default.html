@@ -244,19 +244,29 @@
                         </div>
                     </div>
                     <div class="col-md-4 contact_left">
-                        Tema:
+                        Status:
                         <select class="theme">
-                            <option value="simple">Simple</option>
-                            <option value="hand" selected>Hand drawn</option>
+                            <option value="hand" selected>Hand</option>
+                            <option value="simple">Typed</option>
+                            <option value="printed" disabled="disabled">Printed</option>		  
                         </select><br>Rujukan: <a href="/skema">js-sequence-diagrams</a>									   
                         <div class="editor-wrapper">
-                            <textarea class="editor">Title: Bagan Eksekusi
+                            <div class="editor">Title: Bagan Eksekusi
 Buka Toko-->Stok Barang: Optimasi
 Stok Barang->Google Merchant Center: Google-Content-API
 Google Merchant Center->Peluang Terbaik: Google-AdWords-API
 Peluang Terbaik->>Portfolio: Google-Site-API
 Portfolio-->>Publikasi: Shop SEO
-Portfolio->>Stok Barang: Google-AppEngine</textarea>                            
+Portfolio->>Stok Barang: Google-AppEngine</div>
+                            <textarea class='input'>Diagram(
+  Optional('+', 'skip'),
+  Choice(0,
+    NonTerminal('name-start char'),
+    NonTerminal('escape')),
+  ZeroOrMore(
+    Choice(0,
+      NonTerminal('name char'),
+      NonTerminal('escape'))))</textarea>
                                 Punya ide skema lain yang lebih jitu?<br>
                                 Silahkan <a href='https://jsfiddle.net/chetabahana/f7ejxhnk/' target='_blank'>sunting</a> dan <a href='#templatemo-bottom' class='internal-link'>usulkan</a> gambar <a href="#" class="download">bagannya..</a><br>
                         </div>
