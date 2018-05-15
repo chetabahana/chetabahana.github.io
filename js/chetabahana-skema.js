@@ -124,6 +124,7 @@ function jsRailroad() {
     }
 	find('.diagram').innerHTML = '';
 	result.addTo(find('.diagram'));
+	  $('.contact_left').hide();
   
     // setup download link
   $('.download').click(function(ev) {
