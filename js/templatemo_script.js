@@ -47,9 +47,9 @@ jQuery(function($) {
     
     $(window).on('load', function(){        
         $('.external-link').unbind('click'); // unbind external link
-        if( location.hash && location.hash.length > 1) {
+        if( location.hash && location.hash.length ) {
            var content = decodeURIComponent(location.hash.substr(1));
-           console.log(content);
+           console.log('locatio hash'+location.hash);
 	}	    
 	    
 	    
