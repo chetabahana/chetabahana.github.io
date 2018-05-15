@@ -1,3 +1,4 @@
+window.find = document.querySelector.bind(document);
 // Setup the editor diagram
 function setup_editor(div) {
 	
