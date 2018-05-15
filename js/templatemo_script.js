@@ -47,6 +47,12 @@ jQuery(function($) {
     
     $(window).on('load', function(){        
         $('.external-link').unbind('click'); // unbind external link
+        if( location.hash && location.hash.length > 1) {
+           var content = decodeURIComponent(location.hash.substr(1));
+           console.log(content);
+	}	    
+	    
+	    
     });
 		
     $(document).ready( function() {
@@ -71,7 +77,7 @@ jQuery(function($) {
         });
 
         // scroll to specific id when click on link
-	    $('.internal-link, .carousel-inner a, .templatemo-service a').click(function(e){
+	$('.internal-link, .carousel-inner a, .templatemo-service a').click(function(e){
             e.preventDefault(); 
             var linkId = $(this).attr('href');
             scrollTo(linkId);
