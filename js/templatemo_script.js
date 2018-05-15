@@ -46,21 +46,19 @@ function scrollTo(selectors)
 jQuery(function($) {
     
     $(window).on('load', function(){        
-        $('.external-link').unbind('click'); // unbind external link
-        if( location.hash && location.hash.length ) {
-            var linkId = decodeURIComponent(location.hash.substr(1));
-            //e.preventDefault(); 
-            scrollTo(linkId);
-            return false;
-	}	    
-	    
-	    
+        $('.external-link').unbind('click'); // unbind external link	    
     });
 		
     $(document).ready( function() {
 	    
-        // to stick navbar on top
+        // to stick navbar on top and hash
         $('.templatemo-top-menu').stickUp(); 
+        if( location.hash && location.hash.length ) {
+            e.preventDefault(); 
+            var linkId = decodeURIComponent(location.hash.substr(1));
+            scrollTo(linkId);
+            return false;
+	}	    
 	    
         // chetabahana-skema
         jsSequence();
