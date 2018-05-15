@@ -1,9 +1,19 @@
-window.find = document.querySelector.bind(document);
-find('.input').addEventListener('input', jsRailroad, false);
-
 var url = "https://chetabahana.github.io";
 $.urlR = url + "/diagrams/railroad-diagrams.js";
 $.urlS = url + "/skema/js/sequence-diagram-snap-min.js";
+
+window.find = document.querySelector.bind(document);
+window.addEventListener('load', initialProcess, false);
+find('.editor').addEventListener('input', jsSequence, false);
+
+function initialProcess() {
+
+    if( location.hash && location.hash.length) {
+    var content = decodeURIComponent(location.hash.substr(1));
+    find('.editor').textContent = content;
+    }
+    jsSequence();
+}
 
 // js-sequence diagram
 function jsSequence() {
