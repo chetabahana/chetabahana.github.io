@@ -252,51 +252,8 @@
                             <option value="printed" disabled="disabled">Printed</option>		  
                         </select><br><a href="https://marketleader.github.io/">Rujukan</a>: <a href="/skema">js-sequence</a> / <a href="/diagrams">railroad</a>								   
                         <div class="editor-wrapper">
-                            <div class="editor">Title: Bagan Eksekusi
-Buka Toko-->Stok Barang: Optimasi
-Stok Barang->Google Merchant Center: Google-Content-API
-Google Merchant Center->Peluang Terbaik: Google-AdWords-API
-Peluang Terbaik->>Portfolio: Google-Site-API
-Portfolio-->>Publikasi: Shop SEO
-Portfolio->>Stok Barang: Google-AppEngine</div>
-                            <textarea class='input'>Diagram(
-	Stack(
-		Sequence(
-			'SELECT',
-			Optional('DISTINCT', 'skip'),
-			Choice(0,
-				'*',
-				OneOrMore(
-					Sequence(NonTerminal('expression'), Optional(Sequence('AS', NonTerminal('output_name')))),
-					','
-				)
-			),
-			'FROM',
-			OneOrMore(NonTerminal('from_item'), ','),
-			Optional(Sequence('WHERE', NonTerminal('condition')))
-		),
-		Sequence(
-			Optional(Sequence('GROUP BY', NonTerminal('expression'))),
-			Optional(Sequence('HAVING', NonTerminal('condition'))),
-			Optional(Sequence(
-				Choice(0, 'UNION', 'INTERSECT', 'EXCEPT'),
-				Optional('ALL'),
-				NonTerminal('select')
-			))
-		),
-		Sequence(
-			Optional(Sequence(
-				'ORDER BY',
-				OneOrMore(Sequence(NonTerminal('expression'), Choice(0, Skip(), 'ASC', 'DESC')), ','))
-			),
-			Optional(Sequence(
-				'LIMIT',
-				Choice(0, NonTerminal('count'), 'ALL')
-			)),
-			Optional(Sequence('OFFSET', NonTerminal('start'), Optional('ROWS')))
-		)
-	)
-);</textarea>
+                            <div class="editor">{% include jsSequence.html %}</div>
+                            <textarea class='input'></textarea>
                                 Punya ide skema lain yang lebih jitu?<br>
                                 Silahkan <a href='https://jsfiddle.net/chetabahana/f7ejxhnk/' target='_blank'>sunting</a> dan <a href='#templatemo-bottom' class='internal-link'>usulkan</a> gambar <a href="#" class="download">bagannya..</a><br>
                         </div>
