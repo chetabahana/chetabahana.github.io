@@ -4,6 +4,8 @@
 {% include head %}   
    </head>
     <body>
-{% include skema %}	
+{% for product in site.data.project.menus %}{% for item in product.items %}
+{{ item.title }}
+{% endfor %}{% endfor %}
     </body>
 </html>
