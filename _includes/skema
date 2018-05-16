@@ -14,7 +14,7 @@
                             <option value="hand" selected>Hand</option>
                             <option value="simple">Typed</option>
                             <option value="printed" disabled="disabled">Printed</option>		  
-                        </select><br><a href="https://marketleader.github.io/">Rujukan</a>: <a href="/skema">js-sequence</a> / <a href="/diagrams">railroad</a>								   
+                        </select><br><a href="https://marketleader.github.io/">Referensi</a>: <a href="/skema">js-sequence</a> / <a href="/diagrams">railroad</a>								   
                         <div class="editor-wrapper">
                             <div class="editor">{% include diagrams/Sequence %}</div>
                             <textarea class='input'>{% include diagrams/RailRoad %}</textarea>
