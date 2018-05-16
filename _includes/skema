@@ -16,8 +16,6 @@
                             <option value="printed" disabled="disabled">Printed</option>		  
                         </select><br><a href="https://marketleader.github.io/">Rujukan</a>: <a href="/skema">js-sequence</a> / <a href="/diagrams">railroad</a>								   
                         <div class="editor-wrapper">
-                            <div class="editor">{% include ~Sequence %}</div>
-                            <textarea class='input'>{% include ~RailRoad %}</textarea>
                                 Punya ide skema lain yang lebih jitu?<br>
                                 Silahkan <a href='https://jsfiddle.net/chetabahana/f7ejxhnk/' target='_blank'>sunting</a> dan <a href='#templatemo-bottom' class='internal-link'>usulkan</a> gambar <a href="#" class="download">bagannya..</a><br>
                         </div>
