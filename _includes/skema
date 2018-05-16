@@ -15,8 +15,8 @@
                             <option value="simple">Typed</option>
                             <option value="printed" disabled="disabled">Printed</option>		  
                         </select><br><a href="https://marketleader.github.io/">Referensi</a>: <a href="/skema">js-sequence</a> / <a href="/diagrams">railroad</a>								   
-                            <div class="editor">{% include_relative diagrams/sequence %}</div>
-                            <textarea class='input'>{% include_relative diagrams/railroad %}</textarea>
+                            <div class="editor">{% include diagrams/sequence %}</div>
+                            <textarea class='input'>{% include diagrams/railroad %}</textarea>
                         <div class="editor-wrapper">
                             Punya ide skema lain yang lebih jitu?<br>
                             Silahkan <a href='https://jsfiddle.net/chetabahana/f7ejxhnk/' target='_blank'>sunting</a> dan <a href='#templatemo-bottom' class='internal-link'>usulkan</a> gambar <a href="#" class="download">bagannya..</a><br>
