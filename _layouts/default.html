@@ -4,6 +4,10 @@
 {% include head %}   
    </head>
     <body>
+  {% for menu in site.data.project.menus %}
+include menu.item
+{% endfor %}      
+        
 {% for menu in page.menus %}
 {% include menu %}
 {% endfor %}
