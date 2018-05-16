@@ -3,9 +3,9 @@
     <head>
 {% include head %}   
    </head>
-    <body>test
+    <body>
 {% for menu in site.data.project.menus %}{% for item in menu.items %}
-include item.title
+include {{item.title}}
 {% endfor %}{% endfor %}
     </body>
 </html>
