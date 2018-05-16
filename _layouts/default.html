@@ -4,8 +4,8 @@
 {% include head %}   
    </head>
     <body>
-{% for menu in page.menus %}
-{% include menu %} 
-{% endfor %}
+{% for menu in site.data.project.menus %}{% for item in menu.items %}
+{% assign my_title = item.title %}{% include my_title %}
+{% endfor %}{% endfor %}
     </body>
 </html>
