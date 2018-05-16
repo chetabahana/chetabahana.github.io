@@ -4,14 +4,8 @@
 {% include head %}   
    </head>
     <body>
-{% include beranda %}
-{% include abstrak %}
-{% include skema %}					    
-{% include eksekusi %}                
-{% include portfolio %}											  
-{% include publikasi %}							 
-{% include network %} 	    
-{% include diskusi %}       
-{% include bottom %}        
+{% for menu in page.menus %}
+{% include menu %}
+{% endfor %}
     </body>
 </html>
