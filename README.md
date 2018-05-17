@@ -6,7 +6,7 @@ WE ARE GOING TO WIN THE MARKET!
 </a><br /><br />
 </p>
 
-# Membuat Situs GitHub
+# Tutorial Situs GitHub
 |[![Chetabahana Project](https://avatars1.githubusercontent.com/u/36441664?v=10&s=20)](https://github.com/chetabahana) |This [repo](#repository "Project Repository") is courtesy of [Chetabahana Project](https://github.com/MarketLeader "We are providing an Integrated Open Source Project about The World of e-Commerce."). Find all of them on [The Project Map](https://marketleader.github.io/#bagan-projek "Project Mapping").|[![Chetabahana Project](https://avatars2.githubusercontent.com/u/36441943?v=10&s=20)](https://github.com/MarketLeader) |
 |:----|----|----:|
 
@@ -53,12 +53,12 @@ You are done, Congrats..
 
 ## Atur Domain
 Set up your custom domain follow this documentation:  
-https://help.github.com/articles/user-organization-and-project-pages/  
-https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/
+- https://help.github.com/articles/user-organization-and-project-pages/  
+- https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/
 
 You can use the same domain for your project pages, turn Jekyll off if necessary:   
-https://help.github.com/articles/using-jekyll-with-pages#troubleshooting  
-https://stackoverflow.com/questions/9082499/custom-domain-for-github-project-pages
+- https://help.github.com/articles/using-jekyll-with-pages#troubleshooting  
+- https://stackoverflow.com/questions/9082499/custom-domain-for-github-project-pages
 
 Here are the URLs as samples that pointing to our [forked projects](https://github.com/search?utf8=%E2%9C%93&q=%40chetabahana+fork%3Aonly+user%3Amarketleader+fork%3Aonly&type=Repositories&ref=advsearch&s=updated): 
 
