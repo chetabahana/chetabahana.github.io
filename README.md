@@ -8,11 +8,12 @@
 Tutorial cara buat halaman situs di Github.
 
 ## Cara Simple
-Langsung [_Fork_](https://help.github.com/articles/fork-a-repo/#fork-an-example-repository) aja [_repo ini_](https://github.com/chetabahana/chetabahana.github.io/fork) juga [_lainnya_](https://github.com/chetabahana?tab=repositories) ke akun. Beri nama `<akun>/<akun>.github.io` terus lakukan [_Settings_](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages).  
-Tunggu 10 menit. Lalu bros `https://<akun>.github.io`. Jika belum muncul cek [_Fix GitHub Page Error 404_](https://stackoverflow.com/questions/11577147/how-to-fix-page-404-on-github-page/50034409#50034409).
+- Langsung [_Fork_](https://help.github.com/articles/fork-a-repo/#fork-an-example-repository) aja [_repo ini_](https://github.com/chetabahana/chetabahana.github.io/fork) juga [_lainnya_](https://github.com/chetabahana?tab=repositories) ke akun. - - Beri nama `<akun>/<akun>.github.io` terus lakukan [_Settings_](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages).  
+- Tunggu 10 menit. Lalu bros `https://<akun>.github.io`. 
+- Jika belum muncul cek [_Fix GitHub Page Error 404_](https://stackoverflow.com/questions/11577147/how-to-fix-page-404-on-github-page/50034409#50034409).
 
 ## Cara Standar
-Buka akun Github:    
+- Buka akun Github:<br> 
 https://github.com/join
 
 Buat organization baru:     
