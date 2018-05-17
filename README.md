@@ -12,38 +12,38 @@ Langsung [_Fork_](https://help.github.com/articles/fork-a-repo/#fork-an-example-
 Tunggu 10 menit. Lalu bros `https://<akun>.github.io`. Jika belum muncul cek [_Fix GitHub Page Error 404_](https://stackoverflow.com/questions/11577147/how-to-fix-page-404-on-github-page/50034409#50034409).
 
 ## Cara Standar
-Open Github account here:    
+Buka akun Github:    
 https://github.com/join
 
-Create a new organization here:     
+Buat organization baru:     
 https://github.com/organizations/new
 
-Install Github from Windows, get it here:    
+Pasang Github di Windows:    
 https://windows.github.com/
 
-Select a template, or use ours, get it FREE here:    
+Pilih template, atau pakai spt kami, ambil FREE disini:    
 http://www.templatemo.com/preview/templatemo_395_urbanic
 
-Create repository for the template: "YOUR-ORGANIZATION.github.io":     
+Ber nama repositorynya: "YOUR-ORGANIZATION.github.io":     
 https://help.github.com/articles/getting-started-with-github-for-windows/
 
-Download the installer & Devkit for Ruby and setup Jeckyill    
+Unduh installer & Devkit for Ruby and setup Jeckyill    
 http://jekyll-windows.juthilo.com/1-ruby-and-devkit/    
 
-Tweak how you want the site URLs to look follow guidance here:    
+Atur site URLs, ikuti petunjuknya:    
 http://jekyllrb.com/docs/structure/
 
-Commit the template to Github    
+Commit ke Github    
 http://martinbuberl.com/blog/setup-jekyll-on-windows-and-host-it-on-github-pages/    
 
     git add --all    
     git commit -m "Initial commit"    
     git push "origin" master:master
 
-Point your browser to:    
+Buka di browsernya:    
 `https://YOUR-ORGANIZATION.github.io`
 
-Set up your custom domain follow this documentation:  
+Atur custom domain, ikuti petunjuknya: 
 https://help.github.com/articles/user-organization-and-project-pages/  
 https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/
 
@@ -74,5 +74,37 @@ See more details about Github & Jeckyll here:
 - Concept: http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html    
 - Site of Jeckyll Author, Tom Preston-Werner, GitHub's co-founder.: http://tom.preston-werner.com
 ***
+
+## License
+Project ini dipublikasikan dengan lisensi berikut:  
+[Apache License 2.0](https://github.com/MarketLeader/Toko-Chetabahana/blob/master/LICENSE)
+
+## Pustaka
+<p align="center"> 
+<a href="https://chetabahana.com/#after_header1_3"><img src="https://user-images.githubusercontent.com/36441664/38942532-44c87736-4359-11e8-9ad4-56f7d2b68ced.png" alt="Alokasi Pustaka Online Chetabahana"></a><br>
+Gambar-2: Alokasi Pustaka Online <a href= "https://chetabahana.com">Chetabahana</a>
+</p>
+
+Disarankan untuk disimak sebelum melangkah lebih jauh:  
+- [Cara Buka Toko Online WinMarket dan Optimasi Internal](https://chetabahana.blogspot.com/)
+- [Cara Optimasi Eksternal Toko dengan Shop SEO](https://chetabahana.wordpress.com/)
+- [Channel Youtube Chetabahana](https://www.youtube.com/channel/UCZlPku9beXzdROCknYLuRNg?view_as=subscriber)
+- [e-Books Chetabahana](https://www.scribd.com/user/401259110/Chetabahana)
+
+## Penutup
+Berikut ini beberapa catatan sebagai penutup:  
+- Projek ini diprioriostaskan bagi peminat [e-Commerce di Indonesia](https://www.youtube.com/watch?v=dd__L8Jh2c4&t=25s) 🇮🇩
+- Status masih pengembangan dan pengetesan implementasi
+- Syarat untuk bergabung silahkan [Daftar ID WinMarket](https://chetabahana.com/info/tentang-89.html)
+- Tim WinMarket welcome untuk bergabung.
+
+Terimakasih atas kunjungannya.  
+Met menyimak.. :pray:  
+
+SALAM Sukses!  
+:copyright: [**Chetabahana Project**](https://github.com/MarketLeader)  
+[![profile for Chetabahana on Stack Exchange, a network of free, community-driven Q&amp;A sites](https://stackexchange.com/users/flair/5054985.png)](https://stackoverflow.com/users/4058484/chetabahana?tab=profile)   
+
+
 |[:arrow_backward:]((https://github.com/hyip/info)) [Prev](https://github.com/hyip/info)|[Next](https://github.com/hyipworld/hyipworld.github.io/wiki/Home) [:arrow_forward:](https://github.com/hyipworld/hyipworld.github.io/wiki/Home)|
 |:----|----:|
