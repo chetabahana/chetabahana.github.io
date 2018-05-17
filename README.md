@@ -37,11 +37,11 @@ http://jekyllrb.com/docs/structure/
 
 - Commit ke Github<br>
 http://martinbuberl.com/blog/setup-jekyll-on-windows-and-host-it-on-github-pages/    
-
+`
     git add --all    
     git commit -m "Initial commit"    
     git push "origin" master:master
-
+`
 - Buka di browsernya:<br>
 `https://YOUR-ORGANIZATION.github.io`
 
