@@ -62,7 +62,6 @@ See more details about Github & Jeckyll here:
 - Using Liquid in Jekyll: https://flinhong.com/2016/08/20/using-liquid-in-jekyll/
 - Concept: http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html    
 - Site of Jeckyll Author, Tom Preston-Werner, GitHub's co-founder.: http://tom.preston-werner.com
-***
 
 ## License
 Project ini dipublikasikan dengan lisensi berikut:  
@@ -94,6 +93,6 @@ SALAM Sukses!
 :copyright: [**Chetabahana Project**](https://github.com/MarketLeader)  
 [![profile for Chetabahana on Stack Exchange, a network of free, community-driven Q&amp;A sites](https://stackexchange.com/users/flair/5054985.png)](https://stackoverflow.com/users/4058484/chetabahana?tab=profile)   
 
-
+***
 |[:arrow_backward:]((https://github.com/hyip/info)) [Prev](https://github.com/hyip/info)|[Next](https://github.com/hyipworld/hyipworld.github.io/wiki/Home) [:arrow_forward:](https://github.com/hyipworld/hyipworld.github.io/wiki/Home)|
 |:----|----:|
