@@ -281,7 +281,6 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 .templatemo-team {
-    margin-top:100px;
     background: url('../images/background.png') ; 
     font-family:  'Open Sans', sans-serif;
     min-height: 455px;
@@ -446,7 +445,6 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 #templatemo-blog {
-    margin-top:100px; 
     font-size:14px;
 }
 
@@ -535,11 +533,9 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 .templatemo-footer {
-	margin-top: 100px;
 }
 
 .footer_container {
-	margin-top:60px; 
 	margin-bottom:20px;
 }
 
