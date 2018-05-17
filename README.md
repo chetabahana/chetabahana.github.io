@@ -43,6 +43,9 @@ http://martinbuberl.com/blog/setup-jekyll-on-windows-and-host-it-on-github-pages
 Buka di browsernya:    
 `https://YOUR-ORGANIZATION.github.io`
 
+You are done, Congrats..    
+
+## Atur Domain
 Atur custom domain, ikuti petunjuknya: 
 https://help.github.com/articles/user-organization-and-project-pages/  
 https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/
@@ -51,21 +54,7 @@ You can use the same domain for your project pages, turn Jekyll off if necessary
 https://help.github.com/articles/using-jekyll-with-pages#troubleshooting  
 https://stackoverflow.com/questions/9082499/custom-domain-for-github-project-pages
 
-You are done..    
-
-
-Here are the URLs to point to our site:    
-
-    http://hyipworld.github.io/   
-    http://www.hyip.world/    
-    http://hyip.world/
-
-Here are the URLs as samples that pointing to our [forked projects](https://github.com/search?utf8=%E2%9C%93&q=%40hyip+fork%3Aonly+user%3Ahyipworld+fork%3Aonly&type=Repositories&ref=advsearch&s=updated): 
-
-    http://hyip.world/maps
-    http://hyip.world/js-sequence-diagrams
-    http://hyip.world/railroad-diagrams/generator.html
-
+Here are the URLs as samples that pointing to our [forked projects](https://github.com/search?utf8=%E2%9C%93&q=%40chetabahana+fork%3Aonly+user%3Amarketleader+fork%3Aonly&type=Repositories&ref=advsearch&s=updated): 
 
 See more details about Github & Jeckyll here:  
 - Github Repository of Jeckyll: https://github.com/mojombo/tpw  
