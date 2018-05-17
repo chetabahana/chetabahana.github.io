@@ -105,5 +105,5 @@ SALAM Sukses!
 
 
 
-[:arrow_backward:]((https://github.com/hyip/info)) [Prev](https://github.com/hyip/info)|[Next](https://github.com/hyipworld/hyipworld.github.io/wiki/Home) [:arrow_forward:](https://github.com/hyipworld/hyipworld.github.io/wiki/Home)|
+[:arrow_backward:]((https://marketleader.github.io/)) [Prev](https://marketleader.github.io/)|[Next](https://github.com/MarketLeader) [:arrow_forward:](https://github.com/MarketLeader)|
 |:----|----:|
