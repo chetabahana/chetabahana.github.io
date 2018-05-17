@@ -18,9 +18,9 @@
                         <div class="editor-wrapper">
                             <div class="editor">{% include diagrams/sequence %}</div>
                             <textarea class='input'>{% include diagrams/railroad %}</textarea>
-                            Punya ide skema lain yang lebih jitu?<br>
-                            Silahkan <a href='https://jsfiddle.net/chetabahana/f7ejxhnk/' target='_blank'>sunting</a> dan <a href='#templatemo-bottom' class='internal-link'>usulkan</a> gambar <a href="#" class="download">bagannya..</a><br>
                         </div>
+                        Punya ide skema lain yang lebih jitu?<br>
+                        Silahkan <a href='https://jsfiddle.net/chetabahana/f7ejxhnk/' target='_blank'>sunting</a> dan <a href='#templatemo-bottom' class='internal-link'>usulkan</a> gambar <a href="#" class="download">bagannya..</a><br>
                     </div>
                     <div class="col-md-8">
                         <div class="diagram"></div>
