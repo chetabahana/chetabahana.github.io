@@ -8,7 +8,8 @@
 Tutorial cara buat halaman situs di Github.
 
 ## Cara Simple
-- Langsung [_Fork_](https://help.github.com/articles/fork-a-repo/#fork-an-example-repository) aja [_repo ini_](https://github.com/chetabahana/chetabahana.github.io/fork) juga [_lainnya_](https://github.com/chetabahana?tab=repositories) ke akun. - - Beri nama `<akun>/<akun>.github.io` terus lakukan [_Settings_](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages).  
+- Langsung [_Fork_](https://help.github.com/articles/fork-a-repo/#fork-an-example-repository) aja [_repo ini_](https://github.com/chetabahana/chetabahana.github.io/fork) juga [_lainnya_](https://github.com/chetabahana?tab=repositories) ke akun.
+- Beri nama `<akun>/<akun>.github.io` terus lakukan [_Settings_](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages).  
 - Tunggu 10 menit. Lalu bros `https://<akun>.github.io`. 
 - Jika belum muncul cek [_Fix GitHub Page Error 404_](https://stackoverflow.com/questions/11577147/how-to-fix-page-404-on-github-page/50034409#50034409).
 
@@ -16,32 +17,32 @@ Tutorial cara buat halaman situs di Github.
 - Buka akun Github:<br> 
 https://github.com/join
 
-Buat organization baru:     
+- Buat organization baru:<br>
 https://github.com/organizations/new
 
-Pasang Github di Windows:    
+- Pasang Github di Windows:<br>
 https://windows.github.com/
 
-Pilih template, atau pakai spt kami, ambil FREE disini:    
+- Pilih template, atau pakai spt kami, ambil FREE disini:<br>
 http://www.templatemo.com/preview/templatemo_395_urbanic
 
-Ber nama repositorynya: "YOUR-ORGANIZATION.github.io":     
+- Ber nama repositorynya: "YOUR-ORGANIZATION.github.io":<br>
 https://help.github.com/articles/getting-started-with-github-for-windows/
 
-Unduh installer & Devkit for Ruby and setup Jeckyill    
+- Unduh installer & Devkit for Ruby and setup Jeckyill<br>
 http://jekyll-windows.juthilo.com/1-ruby-and-devkit/    
 
-Atur site URLs, ikuti petunjuknya:    
+- Atur site URLs, ikuti petunjuknya:<br>
 http://jekyllrb.com/docs/structure/
 
-Commit ke Github    
+- Commit ke Github<br>
 http://martinbuberl.com/blog/setup-jekyll-on-windows-and-host-it-on-github-pages/    
 
     git add --all    
     git commit -m "Initial commit"    
     git push "origin" master:master
 
-Buka di browsernya:    
+- Buka di browsernya:<br>
 `https://YOUR-ORGANIZATION.github.io`
 
 You are done, Congrats..    
