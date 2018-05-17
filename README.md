@@ -6,11 +6,10 @@ WE ARE GOING TO WIN THE MARKET!
 </a><br /><br />
 </p>
 
-# Project Chetabahana
+# Membuat Situs GitHub
+|[![Chetabahana Project](https://avatars1.githubusercontent.com/u/36441664?v=10&s=20)](https://github.com/chetabahana) |This [repo](#repository "Project Repository") is courtesy of [Chetabahana Project](https://github.com/MarketLeader "We are providing an Integrated Open Source Project about The World of e-Commerce."). Find all of them on [The Project Map](https://marketleader.github.io/#bagan-projek "Project Mapping").|[![Chetabahana Project](https://avatars2.githubusercontent.com/u/36441943?v=10&s=20)](https://github.com/MarketLeader) |
+|:----|----|----:|
 
-[![Build Status](https://travis-ci.org/guard/guard.svg)](https://travis-ci.org/guard/guard) [![Dependency Status](https://gemnasium.com/guard/guard.png)](https://gemnasium.com/guard/guard) [![Code Climate](https://codeclimate.com/github/guard/guard/badges/gpa.svg)](https://codeclimate.com/github/guard/guard) [![Test Coverage](https://codeclimate.com/github/guard/guard/badges/coverage.svg)](https://codeclimate.com/github/guard/guard) [![Inline docs](http://inch-ci.org/github/guard/guard.svg)](http://inch-ci.org/github/guard/guard)
-
-Tutorial cara buat halaman situs di Github.
 
 ## Cara Simple
 - Langsung [_Fork_](https://help.github.com/articles/fork-a-repo/#fork-an-example-repository) aja [_repo ini_](https://github.com/chetabahana/chetabahana.github.io/fork) juga [_lainnya_](https://github.com/chetabahana?tab=repositories) ke akun.
@@ -99,10 +98,6 @@ Met menyimak.. :pray:
 SALAM Sukses!  
 :copyright: [**Chetabahana Project**](https://github.com/MarketLeader)  
 [![profile for Chetabahana on Stack Exchange, a network of free, community-driven Q&amp;A sites](https://stackexchange.com/users/flair/5054985.png)](https://stackoverflow.com/users/4058484/chetabahana?tab=profile)   
-
-|[![Chetabahana Project](https://avatars1.githubusercontent.com/u/36441664?v=10&s=20)](https://github.com/chetabahana) |This [repo](#repository "Project Repository") is courtesy of [Chetabahana Project](https://github.com/MarketLeader "We are providing an Integrated Open Source Project about The World of e-Commerce."). Find all of them on [The Project Map](https://marketleader.github.io/#bagan-projek "Project Mapping").|[![Chetabahana Project](https://avatars2.githubusercontent.com/u/36441943?v=10&s=20)](https://github.com/MarketLeader) |
-|:----|----|----:|
-
 
 
 [:arrow_backward:]((https://github.com/MarketLeader)) [Prev](https://github.com/MarketLeader)|[Next](https://marketleader.github.io/) [:arrow_forward:](https://marketleader.github.io/)|
