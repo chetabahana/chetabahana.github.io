@@ -31,12 +31,13 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
           border-radius: 0 !important;
 }
 
-h4 {margin-top:50px;
-  display:flex;
-  background:linear-gradient(to left,gray,lightgray,white,yellow,turquoise);;
+h4 {
+  margin-top: 0px;
+  display: flex;
+  background: transparent;
 }
 
-h4:before, h2:after {
+h4:before, h4:after {
   color:white;
   content:'';
   flex:1;
