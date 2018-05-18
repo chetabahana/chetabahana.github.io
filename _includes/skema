@@ -1,11 +1,9 @@
         <div id="chetabahana-{{ page.service_title1 }}">
             <div class="container">
                 <div class="row">
-                    <div class="templatemo-line-header head_contact">
-                        <div class="text-center">
-                            <h4>{{ page.service_title1 }}</h4>
-                        </div>
-                    </div>
+                    <div class="templatemo-line-header">
+                        <h4>{{ item.title }}</h4>
+                     </div>
                     <div class="col-md-4 contact_left">
                         Status:
                         <select class="theme">
