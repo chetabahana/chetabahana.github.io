@@ -31,6 +31,20 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
           border-radius: 0 !important;
 }
 
+h4 {margin-top:50px;
+  display:flex;
+  background:linear-gradient(to left,gray,lightgray,white,yellow,turquoise);;
+}
+
+h4:before, h2:after {
+  color:white;
+  content:'';
+  flex:1;
+  border-bottom:groove 2px;
+  margin:auto 0.25em;
+  box-shadow: 0 -1px ;/* ou 0 1px si border-style:ridge */
+}
+
 .templatemo_clear {
 	clear: both;
 }
