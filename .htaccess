@@ -1,4 +1,4 @@
-RedirectMatch ^/$ /pages/
+RedirectMatch ^/$ /root/
 
 
 # Enable Compression
