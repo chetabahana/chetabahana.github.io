@@ -62,7 +62,7 @@ You can use the same domain for your project pages, turn Jekyll off if necessary
 
 Here are the URLs as samples that pointing to our [forked projects](https://github.com/search?utf8=%E2%9C%93&q=%40chetabahana+fork%3Aonly+user%3Amarketleader+fork%3Aonly&type=Repositories&ref=advsearch&s=updated): 
 
-See more details about Github & Jeckyll here:  
+## See more about Github & Jeckyll 
 - Site of Jeckyll Author, Tom Preston-Werner, GitHub's co-founder.: http://tom.preston-werner.com
 - Concept: http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html    
 - Github Repository of Jeckyll: https://github.com/mojombo/tpw  
