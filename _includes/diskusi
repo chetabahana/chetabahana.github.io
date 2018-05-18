@@ -1,9 +1,7 @@
         <div class="templatemo-bottom" id="templatemo-bottom">
                     <div class="templatemo-line-header" >
                         <div class="text-center">
-                            <hr class="team_hr team_hr_left hr_gray"/>
-                            <span class="txt_darkgrey">{{ page.service_title6 }}</span>
-                            <hr class="team_hr team_hr_right hr_gray" />
+                            <h4>{{ item.title }}</h4>
                         </div>
                     </div>
                     <div class="clearfix"></div>    
