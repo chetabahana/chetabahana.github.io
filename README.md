@@ -51,7 +51,7 @@ http://martinbuberl.com/blog/setup-jekyll-on-windows-and-host-it-on-github-pages
 
 You are done, Congrats..    
 
-## Atur Domain
+## Setup Domain
 Set up your custom domain follow this documentation:  
 - https://help.github.com/articles/user-organization-and-project-pages/  
 - https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/
