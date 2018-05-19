@@ -1,2 +1,7 @@
 encoding: utf-8
 highlighter: rouge
+defaults:
+  - scope:
+      path: "images"
+    values:
+      image: true
