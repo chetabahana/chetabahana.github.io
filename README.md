@@ -5,7 +5,7 @@
 WE ARE GOING TO WIN THE MARKET!
 </a><br /><br />
 </p>
-
+{{ page.title }}
 # Tutorial Github & Jeckyll
 |[![Chetabahana Project](https://avatars1.githubusercontent.com/u/36441664?v=10&s=20)](https://github.com/chetabahana) |This [repo](#repository "Project Repository") is courtesy of [Chetabahana Project](https://github.com/MarketLeader "We are providing an Integrated Open Source Project about The World of e-Commerce."). Find all of them on [The Project Map](https://marketleader.github.io/#bagan-projek "Project Mapping").|[![Chetabahana Project](https://avatars2.githubusercontent.com/u/36441943?v=10&s=20)](https://github.com/MarketLeader) |
 |:----|----|----:|
