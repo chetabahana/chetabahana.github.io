@@ -28,7 +28,7 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
         <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>  
 
-        <!-- Sequence diagram and others CSS -->
+        <!-- Custom and others CSS -->
         <link href="skema/css/sequence-diagram-min.css" rel='stylesheet' type='text/css' media="screen" />
         <link href="scroll/jquery.simplyscroll.css" rel='stylesheet' type='text/css' media="screen" />
         <link href="diagrams/railroad-diagrams.css" rel='stylesheet' type='text/css' media="screen" />
@@ -36,11 +36,8 @@
         <link href="slick/slick/slick.css" rel='stylesheet' type='text/css' media="screen" />
         <link href="js/colorbox/colorbox.css" rel='stylesheet' type='text/css'>
 
-        <!-- Bootstrap core CSS -->
-        <link href="css/bootstrap.css" rel='stylesheet' type='text/css'>
-	    
-        <!-- Custom styles for this template -->
-        <link href="css/templatemo_style.css" rel='stylesheet' type='text/css'>
+        <!-- Bootstrap core CSS and Template styles --->
+        <link href="css/styles.css" rel='stylesheet' type='text/css'>
 
         <!--link rel="shortcut icon" href="favicon.ico" -->
         <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
