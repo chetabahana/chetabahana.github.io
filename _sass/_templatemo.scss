@@ -28,6 +28,7 @@ h4 {
   margin-top: 0px;
   display: flex;
   background: transparent;
+  text-transform: uppercase;
 }
 
 h4:before, h4:after {
@@ -259,7 +260,6 @@ h4:before, h4:after {
     padding: 16px 10px 20px 20px; 
     font-weight: bold;
     display: inline-block;
-    text-transform: uppercase;
 }
 
 .templatemo-header-orange {
