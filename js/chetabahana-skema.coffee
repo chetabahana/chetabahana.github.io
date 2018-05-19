@@ -1,4 +1,4 @@
-  ---
+---
 ---
 var url = "https://chetabahana.github.io";
 $.urlR = url + "/diagrams/railroad-diagrams.js";
