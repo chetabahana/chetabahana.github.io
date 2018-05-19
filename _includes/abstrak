@@ -58,7 +58,7 @@
             </div>
         </div>
 <ul>
-  {% for post in site.posts | sort:"weight" %}
+  {% for post in site.posts | sort:"weight" | reverse  %}
     <li>
       {{ post.excerpt }}
     </li>
