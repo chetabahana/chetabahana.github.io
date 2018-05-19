@@ -1,5 +1,8 @@
         <div class="templatemo-welcome" id="templatemo-welcome">
             <div class="container">
+                <div class="templatemo-line-header">
+                    <h4>{{ item.title }}</h4>
+                </div>
                 <div class="templatemo-slogan text-center">
                     <span class="txt_darkgrey">Welcome to </span><a href="{{ page.slogan_link }}" target="_blank">Chetabahana</a>
                     <p class="txt_slogan"><i>{{ page.slogan }}</i></p>
