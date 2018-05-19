@@ -28,7 +28,6 @@ h4 {
   margin-top: 0px;
   display: flex;
   background: transparent;
-  text-transform: uppercase;
 }
 
 h4:before, h4:after {
@@ -267,6 +266,7 @@ h4:before, h4:after {
     min-width: 298px;
     height: 67px;
     color: #fff; 
+
 }
 
 .team_hr {
@@ -295,10 +295,11 @@ h4:before, h4:after {
     color:#ffffff;
 }
 
-.templatemo-service-item {
+.templatemo-line-header {
     margin-top: 0px;
     margin-bottom: 40px;
     text-transform: uppercase;
+
 }
 
 .member-thumb:hover .thumb-overlay {
@@ -428,7 +429,6 @@ h4:before, h4:after {
     font-size: 18px; 
     float :left; 
     margin-top: 10px;
-    text-transform: uppercase;
 }
 
 .team_box  div {
@@ -790,6 +790,7 @@ ul.templatemo-project-gallery  li  a img:hover {
     }
 	.templatemo-service-item-header {
 		font-size: 16px;
+		
 		padding: 23px 10px 22px;
 	}
 	.templatemo-header-orange {
