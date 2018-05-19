@@ -1,5 +1,6 @@
 ---
 title: "objective"
+weight:1
 categories: abstrak
 src: images/leaf.png
 href: https://chetabahana.github.io/
