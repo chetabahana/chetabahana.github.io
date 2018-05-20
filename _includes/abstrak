@@ -10,7 +10,7 @@
         <div class="templatemo-service">
             <div class="container">
                 <div class="row">
-{% assign posts = site.posts.abstrak | sort: 'weight' %}{% for post in posts %}
+{% assign posts = site.posts | sort: 'weight' %}{% for post in posts %}
                     <div class="col-md-4">
                         <div class="templatemo-service-item" >
                             <div>
@@ -28,4 +28,3 @@
                 </div>
             </div>
         </div>
-{% assign posts = site.posts.abstrak | sort: 'weight' %}{% for post in posts %}<p>{{ post.excerpt }}</p>{% endfor %}
