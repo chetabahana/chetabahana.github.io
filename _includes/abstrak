@@ -10,7 +10,7 @@
         <div class="templatemo-service">
             <div class="container">
                 <div class="row">
-{% assign posts = site.posts | sort: 'weight' %}{% for post in posts %}
+{% assign posts = site.posts | sort: 'weight' %}{% for post in posts %}{% if post.category == "abstrak" %}
                     <div class="col-md-4">
                         <div class="templatemo-service-item" >
                             <div>
@@ -24,7 +24,7 @@
                             <br class="clearfix"/>
                         </div>
                     </div>
-{% endfor %}                    
+{% endif %}{% endfor %}                    
                 </div>
             </div>
         </div>
