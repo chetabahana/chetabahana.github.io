@@ -13,8 +13,8 @@
                     <div class="col-sm-5 col-md-6 blog_post">
                         <ul itemscope itemtype="http://schema.org/Article" class="list-inline">
                             <li class="col-md-4">
-				<span>Fase-{{ post.weight }}</span><br>
-				<span>Tutorial Video</span>
+				<span class="blog_header">Fase-{{ post.weight }}</span><br>
+				<span>Tutorial PlayList</span>
 				<iframe allowfullscreen="" src="https://www.youtube.com/embed/?listType=playlist&list={{ post.src }}" frameborder="0" id="promo_video"></iframe>	
 				<span><img src="https://img.shields.io/badge/repo-1-green.svg">&nbsp;<img src="https://img.shields.io/badge/wiki-1-green.svg">&nbsp;<img src="https://img.shields.io/badge/i/o-1-green.svg"></span>
                             </li>
