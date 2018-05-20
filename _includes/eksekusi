@@ -23,7 +23,7 @@
                             </li>
                             <li  class="col-md-8">
                                 <div class="pull-left">
-                                    <span class="blog_header"><a class="link_darkgrey" href="{{ page.blogpost_item1_link }}"><span itemprop="headline" class="txt_darkgrey">{{ page.blogpost_item1_title }}</span></a></span><br/>
+                                    <span class="blog_header"><a class="link_darkgrey" href="{{ post.href }}"><span itemprop="headline" class="txt_darkgrey">{{ post.title }}</span></a></span><br/>
                                     <span>Hosted by : <a class="link_blue" href="http://toko.chetabahana.com/"><span itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">google.com</span></span></a></span>
                                 </div>
                                 <div class="pull-right">
