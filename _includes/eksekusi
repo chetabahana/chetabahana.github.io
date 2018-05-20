@@ -34,7 +34,7 @@
                                 <meta itemprop="datePublished" content="2015-09-06T08:00:00+18:42"/>
                             </li>
                         </ul>
-                    </div> <!-- /.blog_post 1 -->
+                    </div> <!-- /.blog_post {{ post.weight }} -->
 {% endif %}{% endfor %}                     
                     <div class="col-sm-5 col-md-6 blog_post">
                         <ul itemscope itemtype="http://schema.org/Article" class="list-inline">
