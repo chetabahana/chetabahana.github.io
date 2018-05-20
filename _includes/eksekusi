@@ -9,12 +9,13 @@
                     <br class="clearfix"/>
                 </div>
                 <div class="blog_box">
+{% assign posts = site.posts | sort: 'weight' %}{% for post in posts %}{% if post.path contains item.title %}		
                     <div class="col-sm-5 col-md-6 blog_post">
                         <ul itemscope itemtype="http://schema.org/Article" class="list-inline">
                             <li class="col-md-4">
 				<span>Fase Pertama</span><br>
 				<span>Tutorial Video</span>
-				<iframe allowfullscreen="" src="https://www.youtube.com/embed/?listType=playlist&list=PLYRlcwn4Yj9ei8ADky6GsUvNuZxXozt6O" frameborder="0" id="promo_video"></iframe>	
+				<iframe allowfullscreen="" src="https://www.youtube.com/embed/?listType=playlist&list={{ post.src }}" frameborder="0" id="promo_video"></iframe>	
 				<span>Repo - Wiki - Situs</span>
                                 <!-- a href="{{ page.blogpost_item1_link }}">
                                     <img itemprop="image" class="img-thumbnail" src="{{ page.blogpost_item1_image }}" alt="{{ page.blogpost_item1_title }}" />
@@ -29,12 +30,12 @@
                                     <a class="btn btn-orange" href="https://github.com/MarketLeader/Toko-Chetabahana/wiki" role="button"><span itemprop="articleSection">Explore Wiki</span></a>
                                 </div>
                                 <div class="clearfix"> </div>
-                                <p itemprop="articleBody" class="blog_text">{{ page.blogpost_item1_description }}</p>
+                                <p itemprop="articleBody" class="blog_text">{{ post.excerpt }}</p>
                                 <meta itemprop="datePublished" content="2015-09-06T08:00:00+18:42"/>
                             </li>
                         </ul>
                     </div> <!-- /.blog_post 1 -->
-                    
+{% endif %}{% endfor %}                     
                     <div class="col-sm-5 col-md-6 blog_post">
                         <ul itemscope itemtype="http://schema.org/Article" class="list-inline">
                             <li class="col-md-4"><a href="{{ page.blogpost_item2_link }}">
