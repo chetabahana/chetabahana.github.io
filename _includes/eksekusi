@@ -14,7 +14,7 @@
                         <ul itemscope itemtype="http://schema.org/Article" class="list-inline">
                             <li class="col-md-4">
 				<span class="blog_header">Fase-{{ post.weight }}</span><br>
-				<a href"https://www.youtube.com/embed/?listType=playlist&list={{ post.src }}"=><span>Tutorial PlayList</span></a>
+				<a href="https://www.youtube.com/embed/?listType=playlist&list={{ post.src }}"><span>Tutorial PlayList</span></a>
 				<iframe allowfullscreen="" src="https://www.youtube.com/embed/?listType=playlist&list={{ post.src }}" frameborder="0" id="promo_video"></iframe>	
 				<span><a href="{{ post.href }}"><img src="https://img.shields.io/badge/repo-1-green.svg"></a>&nbsp;<a href="{{ post.href }}/wiki"><img src="https://img.shields.io/badge/wiki-1-green.svg"></a>&nbsp;<a href="{{ post.link }}"><img src="https://img.shields.io/badge/i/o-1-green.svg"></span></a>
                             </li>
