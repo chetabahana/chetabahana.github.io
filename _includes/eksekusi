@@ -16,7 +16,7 @@
 				<span>Fase-{{ post.weight }}</span><br>
 				<span>Tutorial Video</span>
 				<iframe allowfullscreen="" src="https://www.youtube.com/embed/?listType=playlist&list={{ post.src }}" frameborder="0" id="promo_video"></iframe>	
-				<span><img src="https://img.shields.io/badge/repo-1-green.svg"> <img src="https://img.shields.io/badge/wiki-1-green.svg"> <img src="https://img.shields.io/badge/web-1-green.svg"></span>
+				<span><img src="https://img.shields.io/badge/repo-1-green.svg"> <img src="https://img.shields.io/badge/wiki-1-green.svg"> <img src="https://img.shields.io/badge/io-1-green.svg"></span>
                             </li>
                             <li  class="col-md-8">
                                 <div class="pull-left">
