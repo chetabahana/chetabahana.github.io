@@ -1,7 +1,6 @@
 ---
 title: "objective"
 weight: 1
-category: "abstrak"
 src: images/leaf.png
 href: https://chetabahana.github.io/
 ---
