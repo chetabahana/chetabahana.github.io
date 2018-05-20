@@ -13,10 +13,10 @@
                     <div class="col-sm-5 col-md-6 blog_post">
                         <ul itemscope itemtype="http://schema.org/Article" class="list-inline">
                             <li class="col-md-4">
-				<span class="blog_header">Fase-{{ post.weight }}</span><br>
+				<a href="https://marketleader.github.io/{{ post.href }}" class="external-link" target="_blank"><span class="blog_header">Fase-{{ post.weight }}</span></a><br>
 				<a href="https://www.youtube.com/embed/?listType=playlist&list={{ post.src }}" class="external-link" target="_blank"><span>Tutorial PlayList</span></a>
 				<iframe allowfullscreen="" src="https://www.youtube.com/embed/?listType=playlist&list={{ post.src }}" frameborder="0" id="promo_video"></iframe>	
-				<span><a href="{{ post.href }}" class="external-link" target="_blank"><img src="https://img.shields.io/badge/repo-1-green.svg"></a>&nbsp;<a href="{{ post.href }}/wiki" class="external-link" target="_blank"><img src="https://img.shields.io/badge/wiki-1-green.svg"></a>&nbsp;<a href="{{ post.link }}" class="external-link" target="_blank"><img src="https://img.shields.io/badge/i/o-1-green.svg"></span></a>
+				<span><a href="https://github.com/MarketLeader/{{ post.href }}" class="external-link" target="_blank"><img src="https://img.shields.io/badge/repo-1-green.svg"></a>&nbsp;<a href="https://github.com/MarketLeader/{{ post.href }}/wiki" class="external-link" target="_blank"><img src="https://img.shields.io/badge/wiki-1-green.svg"></a>&nbsp;<a href="{{ post.link }}" class="external-link" target="_blank"><img src="https://img.shields.io/badge/i/o-1-green.svg"></span></a>
                             </li>
                             <li  class="col-md-8">
                                 <div class="pull-left">
@@ -24,7 +24,7 @@
                                     <span>Hosted by : <a href="{{ post.link }}" class="external-link" target="_blank"><span itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">{{ post.host }}</span></span></a></span>
                                 </div>
                                 <div class="pull-right">
-                                    <a class="btn btn-orange external-link" href="{{ post.href }}/wiki" role="button" target="_blank"><span itemprop="articleSection">Explore Wiki</span></a>
+                                    <a class="btn btn-orange external-link" href="https://github.com/MarketLeader/{{ post.href }}/wiki" role="button" target="_blank"><span itemprop="articleSection">Explore Wiki</span></a>
                                 </div>
                                 <div class="clearfix"> </div>
                                 <p itemprop="articleBody" class="blog_text">{{ post.excerpt }}</p>
