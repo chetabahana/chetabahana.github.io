@@ -28,3 +28,4 @@
                 </div>
             </div>
         </div>
+{% assign posts = site.posts.abstrak | sort: 'weight' %}{% for post in posts %}<p>{{ post.excerpt }}</p>{% endfor %}
