@@ -123,7 +123,6 @@ function jsSequence() {
   });  
 }
 
-
 //rairoad-diagrams
 function jsRailroad() {console.log("jsRailroad");
 
