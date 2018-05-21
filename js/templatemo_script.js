@@ -107,7 +107,7 @@ var feed = new Instafeed({
 });
 
 /* bind the load more button*/
-$('#loadmore').addEventListener('click', function() {
+$('#loadmore').bind('click', function() {
   feed.next();
 });
 
