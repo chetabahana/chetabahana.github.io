@@ -27,10 +27,10 @@ var feed = new Instafeed({
   }
 });
 
-// bind the load more button
+/* bind the load more button
 loadButton.addEventListener('click', function() {
   feed.next();
-});
+});*/
 
 // run instafeed!
 feed.run();
