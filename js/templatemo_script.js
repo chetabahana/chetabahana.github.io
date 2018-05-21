@@ -1,48 +1,3 @@
-var top_menu_height = 0;
-var loadButton = document.getElementById('load-more');
-var feed = new Instafeed({
-    get: 'user',
-    limit: 11,
-    sortBy:'most-recent',
-    userId: 6982272811,
-    resolution: 'standard_resolution',
-    accessToken: '6982272811.1677ed0.b6dcfc26877b4ad3854d1a276fdf4de6',
-    template: '<div><a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="insta-likes"><div style="display: table; vertical-align: middle; height: 100%; width: 100%;"><span style="vertical-align: middle; height: 100%; width: 100%;">{{likes}} <i class="fa fa-heart"></i><br/>{{comments}} <i class="fa fa-comment"></i></span></div></div></a></div>',
-  
-  after: function() {
- 
-    // run slick for scrolling
-    $('#instafeed').slick({
-      slidesToShow: 6,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2000,
-    });
-  
-    // every time we load more, run this function
-    if (!this.hasNext()) {
-     // disable button if no more results to load
-     loadButton.setAttribute('disabled', 'disabled');
-    }
-  }
-});
-
-/* bind the load more button*/
-loadButton.addEventListener('click', function() {
-  feed.next();
-});
-
-// run instafeed!
-feed.run();
-
-// scroll animation 
-function scrollTo(selectors)
-{
-    if(!$(selectors).length) return;
-    var selector_top = $(selectors).offset().top - top_menu_height;
-    $('html,body').animate({ scrollTop: selector_top }, 'slow');
-}
-
 jQuery(function($) {
     
     $(window).on('load', function(){        
@@ -113,4 +68,71 @@ jQuery(function($) {
 	    
     });
 });
+
+// scroll animation 
+var top_menu_height = 0;
+function scrollTo(selectors)
+{
+    if(!$(selectors).length) return;
+    var selector_top = $(selectors).offset().top - top_menu_height;
+    $('html,body').animate({ scrollTop: selector_top }, 'slow');
+}
+
+//instafeed
+var feed = new Instafeed({
+    get: 'user',
+    limit: 11,
+    sortBy:'most-recent',
+    userId: 6982272811,
+    resolution: 'standard_resolution',
+    accessToken: '6982272811.1677ed0.b6dcfc26877b4ad3854d1a276fdf4de6',
+    template: '<div><a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="insta-likes"><div style="display: table; vertical-align: middle; height: 100%; width: 100%;"><span style="vertical-align: middle; height: 100%; width: 100%;">{{likes}} <i class="fa fa-heart"></i><br/>{{comments}} <i class="fa fa-comment"></i></span></div></div></a></div>',
+  
+  after: function() {
+ 
+    // run slick for scrolling
+    $('#instafeed').slick({
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+  
+    // every time we load more, run this function
+    if (!this.hasNext()) {
+     // disable button if no more results to load
+     $('#loadmore').setAttribute('disabled', 'disabled');
+    }
+  }
+});
+
+/* bind the load more button*/
+$('#loadmore').addEventListener('click', function() {
+  feed.next();
+});
+
+// run instafeed!
+feed.run();
+
+//juicer
+function updateFilters() {
+
+    $('.j-image>img').css({'height':'100px','width':'100px'}); 
+    var feeds = $('.j-image');
+    $('.juicer-feed').html('');
+
+    $.each(feeds, function(key, value) {
+	var pdiv = $("<li>").append(value );
+	$('.juicer-feed').append(pdiv);  
+    });
+
+    $('.juicer-feed').slick({
+	slidesToShow: 6,
+	slidesToScroll: 1,
+	autoplay: true,
+	autoplaySpeed: 2000,
+    });   
+  }
+		
+
 
