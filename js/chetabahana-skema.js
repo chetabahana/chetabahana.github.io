@@ -20,7 +20,7 @@ function jsSequence() {
 
   $.getScript($.urlS, function( data, textStatus, jqxhr ) {
 
-  $.printed = false;
+  $.printed = false; $.juicer = false;
 
   var editor = ace.edit($(".editor").get(0));
   editor.setTheme("ace/theme/crimson_editor");
@@ -99,10 +99,12 @@ function jsSequence() {
     //finallyCode - Block of code to be executed regardless of the try / catch result
 	
     //avoid confict with juicer
-        $.getScript("https://assets.juicer.io/embed.js").done(function(script, textStatus) {
-            console.log("finished loading and running https://assets.juicer.io/embed.js with a status of " + $.juicer + textStatus);
-	
-        });
+	if(!$.juicer){   
+	   $.getScript("https://assets.juicer.io/embed.js").done(function(script, textStatus) {
+	       //console.log("finished loading and running https://assets.juicer.io/embed.js with a status of " + $.juicer + textStatus);
+	       $.juicer = true;
+	   });
+	}			
     }		
 	
   }
