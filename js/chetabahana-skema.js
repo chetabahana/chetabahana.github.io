@@ -55,7 +55,7 @@ function jsSequence() {
         });
 
         $(element).click(function(evt) {
-          jsRailroad($.urlR);
+          jsRailroad();
         });
       }
 
@@ -125,9 +125,9 @@ function jsSequence() {
 
 
 //rairoad-diagrams
-function jsRailroad(url) {console.log(url);
+function jsRailroad() {console.log("jsRailroad");
 
-  $.getScript(url).done(function(script, textStatus) {console.log(textStatus);
+  $.getScript("https://chetabahana.github.io/diagrams/railroad-diagrams.js").done(function(script, textStatus) {console.log(textStatus);
 
     var input = find('.input').value;
     try {
