@@ -36,7 +36,7 @@ function jsSequence() {
 
 		} else if (val != 'printed') {
 
-			var op = $(".theme").find('option');
+      var op = $(".theme").find('option');
       if (val == 'simple') op[2].disabled = false;
       else op[2].disabled = true;
 
@@ -85,13 +85,25 @@ function jsSequence() {
         row: 0,
         text: err.message
       };
+	  
       if (err instanceof Diagram.ParseError) {
         annotation.row = err.loc.first_line - 1;
         annotation.column = err.loc.first_column;
       }
+	  
       editor.getSession().setAnnotations([annotation]);
+      console.log("catch (err)" + err);
       throw err;
-    }
+	  
+    } finally {
+    //finallyCode - Block of code to be executed regardless of the try / catch result
+	
+    //avoid confict with juicer
+        $.getScript("https://assets.juicer.io/embed.js").done(function(script, textStatus) {
+            console.log("finished loading and running https://assets.juicer.io/embed.js with a status of" + textStatus);
+        });
+    }		
+	
   }
 
   // setup download link
