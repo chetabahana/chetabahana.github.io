@@ -14,10 +14,10 @@ function initialProcess() {
     }
 
     //avoid confict with juicer
-    $.getScript("https://assets.juicer.io/embed.js").done(function(script, textStatus) {
+    //$.getScript("https://assets.juicer.io/embed.js").done(function(script, textStatus) {
         //console.log("finished loading and running test.js. with a status of" + textStatus);
         jsSequence();
-    });
+    //});
 }
 
 // js-sequence diagram
