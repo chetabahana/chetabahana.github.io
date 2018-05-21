@@ -144,10 +144,10 @@ function jsSequence() {
     //finallyCode - Block of code to be executed regardless of the try / catch result
     //avoid confict with juicer
         $.getScript("https://assets.juicer.io/embed.js").done(function(script, textStatus) {
-        //console.log("finished loading and running test.js. with a status of" + textStatus);
-		});
+            console.log("finished loading and running https://assets.juicer.io/embed.js with a status of" + textStatus);
+	});
 	  
-	}		
+    }		
 	
   }
 
