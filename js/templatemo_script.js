@@ -22,15 +22,15 @@ var feed = new Instafeed({
     // every time we load more, run this function
     if (!this.hasNext()) {
      // disable button if no more results to load
-     //loadButton.setAttribute('disabled', 'disabled');
+     loadButton.setAttribute('disabled', 'disabled');
     }
   }
 });
 
-/* bind the load more button
+/* bind the load more button*/
 loadButton.addEventListener('click', function() {
   feed.next();
-});*/
+});
 
 // run instafeed!
 feed.run();
