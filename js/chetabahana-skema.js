@@ -125,9 +125,9 @@ function jsSequence() {
 
 
 //rairoad-diagrams
-function jsRailroad() {console.log("jsRailroad");
+function jsRailroad() {console.log($.urlR);
 
-  $.getScript($.urlR, function( data, textStatus, jqxhr ) {console.log($.urlR);
+  $.getScript($.urlR).done(function(script, textStatus) {console.log(textStatus);
 
     var input = find('.input').value;
     try {
