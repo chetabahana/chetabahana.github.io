@@ -69,6 +69,7 @@ Here are the URLs as samples that pointing to our [forked projects](https://gith
 - Setup GitHub Pages branchs: https://gist.github.com/chrisjacob/833223  
 - Using Jekyll https://mademistakes.com/articles/using-jekyll-2016/
 - Using Liquid in Jekyll: https://flinhong.com/2016/08/20/using-liquid-in-jekyll/
+- GitHub GraphQL API: https://developer.github.com/v4/explorer/
 
 ## License
 Project ini dipublikasikan dengan lisensi berikut:  
