@@ -12,7 +12,6 @@ function initialProcess() {
     var content = decodeURIComponent(location.hash.substr(1));
     find('.editor').textContent = content;
     }
-
     jsSequence();
 }
 
@@ -92,15 +91,8 @@ function jsSequence() {
       }
       editor.getSession().setAnnotations([annotation]);
       throw err;
-	  
-    } finally {
-    //finallyCode - Block of code to be executed regardless of the try / catch result
-    //avoid confict with juicer
-        $.getScript("https://assets.juicer.io/embed.js").done(function(script, textStatus) {
-        //console.log("finished loading and running test.js. with a status of" + textStatus);
-		});
-	  
-	}
+    }
+  }
 
   // setup download link
   $('.download').click(function(ev) {
