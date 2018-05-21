@@ -55,7 +55,7 @@ function jsSequence() {
         });
 
         $(element).click(function(evt) {
-          jsRailroad();
+          jsRailroad($.urlR);
         });
       }
 
@@ -125,9 +125,9 @@ function jsSequence() {
 
 
 //rairoad-diagrams
-function jsRailroad() {console.log($.urlR);
+function jsRailroad(url) {console.log(url);
 
-  $.getScript($.urlR).done(function(script, textStatus) {console.log(textStatus);
+  $.getScript(url).done(function(script, textStatus) {console.log(textStatus);
 
     var input = find('.input').value;
     try {
