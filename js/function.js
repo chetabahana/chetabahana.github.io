@@ -39,8 +39,13 @@ function updateFilters() {console.log('pdiv');
 
   for(var index in obj) {
     if (obj[index].tagName == 'A') {
+
       var img = obj[index].getElementsByTagName('img')[0];
-      img.style.widht = "100px"; img.style.height = "100px";
+      if(img && img.style) {
+          img.style.height = '100px';
+          img.style.width = '100px';
+      }
+
       var node = document.createElement('div');
       node.appendChild(obj[index]);
       feeds.appendChild(node);  
