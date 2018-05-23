@@ -30,7 +30,7 @@ var disqus_config = function() {
 
 
 //juicer plugin
-function updateFilters() {
+function updateFilters() {console.log('pdiv');
 
   var feeds = document.getElementById("feeds");
   var obj = feeds.querySelectorAll('.j-image');
@@ -44,7 +44,6 @@ function updateFilters() {
       var node = document.createElement('div');
       var pdiv = node.appendChild(obj[index]);
       feeds.appendChild(pdiv);  
-      //console.log(pdiv);
     }
   };
 }  
