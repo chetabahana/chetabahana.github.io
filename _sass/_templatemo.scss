@@ -484,7 +484,7 @@ h4:before, h4:after {
     padding-right:15px
 }
 
-.tweet_txt {
+.feeds_txt {
     border-left:2px solid #ffffff; 
     min-height:160px;
     width: 600px;
@@ -667,7 +667,7 @@ ul.templatemo-project-gallery  li  a img:hover {
   cursor: pointer;
 }
 
-.templatemo-tweets {
+.templatemo-feeds {
     background-color: #8996a0;
     min-height:200px;
     font-family:  'Open Sans', sans-serif;
@@ -675,7 +675,7 @@ ul.templatemo-project-gallery  li  a img:hover {
     color:#ffffff;
 }
 
-.templatemo-tweets .row {
+.templatemo-feeds .row {
     margin-top: 20px;   
     margin-bottom: 20px;   
 }
@@ -730,7 +730,6 @@ ul.templatemo-project-gallery  li  a img:hover {
 	
 }
 
-
 @media (max-width:991px) {
     .team-inner {
         margin-top: 20px;
@@ -762,7 +761,6 @@ ul.templatemo-project-gallery  li  a img:hover {
        margin-right: -140px;
     }
 }
-
 
 @media (min-width: 768px) {
   .navbar-nav > li > a {
