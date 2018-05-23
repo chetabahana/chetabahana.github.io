@@ -27,4 +27,4 @@
 {% endif %}{% endfor %}                    
                 </div>
             </div><!-- /container -->
-        </div><!-- /welcome -->
+        </div><!-- /{{ item.title }} -->
