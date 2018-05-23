@@ -41,8 +41,8 @@ function updateFilters() {console.log('pdiv');
     if (obj[index].tagName == 'A') {
       var img = obj[index].getElementsByTagName('img')[0];
       img.style.widht = "100px"; img.style.height = "100px";
-      var node = document.createElement('div');
-      var pdiv = node.appendChild(obj[index]);
+      var node = document.createElement('div');console.log(node);
+      var pdiv = node.appendChild(obj[index]);console.log(pdiv);
       feeds.appendChild(pdiv);  
     }
   };
