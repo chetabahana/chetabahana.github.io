@@ -17,7 +17,7 @@
                                 <a href="{{ post.href }}" class="external-link" target="_blank"><img src="{{ post.src }}" alt="icon"/></a>
                                 <span class="templatemo-service-item-header">{{ post.title }}</span>
                             </div>
-                            <p>{{ post.excerpt }}</p>
+                            {{ post.excerpt }}
                             <div class="text-center">
                                 <a href="#templatemo-blog" class="templatemo-btn-read-more btn btn-orange">Read More</a>
                             </div>
@@ -26,5 +26,5 @@
                     </div>
 {% endif %}{% endfor %}                    
                 </div>
-            </div>
-        </div>
+            </div><!-- /container -->
+        </div><!-- /welcome -->
