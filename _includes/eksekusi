@@ -35,4 +35,4 @@
 {% endif %}{% endfor %}                     
                </div>
             </div>
-        </div>
+        </div><!-- /{{ item.title }}-->
