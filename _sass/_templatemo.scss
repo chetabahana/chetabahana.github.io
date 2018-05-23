@@ -494,7 +494,7 @@ h4:before, h4:after {
     overflow: hidden;
 }
 
-#instafeed {
+#feeds {
     width: 1200px;
     display: block;
     margin: 0;
@@ -504,7 +504,7 @@ h4:before, h4:after {
     overflow: hidden;
 }
 
-#instafeed div {
+#feeds div {
     float: left;
     width: 50%;
     display: inline-block;
@@ -513,8 +513,8 @@ h4:before, h4:after {
 }
 
 #instafeed img {
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
 }
 
 #instafeed .insta-likes {
