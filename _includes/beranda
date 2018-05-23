@@ -48,8 +48,8 @@
                         </div><!--/.nav-collapse -->
                     </div><!--/.container-fluid -->
                 </div><!--/.navbar -->
-            </div> <!-- /container -->
-        </div>
+            </div><!-- /container -->
+        </div><!-- /top-menu -->
         
         <div class="templatemo-slide">
             <!-- Carousel https://stackoverflow.com/a/50276864/4058484 -->
