@@ -23,4 +23,4 @@
                     </div>
                 </div><!-- /.row -->
             </div><!-- /.container -->
-        </div><!-- /#templatemo-contact -->
+        </div><!-- /{{ item.title }}-->
