@@ -98,13 +98,13 @@ function jsSequence() {
     } finally {
     //finallyCode - Block of code to be executed regardless of the try / catch result
 	
-    //avoid confict with juicer
+    /*avoid confict with juicer
 	if(!$.juicer){   
 	   $.getScript("https://assets.juicer.io/embed.js").done(function(script, textStatus) {
 	       //console.log("finished loading and running https://assets.juicer.io/embed.js with a status of " + $.juicer + textStatus);
 	       $.juicer = true;
 	   });
-	}			
+	}*/			
     }		
 	
   }
