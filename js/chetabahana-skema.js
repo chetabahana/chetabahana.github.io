@@ -126,7 +126,7 @@ function jsSequence() {
 //rairoad-diagrams
 function jsRailroad() {console.log("jsRailroad");
 
-  $.getScript("https://chetabahana.github.io/diagrams/railroad-diagrams.js").done(function(script, textStatus) {console.log(textStatus);
+  $.getScript($.urlR).done(function(script, textStatus) {console.log(textStatus);
 
     var input = find('.input').value;
     try {
