@@ -13,9 +13,6 @@ jQuery(function($) {
             return false;
 	}	    
 
-        // chetabahana-portfolio https://stackoverflow.com/a/50299022/4058484
-        $(".templatemo-project-gallery").simplyScroll(); 
-	    
         // scroll spy to auto active the nav item
         top_menu_height = $('.templatemo-top-menu').height();
         $('body').scrollspy({ target: '#templatemo-nav-bar', offset: top_menu_height + 10 });
@@ -66,6 +63,10 @@ jQuery(function($) {
             $(linkClass).fadeIn();  
         });
 	    
+        // chetabahana-portfolio https://stackoverflow.com/a/50299022/4058484
+        $(".templatemo-project-gallery").simplyScroll(); 
+        $('.juicer-feed').slick({slidesToShow: 6, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2000, });	    
+	    
     });
 });
 
@@ -112,54 +113,4 @@ $('#loadmore').bind('click', function() {
 });
 
 // run instafeed!
-feed.run();
-
-//juicer
-function updateFilters() {
-
-    $('.j-image>img').css({'height':'100px','width':'100px'}); 
-    var feeds = $('.j-image');
-    $('.juicer-feed').html('');
-
-    $.each(feeds, function(key, value) {
-	var pdiv = $("<li>").append(value );
-	$('.juicer-feed').append(pdiv);  
-    });
-
-    $('.juicer-feed').slick({
-	slidesToShow: 6,
-	slidesToScroll: 1,
-	autoplay: true,
-	autoplaySpeed: 2000,
-    });   
-  }
-		
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-
-var disqus_config = function () {
-this.page.url = 'https://chetabahana.github.io/';  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = ''; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://chetabahana.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-
-// Adds the onNewComment callback to the disqus_config of the embed code
-// that sends 'New Comment' events over to Google Analytics.
-// The callback can also be used for any other analytics service like Parse.ly, Chartbeat, Mixpanel
-var disqus_config = function() {
-	this.callbacks.onNewComment = [function(comment) {
-		  ga('send', {
-		'hitType': 'event',            // Required.
-		'eventCategory': 'Comments',   // Required.
-		'eventAction': 'New Comment',  // Required.
-		'eventLabel': 'New Comment'
-	});
-}];
-};		
+feed.run();	
