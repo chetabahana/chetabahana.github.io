@@ -18,13 +18,13 @@ s.setAttribute('data-timestamp', +new Date());
 // that sends 'New Comment' events over to Google Analytics.
 // The callback can also be used for any other analytics service like Parse.ly, Chartbeat, Mixpanel
 var disqus_config = function() {
-	this.callbacks.onNewComment = [function(comment) {
-		  ga('send', {
-		'hitType': 'event',            // Required.
-		'eventCategory': 'Comments',   // Required.
-		'eventAction': 'New Comment',  // Required.
-		'eventLabel': 'New Comment'
-	});
+  this.callbacks.onNewComment = [function(comment) {
+    ga('send', {
+    'hitType': 'event',            // Required.
+    'eventCategory': 'Comments',   // Required.
+    'eventAction': 'New Comment',  // Required.
+    'eventLabel': 'New Comment'
+  });
 }];
 };		
 
