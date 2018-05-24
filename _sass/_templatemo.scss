@@ -493,7 +493,6 @@ h4:before, h4:after {
 }
 
 #feeds {
-    width: 1200px;
     display: block;
     margin: 0;
     padding: 0;
@@ -502,9 +501,9 @@ h4:before, h4:after {
     overflow: hidden;
 }
 
-#instafeed div {
+#feeds .feed {
     float: left;
-    width: 50%;
+    width: 100px;
     display: inline-block;
     margin: 0!important;
     padding: 0!important;
