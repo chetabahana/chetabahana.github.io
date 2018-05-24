@@ -46,7 +46,7 @@ function updateFilters() {console.log('pdiv');
           img.style.width = '100px';
       }
 
-      var node = document.createElement('div');
+      var node = document.createElement('div').setAttribute('class', 'feed');
       node.appendChild(obj[index]);
       feeds.appendChild(node);  
       //console.log(pdiv);
