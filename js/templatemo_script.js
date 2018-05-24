@@ -65,7 +65,7 @@ jQuery(function($) {
 	    
         // chetabahana-portfolio https://stackoverflow.com/a/50299022/4058484
         $(".templatemo-project-gallery").simplyScroll(); 
-        $('#feeds').slick({slidesToShow: 6, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2000});	    
+        $('#feeds').slick({slidesToShow: 5, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2000});	    
 	    
     });
 });
@@ -82,7 +82,7 @@ function scrollTo(selectors)
 //instafeed
 var feed = new Instafeed({
     get: 'user',
-    limit: 11,
+    limit: 60,
     sortBy:'most-recent',
     userId: 6982272811,
     resolution: 'standard_resolution',
@@ -92,12 +92,7 @@ var feed = new Instafeed({
   after: function() {
  
     // run slick for scrolling
-    $('#instafeed').slick({
-      slidesToShow: 6,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2000,
-    });
+    $('#instafeed').slick({slidesToShow: 15, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2000});
   
     // every time we load more, run this function
     if (!this.hasNext()) {
