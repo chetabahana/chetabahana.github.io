@@ -65,7 +65,7 @@ jQuery(function($) {
 	    
         // chetabahana-portfolio https://stackoverflow.com/a/50299022/4058484
         $(".templatemo-project-gallery").simplyScroll(); 
-        //$('#feeds').slick({slidesToShow: 5, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2000});	    
+        $('#feeds').slick({slidesToShow: 5, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2000});	    
 	    
     });
 });
