@@ -18,7 +18,7 @@
                                     <div class="col-md-7 feeds_txt"> 
 					<span>Tentang Kami:<br><a class="vglnk" href="https://chetabahana.com">Chetabahana.com</a> | Situs Belanja Jual-Beli Barang & Promo Aneka Produk Fashion, Busana Muslim, Bayi & Anak-anak, Kecantikan, Tas, Sepatu, Peralatan Rumah Tangga, Elektronik, Makanan & Minuman Kemasan, dll. Soon The E-Shop Market Leader Will Be Owned Here! </span>
 					<ul id="feeds"><ul class="juicer-feed" data-feed-id="chetabahana" data-after="updateFilters()"></ul></ul>
-					<a href="http://bufferapp.com/add" class="buffer-add-button" data-count="vertical" data-via="chetabahana">
+					<!-- a href="http://bufferapp.com/add" class="buffer-add-button" data-count="vertical" data-via="chetabahana" -->
                                     </div>
                                     <div class="col-md-2"></div>
 				 </div><!-- /.row -->
