@@ -30,7 +30,7 @@ var disqus_config = function() {
 
 
 //juicer plugin
-function updateFilters() {console.log('pdiv');
+function updateFilters() {
 
   var feeds = document.getElementById("feeds");
   var obj = feeds.querySelectorAll('.j-image');
@@ -46,7 +46,7 @@ function updateFilters() {console.log('pdiv');
           img.style.width = '100px';
       }
 
-      var node = document.createElement('div');
+      var node = document.createElement('li');
       node.setAttribute('class', 'feed');
       node.appendChild(obj[index]);
       feeds.appendChild(node);  
