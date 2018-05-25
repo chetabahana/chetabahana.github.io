@@ -97,7 +97,7 @@ var feed = new Instafeed({
     // every time we load more, run this function
     if (!this.hasNext()) {
      // disable button if no more results to load
-     $('#loadmore').setAttribute('disabled', 'disabled');
+     $('#loadmore').attr("disabled", 'disabled');
     }
   }
 });
