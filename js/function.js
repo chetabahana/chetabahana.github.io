@@ -45,12 +45,7 @@ function updateFilters() {
           img.style.height = '100px';
           img.style.width = '100px';
       }
-
-      var node = document.createElement('li');
-      node.setAttribute('class', 'feed');
-      node.appendChild(obj[index]);
-      feeds.appendChild(node);  
-      //console.log(pdiv);
+      feeds.appendChild(obj[index]); 
     }
   };
 }  
