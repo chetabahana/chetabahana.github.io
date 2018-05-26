@@ -10,8 +10,8 @@
                 <div class="clearfix"> </div>
                     <ul class="row row_team">
                         <li class="col-lg-3 col-md-3 col-sm-6 ">
-                            <div class="text-center">
-                                <div class="team-inner">
+                            <div>
+                                <div class="team-inner text-center">
                                     <p class="team-inner-header"><a href="https://about.me/{{ page.team1_header }}">{{ page.team1_header }}</a></p>
                                     <p class="team-inner-subtext">{{ page.team1_subtext }}</p>
                                 </div>
@@ -23,8 +23,8 @@
                             </div>
                         </li>
                         <li class="col-lg-3 col-md-3 col-sm-6 ">
-                            <div class="text-center">
-                                <div class="team-inner">
+                            <div>
+                                <div class="team-inner text-center">
                                     <p class="team-inner-header"><a href="https://about.me/{{ page.team2_header }}">{{ page.team2_header }}</a></p>
                                     <p class="team-inner-subtext">{{ page.team2_subtext }}</p>
                                 </div>
@@ -34,8 +34,8 @@
                             </div>
                         </li>
                         <li class="col-lg-3 col-md-3 col-sm-6 ">
-                            <div class="text-center">
-                                <div class="team-inner">
+                            <div>
+                                <div class="team-inner text-center">
                                     <p class="team-inner-header"><a href="https://about.me/{{ page.team3_header }}">{{ page.team3_header }}</a></p>
                                     <p class="team-inner-subtext">{{ page.team3_subtext }}</p>
                                 </div>
@@ -45,8 +45,8 @@
                             </div>
                         </li>
                         <li class="col-lg-3 col-md-3 col-sm-6 ">
-                            <div class="text-center">
-                                <div class="team-inner">
+                            <div>
+                                <div class="team-inner text-center">
                                     <p class="team-inner-header"><a href="https://about.me/{{ page.team4_header }}">{{ page.team4_header }}</a></p>
                                     <p class="team-inner-subtext">{{ page.team4_subtext }}</p>
                                 </div>
