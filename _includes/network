@@ -51,7 +51,7 @@
                                     <p class="team-inner-subtext">{{ page.team4_subtext }}</p>
                                 </div>
                                 <div class="member-thumb">
-                                    <div class="g-community" data-width="255" data-href="https://plus.google.com/communities/100580130359124625791" data-showtagline="false" data-showphoto="false"></div>
+                                    <div class="g-community" data-width="255" data-href="https://plus.google.com/communities/100580130359124625791" data-showtagline="true" data-showphoto="false"></div>
                                 </div>
                             </div>
                         </li>
