@@ -97,30 +97,17 @@ function juicerFeed() {
 //instafeed
 var feed = new Instafeed({
     get: 'user',
-    limit: 60,
+    limit: 100,
     sortBy:'most-recent',
     userId: 6982272811,
     resolution: 'standard_resolution',
     accessToken: '6982272811.1677ed0.b6dcfc26877b4ad3854d1a276fdf4de6',
-    template: '<div><a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="insta-likes"><div style="display: table; vertical-align: middle; height: 100%; width: 100%;"><span style="vertical-align: middle; height: 100%; width: 100%;">{{likes}} <i class="fa fa-heart"></i><br/>{{comments}} <i class="fa fa-comment"></i></span></div></div></a></div>',
-  
+    template: '<li><a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="insta-likes"><div style="display: table; vertical-align: middle; height: 100%; width: 100%;"><span style="display: table-cell; vertical-align: middle; height: 100%; width: 100%;">{{likes}} <i class="fa fa-heart"></i><br/>{{comments}} <i class="fa fa-comment"></i></span></div></div></a></li>',
+
   after: function() {
- 
-    // run slick for scrolling
-    $('#instafeed').slick({slidesToShow: 15, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2000});
-  
-    // every time we load more, run this function
-    if (!this.hasNext()) {
-     // disable button if no more results to load
-     $('#loadmore').attr("disabled", 'disabled');
-    }
+
   }
+
 });
 
-/* bind the load more button*/
-$('#loadmore').bind('click', function() {
-  feed.next();
-});
-
-// run instafeed!
-feed.run();	
+feed.run();
