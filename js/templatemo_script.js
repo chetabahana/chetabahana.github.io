@@ -65,12 +65,12 @@ jQuery(function($) {
 	    
         // chetabahana-portfolio https://stackoverflow.com/a/50299022/4058484
         $(".templatemo-project-gallery").simplyScroll(); 
-        $('#feeds').slick({slidesToShow: 5, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2000});	    
+        juicerFeed();	    
 	    
     });
 });
 
-// scroll animation 
+// scrollTo 
 var top_menu_height = 0;
 function scrollTo(selectors)
 {
@@ -78,6 +78,21 @@ function scrollTo(selectors)
     var selector_top = $(selectors).offset().top - top_menu_height;
     $('html,body').animate({ scrollTop: selector_top }, 'slow');
 }
+
+//juicerFeed
+function juicerFeed() { 
+    if (!$('#feeds').find('a')[0]) {
+         window.requestAnimationFrame(juicerFeed);       
+    } else { 
+       $('#feeds').slick({
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          autoplay: true,
+          arrows: true,
+          autoplaySpeed: 2000,
+        });
+    }    
+  } 
 
 //instafeed
 var feed = new Instafeed({
