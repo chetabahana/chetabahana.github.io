@@ -43,6 +43,9 @@ function updateFilters() {
       if(img && img.style) {
           img.style.height = '100px';
           img.style.width = '100px';
+          img.style.float = 'left';
+          img.style.padding = 0;
+          img.style.margin = 0;           
       }
       feeds.appendChild(obj[index]); 
     }
