@@ -17,7 +17,7 @@
                                 </div>
                                 <div class="member-thumb">
                                     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fchetabahana%2F&tabs&width=250&height=140&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=347564432313610" width="250" height="140" style="border:none;overflow:hidden;background:#FFFFFF" scrolling="no" frameborder="0" allowTransparency="false" allow="encrypted-media"></iframe>
-                                    <ul class="juicer-feed" data-feed-id="chetabahana" data-after="updateFilters()"></ul><		
+                                    <div id="feeds"><ul class="juicer-feed" data-feed-id="chetabahana" data-after="updateFilters()"></ul></div>		
                                 </div>
                             </div>
                         </li>
