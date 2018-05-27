@@ -501,10 +501,21 @@ h4:before, h4:after {
     overflow: hidden;
 }
 
+#gfeeds {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    height: 25px;
+    display: block;
+    overflow: hidden;
+    background: #ffffff;
+}
+
 #instafeed {
     width: 500px;
     display: block;
     margin-top: 10px;
+    margin-left: 25px;
     line-height: 0;
 }
 
