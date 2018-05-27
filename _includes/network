@@ -51,6 +51,7 @@
                                 </div>
                                 <div class="member-thumb">
                                     <img src="images/partners/community.png">
+                                    <div id="gfeeds"><div>
                                     <div class="g-community" data-width="250" data-href="https://plus.google.com/communities/100580130359124625791" data-showtagline="true" data-showphoto="false"></div>
                                 </div>
                             </div>
