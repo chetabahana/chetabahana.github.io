@@ -98,7 +98,7 @@ var feed = new Instafeed({
     template: '<li><a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="insta-likes"><div style="display: table; vertical-align: middle; height: 100%; width: 100%;"><span style="display: table-cell; vertical-align: middle; height: 100%; width: 100%;">{{likes}} <i class="fa fa-heart"></i><br/>{{comments}} <i class="fa fa-comment"></i></span></div></div></a></li>',
 
     after: function() {
-        $('#instafeed').slick({slidesToShow: 5, slidesToScroll: 1, autoplay: true, arrows: true, autoplaySpeed: 2000});
+        $('#instafeed').slick({slidesToShow: 5, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2000});
         juicerFeed();	    
     }
 
