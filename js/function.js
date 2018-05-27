@@ -60,16 +60,19 @@ function updateFilters() {
         
           if (obj[index].hostname == 'www.facebook.com') {
                img.style.height = '50px';
-               img.style.width = '50px';
-               feeds.appendChild(obj[index]); 
+               img.style.width = '50px';               
           }
           else if (obj[index].hostname == 'plus.google.com') {
                img.style.height = '25px';
-               img.style.width = '25px';
-               document.getElementById("gfeeds").appendChild(obj[index]); 
+               img.style.width = '25px';               
           }
-        
-      }
+       }
     }
-  };
+    if (obj[index].hostname == 'www.facebook.com') {
+          feeds.appendChild(obj[index]);
+    } else if (obj[index].hostname == 'plus.google.com') {
+          document.getElementById("gfeeds").appendChild(obj[index]);
+    }        
+  }
+  
 }  
