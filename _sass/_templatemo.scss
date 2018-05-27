@@ -312,6 +312,8 @@ h4:before, h4:after {
 .member-thumb {
     position: relative;
     overflow: hidden;
+    background: #ffffff;
+    width: 250px;    	        
 }
 
 .member-thumb .thumb-overlay {
