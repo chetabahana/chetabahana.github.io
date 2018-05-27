@@ -64,8 +64,8 @@ function updateFilters() {
                feeds.appendChild(obj[index]); 
           }
           else if (obj[index].hostname == 'plus.google.com') {
-               img.style.height = '10px';
-               img.style.width = '10px';
+               img.style.height = '25px';
+               img.style.width = '25px';
                document.getElementById("gfeeds").appendChild(obj[index]); 
           }
         
