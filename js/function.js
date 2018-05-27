@@ -38,7 +38,7 @@ function updateFilters() {
   document.getElementsByClassName('juicer-feed').remove();
 
   for(var index in obj) {
-    if (obj[index].tagName == 'A') {
+    if (obj[index].tagName == 'A') {console.log(obj[index].href);
       var img = obj[index].getElementsByTagName('img')[0];
       if(img && img.style) {
           img.style.height = '100px';
