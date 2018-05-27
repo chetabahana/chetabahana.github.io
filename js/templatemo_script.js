@@ -65,7 +65,6 @@ jQuery(function($) {
 	    
         // chetabahana-portfolio https://stackoverflow.com/a/50299022/4058484
         $(".templatemo-project-gallery").simplyScroll(); 
-        juicerFeed();	    
 	    
     });
 });
@@ -104,9 +103,9 @@ var feed = new Instafeed({
     accessToken: '6982272811.1677ed0.b6dcfc26877b4ad3854d1a276fdf4de6',
     template: '<li><a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="insta-likes"><div style="display: table; vertical-align: middle; height: 100%; width: 100%;"><span style="display: table-cell; vertical-align: middle; height: 100%; width: 100%;">{{likes}} <i class="fa fa-heart"></i><br/>{{comments}} <i class="fa fa-comment"></i></span></div></div></a></li>',
 
-  after: function() {
-
-  }
+    after: function() {
+        juicerFeed();	    
+    }
 
 });
 
