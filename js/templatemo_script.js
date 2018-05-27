@@ -83,8 +83,8 @@ function juicerFeed() {
     if (!$('#gfeeds').find('a')[0] || !$('#___community_0')) {
          window.requestAnimationFrame(juicerFeed);       
     } else {
-       $('#___community_0').css({ 'margin-top': '-7px' });  
-       $('#gfeeds').slick({slidesToShow: 6, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2000});
+       $('#___community_0').css({ 'margin-top': '-8px' });  
+       $('#gfeeds').slick({slidesToShow: 7, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2000});
     }    
   } 
 
