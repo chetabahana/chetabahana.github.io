@@ -80,7 +80,7 @@ function scrollTo(selectors)
 
 //juicerFeed
 function juicerFeed() { 
-    if (!$('#gfeeds').find('a')[0]) {
+    if (!$('#gfeeds').find('a')[0] || !$('#___community_0')) {
          window.requestAnimationFrame(juicerFeed);       
     } else { 
        $('#gfeeds').slick({slidesToShow: 4, slidesToScroll: 1, autoplay: true, arrows: true, autoplaySpeed: 2000});
