@@ -38,7 +38,7 @@ function updateFilters() {
   document.getElementsByClassName('juicer-feed').remove();
 
   for(var index in obj) {
-    if (obj[index].tagName == 'A') {console.log(obj[index].hostname);
+    if (obj[index].tagName == 'A') {
       var img = obj[index].getElementsByTagName('img')[0];
       if(img && img.style) {
           img.style.height = '100px';
@@ -47,7 +47,9 @@ function updateFilters() {
           img.style.padding = 0;
           img.style.margin = 0;           
       }
-      feeds.appendChild(obj[index]); 
+      if (obj[index].hostname == 'www.facebook.com') {
+           feeds.appendChild(obj[index]); 
+      }
     }
   };
 }  
