@@ -52,8 +52,8 @@ function updateFilters() {
     if (obj[index].tagName == 'A') {
       var img = obj[index].getElementsByTagName('img')[0];
       if(img && img.style) {
-          img.style.height = '100px';
-          img.style.width = '100px';
+          img.style.height = '50px';
+          img.style.width = '50px';
           img.style.float = 'left';
           img.style.padding = 0;
           img.style.margin = 0;           
