@@ -7,8 +7,8 @@
             <div class="clearfix"></div>    
  
             <div class="container">
+                <div id="disqus_thread"></div>
                 <div class="media-container-row content">
-                     <div id="disqus_thread"></div>
                      <div class="col-md-2 col-sm-4">
 						<div class="mb-3 img-logo">
 							<a href="https://chetabahana.com/">
