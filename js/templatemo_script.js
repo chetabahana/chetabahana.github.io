@@ -84,7 +84,7 @@ function juicerFeed() {
          window.requestAnimationFrame(juicerFeed);       
     } else {
        $('#___community_0').css({ 'margin-top': '-10px' });  
-       $('#gfeeds').slick({slidesToShow: 7, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2000});
+       $('#gfeeds').slick({slidesToShow: 10, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2000});
     }    
   } 
 
