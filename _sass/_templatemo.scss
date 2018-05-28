@@ -290,7 +290,6 @@ h4:before, h4:after {
 }
 
 .templatemo-team {
-    background: url('../images/background.png') ; 
     font-family:  'Open Sans', sans-serif;
     min-height: 500px;
     color:#ffffff;
@@ -366,6 +365,7 @@ h4:before, h4:after {
 
 .row_team {
     margin-left:-50px;
+    background: url('../images/background.png') ; 
 }
 
 .row_team li {
