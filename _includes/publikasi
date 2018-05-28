@@ -1,4 +1,4 @@
-      <div class="templatemo-footer" id="templatemo-footer">
+      <div class="chetabahana-{{ item.title }}" id="chetabahana-{{ item.title }}">
             <div class="container">
                 <div class="row">
                     <div class="templatemo-line-header" >
