@@ -1,4 +1,4 @@
-         <div class="templatemo-bottom" id="templatemo-bottom">
+        <div id="chetabahana-{{ item.title }}" class="chetabahana-{{ item.title }}">
             <div class="templatemo-line-header" >
                 <div class="text-center">
                      <h4>{{ item.title }}</h4>
