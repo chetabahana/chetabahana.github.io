@@ -292,7 +292,6 @@ h4:before, h4:after {
 .templatemo-team {
     font-family:  'Open Sans', sans-serif;
     min-height: 500px;
-    color:#ffffff;
 }
 
 .templatemo-line-header {
@@ -364,11 +363,12 @@ h4:before, h4:after {
 }
 
 .row_team {
-    margin-left:-50px;
+    height: 400px;
     background: url('../images/background.png') ; 
 }
 
 .row_team li {
+    color:#ffffff;
     list-style: none;
 }
 
