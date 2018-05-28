@@ -43,7 +43,7 @@
                                 <li><a href="#templatemo-portfolio">{{ page.service_title3 }}</a></li>
                                 <li><a href="#chetabahana-{{ page.service_title4 }}">{{ page.service_title4 }}</a></li>
                                 <li><a href="#templatemo-about">{{ page.service_title5 }}</a></li>
-                                <li><a href="#templatemo-bottom">{{ page.service_title6 }}</a></li>
+                                <li><a href="#chetabahana-{{ page.service_title6 }}">{{ page.service_title6 }}</a></li>
                             </ul>
                         </div><!--/.nav-collapse -->
                     </div><!--/.container-fluid -->
