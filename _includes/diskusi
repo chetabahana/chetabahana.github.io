@@ -1,11 +1,11 @@
         <div id="chetabahana-{{ item.title }}" class="chetabahana-{{ item.title }}">
-            <div class="templatemo-line-header" >
-                <div class="text-center">
-                     <h4>{{ item.title }}</h4>
-                </div>
-            </div>
-            <div class="clearfix"></div>    
             <div class="container">
+                <div class="templatemo-line-header" >
+                   <div class="text-center">
+                     <h4>{{ item.title }}</h4>
+                   </div>
+                </div>
+                <div class="clearfix"></div>    
                 <div id="disqus_thread"></div>
-			</div>
+            </div><!-- /.container -->
         </div><!-- /{{ item.title }}-->			
