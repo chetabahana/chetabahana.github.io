@@ -457,8 +457,8 @@ h4:before, h4:after {
 }
 
 #templatemo-blog {
-    min-height:500px;
-    font-size:14px;
+    min-height: 500px;
+    font-size: 14px;
 }
 
 #templatemo-blog span {
@@ -467,7 +467,8 @@ h4:before, h4:after {
 
 #templatemo-blog iframe {
     width: 150px; 
-    height: 88px; 
+    height: 88px;
+    float: left; 	
 }
 
 .templatemo-contact-map {
