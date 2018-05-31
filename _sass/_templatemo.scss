@@ -363,7 +363,7 @@ h4:before, h4:after {
 }
 
 .row_team {
-    height: 400px;
+    min-height: 400px;
     padding: 10px 20px;
     background: url('../images/background.png') ; 
 }
