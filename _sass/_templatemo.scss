@@ -233,10 +233,10 @@ h4:before, h4:after {
     color: #ff7600;
 }
 
-
 .nav > li > a {
     color: #929292;
 }
+
 .navbar-default {
     background-color:#fff;
     font-weight: bold;
@@ -477,17 +477,21 @@ h4:before, h4:after {
 }
 
 .head_contact {
-    padding-bottom:80px; 
-    margin-bottom:0;
+    padding-bottom: 80px; 
+    margin-bottom: 0;
 }
 
 .contact_right img {
-    margin-right:5px;
+    margin-right: 5px;
 }
 
 .contact_right form {
     padding-left:15px;
     padding-right:15px
+}
+
+.left-inline li {
+   float: left;
 }
 
 .feeds_txt {
