@@ -7,9 +7,11 @@ WE ARE GOING TO WIN THE MARKET!
 </p>  
 
 # Tutorial Github & Jeckyll
+<center>
 |[![Chetabahana Project](https://avatars1.githubusercontent.com/u/36441664?v=10&s=20)](https://github.com/chetabahana) |This [repo](#repository "Project Repository") is courtesy of [Chetabahana Project](https://github.com/MarketLeader "We are providing an Integrated Open Source Project about The World of e-Commerce."). Find all of them on [The Project Map](https://marketleader.github.io/#bagan-projek "Project Mapping").|[![Chetabahana Project](https://avatars2.githubusercontent.com/u/36441943?v=10&s=20)](https://github.com/MarketLeader) |
 |:----|----|----:|
-
+</center>
+https://pages.github.com/versions/
 
 ## Cara Simple
 - Langsung [_Fork_](https://help.github.com/articles/fork-a-repo/#fork-an-example-repository) aja [_repo ini_](https://github.com/chetabahana/chetabahana.github.io/fork) juga [_lainnya_](https://github.com/chetabahana?tab=repositories) ke akun.
