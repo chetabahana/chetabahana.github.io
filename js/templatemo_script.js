@@ -10,9 +10,9 @@ jQuery(function($) {
         $('.templatemo-top-menu').stickUp(); 
 	    
         // clear the hash anytime someone arrives with a hash tag    
-        if( typeof(location.hash) !== 'undefined' && location.hash.length ) {console.log(location.hash);
+        if( typeof(location.hash) !== 'undefined' && location.hash.length ) {
+            location.href = location.href.substr(0, location.href.indexOf('#'));console.log(location.hash); 						     
             scrollTo(location.hash);
-            location.hash = '';							     
             return false;
 	}	    
 
