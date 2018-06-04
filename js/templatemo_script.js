@@ -10,10 +10,12 @@ jQuery(function($) {
         $('.templatemo-top-menu').stickUp(); 
 	    
         // clear the hash anytime someone arrives with a hash tag    
-        if( typeof(location.hash) !== 'undefined' && location.hash.length ) {console.log(location.hash); 
-            location.href = location.href.substr(0, location.href.indexOf('#'));						     
-            scrollTo(location.hash); //location.hash = '';
-            return false;
+        if( typeof(location.hash) !== 'undefined' && location.hash.length ) {
+            var locHash = location.hash; 
+            location.hash = '';//remove hash text
+            location.href.replace('#', '');//remove hash
+            history.replaceState(null, null, location.href);//replace state						     
+            scrollTo(locHash);
 	}	    
 
         // scroll spy to auto active the nav item
