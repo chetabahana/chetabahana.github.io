@@ -11,9 +11,9 @@ jQuery(function($) {
 	    
         // clear the hash anytime someone arrives with a hash tag    
         if( typeof(location.hash) !== 'undefined' && location.hash.length ) {
-            e.preventDefault();
-            location.href = location.href.substr(0, location.href.indexOf('#'));console.log(location.hash); 						     
+            e.preventDefault();console.log(location.hash); 
             scrollTo(location.hash);
+            location.href = location.href.substr(0, location.href.indexOf('#'));						     
             return false;
 	}	    
 
