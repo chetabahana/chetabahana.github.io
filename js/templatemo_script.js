@@ -1,7 +1,11 @@
 jQuery(function($) {
     
     $(window).on('load', function(){        
-        $('.external-link').unbind('click'); // unbind external link	    
+        // clear the hash anytime someone arrives with a hash tag    
+        if( typeof(location.hash) !== 'undefined' && location.hash.length ) {
+            scrollTo(location.hash);
+            history.replaceState(null, null, location.pathname);					     
+	}	    
     });
 		
     $(document).ready( function() {
@@ -9,11 +13,8 @@ jQuery(function($) {
         // to stick navbar on top and hash
         $('.templatemo-top-menu').stickUp(); 
 	    
-        // clear the hash anytime someone arrives with a hash tag    
-        if( typeof(location.hash) !== 'undefined' && location.hash.length ) {
-            scrollTo(location.hash);
-            history.replaceState(null, null, location.pathname);					     
-	}	    
+	 // unbind external link   
+        $('.external-link').unbind('click');	    
 
         // scroll spy to auto active the nav item
         top_menu_height = $('.templatemo-top-menu').height();
