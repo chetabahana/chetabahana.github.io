@@ -5,11 +5,14 @@ jQuery(function($) {
     });
 		
     $(document).ready( function() {
-	    
+
         // to stick navbar on top and hash
         $('.templatemo-top-menu').stickUp(); 
-        if( location.hash && location.hash.length ) {console.log(location.hash);
+	    
+        // clear the hash anytime someone arrives with a hash tag    
+        if( typeof(location.hash) !== 'undefined' && location.hash.length ) {console.log(location.hash);
             scrollTo(location.hash);
+            location.hash = '';							     
             return false;
 	}	    
 
