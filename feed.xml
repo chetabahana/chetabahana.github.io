@@ -41,7 +41,7 @@ navbar: false
       {% for cat in post.categories %}
       <category>{{ cat | xml_escape }}</category>
       {% endfor %}
-      <guid isPermaLink="true">https://git.github.io{{ post.url }}</guid>
+      <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
       <description>{{ post.content | xml_escape }}</description>
     </item>
     {% endfor %}
