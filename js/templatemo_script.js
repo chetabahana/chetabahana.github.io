@@ -1,10 +1,10 @@
 jQuery(function($) {
-    
+	
+    // do scroll and clear the hash anytime someone arrives with a hash tag    
     $(window).on('load', function(){        
-        // clear the hash anytime someone arrives with a hash tag    
         if( typeof(location.hash) !== 'undefined' && location.hash.length ) {
             scrollTo(location.hash);
-            history.replaceState(null, null, location.pathname);					     
+            history.replaceState(null, null, location.pathname); // https://stackoverflow.com/a/50688363/4058484				     
 	}	    
     });
 		
