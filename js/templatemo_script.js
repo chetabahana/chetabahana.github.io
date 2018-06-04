@@ -13,8 +13,7 @@ jQuery(function($) {
         if( typeof(location.hash) !== 'undefined' && location.hash.length ) {
             var locHash = location.hash; 
             location.hash = '';//remove hash text
-            location.href.replace('#', '');//remove hash
-            history.replaceState(null, null, location.href);//replace state						     
+            history.replaceState(null, null, location.pathname);//replace state						     
             scrollTo(locHash);
 	}	    
 
