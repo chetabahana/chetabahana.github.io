@@ -11,10 +11,8 @@ jQuery(function($) {
 	    
         // clear the hash anytime someone arrives with a hash tag    
         if( typeof(location.hash) !== 'undefined' && location.hash.length ) {
-            var locHash = location.hash; 
-            location.hash = '';//remove hash text
-            history.replaceState(null, null, location.pathname);//replace state						     
-            scrollTo(locHash);
+            history.replaceState(null, null, location.pathname);					     
+            scrollTo(location.hash);
 	}	    
 
         // scroll spy to auto active the nav item
