@@ -14,7 +14,7 @@ navbar: false
   >
   <channel>
     <title xml:lang="en">Git Rev News</title>
-    <atom:link type="application/atom+xml" href="https://git.github.io/feed.xml" rel="self"/>
+    <atom:link type="application/atom+xml" href="{{ site.url }}/feed.xml" rel="self"/>
     <link>https://git.github.io/rev_news/</link>
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
