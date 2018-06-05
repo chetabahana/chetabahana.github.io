@@ -3,7 +3,8 @@
         <meta name="keywords" content="{{ page.keywords }}" />
         <meta name="description" content="{{ page.description }}" />
         {% feed_meta %}
-   	    
+   	<link rel="alternate" type="application/json" title="{{ site.title }}" href="{{ "/feed.json" | absolute_url }}">  
+	
         <!-- Page hiding snippet (recommended) -->
         <style>.async-hide { opacity: 0 !important} </style>
         <script>
