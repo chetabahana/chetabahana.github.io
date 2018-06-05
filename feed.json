@@ -14,7 +14,8 @@ layout: null
             "url": "{{ post.url | absolute_url }}",
             "title": {{ post.title | jsonify }},
             "content_html": {{ post.content | jsonify }},
-            "date_published": "{{ post.date | date_to_xmlschema }}"
+            "date_published": "{{ post.date | date_to_xmlschema }}",
+            "options": {% assign option = "" %}{% for item_hash in site.data %}{% assign item = item_hash[1] %}{% if item.title == post.title %}{% assign option = item.content %}{{ option }}{% endif %}{% endfor %}{% if option == "" %}""{% endif %}             
         }{% unless forloop.last %},{% endunless %}{% endfor %}
     ]
 }
