@@ -3,8 +3,8 @@
         <meta name="keywords" content="{{ page.keywords }}" />
         <meta name="description" content="{{ page.description }}" />
         {% feed_meta %}
-        <link rel="alternate" type="application/json" title="{{ site.title }}" href="{{ "/feed.json" | absolute_url }}">  
-        <link rel="alternate" type="application/json" title="{{ site.title }}" href="{{ "/site.json" | absolute_url }}"> 
+        <link type="application/json" rel="alternate" href="{{ "/feed.json" | absolute_url }}" title="{{ site.title }}">  
+        <link type="application/json" rel="alternate" href="{{ "/site.json" | absolute_url }}" title="{{ site.title }}"> 
 	
         <!-- Page hiding snippet (recommended) -->
         <style>.async-hide { opacity: 0 !important} </style>
