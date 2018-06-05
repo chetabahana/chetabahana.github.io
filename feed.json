@@ -13,7 +13,7 @@ layout: null
             "id": "{{ post.url | absolute_url }}",
             "url": "{{ post.url | absolute_url }}",
             "title": {{ post.title | jsonify }},
-            "options": {{ site.data.flowchart }},
+            {% if site.data.{{ post.title }} %}"options": {{ site.data.{{ post.title }} }}{% endif %},
             "content_html": {{ post.content | jsonify }},
             "date_published": "{{ post.date | date_to_xmlschema }}"
         }{% unless forloop.last %},{% endunless %}{% endfor %}
