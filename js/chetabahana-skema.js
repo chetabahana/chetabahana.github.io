@@ -16,7 +16,7 @@ var draw = {
     $.getScript(js, function( data, textStatus, jqxhr ) {    
        
        // Clear old diagram
-       //$('.diagram').html('');
+       $('.diagram').html('');
        var options = {theme: $(".theme").val(), "font-size": 12};
        var jsonfile = draw['jsonfeed'] + '?t=' + $.now();
         
@@ -66,6 +66,7 @@ var draw = {
     if (!$('.diagram').find('svg')[0]) {
       window.requestAnimationFrame(draw.checkReady);
     } else {
+      $('#loadingImg').hide();
       $('svg g, svg path')
         .css('cursor','pointer')
         .hover(function() {
