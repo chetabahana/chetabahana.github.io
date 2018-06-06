@@ -18,7 +18,7 @@
                         Silahkan <a href='https://jsfiddle.net/chetabahana/f7ejxhnk/' target='_blank'>sunting</a> dan <a href='#templatemo-bottom' class='internal-link'>usulkan</a> gambar <a href="#" class="download">bagannya..</a><br>
                     </div>
                     <div class="col-md-8">
-                        <div class="diagram"></div>
+                        <div class="diagram"><img id='loadingImg' onload='showme(this)' src='images/loading.gif' style="width:100%; display: none;"></div>
                     </div>
                 </div><!-- /.row -->
             </div><!-- /.container -->
