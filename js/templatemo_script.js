@@ -1,5 +1,8 @@
 jQuery(function($) {
 	
+    // to stick navbar on top and hash
+    $('.templatemo-top-menu').stickUp(); 
+	    
     // do scroll and clear the hash anytime someone arrives with a hash tag    
     $(window).on('load', function(){        
         if( typeof(location.hash) !== 'undefined' && location.hash.length ) {
@@ -10,9 +13,6 @@ jQuery(function($) {
 		
     $(document).ready( function() {
 
-        // to stick navbar on top and hash
-        $('.templatemo-top-menu').stickUp(); 
-	    
 	 // unbind external link   
         $('.external-link').unbind('click');	    
 
