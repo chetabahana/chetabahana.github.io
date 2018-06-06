@@ -9,6 +9,7 @@
         <script type="text/javascript" src="slick/slick/slick.min.js"></script>
         <script type="text/javascript" src="scroll/jquery.simplyscroll.min.js"></script>
         <script type="text/javascript" src="skema/js/webfont.js"></script>
+        <script type="text/javascript" src="flowchart/raphael-min.js></script>
         <script type="text/javascript" src="skema/js/snap.svg-min.js"></script>
         <script type="text/javascript" src="skema/js/underscore-min.js"></script>
         <script type="text/javascript" src="skema/js/sequence-diagram-snap-min.js"></script>
