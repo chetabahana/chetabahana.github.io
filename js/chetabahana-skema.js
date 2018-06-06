@@ -16,7 +16,7 @@ var draw = {
     $.getScript(js, function( data, textStatus, jqxhr ) {    
        
        // Clear old diagram
-       $('.diagram').html('');
+       //$('.diagram').html('');
        var options = {theme: $(".theme").val(), "font-size": 12};
        var jsonfile = draw['jsonfeed'] + '?t=' + $.now();
         
