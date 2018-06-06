@@ -28,17 +28,8 @@ var disqus_config = function() {
 }];
 };		
 
-
-//juicer plugin
-Element.prototype.remove = function() {
-    this.parentElement.removeChild(this);
-}
-NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
-    for(var i = this.length - 1; i >= 0; i--) {
-        if(this[i] && this[i].parentElement) {
-            this[i].parentElement.removeChild(this[i]);
-        }
-    }
+function showme(obj) {
+    obj.parentNode.style.display = "block";
 }
 
 function updateFilters() {
@@ -79,3 +70,15 @@ function updateFilters() {
   }
   
 }  
+
+//juicer plugin
+Element.prototype.remove = function() {
+    this.parentElement.removeChild(this);
+}
+NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
+    for(var i = this.length - 1; i >= 0; i--) {
+        if(this[i] && this[i].parentElement) {
+            this[i].parentElement.removeChild(this[i]);
+        }
+    }
+}
