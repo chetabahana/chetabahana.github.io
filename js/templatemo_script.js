@@ -1,11 +1,20 @@
 jQuery(function($) {
 	
+    $(window).on('beforeunload', function(){
+	    
+	// to stick navbar on top and hash
+	$('.templatemo-top-menu').stickUp(); 
+	    
+    });
+	
     // do scroll and clear the hash anytime someone arrives with a hash tag    
-    $(window).on('load', function(){        
+    $(window).on('load', function(){
+	    
         if( typeof(location.hash) !== 'undefined' && location.hash.length ) {
             scrollTo(location.hash);
             history.replaceState(null, null, location.pathname); // https://stackoverflow.com/a/50688363/4058484				     
-	}	    
+	}
+	    
     });
 		
     $(document).ready( function() {
