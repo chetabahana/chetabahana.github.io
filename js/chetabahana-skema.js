@@ -31,10 +31,12 @@ var draw = {
            
            draw.skema = editor.getValue();
            diagram = Diagram.parse(draw.skema);
-           diagram.drawSVG($('.diagram').get(0), options);               
+           diagram.drawSVG($('.diagram').get(0), options);
+           
          } else if(type == 'flowchart'){     
       
-            $.getJSON(jsonfile, options).done(function(result){
+           $.getJSON(jsonfile, options).done(function(result){
+              $('.editor').hide(); 
               var obj = result.items[3];
               var code = draw.encode(obj.content_html);
               diagram = flowchart.parse(code);      
