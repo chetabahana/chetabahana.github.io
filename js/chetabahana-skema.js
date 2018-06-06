@@ -24,6 +24,7 @@ var draw = {
        
          var diagram;
          if(type == 'sequence') {
+           
            var editor = ace.edit($('.editor').get(0));
            editor.setTheme("ace/theme/crimson_editor");
            editor.getSession().setMode("ace/mode/asciidoc");
