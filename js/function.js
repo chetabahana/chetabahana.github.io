@@ -28,10 +28,6 @@ var disqus_config = function() {
 }];
 };		
 
-function showme(obj) {
-    obj.parentNode.style.display = "block";
-}
-
 function updateFilters() {
 
   var feeds = document.getElementById("feeds");
