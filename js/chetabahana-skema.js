@@ -1,160 +1,102 @@
-var url = "https://chetabahana.github.io";
-$.urlR = url + "/diagrams/railroad-diagrams.js";
-$.urlS = url + "/skema/js/sequence-diagram-snap-min.js";
+$(window).load(function() {draw.diagram();});
+$('.theme').change(function() {draw.diagram();});
+$('.download').click(function(ev) {draw.xmlData();});
 
-window.find = document.querySelector.bind(document);
-window.addEventListener('load', initialProcess, false);
-find('.editor').addEventListener('input', jsSequence, false);
+var draw = {
 
-function initialProcess() {
+  'jsonfeed' : 'https://chetabahana.github.io/feed.json',
+  'sequence' : 'skema/js/sequence-diagram-snap-min.js',
+  'flowchart': 'flowchart/flowchart-latest.js',
+  'railroad' : 'diagrams/railroad-diagrams.js',
 
-    if( location.hash && location.hash.length) {
-    var content = decodeURIComponent(location.hash.substr(1));
-    find('.editor').textContent = content;
-    }
-    jsSequence();
-}
-
-// js-sequence diagram
-function jsSequence() {
-
-  $.getScript($.urlS, function( data, textStatus, jqxhr ) {
-
-  $.printed = false; $.juicer = false;
-
-  var editor = ace.edit($(".editor").get(0));
-  editor.setTheme("ace/theme/crimson_editor");
-  editor.getSession().setMode("ace/mode/asciidoc");
-  editor.getSession().on('change', _.debounce(on_change, 100));
-
-  function on_change() {
-    var val = $(".theme").val();
-
-    if ($.printed) {
-    
-    	jsSequence(); return false;
-
-		} else if (val != 'printed') {
-
-      var op = $(".theme").find('option');
-      if (val == 'simple') op[2].disabled = false;
-      else op[2].disabled = true;
-
-      trydrawSVG(val);
-
+  diagram : function() {
+  
+    var type = (!draw.type)? 'sequence': draw.type;
+    var js = 'https://chetabahana.github.io/' + this[type];
+    $.getScript(js, function( data, textStatus, jqxhr ) {    
+       
+       // Clear old diagram
+       $('.diagram').html('');
+       var options = {theme: $(".theme").val(), "font-size": 12};
+       var jsonfile = draw['jsonfeed'] + '?t=' + $.now();
+        
+       try {
+       
+         var diagram;
+         if(type == 'sequence') {
+           var editor = ace.edit($('.editor').get(0));
+           editor.setTheme("ace/theme/crimson_editor");
+           editor.getSession().setMode("ace/mode/asciidoc");
+           editor.getSession().on('change', _.debounce(function() {draw.diagram();}, 100) );      
+           
+           draw.skema = editor.getValue();
+           diagram = Diagram.parse(draw.skema);
+           diagram.drawSVG($('.diagram').get(0), options);               
+         } else if(type == 'flowchart'){     
+      
+            $.getJSON(jsonfile, options).done(function(result){
+              var obj = result.items[3];
+              var code = draw.encode(obj.content_html);
+              diagram = flowchart.parse(code);      
+              diagram.drawSVG($('.diagram').get(0), obj.options);
+            });               
+        
+         } else if(type == 'railroad'){
+         
+            $.getJSON(jsonfile, options).done(function(result){
+              var obj = result.items[2];
+              var code = draw.encode(obj.content_html);             
+              diagram = eval(code).format();
+              diagram.addTo($('.diagram').get(0));
+            });               
+        
+         }
+         
+       } finally {
+          draw.type = type;
+          draw.checkReady();
+       }	
+    });  
+  },
+  
+  checkReady : function() {
+    if (!$('.diagram').find('svg')[0]) {
+      window.requestAnimationFrame(draw.checkReady);
     } else {
-			
-      var svgobj = $(".diagram").find('svg')[0].children;
+      $('svg g, svg path')
+        .css('cursor','pointer')
+        .hover(function() {
+          $(this).hide(100).show(100);
+      }).click(function() {
+          draw.type = (draw.type == 'sequence')? 
+            'flowchart': 'railroad';
+          draw.point = $(this);
+          draw.diagram();
+      });    
+    } 
+  },
+   
+  encode : function(data) {  
+    return data.replace(/&apos;/g, "'")
+               .replace(/&quot;/g, '"')
+               .replace(/&gt;/g, '>')
+               .replace(/&lt;/g, '<')
+               .replace(/&amp;/g, '&')
+               .replace(/<p>/g, '')
+               .replace(/<\/p>/g, '')
+               .replace(/‘/g, "'")
+               .replace(/’/g, "'")
+    ;
+  },               
 
-      for (i = 0; i < svgobj.length; i++) {
-        element = svgobj[i];
-        element.style = "cursor: pointer;";
-
-        $(element).mouseover(function(evt) {
-          $(this).hide(100).show(100)
-        });
-
-        $(element).click(function(evt) {
-          jsRailroad();
-        });
-      }
-
-    }
-  }
-
-  function trydrawSVG(val) {
-    try {
-      var diagram = Diagram.parse(editor.getValue());
-      editor.getSession().setAnnotations([]);
-
-      // Clear out old diagram
-      $(".diagram").html('');
-
-      var options = {
-        theme: val,
-        'font-size': 12,
-      };
-
-      // Draw
-      diagram.drawSVG($(".diagram").get(0), options);
-
-    } catch (err) {
-      var annotation = {
-        type: "error", // also warning and information
-        column: 0,
-        row: 0,
-        text: err.message
-      };
-	  
-      if (err instanceof Diagram.ParseError) {
-        annotation.row = err.loc.first_line - 1;
-        annotation.column = err.loc.first_column;
-      }
-	  
-      editor.getSession().setAnnotations([annotation]);
-      console.log("catch (err)" + err);
-      throw err;
-	  
-    } finally {
-    //finallyCode - Block of code to be executed regardless of the try / catch result
-	
-    /*avoid confict with juicer
-	if(!$.juicer){   
-	   $.getScript("https://assets.juicer.io/embed.js").done(function(script, textStatus) {
-	       //console.log("finished loading and running https://assets.juicer.io/embed.js with a status of " + $.juicer + textStatus);
-	       $.juicer = true;
-	   });
-	}*/			
-    }		
-	
-  }
-
-  // setup download link
-  $('.download').click(function(ev) {
+  xmlData : function() {
     var a = $(this);
+    var svg = $(".diagram").find('svg')[0];
+    var width = parseInt(svg.width.baseVal.value);
+    var height = parseInt(svg.height.baseVal.value);
+    var xmldata = '<?xml version="1.0" encoding="utf-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"><svg xmlns="http://www.w3.org/2000/svg" width="' + width + '" height="' + height + '" xmlns:xlink="http://www.w3.org/1999/xlink"><source><![CDATA[' + draw.skema + ']]></source>' + svg.innerHTML + '</svg>';
     a.attr("download", "diagram.svg"); 
-    a.attr("href", "data:image/svg+xml," + encodeURIComponent(xmlData(editor.getValue())));
-  });
-
-  // call main function
-  $(".theme").change(on_change);
-  on_change();
-  
-  });  
+    var xml = encodeURIComponent(xmldata);
+    a.attr("href", "data:image/svg+xml," + xml);
+  },  
 }
-
-//rairoad-diagrams
-function jsRailroad() {console.log("jsRailroad");
-
-  $.getScript($.urlR).done(function(script, textStatus) {console.log(textStatus);
-
-    var input = find('.input').value;
-    try {
-      var result = eval(input).format();
-  		$.printed = true;
-    } catch (e) {
-      console.log("Invalid input.\n" + e);
-      return;
-    }
-	find('.diagram').innerHTML = '';
-	result.addTo(find('.diagram'));
-	  $('.contact_left').hide();
-  
-    // setup download link
-  $('.download').click(function(ev) {
-    var a = $(this);
-    a.attr("download", "diagram.svg"); 
-    a.attr("href", "data:image/svg+xml," + encodeURIComponent(xmlData(input)));
-  });
-
-  });  
-}
-
-//xml download variable
-function xmlData(data) {
-  var svg = $(".diagram").find('svg')[0];
-	var width = parseInt(svg.width.baseVal.value);
-  var height = parseInt(svg.height.baseVal.value);
-  var xml = '<?xml version="1.0" encoding="utf-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"><svg xmlns="http://www.w3.org/2000/svg" width="' + width + '" height="' + height + '" xmlns:xlink="http://www.w3.org/1999/xlink"><source><![CDATA[' + data + ']]></source>' + svg.innerHTML + '</svg>';
-  return xml;
-};
