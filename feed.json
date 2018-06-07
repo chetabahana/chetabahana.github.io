@@ -1,4 +1,22 @@
 ---
 layout: null
 ---
-{% include xml/feed | jsonify %}
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "{{ site.title | xml_escape }}",
+    "description": {{ site.description | jsonify }},
+    "home_page_url": "{{ "/" | absolute_url }}",
+    "feed_url": "{{ "/feed.json" | absolute_url }}",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format.",
+    "items": [{% for post in site.posts limit:10 %}
+        {
+            "id": "{{ post.url | absolute_url }}",
+            "url": "{{ post.url | absolute_url }}",
+            "title": {{ post.title | jsonify }},
+            "content_html": {{ post.content | jsonify }},
+            "date_published": "{{ post.date | date_to_xmlschema }}",
+            "options": {% assign option = "" %}{% for item_hash in site.data %}{% assign item = item_hash[1] %}{% if item.title == post.title %}{% assign option = item.content %}{{ option | jsonify }}{% endif %}{% endfor %}{% if option == "" %}{{ option | jsonify }}{% endif %}             
+        }{% unless forloop.last %},{% endunless %}{% endfor %}
+    ]
+}
+
