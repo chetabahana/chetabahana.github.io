@@ -55,24 +55,26 @@ http://martinbuberl.com/blog/setup-jekyll-on-windows-and-host-it-on-github-pages
 You are done, Congrats..    
 
 ## Setup Domain
-Set up your custom domain follow this documentation:  
 - https://help.github.com/articles/user-organization-and-project-pages/  
 - https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/
-
-You can use the same domain for your project pages, turn Jekyll off if necessary:   
-- https://help.github.com/articles/using-jekyll-with-pages#troubleshooting  
 - https://stackoverflow.com/questions/9082499/custom-domain-for-github-project-pages
 
 Here are the URLs as samples that pointing to our [forked projects](https://github.com/search?utf8=%E2%9C%93&q=%40chetabahana+fork%3Aonly+user%3Amarketleader+fork%3Aonly&type=Repositories&ref=advsearch&s=updated): 
 
 ## Learn More 
+### Konsep
 - Site of Jeckyll Author, Tom Preston-Werner, GitHub's co-founder.: http://tom.preston-werner.com
-- Concept: http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html    
-- Github Repository of Jeckyll: https://github.com/mojombo/tpw  
-- Setup GitHub Pages branchs: https://gist.github.com/chrisjacob/833223  
-- Using Jekyll https://mademistakes.com/articles/using-jekyll-2016/
-- Using Liquid in Jekyll: https://flinhong.com/2016/08/20/using-liquid-in-jekyll/
-- GitHub GraphQL API: https://developer.github.com/v4/explorer/
+- Concept: http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html
+### GitHub Pages
+- Setup: https://gist.github.com/chrisjacob/833223  
+- Plugins: https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/
+### Using Jekyll / Liquid
+- Dokumentasi: https://github.com/mojombo/tpw  
+- Jekyll https://mademistakes.com/articles/using-jekyll-2016/
+- Liquid: https://flinhong.com/2016/08/20/using-liquid-in-jekyll/
+### GitHub API
+- REST API v3: https://developer.github.com/v3/
+- GraphQL API v4: https://developer.github.com/v4/explorer/
 
 ## License
 Project ini dipublikasikan dengan lisensi berikut:  
