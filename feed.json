@@ -1,3 +1,4 @@
 ---
 layout: null
 ---
+{% include xml/feed | jsonify %}
