@@ -12,7 +12,8 @@ WE ARE GOING TO WIN THE MARKET!
 
 # Tutorial Github & Jeckyll
 
-Anda bisa ikuti panduan untuk situs GitHub.
+Di sesi ini akan diuraikan tentang setup situs di GitHub.  
+Anda bisa ikuti panduan untuk clone situs [Chetabahana](https://chetabahana.github.io/) di akun.  
 Disarankan untuk ikuti [Cara Simple](#cara-simple) terlebih dahulu.
 
 ## Cara Simple
