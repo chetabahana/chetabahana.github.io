@@ -71,7 +71,7 @@ Here are the URLs as samples that pointing to our [forked projects](https://gith
 - Concept: http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html
 ### GitHub Pages
 - Setup: https://gist.github.com/chrisjacob/833223  
-- Plugins: https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/
+- Plugins: https://help.github.com/articles/configuring-jekyll-plugins/
 ### Using Jekyll / Liquid
 - Dokumentasi: https://github.com/mojombo/tpw  
 - Jekyll https://mademistakes.com/articles/using-jekyll-2016/
