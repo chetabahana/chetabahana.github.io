@@ -28,6 +28,7 @@ var disqus_config = function() {
 }];
 };		
 
+//juicer plugin
 function updateFilters() {
 
   var feeds = document.getElementById("feeds");
@@ -67,7 +68,7 @@ function updateFilters() {
   
 }  
 
-//juicer plugin
+// prototype remove
 Element.prototype.remove = function() {
     this.parentElement.removeChild(this);
 }
