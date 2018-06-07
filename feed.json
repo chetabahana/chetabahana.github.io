@@ -4,4 +4,4 @@ layout: null
 {% capture download_note %}
 The latest version of {{ site.product_name }} is now available.
 {% endcapture %}
-{% download_note | jsonify }}
+{{ download_note | jsonify }}
