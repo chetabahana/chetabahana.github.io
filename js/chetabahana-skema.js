@@ -13,16 +13,18 @@ var draw = {
   
     var type = (!draw.type)? 'sequence': draw.type;
     var js = 'https://chetabahana.github.io/' + this[type];
+    
+    // Clear old diagram
+    $('.diagram').html(''); $("#loadingImg").show();
+    
     $.getScript(js, function( data, textStatus, jqxhr ) {    
        
-       // Clear old diagram
-       $('.diagram').html(''); $("#loadingImg").show();
-       var options = {theme: $(".theme").val(), "font-size": 12};
+       var diagram;
        var jsonfile = draw['jsonfeed'] + '?t=' + $.now();
-        
+       var options = {theme: $(".theme").val(), "font-size": 12};
+       
        try {
        
-         var diagram;
          if(type == 'sequence') {
            
            var editor = ace.edit($('.editor').get(0));
@@ -56,19 +58,36 @@ var draw = {
          }
          
        } finally {
+       
           draw.type = type;
           draw.checkReady();
+          
        }	
     });  
   },
   
   checkReady : function() {
+  
     if (!$('.diagram').find('svg')[0]) {
       window.requestAnimationFrame(draw.checkReady);
+      
     } else {
-      $('#loadingImg').hide();
-      $('svg g, svg path')
-        .css('cursor','pointer')
+    
+      switch(draw.type) {
+      
+        case 'flowchart': 
+          draw.elements = $('svg .flowchart, svg text');
+          break;
+          
+        case 'railroad':
+          draw.elements = $('svg rect, svg text');
+          break;
+          
+        default:
+          draw.elements = $('svg g, svg path');
+      }      
+      
+      draw.elements.css('cursor','pointer')
         .hover(function() {
           $(this).hide(100).show(100);
       }).click(function() {
@@ -76,7 +95,10 @@ var draw = {
             'flowchart': 'railroad';
           draw.point = $(this);
           draw.diagram();
-      });    
+      });  
+      
+      $('#loadingImg').hide();
+      
     } 
   },
    
