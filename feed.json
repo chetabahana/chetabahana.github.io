@@ -2,6 +2,6 @@
 layout: null
 ---
 {% capture download_note %}
-The latest version of {{ site.product_name }} is now available.
+{% include xml/feed %}
 {% endcapture %}
 {{ download_note | jsonify }}
