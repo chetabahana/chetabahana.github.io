@@ -12,7 +12,8 @@ WE ARE GOING TO WIN THE MARKET!
 
 # Tutorial Github & Jeckyll
 
-https://pages.github.com/versions/
+Anda bisa ikuti panduan untuk situs GitHub.
+Disarankan untuk ikuti [[#cara-simple]] terlebih dahulu.
 
 ## Cara Simple
 - Langsung [_Fork_](https://help.github.com/articles/fork-a-repo/#fork-an-example-repository) aja [_repo ini_](https://github.com/chetabahana/chetabahana.github.io/fork) juga [_lainnya_](https://github.com/chetabahana?tab=repositories) ke akun.
@@ -55,13 +56,15 @@ http://martinbuberl.com/blog/setup-jekyll-on-windows-and-host-it-on-github-pages
 You are done, Congrats..    
 
 ## Setup Domain
+
+Anda bisa setup custom domain di GitHub:  
 - https://help.github.com/articles/user-organization-and-project-pages/  
 - https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/
 - https://stackoverflow.com/questions/9082499/custom-domain-for-github-project-pages
 
 Here are the URLs as samples that pointing to our [forked projects](https://github.com/search?utf8=%E2%9C%93&q=%40chetabahana+fork%3Aonly+user%3Amarketleader+fork%3Aonly&type=Repositories&ref=advsearch&s=updated): 
 
-## Learn More 
+## Selengkapnya
 ### Konsep
 - Site of Jeckyll Author, Tom Preston-Werner, GitHub's co-founder.: http://tom.preston-werner.com
 - Concept: http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html
