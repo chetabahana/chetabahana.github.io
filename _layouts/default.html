@@ -1,9 +1,4 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-{% include head %}   
-   </head>
-    <body>
-{% for menu in site.data.project.menus %}{% for item in menu.items %}{% include {{ item.title }} %}{% endfor %}{% endfor %}
-    </body>
+{% assign sections = site.assets | sort: 'weight' %}{% for section in sections %}{% include {{ section.title | downcase }} %}{% endfor %}{% endfor %}
 </html>
