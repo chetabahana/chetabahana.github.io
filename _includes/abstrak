@@ -1,4 +1,11 @@
-        <div class="templatemo-welcome" id="templatemo-welcome">
+---
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: null
+---
+<div class="templatemo-welcome" id="templatemo-welcome">
             <div class="container">
                 <div class="templatemo-slogan text-center">
                     <span class="txt_darkgrey">Welcome to </span><a href="{{ page.slogan_link }}" target="_blank">Chetabahana</a>
