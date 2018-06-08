@@ -3,13 +3,13 @@
                 <div class="row">
                     <div class="templatemo-line-header" style="margin-top: 0px;" >
                         <div class="text-center">
-                            <h4>{{ item.title }}</h4>
+                            <h4>{{ section.title }}</h4>
                         </div>
                     </div>
                     <br class="clearfix"/>
                 </div>
                 <div class="blog_box">
-{% assign posts = site.posts | sort: 'weight' %}{% for post in posts %}{% if post.path contains item.title %}		
+{% assign title = section.title | downcase %}{% assign posts = site.posts | sort: 'weight' %}{% for post in posts %}{% if post.path contains title %}		
                     <div class="col-sm-5 col-md-6 blog_post">
                         <ul itemscope itemtype="http://schema.org/Article" class="list-inline">
                             <li class="col-md-4">
@@ -37,4 +37,4 @@
 {% endif %}{% endfor %}                     
                </div>
             </div>
-        </div><!-- /{{ item.title }}-->
+        </div><!-- /{{ section.title }}-->
