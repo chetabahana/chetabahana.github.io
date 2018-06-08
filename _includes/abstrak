@@ -27,4 +27,4 @@
 {% endif %}{% endfor %}                    
                 </div>
             </div><!-- /container -->
-        </div><!-- /{{ item.title }} -->
+        </div><!-- /{{ section.title }} -->
