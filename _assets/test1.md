@@ -1,5 +1,6 @@
 ---
 title: Blogging Like a Hacker
+weight: 2
 defaults:
   - scope:
       path: ""
