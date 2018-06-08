@@ -1,4 +1,5 @@
 ---
+title: Blogging Like a Hacker
 defaults:
   - scope:
       path: ""
