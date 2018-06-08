@@ -1,3 +1,11 @@
+---
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: null
+---
+
    <div class="chetabahana-{{ item.title }}" id="chetabahana-{{ item.title }}">
 			<div class="container">
 				<div class="media-container-row content">
