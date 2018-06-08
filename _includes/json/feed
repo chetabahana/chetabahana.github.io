@@ -15,7 +15,7 @@
             "options": {% assign option = "" %}{% for item_hash in site.data %}{% assign item = item_hash[1] %}{% if item.title == post.title %}{% assign option = item.content %}{{ option | jsonify }}{% endif %}{% endfor %}{% if option == "" %}{{ option | jsonify }}{% endif %}             
         }{% unless forloop.last %},{% endunless %}{% endfor %}
     ],
-    "sections": [{% for section in site.assests %}
+    "sections": [{% for section in site.assets %}
         {
             "title": {{ section.title | jsonify }},
         }{% unless forloop.last %},{% endunless %}{% endfor %}
