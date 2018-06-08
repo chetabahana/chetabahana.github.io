@@ -1,5 +1,6 @@
 ---
 defaults:
+title: "cpba"
   - scope:
       path: ""
     values:
