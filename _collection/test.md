@@ -2,8 +2,7 @@
 defaults:
   - scope:
       path: ""
-      type: my_collection
     values:
-      layout: page
+      layout: null
 ---
 test.md
