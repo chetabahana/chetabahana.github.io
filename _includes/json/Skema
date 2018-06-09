@@ -1,6 +1,6 @@
 "title": {{ asset.title | jsonify }},
-    "items": [{% for skema in assets %}{% if skema.path contains '/skema/' %}
-        {
-            {{ skema.title }}
-        }{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}
-    ]
+            "items": [{% for skema in assets %}{% if skema.path contains '/skema/' %}
+                    {
+                        {{ skema.title }}
+                    }{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}
+                ]
