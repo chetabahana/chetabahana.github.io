@@ -63,7 +63,7 @@ var draw = {
               var d = Number((draw.point.substr(3,2)));
               
               var obj = result.items[2];
-             //var obj = result.items[a].items[b].items[c].items[d];
+              //var obj = result.items[a].items[b].items[c].items[d];
               var code = draw.encode(obj.content_html);
               
               diagram = eval(code).format();
