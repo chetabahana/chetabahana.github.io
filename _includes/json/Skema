@@ -1,1 +1,1 @@
-"titles": {{ asset.title | jsonify }}
+"title": {{ asset.title | jsonify }}
