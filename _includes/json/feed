@@ -19,13 +19,7 @@
         {
             "id": " post.url | absolute_url ",
             "url": " post.url | absolute_url ",
-            "title": {{ asset.title | jsonify }},
-            "items": [{% for part in assets %}
-                {
-                    "title": {{ part.title | jsonify }},
-                    "content_html": {{part.content | jsonify }}
-                }{% unless forloop.last %},{% endunless %}{% endfor %}
-            ]
+            "title": {{ asset.title | jsonify }}
         }{% endif %}{% unless forloop.last %},{% endunless %}{% endfor %}
     ] 
 }
