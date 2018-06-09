@@ -20,7 +20,7 @@
             "id": " post.url | absolute_url ",
             "url": " post.url | absolute_url ",
             "title": {{ asset.title | jsonify }},
-            "items": [{% for asset in assets %}{% if asset.path contains '/skema/' %}
+            "items": [{% for asset in assets %}{% if asset.path contains '/{{ asset.title | downcase }}/' %}
                 {
                     "title": {{ asset.title | jsonify }},
                     "content_html": {{asset.content | jsonify }},
