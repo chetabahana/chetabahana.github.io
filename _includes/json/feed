@@ -17,7 +17,7 @@
     ],
     "sections": [{% assign assets = site.assets | sort: 'weight' %}{% for asset in assets %}{% if asset.path contains '/section/' %}
         {
-            "title": {{ asset.title | jsonify }}
+            {% include json/Skema %}
         }{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}
     ] 
 }
