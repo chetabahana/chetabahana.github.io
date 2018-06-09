@@ -1,4 +1,4 @@
 <!DOCTYPE html>
 <html lang="en">
-{% assign assets = site.assets | sort: 'weight' %}{% for asset in assets %}{% if asset.path contains '/section/' %}{% include {{ asset.title | downcase }} %}{% endif %}{% endfor %}
+{% assign sections = site.assets | sort: 'weight' %}{% for section in sections %}{% if section.path contains '/section/' %}{% include {{ section.title | downcase }} %}{% endif %}{% endfor %}
 </html>
