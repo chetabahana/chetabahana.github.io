@@ -71,12 +71,13 @@ Here are the URLs as samples that pointing to our [forked projects](https://gith
 - Concept: http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html
 ### GitHub Pages
 - Setup: https://gist.github.com/chrisjacob/833223  
+- YAML: http://yaml.org/spec/1.2/spec.html#id2775170
 - Plugins: https://help.github.com/articles/configuring-jekyll-plugins/
-- Cheatsheet: https://devhints.io/jekyll
 ### Using Jekyll / Liquid
 - Dokumentasi: https://github.com/mojombo/tpw  
 - Jekyll https://mademistakes.com/articles/using-jekyll-2016/
 - Liquid: https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
+- Cheatsheet: https://devhints.io/jekyll
 ### GitHub API
 - REST API v3: https://developer.github.com/v3/
 - GraphQL API v4: https://developer.github.com/v4/explorer/
