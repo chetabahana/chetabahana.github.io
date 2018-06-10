@@ -1,5 +1,5 @@
-"items": [{% assign items = assets %}{% assign my_array = "" | split: ',' %}{% for item in items %}{% assign my_path = section.title | append: '/' | append:item.title | downcase %}{% if item.path contains my_path %}{% assign my_array = my_array | push: item %}{% endif %}{% endfor %}{% for item in my_array %}
+"items": [{% assign items = assets %}{% assign my_array = "" | split: ',' %}{% for item in items %}{% assign my_path = section.title | append: '/' | append:item.title | downcase %}{% if item.path contains my_path %}{% assign my_array = my_array | push: item %}{% endif %}{% endfor %}{% for result in my_array %}
                 {
-                    "title": {{ item.path }},
+                    "title": {{ result.path }},
                 }{% unless forloop.last %},{% endunless %}{% endfor %}
             ]
