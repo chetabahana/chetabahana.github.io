@@ -76,7 +76,7 @@ Here are the URLs as samples that pointing to our [forked projects](https://gith
 ### Using Jekyll / Liquid
 - Dokumentasi: https://github.com/mojombo/tpw  
 - Jekyll https://mademistakes.com/articles/using-jekyll-2016/
-- Liquid: https://flinhong.com/2016/08/20/using-liquid-in-jekyll/
+- Liquid: https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
 ### GitHub API
 - REST API v3: https://developer.github.com/v3/
 - GraphQL API v4: https://developer.github.com/v4/explorer/
