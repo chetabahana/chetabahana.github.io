@@ -1,4 +1,4 @@
-"items": [{% assign items = assets %}{% assign my_array = "" | split: ',' %}{% for item in items %}{% assign my_path = section.title | append: '/' | append:item.title | downcase %}{% if item.path contains my_path %}{% assign my_array = my_array | push: item %}{% endif %}{% endfor %}{% for result in my_array %}{% assign section = result %}
+"items": [{% assign items = assets %}{% assign my_array = "" | split: ',' %}{% for item in items %}{% assign my_path = section.title | append: '/' | append:item.title | downcase %}{% if item.path contains my_path %}{% assign my_array = my_array | push: item %}{% endif %}{% endfor %}{% assign results = my_array %}{% for result in results %}{% assign section = result %}
                 {
                     "title": {{ result.title | jsonify }},
                     {% include {{ result.title | prepend: 'feed/json/skema/' }} %}
