@@ -14,5 +14,11 @@
             "date_published": "{{ post.date | date_to_xmlschema }}",
             "options": {% assign option = "" %}{% for item_hash in site.data %}{% assign item = item_hash[1] %}{% if item.title == post.title %}{% assign option = item.content %}{{ option | jsonify }}{% endif %}{% endfor %}{% if option == "" %}{{ option | jsonify }}{% endif %}             
         }{% unless forloop.last %},{% endunless %}{% endfor %}
+    ],
+    "sections": [{% assign assets = site.assets | sort: 'weight' %}{% for asset in assets %}
+        {
+            "title": {{ asset.title | jsonify }}
+            
+        }{% unless forloop.last %},{% endunless %}{% endfor %}
     ] 
 }
