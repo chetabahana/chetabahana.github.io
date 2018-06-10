@@ -1,5 +1,5 @@
-"items": [{% assign skemas = assets %}{% for skema in skemas %}{% assign my_path = section.title | append: '/' | append:skema.title | downcase %}
+"items": [{% assign skemas = assets %}{% for skema in skemas %}{% assign my_path = section.title | append: '/' | append:skema.title | downcase %}{% if skema.path contains my_path %}
                 {
                     "title": {{ my_path }},
-                }{% unless forloop.last %},{% endunless %}{% endfor %}
+                }{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}
             ]
