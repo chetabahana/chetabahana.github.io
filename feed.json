@@ -1,4 +1,4 @@
 ---
 layout: null
 ---
-{% include json/feed %}
+{% include feed/json %}
