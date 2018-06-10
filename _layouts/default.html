@@ -1,4 +1,4 @@
 <!DOCTYPE html>
 <html lang="en">
- {% assign sections = assets | where_exp:"item", "item.path contains '/head/'" }}{% for section in sections %}{% include {{ section.title | prefend: 'head/' }} %}{% endfor %} 
+ {% assign sections = assets | where_exp:"item", "item.path contains '/head/'" %}{% for section in sections %}{% include {{ section.title | prefend: 'head/' }} %}{% endfor %} 
 </html>
