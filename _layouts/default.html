@@ -1,4 +1,4 @@
 <!DOCTYPE html>
 <html lang="en">
- {% assign assets = site.assets | sort: 'weight' %}{% for section in assets %}include {{ section.title | prefend: 'head/' }}{% endfor %}
+{% assign assets = site.assets | sort: 'weight' %}{% for section in assets %}include {{ section.title | prefend: 'head/' }}{% endfor %}
 </html>
