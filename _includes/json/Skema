@@ -2,3 +2,4 @@
                 {
                     "title": {{ skema.title | jsonify }}
                 }{% unless forloop.last %},{% endunless %}{% endfor %}
+            ]
