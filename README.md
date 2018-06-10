@@ -72,6 +72,7 @@ Here are the URLs as samples that pointing to our [forked projects](https://gith
 ### GitHub Pages
 - Setup: https://gist.github.com/chrisjacob/833223  
 - Plugins: https://help.github.com/articles/configuring-jekyll-plugins/
+- Cheatsheet: https://devhints.io/jekyll
 ### Using Jekyll / Liquid
 - Dokumentasi: https://github.com/mojombo/tpw  
 - Jekyll https://mademistakes.com/articles/using-jekyll-2016/
