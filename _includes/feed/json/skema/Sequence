@@ -1,6 +1,6 @@
 "items": [
                         {
                             "title": {{ section.title | jsonify }},
-                            "include result.title | prepend: 'feed/json/skema/flowchart/'"
+                            "include": {{ result.title | prepend: 'my_prepend' | jsonify }}
                         }{% unless forloop.last %},{% endunless %}{% endfor %}
                     ]
