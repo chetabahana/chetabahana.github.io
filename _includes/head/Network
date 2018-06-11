@@ -1,4 +1,4 @@
-        <div class="templatemo-team" id="templatemo-about">
+        <div class="templatemo-team" id="chetabahana-{{ section.title | downcase }}">
             <div class="container">
                 <div class="row">
                     <div class="templatemo-line-header">
