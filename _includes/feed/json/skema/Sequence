@@ -1,2 +1,2 @@
-"items": [{% assign assets = site.assets | sort: 'weight' %}{{ assets | json }}
+"items": [
                     ]
