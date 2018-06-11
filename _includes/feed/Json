@@ -17,7 +17,7 @@
     ],
     "sections": [{% assign assets = site.assets | sort: 'weight' %}{{ assets[2] }}{% for asset in assets %}
         {
-            "title": {{ asset.path | jsonify }}
+            "titlec": {{ asset.path | append: assets[2] | jsonify }}
         }{% unless forloop.last %},{% endunless %}{% endfor %}
     ] 
 }
