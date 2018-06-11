@@ -1,6 +1,6 @@
-"items": [
+"items": [{% assign items = assets %}{% assign my_array = "" | split: ',' %}{% for item in items %}{% assign my_path = section.title | append: '/' | append:item.title | downcase %}
                         {
                             "title": {{ section.title | jsonify }},
-                            "include": {{ section.title | jsonify }}
+                            "include": {{ my_path | jsonify }}
                         }
                     ]
