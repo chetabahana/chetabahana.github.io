@@ -3,5 +3,5 @@
                         {
                             "title": {{ section.title | jsonify }},
                             "include": {{ my_path | jsonify }}
-                        }
+                        }{% unless forloop.last %},{% endunless %}{% endfor %}
                     ]
