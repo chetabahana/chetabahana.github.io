@@ -1,4 +1,4 @@
-"items": [{% assign items = assets %}{% assign my_array = "" | split: ',' %}{% assign my_path = result.title | append: '/' | downcase %}{% for item in items %}{% assign my_file = my_path | append:item.title | downcase %}{% if item.path contains my_file %}{% assign my_array = my_array | push: item %}{% endif %}{% endfor %}{% assign results = my_array %}{% for result in results %}{% assign section = result %}
+"items": [{% assign items = assets %}{% assign my_array = "" | split: ',' %}{% assign my_path = my_path | append: result.title | append: '/' | downcase %}{% for item in items %}{% assign my_file = my_path | append:item.title | downcase %}{% if item.path contains my_file %}{% assign my_array = my_array | push: item %}{% endif %}{% endfor %}{% assign results = my_array %}{% for result in results %}{% assign section = result %}
                         {
                             "title": {{ result.title | jsonify }},
                             "include": {{ result.title | prepend: my_path }}
