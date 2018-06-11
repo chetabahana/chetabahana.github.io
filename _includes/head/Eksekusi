@@ -1,4 +1,4 @@
-        <div id="templatemo-blog">
+        <div id="chetabahana-{{ section.title | downcase }}">
             <div class="container">
                 <div class="row">
                     <div class="templatemo-line-header" style="margin-top: 0px;" >
