@@ -1,6 +1,6 @@
 "items": [{% assign items = assets %}{% assign my_array = "" | split: ',' %}{% assign my_path = 'feed/json/' | append: section.title | append: '/' | downcase %}{% for item in items %}{% assign my_file = section.title | append: '/' | append:item.title | downcase %}{% if item.path contains my_file %}{% assign my_array = my_array | push: item %}{% endif %}{% endfor %}{% assign results = my_array %}{% for result in results %}{% assign section = result %}
                 {
                     "title": {{ result.title | jsonify }},
-                    {% include {{ result.title | prepend: my_path }} %}
+                    "include": {{ result.title | prepend: my_path }}
                 }{% unless forloop.last %},{% endunless %}{% endfor %}
             ]
