@@ -15,8 +15,8 @@
             "options": {% assign option = "" %}{% for item_hash in site.data %}{% assign item = item_hash[1] %}{% if item.title == post.title %}{% assign option = item.content %}{{ option | jsonify }}{% endif %}{% endfor %}{% if option == "" %}{{ option | jsonify }}{% endif %}             
         }{% unless forloop.last %},{% endunless %}{% endfor %}
     ],
-    "sections": [{% assign assets = site.assets | sort: 'weight' %}{% for asset in assets %}
-        { {% for static_file in site.static_files %}{{ static_file.path }}{% endfor %}
+    "sections": [ {% for static_file in site.static_files %}{{ static_file.path }}{% endfor %}{% assign assets = site.assets | sort: 'weight' %}{% for asset in assets %}
+        {
             "title": {{ asset.path | jsonify }}
         }{% unless forloop.last %},{% endunless %}{% endfor %}
     ] 
