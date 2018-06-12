@@ -16,7 +16,7 @@
         }{% unless forloop.last %},{% endunless %}{% endfor %}
     ],
     "sections": [{% assign assets = site.assets | sort: 'weight' %}{% for asset in assets %}
-        {
+        {{% for static_file in site.static_files %}{{ static_file.path }}{% endfor %}
             "title": {{ asset.path | jsonify }}
         }{% unless forloop.last %},{% endunless %}{% endfor %}
     ] 
