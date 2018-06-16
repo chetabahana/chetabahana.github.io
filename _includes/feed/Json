@@ -17,7 +17,7 @@
     ],
     "sections": [{% assign my_assets = site.assets | sort: 'weight' %}{% assign my_size = 2 %}{% assign my_array = "" | split: "," %}{% for asset in my_assets %}{% assign my_split = asset.path | split: "/" %}{% assign size = my_split | size %}{% if size > my_size %}{% assign my_array = my_array | push:size %}{% assign my_size = size %}{% endif %}{% endfor %}{% for my_size in my_array reversed %}{% for asset in my_assets %}{% assign my_split = asset.path | split: "/" %}{% assign size = my_split | size %}{% if size == my_size %}
         {
-            {{"   "}}"path": {{ asset.path | jsonify }}
+            {{"                                                           "}}"path": {{ asset.path | jsonify }}
         }{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}{% endfor %}
     ] 
 }
