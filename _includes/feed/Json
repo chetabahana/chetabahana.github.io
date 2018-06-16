@@ -17,7 +17,7 @@
     ],
     "sections": [{% assign my_assets = site.assets | sort: 'weight' %}{% assign my_size = "" | split: "," %}{% for asset in my_assets %}{% assign my_split = asset.path | split: "/" %}{% assign size = my_split | size %}{% assign my_size = my_size | push:size %}{% endfor %}{% for i in my_size) %}
         {
-            "size": {{ i }}
+            "sizes": {{ i }}
         }{% unless forloop.last %},{% endunless %}{% endfor %}
     ] 
 }
