@@ -16,8 +16,8 @@
         }{% unless forloop.last %},{% endunless %}{% endfor %}
     ],
     "sections": [{% assign my_assets = site.assets | sort: 'weight' %}{% assign assets = "" | split: ',' %}{% for item in my_assets %}{% assign assets = assets | push: item %}{% endfor %}{% for asset in assets %}
-        {
-            "title": {{ asset.path | jsonify }}
+        {{% assign amount = 0 %}{% assign my_amount = asset.path | split: "/" %}
+            "title": {{ asset.path| append: amount | jsonify }}
         }{% unless forloop.last %},{% endunless %}{% endfor %}
     ] 
 }
