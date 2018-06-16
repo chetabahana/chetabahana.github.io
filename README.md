@@ -79,6 +79,7 @@ Here are the URLs as samples that pointing to our [forked projects](https://gith
 - Liquid: https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
 ### Cheatsheet: 
 - https://devhints.io/jekyll
+- http://cheat.markdunkley.com/
 - https://news.humancoders.com/t/developpement/items/11149-jekyll-cheat-sheet
 ### GitHub API
 - REST API v3: https://developer.github.com/v3/
