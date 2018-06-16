@@ -15,7 +15,7 @@
             "options": {% assign option = "" %}{% for item_hash in site.data %}{% assign item = item_hash[1] %}{% if item.title == post.title %}{% assign option = item.content %}{{ option | jsonify }}{% endif %}{% endfor %}{% if option == "" %}{{ option | jsonify }}{% endif %}             
         }{% unless forloop.last %},{% endunless %}{% endfor %}
     ],
-    "sections": [{% assign my_assets = site.assets | sort: 'weight' %}{% assign my_size = 0 %}{% for asset in my_assets %}{% assign my_split = asset.path | split: "/" %}{% assign size = my_split | size %}{% if my_size < size  %}{% assign my_size = size %}{% endif %}{% endfor %}{% for i in (1..my_size) %}
+    "sections": [{% assign my_assets = site.assets | sort: 'weight' %}{% assign my_size = 3 | split: "," %}{% for asset in my_assets %}{% assign my_split = asset.path | split: "/" %}{% assign size = my_split | size %}{% if my_size < size  %}{% assign my_size = my_size | push:size %}{% endif %}{% endfor %}{% for i in my_size) %}
         {
             "size": {{ i }}
         }{% unless forloop.last %},{% endunless %}{% endfor %}
