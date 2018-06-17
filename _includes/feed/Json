@@ -20,7 +20,7 @@
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"pathr": {{ my_path.path | jsonify }}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}}{% unless forloop.last %},{% endunless %}{% endcapture %}{% assign my_array =  my_array | push:my_capture %}{% endfor %}{% for my_capture in my_array %}{{ my_capture }}{% endfor %}{% assign my_asset = "" | split: "," %}{% for asset in my_assets %}{% if asset.path contains "/head/" %}{% assign my_asset = my_asset | push:asset %}{% endif %}{% endfor %}{% for asset in my_asset %}
 {{ my_tab }}{{ my_tab }}{
-{{ my_tab }}{{ my_tab }}{{ my_tab }}"path": {{ asset.path | jsonify }}
+{{ my_tab }}{{ my_tab }}{{ my_tab }}"path": {{ asset.path | jsonify }}{{ asset.title | jsonify | downcase | prepend: "/" | append: "/" }}
 {{ my_tab }}{{ my_tab }}}{% unless forloop.last %},{% endunless %}{% endfor %}
 {{ my_tab }}]
 }
