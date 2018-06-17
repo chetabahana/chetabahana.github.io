@@ -18,6 +18,6 @@
     "sections": [{% assign my_assets = site.assets | sort: 'weight' %}{% assign my_tab = "   " %}{% assign my_size = 2 %}{% assign my_path = "" | split: "," %}{% for asset in my_assets %}{% assign my_split = asset.path | split: "/" %}{% assign size = my_split | size %}{% if size > my_size %}{% assign my_path = my_path | push:size %}{% assign my_size = size %}{% endif %}{% endfor %}{% assign my_array = "" | split: "," %}{% for my_size in my_path reversed %}{% for asset in my_assets %}{% assign my_split = asset.path | split: "/" %}{% assign size = my_split | size %}{% if size == my_size %}{% capture my_capture %}
         {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{
             {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}"bravo": {{ asset.path | jsonify }}
-        {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}}{% unless forloop.last %},{% endunless %}{% endcapture %}{% assign my_array[asset.path] = my_capture %}{{ my_array[asset.path] }}{% endif %}{% endfor %}{% endfor %}
+        {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}}{% unless forloop.last %},{% endunless %}{% endcapture %}{% assign my_array[asset.path] = my_capture %}{{ my_capture }}{% endif %}{% endfor %}{% endfor %}
     ] 
 }
