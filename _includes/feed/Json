@@ -24,7 +24,8 @@
 {{ my_tab }}{{ my_tab }}{ {% for item in asset %}{% unless input contains item %}
 {{ my_tab }}{{ my_tab }}{{ my_tab }}{{ item | jsonify }}: {{ asset[item] | jsonify }},{% endunless %}{% endfor %}{% assign my_index_size = my_index | size %}{% if my_index_size > 0 %}
 {{ my_tab }}{{ my_tab }}{{ my_tab }}"items": [{% for index in my_index %}{{ my_captures[index] }}{% unless forloop.last %},{% endunless %}{% endfor %}
-{{ my_tab }}{{ my_tab }}{{ my_tab }}]{% else %}"items": []{% endif %}
+{{ my_tab }}{{ my_tab }}{{ my_tab }}]{% else %}
+{{ my_tab }}{{ my_tab }}{{ my_tab }}"items": []{% endif %}
 {{ my_tab }}{{ my_tab }}}{% unless forloop.last %},{% endunless %}{% endfor %}
 {{ my_tab }}]
 }
