@@ -43,13 +43,12 @@ var draw = {
               var a = Number((draw.point.substr(0,1)));
               var b = Number((draw.point.substr(1,1)));
               
-              var obj = result.items[3];
-              //var obj = result.items[a].items[b];
-              var code = draw.encode(obj.content_html);
+              var obj = result.items[3].items[0].items[a].items[b];
+              var code = draw.encode(obj.output);
               
               $('.contact_left').hide(); 
               diagram = flowchart.parse(code);      
-              diagram.drawSVG($('.diagram').get(0), obj.options);
+              diagram.drawSVG($('.diagram').get(0), obj.input);
               
             });               
         
@@ -62,8 +61,8 @@ var draw = {
               var c = Number((draw.point.substr(2,1)));
               var d = Number((draw.point.substr(3,2)));
               
-              var obj = result.items[2];
-              //var obj = result.items[a].items[b].items[c].items[d];
+              var obj = result.sections[2];
+             //var obj = result.items[a].items[b].items[c].items[d];
               var code = draw.encode(obj.content_html);
               
               diagram = eval(code).format();
@@ -96,13 +95,10 @@ var draw = {
           $('svg g.actor').each(function( index ) {
              this.id = '0' + Math.floor(index/2).toString();
           });
-          $('svg>path').each(function( index ) {
+          $('svg g.signal').each(function( index ) {
              this.id = '1' + index.toString();
           });
-          $('svg g.signal').each(function( index ) {
-             this.id = '2' + index.toString();
-          });
-          draw.elements = $('svg g.actor, svg g.signal, svg>path');
+          draw.elements = $('svg g.actor, svg g.signal');
           
         break;
           
@@ -162,6 +158,7 @@ var draw = {
           }
           
       });  
+      
       
     } 
   },
