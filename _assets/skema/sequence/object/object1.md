@@ -1,6 +1,6 @@
 ---
 weight: 1
-layout: diagram
+layout: flowchart
 label: Buka Toko
 ---
 test output
