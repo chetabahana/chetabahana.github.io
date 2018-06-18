@@ -1,1 +1,1 @@
-<div class="cookie">{{ content }}</div>
+<div>{{ content }}</div>
