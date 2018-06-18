@@ -21,8 +21,8 @@
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"item": [{% for index in my_index %}{{ my_captures[index] }}{% unless forloop.last %},{% endunless %}{% endfor %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}]{% endif %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}}{% endcapture %}{% assign my_captures =  my_captures | push:my_capture %}{% endfor %}{% assign my_asset = "" | split: "," %}{% for asset in my_assets %}{% if asset.path contains "/head/" %}{% assign my_asset = my_asset | push:asset %}{% endif %}{% endfor %}{% for asset in my_asset %}{% assign my_title = asset.title | downcase | prepend: "_assets/" | append: "/" %}{% assign my_index = "" | split: "," %}{% for my_path in my_paths %}{% assign my_size = my_path.path | split: "/" | size %}{% if my_size == 3 and my_path.path contains my_title %}{% assign my_index = my_index | push:forloop.index0 %}{% endif %}{% endfor %}
-{{ my_tab }}{{ my_tab }}{
-{% for item in asset %}{% unless input contains item %}{{ my_tab }}{{ my_tab }}{{ my_tab }}{{ item | jsonify }}: {{ asset[item] | jsonify }},{% endunless %}{% endfor %}{% assign my_index_size = my_index | size %}{% if my_index_size > 0 %}
+{{ my_tab }}{{ my_tab }}{ {% for item in asset %}{% unless input contains item %}
+{{ my_tab }}{{ my_tab }}{{ my_tab }}{{ item | jsonify }}: {{ asset[item] | jsonify }},{% endunless %}{% endfor %}{% assign my_index_size = my_index | size %}{% if my_index_size > 0 %}
 {{ my_tab }}{{ my_tab }}{{ my_tab }}"items": [{% for index in my_index %}{{ my_captures[index] }}{% unless forloop.last %},{% endunless %}{% endfor %}
 {{ my_tab }}{{ my_tab }}{{ my_tab }}]{% endif %}
 {{ my_tab }}{{ my_tab }}}{% unless forloop.last %},{% endunless %}{% endfor %}
