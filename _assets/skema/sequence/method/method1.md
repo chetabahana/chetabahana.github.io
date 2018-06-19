@@ -6,4 +6,4 @@ to: Object2
 layout: skema/sequence/method
 label:  Optimasi
 ---
-Buka Toko-->Stok Barang: {{ page.label }}
+Buka Toko-->Stoks Barang: {{ page.label }}
