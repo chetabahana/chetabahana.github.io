@@ -61,7 +61,7 @@ var draw = {
               var d = Number((draw.point.substr(3,2)));
               
               var obj = result.items[3].items[1];
-              var code = draw.encode(obj.content_html);
+              var code = draw.encode(obj.output);
               
               $('.contact_left').hide(); 
               diagram = eval(code).format();
