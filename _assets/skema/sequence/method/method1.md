@@ -6,4 +6,4 @@ to: Object2
 layout: flowchart
 label:  Optimasi
 ---
-Buka Toko-->Stok Barang: Optimasi
+Buka Toko-->Stok Barang: {{ label }}
