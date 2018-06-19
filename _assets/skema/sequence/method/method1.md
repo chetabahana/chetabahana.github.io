@@ -6,4 +6,4 @@ to: Object2
 layout: flowchart
 label:  Optimasi
 ---
-Buka Toko-->Stok Barang: {{ relative_directory }}
+Buka Toko-->Stok Barang: {{ flowchart.relative_directory }}
