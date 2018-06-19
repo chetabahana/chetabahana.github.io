@@ -1,1 +1,1 @@
-{{ page.type }} {{ page.label }}
+{{ page.from }}{{ page.type }} {{ page.to }}{{ page.label }}
