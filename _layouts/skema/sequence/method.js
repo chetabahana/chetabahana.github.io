@@ -1,1 +1,1 @@
-{% assigh object_path = page.path | split: '/' | pop | pop | push: page.event | join: '/'  | append: '/' %}{{ site.assets | where_exp:"item", "item.path contains object_path" }}{{ page.from }}{{ page.type }}{{ page.to }}: {{ page.label }}
+{% assigh object_path = page.path | split: '/' | pop | pop | push: page.event | join: '/'  | append: '/' %}{% assigh object_items = site.assets | where_exp:"item", "item.path contains object_path" %}{{ object_items | inspect }}{{ page.from }}{{ page.type }}{{ page.to }}: {{ page.label }}
