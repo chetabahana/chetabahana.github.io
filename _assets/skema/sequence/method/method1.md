@@ -1,8 +1,8 @@
 ---
 weight: 1
-type: external
 from: 1
 to: 2
+type: external
 layout: skema/sequence/method
 label:  Optimasi
 ---
