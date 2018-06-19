@@ -1,4 +1,4 @@
 ---
 weight: 3
-layout: railroad
+layout: skema/railroad
 ---
