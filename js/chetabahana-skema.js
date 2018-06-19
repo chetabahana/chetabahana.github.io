@@ -60,8 +60,7 @@ var draw = {
               var c = Number((draw.point.substr(2,1)));
               var d = Number((draw.point.substr(3,2)));
               
-              var obj = result.sections[2];
-             //var obj = result.items[a].items[b].items[c].items[d];
+              var obj = result.items[3].items[1];
               var code = draw.encode(obj.content_html);
               
               $('.contact_left').hide(); 
