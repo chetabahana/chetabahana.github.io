@@ -1,1 +1,1 @@
-test {{ page.label }}
+{{ page.type }} {{ page.label }}
