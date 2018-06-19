@@ -1,5 +1,6 @@
 ---
 weight: 1
+type: external
 layout: flowchart
 label:  Optimasi
 ---
