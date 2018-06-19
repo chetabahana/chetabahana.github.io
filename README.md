@@ -74,6 +74,7 @@ Here are the URLs as samples that pointing to our [forked projects](https://gith
 - YAML: http://yaml.org/spec/1.2/spec.html#id2775170
 - Plugins: https://help.github.com/articles/configuring-jekyll-plugins/
 ### Using Jekyll / Liquid
+- Validator: https://codebeautify.org/
 - Dokumentasi: https://github.com/mojombo/tpw  
 - Jekyll https://mademistakes.com/articles/using-jekyll-2016/
 - Liquid: https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
