@@ -1,1 +1,1 @@
-test {{ content }} {{ label }}
+test {{ label }}
