@@ -1,4 +1,4 @@
 ---
 weight: 1
-layout: sequence
+layout: skema/sequence
 ---
