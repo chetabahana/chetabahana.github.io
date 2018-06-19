@@ -46,7 +46,6 @@ var draw = {
               var obj = result.items[3].items[0].items[a].items[b];
               var code = draw.encode(obj.output);
               
-              $('.contact_left').hide(); 
               diagram = flowchart.parse(code);      
               diagram.drawSVG($('.diagram').get(0), obj.input);
               
@@ -65,6 +64,7 @@ var draw = {
              //var obj = result.items[a].items[b].items[c].items[d];
               var code = draw.encode(obj.content_html);
               
+              $('.contact_left').hide(); 
               diagram = eval(code).format();
               diagram.addTo($('.diagram').get(0));
               
