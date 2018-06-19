@@ -1,4 +1,4 @@
 ---
 weight: 2
-layout: flowchart
+layout: skema/flowchart
 ---
