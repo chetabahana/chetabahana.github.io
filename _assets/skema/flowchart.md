@@ -1,4 +1,4 @@
 ---
 weight: 2
-layout: railroad
+layout: flowchart
 ---
