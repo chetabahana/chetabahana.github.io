@@ -48,7 +48,7 @@ var draw = {
              
                var obj = result.items[3].items[0];
                draw.skema = draw.encode(obj.output);
-               
+
                diagram = Diagram.parse(draw.skema);
                diagram.drawSVG($('.diagram').get(0), draw.opt);
                
@@ -65,9 +65,9 @@ var draw = {
               var b = Number((draw.point.substr(1,1)));
               
               var obj = result.items[3].items[1];
-              var code = draw.encode(obj.output);
+              draw.skema = draw.encode(obj.output);
               
-              diagram = flowchart.parse(code);      
+              diagram = flowchart.parse(draw.skema);      
               diagram.drawSVG($('.diagram').get(0), obj.input);
               
             });               
@@ -82,10 +82,10 @@ var draw = {
               var d = Number((draw.point.substr(3,2)));
               
               var obj = result.items[3].items[2];
-              var code = draw.encode(obj.output);
+              draw.skema = draw.encode(obj.output);
               
               $('.contact_left').hide(); 
-              diagram = eval(code).format();
+              diagram = eval(draw.skema).format();
               diagram.addTo($('.diagram').get(0));
               
             });               
