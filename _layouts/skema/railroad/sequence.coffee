@@ -1,5 +1,1 @@
----
-# this ensures Jekyll reads the file to be transformed into CSS later
-# only Main files contain this front matter, not partials.
----
 square = (x) -> x * xy
