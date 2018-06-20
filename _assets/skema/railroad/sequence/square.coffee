@@ -1,4 +1,4 @@
 ---
-weight: 1
+weight: 2
 ---
-cube   = (x) -> square(x) * x
+square = (x) -> x * x
