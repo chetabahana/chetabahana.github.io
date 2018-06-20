@@ -1,4 +1,4 @@
 ---
 weight: 1
 ---
-square = (x) -> x * x
+{{ "square = (x) -> x * x" }}
