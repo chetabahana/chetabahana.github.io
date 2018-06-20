@@ -7,8 +7,8 @@
                     <div class="col-md-4 contact_left">
                         Status:
                         <select class="theme">
-                            <option value="hand" selected>Hand</option>
-                            <option value="simple">Typed</option>
+                            <option value="hand" selected>Konsep</option>
+                            <option value="simple">Progres</option>
                             <option value="printed" disabled="disabled">Printed</option>		  
                         </select><br><a href="https://marketleader.github.io/">Referensi</a>: <a href="/skema">js-sequence</a> / <a href="/diagrams">railroad</a>								   
                         <div class="editor-wrapper">
