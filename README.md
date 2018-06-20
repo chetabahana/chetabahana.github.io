@@ -72,6 +72,7 @@ Here are the URLs as samples that pointing to our [forked projects](https://gith
 ### GitHub Pages
 - Setup: https://gist.github.com/chrisjacob/833223  
 - YAML: http://yaml.org/spec/1.2/spec.html#id2775170
+- CoffeeScript: https://coffeescript.org/#functions
 - Plugins: https://help.github.com/articles/configuring-jekyll-plugins/
 ### Using Jekyll / Liquid
 - Validator: https://codebeautify.org/
