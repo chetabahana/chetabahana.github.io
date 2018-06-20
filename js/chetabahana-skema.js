@@ -55,8 +55,7 @@ var draw = {
              });  
              
            }  
-             
-           
+                   
          } else if(type == 'flowchart'){     
       
            $.getJSON(jsonfile, draw.opt).done(function(result){
