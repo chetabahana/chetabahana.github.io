@@ -1,5 +1,5 @@
 $(window).load(function() {draw.diagram();});
-$('.theme').change(function() {draw.diagram();});
+$('.theme').change(function() {draw.change();});
 $('.download').click(function(ev) {draw.xmlData();});
 
 var draw = {
@@ -14,10 +14,8 @@ var draw = {
     var diagram;
     var select = $(".theme").val();
     draw.opt = {theme: select, "font-size": 12};
-    
-    var type = (!draw.type)? 'sequence': draw.type;    
-    if (select=='hand' && draw.type!='flowchart') type='sequence';
-    
+       
+    var type = (!draw.type)? 'sequence': draw.type;
     var jsonfile = this['jsonfeed'] + '?t=' + $.now();
     var js = 'https://chetabahana.github.io/' + this[type];
     
@@ -29,32 +27,15 @@ var draw = {
        try {
        
          if(type == 'sequence') {
-         
-           if (select == 'hand') {
            
-             var editor = ace.edit($('.editor').get(0));
-             editor.setTheme("ace/theme/crimson_editor");
-             editor.getSession().setMode("ace/mode/asciidoc");
-             editor.getSession().on('change', _.debounce(function() {draw.diagram();}, 100) );
-             
-             draw.skema = editor.getValue();
-             diagram = Diagram.parse(draw.skema);
-             diagram.drawSVG($('.diagram').get(0), draw.opt);
+           var editor = ace.edit($('.editor').get(0));
+           editor.setTheme("ace/theme/crimson_editor");
+           editor.getSession().setMode("ace/mode/asciidoc");
+           editor.getSession().on('change', _.debounce(function() {draw.diagram();}, 100) );      
            
-           } else {
-           
-             $.getJSON(jsonfile).done(function(result){
-             
-               var obj = result.items[3].items[0];
-               draw.skema = draw.encode(obj.output);
-               
-               diagram = Diagram.parse(draw.skema);
-               diagram.drawSVG($('.diagram').get(0), draw.opt);
-               
-             });  
-             
-           }  
-             
+           draw.skema = editor.getValue();
+           diagram = Diagram.parse(draw.skema);
+           diagram.drawSVG($('.diagram').get(0), draw.opt);
            
          } else if(type == 'flowchart'){     
       
@@ -123,7 +104,6 @@ var draw = {
           
         case 'flowchart':
         
-          $(".theme").val("simple");
           $('svg .flowchart').each(function( index ) {
              this.id = draw.point + draw.pad('0' + index, 3);
           });
@@ -172,6 +152,8 @@ var draw = {
             var d = Number((this.id.substr(3,2)));          
             var e = Number((this.id.substr(5,1)));
             var f = Number((this.id.substr(6,3)));
+            
+            console.log(f);
           
           }
           
@@ -204,6 +186,10 @@ var draw = {
                .replace(/’/g, "'")
     ;
   },               
+
+  change : function() {
+
+  },
 
   pad : function(data, size) {
     var s = String(data);
