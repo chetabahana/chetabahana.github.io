@@ -1,1 +1,2 @@
-{% assign object_items = site.assets | where_exp:"item", "item.ext == '.coffee'" %}{% for item in object_items %}{{ item.title }}{% endfor %}
+{% assign object_items = site.assets | where_exp:"item", "item.ext == '.coffee'" %}
+{% for item in object_items %}{{ item.ext}}{% endfor %}
