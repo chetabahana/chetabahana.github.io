@@ -160,7 +160,6 @@ var draw = {
       
           if (draw.type != 'railroad') {
           
-            $('.contact_left').show();
             draw.type = (draw.type == 'sequence')? 
               'flowchart': 'railroad';
           
@@ -173,6 +172,7 @@ var draw = {
             var e = Number((this.id.substr(5,1)));
             var f = Number((this.id.substr(6,3)));
           
+            $('.contact_left').show();
             draw.type = 'sequence';
             
           }
