@@ -1,1 +1,1 @@
-{% assign object_path = page.path | split: '/' | pop | pop | push: page.event | join: '/'  | append: '/' %}{{ object_path | inspect }}
+{% assign object_items = site.assets | where_exp:"item", "item.ext == 'coffee'" %}{{ object_path | inspect }}
