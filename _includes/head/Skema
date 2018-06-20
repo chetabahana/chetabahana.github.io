@@ -10,7 +10,7 @@
                             <option value="hand" selected>Konsep</option>
                             <option value="simple">Progres</option>
                             <option value="priority" disabled="disabled">Urgensi</option>		  
-                        </select><br><a href="https://marketleader.github.io/">Referensi</a>: <a href="/skema">js-sequence</a> / <a href="/diagrams">railroad</a>								   
+                        </select><br><a href="https://marketleader.github.io/">Referensi</a>: <a href="/bagan">bagan</a> / <a href="/flowchart">flowchart</a> / <a href="/diagram">diagram</a>								   
                         <div class="editor-wrapper">
                             <div class="editor">{% include skema/sequence %}</div>
                          </div>
