@@ -2,7 +2,7 @@
    "title" : "flowchart",
    "content" : {
     "x": 0,
-    "y": 0,
+    "y": -40,
     "line-width": 3,
     "line-length": 40,
     "text-margin": 10,
