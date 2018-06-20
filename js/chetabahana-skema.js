@@ -1,5 +1,5 @@
 $(window).load(function() {draw.diagram();});
-$('.theme').change(function() {draw.diagram();});
+$('.theme').change(function() {draw.tChange();});
 $('.download').click(function(ev) {draw.xmlData();});
 
 var draw = {
@@ -162,8 +162,6 @@ var draw = {
           
             draw.type = (draw.type == 'sequence')? 
               'flowchart': 'railroad';
-            draw.point = this.id;
-            draw.diagram();
           
           } else {
           
@@ -174,8 +172,13 @@ var draw = {
             var e = Number((this.id.substr(5,1)));
             var f = Number((this.id.substr(6,3)));
           
+            draw.type = 'sequence';
+            
           }
-          
+
+          draw.point = this.id;
+          draw.diagram();
+
       });  
       
       
@@ -204,11 +207,18 @@ var draw = {
                .replace(/‘/g, "'")
                .replace(/’/g, "'")
     ;
-  },               
+  }, 
+  
+  tChange : function() {
+    var select = $('.theme').val();
+    draw.type = (select == 'hand')? 'sequence': draw.type;
+    draw.diagram();
+  },
 
   pad : function(data, size) {
     var s = String(data);
     while (s.length < (size || 2)) {s = "0" + s;}
     return s;
   }
+  
 }
