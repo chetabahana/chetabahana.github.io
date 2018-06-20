@@ -5,9 +5,9 @@ $('.download').click(function(ev) {draw.xmlData();});
 var draw = {
 
   'jsonfeed' : 'https://chetabahana.github.io/feed.json',
-  'sequence' : 'skema/js/sequence-diagram-snap-min.js',
+  'sequence' : 'bagan/js/sequence-diagram-snap-min.js',
   'flowchart': 'flowchart/flowchart-latest.js',
-  'railroad' : 'diagrams/railroad-diagrams.js',
+  'railroad' : 'diagram/railroad-diagrams.js',
 
   diagram : function() {
   
