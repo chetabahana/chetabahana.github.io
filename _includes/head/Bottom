@@ -8,11 +8,11 @@
         <script type="text/javascript" src="feed/js/instafeed.min.js"></script>
         <script type="text/javascript" src="slick/slick/slick.min.js"></script>
         <script type="text/javascript" src="scroll/jquery.simplyscroll.min.js"></script>
-        <script type="text/javascript" src="bagan/js/webfont.js"></script>
-        <script type="text/javascript" src="bagan/js/snap.svg-min.js"></script>
-        <script type="text/javascript" src="bagan/js/underscore-min.js"></script>
-        <script type="text/javascript" src="bagan/js/sequence-diagram-snap-min.js"></script>
-        <script type="text/javascript" src="bagan/js/svginnerhtml.min.js"></script>
+        <script type="text/javascript" src="sequence/js/webfont.js"></script>
+        <script type="text/javascript" src="sequence/js/snap.svg-min.js"></script>
+        <script type="text/javascript" src="sequence/js/underscore-min.js"></script>
+        <script type="text/javascript" src="sequence/js/sequence-diagram-snap-min.js"></script>
+        <script type="text/javascript" src="sequence/js/svginnerhtml.min.js"></script>
         <script type="text/javascript" src="flowchart/raphael-min.js"></script>
         <script type="text/javascript" src="js/templatemo_script.js"></script>
         <script type="text/javascript" src="https://apis.google.com/js/platform.js" async defer>{lang: 'id'}</script>
