@@ -82,6 +82,7 @@ Here are the URLs as samples that pointing to our [forked projects](https://gith
 ### Cheatsheet: 
 - Jekyll: https://devhints.io/jekyll
 - Shopify: http://cheat.markdunkley.com/
+- Emoji: https://www.webpagefx.com/tools/emoji-cheat-sheet/ :smiley:
 - Reference: https://news.humancoders.com/t/developpement/items/11149-jekyll-cheat-sheet
 ### GitHub API
 - REST API v3: https://developer.github.com/v3/
