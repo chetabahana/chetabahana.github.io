@@ -11,7 +11,14 @@ var draw = {
 
   diagram : function() {
   
-    var type = (!draw.type)? 'sequence': draw.type;
+    var diagram;
+    var select = $(".theme").val();
+    draw.opt = {theme: select, "font-size": 12};
+    
+    var type = (!draw.type)? 'sequence': draw.type;    
+    if (select=='hand' && draw.type!='flowchart') type='sequence';
+    
+    var jsonfile = this['jsonfeed'] + '?t=' + $.now();
     var js = 'https://chetabahana.github.io/' + this[type];
     
     // Clear old diagram
@@ -19,31 +26,44 @@ var draw = {
     
     $.getScript(js, function( data, textStatus, jqxhr ) {    
        
-       var diagram;
-       var jsonfile = draw['jsonfeed'] + '?t=' + $.now();
-       var options = {theme: $(".theme").val(), "font-size": 12};
-       
        try {
        
          if(type == 'sequence') {
+         
+           if (select == 'hand') {
            
-           var editor = ace.edit($('.editor').get(0));
-           editor.setTheme("ace/theme/crimson_editor");
-           editor.getSession().setMode("ace/mode/asciidoc");
-           editor.getSession().on('change', _.debounce(function() {draw.diagram();}, 100) );      
+             var editor = ace.edit($('.editor').get(0));
+             editor.setTheme("ace/theme/crimson_editor");
+             editor.getSession().setMode("ace/mode/asciidoc");
+             editor.getSession().on('change', _.debounce(function() {draw.diagram();}, 100) );
+             
+             draw.skema = editor.getValue();
+             diagram = Diagram.parse(draw.skema);
+             diagram.drawSVG($('.diagram').get(0), draw.opt);
            
-           draw.skema = editor.getValue();
-           diagram = Diagram.parse(draw.skema);
-           diagram.drawSVG($('.diagram').get(0), options);
+           } else {
+           
+             $.getJSON(jsonfile).done(function(result){
+             
+               var obj = result.items[3].items[0];
+               draw.skema = draw.encode(obj.output);
+               
+               diagram = Diagram.parse(draw.skema);
+               diagram.drawSVG($('.diagram').get(0), draw.opt);
+               
+             });  
+             
+           }  
+             
            
          } else if(type == 'flowchart'){     
       
-           $.getJSON(jsonfile, options).done(function(result){
+           $.getJSON(jsonfile, draw.opt).done(function(result){
            
               var a = Number((draw.point.substr(0,1)));
               var b = Number((draw.point.substr(1,1)));
               
-              var obj = result.items[3].items[0].items[a].items[b];
+              var obj = result.items[3].items[1];
               var code = draw.encode(obj.output);
               
               diagram = flowchart.parse(code);      
@@ -53,14 +73,14 @@ var draw = {
         
          } else if(type == 'railroad'){
          
-            $.getJSON(jsonfile, options).done(function(result){
+            $.getJSON(jsonfile, draw.opt).done(function(result){
             
               var a = Number((draw.point.substr(0,1)));
               var b = Number((draw.point.substr(1,1)));
               var c = Number((draw.point.substr(2,1)));
               var d = Number((draw.point.substr(3,2)));
               
-              var obj = result.items[3].items[1];
+              var obj = result.items[3].items[2];
               var code = draw.encode(obj.output);
               
               $('.contact_left').hide(); 
@@ -103,6 +123,7 @@ var draw = {
           
         case 'flowchart':
         
+          $(".theme").val("simple");
           $('svg .flowchart').each(function( index ) {
              this.id = draw.point + draw.pad('0' + index, 3);
           });
@@ -151,8 +172,6 @@ var draw = {
             var d = Number((this.id.substr(3,2)));          
             var e = Number((this.id.substr(5,1)));
             var f = Number((this.id.substr(6,3)));
-            
-            console.log(f);
           
           }
           
@@ -190,5 +209,5 @@ var draw = {
     var s = String(data);
     while (s.length < (size || 2)) {s = "0" + s;}
     return s;
-  },
+  }
 }
