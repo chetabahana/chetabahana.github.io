@@ -55,7 +55,8 @@ var draw = {
              });  
              
            }  
-                   
+             
+           
          } else if(type == 'flowchart'){     
       
            $.getJSON(jsonfile, draw.opt).done(function(result){
@@ -159,6 +160,7 @@ var draw = {
       
           if (draw.type != 'railroad') {
           
+            $('.contact_left').show();
             draw.type = (draw.type == 'sequence')? 
               'flowchart': 'railroad';
           
@@ -178,8 +180,7 @@ var draw = {
           draw.point = this.id;
           draw.diagram();
 
-      });  
-      
+      });      
       
     } 
   },
@@ -211,6 +212,7 @@ var draw = {
   tChange : function() {
     var select = $('.theme').val();
     draw.type = (select == 'hand')? 'sequence': draw.type;
+    if (draw.type != 'railroad') $('.contact_left').show(); 
     draw.diagram();
   },
 
