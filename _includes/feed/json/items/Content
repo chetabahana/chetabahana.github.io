@@ -1,1 +1,1 @@
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"content": {{ my_asset.path | split: "/" | pop | join: "/" | append: "/" | append: my_asset.slug | downcase | jsonify }},
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"content": {{ my_asset.path | split: "/" | shift | pop | join: "/" | append: "/" | append: my_asset.slug | downcase | jsonify }},
