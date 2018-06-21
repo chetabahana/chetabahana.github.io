@@ -88,10 +88,6 @@ Here are the URLs as samples that pointing to our [forked projects](https://gith
 - REST API v3: https://developer.github.com/v3/
 - GraphQL API v4: https://developer.github.com/v4/explorer/
 
-## License
-Project ini dipublikasikan dengan lisensi berikut:  
-[Apache License 2.0](https://github.com/MarketLeader/Toko-Chetabahana/blob/master/LICENSE)
-
 ## Pustaka
 Disarankan untuk disimak sebelum melangkah lebih jauh:  
 Dokumentasi Project: https://github.com/chetabahana/chetabahana.github.io/wiki
@@ -104,6 +100,10 @@ Gambar-2: Alokasi Pustaka Online <a href= "https://chetabahana.com">Chetabahana<
 - [Cara Optimasi Eksternal Toko dengan Shop SEO](https://chetabahana.wordpress.com/)
 - [Channel Youtube Chetabahana](https://www.youtube.com/channel/UCZlPku9beXzdROCknYLuRNg?view_as=subscriber)
 - [e-Books Chetabahana](https://www.scribd.com/user/401259110/Chetabahana)
+
+## License
+Project ini dipublikasikan dengan lisensi berikut:  
+[Apache License 2.0](https://github.com/MarketLeader/Toko-Chetabahana/blob/master/LICENSE)
 
 ## Penutup
 Berikut ini beberapa catatan sebagai penutup:  
