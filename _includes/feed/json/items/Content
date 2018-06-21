@@ -1,1 +1,2 @@
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"content": {% assign layout = my_asset.path | split: "/" | shift | pop | join: "/" | append: "/" | append: my_asset.slug | downcase | jsonify %}{{ layout }},
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"content": {% assign my_asset_layout = my_asset.path | split: "/" | shift | pop | join: "/" | append: "/" | append: my_asset.slug | downcase %}{% my_childs = assets | where_exp:"item",
+"item.layout == my_asset_layout" %}{{ my_childs | inspect }},
