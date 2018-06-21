@@ -1,0 +1,11 @@
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"weight": {{ my_asset.weight | jsonify }},
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"title": {{ my_asset.title | jsonify }},{% for item in my_asset %}{% unless atributs contains item %} 
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}{{ item | jsonify }}: {{ my_asset[item] | jsonify }},{% endunless %}{% endfor %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"path": {{ my_asset.path | jsonify }},
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"input": {% assign input = "" %}{% for item_hash in site.data.skema %}{% assign item = item_hash[1] %}{% unless item.title == null %}{% if item.title == my_asset.slug %}{% assign input = item.content %}{% endif %}{% endunless %}{% endfor %}{{ input | jsonify }},
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"content": {{ my_asset.content | jsonify }},
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"output": {{ my_asset.output | jsonify }},{% assign my_index_size = my_index | size %}{% if my_index_size > 0 %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"items": [{% for index in my_index %}{{ my_captures[index] }}{% unless forloop.last %},{% endunless %}{% endfor %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}]{% else %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"items": []{% endif %}
