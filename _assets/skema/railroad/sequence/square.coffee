@@ -1,5 +1,5 @@
 ---
 weight: 2
-skema/railroad/sequence
+layout: skema/railroad/sequence
 ---
 square = (x) -> x * x
