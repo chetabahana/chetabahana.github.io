@@ -93,12 +93,13 @@ Project ini dipublikasikan dengan lisensi berikut:
 [Apache License 2.0](https://github.com/MarketLeader/Toko-Chetabahana/blob/master/LICENSE)
 
 ## Pustaka
+Disarankan untuk disimak sebelum melangkah lebih jauh:  
+Dokumentasi Project: https://github.com/chetabahana/chetabahana.github.io/wiki
 <p align="center"> 
 <a href="https://chetabahana.com/#after_header1_3"><img src="https://user-images.githubusercontent.com/36441664/38942532-44c87736-4359-11e8-9ad4-56f7d2b68ced.png" alt="Alokasi Pustaka Online Chetabahana"></a><br>
 Gambar-2: Alokasi Pustaka Online <a href= "https://chetabahana.com">Chetabahana</a>
 </p>
 
-Disarankan untuk disimak sebelum melangkah lebih jauh:  
 - [Cara Buka Toko Online WinMarket dan Optimasi Internal](https://chetabahana.blogspot.com/)
 - [Cara Optimasi Eksternal Toko dengan Shop SEO](https://chetabahana.wordpress.com/)
 - [Channel Youtube Chetabahana](https://www.youtube.com/channel/UCZlPku9beXzdROCknYLuRNg?view_as=subscriber)
