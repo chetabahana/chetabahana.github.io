@@ -1,4 +1,4 @@
 ---
-permalink: test.html
+permalink: test.htm
 ---
 test
