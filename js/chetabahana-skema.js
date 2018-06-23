@@ -52,7 +52,7 @@ var draw = {
                draw.skema = draw.encode(obj.output);
                diagram = Diagram.parse(draw.skema);
 
-               draw.opt = {theme: select, "font-size": 14};
+               draw.opt = {theme: select, "font-size": 13};
                diagram.drawSVG($('.diagram').get(0), draw.opt);
                
              });  
