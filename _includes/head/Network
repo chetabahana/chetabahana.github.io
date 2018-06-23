@@ -11,7 +11,7 @@
                         <li class="col-lg-3 col-md-3 col-sm-6 ">
                             <div>
                                 <div class="team-inner text-center">
-                                    <p class="team-inner-header"><a href="https://about.me/{{ page.team1_header }}">{{ page.team1_header }}</a></p>
+                                    <p class="team-inner-header"><a href="https://www.facebook.com/chetabahana/" target="_blank">{{ page.team1_header }}</a></p>
                                     <p class="team-inner-subtext">{{ page.team1_subtext }}</p>
                                 </div>
                                 <div class="member-thumb">
@@ -23,7 +23,7 @@
                         <li class="col-lg-3 col-md-3 col-sm-6 ">
                             <div>
                                 <div class="team-inner text-center">
-                                    <p class="team-inner-header"><a href="https://about.me/{{ page.team2_header }}">{{ page.team2_header }}</a></p>
+                                    <p class="team-inner-header"><a href="https://plus.google.com/104472163425461331070" target="_blank">{{ page.team2_header }}</a></p>
                                     <p class="team-inner-subtext">{{ page.team2_subtext }}</p>
                                 </div>
                                 <div class="member-thumb">
@@ -34,7 +34,7 @@
                         <li class="col-lg-3 col-md-3 col-sm-6 ">
                             <div>
                                 <div class="team-inner text-center">
-                                    <p class="team-inner-header"><a href="https://about.me/{{ page.team3_header }}">{{ page.team3_header }}</a></p>
+                                    <p class="team-inner-header"><a href="https://plus.google.com/104520374085958806528" target="_blank">{{ page.team3_header }}</a></p>
                                     <p class="team-inner-subtext">{{ page.team3_subtext }}</p>
                                 </div>
                                 <div class="member-thumb">
@@ -45,7 +45,7 @@
                         <li class="col-lg-3 col-md-3 col-sm-6 ">
                             <div>
                                 <div class="team-inner text-center">
-                                    <p class="team-inner-header"><a href="https://about.me/{{ page.team4_header }}">{{ page.team4_header }}</a></p>
+                                    <p class="team-inner-header"><a href="https://plus.google.com/communities/100580130359124625791" target="_blank">{{ page.team4_header }}</a></p>
                                     <p class="team-inner-subtext">{{ page.team4_subtext }}</p>
                                 </div>
                                 <div class="member-thumb">
