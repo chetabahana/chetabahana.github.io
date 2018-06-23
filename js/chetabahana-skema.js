@@ -46,7 +46,7 @@ var draw = {
            
              $.getJSON(jsonfile).done(function(result){
              
-               var obj = result.items[3].items[0];
+               var obj = result.items[4].items[0];
                draw.skema = draw.encode(obj.output);
 
                diagram = Diagram.parse(draw.skema);
@@ -64,7 +64,7 @@ var draw = {
               var a = Number((draw.point.substr(0,1)));
               var b = Number((draw.point.substr(1,1)));
               
-              var obj = result.items[3].items[1];
+              var obj = result.items[4].items[1];
               draw.skema = draw.encode(obj.output);
               
               diagram = flowchart.parse(draw.skema);      
@@ -81,7 +81,7 @@ var draw = {
               var c = Number((draw.point.substr(2,1)));
               var d = Number((draw.point.substr(3,2)));
               
-              var obj = result.items[3].items[2];
+              var obj = result.items[4].items[2];
               draw.skema = draw.encode(obj.output);
               
               $('.contact_left').hide(); 
