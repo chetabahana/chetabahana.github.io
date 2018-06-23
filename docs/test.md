@@ -1,4 +1,5 @@
 ---
-permalink: test.htm
+layout: null
+permalink: test.html
 ---
 test
