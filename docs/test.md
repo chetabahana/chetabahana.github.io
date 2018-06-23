@@ -1,5 +1,5 @@
 ---
 layout: null
-permalink: test/*
+permalink: test.html
 ---
 test
