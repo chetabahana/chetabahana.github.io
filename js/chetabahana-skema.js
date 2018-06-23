@@ -13,7 +13,6 @@ var draw = {
   
     var diagram;
     var select = $(".theme").val();
-    draw.opt = {theme: select, "font-size": 12};
     
     var type = (!draw.type)? 'sequence': draw.type;    
     if (select=='hand' && type!='flowchart') type='sequence';
@@ -40,6 +39,8 @@ var draw = {
              
              draw.skema = editor.getValue();
              diagram = Diagram.parse(draw.skema);
+
+             draw.opt = {theme: select, "font-size": 12};
              diagram.drawSVG($('.diagram').get(0), draw.opt);
            
            } else {
@@ -47,9 +48,11 @@ var draw = {
              $.getJSON(jsonfile).done(function(result){
              
                var obj = result.items[4].items[0];
+               
                draw.skema = draw.encode(obj.output);
-
                diagram = Diagram.parse(draw.skema);
+
+               draw.opt = {theme: select, "font-size": 14};
                diagram.drawSVG($('.diagram').get(0), draw.opt);
                
              });  
