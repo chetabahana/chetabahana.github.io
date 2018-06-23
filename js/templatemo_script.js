@@ -36,7 +36,7 @@ jQuery(function($) {
         });
 
         // scroll to specific id when click on link
-	$('.internal-link, .carousel-inner a, .templatemo-service a').click(function(e){
+	$('.internal-link, .carousel-inner a').click(function(e){
             e.preventDefault(); 
             var linkId = $(this).attr('href');
             scrollTo(linkId);
