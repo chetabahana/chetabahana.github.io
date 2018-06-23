@@ -19,7 +19,7 @@
                             </div>
                             {{ post.excerpt }}
                             <div class="text-center">
-                                <a href="#templatemo-blog" class="templatemo-btn-read-more btn btn-orange">Read More</a>
+                                <a href="{{ post.link }}" class="templatemo-btn-read-more btn btn-orange external-link" target="_blank">Read More</a>
                             </div>
                             <br class="clearfix"/>
                         </div>
