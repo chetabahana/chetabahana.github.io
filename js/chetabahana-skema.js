@@ -16,13 +16,13 @@ var draw = {
     
     var type = (!draw.type)? 'sequence': draw.type;    
     if (select=='hand' && type!='flowchart') type='sequence';
-
+    
+    $('#type').text(type);
+    $('#type')[0].href = '/' + type;
+    $('.diagram').html(''); $("#loadingImg").show();
     
     var jsonfile = this['jsonfeed'] + '?t=' + $.now();
     var js = 'https://chetabahana.github.io/' + this[type];
-    
-    // Clear old diagram
-    $('.diagram').html(''); $("#loadingImg").show();
     
     $.getScript(js, function( data, textStatus, jqxhr ) {    
        
