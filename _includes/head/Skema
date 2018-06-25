@@ -14,7 +14,7 @@
                         <div class="editor-wrapper">
                             <div class="editor">{% include skema/Sequence %}</div>
                         </div>
-                        <br>Silahkan <a href='https://jsfiddle.net/chetabahana/rrxnah40/' target='_blank'>sunting</a> dan <a href='#chetabahana-diskusi' class='internal-link'>usulkan</a> gambar <a href="#" class="download">bagannya..</a><br>Cek: <a href="https://github.com/MarketLeader/marketleader.github.io/wiki" target='_blank'>Dokumentasi</a>
+                        Silahkan <a href='https://jsfiddle.net/chetabahana/rrxnah40/' target='_blank'>sunting</a> dan <a href='#chetabahana-diskusi' class='internal-link'>usulkan</a> gambar <a href="#" class="download">bagannya..</a><br>Cek: <a href="https://github.com/MarketLeader/marketleader.github.io/wiki" target='_blank'>Dokumentasi</a>
                     </div>
                     <div class="col-md-8">
                         <div class="diagram"></div>
