@@ -14,8 +14,9 @@
                         <div class="editor-wrapper">
                             <div class="editor">{% include skema/Sequence %}</div>
                         </div>
-                        Silahkan <a href='https://jsfiddle.net/chetabahana/rrxnah40/' target='_blank'>sunting</a> dan <a href='#chetabahana-diskusi' class='internal-link'>usulkan</a> gambar <a href="#" class="download">bagannya..</a><br>Cek: <a href="https://github.com/MarketLeader/marketleader.github.io/wiki" target='_blank'>Dokumentasi</a>
-                    </div>
+                        Silahkan <a href='https://jsfiddle.net/chetabahana/rrxnah40/'>sunting</a> dan <a href='#chetabahana-diskusi' class='internal-link'>usulkan</a> gambar <a href="#" class="download">bagannya..</a><br>
+                        Referensi: <a href="https://marketleader.github.io/">Skema Kerja</a><br>
+                        Dokumentasi: <a href="https://github.com/MarketLeader/marketleader.github.io/wiki">Konsep Dasar</a><br>                    </div>
                     <div class="col-md-8">
                         <div class="diagram"></div>
                         <img id='loadingImg' src='images/loading.gif' style="width:50%;">
