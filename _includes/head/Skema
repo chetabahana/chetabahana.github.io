@@ -10,11 +10,11 @@
                             <option value="hand" selected>Konsep</option>
                             <option value="simple">Progres</option>
                             <option value="priority" disabled="disabled">Urgensi</option>		  
-                        </select>								   
+                        </select>Tipe Diagram: <a id="diagramType" href="/sequence" target='_blank'>sequence</a>			   
                         <div class="editor-wrapper">
                             <div class="editor">{% include skema/Sequence %}</div>
                         </div>
-                        Type Diagram: <a href="/sequence" target='_blank'>sequence</a> / <a href="/flowchart" target='_blank'>flowchart</a> / <a href="/railroad" target='_blank'>railroad</a> (Cek: <a href="https://github.com/MarketLeader/marketleader.github.io/wiki" target='_blank'>Dokumentasi</a>)<br>Silahkan <a href='https://jsfiddle.net/chetabahana/rrxnah40/' target='_blank'>sunting</a> dan <a href='#chetabahana-diskusi' class='internal-link'>usulkan</a> gambar <a href="#" class="download">bagannya..</a>
+                        <br>Silahkan <a href='https://jsfiddle.net/chetabahana/rrxnah40/' target='_blank'>sunting</a> dan <a href='#chetabahana-diskusi' class='internal-link'>usulkan</a> gambar <a href="#" class="download">bagannya..</a><br>Cek: <a href="https://github.com/MarketLeader/marketleader.github.io/wiki" target='_blank'>Dokumentasi</a>
                     </div>
                     <div class="col-md-8">
                         <div class="diagram"></div>
