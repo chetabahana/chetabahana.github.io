@@ -15,7 +15,7 @@
                             <div class="editor">{% include skema/Sequence %}</div>
                          </div>
                         Punya ide skema lain yang lebih jitu?<br>
-                        Silahkan <a href='https://jsfiddle.net/chetabahana/f7ejxhnk/' target='_blank'>sunting</a> dan <a href='#templatemo-bottom' class='internal-link'>usulkan</a> gambar <a href="#" class="download">bagannya..</a><br>
+                        Silahkan <a href='https://jsfiddle.net/chetabahana/rrxnah40/' target='_blank'>sunting</a> dan <a href='#templatemo-bottom' class='internal-link'>usulkan</a> gambar <a href="#" class="download">bagannya..</a><br>
                     </div>
                     <div class="col-md-8">
                         <div class="diagram"></div>
