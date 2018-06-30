@@ -30,7 +30,7 @@
       "current" : {"fill" : "yellow", "font-color" : "red", "font-weight" : "bold"},
       "future" : { "fill" : "#FFFF99"},
       "invalid": {"fill" : "#444444", "font-color" : "white"},
-      "approved" : { "fill" : "#58C4A3", "font-size" : 12, "yes-text" : "LANJUT", "no-text" : "DITOLAK" },
+      "approved" : { "fill" : "#58C4A3", "font-size" : 12, "yes-text" : "LULUS UJI", "no-text" : "DITOLAK" },
       "rejected" : { "fill" : "#C45879", "font-size" : 12, "yes-text" : "LANJUT", "no-text" : "DITOLAK" }
     }
   }    
