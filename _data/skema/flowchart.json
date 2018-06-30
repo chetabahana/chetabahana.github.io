@@ -1,7 +1,7 @@
  {
    "title" : "flowchart",
    "content" : {
-    "x": -10,
+    "x": -5,
     "y": -5,
     "line-width": 3,
     "line-length": 50,
@@ -29,7 +29,7 @@
       "past" : { "fill" : "#CCCCCC", "font-size" : 12},
       "current" : {"fill" : "yellow", "font-color" : "red", "font-weight" : "bold"},
       "future" : { "fill" : "#FFFF99"},
-      "invalid": {"fill" : "#444444"},
+      "invalid": {"fill" : "white"},
       "approved" : { "fill" : "#58C4A3", "font-size" : 12, "yes-text" : "LANJUT", "no-text" : "DITOLAK" },
       "rejected" : { "fill" : "#C45879", "font-size" : 12, "yes-text" : "LANJUT", "no-text" : "DITOLAK" }
     }
