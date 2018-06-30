@@ -2,12 +2,12 @@ st=>start: Start|past
 e=>end: End|future
 op1=>operation: Input|past
 op2=>operation: Output|current
-sub1=>subroutine: Sub1|invalid
-sub2=>subroutine: Sub2|invalid
+sub1=>subroutine: Sub1|future
+sub2=>subroutine: Sub2|future
 cond1=>condition: Cek1|rejected
 cond2=>condition: Cek2|approved
-tes1=>inputoutput: Tes1|future
-tes2=>inputoutput: Tes2|future
+tes1=>inputoutput: Tes1|invalid
+tes2=>inputoutput: Tes2|invalid
 
 st->op1(right)->sub1
 sub1(right)->cond1(yes, right)->sub2
