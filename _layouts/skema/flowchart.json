@@ -1,15 +1,17 @@
-st=>start: Start|past:>https://github.com/chetabahana/chetabahana.github.io/wiki
-e=>end: End|future:>https://marketleader.github.io/Toko-Chetabahana/
-op1=>operation: My Operation|past
-op2=>operation: Stuff|current
-sub1=>subroutine: My Subroutine|invalid
-cond=>condition: Yes
-or No?|approved:>https://github.com/MarketLeader/marketleader.github.io/wiki[blank]
-c2=>condition: Good idea|rejected
-io=>inputoutput: catch something...|future
+st=>start: Start|past
+e=>end: End|future
+op1=>operation: Input|past
+op2=>operation: Output|current
+sub1=>subroutine: Sub1|invalid
+sub2=>subroutine: Sub2|invalid
+cond1=>condition: Cek1|rejected
+cond2=>condition: Cek2|approved
+tes1=>inputoutput: Tes1|future
+tes2=>inputoutput: Tes2|future
 
-st->op1(right)->cond
-cond(yes, right)->c2
-cond(no)->sub1(left)->op1
-c2(yes)->io->e
-c2(no)->op2->e<
+st->op1(right)->sub1
+sub1(right)->cond1(yes, right)->sub2
+cond1(no)->tes1(left)->sub1
+sub2->cond2(yes, right)->op2
+cond2(no)->tes2(left)->tes1
+op2->e
