@@ -1,17 +1,17 @@
 st=>start: Start|past
 e=>end: End|past
-op1=>inputoutput: Input|future
-op2=>inputoutput: Output|future
-sub1=>operation: Sub Input|current
-sub2=>operation: Sub Output|current
+io1=>inputoutput: Input|future
+io2=>inputoutput: Output|future
+op1=>operation: Trim Input|current
+op2=>operation: Trim Output|current
 uji1=>condition: Uji Input|rejected
 uji2=>condition: Uji Output|approved
-cek1=>subroutine: Cek Input|invalid
-cek2=>subroutine: Cek Output|invalid
+sub1=>subroutine: Sub Input|invalid
+sub2=>subroutine: Sub Output|invalid
 
-st->op1(right)->sub1
-sub1(right)->uji1(yes, right)->sub2
-uji1(no)->cek1(left)->sub1
-sub2->uji2(yes, right)->op2
-uji2(no)->cek2(left)->cek1
-op2->e
+st->io1(right)->op1
+op1(right)->uji1(yes, right)->op2
+uji1(no)->sub1(left)->op1
+op2->uji2(yes, right)->io2
+uji2(no)->sub2(left)->sub1
+io2->e
