@@ -1,13 +1,13 @@
 st=>start: Start|past
 e=>end: End|past
-op1=>operation: Input|future
-op2=>operation: Output|future
-sub1=>subroutine: Sub Input|current
-sub2=>subroutine: Sub Output|current
+op1=>inputoutput: Input|future
+op2=>inputoutput: Output|future
+sub1=>operation: Sub Input|current
+sub2=>operation: Sub Output|current
 uji1=>condition: Uji Input|rejected
 uji2=>condition: Uji Output|approved
-cek1=>inputoutput: Cek Input|invalid
-cek2=>inputoutput: Cek Output|invalid
+cek1=>subroutine: Cek Input|invalid
+cek2=>subroutine: Cek Output|invalid
 
 st->op1(right)->sub1
 sub1(right)->uji1(yes, right)->sub2
