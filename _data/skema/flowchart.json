@@ -19,7 +19,7 @@
       "start": {
         "font-color": "red",
         "element-color": "green",
-        "fill": "yellow"
+        "class": "start-element"
       },
       "end":{
         "font-color": "red",
