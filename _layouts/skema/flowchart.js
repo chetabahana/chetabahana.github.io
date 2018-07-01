@@ -1,5 +1,5 @@
-st=>start: Start|future
-e=>end: End|future
+st=>start: Start|past
+e=>end: End|past
 op1=>operation: Input|future
 op2=>operation: Output|future
 sub1=>subroutine: Sub Input|current
