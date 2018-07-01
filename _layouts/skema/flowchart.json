@@ -1,9 +1,9 @@
 st=>start: Start|past
 e=>end: End|future
 op1=>operation: Input|past
-op2=>operation: Output|current
-sub1=>subroutine: Sub Input|future
-sub2=>subroutine: Sub Output|future
+op2=>operation: Output|future
+sub1=>subroutine: Sub Input|current
+sub2=>subroutine: Sub Output|current
 cond1=>condition: Uji Input|rejected
 cond2=>condition: Uji Output|approved
 tes1=>inputoutput: Cek Input|invalid
