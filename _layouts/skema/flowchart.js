@@ -1,6 +1,6 @@
 st=>start: Start|future
 e=>end: End|future
-op1=>operation: Input|past
+op1=>operation: Input|future
 op2=>operation: Output|future
 sub1=>subroutine: Sub Input|current
 sub2=>subroutine: Sub Output|current
