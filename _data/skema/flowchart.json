@@ -17,12 +17,12 @@
     "scale": 1,
     "symbols": {
       "start": {
-        "font-color": "green",
+        "font-color": "red",
         "element-color": "green",
         "fill": "yellow"
       },
       "end":{
-        "font-color": "green",
+        "font-color": "red",
         "element-color": "green",
         "class": "end-element"
       }
