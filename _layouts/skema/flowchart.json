@@ -1,4 +1,4 @@
-st=>start: Start|past
+st=>start: Start|future
 e=>end: End|future
 op1=>operation: Input|past
 op2=>operation: Output|future
