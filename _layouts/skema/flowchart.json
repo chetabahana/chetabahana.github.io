@@ -6,8 +6,8 @@ sub1=>subroutine: Sub Input|future
 sub2=>subroutine: Sub Output|future
 cond1=>condition: Uji Input|rejected
 cond2=>condition: Uji Output|approved
-tes1=>inputoutput: Tes Input|invalid
-tes2=>inputoutput: Tes Output|invalid
+tes1=>inputoutput: Cek Input|invalid
+tes2=>inputoutput: Cek Output|invalid
 
 st->op1(right)->sub1
 sub1(right)->cond1(yes, right)->sub2
