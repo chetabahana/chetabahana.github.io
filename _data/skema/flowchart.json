@@ -30,7 +30,7 @@
     "flowstate" : {
       "past" : { "fill" : "#CCCCCC", "font-size" : 12},
       "current" : {"fill" : "yellow", "font-weight" : "bold"},
-      "future" : { "fill" : "#FFFF99", "font-weight" : "bold"},
+      "future" : { "fill" : "#C45879", "font-weight" : "bold"},
       "invalid": {"fill" : "#444444", "font-color" : "white", "font-weight" : "bold"},
       "approved" : { "fill" : "#58C4A3", "font-weight" : "bold", "yes-text" : "LULUS UJI", "no-text" : "DITOLAK" },
       "rejected" : { "fill" : "#58C4A3", "font-weight" : "bold", "yes-text" : "LANJUT", "no-text" : "DITOLAK" }
