@@ -32,8 +32,8 @@
       "current" : {"fill" : "yellow", "font-weight" : "bold"},
       "future" : { "fill" : "#58C4A3", "font-weight" : "bold"},
       "invalid": {"fill" : "#444444", "font-color" : "white", "font-weight" : "bold"},
-      "approved" : { "fill" : "#C45879", "font-weight" : "bold", "yes-text" : "LANJUT", "no-text" : "TIDAK LULUS" },
-      "rejected" : { "fill" : "#C45879", "font-weight" : "bold", "yes-text" : "LULUS", "no-text" : "DITOLAK" }
+      "approved" : { "fill" : "#C45879", "font-weight" : "bold", "yes-text" : "LANJUT", "no-text" : "DITOLAK" },
+      "rejected" : { "fill" : "#C45879", "font-weight" : "bold", "yes-text" : "LULUS", "no-text" : "TIDAK LULUS" }
     }
   }    
 }
