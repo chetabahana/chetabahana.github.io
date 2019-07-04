@@ -1,7 +1,7 @@
 Title: Bagan Eksekusi
 Buka Toko-->Stok Barang: Optimasi
-Stok Barang->Google Merchant Center: Google-Content-API
-Google Merchant Center->Peluang Terbaik: Google-Ads-API
-Peluang Terbaik->>Portfolio: Google-Task-API
+Stok Barang->Google Merchant Center: Google-Task-API
+Google Merchant Center->Peluang Terbaik: Google-Trend-API
+Peluang Terbaik->>Portfolio: Google-Ads-API
 Portfolio->>Stok Barang: Google-Site-API
 Portfolio-->>Network: eShop SEO
