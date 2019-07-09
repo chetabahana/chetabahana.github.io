@@ -1,0 +1,24 @@
+steps:
+- name: '${_SOURCE}/gcloud'
+  entrypoint: 'bash'
+  args:
+  - '-c'
+  - |
+        gcloud source repos clone --verbosity=none `gcloud source \
+        repos list --limit=1 --format 'value(REPO_NAME)'` .io
+        cd .io && git checkout $BRANCH_NAME && cp -fr scripts /workspace
+        bash ${_SCRIPT}/gcloud.bash $PROJECT_ID $BRANCH_NAME $BUILD_ID
+
+- name: '${_SOURCE}/docker'
+  entrypoint: 'bash'
+  args:
+  - '-c'
+  - |
+        bash ${_SCRIPT}/docker.bash $PROJECT_ID $BRANCH_NAME $BUILD_ID
+
+substitutions:
+  _VERSION: 'v1-062105-cron'
+  _SOURCE: gcr.io/cloud-builders
+  _SCRIPT: /workspace/scripts/gcb
+
+timeout: '600s'
