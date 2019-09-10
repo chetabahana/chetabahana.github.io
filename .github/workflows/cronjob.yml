@@ -1,0 +1,23 @@
+name: CI
+on:
+  push:
+    branches:
+    - master
+  schedule:
+  - cron:  '0 */6 * * *'
+    branches:
+    - master
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Update repositories
+      run: |
+        bash .github/workflows/builders/__init__
+      env:
+        TAG_NAME: ubuntu
+        BRANCH_NAME: master
+        GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+        GCP_ACCOUNT: ${{ secrets.GCP_ACCOUNT }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
