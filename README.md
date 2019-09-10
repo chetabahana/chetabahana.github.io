@@ -1,72 +1,125 @@
-|[![The HYIP Project](https://avatars1.githubusercontent.com/u/8466209?v=10&s=20)](https://github.com/hyip) |This [repo](https://github.com/hyipworld/hyipworld.github.io "Repository") is courtesy of [The HYIP Project](https://github.com/hyip "High Yard Investment Program"). Find all of them on [The Project Map](https://github.com/hyip/info/wiki/maps#project-map "Project Mapping").|[![The HYIP Project](https://tophyipmonitor.files.wordpress.com/2014/11/elephant.png?w=20)](https://tophyipmonitor.wordpress.com/hyip-world/nature-6/#main) |
+<p align="center"> 
+<a href="https://chetabahana.com/">
+<img src="https://chetabahana.files.wordpress.com/2018/04/logoweb.png" alt="Chetabahana.com | Situs Belanja Jual-Beli Barang & Promo Aneka Produk Fashion, Busana Muslim, Bayi & Anak-anak, Kecantikan, Tas, Sepatu, Peralatan Rumah Tangga, Elektronik, Makanan & Minuman Kemasan, dll. Soon The E-Shop Market Leader Will Be Owned Here!"></a><br />
+<a href="https://github.com/MarketLeader">  
+WE ARE GOING TO WIN THE MARKET!
+</a><br /><br />
+</p>  
+
+
+|[![Chetabahana Project](https://avatars1.githubusercontent.com/u/36441664?v=10&s=20)](https://github.com/chetabahana) |This [repo](#repository "Project Repository") is courtesy of [Chetabahana Project](https://github.com/MarketLeader "We are providing an Integrated Open Source Project about The World of e-Commerce."). Find all of them on [The Project Map](https://marketleader.github.io/#bagan-projek "Project Mapping").|[![Chetabahana Project](https://avatars2.githubusercontent.com/u/36441943?v=10&s=20)](https://github.com/MarketLeader) |
 |:----|----|----:|
 
-# Hyip World
+# Tutorial Github & Jeckyll
 
-[![Build Status](https://travis-ci.org/guard/guard.svg)](https://travis-ci.org/guard/guard) [![Dependency Status](https://gemnasium.com/guard/guard.png)](https://gemnasium.com/guard/guard) [![Code Climate](https://codeclimate.com/github/guard/guard/badges/gpa.svg)](https://codeclimate.com/github/guard/guard) [![Test Coverage](https://codeclimate.com/github/guard/guard/badges/coverage.svg)](https://codeclimate.com/github/guard/guard) [![Inline docs](http://inch-ci.org/github/guard/guard.svg)](http://inch-ci.org/github/guard/guard)
+Di sesi ini akan diuraikan tentang setup situs di GitHub.  
+Anda bisa ikuti panduan untuk clone situs [Chetabahana](https://chetabahana.github.io/) di akun.  
+Disarankan agar ikuti [Cara Simple](#cara-simple) terlebih dahulu.
 
-We start our documentation by a tutorial how we start to get our site up and running on Github.
+## Cara Simple
+- Langsung [_Fork_](https://help.github.com/articles/fork-a-repo/#fork-an-example-repository) aja [_repo ini_](https://github.com/chetabahana/chetabahana.github.io/fork) juga [_lainnya_](https://github.com/chetabahana?tab=repositories) ke akun.
+- Beri nama `<akun>/<akun>.github.io` terus lakukan [_Settings_](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages).  
+- Tunggu 10 menit. Lalu bros `https://<akun>.github.io`. 
+- Jika belum muncul cek [_Fix GitHub Page Error 404_](https://stackoverflow.com/questions/11577147/how-to-fix-page-404-on-github-page/50034409#50034409).
 
-Open Github account here:    
+## Cara Standar
+- Buka akun Github:<br> 
 https://github.com/join
 
-Create a new organization here:     
+- Buat organization baru:<br>
 https://github.com/organizations/new
 
-Install Github from Windows, get it here:    
+- Pasang Github di Windows:<br>
 https://windows.github.com/
 
-Select a template, or use ours, get it FREE here:    
+- Pilih template, atau pakai spt kami, ambil FREE disini:<br>
 http://www.templatemo.com/preview/templatemo_395_urbanic
 
-Create repository for the template: "YOUR-ORGANIZATION.github.io":     
+- Ber nama repositorynya: "YOUR-ORGANIZATION.github.io":<br>
 https://help.github.com/articles/getting-started-with-github-for-windows/
 
-Download the installer & Devkit for Ruby and setup Jeckyill    
+- Unduh installer & Devkit for Ruby and setup Jeckyill<br>
 http://jekyll-windows.juthilo.com/1-ruby-and-devkit/    
 
-Tweak how you want the site URLs to look follow guidance here:    
+- Atur site URLs, ikuti petunjuknya:<br>
 http://jekyllrb.com/docs/structure/
 
-Commit the template to Github    
+- Commit ke Github<br>
 http://martinbuberl.com/blog/setup-jekyll-on-windows-and-host-it-on-github-pages/    
-
-    git add --all    
-    git commit -m "Initial commit"    
+`
+    git add --all \    
+    git commit -m "Initial commit" \   
     git push "origin" master:master
-
-Point your browser to:    
+`
+- Buka di browsernya:<br>
 `https://YOUR-ORGANIZATION.github.io`
 
-Set up your custom domain follow this documentation:  
-https://help.github.com/articles/user-organization-and-project-pages/  
-https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/
+You are done, Congrats..    
 
-You can use the same domain for your project pages, turn Jekyll off if necessary:   
-https://help.github.com/articles/using-jekyll-with-pages#troubleshooting  
-https://stackoverflow.com/questions/9082499/custom-domain-for-github-project-pages
+## Setup Domain
 
-You are done..    
+Anda bisa setup custom domain di GitHub:  
+- https://help.github.com/articles/user-organization-and-project-pages/  
+- https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/
+- https://stackoverflow.com/questions/9082499/custom-domain-for-github-project-pages
+
+Here are the URLs as samples that pointing to our [forked projects](https://github.com/search?utf8=%E2%9C%93&q=%40chetabahana+fork%3Aonly+user%3Amarketleader+fork%3Aonly&type=Repositories&ref=advsearch&s=updated): 
+
+## Selengkapnya
+### Konsep
+- Site of Jeckyll Author, Tom Preston-Werner, GitHub's co-founder.: http://tom.preston-werner.com
+- Concept: http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html
+### GitHub Pages
+- Setup: https://gist.github.com/chrisjacob/833223  
+- YAML: http://yaml.org/spec/1.2/spec.html#id2775170
+- CoffeeScript: https://coffeescript.org/#functions
+- Plugins: https://help.github.com/articles/configuring-jekyll-plugins/
+### Using Jekyll / Liquid
+- Validator: https://codebeautify.org/
+- Dokumentasi: https://github.com/mojombo/tpw  
+- Jekyll https://mademistakes.com/articles/using-jekyll-2016/
+- Liquid: https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
+### Cheatsheet: 
+- Jekyll: https://devhints.io/jekyll
+- Shopify: http://cheat.markdunkley.com/
+- Emoji: https://www.webpagefx.com/tools/emoji-cheat-sheet/ :smiley:
+- Reference: https://news.humancoders.com/t/developpement/items/11149-jekyll-cheat-sheet
+### GitHub API
+- REST API v3: https://developer.github.com/v3/
+- GraphQL API v4: https://developer.github.com/v4/explorer/
+
+## Pustaka
+Disarankan untuk disimak sebelum melangkah lebih jauh:  
+Dokumentasi Project: https://github.com/chetabahana/chetabahana.github.io/wiki
+<p align="center"> 
+<a href="https://chetabahana.com/#after_header1_3"><img src="https://user-images.githubusercontent.com/36441664/38942532-44c87736-4359-11e8-9ad4-56f7d2b68ced.png" alt="Alokasi Pustaka Online Chetabahana"></a><br>
+Gambar-2: Alokasi Pustaka Online <a href= "https://chetabahana.com">Chetabahana</a>
+</p>
+
+- [Cara Buka Toko Online WinMarket dan Optimasi Internal](https://chetabahana.blogspot.com/)
+- [Cara Optimasi Eksternal Toko dengan Shop SEO](https://chetabahana.wordpress.com/)
+- [Channel Youtube Chetabahana](https://www.youtube.com/channel/UCZlPku9beXzdROCknYLuRNg?view_as=subscriber)
+- [e-Books Chetabahana](https://www.scribd.com/user/401259110/Chetabahana)
+
+## License
+Project ini dipublikasikan dengan lisensi berikut:  
+[Apache License 2.0](https://github.com/MarketLeader/Toko-Chetabahana/blob/master/LICENSE)
+
+## Penutup
+Berikut ini beberapa catatan sebagai penutup:  
+- Projek ini diprioriostaskan bagi peminat [e-Commerce di Indonesia](https://www.youtube.com/watch?v=dd__L8Jh2c4&t=25s) 🇮🇩
+- Status masih pengembangan dan pengetesan implementasi
+- Syarat untuk bergabung silahkan [Daftar ID WinMarket](https://chetabahana.com/info/tentang-89.html)
+- Tim WinMarket welcome untuk bergabung.
+
+Terimakasih atas kunjungannya.  
+Met menyimak.. :pray:  
+
+SALAM Sukses!  
+:copyright: [**Chetabahana Project**](https://github.com/MarketLeader)  
+[![profile for Chetabahana on Stack Exchange, a network of free, community-driven Q&amp;A sites](https://stackexchange.com/users/flair/5054985.png)](https://stackoverflow.com/users/4058484/chetabahana?tab=profile)   
 
 
-Here are the URLs to point to our site:    
-
-    http://hyipworld.github.io/   
-    http://www.hyip.world/    
-    http://hyip.world/
-
-Here are the URLs as samples that pointing to our [forked projects](https://github.com/search?utf8=%E2%9C%93&q=%40hyip+fork%3Aonly+user%3Ahyipworld+fork%3Aonly&type=Repositories&ref=advsearch&s=updated): 
-
-    http://hyip.world/maps
-    http://hyip.world/js-sequence-diagrams
-    http://hyip.world/railroad-diagrams/generator.html
-
-
-See more details about Github & Jeckyll here:  
-Github Repository of Jeckyll: https://github.com/mojombo/tpw  
-Setup GitHub Pages branchs: https://gist.github.com/chrisjacob/833223  
-Concept: http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html    
-Site of Jeckyll Author, Tom Preston-Werner, GitHub's co-founder.: http://tom.preston-werner.com
-***
-|[:arrow_backward:]((https://github.com/hyip/info)) [Prev](https://github.com/hyip/info)|[Next](https://github.com/hyipworld/hyipworld.github.io/wiki/Home) [:arrow_forward:](https://github.com/hyipworld/hyipworld.github.io/wiki/Home)|
+[:arrow_backward:]((https://github.com/MarketLeader)) [Prev](https://github.com/MarketLeader)|[Next](https://marketleader.github.io/) [:arrow_forward:](https://marketleader.github.io/)|
 |:----|----:|
+

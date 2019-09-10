@@ -1,0 +1,5 @@
+---
+layout: null
+permalink: feed.json
+---
+{% include feed/Json %}

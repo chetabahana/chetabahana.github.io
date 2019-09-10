@@ -1,26 +1,51 @@
-var top_menu_height = 0;
 jQuery(function($) {
-		$(window).load( function() {
-			$('.external-link').unbind('click');	
-		});
+	
+    $(window).on('beforeunload', function(){
+	    
+	// to stick navbar on top and hash
+	$('.templatemo-top-menu').stickUp(); 
+	    
+    });
+	
+    $(window).on('load', function(){
+	    
+	// open links which point outside    
+	$(document.links).filter(function() {
+            return this.hostname != window.location.hostname;
+	}).attr('target', '_blank'); 
+	    
+        // do scroll and clear the hash anytime someone arrives with a hash tag    
+        if( typeof(location.hash) !== 'undefined' && location.hash.length ) {
+            scrollTo(location.hash);
+            history.replaceState(null, null, location.pathname); // https://stackoverflow.com/a/50688363/4058484				     
+	}
+	    
+    });
 		
-        $(document).ready( function() {
+    $(document).ready( function() {
 
-            // load google map
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize';
-        document.body.appendChild(script);
+	// to stick navbar on top and hash
+	$('.templatemo-top-menu').stickUp(); 
+	    
+	// unbind external link   
+        $('.external-link').unbind('click');	    
 
-        top_menu_height = $('.templatemo-top-menu').height();
         // scroll spy to auto active the nav item
+        top_menu_height = $('.templatemo-top-menu').height();
         $('body').scrollspy({ target: '#templatemo-nav-bar', offset: top_menu_height + 10 });
-		$('.external-link').unbind('click');
 
         // scroll to top
         $('#btn-back-to-top').click(function(e){
             e.preventDefault();
             scrollTo('#templatemo-top');
+        });
+
+        // scroll to specific id when click on link
+	$('.internal-link, .carousel-inner a').click(function(e){
+            e.preventDefault(); 
+            var linkId = $(this).attr('href');
+            scrollTo(linkId);
+            return false;
         });
 
         // scroll to specific id when click on menu
@@ -34,16 +59,12 @@ jQuery(function($) {
             $(this).blur();
             return false;
         });
-
-        $('.templatemo-service a').click(function(e){
-            e.preventDefault(); 
-            var linkId = $(this).attr('href');
-            scrollTo(linkId);
-            return false;
+        //gallery light box setup
+        $('a.colorbox').colorbox({
+            rel: function(){
+                return $(this).data('group');
+            }
         });
-
-        // to stick navbar on top
-        $('.templatemo-top-menu ').stickUp();
 
         // gallery category
         $('.templatemo-gallery-category a').click(function(e){
@@ -58,38 +79,47 @@ jQuery(function($) {
             });
             $(linkClass).fadeIn();  
         });
-
-        //gallery light box setup
-        $('a.colorbox').colorbox({
-                                    rel: function(){
-                                        return $(this).data('group');
-
-                                    }
-        });
+	    
+        // chetabahana-portfolio https://stackoverflow.com/a/50299022/4058484
+        $(".templatemo-project-gallery").simplyScroll(); 
+	    
     });
 });
 
-function initialize() {
-    //var mapOptions = {zoom: 12, center: new google.maps.LatLng(16.8451789,96.1439764)};
-    //var map = new google.maps.Map(document.getElementById('map-canvas'),  mapOptions);
-    document.getElementById('map-canvas').style.backgroundImage = "url('/js-sequence-diagrams/images/grammar.png')";
-}
-
-// scroll animation 
+// scrollTo 
+var top_menu_height = 0;
 function scrollTo(selectors)
 {
-
-    if(!$(selectors).size()) return;
+    if(!$(selectors).length) return;
     var selector_top = $(selectors).offset().top - top_menu_height;
     $('html,body').animate({ scrollTop: selector_top }, 'slow');
-
 }
 
-// Google Universal Analytics tracking code
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+//juicerFeed
+function juicerFeed() { 
+    if (!$('#gfeeds').find('a')[0] || !$('#___community_0')) {
+         window.requestAnimationFrame(juicerFeed);       
+    } else {
+       $('#___community_0').css({ 'margin-top': '-5px' });  
+       $('#gfeeds').slick({slidesToShow: 10, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2000});
+    }    
+  } 
 
-ga('create', 'UA-67221001-1', 'auto');
-ga('send', 'pageview');
+//instafeed
+var feed = new Instafeed({
+    get: 'user',
+    limit: 100,
+    sortBy:'most-recent',
+    userId: 6982272811,
+    resolution: 'standard_resolution',
+    accessToken: '6982272811.1677ed0.b6dcfc26877b4ad3854d1a276fdf4de6',
+    template: '<li><a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="insta-likes"><div style="display: table; vertical-align: middle; height: 100%; width: 100%;"><span style="display: table-cell; vertical-align: middle; height: 100%; width: 100%;">{{likes}} <i class="fa fa-heart"></i><br/>{{comments}} <i class="fa fa-comment"></i></span></div></div></a></li>',
+
+    after: function() {
+        $('#instafeed').slick({slidesToShow: 5, slidesToScroll: 1, autoplay: true, arrows: true, autoplaySpeed: 2000});
+        juicerFeed();	    
+    }
+
+});
+
+feed.run();

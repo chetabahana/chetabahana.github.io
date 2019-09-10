@@ -1,0 +1,39 @@
+ {
+   "title" : "flowchart",
+   "content" : {
+    "x": -10,
+    "y": -5,
+    "line-width": 3,
+    "line-length": 45,
+    "text-margin": 10,
+    "font-size": 12,
+    "font-color": "black",
+    "line-color": "black",
+    "element-color": "black",
+    "fill": "white",
+    "yes-text": "yes",
+    "no-text": "no",
+    "arrow-end": "block",
+    "scale": 1,
+    "symbols": {
+      "start": {
+        "font-color": "red",
+        "element-color": "green",
+        "class": "start-element"
+      },
+      "end":{
+        "font-color": "red",
+        "element-color": "green",
+        "class": "end-element"
+      }
+    },
+    "flowstate" : {
+      "past" : { "fill" : "#CCCCCC", "font-size" : 12},
+      "current" : {"fill" : "yellow", "font-weight" : "bold"},
+      "future" : { "fill" : "#58C4A3", "font-weight" : "bold"},
+      "invalid": {"fill" : "#444444", "font-color" : "white", "font-weight" : "bold"},
+      "approved" : { "fill" : "#C45879", "font-weight" : "bold", "yes-text" : "LANJUT", "no-text" : "DITOLAK" },
+      "rejected" : { "fill" : "#C45879", "font-weight" : "bold", "yes-text" : "LULUS", "no-text" : "TIDAK LULUS" }
+    }
+  }    
+}

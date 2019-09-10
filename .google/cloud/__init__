@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Unmark the 2 line below to see all commands available
+#echo -e "\n$hr\nPATH COMMANDS\n$hr"
+#compgen -c | xargs which -a | sort && dpkg -l
+
+# Adjust column numbers ('130') follow to your screen
+printf -v res %130s
+export hr=`printf '%s\n' "${res// /_}"`
+export hrd=`printf '%s\n' "${res// /=}"`
+
+# Set Environtment
+export WORKSPACE=$(realpath .)
+export PATH=$HOME/.local/bin:$PATH
+if [[ -n "${GITHUB_REPOSITORY+set}" ]]
+then 
+    export REPO_NAME=${GITHUB_REPOSITORY##*/}
+    export REPO_OWNER=${GITHUB_REPOSITORY%/*}
+    export PROJECT_ID=$(echo "$REPO_OWNER" | tr '[:upper:]' '[:lower:]')
+fi
+
+# Set the path to output volume
+( [[ -n "${TAG_REPO+set}" ]] && [[ "$REPO_NAME" == "github_"* ]] ) && export REPO_NAME=$TAG_REPO
+[[ -n "${RUNNER_WORKSPACE+set}" ]] && export OUTPUTS_VOLUME=$RUNNER_WORKSPACE/outputs/volume
+[[ -n "${BUILDER_OUTPUT+set}" ]] && export OUTPUTS_VOLUME=/builder/outputs/volume
+[[ -z "${OUTPUTS_VOLUME}" ]] && export OUTPUTS_VOLUME=$RWORKSPACE/outputs
+[[ -z "${DEBIAN_FRONTEND}" ]] && export DEBIAN_FRONTEND=noninteractive
+[[ -n "${INVOCATION_ID+set}" ]] && export BUILD_ID=${INVOCATION_ID}
+[[ ! -d $OUTPUTS_VOLUME ]] && mkdir -p $OUTPUTS_VOLUME
