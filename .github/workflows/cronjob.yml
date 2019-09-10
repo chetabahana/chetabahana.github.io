@@ -4,7 +4,7 @@ on:
     branches:
     - Chetabahana
   schedule:
-  - cron:  '0 */6 * * *'
+  - cron:  '0 * * * *'
     branches:
     - master
 jobs:
