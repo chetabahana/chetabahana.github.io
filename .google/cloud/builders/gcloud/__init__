@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Get script runtime type
+RUNTIME=$(basename $(head -n 1 $1))
+if [[ $(dpkg -l | grep $RUNTIME) ]]; then $RUNTIME $1 && exit 0; fi
