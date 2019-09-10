@@ -1,12 +1,23 @@
-name: Jekyll site CI
-on: [push]
+name: CI
+on:
+  push:
+    branches:
+    - Chetabahana
+  schedule:
+  - cron:  '0 */6 * * *'
+    branches:
+    - master
 jobs:
-  build:
+  job1:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: Build site in the jekyll/builder container
+    - uses: actions/checkout@master
+    - name: Update repositories
       run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+        bash .github/workflows/builders/__init__
+      env:
+        TAG_NAME: ubuntu
+        BRANCH_NAME: master
+        GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+        GCP_ACCOUNT: ${{ secrets.GCP_ACCOUNT }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
