@@ -24,9 +24,9 @@ get_workspace()
 # Get private repository
 get_repository()
 {
-    # Get the repo
-    echo get private repository..
-    
+    # Set the workflows
+    echo Initializing Workflows..
+
     # Set Google App Credentials
     if [[ -x "$(command -v gcloud)" ]]
     then
@@ -63,7 +63,7 @@ get_repository()
     if [[ ! -f $RUNNER ]]
     then
         for i in $(ls -d */)
-        do 
+        do
             mkdir -p $HOME/.local/$(basename ${i%%/})
             cp -frpT ${i%%/} $HOME/.local/$(basename ${i%%/})
         done
