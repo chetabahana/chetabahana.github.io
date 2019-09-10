@@ -1,4 +1,4 @@
-name: CI
+name: Cronjob CI
 on:
   push:
     branches:
