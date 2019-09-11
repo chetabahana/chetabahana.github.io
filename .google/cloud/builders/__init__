@@ -56,7 +56,7 @@ get_repository()
     fi
 
     # Locate the files
-    cd $WORKSPACE/.io
+    [[ -d $WORKSPACE/.io ]] && cd $WORKSPACE/.io || exit 0;
     [[ -z $REPOSITORY ]] && export REPOSITORY=$(git remote get-url origin)
     export MATCH_REPOSITORY=${REPOSITORY##*_} RUNNER=$HOME/.local/bin/run
 
@@ -71,6 +71,12 @@ get_repository()
     cd ..
 }
 
+# Collect Parameters
+while [ "$1" != "" ]; do
+    eval export "$1" &> /dev/null
+    shift
+done
+
 # Run the current step
 while ( [[ -z $ORIGIN ]] )
 do
@@ -78,6 +84,7 @@ do
     if [[ -z $WORKSPACE ]]; then get_workspace; 
     elif [[ -z $MATCH_REPOSITORY ]]; then get_repository;
     elif [[ $(command -v run) == $RUNNER ]]; then run $TAG_NAME; 
+    elif [[ $(command -v push) == $PUSHER ]]; then push $TAG_NAME; 
     else echo "uncathed profiles and settings.."; fi
 
     # Avoid unwanted iteration
