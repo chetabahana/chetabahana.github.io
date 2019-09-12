@@ -23,4 +23,3 @@ Main Code:
 
 <!-- If your changes affect the UI, providing "before" and "after" screenshots will
 greatly reduce the amount of work needed to review your work. -->
-

@@ -1,10 +1,16 @@
 #!/bin/bash
 
+# Parameters
+while [[ "$1" != "" ]]; do
+    eval export "$1" &> /dev/null
+    shift
+done
+
 # Environtment
 get_workspace()
 {
     echo Set Environtments..
-    export NAMESPACE=${0%/*}
+    export NAMESPACE=$(realpath ${0%/*})
 
     # Namespace Environtments
     INHERIT=$(dirname ${NAMESPACE})/__init__ 
@@ -55,11 +61,23 @@ get_repository()
         fi
     fi
 
-    # Locate the files
-    cd $WORKSPACE/.io
+    # Send to environtment
+    [[ -d $WORKSPACE/.io ]] && cd $WORKSPACE/.io || exit 0;
     [[ -z $REPOSITORY ]] && export REPOSITORY=$(git remote get-url origin)
     export MATCH_REPOSITORY=${REPOSITORY##*_} RUNNER=$HOME/.local/bin/run
 
+    # Locate the branch
+    if [[ "$BRANCH_NAME" != "master" ]]
+    then
+        if grep -q origin/$BRANCH_NAME << EOF
+`git branch -r`
+EOF
+        then
+            git checkout $BRANCH_NAME
+        fi
+    fi
+
+    # Locate the files
     if [[ ! -f $RUNNER ]]
     then
         for i in $(ls -d */)
@@ -68,16 +86,16 @@ get_repository()
             cp -frpT ${i%%/} $HOME/.local/$(basename ${i%%/})
         done
     fi
-    cd ..
 }
 
 # Run the current step
-while ( [[ -z $ORIGIN ]] )
+while [[ -z $ORIGIN ]]
 do
     # Loop for environtments
     if [[ -z $WORKSPACE ]]; then get_workspace; 
     elif [[ -z $MATCH_REPOSITORY ]]; then get_repository;
     elif [[ $(command -v run) == $RUNNER ]]; then run $TAG_NAME; 
+    elif [[ $(command -v push) == $PUSHER ]]; then push $TAG_NAME; 
     else echo "uncathed profiles and settings.."; fi
 
     # Avoid unwanted iteration
