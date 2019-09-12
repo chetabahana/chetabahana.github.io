@@ -18,6 +18,8 @@ printenv | sort
 export hr=$HR
 export hrd=$HRD
 
+[[ ! -f $HOME/.docker/config.json ]] && exit 0
+
 echo -e "\n$hr\nDOCKER VERSION\n$hr"
 docker version
 
