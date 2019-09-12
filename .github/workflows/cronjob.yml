@@ -21,4 +21,3 @@ jobs:
         GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
         GCP_ACCOUNT: ${{ secrets.GCP_ACCOUNT }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-© 2019 GitHub, Inc.
