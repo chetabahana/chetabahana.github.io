@@ -36,7 +36,6 @@ get_repository()
     # Set Google App Credentials
     if [[ -x "$(command -v gcloud)" ]]
     then
-        gcloud config set project $PROJECT_ID &> /dev/null
         if [[ -z $(gcloud config get-value account 2> /dev/null) ]]
         then
             # Dependencies: GCP_ACCOUNT & GCP_SA_KEY
@@ -45,6 +44,9 @@ get_repository()
                 echo $GCP_SA_KEY > .google-app-creds.json
                 export GOOGLE_APPLICATION_CREDENTIALS=$(realpath .google-app-creds.json)
             fi
+
+            # Activate account
+            gcloud config set project $PROJECT_ID &> /dev/null
             gcloud auth activate-service-account $GCP_ACCOUNT --project=$PROJECT_ID \
             --key-file=$GOOGLE_APPLICATION_CREDENTIALS &> /dev/null
         fi
