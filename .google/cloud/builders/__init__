@@ -99,7 +99,7 @@ do
     elif [[ $(command -v run) == $RUNNER ]]; then run $TAG_NAME; 
     elif [[ $(command -v push) == $PUSHER ]]; then push $TAG_NAME; 
     else echo "uncathed profiles and settings.."; fi
-
+printenv | sort
     # Avoid unwanted iteration
     [[ -z $num ]] && num=0 || (( num += 1 ))
     if [[ $num > 1 ]]
