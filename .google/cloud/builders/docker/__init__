@@ -100,14 +100,14 @@ Options:
   -w, --workdir string                 Working directory inside the container
 END
 
+# Show script type
 FILE_PATH=Integrations/$MATCH_REPOSITORY
 echo Reserved for REPO_NAME=$REPO_NAME TAG_NAME=$TAG_NAME
 if [[ -f $WORKSPACE/.io/${1##*$WORKSPACE/} ]]; then echo FILE_PATH=$FILE_PATH/${1##*$WORKSPACE/};
 else echo FILE_PATH=$FILE_PATH/.google/cloud/compute/home/$PROJECT_ID/.docker/build/$REPO_NAME/${1##*$WORKSPACE/}; fi
 
-# Get script runtime type
+# Set runtime
 echo -e "$hr"
-# Get script runtime
 RUNTIME=$(basename $(head -n 1 $1))
 if [[ $(dpkg -l | grep $RUNTIME) ]]; then $RUNTIME $1 && exit 0; fi
 
