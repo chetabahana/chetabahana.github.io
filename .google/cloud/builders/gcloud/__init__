@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo Reserved for REPO_NAME=$REPO_NAME TAG_NAME=$TAG_NAME
+echo FILE_PATH=Integrations/$MATCH_REPOSITORY/.google/cloud/compute/home/$PROJECT_ID/.docker/build/$REPO_NAME/${0##*workspace/}
+
 # Get script runtime type
 RUNTIME=$(basename $(head -n 1 $1))
 if [[ $(dpkg -l | grep $RUNTIME) ]]; then $RUNTIME $1 && exit 0; fi
+
