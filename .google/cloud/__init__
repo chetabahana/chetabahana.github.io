@@ -21,8 +21,8 @@ export PATH=$HOME/.local/bin:$PATH
 
 if [[ -n "${GITHUB_REPOSITORY+set}" ]]
 then 
-    export REPO_NAME=${GITHUB_REPOSITORY##*/}
-    export REPO_OWNER=${GITHUB_REPOSITORY%/*}
+    [[ -z $REPO_NAME ]] && export REPO_NAME=${GITHUB_REPOSITORY##*/}
+    [[ -z $REPO_OWNER ]] && export REPO_OWNER=${GITHUB_REPOSITORY%/*}
     [[ -z $TAG_NAME ]] && export TAG_NAME=ubuntu
     [[ -z $BRANCH_NAME ]] && export BRANCH_NAME=$(basename $(git name-rev --name-only HEAD))
     [[ -z $PROJECT_ID ]] && export PROJECT_ID=$(echo "$REPO_OWNER" | tr '[:upper:]' '[:lower:]')
