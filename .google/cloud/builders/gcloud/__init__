@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo Reserved for REPO_NAME=$REPO_NAME TAG_NAME=$TAG_NAME
-echo FILE_PATH=Integrations/$MATCH_REPOSITORY/.google/cloud/compute/home/$PROJECT_ID/.docker/build/$REPO_NAME/$1
+echo FILE_PATH=Integrations/$MATCH_REPOSITORY/.google/cloud/compute/home/$PROJECT_ID/.docker/build/$REPO_NAME/${1##*workspace/}
 
 # Get script runtime type
 echo -e "$hr\n"
