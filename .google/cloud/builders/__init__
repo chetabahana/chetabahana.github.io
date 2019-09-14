@@ -22,7 +22,7 @@ get_workspace()
         while read -r LINE; do
             EXPORT=$(sed -e 's/[[:space:]]*$//' <<<${LINE})
             VAR=`echo $EXPORT | cut -d '=' -f1`; ENV_VAR=$(echo $VAR)
-            if [[ -n "$(ENV_VAR+set)" ]]; then continue;
+            if [[ -n ${ENV_VAR+set} ]]; then continue;
             else eval export "$EXPORT" &> /dev/null; fi
         done <$WORKSPACE/env_vars_to_export
     fi
