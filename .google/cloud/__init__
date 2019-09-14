@@ -7,12 +7,12 @@
 # Collumn numbers
 COL=130
 case $HOME in
-    /root) COL=130;;
+    /root) COL=140;;
     /builder/home) COL=180;;
 esac
 
 printf -v res %${COL}s
-export hr=`printf '%s\n' "${res// /_}"`
+export hr=`printf '%s\n' "${res// /-}"`
 export hrd=`printf '%s\n' "${res// /=}"`
 
 # Set Environtment
