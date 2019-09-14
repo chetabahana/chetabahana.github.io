@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo -e "$\nWHOAMI\n$hr"
+echo -e "\nWHOAMI\n$hr"
 whoami
 echo $HOME
 id
