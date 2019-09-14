@@ -4,8 +4,14 @@
 #echo -e "\n$hr\nPATH COMMANDS\n$hr"
 #compgen -c | xargs which -a | sort && dpkg -l
 
-# Adjust column numbers ('130') follow to your screen
-printf -v res %130s
+# Collumn numbers
+COL=130
+case $HOME in
+    /root) COL=130;;
+    /builder/home) COL=180;;
+esac
+
+printf -v res %${COL}s
 export hr=`printf '%s\n' "${res// /_}"`
 export hrd=`printf '%s\n' "${res// /=}"`
 
