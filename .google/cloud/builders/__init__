@@ -67,6 +67,7 @@ get_repository()
     # Send to environtment
     [[ -d $WORKSPACE/.io ]] && cd $WORKSPACE/.io || exit 0;
     [[ -z $REPOSITORY ]] && export REPOSITORY=$(git remote get-url origin)
+    [[ -x "$(command -v cf_export)" ]] && cf_export REPOSITORY=$REPOSITORY
     export MATCH_REPOSITORY=${REPOSITORY##*_} RUNNER=$HOME/.local/bin/run
 
     # Locate the branch
