@@ -100,7 +100,7 @@ Options:
   -w, --workdir string                 Working directory inside the container
 END
 
-# Get script runtime
+# Set runtime
 RUNTIME=$(basename $(head -n 1 $1))
 if [[ $(dpkg -l | grep $RUNTIME) ]]; then $RUNTIME $1 && exit 0; fi
 

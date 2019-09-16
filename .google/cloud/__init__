@@ -4,9 +4,15 @@
 #echo -e "\n$hr\nPATH COMMANDS\n$hr"
 #compgen -c | xargs which -a | sort && dpkg -l
 
-# Adjust column numbers ('130') follow to your screen
-printf -v res %130s
-export hr=`printf '%s\n' "${res// /_}"`
+# Collumn numbers
+COL=130
+case $HOME in
+    /root) COL=140;;
+    /builder/home) COL=180;;
+esac
+
+printf -v res %${COL}s
+export hr=`printf '%s\n' "${res// /-}"`
 export hrd=`printf '%s\n' "${res// /=}"`
 
 # Set Environtment
@@ -15,9 +21,9 @@ export PATH=$HOME/.local/bin:$PATH
 
 if [[ -n "${GITHUB_REPOSITORY+set}" ]]
 then 
-    export REPO_NAME=${GITHUB_REPOSITORY##*/}
-    export REPO_OWNER=${GITHUB_REPOSITORY%/*}
     [[ -z $TAG_NAME ]] && export TAG_NAME=ubuntu
+    [[ -z $REPO_NAME ]] && export REPO_NAME=${GITHUB_REPOSITORY##*/}
+    [[ -z $REPO_OWNER ]] && export REPO_OWNER=${GITHUB_REPOSITORY%/*}
     [[ -z $BRANCH_NAME ]] && export BRANCH_NAME=$(basename $(git name-rev --name-only HEAD))
     [[ -z $PROJECT_ID ]] && export PROJECT_ID=$(echo "$REPO_OWNER" | tr '[:upper:]' '[:lower:]')
 fi
