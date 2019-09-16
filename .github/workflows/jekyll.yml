@@ -4,6 +4,7 @@ on:
     branches:
       - '*'
       - '!master'
+      - '!Chetabahana'
 jobs:
   build:
     runs-on: ubuntu-latest
