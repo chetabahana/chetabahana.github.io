@@ -7,7 +7,3 @@ collections:
   assets:
     output: true
     permalink: /:collection/:path
-    redirect_from:
-      - /:collection/:path/:name
-      - /:collection/:path/:title
-      - /:collection/:path/:output_ext

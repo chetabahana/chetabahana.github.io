@@ -9,5 +9,6 @@ label:  Optimasi
 layout: skema/sequence/method
 tag_name: ubuntu
 run_time: /bin/bash
+redirect_from: "/foo"
 ---
 #!{{ page.run_time }}
