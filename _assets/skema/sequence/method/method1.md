@@ -8,4 +8,4 @@ label:  Optimasi
 layout: skema/sequence/method
 run_time: bash
 ---
-Buka Toko-->Stoks Barang: {{ page.label }}
+#!/bin/{{ page.run_time }}
