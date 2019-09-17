@@ -3,7 +3,6 @@ highlighter: rouge
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
-  - jekyll-github-metadata
 collections:
   assets:
     output: true
