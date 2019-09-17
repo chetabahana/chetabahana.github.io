@@ -9,6 +9,6 @@ label:  Optimasi
 layout: skema/sequence/method
 tag_name: ubuntu
 run_time: /bin/bash
-redirect_from: /assets/skema/sequence/method/method1.md
+redirect_from: /assets/skema/sequence/method/method1.sh
 ---
 #!{{ page.run_time }}
