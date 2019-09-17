@@ -1,1 +1,1 @@
-{{ page.redirect.from }}->>{% assign object_path = 'assets/skema/sequence/method/method1' %}{% assign object_items = site.assets | where_exp:"item", "item.path contains object_path" %}{{ object_path }}
+{{ page.redirect.from }}->>{% assign object_path = 'assets/skema/sequence/method/method1' %}{% assign object_items = site.assets | where_exp:"item", "item.path contains object_path" %}{{ object_path }}{{ object_items[0].content }}
