@@ -10,4 +10,3 @@ tag_name: ubuntu
 run_time: /bin/bash
 ---
 #!{{ page.run_time }}
-{{ page.content }}
