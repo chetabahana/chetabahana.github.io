@@ -1,6 +1,7 @@
 ---
 weight: 2
 label:  Google-Content-API
-redirect_from:
-  - /post/123456789/
+run_time: /bin/bash
+redirect_from: /assets/skema/sequence/method/method2.txt
 ---
+#!{{ page.run_time }}
