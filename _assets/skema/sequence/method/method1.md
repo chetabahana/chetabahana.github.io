@@ -7,7 +7,7 @@ to: 1
 label:  Optimasi
 layout: skema/sequence/method
 tag_name: ubuntu
-run_time: /bin/bash
+run_time: /bin/python
 redirect_from: /assets/skema/sequence/method/method1.txt
 ---
 #!{{ page.run_time }}
