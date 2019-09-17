@@ -6,6 +6,6 @@ from: 0
 to: 1
 label:  Optimasi
 layout: skema/sequence/method
-runtime: bash
+run_time: bash
 ---
 Buka Toko-->Stoks Barang: {{ page.label }}
