@@ -6,6 +6,7 @@ from: 0
 to: 1
 label:  Optimasi
 layout: skema/sequence/method
-run_time: bash
+tag_name: ubuntu
+run_time: #!/bin/bash
 ---
-#!/bin/{{ page.run_time }}
+{{ page.run_time }}
