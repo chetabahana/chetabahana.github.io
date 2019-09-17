@@ -7,4 +7,4 @@ collections:
   assets:
     output: true
     permalink: /:collection/:path/
-    redirect_from: /:collection/:path/.sh
+    redirect_from: /:collection/:name
