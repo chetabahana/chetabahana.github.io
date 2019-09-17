@@ -1,6 +1,5 @@
 ---
 weight: 1
-title: gggjgjg
 type: external
 event: object
 from: 0
