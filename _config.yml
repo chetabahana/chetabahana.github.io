@@ -1,6 +1,8 @@
 encoding: utf-8
 highlighter: rouge
-collections:
-  - assets
 plugins:
   - jekyll-feed
+collections:
+  assets:
+    output: true
+    permalink: /:collection/:path/:name
