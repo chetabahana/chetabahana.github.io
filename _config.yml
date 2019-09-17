@@ -6,5 +6,5 @@ plugins:
 collections:
   assets:
     output: true
-    permalink: /:collection/:path/
-    redirect_from: /:collection/:name
+    permalink: /:collection/:path
+    redirect_from: /:collection/:path/:name
