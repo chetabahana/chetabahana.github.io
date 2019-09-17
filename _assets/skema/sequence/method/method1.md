@@ -8,6 +8,5 @@ label:  Optimasi
 layout: skema/sequence/method
 tag_name: ubuntu
 run_time: /bin/bash
-path: path
 ---
 #!{{ page.run_time }}
