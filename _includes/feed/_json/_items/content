@@ -1,1 +1,0 @@
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"content": {% if my_asset.ext == ".coffee" %}{{ "to do" | jsonify }}{% else %}{{ my_asset.content | jsonify }}{% endif %},
