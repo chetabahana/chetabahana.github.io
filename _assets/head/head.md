@@ -1,5 +1,5 @@
 ---
 weight: 0
-layout: sections
+layout: assets/head
 ---
 Test feed.json
