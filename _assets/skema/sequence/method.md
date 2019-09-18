@@ -1,4 +1,4 @@
 ---
-weight: 1
+weight: 2
 layout: assets/skema/sequence
 ---
