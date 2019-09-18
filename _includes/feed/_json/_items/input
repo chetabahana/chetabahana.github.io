@@ -1,1 +1,4 @@
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"input": {% assign input = "" %}{% for item_hash in site.data.skema %}{% assign item = item_hash[1] %}{% unless item.title == null %}{% if item.title == my_asset.slug %}{% assign input = item.content %}{% endif %}{% endunless %}{% endfor %}{{ input | jsonify }},
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"input": {% assign input = "" %}{% for item_hash in site.data.skema %}{% assign item = item_hash[1] %}{% unless item.title == null %}{% if item.title == my_asset.slug %}{% assign object_path = page.path | split: '/' | pop | pop | push: page.event | join: '/'  | append: '/' %}{% assign object_items = site.assets | where_exp:"item", "item.path contains object_path" %}{% assign input = object_items[page.from].label %}{% endif %}{% endunless %}{% endfor %}{{ input | jsonify }},
+
+
+
