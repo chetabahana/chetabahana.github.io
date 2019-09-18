@@ -1,5 +1,5 @@
 ---
 weight: 0
-layout: jsonify
+layout: sections
 ---
 Test feed.json
