@@ -1,10 +1,10 @@
 ---
 weight: 2
+label:  Google-Content-API
 type: external
 event: object
 from: 1
 to: 2
-label:  Google-Content-API
 tag_name: ubuntu
 run_time: /bin/python
 layout: assets/skema/sequence/method
