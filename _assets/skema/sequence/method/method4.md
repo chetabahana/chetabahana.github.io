@@ -1,6 +1,6 @@
 ---
 weight: 3
-label: Google-Site-API
+label: Google-Ads-API
 type: external
 event: object
 from: 3

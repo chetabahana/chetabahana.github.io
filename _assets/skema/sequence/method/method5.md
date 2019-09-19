@@ -1,6 +1,6 @@
 ---
 weight: 4
-label: Google-AppEngine
+label: Google-Trend-API
 type: external
 event: object
 from: 4

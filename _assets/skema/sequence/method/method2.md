@@ -1,6 +1,6 @@
 ---
 weight: 1
-label:  Google-Content-API
+label:  Google-Task-API
 type: external
 event: object
 from: 1

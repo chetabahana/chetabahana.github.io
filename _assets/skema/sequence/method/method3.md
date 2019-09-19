@@ -1,6 +1,6 @@
 ---
 weight: 2
-label: Google-AdWords-API
+label: Google-Content-API
 type: external
 event: object
 from: 2
