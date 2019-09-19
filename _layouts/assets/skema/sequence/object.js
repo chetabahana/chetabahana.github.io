@@ -1,1 +1,1 @@
-participant {{ page.title }}
+participant {{ page.label }}
