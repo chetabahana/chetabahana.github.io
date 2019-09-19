@@ -1,11 +1,11 @@
 ---
+to: 2
+from: 1
 weight: 1
-label:  Google-Task-API
 type: internal
 flow: internal
 event: object
-from: 1
-to: 2
+label:  Google-Task-API
 tag_name: ubuntu
 run_time: /bin/python
 layout: assets/skema/sequence/method

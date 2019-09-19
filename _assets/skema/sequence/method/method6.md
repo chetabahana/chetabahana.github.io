@@ -1,11 +1,11 @@
 ---
 weight: 5
-label: eShop SEO
+to: 5
+from: 4
 type: external
 flow: external
 event: object
-from: 4
-to: 5
+label: eShop SEO
 tag_name: ubuntu
 run_time: /bin/python
 layout: assets/skema/sequence/method
