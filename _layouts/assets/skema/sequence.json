@@ -1,1 +1,1 @@
-{{ page.title }}{% assign object_path = page.path | split: '/' | pop | push: page.title | join: '/'  | append: '/' | downcase %}{% assign my_childs  = site.assets | where_exp:"item", "item.path contains object_path" %}{{ my_childs[0].output }}
+{{ page.title }}{% assign object_path = page.path | split: '/' | pop | push: page.title | join: '/'  | append: '/' | downcase %}{% assign my_childs  = site.assets | where_exp:"item", "item.path contains object_path" %}{{ my_childs[0].path }}
