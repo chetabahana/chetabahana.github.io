@@ -1,4 +1,4 @@
-{% assign sequence_path = "_assets/skema/sequence.md" %}{{ sequence_path }}{% assign sequence_asset = site.assets | where_exp:"item", "item.path == sequence_path" %}{{ sequence_asset.path }}{{ sequence_asset.output }}
+{% assign sequence_path = "_assets/skema/sequence.md" %}{% assign sequence_asset = site.assets | where_exp:"item", "item.path == sequence_path" %}{{ site.assets }}{{ sequence_asset.output }}
 Title: Bagan Eksekusi
 participant Buka Toko
 participant Stok Barang
