@@ -1,5 +1,5 @@
 ---
-weight: 1
+weight: 0
 label: Buka Toko
 ---
 test output

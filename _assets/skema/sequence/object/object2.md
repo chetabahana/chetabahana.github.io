@@ -1,4 +1,4 @@
 ---
-weight: 2
+weight: 1
 label: Stok Barang
 ---
