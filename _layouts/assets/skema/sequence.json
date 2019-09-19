@@ -1,1 +1,1 @@
-{% assign sequence_items = site.assets | where_exp:"item", "item.path == assets/skema/sequence" %}{{ object_items[0].output }}
+Title: Bagan Eksekusi
