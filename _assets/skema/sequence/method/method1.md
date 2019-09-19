@@ -2,6 +2,7 @@
 weight: 0
 label:  Optimasi
 type: external
+flow: internal
 event: object
 from: 0
 to: 1

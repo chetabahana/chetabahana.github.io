@@ -1,7 +1,8 @@
 ---
 weight: 4
 label: Google-Trend-API
-type: external
+type: internal
+flow: external
 event: object
 from: 4
 to: 1

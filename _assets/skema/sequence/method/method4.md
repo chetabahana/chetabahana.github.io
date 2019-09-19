@@ -1,7 +1,8 @@
 ---
 weight: 3
 label: Google-Ads-API
-type: external
+type: internal
+flow: external
 event: object
 from: 3
 to: 4

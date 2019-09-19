@@ -2,6 +2,7 @@
 weight: 5
 label: eShop SEO
 type: external
+flow: external
 event: object
 from: 4
 to: 5

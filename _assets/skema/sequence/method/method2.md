@@ -1,7 +1,8 @@
 ---
 weight: 1
 label:  Google-Task-API
-type: external
+type: internal
+flow: internal
 event: object
 from: 1
 to: 2

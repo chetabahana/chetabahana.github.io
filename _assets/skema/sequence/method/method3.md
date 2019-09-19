@@ -1,7 +1,8 @@
 ---
 weight: 2
 label: Google-Content-API
-type: external
+type: internal
+flow: internal
 event: object
 from: 2
 to: 3
