@@ -1,11 +1,11 @@
 ---
+to: 3
+from: 2
 weight: 2
-label: Google-Content-API
+event: object
 type: internal
 flow: internal
-event: object
-from: 2
-to: 3
+label: Google-Content-API
 tag_name: ubuntu
 run_time: /bin/python
 layout: assets/skema/sequence/method

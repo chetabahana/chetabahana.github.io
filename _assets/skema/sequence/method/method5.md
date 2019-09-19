@@ -1,11 +1,11 @@
 ---
+to: 1
+from: 4
 weight: 4
-label: Google-Trend-API
+event: object
 type: internal
 flow: external
-event: object
-from: 4
-to: 1
+label: Google-Trend-API
 tag_name: ubuntu
 run_time: /bin/python
 layout: assets/skema/sequence/method
