@@ -1,5 +1,5 @@
 ---
-weight: 6
+weight: 5
 label: eShop SEO
 type: external
 event: object

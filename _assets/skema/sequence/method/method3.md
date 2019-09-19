@@ -1,5 +1,5 @@
 ---
-weight: 3
+weight: 2
 label: Google-AdWords-API
 type: external
 event: object

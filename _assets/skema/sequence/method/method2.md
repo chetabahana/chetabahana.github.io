@@ -1,5 +1,5 @@
 ---
-weight: 2
+weight: 1
 label:  Google-Content-API
 type: external
 event: object

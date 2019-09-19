@@ -1,5 +1,5 @@
 ---
-weight: 1
+weight: 0
 label:  Optimasi
 type: external
 event: object
