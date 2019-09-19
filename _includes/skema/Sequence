@@ -1,4 +1,10 @@
 Title: Bagan Eksekusi
+participant Buka Toko
+participant Stok Barang
+participant Google Merchant Center
+participant Peluang Terbaik
+participant Portfolio
+participant Network
 Buka Toko-->Stok Barang: Optimasi
 Stok Barang->Google Merchant Center: Google-Task-API
 Google Merchant Center->Peluang Terbaik: Google-Content-API
