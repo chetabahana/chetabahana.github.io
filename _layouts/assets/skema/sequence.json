@@ -1,1 +1,1 @@
-Buka Toko-->Stok Barang: Optimasi
+{% if page.title == "Object" %}participant Buka Toko\nparticipant Stok Barang\nparticipant Google Merchant Center\nparticipant Peluang Terbaik\nparticipant Portfolio\nparticipant Network\n{% else %}Buka Toko-->Stok Barang: Optimasi\nStok Barang->Google Merchant Center: Google-Task-API\nGoogle Merchant Center->Peluang Terbaik: Google-Content-API\nPeluang Terbaik->>Portfolio: Google-Ads-API\nPortfolio->>Stok Barang: Google-Trend-API\nPortfolio-->>Network: eShop SEO\n{% endif %}
