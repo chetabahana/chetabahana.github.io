@@ -5,7 +5,7 @@ weight: 2
 event: object
 type: internal
 flow: internal
-label: Google-Content-API
+label: Cloud-Site-API
 tag_name: ubuntu
 run_time: /bin/python
 layout: assets/skema/sequence/method
