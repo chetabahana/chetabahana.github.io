@@ -4,10 +4,10 @@ $('.download').click(function(ev) {draw.xmlData();});
 
 var draw = {
 
-  'jsonfeed' : 'https://chetabahana.github.io/feed.json',
   'sequence' : 'sequence/js/sequence-diagram-snap-min.js',
   'flowchart': 'flowchart/flowchart-latest.js',
   'railroad' : 'railroad/railroad-diagrams.js',
+  'jsonfeed' : '/feed.json',
 
   diagram : function() {
   
@@ -22,7 +22,7 @@ var draw = {
     $('.diagram').html(''); $("#loadingImg").show();
     
     var jsonfile = this['jsonfeed'] + '?t=' + $.now();
-    var js = 'https://chetabahana.github.io/' + this[type];
+    var js = '/' + this[type];
     
     $.getScript(js, function( data, textStatus, jqxhr ) {    
        
