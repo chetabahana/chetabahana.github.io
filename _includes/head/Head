@@ -3,7 +3,7 @@
         <title>{{ page.title }}</title>
         <meta name="keywords" content="{{ page.keywords }}" />
         <meta name="description" content="{{ page.description }}" />
-        <link type="application/json+oembed" rel="alternate" href="{{ site.json_link }}" title="{{ site.title }}" />
+        <link type="application/json+oembed" rel="alternate" href="{{ page.json_link }}" title="{{ page.title }}" />
         {% feed_meta %}
 
         <!-- Page hiding snippet (recommended) -->
