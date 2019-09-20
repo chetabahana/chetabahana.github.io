@@ -1,10 +1,11 @@
 ---
-weight: 2
-label:  Google-Content-API
-type: external
-event: object
-from: 1
 to: 2
+from: 1
+weight: 1
+event: object
+type: internal
+flow: internal
+label: Cloud-Task-API
 tag_name: ubuntu
 run_time: /bin/python
 layout: assets/skema/sequence/method

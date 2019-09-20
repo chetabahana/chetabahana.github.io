@@ -1,10 +1,11 @@
 ---
-weight: 5
-label: Google-AppEngine
-type: external
-event: object
+to: 1
 from: 4
-to: 5
+weight: 4
+event: object
+type: internal
+flow: external
+label: Google-Trend-API
 tag_name: ubuntu
 run_time: /bin/python
 layout: assets/skema/sequence/method

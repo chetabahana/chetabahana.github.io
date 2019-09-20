@@ -1,10 +1,11 @@
 ---
-weight: 1
-label:  Optimasi
-type: external
-event: object
-from: 0
 to: 1
+from: 0
+weight: 0
+event: object
+type: external
+flow: internal
+label:  Optimasi
 tag_name: ubuntu
 run_time: /bin/python
 layout: assets/skema/sequence/method

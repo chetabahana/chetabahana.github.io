@@ -4,10 +4,10 @@ $('.download').click(function(ev) {draw.xmlData();});
 
 var draw = {
 
-  'jsonfeed' : 'https://chetabahana.github.io/feed.json',
   'sequence' : 'sequence/js/sequence-diagram-snap-min.js',
   'flowchart': 'flowchart/flowchart-latest.js',
   'railroad' : 'railroad/railroad-diagrams.js',
+  'jsonfeed' : '/feed.json',
 
   diagram : function() {
   
@@ -22,7 +22,7 @@ var draw = {
     $('.diagram').html(''); $("#loadingImg").show();
     
     var jsonfile = this['jsonfeed'] + '?t=' + $.now();
-    var js = 'https://chetabahana.github.io/' + this[type];
+    var js = '/' + this[type];
     
     $.getScript(js, function( data, textStatus, jqxhr ) {    
        
@@ -49,7 +49,7 @@ var draw = {
              
                var obj = result.items[4].items[0];
                
-               draw.skema = draw.encode(obj.output);
+               draw.skema = draw.encode(obj.query);
                diagram = Diagram.parse(draw.skema);
 
                draw.opt = {theme: select, "font-size": 13};
@@ -68,7 +68,7 @@ var draw = {
               var b = Number((draw.point.substr(1,1)));
               
               var obj = result.items[4].items[1];
-              draw.skema = draw.encode(obj.output);
+              draw.skema = draw.encode(obj.query);
               
               diagram = flowchart.parse(draw.skema);      
               diagram.drawSVG($('.diagram').get(0), obj.input);
@@ -85,7 +85,7 @@ var draw = {
               var d = Number((draw.point.substr(3,2)));
               
               var obj = result.items[4].items[2];
-              draw.skema = draw.encode(obj.output);
+              draw.skema = draw.encode(obj.query);
               
               $('.contact_left').hide(); 
               diagram = eval(draw.skema).format();

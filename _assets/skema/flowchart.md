@@ -1,4 +1,4 @@
 ---
-weight: 2
-layout: skema/flowchart
+weight: 1
+layout: assets/skema/flowchart
 ---

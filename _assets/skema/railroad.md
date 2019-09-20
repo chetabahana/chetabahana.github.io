@@ -1,4 +1,4 @@
 ---
-weight: 3
-layout: skema/railroad
+weight: 2
+layout: assets/skema/railroad
 ---

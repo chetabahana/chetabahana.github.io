@@ -1,10 +1,11 @@
 ---
-weight: 3
-label: Google-AdWords-API
-type: external
-event: object
-from: 2
 to: 3
+from: 2
+weight: 2
+event: object
+type: internal
+flow: internal
+label: Cloud-Site-API
 tag_name: ubuntu
 run_time: /bin/python
 layout: assets/skema/sequence/method

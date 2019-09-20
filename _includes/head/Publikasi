@@ -6,7 +6,7 @@
                             <h4>{{ section.title }}</h4>
                         </div>
                     </div>
-								     
+
                     <div class="clearfix"></div>
                     <div class="templatemo-feeds">
                         <div class="col-md-2"></div>
@@ -24,7 +24,7 @@
                         </div>
                         <div class="col-md-2"></div>
                     </div>
-		
+
                     <div class="text-center">
                         <div style="margin-top:60px;">
                             <ul class="list-inline">
