@@ -1,8 +1,1 @@
-Title: Bagan Eksekusi
-participant Buka Toko
-participant Stok Barang
-participant Google Merchant Center
-participant Peluang Terbaik
-participant Portfolio
-participant Network
 {% assign assets = site.assets | sort:0 %}{% for asset in assets %}{% if asset.layout == "assets/skema/sequence" %}{{ asset.output }}{% endif %}{% endfor %}
