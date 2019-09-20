@@ -5,6 +5,7 @@ participant Google Merchant Center
 participant Peluang Terbaik
 participant Portfolio
 participant Network
+{% for sequence in site.assets %}{{ sequence.output }} %}{% endfor %}
 {% else %}Buka Toko-->Stok Barang: Optimasi
 Stok Barang->Google Merchant Center: Google-Task-API
 Google Merchant Center->Peluang Terbaik: Google-Content-API
