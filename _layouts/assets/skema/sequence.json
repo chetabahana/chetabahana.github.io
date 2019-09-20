@@ -1,7 +1,6 @@
 {% if page.title == "Object" %}Title: Bagan Eksekusi
 {% assign assets = site.assets | sort: 'weight' %}{% for asset in assets %}{% if asset.layout == "assets/skema/sequence/object" %}participant {{ asset.label }}
-{% endif %}{% endfor %}
-{% else %}Buka Toko-->Stok Barang: Optimasi
+{% endif %}{% endfor %}{% else %}Buka Toko-->Stok Barang: Optimasi
 Stok Barang->Google Merchant Center: Google-Task-API
 Google Merchant Center->Peluang Terbaik: Google-Content-API
 Peluang Terbaik->>Portfolio: Google-Ads-API
