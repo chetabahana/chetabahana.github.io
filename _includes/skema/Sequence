@@ -5,4 +5,4 @@ participant Google Merchant Center
 participant Peluang Terbaik
 participant Portfolio
 participant Network
-{% assign assets = site.assets | sort:0 %}{% for asset in assets %}{% if asset.path == "_assets/skema/sequence/method.md" %}{% assign my_asset = asset %}{% endif %}{% endfor %}{{ my_asset.output }}
+{% assign assets = site.assets | sort:0 %}{% for asset in assets %}{% if asset.path == "_assets/skema/sequence/method.md" %}{{ my_asset.output }}{% assign my_asset = asset %}{% endif %}{% endfor %}
