@@ -13,4 +13,4 @@ Portfolio->>Stok Barang: Google-Trend-API
 Portfolio-->>Network: eShop SEO
 {% endif %}
 rrrrr
-{% assign assets = site.assets | sort: 'weight' %}{% for asset in assets %}{{ asset.title }}{% endfor %}
+{% assign assets = site.assets | sort: 'weight' %}{% for asset in assets %}{% if asset.layout == "assets/skema/sequence/object" %}{{ asset.output }}{% endif %}{% endfor %}
