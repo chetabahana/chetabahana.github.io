@@ -1,11 +1,6 @@
 {% if page.title == "Object" %}Title: Bagan Eksekusi
-participant Buka Toko
-participant Stok Barang
-participant Google Merchant Center
-participant Peluang Terbaik
-participant Portfolio
-participant Network
-{% assign assets = site.assets | sort: 'weight' %}{% for asset in assets %}{% if asset.layout == "assets/skema/sequence/object" %}{{ asset.label }}{% endif %}{% endfor %}
+{% assign assets = site.assets | sort: 'weight' %}{% for asset in assets %}{% if asset.layout == "assets/skema/sequence/object" %}participant {{ asset.label }}
+{% endif %}{% endfor %}
 {% else %}Buka Toko-->Stok Barang: Optimasi
 Stok Barang->Google Merchant Center: Google-Task-API
 Google Merchant Center->Peluang Terbaik: Google-Content-API
