@@ -5,7 +5,7 @@ weight: 1
 event: object
 type: internal
 flow: internal
-label:  Google-Task-API
+label: Cloud-Task-API
 tag_name: ubuntu
 run_time: /bin/python
 layout: assets/skema/sequence/method
