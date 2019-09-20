@@ -11,4 +11,6 @@ Google Merchant Center->Peluang Terbaik: Google-Content-API
 Peluang Terbaik->>Portfolio: Google-Ads-API
 Portfolio->>Stok Barang: Google-Trend-API
 Portfolio-->>Network: eShop SEO
-{% endif %}trrrrtt{{ page.output }}
+{% endif %}
+
+{% assign assets = site.assets | sort: 'weight' %}{% for asset in assets %}{% if asset.layout == "assets/skema/sequence/object" %}{{ asset.output }}{% endif %}{% endfor %}
