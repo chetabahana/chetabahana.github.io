@@ -1,6 +1,6 @@
 ---
 weight: 0
-label: Buka Toko
+label: Tutorial Buka Toko
 tag_name: ubuntu
 run_time: /bin/python
 layout: assets/skema/sequence/object
