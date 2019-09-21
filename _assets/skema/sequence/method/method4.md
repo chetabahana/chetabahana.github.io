@@ -9,7 +9,7 @@ label: Google-Ads-API
 tag_name: ubuntu
 run_time: /bin/python
 layout: assets/skema/sequence/method
-redirect_from: /assets/skema/sequence/method/method4.txt
+redirect_from: /assets/skema/sequence/method/method4
 ---
 #!{{ page.run_time }}
 ---
