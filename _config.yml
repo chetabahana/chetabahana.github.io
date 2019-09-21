@@ -1,9 +1,43 @@
+# Jekyll configuration
+
 encoding: utf-8
 highlighter: rouge
+
+exclude:
+  - Makefile
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - package.json
+  - .babelrc
+  - yarn.lock
+  - package-lock.json
+  - webpack.config.js
+  - node_modules
+  - Dockerfile
+  - docker_compose.yml
+
+whitelist:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-github-metadata
+  
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-github-metadata
+  
 collections:
   assets:
     output: true
     permalink: /:collection/:path/
+
+# Site info
+
+url: https://chetabahana.github.io/
+title: Chetabahana Project - A Way To Win The Market | GitHub Page
+
+# GitHub metadata
+# https://help.github.com/articles/repository-metadata-on-github-pages/
+
+repository: rstacruz/cheatsheets
