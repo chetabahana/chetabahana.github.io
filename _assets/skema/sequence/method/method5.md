@@ -9,7 +9,7 @@ label: Google-Trend-API
 tag_name: ubuntu
 run_time: /bin/python
 layout: assets/skema/sequence/method
-redirect_from: /assets/skema/sequence/method/method5.txt
+redirect_from: /assets/skema/sequence/method/method5
 ---
 #!{{ page.run_time }}
 ---

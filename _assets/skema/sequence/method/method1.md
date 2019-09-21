@@ -9,15 +9,15 @@ label:  Optimasi
 tag_name: ubuntu
 run_time: /bin/python
 layout: assets/skema/sequence/method
-redirect_from: /assets/skema/sequence/method/method1
+redirect_from: /assets/skema/sequence/method/method1.txt
 ---
 #!{{ page.run_time }}
 
-# Unmark the 2 line below to see all commands available
+#Unmark the 2 line below to see all commands available
 #echo -e "\n$hr\nPATH COMMANDS\n$hr"
 #compgen -c | xargs which -a | sort && dpkg -l
 
-# Collumn numbers
+#Collumn numbers
 COL=130
 case $HOME in
     /root) COL=140;;
@@ -28,7 +28,7 @@ printf -v res %${COL}s
 export hr=`printf '%s\n' "${res// /-}"`
 export hrd=`printf '%s\n' "${res// /=}"`
 
-# Set Environtment
+#Set Environtment
 export WORKSPACE=$(realpath .)
 export PATH=$HOME/.local/bin:$PATH
 
@@ -41,7 +41,7 @@ then
     [[ -z $PROJECT_ID ]] && export PROJECT_ID=$(echo "$REPO_OWNER" | tr '[:upper:]' '[:lower:]')
 fi
 
-# Set the path to output volume
+#Set the path to output volume
 ( [[ -n "${TAG_REPO+set}" ]] && [[ "$REPO_NAME" == "github_"* ]] ) && export REPO_NAME=$TAG_REPO
 [[ -n "${RUNNER_WORKSPACE+set}" ]] && export OUTPUTS_VOLUME=$RUNNER_WORKSPACE/outputs/volume
 [[ -n "${BUILDER_OUTPUT+set}" ]] && export OUTPUTS_VOLUME=/builder/outputs/volume

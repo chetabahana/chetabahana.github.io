@@ -9,6 +9,6 @@ label: Cloud-Task-API
 tag_name: ubuntu
 run_time: /bin/python
 layout: assets/skema/sequence/method
-redirect_from: /assets/skema/sequence/method/method2.txt
+redirect_from: /assets/skema/sequence/method/method2
 ---
 #!{{ page.run_time }}
