@@ -4,6 +4,6 @@ label: Network
 tag_name: ubuntu
 run_time: /bin/python
 layout: assets/skema/sequence/object
-redirect_from: /assets/skema/sequence/method/object6.txt
+redirect_from: /assets/skema/sequence/method/object6
 ---
 test output

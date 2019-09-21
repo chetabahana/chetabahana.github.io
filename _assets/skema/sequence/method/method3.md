@@ -9,7 +9,7 @@ label: Cloud-Site-API
 tag_name: ubuntu
 run_time: /bin/python
 layout: assets/skema/sequence/method
-redirect_from: /assets/skema/sequence/method/method3.txt
+redirect_from: /assets/skema/sequence/method/method3
 ---
 #!{{ page.run_time }}
 ---
