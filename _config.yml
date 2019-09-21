@@ -6,4 +6,4 @@ plugins:
 collections:
   assets:
     output: true
-    permalink: /:collection/:path
+    permalink: /:collection/:path/
