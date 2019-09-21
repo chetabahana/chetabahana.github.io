@@ -1,1 +1,1 @@
-{% assign object_path = page.redirect.from | remove_first: "/"  | remove_first: ".txt" %}{% assign object_items = site.assets | where_exp:"item", "item.path contains object_path" %}{{ object_items[0].content | strip_html }}
+{% assign object_path = page.redirect.from | remove_first: "/"  | remove_first: ".txt" %}{% assign object_items = site.assets | where_exp:"item", "item.path contains object_path" %}{{ object_items[0].content | strip_html | replace: "&amp;", "&" }}
