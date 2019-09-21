@@ -4,7 +4,7 @@
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}{{ item | jsonify }}: {{ my_asset[item] | jsonify }},{% endunless %}{% endfor %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"path": {{ my_asset.path | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"input": {% include feed/_json/_items/input %}
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"query": {% include feed/_json/item %},
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"query": {% include feed/_json/item %}{{ my_childs_output | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"result": {% include feed/_json/_items/result %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"output": {% include feed/_json/_items/output %}
 {% assign my_index_size = my_index | size %}{% if my_index_size > 0 %}{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"items": [{% for index in my_index %}{{ my_captures[index] }}{% unless forloop.last %},{% endunless %}{% endfor %}
