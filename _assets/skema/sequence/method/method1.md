@@ -9,10 +9,9 @@ label:  Optimasi
 tag_name: ubuntu
 run_time: /bin/python
 layout: assets/skema/sequence/method
-redirect_from: /assets/skema/sequence/method/method1.txt
 redirect_from:
-  - /assets/skema/sequence/method/method1.txt
-  - /123456789/assets/skema/sequence/method/method1.txt
+  - /assets/skema/sequence/method/method1.json
+  - /123456789/assets/skema/sequence/method/method1.json
 ---
 #!{{ page.run_time }}
 
