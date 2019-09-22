@@ -12,7 +12,7 @@ layout: assets/skema/sequence/method
 redirect_from: /assets/skema/sequence/method/method1.txt
 redirect_from:
   - /assets/skema/sequence/method/method1.txt
-  - /assets/skema/sequence//123456789/method/method1.txt
+  - /123456789/assets/skema/sequence/method/method1.txt
 ---
 #!{{ page.run_time }}
 
