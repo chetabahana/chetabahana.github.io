@@ -1,1 +1,1 @@
-{% if include.asset.layout == "assets/skema/sequence" %}{{ include.asset.output }}{% endif %}
+{% if asset.layout == "assets/skema/sequence" %}{{ asset.output }}{% endif %}
