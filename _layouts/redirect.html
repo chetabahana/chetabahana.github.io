@@ -4,6 +4,10 @@
 {% assign my_array = object_path | split: "/" %}
 {{ my_array }}
 {{ my_array.size }}
+{% for item in my_array limit:my_array.size %}
+  {{ item }}
+{% endfor %}
+
   {% if my_array.first == "assets" %}
     {% break %}
     {% else %}
