@@ -1,1 +1,1 @@
-{% assign assets = site.assets | sort: 'weight' %}{% for my_asset in assets %}{% if my_asset.layout == "assets/skema" %}{% include skema/Sequence %}{{ my_asset.output }}{% endif %}{% endfor %}
+{% assign assets = site.assets | sort: 'weight' %}{% for asset in assets %}{% if asset.layout == "assets/skema" %}{% include skema/Sequence %}{% endif %}{% if asset.layout == "assets/skema/sequence" %}{{ asset.output }}{% endif %}{% endfor %}
