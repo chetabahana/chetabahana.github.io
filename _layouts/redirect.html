@@ -4,7 +4,7 @@
 {% assign my_array = object_path | split: "/" %}
 {% for item in my_array limit:my_array.size %}  {{ item }}
   {% if item != "assets" %}
-    {% assign my_array = my_array | splice %}
+    {% assign my_array = my_array | splice: 0 %}
     {{ my_array }}
   {% else %}
     {% break %}
