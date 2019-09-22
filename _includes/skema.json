@@ -1,1 +1,1 @@
-{% assign assets = site.assets | sort: 'weight' %}{% for asset in assets %}{% if asset.layout == "assets/skema" %}{% include skema/Sequence %}{% endif %}{% if asset.layout == "assets/skema/sequence" %}{{ asset.output }}{% endif %}{% endfor %}
+{% assign my_query.layout = "assets/skema/" | append: include.query | downcase %}{% assign assets = site.assets | sort: 'weight' %}{% for asset in assets %}{% if asset.layout == "assets/skema" %}{% include skema/Sequence %}{% endif %}{% if asset.layout == my_query.layout %}{{ asset.output }}{% endif %}{% endfor %}
