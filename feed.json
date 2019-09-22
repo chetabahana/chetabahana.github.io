@@ -3,7 +3,7 @@ layout: null
 permalink: /feed.json
 redirect_from:
   - /123456789/feed.json
-  - /sequence/123456789/feed.json
+  - /123456789/sequence/feed.json
 ---
 {
     "version": "https://jsonfeed.org/version/1",
