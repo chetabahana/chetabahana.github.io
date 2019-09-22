@@ -1,2 +1,2 @@
-test{{ asset.layout }}{% if asset.layout == "assets/skema/sequence" %}Title: Bagan Eksekusi
+{% if asset.layout == "assets/skema/sequence" %}Title: Bagan Eksekusi
 {{ asset.output }}{% endif %}
