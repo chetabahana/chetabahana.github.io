@@ -1,1 +1,2 @@
-{% if asset.layout == "assets/skema/sequence" %}{{ asset.output }}{% endif %}
+{% if asset.layout == "assets/skema/sequence" %}Title: Bagan Eksekusi
+{{ asset.output }}{% endif %}
