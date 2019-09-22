@@ -1,1 +1,1 @@
-{% assign assets = site.assets | sort: 'weight' %}{% for asset in assets %}{% include skema/Sequence asset=asset %}{% endfor %}
+{% include skema/sequence %}

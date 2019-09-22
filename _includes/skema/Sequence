@@ -1,2 +1,1 @@
-{% if include.asset.layout == "assets/skema/sequence" %}Title: Bagan Eksekusinya
-{% endif %}
+{% assign assets = site.assets | sort: 'weight' %}{% for asset in assets %}{% if asset.layout == "assets/skema/sequence" %}{{ asset.output }}{% endif %}{% endfor %}
