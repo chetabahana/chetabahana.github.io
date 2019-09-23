@@ -1,7 +1,7 @@
 ---
 layout: null
+redirect_to: /feed.json
 redirect_from:
-  - /assets/feed.json
   - /123456789/assets/feed.json
 ---
 {% include feed.json %}
