@@ -45,6 +45,24 @@ var draw = {
 
            } else {
 
+readJson () {
+   fetch('/feed.json')
+   .then(response => {
+       if (!response.ok) {
+           throw new Error("HTTP error " + response.status);
+       }
+       return response.json();
+   })
+   .then(json => {
+       this.users = json;
+       console.log(this.users);
+   })
+   .catch(function () {
+       this.dataError = true;
+   })
+}
+
+
              $.getJSON(jsonfile).done(function(result){
 
                var obj = result.items[4].items[0];
@@ -62,6 +80,24 @@ var draw = {
 
          } else if(type == 'flowchart'){
 
+readJson () {
+   fetch('/feed.json')
+   .then(response => {
+       if (!response.ok) {
+           throw new Error("HTTP error " + response.status);
+       }
+       return response.json();
+   })
+   .then(json => {
+       this.users = json;
+       console.log(this.users);
+   })
+   .catch(function () {
+       this.dataError = true;
+   })
+}
+
+
            $.getJSON(jsonfile, draw.opt).done(function(result){
 
               var a = Number((draw.point.substr(0,1)));
@@ -76,7 +112,25 @@ var draw = {
             });
 
          } else if(type == 'railroad'){
-         
+
+readJson () {
+   fetch('/feed.json')
+   .then(response => {
+       if (!response.ok) {
+           throw new Error("HTTP error " + response.status);
+       }
+       return response.json();
+   })
+   .then(json => {
+       this.users = json;
+       console.log(this.users);
+   })
+   .catch(function () {
+       this.dataError = true;
+   })
+}
+
+
             $.getJSON(jsonfile, draw.opt).done(function(result){
 
               var a = Number((draw.point.substr(0,1)));
