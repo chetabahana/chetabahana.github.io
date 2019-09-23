@@ -13,4 +13,4 @@ redirect_from:
   - /assets/skema/sequence/method/method1.txt
   - /1/2/3/4/5/6/7/8/9/assets/skema/sequence/method/method1.txt
 ---
-Buka Toko-->Stok Barang: Optimasi
+Buka Toko{{ "-->" }}Stok Barang{{ ": " }}Optimasi
