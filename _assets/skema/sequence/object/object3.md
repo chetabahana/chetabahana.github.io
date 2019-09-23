@@ -6,4 +6,4 @@ run_time: /bin/python
 layout: assets/skema/sequence/object
 redirect_from: /assets/skema/sequence/method/object3
 ---
-test output
+participant Google Merchant Center
