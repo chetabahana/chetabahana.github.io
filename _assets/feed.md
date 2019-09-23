@@ -1,4 +1,4 @@
 ---
 layout: null
-redirect_to: https://chetabahana.github.io/feed.json
+redirect_to: https://www.github.com
 ---
