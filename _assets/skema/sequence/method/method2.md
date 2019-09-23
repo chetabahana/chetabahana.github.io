@@ -11,4 +11,4 @@ run_time: /bin/python
 layout: assets/skema/sequence/method
 redirect_from: /assets/skema/sequence/method/method2
 ---
-#!{{ page.run_time }}
+Stok Barang->Google Merchant Center: Cloud-Task-API

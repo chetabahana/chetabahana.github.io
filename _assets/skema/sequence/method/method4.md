@@ -11,4 +11,4 @@ run_time: /bin/python
 layout: assets/skema/sequence/method
 redirect_from: /assets/skema/sequence/method/method4
 ---
-#!{{ page.run_time }}
+Peluang Terbaik->>Portfolio: Google-Ads-API
