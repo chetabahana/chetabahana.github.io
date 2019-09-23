@@ -61,17 +61,8 @@ var draw = {
 
 
          } else if(type == 'flowchart'){
-fetch('/feed.json')
-  .then(response => {
-    return response.json()
-  })
-  .then(data => {
-    // Work with JSON data here
-    console.log(data)
-  })
-  .catch(err => {
-    // Do something for an error here
-  })           $.getJSON(jsonfile, draw.opt).done(function(result){
+
+           $.getJSON(jsonfile, draw.opt).done(function(result){
 
               var a = Number((draw.point.substr(0,1)));
               var b = Number((draw.point.substr(1,1)));

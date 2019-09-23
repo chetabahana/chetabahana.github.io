@@ -6,7 +6,17 @@ var disqus_config = function () {
 this.page.url = 'https://chetabahana.github.io/';  // Replace PAGE_URL with your page's canonical URL variable
 this.page.identifier = ''; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
-
+fetch('feed.json')
+  .then(response => {
+    return response.json()
+  })
+  .then(data => {
+    // Work with JSON data here
+    console.log(data)
+  })
+  .catch(err => {
+    // Do something for an error here
+  }) 
 (function() { // DON'T EDIT BELOW THIS LINE
 var d = document, s = d.createElement('script');
 s.src = 'https://chetabahana.disqus.com/embed.js';
