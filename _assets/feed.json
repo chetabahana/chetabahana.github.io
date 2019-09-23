@@ -1,0 +1,7 @@
+---
+layout: null
+redirect_from:
+  - /123456789/feed/json
+  - /123456789/sequence/feed/json
+---
+{% include feed.json %}
