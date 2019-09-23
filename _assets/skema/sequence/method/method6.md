@@ -11,5 +11,4 @@ run_time: /bin/python
 layout: assets/skema/sequence/method
 redirect_from: /assets/skema/sequence/method/method6
 ---
-#!{{ page.run_time }}
----
+Portfolio-->>Network: eShop SEO

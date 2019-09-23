@@ -3,6 +3,10 @@
 encoding: utf-8
 highlighter: rouge
 
+includes:
+  - feed.xml
+  - feed.json
+
 exclude:
   - .babelrc
   - Makefile
@@ -34,7 +38,7 @@ collections:
 
 # Site info
 
-url: https://chetabahana.github.io/
+url: https://chetabahana.github.io
 title: Chetabahana Project - A Way To Win The Market | GitHub Page
 
 # GitHub metadata

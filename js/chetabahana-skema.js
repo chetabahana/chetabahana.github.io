@@ -171,7 +171,7 @@ var draw = {
             var a = Number((this.id.substr(0,1)));
             var b = Number((this.id.substr(1,1)));
             var c = Number((this.id.substr(2,1)));
-            var d = Number((this.id.substr(3,2)));          
+            var d = Number((this.id.substr(3,2)));
             var e = Number((this.id.substr(5,1)));
             var f = Number((this.id.substr(6,3)));
 
@@ -213,9 +213,13 @@ var draw = {
   }, 
 
   tChange : function() {
+    var regex = /[?&]([^=#]+)=([^&#]*)/g, url = window.location.href, params = {}, match;
+    while(match = regex.exec(url)) {params[match[1]] = match[2];}
+    draw.params = params; console.log(draw.params);
+
     var select = $('.theme').val();
     draw.type = (select == 'hand')? 'sequence': draw.type;
-    if (draw.type != 'railroad') $('.contact_left').show(); 
+    if (draw.type != 'railroad') $('.contact_left').show();
     draw.diagram();
   },
 

@@ -11,5 +11,4 @@ run_time: /bin/python
 layout: assets/skema/sequence/method
 redirect_from: /assets/skema/sequence/method/method3
 ---
-#!{{ page.run_time }}
----
+Google Merchant Center->Peluang Terbaik: Cloud-Site-API

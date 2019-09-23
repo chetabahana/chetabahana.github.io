@@ -6,4 +6,4 @@ run_time: /bin/python
 layout: assets/skema/sequence/object
 redirect_from: /assets/skema/sequence/method/object2
 ---
-test output
+participant Stok Barang

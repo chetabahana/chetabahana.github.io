@@ -11,5 +11,4 @@ run_time: /bin/python
 layout: assets/skema/sequence/method
 redirect_from: /assets/skema/sequence/method/method5
 ---
-#!{{ page.run_time }}
----
+Portfolio->>Stok Barang: Google-Trend-API
