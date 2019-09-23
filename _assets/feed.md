@@ -1,5 +1,5 @@
 ---
 layout: null
-redirect_to: /feed.json
+redirect_to: https://chetabahana.github.io/feed.json
 ---
 test
