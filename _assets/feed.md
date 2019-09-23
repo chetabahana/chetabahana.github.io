@@ -1,6 +1,7 @@
 ---
 layout: null
 redirect_from:
+  - /assets/feed.json
   - /0123456789/feed.json
   - /0123456789/assets/feed.json
   - /01234/56789/assets/feed.json
