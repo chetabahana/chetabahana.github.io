@@ -1,5 +1,5 @@
 ---
 layout: null
-redirect_to: https://www.github.com
+redirect_to: /feed.json
 ---
 test
