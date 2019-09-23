@@ -59,7 +59,17 @@ var draw = {
  
            }
 
-
+fetch('/feed.json')
+  .then(response => {
+    return response.json()
+  })
+  .then(data => {
+    // Work with JSON data here
+    console.log(data)
+  })
+  .catch(err => {
+    // Do something for an error here
+  })
          } else if(type == 'flowchart'){
 
            $.getJSON(jsonfile, draw.opt).done(function(result){
