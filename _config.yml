@@ -3,6 +3,10 @@
 encoding: utf-8
 highlighter: rouge
 
+includes:
+  - feed.xml
+  - feed.json
+
 exclude:
   - .babelrc
   - Makefile
