@@ -12,4 +12,3 @@ layout: assets/skema/sequence/method
 redirect_from: /assets/skema/sequence/method/method5
 ---
 #!{{ page.run_time }}
----
