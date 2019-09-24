@@ -10,9 +10,9 @@
                             <option value="hand" selected>Konsep</option>
                             <option value="simple">Progres</option>
                             <option value="priority" disabled="disabled">Urgensi</option>
-                        </select><br>Tipe Diagram: <a id="type" href="/sequence" style="text-transform:capitalize;" target='_blank'>sequence</a><br>Tautan: <a id="json" href="/feed.json" style="text-transform" target='_blank'>feed.json</a> / <a id="type" href="/feed.xml" style="text-transform;" target='_blank'>feed.xml</a>
+                        </select><br>Tipe Diagram: <a id="type" href="/sequence" style="text-transform:capitalize;" target='_blank'>sequence</a><br>Tautan: <a id="json" href="/skema.json" style="text-transform" target='_blank'>skema.json</a> / <a id="type" href="/skema.xml" style="text-transform;" target='_blank'>skema.xml</a>
                         <div class="editor-wrapper">
-                            <div class="editor">{% include skema.json query="Sequence" %}</div>
+                            <div class="editor">{% include skema.json %}</div>
                         </div>
                         Referensi Bagan: <a href="https://marketleader.github.io/">Skema Kerja</a> Dokumentasi: <a href="https://github.com/MarketLeader/marketleader.github.io/wiki">Konsep Dasar</a><br>                    
                         Silahkan <a href='https://jsfiddle.net/chetabahana/rrxnah40/'>sunting</a> dan <a href='#chetabahana-diskusi' class='internal-link'>usulkan</a> gambar <a href="#" class="download">bagannya..</a>
