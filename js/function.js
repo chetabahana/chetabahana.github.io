@@ -16,9 +16,9 @@ function addUser(details) {
   }).then(response => {
     return response.json().then(data => {
       if (response.ok) {
-        return data;
+        console.log(data);
       } else {
-        return Promise.reject({status: response.status, data});
+        console.log(Promise.reject({status: response.status, data}));
       }
     });
   });
