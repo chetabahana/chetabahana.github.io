@@ -1,16 +1,17 @@
 /**
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
 fetch('https://chetabahana.github.io/0/1/2/3/4/5/6/7/8/9/assets/feed.json')
   .then(response => {
-    return response.json()
+    console.log(response.json())
   })
   .then(data => {
     // Work with JSON data here
     console.log(data)
   })
   .catch(err => {
-    // Do something for an error here
+    console.log(err)
   }) 
 
 var disqus_config = function () {
