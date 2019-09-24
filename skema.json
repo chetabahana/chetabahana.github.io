@@ -2,4 +2,4 @@
 layout: null
 permalink: /skema.json
 ---
-{% include skema.json query="Sequence" %}
+{% include skema.json %}
