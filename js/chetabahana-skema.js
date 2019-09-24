@@ -7,7 +7,7 @@ var draw = {
   'sequence' : 'sequence/js/sequence-diagram-snap-min.js',
   'flowchart': 'flowchart/flowchart-latest.js',
   'railroad' : 'railroad/railroad-diagrams.js',
-  'jsonfeed' : '/feed.json',
+  'jsonfeed' : '/assets/feed.json',
 
   diagram : function() {
 
