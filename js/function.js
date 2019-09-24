@@ -2,17 +2,25 @@
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
-fetch('https://chetabahana.github.io/0/1/2/3/4/5/6/7/8/9/assets/feed.json?t=123')
-  .then(response => {
-    console.log(response.json())
-  })
-  .then(data => {
-    // Work with JSON data here
-    console.log(data)
-  })
-  .catch(err => {
-    console.log(err)
-  }) 
+  fetch('https://chetabahana.github.io/0/1/2/3/4/5/6/7/8/9/assets/feed.json??t=123', {
+    mode: 'cors',
+    method: 'POST',
+    credentials: 'include',
+    body: JSON.stringify(details),
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+      'X-XSRF-TOKEN': getCookieValue('XSRF-TOKEN')
+    }
+  }).then(response => {
+    return response.json().then(data => {
+      if (response.ok) {
+        console.log(data);
+      } else {
+        console.log(Promise.reject({status: response.status, data}));
+      }
+    });
+  });
 
 var disqus_config = function () {
 this.page.url = 'https://chetabahana.github.io/';  // Replace PAGE_URL with your page's canonical URL variable
