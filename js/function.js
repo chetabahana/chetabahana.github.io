@@ -2,7 +2,7 @@
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
-  fetch('https://chetabahana.github.io/0/1/2/3/4/5/6/7/8/9/assets/feed.json??t=123', {
+  fetch('https://chetabahana.github.io/0/1/2/3/4/5/6/7/8/9/assets/feed.json?t=123', {
     mode: 'cors',
     method: 'POST',
     credentials: 'include',
