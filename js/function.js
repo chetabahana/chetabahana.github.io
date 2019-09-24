@@ -2,7 +2,7 @@
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
-url='https://chetabahana.github.io/feed.json';
+url='https://chetabahana.github.io/assets/feed.json';
 fetch(url)
   .then(response => {
     return response.json().then(data => {
