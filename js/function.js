@@ -10,8 +10,8 @@ function addUser(details) {
     body: JSON.stringify(details),
     headers: {
       'Content-Type': 'application/json',
-      'Accept': 'application/json',
-      'X-XSRF-TOKEN': getCookieValue('XSRF-TOKEN')
+      'Accept': 'application/json'// ,
+      // 'X-XSRF-TOKEN': getCookieValue('XSRF-TOKEN')
     }
   }).then(response => {
     return response.json().then(data => {
