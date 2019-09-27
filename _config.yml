@@ -30,7 +30,22 @@ plugins:
   - jekyll-feed
   - jekyll-redirect-from
   #- jekyll-github-metadata
-  
+
+input_types:
+- text
+- textarea
+- email
+- date
+- checkbox
+- radio
+- number
+- submit
+
+form_engines:
+- cloudcannon
+- formspree
+- formbucket
+
 collections:
   assets:
     output: true
