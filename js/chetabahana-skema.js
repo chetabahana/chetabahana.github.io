@@ -180,7 +180,7 @@ var draw = {
 
           }
 
-          draw.point = this.id;
+          draw.point = this.id; console.log(this.id);
           draw.diagram();
 
       });
