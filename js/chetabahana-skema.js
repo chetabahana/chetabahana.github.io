@@ -76,7 +76,7 @@ var draw = {
             });
 
          } else if(type == 'railroad'){
-         
+
             $.getJSON(jsonfile, draw.opt).done(function(result){
 
               var a = Number((draw.point.substr(0,1)));
