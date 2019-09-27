@@ -7,7 +7,7 @@ var draw = {
   'sequence' : 'sequence/js/sequence-diagram-snap-min.js',
   'flowchart': 'flowchart/flowchart-latest.js',
   'railroad' : 'railroad/railroad-diagrams.js',
-  'jsonfeed' : '/assets/feed.json',
+  'jsonfeed' : 'assets/feed.json',
 
   diagram : function() {
 
@@ -21,8 +21,8 @@ var draw = {
     $('#type')[0].href = '/' + type;
     $('.diagram').html(''); $("#loadingImg").show();
 
-    var jsonfile = this['jsonfeed'] + '?t=' + $.now();
-    var js = '/' + this[type];
+    var jsonfile = '/' + this['jsonfeed'] + '?t=' + $.now();
+    var js = '/' + this[type] + '?t=' + $.now();
 
     $.getScript(js, function( data, textStatus, jqxhr ) {    
 
