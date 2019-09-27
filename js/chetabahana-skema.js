@@ -24,7 +24,7 @@ var draw = {
     var jsonfile = '/' + this['jsonfeed'] + '?t=' + $.now();
     var js = '/' + this[type] + '?t=' + $.now();
 
-    $.getScript(js, function( data, textStatus, jqxhr ) {    
+    $.getScript(js, function( data, textStatus, jqxhr ) {
 
        try {
 
