@@ -19,7 +19,7 @@ var draw = {
 
     var js = '/' + this[type] + '?t=' + $.now();
     var jsonfile = '/' + this['jsonfeed'] + '?t=' + $.now();
-    (draw.point)? jsonfile = jsonfile.replace('assets', draw.point);
+    if (draw.point) jsonfile = jsonfile.replace('assets', draw.point);
 
     $('#type').text(type);
     $('#type')[0].href = '/' + type;
