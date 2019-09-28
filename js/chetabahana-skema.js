@@ -179,8 +179,9 @@ var draw = {
             draw.type = 'sequence';
 
           }
-          
-          $("#json").attr("href", jsonfile + "&id=" + this.id)
+
+          jsonfile = '/' + draw['jsonfeed'] + "?id=" + this.id;
+          $("#json").attr("href", jsonfile)
           draw.point = this.id;
 
       });
