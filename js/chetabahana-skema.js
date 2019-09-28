@@ -179,8 +179,9 @@ var draw = {
             draw.type = 'sequence';
 
           }
-
-          $("json").prop("href", "http://www.google.com/")
+          
+          var _href = $("json").attr("href");
+          $("json").attr("href", _href + "?abc")
           draw.point = this.id; console.log(this.id);
           draw.diagram();
 
