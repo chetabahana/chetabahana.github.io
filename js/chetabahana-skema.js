@@ -139,11 +139,19 @@ var draw = {
 
           $(".theme").val("simple");
 
-          $('svg rect').each(function( index ) {
-             this.id = draw.point + draw.pad('0' + index, 3);
+          $('svg .start-element').each(function( index ) {
+             this.id = '000';
           });
 
-          draw.elements = $('svg .flowchart, svg text');
+          $('svg .end-element').each(function( index ) {
+             this.id = draw.point + draw.pad('1' + index, 3);
+          });
+
+          $('svg .flowchart').each(function( index ) {
+             this.id = '222';
+          });
+
+          draw.elements = $('svg .start-element, svg .end-element, svg .flowchart');
 
         break;
 
@@ -152,7 +160,9 @@ var draw = {
           $('svg rect').each(function( index ) {
              this.id = draw.point + draw.pad('0' + index, 3);
           });
-
+          $('svg text').each(function( index ) {
+             this.id = draw.point + draw.pad('1' + index, 4);
+          });
           draw.elements = $('svg rect, svg text');
 
         break;
