@@ -14,15 +14,17 @@ var draw = {
     var diagram;
     var select = $(".theme").val();
     
-    var type = (!draw.type)? 'sequence': draw.type;    
+    var type = (!draw.type)? 'sequence': draw.type;
     if (select=='hand' && type!='flowchart') type='sequence';
-    
+
+    var js = '/' + this[type] + '?t=' + $.now();
+    var jsonfile = '/' + this['jsonfeed'] + '?t=' + $.now();
+    (draw.point)? jsonfile = jsonfile.replace('assets', draw.point);
+
     $('#type').text(type);
     $('#type')[0].href = '/' + type;
+    $("#json").attr("href", jsonfile)
     $('.diagram').html(''); $("#loadingImg").show();
-
-    var jsonfile = '/' + this['jsonfeed'] + '?t=' + $.now();
-    var js = '/' + this[type] + '?t=' + $.now();
 
     $.getScript(js, function( data, textStatus, jqxhr ) {
 
@@ -182,8 +184,6 @@ var draw = {
 
           }
 
-          var json_skema = '/' + draw['jsonfeed'] + "?id=" + this.id;
-          $("#json").attr("href", json_skema)
           draw.point = this.id;
           draw.diagram();
 
