@@ -180,8 +180,8 @@ var draw = {
 
           }
           
-          var _href = $("json").attr("href");
-          $("json").attr("href", _href + "?abc")
+          var _href = $("#json").attr("href");
+          $("#json").attr("href", _href + "?abc")
           draw.point = this.id; console.log(this.id);
           draw.diagram();
 
