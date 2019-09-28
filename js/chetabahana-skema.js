@@ -116,10 +116,12 @@ var draw = {
         case 'sequence':
 
           $('svg g.actor').each(function( index ) {
-             this.id = '0' + Math.floor(index/2).toString();
+             var actor = '0' + Math.floor(index/2).toString();
+             this.id = (draw.point)? draw.point + actor: actor;
           });
           $('svg g.signal').each(function( index ) {
-             this.id = '1' + index.toString();
+             var signal = '1' + index.toString();
+             this.id = (draw.point)? draw.point + signal: signal;
           });
           draw.elements = $('svg g.actor, svg g.signal');
 
