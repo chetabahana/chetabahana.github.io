@@ -144,7 +144,7 @@ var draw = {
           });
 
           $('svg .flowchart').each(function( index ) {
-             this.id = draw.point + draw.pad(index, 2);
+             this.id = draw.point + draw.pad(index + 1, 2);
           });
 
           $('svg .end-element').each(function( index ) {
