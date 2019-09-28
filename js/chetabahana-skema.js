@@ -140,15 +140,15 @@ var draw = {
           $(".theme").val("simple");
 
           $('svg .start-element').each(function( index ) {
-             this.id = '000';
+             this.id = '00';
           });
 
           $('svg .flowchart').each(function( index ) {
-             this.id = draw.point + draw.pad('1' + index, 3);
+             this.id = draw.point + draw.pad(index, 2);
           });
 
           $('svg .end-element').each(function( index ) {
-             this.id = '222';
+             this.id = '99';
           });
 
           draw.elements = $('svg .start-element, svg .end-element, svg .flowchart');
