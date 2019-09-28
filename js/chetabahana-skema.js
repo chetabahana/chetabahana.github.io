@@ -117,15 +117,18 @@ var draw = {
 
         case 'sequence':
 
+          $('svg g.title').each(function( index ) {
+             this.id = '00';
+          });
           $('svg g.actor').each(function( index ) {
-             var actor = '0' + Math.floor(index/2).toString();
+             var actor = '1' + Math.floor(index/2).toString();
              this.id = (draw.point)? draw.point + actor: actor;
           });
           $('svg g.signal').each(function( index ) {
-             var signal = '1' + index.toString();
+             var signal = '2' + index.toString();
              this.id = (draw.point)? draw.point + signal: signal;
           });
-          draw.elements = $('svg g.actor, svg g.signal');
+          draw.elements = $('svg g.title, svg g.actor, svg g.signal');
 
         break;
 
