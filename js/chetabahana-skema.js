@@ -152,9 +152,7 @@ var draw = {
           $('svg rect').each(function( index ) {
              this.id = draw.point + draw.pad('0' + index, 3);
           });
-          $('svg text').each(function( index ) {
-             this.id = draw.point + draw.pad('1' + index, 4);
-          });
+
           draw.elements = $('svg rect, svg text');
 
         break;
