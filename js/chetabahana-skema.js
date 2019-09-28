@@ -180,6 +180,7 @@ var draw = {
 
           }
 
+          $("json").prop("href", "http://www.google.com/")
           draw.point = this.id; console.log(this.id);
           draw.diagram();
 
