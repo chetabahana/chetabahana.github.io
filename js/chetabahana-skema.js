@@ -143,6 +143,10 @@ var draw = {
              this.id = draw.point + draw.pad('0' + index, 3);
           });
 
+          $('svg text').each(function( index ) {
+             this.id = draw.point + draw.pad('1' + index, 3);
+          });
+
           draw.elements = $('svg .flowchart, svg text');
 
         break;
