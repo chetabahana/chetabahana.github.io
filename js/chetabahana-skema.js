@@ -143,12 +143,12 @@ var draw = {
              this.id = '000';
           });
 
-          $('svg .end-element').each(function( index ) {
-             this.id = '222';
-          });
-
           $('svg .flowchart').each(function( index ) {
              this.id = draw.point + draw.pad('1' + index, 3);
+          });
+
+          $('svg .end-element').each(function( index ) {
+             this.id = '222';
           });
 
           draw.elements = $('svg .start-element, svg .end-element, svg .flowchart');
