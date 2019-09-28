@@ -1,7 +1,7 @@
 ---
 layout: null
+permalink: /assets/feed.json
 redirect_from:
-  - /assets/feed.json
   - /01/feed.json
   - /0123456789/feed.json
   - /0123456789/assets/feed.json
