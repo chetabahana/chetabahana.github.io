@@ -143,7 +143,7 @@ var draw = {
              this.id = '00';
           });
 
-          $('svg .flowchart').each(function( index ) {
+          $('svg rect .flowchart').each(function( index ) {
              this.id = draw.point + draw.pad(index + 1, 2);
           });
 
@@ -151,7 +151,7 @@ var draw = {
              this.id = '99';
           });
 
-          draw.elements = $('svg .start-element, svg .end-element, svg .flowchart');
+          draw.elements = $('svg .start-element, svg .end-element, svg rect .flowchart');
 
         break;
 
