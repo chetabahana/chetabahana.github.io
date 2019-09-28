@@ -180,8 +180,8 @@ var draw = {
 
           }
 
-          jsonfile = '/' + draw['jsonfeed'] + "?id=" + this.id;
-          $("#json").attr("href", jsonfile)
+          var json_skema = '/' + draw['jsonfeed'] + "?id=" + this.id;
+          $("#json").attr("href", json_skema)
           draw.point = this.id;
 
       });
