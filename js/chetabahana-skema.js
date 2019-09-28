@@ -139,12 +139,8 @@ var draw = {
 
           $(".theme").val("simple");
 
-          $('svg .flowchart').each(function( index ) {
+          $('svg rect').each(function( index ) {
              this.id = draw.point + draw.pad('0' + index, 3);
-          });
-
-          $('svg text').each(function( index ) {
-             this.id = draw.point + draw.pad('1' + index, 3);
           });
 
           draw.elements = $('svg .flowchart, svg text');
