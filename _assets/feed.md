@@ -3,11 +3,23 @@ layout: null
 permalink: /assets/feed.json
 redirect_from:
   - /00/feed.json
-  - /0123456789/feed.json
-  - /0123456789/assets/feed.json
-  - /01234/56789/assets/feed.json
-  - /012/345/678/9/assets/feed.json
-  - /01/23/45/67/89/assets/feed.json
-  - /0/1/2/3/4/5/6/7/8/9/assets/feed.json
+  - /01/feed.json
+  - /02/feed.json
+  - /03/feed.json
+  - /04/feed.json
+  - /05/feed.json
+  - /10/feed.json
+  - /11/feed.json
+  - /12/feed.json
+  - /13/feed.json
+  - /14/feed.json
+  - /15/feed.json
+  - /20/feed.json
+  - /21/feed.json
+  - /22/feed.json
+  - /23/feed.json
+  - /24/feed.json
+  - /25/feed.json
+  - /33/feed.json
 ---
 {% include feed.json %}
