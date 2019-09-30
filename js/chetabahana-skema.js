@@ -175,8 +175,8 @@ var draw = {
         .hover(function() {
 
           $(this).hide(100).show(100);
-          let parent = this.parentNode;
-          parent.appendChild(this);
+          //let parent = this.parentNode;
+          //parent.appendChild(this);
 
       }).click(function() {
 
