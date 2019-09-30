@@ -31,7 +31,7 @@
       "past" : {"font-size" : 12},
       "current" : {"font-weight" : "bold"},
       "future" : {"font-weight" : "bold"},
-      "invalid": {"font-color" : "white", "font-weight" : "bold"},
+      "invalid": {"font-weight" : "bold"},
       "approved" : {"font-weight" : "bold", "yes-text" : "LANJUT", "no-text" : "DITOLAK"},
       "rejected" : {"font-weight" : "bold", "yes-text" : "LULUS", "no-text" : "TIDAK LULUS"}
     }
