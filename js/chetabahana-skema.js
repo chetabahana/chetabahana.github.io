@@ -139,19 +139,19 @@ var draw = {
 
           $(".theme").val("simple");
 
-          $('svg .start-element').each(function( index ) {
+          $('svg rect.start-element').each(function( index ) {
              this.id = '00';
           });
 
-          $('svg rect .flowchart').each(function( index ) {
+          $('svg rect.flowchart, svg path.flowchart').each(function( index ) {
              this.id = draw.point + draw.pad(index + 1, 2);
           });
 
-          $('svg .end-element').each(function( index ) {
+          $('svg rect.end-element').each(function( index ) {
              this.id = '99';
           });
 
-          draw.elements = $('svg .start-element, svg .end-element, svg rect .flowchart');
+          draw.elements = $('svg rect.start-element, svg rect.flowchart, svg path.flowchart, svg rect.end-element');
 
         break;
 
