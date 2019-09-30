@@ -2,6 +2,38 @@
 layout: null
 permalink: /assets/feed.json
 redirect_from:
+  - /000/feed.json
+  - /001/feed.json
+  - /002/feed.json
+  - /003/feed.json
+  - /004/feed.json
+  - /005/feed.json
+  - /006/feed.json
+  - /007/feed.json
+  - /008/feed.json
+  - /009/feed.json
+  - /010/feed.json
+  - /011/feed.json
+  - /012/feed.json
+  - /013/feed.json
+  - /014/feed.json
+  - /015/feed.json
+  - /016/feed.json
+  - /017/feed.json
+  - /018/feed.json
+  - /019/feed.json
+  - /020/feed.json
+  - /021/feed.json
+  - /022/feed.json
+  - /023/feed.json
+  - /024/feed.json
+  - /025/feed.json
+  - /026/feed.json
+  - /027/feed.json
+  - /028/feed.json
+  - /029/feed.json
+  - /030/feed.json
+  - /031/feed.json
   - /00/feed.json
   - /01/feed.json
   - /02/feed.json
