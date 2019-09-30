@@ -2,10 +2,10 @@ $(window).load(function() {draw.diagram();});
 $('.theme').change(function() {draw.tChange();});
 $('.download').click(function(ev) {draw.xmlData();});
 
-             var editor = ace.edit($('.editor').get(0));
-             editor.setTheme("ace/theme/crimson_editor");
-             editor.getSession().setMode("ace/mode/asciidoc");
-             editor.getSession().on('change', _.debounce(function() {draw.diagram();}, 100) );
+var editor = ace.edit($('.editor').get(0));
+editor.setTheme("ace/theme/crimson_editor");
+editor.getSession().setMode("ace/mode/asciidoc");
+editor.getSession().on('change', _.debounce(function() {draw.diagram();}, 100) );
 
 var draw = {
 
