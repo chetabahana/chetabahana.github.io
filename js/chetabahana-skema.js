@@ -182,7 +182,7 @@ var draw = {
       })
         .each(function() {
 console.log(this.id);
-          this.parentNode.appendChild(this);
+          //this.parentNode.appendChild(this);
           //$('svg').insertBefore(this, $('svg').lastChild.nextSibling);
 
       })
