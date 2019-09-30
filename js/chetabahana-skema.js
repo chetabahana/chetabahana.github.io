@@ -139,17 +139,15 @@ var draw = {
 
           $(".theme").val("simple");
 
-          $('svg rect.start-element').each(function( index ) {
+          $('svg rect.start-element').each(function() {
              this.id = draw.point;
           });
 
           $('svg rect.flowchart, svg path.flowchart').each(function( index ) {
              this.id = draw.point + draw.pad(index + 1, 2);
-             let parent = this.parentNode;
-             parent.appendChild(this);
          });
 
-          $('svg rect.end-element').each(function( index ) {
+          $('svg rect.end-element').each(function() {
              this.id = draw.point;
           });
 
