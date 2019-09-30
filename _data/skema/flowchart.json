@@ -10,7 +10,7 @@
     "font-color": "black",
     "line-color": "black",
     "element-color": "black",
-    "fill": "none",
+    "fill": "white",
     "yes-text": "yes",
     "no-text": "no",
     "arrow-end": "block",
