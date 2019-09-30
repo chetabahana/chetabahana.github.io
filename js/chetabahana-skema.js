@@ -122,13 +122,11 @@ var draw = {
           });
 
           $('svg g.actor').each(function( index ) {
-             var actor = '1' + (Math.floor(index/2) + 1).toString();
-             this.id = (draw.point)? draw.point + actor: actor;
+             this.id = '1' + (Math.floor(index/2) + 1).toString();
           });
 
           $('svg g.signal').each(function( index ) {
-             var signal = '2' + (index + 1).toString();
-             this.id = (draw.point)? draw.point + signal: signal;
+             this.id = '2' + (index + 1).toString();
           });
 
           draw.elements = $('svg g.title, svg g.actor, svg g.signal');
