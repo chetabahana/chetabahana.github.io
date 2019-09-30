@@ -170,11 +170,11 @@ var draw = {
 
       $('#loadingImg').hide();
 
-      draw.elements.hover(function() {
-
-          $(this).hide(100).show(100);
-
-        })
+      draw.elements.mouseenter(function() {
+  $(this).css("fill", "teal")
+}).mouseout(function(){
+  $(this).css("fill","transparent")
+})
 
         .each(function() {
 
