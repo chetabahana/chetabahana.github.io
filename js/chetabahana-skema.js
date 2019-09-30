@@ -89,7 +89,7 @@ var draw = {
               var obj = result.items[4].items[2];
               draw.skema = draw.encode(obj.query);
 
-              $('.contact_left').hide(); 
+              $('.contact_left').attr('class', 'col-md-12');
               diagram = eval(draw.skema).format();
               diagram.addTo($('.diagram').get(0));
 
@@ -200,7 +200,7 @@ var draw = {
             var e = Number((this.id.substr(5,1)));
             var f = Number((this.id.substr(6,3)));
 
-            $('.contact_left').show();
+            $('.contact_left').attr('class', 'col-md-4');
             draw.type = 'sequence';
 
           }
