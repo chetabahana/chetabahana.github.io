@@ -145,7 +145,7 @@ var draw = {
           });
 
           $('svg rect.flowchart, svg path.flowchart').each(function( index ) {
-             this.id = draw.point + draw.pad(index + 1, 2);
+             this.id = draw.pad(index + 1, 2);
          });
 
           $('svg rect.end-element').each(function() {
@@ -160,11 +160,11 @@ var draw = {
         case 'railroad':
 
           $('svg rect').each(function( index ) {
-             this.id = draw.point + draw.pad('0' + index, 3);
+             this.id = draw.pad('0' + index, 3);
           });
           
           $('svg text').each(function( index ) {
-             this.id = draw.point + draw.pad('1' + index, 4);
+             this.id = draw.pad('1' + index, 4);
           });
           
           draw.elements = $('svg rect, svg text');
