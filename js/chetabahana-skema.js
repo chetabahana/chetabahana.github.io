@@ -13,7 +13,7 @@ var draw = {
 
     var diagram;
     var select = $(".theme").val();
-    
+    var editor = ace.edit($('.editor').get(0));
     var type = (!draw.type)? 'sequence': draw.type;
     if (select=='hand' && type!='flowchart') type='sequence';
 
@@ -34,7 +34,6 @@ var draw = {
 
            if (select == 'hand') {
 
-             var editor = ace.edit($('.editor').get(0));
              editor.setTheme("ace/theme/crimson_editor");
              editor.getSession().setMode("ace/mode/asciidoc");
              editor.getSession().on('change', _.debounce(function() {draw.diagram();}, 100) );
