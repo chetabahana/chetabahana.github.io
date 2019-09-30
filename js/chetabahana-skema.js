@@ -174,7 +174,7 @@ var draw = {
       draw.elements.css({
 
            'cursor' : 'pointer',
-           'fill-opacity' : '0.5',
+           'fill-opacity' : '0.1',
            'display': 'inline-block'
 
         })
