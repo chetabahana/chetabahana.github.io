@@ -4,10 +4,6 @@
                     <div class="templatemo-line-header">
                         <h4>{{ section.title }}</h4>
                      </div>
-                    <div class="col-md-8">
-                        <div class="diagram"></div>
-                        <img id='loadingImg' src='images/loading.gif' style="width:50%;">
-                    </div>
                     <div class="col-md-4 contact_left">
                         Status:
                         <select class="theme">
@@ -21,6 +17,10 @@
                         Referensi Bagan: <a href="https://marketleader.github.io/">Skema Kerja</a> Dokumentasi: <a href="https://github.com/MarketLeader/marketleader.github.io/wiki">Konsep Dasar</a><br>                    
                         Silahkan <a href='https://jsfiddle.net/chetabahana/rrxnah40/'>sunting</a> dan <a href='#chetabahana-diskusi' class='internal-link'>usulkan</a> gambar <a href="#" class="download">bagannya..</a>
                     </div>    
+                    <div class="col-md-8">
+                        <div class="diagram"></div>
+                        <img id='loadingImg' src='images/loading.gif' style="width:50%;">
+                    </div>
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </div><!-- /{{ section.title }}-->
