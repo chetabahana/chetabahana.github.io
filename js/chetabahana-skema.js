@@ -132,6 +132,7 @@ var draw = {
           });
 
           draw.elements = $('svg g.title, svg g.actor, svg g.signal');
+          draw.elements.css({'cursor':'pointer'});
 
         break;
 
@@ -152,6 +153,7 @@ var draw = {
           });
 
           draw.elements = $('svg rect.start-element, svg rect.flowchart, svg path.flowchart, svg rect.end-element');
+          draw.elements.css({'cursor':'pointer','fill-opacity':'0.1'});
 
         break;
 
@@ -160,10 +162,13 @@ var draw = {
           $('svg rect').each(function( index ) {
              this.id = draw.point + draw.pad('0' + index, 3);
           });
+          
           $('svg text').each(function( index ) {
              this.id = draw.point + draw.pad('1' + index, 4);
           });
+          
           draw.elements = $('svg rect, svg text');
+          draw.elements.css({'cursor':'pointer','fill-opacity':'0.1'});
 
         break;
 
@@ -171,15 +176,7 @@ var draw = {
 
       $('#loadingImg').hide();
 
-      draw.elements.css({
-
-           'cursor':'pointer',
-           'fill-opacity':'0.1',
-           'display':'inline-block'
-
-        })
-
-        .hover(function() {
+      draw.elements.hover(function() {
 
           $(this).hide(100).show(100);
 
