@@ -164,7 +164,7 @@ var draw = {
           });
 
           draw.elements = $('svg rect');
-          draw.elements.css({'cursor':'pointer'});
+          draw.elements.css({'cursor':'pointer','fill-opacity':'0.3'});
 
         break;
 
