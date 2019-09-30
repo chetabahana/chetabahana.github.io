@@ -184,7 +184,8 @@ var draw = {
       })
         .each(function() {
 
-          $('svg').insertBefore(this, $('svg').lastChild.nextSibling);
+          this.parentNode.appendChild(this);
+          //$('svg').insertBefore(this, $('svg').lastChild.nextSibling);
 
       })
         .click(function() {
