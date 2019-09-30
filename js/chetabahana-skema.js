@@ -145,7 +145,9 @@ var draw = {
 
           $('svg rect.flowchart, svg path.flowchart').each(function( index ) {
              this.id = draw.point + draw.pad(index + 1, 2);
-          });
+             let parent = this.parentNode;
+             parent.appendChild(this);
+         });
 
           $('svg rect.end-element').each(function( index ) {
              this.id = draw.point;
@@ -171,12 +173,9 @@ var draw = {
 
       $('#loadingImg').hide();
 
-      draw.elements.css('cursor','pointer')
-        .hover(function() {
+      draw.elements.css('cursor','pointer').hover(function() {
 
           $(this).hide(100).show(100);
-          //let parent = this.parentNode;
-          //parent.appendChild(this);
 
       }).click(function() {
 
