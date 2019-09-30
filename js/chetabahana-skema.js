@@ -173,7 +173,7 @@ var draw = {
       draw.elements.mouseenter(function() {
   $(this).css("fill", "teal")
 }).mouseout(function(){
-  $(this).css("fill","transparent")
+  $(this).css("fill","white")
 })
 
         .each(function() {
