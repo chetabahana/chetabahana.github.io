@@ -173,11 +173,21 @@ var draw = {
 
       $('#loadingImg').hide();
 
-      draw.elements.css('cursor','pointer').hover(function() {
+
+
+      draw.elements
+        .css('cursor','pointer')
+        .hover(function() {
 
           $(this).hide(100).show(100);
 
-      }).click(function() {
+      })
+        .each(function() {
+
+          $('svg').insertBefore(this, $('svg').lastChild.nextSibling);
+
+      })
+        .click(function() {
 
           if (draw.type != 'railroad') {
 
