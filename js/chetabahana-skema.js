@@ -2,6 +2,11 @@ $(window).load(function() {draw.diagram();});
 $('.theme').change(function() {draw.tChange();});
 $('.download').click(function(ev) {draw.xmlData();});
 
+             var editor = ace.edit($('.editor').get(0));
+             editor.setTheme("ace/theme/crimson_editor");
+             editor.getSession().setMode("ace/mode/asciidoc");
+             editor.getSession().on('change', _.debounce(function() {draw.diagram();}, 100) );
+
 var draw = {
 
   'sequence' : 'sequence/js/sequence-diagram-snap-min.js',
@@ -33,11 +38,6 @@ var draw = {
          if(type == 'sequence') {
 
            if (select == 'hand') {
-
-             var editor = ace.edit($('.editor').get(0));
-             editor.setTheme("ace/theme/crimson_editor");
-             editor.getSession().setMode("ace/mode/asciidoc");
-             editor.getSession().on('change', _.debounce(function() {draw.diagram();}, 100) );
 
              draw.skema = editor.getValue();
              diagram = Diagram.parse(draw.skema);
