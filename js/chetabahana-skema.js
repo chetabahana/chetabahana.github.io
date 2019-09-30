@@ -174,6 +174,7 @@ var draw = {
       }
 
       $('#loadingImg').hide();
+      $('.editor-wrapper').height($('.diagram').height());
 
       draw.elements.css({'cursor':'pointer'})
 
