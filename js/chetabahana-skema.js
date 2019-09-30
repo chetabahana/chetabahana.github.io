@@ -171,21 +171,26 @@ var draw = {
 
       $('#loadingImg').hide();
 
+      draw.elements.css({
 
+           'cursor' : 'pointer',
+           'fill-opacity' : '0.5',
+           'display': 'inline-block'
 
-      draw.elements
-        .css('cursor','pointer')
+        })
+
         .hover(function() {
 
           $(this).hide(100).show(100);
 
-      })
+        })
+
         .each(function() {
-console.log(this.id);
+
           this.parentNode.appendChild(this);
-          //$('svg').insertBefore(this, $('svg').lastChild.nextSibling);
 
       })
+
         .click(function() {
 
           if (draw.type != 'railroad') {
@@ -216,6 +221,7 @@ console.log(this.id);
   },
 
   xmlData : function() {
+
     var a = $(this);
     var svg = $(".diagram").find('svg')[0];
     var width = parseInt(svg.width.baseVal.value);
@@ -224,9 +230,11 @@ console.log(this.id);
     a.attr("download", "diagram.svg"); 
     var xml = encodeURIComponent(xmldata);
     a.attr("href", "data:image/svg+xml," + xml);
+
   },  
 
   encode : function(data) {  
+
     return data.replace(/&apos;/g, "'")
                .replace(/&quot;/g, '"')
                .replace(/&gt;/g, '>')
@@ -237,9 +245,11 @@ console.log(this.id);
                .replace(/‘/g, "'")
                .replace(/’/g, "'")
     ;
+
   }, 
 
   tChange : function() {
+
     var regex = /[?&]([^=#]+)=([^&#]*)/g, url = window.location.href, params = {}, match;
     while(match = regex.exec(url)) {params[match[1]] = match[2];}
     draw.params = params; console.log(draw.params);
@@ -248,12 +258,15 @@ console.log(this.id);
     draw.type = (select == 'hand')? 'sequence': draw.type;
     if (draw.type != 'railroad') $('.contact_left').show();
     draw.diagram();
+
   },
 
   pad : function(data, size) {
+
     var s = String(data);
     while (s.length < (size || 2)) {s = "0" + s;}
     return s;
+
   }
 
 }
