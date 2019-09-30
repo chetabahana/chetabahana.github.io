@@ -10,6 +10,8 @@ Diagram(
 					','
 				)
 			),
+		),
+		Sequence(
 			'FROM',
 			OneOrMore(NonTerminal('from_item'), ','),
 			Optional(Sequence('WHERE', NonTerminal('condition')))
@@ -17,6 +19,8 @@ Diagram(
 		Sequence(
 			Optional(Sequence('GROUP BY', NonTerminal('expression'))),
 			Optional(Sequence('HAVING', NonTerminal('condition'))),
+		),
+		Sequence(
 			Optional(Sequence(
 				Choice(0, 'UNION', 'INTERSECT', 'EXCEPT'),
 				Optional('ALL'),
@@ -28,6 +32,8 @@ Diagram(
 				'ORDER BY',
 				OneOrMore(Sequence(NonTerminal('expression'), Choice(0, Skip(), 'ASC', 'DESC')), ','))
 			),
+		),
+		Sequence(
 			Optional(Sequence(
 				'LIMIT',
 				Choice(0, NonTerminal('count'), 'ALL')
@@ -35,4 +41,4 @@ Diagram(
 			Optional(Sequence('OFFSET', NonTerminal('start'), Optional('ROWS')))
 		)
 	)
-)
+);
