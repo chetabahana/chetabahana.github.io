@@ -153,7 +153,9 @@ var draw = {
           });
 
           draw.elements = $('svg rect.start-element, svg rect.flowchart, svg path.flowchart, svg rect.end-element');
-          draw.elements.css({'fill-opacity':'0.1'});
+          draw.elements.css({'fill-opacity':'0.1'})
+                       .mouseenter(function(){$(this).css('fill','teal')})
+                       .mouseout(function(){$(this).css('fill','')});
 
         break;
 
@@ -164,7 +166,9 @@ var draw = {
           });
 
           draw.elements = $('svg rect');
-          draw.elements.css({'fill-opacity':'0.3'});
+          draw.elements.css({'fill-opacity':'0.3'})
+                       .mouseenter(function(){$(this).css('fill', 'cyan')})
+                       .mouseout(function(){$(this).css('fill','')});
 
         break;
 
