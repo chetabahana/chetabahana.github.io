@@ -17,6 +17,7 @@ var draw = {
 
         var diagram;
         var select = $(".theme").val();
+        var font_size = (select == 'hand')? 12: 13;
 
         var type = (!draw.type)? 'sequence': draw.type;
         var js = '/' + this[type] + '?t=' + $.now();
@@ -26,9 +27,7 @@ var draw = {
         $('.diagram').html(''); $("#loadingImg").show();
 
         if (!draw.skema) draw.skema = editor.getValue();
-        if (select=='hand' && type!='flowchart') type='sequence';
-        if (select=='hand') draw.input = {theme: 'hand', "font-size": 12};
-        else if (type=='sequence') draw.input = {theme: 'simple', "font-size": 13};
+        if (type=='sequence') draw.input = {theme: select, "font-size": font_size};
 
         $.getScript(js, function( data, textStatus, jqxhr ) {
 
@@ -205,9 +204,6 @@ var draw = {
         var regex = /[?&]([^=#]+)=([^&#]*)/g, url = window.location.href, params = {}, match;
         while(match = regex.exec(url)) {params[match[1]] = match[2];}
         draw.params = params; console.log(draw.params);
-
-        var select = $('.theme').val();
-        draw.type = (select == 'hand')? 'sequence': draw.type;
         draw.diagram();
 
     },
