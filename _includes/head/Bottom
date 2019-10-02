@@ -4,7 +4,7 @@
         <script type="text/javascript" src="js/stickUp.min.js"></script>
         <script type="text/javascript" src="js/prefixfree.min.js"></script>
         <script type="text/javascript" src="js/colorbox/jquery.colorbox-min.js"></script>
-        <script type="text/javascript" src="ace-builds/src/ace.js" charset="utf-8"></script>
+        <script type="text/javascript" src="ace-builds/src-min/ace.js" charset="utf-8"></script>
         <script type="text/javascript" src="feed/js/instafeed.min.js"></script>
         <script type="text/javascript" src="slick/slick/slick.min.js"></script>
         <script type="text/javascript" src="scroll/jquery.simplyscroll.min.js"></script>
