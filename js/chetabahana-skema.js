@@ -20,11 +20,13 @@ var draw = {
 
         var type = (!draw.type)? 'sequence': draw.type;
         var js = '/' + this[type] + '?t=' + $.now();
-        if (select=='hand' && type!='flowchart') type='sequence';
 
         $('#type').text(type);
         $('#type')[0].href = '/' + type;
         $('.diagram').html(''); $("#loadingImg").show();
+
+        if (!draw.skema) draw.skema = editor.getValue();
+        if (select=='hand' && type!='flowchart') type='sequence';
 
         $.getScript(js, function( data, textStatus, jqxhr ) {
 
@@ -32,28 +34,17 @@ var draw = {
 
                 if(type == 'sequence') {
 
-                    if (select == 'hand') {
-
-                        draw.skema = editor.getValue();
-                        diagram = Diagram.parse(draw.skema);
-
-                        draw.opt = {theme: select, "font-size": 12};
-                        diagram.drawSVG($('.diagram').get(0), draw.opt);
-
-                    } else {
-
-                        diagram = Diagram.parse(draw.skema);
-                        draw.opt = {theme: select, "font-size": 13};
-                        diagram.drawSVG($('.diagram').get(0), draw.opt);
-
-                    }
+                    diagram = Diagram.parse(draw.skema);
+                    var font_size = (select == 'hand')? 12: 13;
+                    draw.opt = {theme: select, "font-size": font_size};
+                    diagram.drawSVG($('.diagram').get(0), draw.opt);
 
                 } else if(type == 'flowchart'){
 
                     diagram = flowchart.parse(draw.skema);
                     diagram.drawSVG($('.diagram').get(0), draw.obj.input);
 
-                } else if(type == 'railroad'){
+                } else {
 
                     diagram = eval(draw.skema).format();
                     diagram.addTo($('.diagram').get(0));
