@@ -3,6 +3,11 @@ $('.theme').change(function() {draw.tChange();});
 $('.download').click(function(ev) {draw.xmlData();});
 
 var editor = ace.edit("editor");
+//editor.container.remove();
+editor.setTheme("ace/theme/crimson_editor");
+editor.getSession().setMode("ace/mode/asciidoc");
+//editor.getSession().on('change', _.debounce(function() {draw.diagram();}, 100) );
+
 
 var draw = {
 
@@ -49,9 +54,8 @@ var draw = {
                             var obj = result.items[4].items[0];
                             draw.skema = draw.encode(obj.query);
 
-                            editor.destroy();
-                            $('.editor').text(draw.skema); 
-                            draw.skema = $('.editor').text();
+editor.clearSelection();
+editor.setValue(draw.skema);
 
                             diagram = Diagram.parse(draw.skema);
                             draw.opt = {theme: select, "font-size": 13};
@@ -71,9 +75,8 @@ var draw = {
                         var obj = result.items[4].items[1];
                         draw.skema = draw.encode(obj.query);
 
-                        editor.destroy();
-                        $('.editor').text(draw.skema); 
-                        draw.skema = $('.editor').text();
+editor.clearSelection();
+editor.setValue(draw.skema);
 
                         diagram = flowchart.parse(draw.skema);
                         diagram.drawSVG($('.diagram').get(0), obj.input);
@@ -92,9 +95,8 @@ var draw = {
                         var obj = result.items[4].items[2];
                         draw.skema = draw.encode(obj.query);
 
-                        editor.destroy();
-                        $('.editor').text(draw.skema); 
-                        draw.skema = $('.editor').text();
+editor.clearSelection();
+editor.setValue(draw.skema);
 
                         diagram = eval(draw.skema).format();
                         diagram.addTo($('.diagram').get(0));
@@ -189,11 +191,6 @@ var draw = {
             $('.editor').height($('.diagram').height() - 94);
             $('.editor-wrapper').height($('.editor').height() + 3);
             $('.chetabahana-skema').height($('.editor').height() + 200);
-
-//editor.container.remove();
-editor.setTheme("ace/theme/crimson_editor");
-//editor.getSession().setMode("ace/mode/asciidoc");
-//editor.getSession().on('change', _.debounce(function() {draw.diagram();}, 100) );
 
             draw.elements.css({'cursor':'pointer'})
 
