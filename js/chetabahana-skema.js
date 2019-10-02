@@ -35,9 +35,7 @@ var draw = {
                 if(type == 'sequence') {
 
                     diagram = Diagram.parse(draw.skema);
-                    var font_size = (select == 'hand')? 12: 13;
-                    draw.opt = {theme: select, "font-size": font_size};
-                    diagram.drawSVG($('.diagram').get(0), draw.opt);
+                    diagram.drawSVG($('.diagram').get(0), draw.obj.input);
 
                 } else if(type == 'flowchart'){
 
