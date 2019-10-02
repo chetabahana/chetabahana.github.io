@@ -1,6 +1,6 @@
 Diagram(
 	Stack(
-		Stack(
+		Sequence(
 			'SELECT',
 			Optional('DISTINCT', 'skip'),
 			Choice(0,
@@ -14,7 +14,7 @@ Diagram(
 			OneOrMore(NonTerminal('from_item'), ','),
 			Optional(Sequence('WHERE', NonTerminal('condition')))
 		),
-		Stack(
+		Sequence(
 			Optional(Sequence('GROUP BY', NonTerminal('expression'))),
 			Optional(Sequence('HAVING', NonTerminal('condition'))),
 			Optional(Sequence(
@@ -23,7 +23,7 @@ Diagram(
 				NonTerminal('select')
 			))
 		),
-		Stack(
+		Sequence(
 			Optional(Sequence(
 				'ORDER BY',
 				OneOrMore(Sequence(NonTerminal('expression'), Choice(0, Skip(), 'ASC', 'DESC')), ','))
