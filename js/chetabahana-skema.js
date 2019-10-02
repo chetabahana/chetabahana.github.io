@@ -11,14 +11,13 @@ var draw = {
 
     'sequence' : 'sequence/js/sequence-diagram-snap-min.js',
     'flowchart': 'flowchart/flowchart-latest.js',
-    'railroad' : 'railroad/railroad-diagrams.js',
-    'jsonfeed' : 'assets/feed.json',
+    'railroad' : 'railroad/railroad-diagrams.js'
 
     diagram : function() {
 
         var diagram;
         var select = $(".theme").val();
-        
+
         var type = (!draw.type)? 'sequence': draw.type;
         var js = '/' + this[type] + '?t=' + $.now();
         if (select=='hand' && type!='flowchart') type='sequence';
@@ -164,7 +163,7 @@ var draw = {
                 draw.type = (draw.type == 'sequence')? 'flowchart': ((draw.type == 'flowchart')? 'railroad': 'sequence');
                 var item = (draw.type == 'sequence')? 0: ((draw.type == 'flowchart')? 1: 2);
 
-                var jsonfile = '/' + draw['jsonfeed'] + '?t=' + $.now();
+                var jsonfile = '/assets/feed.json?t=' + $.now();
                 jsonfile = jsonfile.replace('assets', this.id);
                 $("#json").attr("href", jsonfile);
                 
