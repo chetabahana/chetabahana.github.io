@@ -161,8 +161,8 @@ var draw = {
 
             .click(function() {
 
-                draw.type = (draw.type == 'sequence')? 'flowchart': (draw.type == 'flowchart')? 'railroad': 'sequence';
-                var item = (draw.type == 'sequence')? 0: (draw.type == 'flowchart')? 1: 2;
+                draw.type = (draw.type == 'sequence')? 'flowchart': ((draw.type == 'flowchart')? 'railroad': 'sequence');
+                var item = (draw.type == 'sequence')? 0: ((draw.type == 'flowchart')? 1: 2);
 
                 var jsonfile = '/' + draw['jsonfeed'] + '?t=' + $.now();
                 jsonfile = jsonfile.replace('assets', this.id);
