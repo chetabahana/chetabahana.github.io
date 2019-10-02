@@ -27,7 +27,7 @@ var draw = {
 
         if (!draw.skema) draw.skema = editor.getValue();
         if (select=='hand' && type!='flowchart') type='sequence';
-        if (!draw.obj.input) draw.obj.input = {theme: select, "font-size": 12};
+        if (!draw.input) draw.input = {theme: select, "font-size": 12};
 
         $.getScript(js, function( data, textStatus, jqxhr ) {
 
@@ -36,12 +36,12 @@ var draw = {
                 if(type == 'sequence') {
 
                     diagram = Diagram.parse(draw.skema);
-                    diagram.drawSVG($('.diagram').get(0), draw.obj.input);
+                    diagram.drawSVG($('.diagram').get(0), draw.input);
 
                 } else if(type == 'flowchart'){
 
                     diagram = flowchart.parse(draw.skema);
-                    diagram.drawSVG($('.diagram').get(0), draw.obj.input);
+                    diagram.drawSVG($('.diagram').get(0), draw.input);
 
                 } else {
 
@@ -159,8 +159,9 @@ var draw = {
                 
                 $.getJSON(jsonfile).done(function(result){
 
-                    draw.obj = result.items[4].items[item];
-                    draw.skema = draw.encode(draw.obj.query);
+                    var obj = result.items[4].items[item];
+                    draw.input = draw.encode(obj.input);
+                    draw.skema = draw.encode(obj.query);
                     editor.setValue(draw.skema);
 
                 });
