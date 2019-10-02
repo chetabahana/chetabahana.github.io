@@ -1,4 +1,5 @@
         <script type="text/javascript" src="js/embed.min.js"></script>
+        <script type="text/javascript" src="js/function.js"></script>
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/stickUp.min.js"></script>
@@ -14,5 +15,4 @@
         <script type="text/javascript" src="flowchart/raphael-min.js"></script>
         <script type="text/javascript" src="js/templatemo_script.js"></script>
         <script type="text/javascript" src="js/chetabahana-skema.js"></script>
-        <script type="text/javascript" src="js/function.js"></script>
     </body>
