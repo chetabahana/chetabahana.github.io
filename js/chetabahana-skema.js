@@ -70,8 +70,8 @@ var draw = {
 
                         var obj = result.items[4].items[1];
                         draw.skema = draw.encode(obj.query);
-$('.editor').html(draw.skema); 
-                        draw.skema = $('.editor').html(); console.log(draw.skema);
+$('.editor').text(draw.skema); 
+                        draw.skema = $('.editor').text(); console.log(draw.skema);
                         //diagram = Diagram.parse(draw.skema);
 
                         diagram = flowchart.parse(draw.skema);
