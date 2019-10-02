@@ -39,24 +39,27 @@ var draw = {
 
                     if (select == 'hand') {
 
-                        var font_size = 12;
                         draw.skema = editor.getValue();
+                        diagram = Diagram.parse(draw.skema);
+
+                        draw.opt = {theme: select, "font-size": 12};
+                        diagram.drawSVG($('.diagram').get(0), draw.opt);
 
                     } else {
 
                         $.getJSON(jsonfile).done(function(result){
 
-                            var font_size = 13;
                             var obj = result.items[4].items[0];
+
                             draw.skema = draw.encode(obj.query);
+                            diagram = Diagram.parse(draw.skema);
+
+                            draw.opt = {theme: select, "font-size": 13};
+                            diagram.drawSVG($('.diagram').get(0), draw.opt);
 
                         });
      
                     }
-
-                    diagram = Diagram.parse(draw.skema);
-                    draw.opt = {theme: select, "font-size": font_size};
-                    diagram.drawSVG($('.diagram').get(0), draw.opt);
 
                 } else if(type == 'flowchart'){
 
