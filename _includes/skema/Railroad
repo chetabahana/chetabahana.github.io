@@ -1,20 +1,20 @@
 Diagram(
-	Choice(0, 'u', 'U'),
-	Choice(0, 'r', 'R'),
-	Choice(0, 'l', 'L'),
-	'(',
-	Choice(1,
-		Optional(NonTerminal('WS')),
+	Choice(1, '+', Skip(), '-'),
+	Choice(0,
 		Sequence(
-			Optional(NonTerminal('WS')),
-			NonTerminal('STRING', '#string'),
-			Optional(NonTerminal('WS'))),
+			OneOrMore(NonTerminal('digit')),
+			'.',
+			OneOrMore(NonTerminal('digit'))),
+		OneOrMore(NonTerminal('digit')),
 		Sequence(
-			Optional(NonTerminal('WS')),
-			OneOrMore(
-				Choice(0,
-					NonTerminal('not " \' ( ) WS or NPC'),
-					NonTerminal('escape'))),
-			Optional(NonTerminal('WS')))),
-	')'
+			'.',
+			OneOrMore(NonTerminal('digit')))),
+	Choice(0,
+		Skip(),
+		Sequence(
+			Choice(0, 'e', 'E'),
+			Choice(1, '+', Skip(), '-'),
+			OneOrMore(NonTerminal('digit'))
+        )
+    )
 )
