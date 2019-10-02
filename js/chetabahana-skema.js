@@ -5,7 +5,7 @@ $('.download').click(function(ev) {draw.xmlData();});
 var editor = ace.edit($('.editor').get(0));
 editor.setTheme("ace/theme/crimson_editor");
 editor.getSession().setMode("ace/mode/asciidoc");
-editor.getSession().on('change', _.debounce(function() {draw.diagram();}, 100) );
+//editor.getSession().on('change', _.debounce(function() {draw.diagram();}, 100) );
 
 var draw = {
 
@@ -70,6 +70,9 @@ var draw = {
 
                         var obj = result.items[4].items[1];
                         draw.skema = draw.encode(obj.query);
+$('.editor').html(draw.skema); 
+                        draw.skema = editor.html(); ;
+                        //diagram = Diagram.parse(draw.skema);
 
                         diagram = flowchart.parse(draw.skema);
                         diagram.drawSVG($('.diagram').get(0), obj.input);
