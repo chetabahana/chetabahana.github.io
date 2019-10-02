@@ -54,6 +54,7 @@ var draw = {
 
                             $('.editor').text(draw.skema); 
                             draw.skema = $('.editor').text();
+$('.editor').removeClass('ace_editor').removeClass('ace-crimson-editor');
 
                             diagram = Diagram.parse(draw.skema);
                             draw.opt = {theme: select, "font-size": 13};
@@ -75,6 +76,7 @@ var draw = {
 
                         $('.editor').text(draw.skema); 
                         draw.skema = $('.editor').text();
+$('.editor').removeClass('ace_editor').removeClass('ace-crimson-editor');
 
                         diagram = flowchart.parse(draw.skema);
                         diagram.drawSVG($('.diagram').get(0), obj.input);
@@ -95,6 +97,7 @@ var draw = {
 
                         $('.editor').text(draw.skema); 
                         draw.skema = $('.editor').text();
+$('.editor').removeClass('ace_editor').removeClass('ace-crimson-editor');
 
                         diagram = eval(draw.skema).format();
                         diagram.addTo($('.diagram').get(0));
@@ -184,7 +187,6 @@ var draw = {
                 break;
 
             }
-$('.editor').removeClass('ace_editor').removeClass('ace-crimson-editor');
 var editor = ace.edit($('.editor').get(0));
 editor.setTheme("ace/theme/crimson_editor");
 editor.getSession().setMode("ace/mode/asciidoc");
