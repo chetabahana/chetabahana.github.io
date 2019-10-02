@@ -49,6 +49,7 @@ var draw = {
                             var obj = result.items[4].items[0];
                             draw.skema = draw.encode(obj.query);
 
+                            editor.destroy();
                             $('.editor').text(draw.skema); 
                             draw.skema = $('.editor').text();
 
@@ -70,6 +71,7 @@ var draw = {
                         var obj = result.items[4].items[1];
                         draw.skema = draw.encode(obj.query);
 
+                        editor.destroy();
                         $('.editor').text(draw.skema); 
                         draw.skema = $('.editor').text();
 
@@ -90,6 +92,7 @@ var draw = {
                         var obj = result.items[4].items[2];
                         draw.skema = draw.encode(obj.query);
 
+                        editor.destroy();
                         $('.editor').text(draw.skema); 
                         draw.skema = $('.editor').text();
 
@@ -187,8 +190,7 @@ var draw = {
             $('.editor-wrapper').height($('.editor').height() + 3);
             $('.chetabahana-skema').height($('.editor').height() + 200);
 
-editor.destroy();
-editor.container.remove();
+//editor.container.remove();
 editor.setTheme("ace/theme/crimson_editor");
 //editor.getSession().setMode("ace/mode/asciidoc");
 //editor.getSession().on('change', _.debounce(function() {draw.diagram();}, 100) );
