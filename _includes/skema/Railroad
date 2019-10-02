@@ -14,7 +14,7 @@ Diagram(
 			OneOrMore(NonTerminal('from_item'), ','),
 			Optional(Sequence('WHERE', NonTerminal('condition')))
 		),
-		Stack((
+		Sequence(
 			Optional(Sequence('GROUP BY', NonTerminal('expression'))),
 			Optional(Sequence('HAVING', NonTerminal('condition'))),
 			Optional(Sequence(
