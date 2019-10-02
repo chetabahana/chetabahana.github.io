@@ -46,7 +46,7 @@ var draw = {
                 } else {
 
                     diagram = eval(draw.skema).format();
-                    diagram.toSVG($('.diagram').get(0));
+                    diagram.addTo($('.diagram').get(0));
 
                 }
 
