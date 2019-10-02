@@ -14,5 +14,4 @@
         <script type="text/javascript" src="flowchart/raphael-min.js"></script>
         <script type="text/javascript" src="js/templatemo_script.js"></script>
         <script type="text/javascript" src="js/chetabahana-skema.js"></script>
-        <script type="text/javascript" src="https://apis.google.com/js/platform.js" async defer>{lang: 'id'}</script>
     </body>
