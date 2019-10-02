@@ -2,11 +2,6 @@ $(window).load(function() {draw.diagram();});
 $('.theme').change(function() {draw.tChange();});
 $('.download').click(function(ev) {draw.xmlData();});
 
-var editor = ace.edit("editor");
-editor.setTheme("ace/theme/crimson_editor");
-//editor.getSession().setMode("ace/mode/asciidoc");
-//editor.getSession().on('change', _.debounce(function() {draw.diagram();}, 100) );
-
 var draw = {
 
     'sequence' : 'sequence/js/sequence-diagram-snap-min.js',
@@ -189,6 +184,13 @@ var draw = {
             $('.editor').height($('.diagram').height() - 94);
             $('.editor-wrapper').height($('.editor').height() + 3);
             $('.chetabahana-skema').height($('.editor').height() + 200);
+
+var editor = ace.edit("editor");
+editor.destroy();
+editor.container.remove();
+editor.setTheme("ace/theme/crimson_editor");
+//editor.getSession().setMode("ace/mode/asciidoc");
+//editor.getSession().on('change', _.debounce(function() {draw.diagram();}, 100) );
 
             draw.elements.css({'cursor':'pointer'})
 
