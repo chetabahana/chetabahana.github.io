@@ -50,10 +50,12 @@ var draw = {
                         $.getJSON(jsonfile).done(function(result){
 
                             var obj = result.items[4].items[0];
-
                             draw.skema = draw.encode(obj.query);
-                            diagram = Diagram.parse(draw.skema);
 
+                            $('.editor').text(draw.skema); 
+                            draw.skema = $('.editor').text();
+
+                            diagram = Diagram.parse(draw.skema);
                             draw.opt = {theme: select, "font-size": 13};
                             diagram.drawSVG($('.diagram').get(0), draw.opt);
 
