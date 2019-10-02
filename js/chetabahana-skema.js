@@ -70,9 +70,9 @@ var draw = {
 
                         var obj = result.items[4].items[1];
                         draw.skema = draw.encode(obj.query);
-$('.editor').text(draw.skema); 
-                        draw.skema = $('.editor').text(); console.log(draw.skema);
-                        //diagram = Diagram.parse(draw.skema);
+
+                        $('.editor').text(draw.skema); 
+                        draw.skema = $('.editor').text();
 
                         diagram = flowchart.parse(draw.skema);
                         diagram.drawSVG($('.diagram').get(0), obj.input);
@@ -90,6 +90,9 @@ $('.editor').text(draw.skema);
 
                         var obj = result.items[4].items[2];
                         draw.skema = draw.encode(obj.query);
+
+                        $('.editor').text(draw.skema); 
+                        draw.skema = $('.editor').text();
 
                         diagram = eval(draw.skema).format();
                         diagram.addTo($('.diagram').get(0));
