@@ -116,6 +116,14 @@ var draw = {
 
         } else {
 
+            editor.clearSelection();
+            editor.gotoLine(1, 1);
+
+            $('#loadingImg').hide();
+            $('.editor').height($('.diagram').height() - 94);
+            $('.editor-wrapper').height($('.editor').height() + 3);
+            $('.chetabahana-skema').height($('.editor').height() + 200);
+
             switch(draw.type) {
 
                 case 'sequence':
@@ -178,14 +186,6 @@ var draw = {
                 break;
 
             }
-
-            editor.clearSelection();
-            editor.gotoLine(1, 1);
-
-            $('#loadingImg').hide();
-            $('.editor').height($('.diagram').height() - 94);
-            $('.editor-wrapper').height($('.editor').height() + 3);
-            $('.chetabahana-skema').height($('.editor').height() + 200);
 
             draw.elements.css({'cursor':'pointer'})
 
