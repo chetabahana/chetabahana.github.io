@@ -9,258 +9,258 @@ editor.getSession().on('change', _.debounce(function() {draw.diagram();}, 100) )
 
 var draw = {
 
-  'sequence' : 'sequence/js/sequence-diagram-snap-min.js',
-  'flowchart': 'flowchart/flowchart-latest.js',
-  'railroad' : 'railroad/railroad-diagrams.js',
-  'jsonfeed' : 'assets/feed.json',
+    'sequence' : 'sequence/js/sequence-diagram-snap-min.js',
+    'flowchart': 'flowchart/flowchart-latest.js',
+    'railroad' : 'railroad/railroad-diagrams.js',
+    'jsonfeed' : 'assets/feed.json',
 
-  diagram : function() {
+    diagram : function() {
 
-    var diagram;
-    var select = $(".theme").val();
-    
-    var type = (!draw.type)? 'sequence': draw.type;
-    if (select=='hand' && type!='flowchart') type='sequence';
+        var diagram;
+        var select = $(".theme").val();
+        
+        var type = (!draw.type)? 'sequence': draw.type;
+        if (select=='hand' && type!='flowchart') type='sequence';
 
-    var js = '/' + this[type] + '?t=' + $.now();
-    var jsonfile = '/' + this['jsonfeed'] + '?t=' + $.now();
-    if (draw.point) jsonfile = jsonfile.replace('assets', draw.point);
+        var js = '/' + this[type] + '?t=' + $.now();
+        var jsonfile = '/' + this['jsonfeed'] + '?t=' + $.now();
+        if (draw.point) jsonfile = jsonfile.replace('assets', draw.point);
 
-    $('#type').text(type);
-    $('#type')[0].href = '/' + type;
-    $("#json").attr("href", jsonfile)
-    $('.diagram').html(''); $("#loadingImg").show();
+        $('#type').text(type);
+        $('#type')[0].href = '/' + type;
+        $("#json").attr("href", jsonfile)
+        $('.diagram').html(''); $("#loadingImg").show();
 
-    $.getScript(js, function( data, textStatus, jqxhr ) {
+        $.getScript(js, function( data, textStatus, jqxhr ) {
 
-       try {
+            try {
 
-         if(type == 'sequence') {
+                if(type == 'sequence') {
 
-           if (select == 'hand') {
+                    if (select == 'hand') {
 
-             draw.skema = editor.getValue();
-             diagram = Diagram.parse(draw.skema);
+                        var font_size = 12;
+                        draw.skema = editor.getValue();
 
-             draw.opt = {theme: select, "font-size": 12};
-             diagram.drawSVG($('.diagram').get(0), draw.opt);
+                    } else {
 
-           } else {
+                        $.getJSON(jsonfile).done(function(result){
 
-             $.getJSON(jsonfile).done(function(result){
+                            var font_size = 13;
+                            var obj = result.items[4].items[0];
+                            draw.skema = draw.encode(obj.query);
 
-               var obj = result.items[4].items[0];
+                        });
+     
+                    }
 
-               draw.skema = draw.encode(obj.query);
-               diagram = Diagram.parse(draw.skema);
+                    diagram = Diagram.parse(draw.skema);
+                    draw.opt = {theme: select, "font-size": font_size};
+                    diagram.drawSVG($('.diagram').get(0), draw.opt);
 
-               draw.opt = {theme: select, "font-size": 13};
-               diagram.drawSVG($('.diagram').get(0), draw.opt);
+                } else if(type == 'flowchart'){
 
-             });
- 
-           }
+                    $.getJSON(jsonfile, draw.opt).done(function(result){
 
+                        var a = Number((draw.point.substr(0,1)));
+                        var b = Number((draw.point.substr(1,1)));
 
-         } else if(type == 'flowchart'){
+                        var obj = result.items[4].items[1];
+                        draw.skema = draw.encode(obj.query);
 
-           $.getJSON(jsonfile, draw.opt).done(function(result){
+                        diagram = flowchart.parse(draw.skema);
+                        diagram.drawSVG($('.diagram').get(0), obj.input);
 
-              var a = Number((draw.point.substr(0,1)));
-              var b = Number((draw.point.substr(1,1)));
+                    });
 
-              var obj = result.items[4].items[1];
-              draw.skema = draw.encode(obj.query);
+                } else if(type == 'railroad'){
 
-              diagram = flowchart.parse(draw.skema);
-              diagram.drawSVG($('.diagram').get(0), obj.input);
+                    $.getJSON(jsonfile, draw.opt).done(function(result){
 
-            });
+                        var a = Number((draw.point.substr(0,1)));
+                        var b = Number((draw.point.substr(1,1)));
+                        var c = Number((draw.point.substr(2,1)));
+                        var d = Number((draw.point.substr(3,2)));
 
-         } else if(type == 'railroad'){
+                        var obj = result.items[4].items[2];
+                        draw.skema = draw.encode(obj.query);
 
-            $.getJSON(jsonfile, draw.opt).done(function(result){
+                        diagram = eval(draw.skema).format();
+                        diagram.addTo($('.diagram').get(0));
 
-              var a = Number((draw.point.substr(0,1)));
-              var b = Number((draw.point.substr(1,1)));
-              var c = Number((draw.point.substr(2,1)));
-              var d = Number((draw.point.substr(3,2)));
+                    });
 
-              var obj = result.items[4].items[2];
-              draw.skema = draw.encode(obj.query);
+                }
 
-              diagram = eval(draw.skema).format();
-              diagram.addTo($('.diagram').get(0));
+            } finally {
 
-            });
+                draw.type = type;
+                draw.checkReady();
 
-         }
-
-       } finally {
-
-          draw.type = type;
-          draw.checkReady();
-
-       }
-    });  
-  },
-
-  checkReady : function() {
-
-    if (!$('.diagram').find('svg')[0]) {
-      window.requestAnimationFrame(draw.checkReady);
-
-    } else {
-
-      switch(draw.type) {
-
-        case 'sequence':
-
-          $('svg g.title').each(function( index ) {
-             this.id = '00';
-          });
-
-          $('svg g.actor').each(function( index ) {
-             this.id = '1' + (Math.floor(index/2) + 1).toString();
-          });
-
-          $('svg g.signal').each(function( index ) {
-             this.id = '2' + (index + 1).toString();
-          });
-
-          draw.elements = $('svg g.title, svg g.actor, svg g.signal');
-          draw.elements.hover(function() {$(this).hide(100).show(100);
+            }
 
         });
 
-        break;
+    },
 
-        case 'flowchart':
+    checkReady : function() {
 
-          $(".theme").val("simple");
+        if (!$('.diagram').find('svg')[0]) {
 
-          $('svg rect.start-element').each(function() {
-             this.id = draw.point;
-          });
+            window.requestAnimationFrame(draw.checkReady);
 
-          $('svg rect.flowchart, svg path.flowchart').each(function( index ) {
-             this.id = draw.pad(index + 1, 2);
-         });
+        } else {
 
-          $('svg rect.end-element').each(function() {
-             this.id = draw.point;
-          });
+            switch(draw.type) {
 
-          draw.elements = $('svg rect.start-element, svg rect.flowchart, svg path.flowchart, svg rect.end-element');
-          draw.elements.css({'fill-opacity':'0.1'})
-                       .mouseenter(function(){$(this).css('fill','teal')})
-                       .mouseout(function(){$(this).css('fill','')});
+                case 'sequence':
 
-        break;
+                    $('svg g.title').each(function( index ) {
+                        this.id = '00';
+                    });
 
-        case 'railroad':
+                    $('svg g.actor').each(function( index ) {
+                        this.id = '1' + (Math.floor(index/2) + 1).toString();
+                    });
 
-          $('svg rect').each(function( index ) {
-             this.id = draw.pad('0' + index, 3);
-          });
+                    $('svg g.signal').each(function( index ) {
+                        this.id = '2' + (index + 1).toString();
+                    });
 
-          draw.elements = $('svg rect');
-          draw.elements.css({'fill-opacity':'0.3'})
-                       .mouseenter(function(){$(this).css('fill', 'cyan')})
-                       .mouseout(function(){$(this).css('fill','')});
+                    draw.elements = $('svg g.title, svg g.actor, svg g.signal');
+                    draw.elements.hover(function() {
+                        
+                        $(this).hide(100).show(100);
 
-        break;
+                    });
 
-      }
+                break;
 
-      $('#loadingImg').hide();
-      $('.editor').height($('.diagram').height() - 94);
-      $('.editor-wrapper').height($('.editor').height() + 3);
-      $('.chetabahana-skema').height($('.editor').height() + 200);
+                case 'flowchart':
 
-      draw.elements.css({'cursor':'pointer'})
+                    $(".theme").val("simple");
 
-        .each(function() {
+                    $('svg rect.start-element').each(function() {
+                        this.id = draw.point;
+                    });
 
-          this.parentNode.appendChild(this);
+                    $('svg rect.flowchart, svg path.flowchart').each(function( index ) {
+                        this.id = draw.pad(index + 1, 2);
+                    });
 
-      })
+                    $('svg rect.end-element').each(function() {
+                        this.id = draw.point;
+                    });
 
-        .click(function() {
+                    draw.elements = $('svg rect.start-element, svg rect.flowchart, svg path.flowchart, svg rect.end-element');
+                    draw.elements.css({'fill-opacity':'0.1'})
+                               .mouseenter(function(){$(this).css('fill','teal')})
+                               .mouseout(function(){$(this).css('fill','')});
 
-          if (draw.type != 'railroad') {
+                break;
 
-            draw.type = (draw.type == 'sequence')? 
-              'flowchart': 'railroad';
+                case 'railroad':
 
-          } else {
+                    $('svg rect').each(function( index ) {
+                     this.id = draw.pad('0' + index, 3);
+                    });
 
-            var a = Number((this.id.substr(0,1)));
-            var b = Number((this.id.substr(1,1)));
-            var c = Number((this.id.substr(2,1)));
-            var d = Number((this.id.substr(3,2)));
-            var e = Number((this.id.substr(5,1)));
-            var f = Number((this.id.substr(6,3)));
+                    draw.elements = $('svg rect');
+                    draw.elements.css({'fill-opacity':'0.3'})
+                               .mouseenter(function(){$(this).css('fill', 'cyan')})
+                               .mouseout(function(){$(this).css('fill','')});
 
-            draw.type = 'sequence';
+                break;
 
-          }
+            }
 
-          draw.point = this.id;
-          draw.diagram();
+            $('#loadingImg').hide();
+            $('.editor').height($('.diagram').height() - 94);
+            $('.editor-wrapper').height($('.editor').height() + 3);
+            $('.chetabahana-skema').height($('.editor').height() + 200);
 
-      });
+            draw.elements.css({'cursor':'pointer'})
 
-    } 
-  },
+            .each(function() {
 
-  xmlData : function() {
+                this.parentNode.appendChild(this);
 
-    var a = $(this);
-    var svg = $(".diagram").find('svg')[0];
-    var width = parseInt(svg.width.baseVal.value);
-    var height = parseInt(svg.height.baseVal.value);
-    var xmldata = '<?xml version="1.0" encoding="utf-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"><svg xmlns="http://www.w3.org/2000/svg" width="' + width + '" height="' + height + '" xmlns:xlink="http://www.w3.org/1999/xlink"><source><![CDATA[' + draw.skema + ']]></source>' + svg.innerHTML + '</svg>';
-    a.attr("download", "diagram.svg"); 
-    var xml = encodeURIComponent(xmldata);
-    a.attr("href", "data:image/svg+xml," + xml);
+            })
 
-  },  
+            .click(function() {
 
-  encode : function(data) {  
+                if (draw.type != 'railroad') {
 
-    return data.replace(/&apos;/g, "'")
-               .replace(/&quot;/g, '"')
-               .replace(/&gt;/g, '>')
-               .replace(/&lt;/g, '<')
-               .replace(/&amp;/g, '&')
-               .replace(/<p>/g, '')
-               .replace(/<\/p>/g, '')
-               .replace(/‘/g, "'")
-               .replace(/’/g, "'")
-    ;
+                    draw.type = (draw.type == 'sequence')? 'flowchart': 'railroad';
 
-  }, 
+                } else {
 
-  tChange : function() {
+                    var a = Number((this.id.substr(0,1)));
+                    var b = Number((this.id.substr(1,1)));
+                    var c = Number((this.id.substr(2,1)));
+                    var d = Number((this.id.substr(3,2)));
+                    var e = Number((this.id.substr(5,1)));
+                    var f = Number((this.id.substr(6,3)));
 
-    var regex = /[?&]([^=#]+)=([^&#]*)/g, url = window.location.href, params = {}, match;
-    while(match = regex.exec(url)) {params[match[1]] = match[2];}
-    draw.params = params; console.log(draw.params);
+                    draw.type = 'sequence';
 
-    var select = $('.theme').val();
-    draw.type = (select == 'hand')? 'sequence': draw.type;
-    if (draw.type != 'railroad') $('.contact_left').show();
-    draw.diagram();
+                }
 
-  },
+                draw.point = this.id;
+                draw.diagram();
 
-  pad : function(data, size) {
+            });
 
-    var s = String(data);
-    while (s.length < (size || 2)) {s = "0" + s;}
-    return s;
+        } 
+    },
 
-  }
+    xmlData : function() {
+
+        var a = $(this);
+        var svg = $(".diagram").find('svg')[0];
+        var width = parseInt(svg.width.baseVal.value);
+        var height = parseInt(svg.height.baseVal.value);
+        var xmldata = '<?xml version="1.0" encoding="utf-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"><svg xmlns="http://www.w3.org/2000/svg" width="' + width + '" height="' + height + '" xmlns:xlink="http://www.w3.org/1999/xlink"><source><![CDATA[' + draw.skema + ']]></source>' + svg.innerHTML + '</svg>';
+        a.attr("download", "diagram.svg"); 
+        var xml = encodeURIComponent(xmldata);
+        a.attr("href", "data:image/svg+xml," + xml);
+
+    },
+
+    encode : function(data) {
+
+        return data.replace(/&apos;/g, "'")
+                   .replace(/&quot;/g, '"')
+                   .replace(/&gt;/g, '>')
+                   .replace(/&lt;/g, '<')
+                   .replace(/&amp;/g, '&')
+                   .replace(/<p>/g, '')
+                   .replace(/<\/p>/g, '')
+                   .replace(/‘/g, "'")
+                   .replace(/’/g, "'")
+        ;
+
+    }, 
+
+    tChange : function() {
+
+        var regex = /[?&]([^=#]+)=([^&#]*)/g, url = window.location.href, params = {}, match;
+        while(match = regex.exec(url)) {params[match[1]] = match[2];}
+        draw.params = params; console.log(draw.params);
+
+        var select = $('.theme').val();
+        draw.type = (select == 'hand')? 'sequence': draw.type;
+        if (draw.type != 'railroad') $('.contact_left').show();
+        draw.diagram();
+
+    },
+
+    pad : function(data, size) {
+
+        var s = String(data);
+        while (s.length < (size || 2)) {s = "0" + s;}
+        return s;
+
+    }
 
 }
