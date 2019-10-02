@@ -160,7 +160,7 @@ var draw = {
                 $.getJSON(jsonfile).done(function(result){
 
                     var obj = result.items[4].items[item];
-                    draw.input = draw.encode(obj.input);
+                    draw.input = obj.input;
                     draw.skema = draw.encode(obj.query);
                     editor.setValue(draw.skema);
 
