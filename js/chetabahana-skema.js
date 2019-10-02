@@ -27,6 +27,7 @@ var draw = {
 
         if (!draw.skema) draw.skema = editor.getValue();
         if (select=='hand') draw.input = {theme: 'hand', "font-size": 12};
+        else if (type=='sequence') draw.input = {theme: 'simple', "font-size": 13};
 
         $.getScript(js, function( data, textStatus, jqxhr ) {
 
