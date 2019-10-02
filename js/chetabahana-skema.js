@@ -161,15 +161,8 @@ var draw = {
 
             .click(function() {
 
-                if (draw.type != 'railroad') {
-
-                    draw.type = (draw.type == 'sequence')? 'flowchart': 'railroad';
-
-                } else {
-
-                    draw.type = 'sequence';
-
-                }
+                draw.type = (draw.type == 'sequence')? 'flowchart': (draw.type == 'flowchart')? 'railroad': 'sequence';
+                var item = (draw.type == 'sequence')? 0: (draw.type == 'flowchart')? 1: 2;
 
                 var jsonfile = '/' + draw['jsonfeed'] + '?t=' + $.now();
                 jsonfile = jsonfile.replace('assets', this.id);
@@ -177,7 +170,7 @@ var draw = {
                 
                 $.getJSON(jsonfile).done(function(result){
 
-                    var obj = result.items[4].items[2];
+                    var obj = result.items[4].items[item];
                     draw.skema = draw.encode(obj.query);
                     editor.setValue(draw.skema);
 
