@@ -171,7 +171,7 @@ var draw = {
 
                 }
 
-                var jsonfile = '/' + this['jsonfeed'] + '?t=' + $.now();
+                var jsonfile = '/' + draw['jsonfeed'] + '?t=' + $.now();
                 jsonfile = jsonfile.replace('assets', this.id);
                 $("#json").attr("href", jsonfile);
                 
