@@ -53,8 +53,6 @@ var draw = {
                             draw.skema = draw.encode(obj.query);
 
                             editor.setValue(draw.skema);
-                            editor.clearSelection();
-
                             diagram = Diagram.parse(draw.skema);
                             draw.opt = {theme: select, "font-size": 13};
                             diagram.drawSVG($('.diagram').get(0), draw.opt);
@@ -74,8 +72,6 @@ var draw = {
                         draw.skema = draw.encode(obj.query);
 
                         editor.setValue(draw.skema);
-                        editor.clearSelection();
-
                         diagram = flowchart.parse(draw.skema);
                         diagram.drawSVG($('.diagram').get(0), obj.input);
 
@@ -94,8 +90,6 @@ var draw = {
                         draw.skema = draw.encode(obj.query);
 
                         editor.setValue(draw.skema);
-                        editor.clearSelection();
-
                         diagram = eval(draw.skema).format();
                         diagram.addTo($('.diagram').get(0));
 
@@ -104,6 +98,14 @@ var draw = {
                 }
 
             } finally {
+
+                $('.chetabahana-skema').height($('.editor').height() + 200);
+                $('.editor-wrapper').height($('.editor').height() + 3);
+                $('.editor').height($('.diagram').height() - 94);
+                $('#loadingImg').hide();
+
+                editor.clearSelection();
+                editor.gotoLine(1, 1);
 
                 draw.type = type;
                 draw.checkReady();
@@ -184,11 +186,6 @@ var draw = {
                 break;
 
             }
-
-            $('#loadingImg').hide();
-            $('.editor').height($('.diagram').height() - 94);
-            $('.editor-wrapper').height($('.editor').height() + 3);
-            $('.chetabahana-skema').height($('.editor').height() + 200);
 
             draw.elements.css({'cursor':'pointer'})
 
