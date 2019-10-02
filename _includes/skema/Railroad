@@ -31,9 +31,7 @@ Diagram(
 			Optional(Sequence(
 				'LIMIT',
 				Choice(0, NonTerminal('count'), 'ALL')
-			))
-		),
-		Sequence(
+			)),
 			Optional(Sequence('OFFSET', NonTerminal('start'), Optional('ROWS')))
 		)
 	)
