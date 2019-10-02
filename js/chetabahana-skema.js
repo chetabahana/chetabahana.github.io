@@ -99,9 +99,6 @@ var draw = {
 
             } finally {
 
-                editor.clearSelection();
-                editor.gotoLine(1, 1);
-
                 draw.type = type;
                 draw.checkReady();
 
@@ -181,6 +178,9 @@ var draw = {
                 break;
 
             }
+
+            editor.clearSelection();
+            editor.gotoLine(1, 1);
 
             $('#loadingImg').hide();
             $('.editor').height($('.diagram').height() - 94);
