@@ -27,9 +27,7 @@ Diagram(
 			Optional(Sequence(
 				'ORDER BY',
 				OneOrMore(Sequence(NonTerminal('expression'), Choice(0, Skip(), 'ASC', 'DESC')), ','))
-			)
-		),
-		Sequence(
+			),
 			Optional(Sequence(
 				'LIMIT',
 				Choice(0, NonTerminal('count'), 'ALL')
