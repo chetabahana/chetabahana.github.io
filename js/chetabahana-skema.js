@@ -52,8 +52,8 @@ var draw = {
                             var obj = result.items[4].items[0];
                             draw.skema = draw.encode(obj.query);
 
-                            editor.clearSelection();
                             editor.setValue(draw.skema);
+                            editor.clearSelection();
 
                             diagram = Diagram.parse(draw.skema);
                             draw.opt = {theme: select, "font-size": 13};
@@ -73,8 +73,8 @@ var draw = {
                         var obj = result.items[4].items[1];
                         draw.skema = draw.encode(obj.query);
 
-                        editor.clearSelection();
                         editor.setValue(draw.skema);
+                        editor.clearSelection();
 
                         diagram = flowchart.parse(draw.skema);
                         diagram.drawSVG($('.diagram').get(0), obj.input);
@@ -93,8 +93,8 @@ var draw = {
                         var obj = result.items[4].items[2];
                         draw.skema = draw.encode(obj.query);
 
-                        editor.clearSelection();
                         editor.setValue(draw.skema);
+                        editor.clearSelection();
 
                         diagram = eval(draw.skema).format();
                         diagram.addTo($('.diagram').get(0));
