@@ -52,6 +52,7 @@ var draw = {
                             var obj = result.items[4].items[0];
                             draw.skema = draw.encode(obj.query);
 
+$('.editor').removeClass('ace_editor ace-crimson-editor');
                             $('.editor').text(draw.skema); 
                             draw.skema = $('.editor').text();
 
@@ -73,6 +74,7 @@ var draw = {
                         var obj = result.items[4].items[1];
                         draw.skema = draw.encode(obj.query);
 
+$('.editor').removeClass('ace_editor ace-crimson-editor');
                         $('.editor').text(draw.skema); 
                         draw.skema = $('.editor').text();
 
@@ -93,6 +95,7 @@ var draw = {
                         var obj = result.items[4].items[2];
                         draw.skema = draw.encode(obj.query);
 
+$('.editor').removeClass('ace_editor ace-crimson-editor');
                         $('.editor').text(draw.skema); 
                         draw.skema = $('.editor').text();
 
