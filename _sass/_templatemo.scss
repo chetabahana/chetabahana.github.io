@@ -722,18 +722,22 @@ ul.templatemo-project-gallery  li  a img:hover {
 }
 
 .btn_loadmore {
-	margin-top:30px; 
-	margin-bottom:80px;
+    margin-top:30px; 
+    margin-bottom:80px;
 }
 
 .blog_box {
-	margin-left: -12px;
+    margin-left: -12px;
 }
 
 .editor, .editor-wrapper { 
     width: 360px;
     height: 265px;
     font-size: 14px;
+}
+
+.editor { 
+    position: absolute;
 }
 
 @media (min-width:991px) and (max-width:1200px) {
