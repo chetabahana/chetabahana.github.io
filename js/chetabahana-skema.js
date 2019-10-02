@@ -55,11 +55,10 @@ var draw = {
                             diagram = Diagram.parse(draw.skema);
 
                             draw.opt = {theme: select, "font-size": 13};
+                            diagram.drawSVG($('.diagram').get(0), draw.opt);
 
                         });
      
-                        diagram.drawSVG($('.diagram').get(0), draw.opt);
-
                     }
 
                 } else if(type == 'flowchart'){
@@ -72,10 +71,10 @@ var draw = {
                         var obj = result.items[4].items[1];
                         draw.skema = draw.encode(obj.query);
 
-                    });
+                        diagram = flowchart.parse(draw.skema);
+                        diagram.drawSVG($('.diagram').get(0), obj.input);
 
-                    diagram = flowchart.parse(draw.skema);
-                    diagram.drawSVG($('.diagram').get(0), obj.input);
+                    });
 
                 } else if(type == 'railroad'){
 
@@ -89,10 +88,10 @@ var draw = {
                         var obj = result.items[4].items[2];
                         draw.skema = draw.encode(obj.query);
 
-                    });
+                        diagram = eval(draw.skema).format();
+                        diagram.addTo($('.diagram').get(0));
 
-                    diagram = eval(draw.skema).format();
-                    diagram.addTo($('.diagram').get(0));
+                    });
 
                 }
 
