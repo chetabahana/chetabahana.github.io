@@ -52,7 +52,7 @@ var draw = {
                 } else if(type == 'flowchart'){
 
                     diagram = flowchart.parse(draw.skema);
-                    diagram.drawSVG($('.diagram').get(0), obj.input);
+                    diagram.drawSVG($('.diagram').get(0), draw.obj.input);
 
                 } else if(type == 'railroad'){
 
@@ -170,8 +170,8 @@ var draw = {
                 
                 $.getJSON(jsonfile).done(function(result){
 
-                    var obj = result.items[4].items[item];
-                    draw.skema = draw.encode(obj.query);
+                    draw.obj = result.items[4].items[item];
+                    draw.skema = draw.encode(draw.obj.query);
                     editor.setValue(draw.skema);
 
                 });
