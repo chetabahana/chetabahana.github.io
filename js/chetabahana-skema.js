@@ -27,6 +27,7 @@ var draw = {
 
         if (!draw.skema) draw.skema = editor.getValue();
         if (select=='hand' && type!='flowchart') type='sequence';
+        if (!draw.obj.input) draw.obj.input = {theme: select, "font-size": 12};
 
         $.getScript(js, function( data, textStatus, jqxhr ) {
 
