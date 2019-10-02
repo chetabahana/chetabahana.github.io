@@ -26,8 +26,7 @@ var draw = {
         $('.diagram').html(''); $("#loadingImg").show();
 
         if (!draw.skema) draw.skema = editor.getValue();
-        if (select=='hand' && type!='flowchart') type='sequence';
-        if (!draw.input) draw.input = {theme: select, "font-size": 12};
+        if (select=='hand') draw.input = {theme: 'hand', "font-size": 12};
 
         $.getScript(js, function( data, textStatus, jqxhr ) {
 
@@ -207,7 +206,6 @@ var draw = {
 
         var select = $('.theme').val();
         draw.type = (select == 'hand')? 'sequence': draw.type;
-        if (draw.type != 'railroad') $('.contact_left').show();
         draw.diagram();
 
     },
