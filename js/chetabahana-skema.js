@@ -52,7 +52,6 @@ var draw = {
                             var obj = result.items[4].items[0];
                             draw.skema = draw.encode(obj.query);
 
-$('.editor').removeClass('ace_editor ace-crimson-editor');
                             $('.editor').text(draw.skema); 
                             draw.skema = $('.editor').text();
 
@@ -74,7 +73,6 @@ $('.editor').removeClass('ace_editor ace-crimson-editor');
                         var obj = result.items[4].items[1];
                         draw.skema = draw.encode(obj.query);
 
-$('.editor').removeClass('ace_editor ace-crimson-editor');
                         $('.editor').text(draw.skema); 
                         draw.skema = $('.editor').text();
 
@@ -95,7 +93,6 @@ $('.editor').removeClass('ace_editor ace-crimson-editor');
                         var obj = result.items[4].items[2];
                         draw.skema = draw.encode(obj.query);
 
-$('.editor').removeClass('ace_editor ace-crimson-editor');
                         $('.editor').text(draw.skema); 
                         draw.skema = $('.editor').text();
 
@@ -187,6 +184,7 @@ $('.editor').removeClass('ace_editor ace-crimson-editor');
                 break;
 
             }
+$('.editor').removeClass('ace_editor').removeClass('ace-crimson-editor');
 var editor = ace.edit($('.editor').get(0));
 editor.setTheme("ace/theme/crimson_editor");
 editor.getSession().setMode("ace/mode/asciidoc");
