@@ -21,6 +21,7 @@
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-KKD75D8');</script>
+        <script type="text/javascript" src="https://apis.google.com/js/platform.js" async defer>{lang: 'id'}</script>
         <!-- End Google Tag Manager -->   
 	    
         <!-- Urbanic Template http://www.templatemo.com/templates/templatemo_395_urbanic/ -->
@@ -28,7 +29,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    
         <!-- Web Font Embed -->
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
         <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>  
 
         <!-- Custom and Others CSS -->
@@ -38,10 +39,7 @@
         <link href="slick/slick/slick-theme.css" rel='stylesheet' type='text/css' media="screen" />
         <link href="slick/slick/slick.css" rel='stylesheet' type='text/css' media="screen" />
         <link href="js/colorbox/colorbox.css" rel='stylesheet' type='text/css'>
-
-        <!-- Bootstrap and Template CSS/JS --->
         <link href="css/styles.css" rel='stylesheet' type='text/css'>
-        <script type="text/javascript" src="js/function.js"></script>
 
         <!--link rel="shortcut icon" href="favicon.ico" -->
         <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">

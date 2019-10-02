@@ -1,11 +1,61 @@
 ---
 layout: null
+permalink: /assets/feed.json
 redirect_from:
-  - /assets/feed.json
-  - /0123456789/feed.json
-  - /0123456789/assets/feed.json
-  - /01234/56789/assets/feed.json
-  - /012/345/678/9/assets/feed.json
-  - /01/23/45/67/89/assets/feed.json
-  - /0/1/2/3/4/5/6/7/8/9/assets/feed.json
+  - /000/feed.json
+  - /001/feed.json
+  - /002/feed.json
+  - /003/feed.json
+  - /004/feed.json
+  - /005/feed.json
+  - /006/feed.json
+  - /007/feed.json
+  - /008/feed.json
+  - /009/feed.json
+  - /010/feed.json
+  - /011/feed.json
+  - /012/feed.json
+  - /013/feed.json
+  - /014/feed.json
+  - /015/feed.json
+  - /016/feed.json
+  - /017/feed.json
+  - /018/feed.json
+  - /019/feed.json
+  - /020/feed.json
+  - /021/feed.json
+  - /022/feed.json
+  - /023/feed.json
+  - /024/feed.json
+  - /025/feed.json
+  - /026/feed.json
+  - /027/feed.json
+  - /028/feed.json
+  - /029/feed.json
+  - /030/feed.json
+  - /031/feed.json
+  - /00/feed.json
+  - /01/feed.json
+  - /02/feed.json
+  - /03/feed.json
+  - /04/feed.json
+  - /05/feed.json
+  - /06/feed.json
+  - /07/feed.json
+  - /08/feed.json
+  - /09/feed.json
+  - /10/feed.json
+  - /11/feed.json
+  - /12/feed.json
+  - /13/feed.json
+  - /14/feed.json
+  - /15/feed.json
+  - /16/feed.json
+  - /21/feed.json
+  - /22/feed.json
+  - /23/feed.json
+  - /24/feed.json
+  - /25/feed.json
+  - /26/feed.json
 ---
+{% include feed.json %}

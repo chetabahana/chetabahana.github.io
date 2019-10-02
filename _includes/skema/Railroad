@@ -35,4 +35,4 @@ Diagram(
 			Optional(Sequence('OFFSET', NonTerminal('start'), Optional('ROWS')))
 		)
 	)
-);
+)
