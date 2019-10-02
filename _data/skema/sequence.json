@@ -1,4 +1,7 @@
 {
-  "theme": "hand",
-  "font-size": 12
+    "title": "sequence",
+    "content": {
+        "theme": "hand",
+        "font-size": 12
+   }
 }
