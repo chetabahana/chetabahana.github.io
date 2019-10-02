@@ -1,20 +1,38 @@
 Diagram(
-	Choice(1, '+', Skip(), '-'),
-	Choice(0,
+	Stack(
 		Sequence(
-			OneOrMore(NonTerminal('digit')),
-			'.',
-			OneOrMore(NonTerminal('digit'))),
-		OneOrMore(NonTerminal('digit')),
+			'SELECT',
+			Optional('DISTINCT', 'skip'),
+			Choice(0,
+				'*',
+				OneOrMore(
+					Sequence(NonTerminal('expression'), Optional(Sequence('AS', NonTerminal('output_name')))),
+					','
+				)
+			),
+			'FROM',
+			OneOrMore(NonTerminal('from_item'), ','),
+			Optional(Sequence('WHERE', NonTerminal('condition')))
+		),
 		Sequence(
-			'.',
-			OneOrMore(NonTerminal('digit')))),
-	Choice(0,
-		Skip(),
+			Optional(Sequence('GROUP BY', NonTerminal('expression'))),
+			Optional(Sequence('HAVING', NonTerminal('condition'))),
+			Optional(Sequence(
+				Choice(0, 'UNION', 'INTERSECT', 'EXCEPT'),
+				Optional('ALL'),
+				NonTerminal('select')
+			))
+		),
 		Sequence(
-			Choice(0, 'e', 'E'),
-			Choice(1, '+', Skip(), '-'),
-			OneOrMore(NonTerminal('digit'))
-        )
-    )
+			Optional(Sequence(
+				'ORDER BY',
+				OneOrMore(Sequence(NonTerminal('expression'), Choice(0, Skip(), 'ASC', 'DESC')), ','))
+			),
+			Optional(Sequence(
+				'LIMIT',
+				Choice(0, NonTerminal('count'), 'ALL')
+			)),
+			Optional(Sequence('OFFSET', NonTerminal('start'), Optional('ROWS')))
+		)
+	)
 )
