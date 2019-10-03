@@ -1,7 +1,6 @@
 {
     "title": "nodelinks",
     "content": [
-        [
             { key: "Alpha", color: "lightblue" },
             { key: "Beta", color: "orange" },
             { key: "Gamma", color: "lightgreen" },
@@ -14,5 +13,4 @@
             { from: "Gamma", to: "Delta" },
             { from: "Delta", to: "Alpha" }
         ]
-    ]
 }
