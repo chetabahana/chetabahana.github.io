@@ -18,7 +18,7 @@
                         Silahkan <a href='https://jsfiddle.net/chetabahana/rrxnah40/'>sunting</a> dan <a href='#chetabahana-diskusi' class='internal-link'>usulkan</a> gambar <a href="#" class="download">bagannya..</a>
                     </div>    
                     <div class="col-md-8">
-                        <div class="diagram"></div>
+                        <div id="diagram" class="diagram"></div>
                         <img id='loadingImg' src='images/loading.gif' style="width:50%;">
                     </div>
                 </div><!-- /.row -->
