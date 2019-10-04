@@ -3,9 +3,10 @@
 # only Main files contain this front matter, not partials.
 ---
 
-@import "bootstrap";
-@import "embedfeeds";
 @import "templatemo";
+@import "embedfeeds";
+@import "bootstrap";
+@import "graphiql";
 
 .content {
   width: 45rem;
