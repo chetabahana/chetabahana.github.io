@@ -61,6 +61,9 @@ redirect_from:
   - /031/feed.json
   - /999/feed.json
   - /0000/feed.json
+  - /0001/feed.json
+  - /0002/feed.json
+  - /0003/feed.json
   - /9999/feed.json
   - /00000/feed.json
   - /99999/feed.json
