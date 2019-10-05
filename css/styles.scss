@@ -17,6 +17,16 @@
   float: left;
 }
 
+#graphiql {
+  display: block;
+  position: relative;
+}
+
+#viewport {
+  display: block;
+  position: relative;
+}
+
 .loadingImg {
   display: block;
   position: absolute;
