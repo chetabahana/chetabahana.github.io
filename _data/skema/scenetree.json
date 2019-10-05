@@ -1,5 +1,7 @@
 {
     "title": "scenetree",
     "content": {
+        "theme": "simple",
+        "font-size": 13
    }
 }
