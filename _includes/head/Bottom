@@ -5,6 +5,7 @@
         <script type="text/javascript" src="js/stickUp.min.js"></script>
         <script type="text/javascript" src="js/prefixfree.min.js"></script>
         <script type="text/javascript" src="js/templatemo_script.js"></script>
+        <script type="text/javascript" src="js/d3-selection.v1.min.js"></script>
         <script type="text/javascript" src="js/colorbox/jquery.colorbox-min.js"></script>
         <script type="text/javascript" src="ace-builds/src-min/ace.js"></script>
         <script type="text/javascript" src="feed/js/instafeed.min.js"></script>
