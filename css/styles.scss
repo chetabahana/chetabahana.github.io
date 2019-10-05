@@ -20,10 +20,12 @@
 #graphiql {
   display: block;
   position: relative;
+  width: 360px;
 }
 
 #viewport {
   display: block;
+  min-height: 375px;
   position: relative;
 }
 
@@ -38,7 +40,7 @@
 .diagram svg {
   position: absolute;
   min-height: 375px;
-  width: 50%;
+  width: 100%;
   left: 0;
   top: 0;
 }
