@@ -23,6 +23,14 @@
   width: 360px;
 }
 
+.editorWrap {
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
 #viewport {
   display: block;
   min-height: 375px;
