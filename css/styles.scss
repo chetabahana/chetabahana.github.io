@@ -18,8 +18,17 @@
 }
 
 .loadingImg {
+  display: block;
   position: absolute;
+  margin-left: auto;
+  margin-right: auto;
   width: 50%;
-  top: 50px;
-  left: 25%;
+}
+
+.diagram svg {
+  position: absolute;
+  min-height: 375px;
+  width: 50%;
+  left: 0;
+  top: 0;
 }
