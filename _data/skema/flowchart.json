@@ -35,5 +35,5 @@
       "approved": {"font-weight": "bold", "yes-text": "LANJUT", "no-text": "DITOLAK"},
       "rejected": {"font-weight": "bold", "yes-text": "LULUS", "no-text": "TIDAK LULUS"}
     }
-  }    
+  }
 }

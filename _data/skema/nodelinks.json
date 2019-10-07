@@ -1,0 +1,49 @@
+{
+    "title": "nodelinks",
+    "content": [ 
+        {
+            "node": [
+                {
+                    "key": "Alpha",
+                    "color": "lightblue" 
+                },
+                {
+                    "key": "Beta",
+                    "color": "orange" 
+                },
+                {
+                    "key": "Gamma",
+                    "color": "lightgreen" 
+                },
+                {
+                    "key": "Delta",
+                    "color": "pink" 
+                }
+            ]
+        }, 
+        {
+            "link": [
+                {
+                    "from": "Alpha",
+                    "to": "Beta" 
+                },
+                {
+                    "from": "Alpha",
+                    "to": "Gamma" 
+                },
+                {
+                    "from": "Beta",
+                    "to": "Beta" 
+                },
+                {
+                    "from": "Gamma",
+                    "to": "Delta" 
+                },
+                {
+                    "from": "Delta",
+                    "to": "Alpha" 
+                }
+            ]
+        }
+    ]
+}

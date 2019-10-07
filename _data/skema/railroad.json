@@ -1,5 +1,7 @@
 {
     "title": "railroad",
     "content": {
+        "theme": "hand",
+        "font-size": 12
    }
 }

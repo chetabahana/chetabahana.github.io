@@ -731,8 +731,8 @@ ul.templatemo-project-gallery  li  a img:hover {
 }
 
 .editor, .editor-wrapper { 
-    width: 360px;
-    height: 265px;
+    width: 100%;
+    min-height: 265px;
     font-size: 14px;
 }
 
