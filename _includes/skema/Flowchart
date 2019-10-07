@@ -8,7 +8,6 @@ uji1=>condition: Uji Input|rejected
 uji2=>condition: Uji Output|approved
 io1=>inputoutput: Fix Input|invalid
 io2=>inputoutput: Fix Output|invalid
-
 st->op1(right)->sub1
 sub1(right)->uji1(yes, right)->sub2
 uji1(no)->io1(left)->sub1
