@@ -19,12 +19,12 @@
       "start": {
         "font-color": "red",
         "element-color": "green",
-        "class": "start-element"
+        "class": "flowchart"
       },
       "end":{
         "font-color": "red",
         "element-color": "green",
-        "class": "end-element"
+        "class": "flowchart"
       }
     },
     "flowstate": {
