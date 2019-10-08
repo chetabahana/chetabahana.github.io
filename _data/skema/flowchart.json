@@ -12,7 +12,6 @@
             "line-color": "black",
             "element-color": "black",
             "fill": "white",
-            "fill-opacity": "0.1",
             "yes-text": "yes",
             "no-text": "no",
             "arrow-end": "block",

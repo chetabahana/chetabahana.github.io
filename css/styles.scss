@@ -9,45 +9,49 @@
 @import "graphiql";
 
 .content {
-  width: 45rem;
-  margin: 0 auto;
+      width: 45rem;
+      margin: 0 auto;
 }
 
 .feedsnav {
-  float: left;
+    float: left;
+}
+
+.flowchart {
+    fill-opacity: 0.1,
 }
 
 #graphiql {
-  display: block;
-  position: relative;
-  width: 360px;
+    display: block;
+    position: relative;
+    width: 360px;
 }
 
 .editorWrap {
-  display: block;
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
 }
 
 #viewport {
-  display: block;
-  min-height: 375px;
-  position: relative;
+    display: block;
+    min-height: 375px;
+    position: relative;
 }
 
 .loadingImg {
-  display: block;
-  position: absolute;
-  width: 50%;
-  left: 25%;
-  top: 50px;
+    display: block;
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 50px;
 }
 
 .diagram svg {
-  position: absolute;
-  min-height: 375px;
-  left: 0;
-  top: 0;
+    position: absolute;
+    min-height: 375px;
+    left: 0;
+    top: 0;
 }
