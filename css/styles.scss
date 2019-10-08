@@ -21,18 +21,25 @@
     fill-opacity: 0.1,
 }
 
-#graphiql {
-    display: block;
-    position: relative;
-    width: 360px;
+.editor, .editor-wrapper { 
+    width: 100%;
+    min-height: 265px;
+    font-size: 14px;
 }
 
-.editorWrap {
-    display: block;
+.editor-wrapper {
+    position: relative;
+}
+
+#graphiql {
     position: absolute;
-    width: 100%;
+    width: 360px;
     left: 0;
     top: 0;
+}
+
+.editor { 
+    position: absolute;
 }
 
 #viewport {
@@ -41,17 +48,17 @@
     position: relative;
 }
 
+.diagram svg {
+    position: absolute;
+    min-height: 375px;
+    left: 0;
+    top: 0;
+}
+
 .loadingImg {
     display: block;
     position: absolute;
     width: 50%;
     left: 25%;
     top: 50px;
-}
-
-.diagram svg {
-    position: absolute;
-    min-height: 375px;
-    left: 0;
-    top: 0;
 }
