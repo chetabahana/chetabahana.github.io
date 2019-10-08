@@ -1,38 +1,47 @@
-Diagram(
-    Stack(
-        Sequence(
-            'SELECT',
-            Optional('DISTINCT', 'skip'),
-            Choice(0,
-                '*',
-                OneOrMore(
-                    Sequence(NonTerminal('expression'), Optional(Sequence('AS', NonTerminal('output_name')))),
-                    ','
-                )
-            ),
-            'FROM',
-            OneOrMore(NonTerminal('from_item'), ','),
-            Optional(Sequence('WHERE', NonTerminal('condition')))
-        ),
-        Sequence(
-            Optional(Sequence('GROUP BY', NonTerminal('expression'))),
-            Optional(Sequence('HAVING', NonTerminal('condition'))),
-            Optional(Sequence(
-                Choice(0, 'UNION', 'INTERSECT', 'EXCEPT'),
-                Optional('ALL'),
-                NonTerminal('select')
-            ))
-        ),
-        Sequence(
-            Optional(Sequence(
-                'ORDER BY',
-                OneOrMore(Sequence(NonTerminal('expression'), Choice(0, Skip(), 'ASC', 'DESC')), ','))
-            ),
-            Optional(Sequence(
-                'LIMIT',
-                Choice(0, NonTerminal('count'), 'ALL')
-            )),
-            Optional(Sequence('OFFSET', NonTerminal('start'), Optional('ROWS')))
-        )
-    )
-)
+  {
+    "type": "Rule",
+    "name": "object",
+    "definition": [
+      {
+        "type": "Terminal",
+        "name": "LCurly",
+        "label": "LCurly",
+        "occurrenceInParent": 1,
+        "pattern": "{"
+      },
+      {
+        "type": "Option",
+        "definition": [
+          {
+            "type": "NonTerminal",
+            "name": "objectItem",
+            "occurrenceInParent": 1
+          },
+          {
+            "type": "Repetition",
+            "definition": [
+              {
+                "type": "Terminal",
+                "name": "Comma",
+                "label": "Comma",
+                "occurrenceInParent": 1,
+                "pattern": ","
+              },
+              {
+                "type": "NonTerminal",
+                "name": "objectItem",
+                "occurrenceInParent": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Terminal",
+        "name": "RCurly",
+        "label": "RCurly",
+        "occurrenceInParent": 1,
+        "pattern": "}"
+      }
+    ]
+  }
