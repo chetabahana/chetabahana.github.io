@@ -730,16 +730,6 @@ ul.templatemo-project-gallery  li  a img:hover {
     margin-left: -12px;
 }
 
-.editor, .editor-wrapper { 
-    width: 100%;
-    min-height: 265px;
-    font-size: 14px;
-}
-
-.editor { 
-    position: absolute;
-}
-
 @media (min-width:991px) and (max-width:1200px) {
     .templatemo-project-box, .project-overlay {
         height:170px;

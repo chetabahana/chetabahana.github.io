@@ -9,45 +9,52 @@
 @import "graphiql";
 
 .content {
-  width: 45rem;
-  margin: 0 auto;
+    width: 45rem;
+    margin: 0 auto;
 }
 
 .feedsnav {
-  float: left;
+    float: left;
+}
+
+.editor, .editor-wrapper { 
+    width: 100%;
+    min-height: 265px;
+    font-size: 14px;
+}
+
+.editor-wrapper {
+    position: relative;
 }
 
 #graphiql {
-  display: block;
-  position: relative;
-  width: 360px;
+    position: absolute;
+    width: 360px;
+    left: 0;
+    top: 0;
 }
 
-.editorWrap {
-  display: block;
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
+.editor { 
+    position: absolute;
 }
 
 #viewport {
-  display: block;
-  min-height: 375px;
-  position: relative;
-}
-
-.loadingImg {
-  display: block;
-  position: absolute;
-  width: 50%;
-  left: 25%;
-  top: 50px;
+    display: block;
+    min-height: 375px;
+    position: relative;
 }
 
 .diagram svg {
-  position: absolute;
-  min-height: 375px;
-  left: 0;
-  top: 0;
+    position: absolute;
+    min-height: 375px;
+    left: 0;
+    top: 0;
+}
+
+.loadingImg {
+    display: block;
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 50px;
 }
