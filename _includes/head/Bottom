@@ -1,12 +1,12 @@
         <script type="text/javascript" src="js/d3.min.js"></script>
-        <script type="text/javascript" src="js/function.js"></script>
-        <script type="text/javascript" src="js/trycoffee.js"></script>
+        <script type="text/javascript" src="js/disqus.js"></script>
         <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/embed.min.js"></script>
+        <script type="text/javascript" src="js/juicer.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/stickUp.min.js"></script>
         <script type="text/javascript" src="js/prefixfree.min.js"></script>
         <script type="text/javascript" src="js/templatemo_script.js"></script>
+        <script type="text/javascript" src="js/coffee/trycoffee.js"></script>
         <script type="text/javascript" src="js/colorbox/jquery.colorbox-min.js"></script>
         <script type="text/javascript" src="ace-builds/src-min/ace.js"></script>
         <script type="text/javascript" src="feed/js/instafeed.min.js"></script>
