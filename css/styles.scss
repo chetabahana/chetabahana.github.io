@@ -17,36 +17,32 @@
     float: left;
 }
 
-.editor, .editor-wrapper { 
+.flowchart {
+    fill-opacity: 0.1,
+}
+
+.editor, .editor-wrapper {
+    display: block;
+    min-height: 285px;
     width: 100%;
-    min-height: 265px;
-    font-size: 14px;
-}
-
-.editor-wrapper {
-    position: relative;
-}
-
-#graphiql {
-    position: absolute;
-    width: 360px;
-    left: 0;
-    top: 0;
-}
-
-.editor { 
-    position: absolute;
 }
 
 #viewport {
     display: block;
     min-height: 375px;
     position: relative;
+    width: 100%;
 }
 
-.diagram svg {
+#graphiql {
+    display: none;
+    z-index:999;
+    width: 100%;
+}
+
+#graphiql, .diagram svg {
     position: absolute;
-    min-height: 375px;
+    height: 375px;
     left: 0;
     top: 0;
 }
