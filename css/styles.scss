@@ -36,11 +36,11 @@
 
 #graphiql {
     display: none;
+    height: 375px;
 }
 
 #graphiql, .diagram svg {
     position: absolute;
-    min-height: 375px;
     left: 0;
     top: 0;
 }
