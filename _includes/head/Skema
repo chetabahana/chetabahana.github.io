@@ -5,7 +5,6 @@
                         <h4>{{ section.title }}</h4>
                      </div>
                     <div class="col-md-4 contact_left">
-                        <div id="graphiql"></div>
                         Status:
                         <select class="theme">
                             <option value="hand" selected>Konsep</option>
@@ -19,8 +18,9 @@
                         Silahkan <a href='https://jsfiddle.net/chetabahana/rrxnah40/'>sunting</a> dan <a href='#chetabahana-diskusi' class='internal-link'>usulkan</a> gambar <a href="#" class="download">bagannya..</a>
                     </div>    
                     <div class="col-md-8">
-                        <div id="viewport" class="diagram"></div>
-                        <img class="loadingImg" src='images/loading.gif'>
+                        <div class="loadingImg">
+                        <div id="diagram" class="diagram"></div>
+                        <div id="graphiql"></div><div id="viewport"><canvas></canvas></div>
                     </div>
                 </div><!-- /.row -->
             </div><!-- /.container -->
