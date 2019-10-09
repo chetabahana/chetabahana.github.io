@@ -1,6 +1,9 @@
         <div id="chetabahana-{{ section.title | downcase }}" class="chetabahana-{{ section.title | downcase }}">
             <div class="container">
                 <div class="row">
+                    <div class="templatemo-line-header">
+                        <h4>{{ section.title }}</h4>
+                    </div>
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </div><!-- /{{ section.title }}-->
