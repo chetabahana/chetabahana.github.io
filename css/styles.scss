@@ -34,6 +34,10 @@
     width: 100%;
 }
 
+#graphiql {
+    display: none;
+}
+
 #graphiql, .diagram svg {
     position: absolute;
     min-height: 375px;
