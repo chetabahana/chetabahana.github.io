@@ -37,6 +37,7 @@
 #graphiql {
     display: none;
     height: 375px;
+    z-index:999;
 }
 
 #graphiql, .diagram svg {
