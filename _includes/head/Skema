@@ -4,6 +4,13 @@
                     <div class="templatemo-line-header">
                         <h4>{{ section.title }}</h4>
                     </div>
+                    <div class="col-md-4 contact_left">
+                    </div>    
+                    <div class="col-md-8">
+                        <div class="loadingImg">
+                        <div id="diagram" class="diagram"></div>
+                        <section id="graphiql"></section><section id="viewport"><canvas></canvas></section>
+                    </div>
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </div><!-- /{{ section.title }}-->
