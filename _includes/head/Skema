@@ -20,7 +20,7 @@
                     <div class="col-md-8">
                         <div class="loadingImg">
                         <div id="diagram" class="diagram"></div>
-                        <div id="graphiql"></div><div id="viewport"><canvas></canvas></div>
+                        <section id="graphiql"></section><section id="viewport"><canvas></canvas></section>
                     </div>
                 </div><!-- /.row -->
             </div><!-- /.container -->
