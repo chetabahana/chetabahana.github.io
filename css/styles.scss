@@ -21,36 +21,31 @@
     fill-opacity: 0.1,
 }
 
-.editor, .editor-wrapper { 
-    width: 100%;
-    min-height: 265px;
-    font-size: 14px;
-}
-
 .editor-wrapper {
     position: relative;
+    min-height: 375px;
+    width: 100%;
 }
 
-#graphiql {
+.editor, #graphiql {
     position: absolute;
-    width: 360px;
+    min-height: 265px;
+    width: 100%;
     left: 0;
     top: 0;
-}
-
-.editor { 
-    position: absolute;
 }
 
 #viewport {
     display: block;
     min-height: 375px;
     position: relative;
+    width: 100%;
 }
 
 .diagram svg {
     position: absolute;
     min-height: 375px;
+    width: 100%;
     left: 0;
     top: 0;
 }
