@@ -61,23 +61,21 @@
 
 #graphiql {
     display: block;
-    height: 100vh;
     width: 100%;
 }
 
 #viewport {
     display: block;
     position: absolute;
-    min-height: 327px;
-    height: calc(100vh - 48px);
     overflow: hidden;
-    right: 0;
+    height: 327px;
     top: 48px;
+    right: 0;
 }
 
 #graphiql, .diagram svg {
     position: absolute;
-    height: 375px;
+    min-height: 375px;
     left: 0;
     top: 0;
 }
