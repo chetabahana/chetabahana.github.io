@@ -21,7 +21,7 @@
     fill-opacity: 0.1,
 }
 
-.editor, .editor-wrapper {
+.editor-wrapper, .editor {
     display: block;
     min-height: 285px;
     width: 100%;
@@ -62,7 +62,7 @@
     display: block;
     overflow: hidden;
     position: absolute;
-    height: 327px;
-    top: 48px;
+    height: 341px;
+    top: 34px;
     right: 0;
 }
