@@ -64,11 +64,11 @@
     position: absolute;
     height: 341px;
     right: 15px;
-    top: 34px;
+    top: 48px;
 }
 
-.doc-explorer-title-bar, .doc-explorer-back  {
-    padding: 0;
+#graphiql .topBar {
+    height: 48px;
 }
 
 .doc-explorer-contents {
