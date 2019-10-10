@@ -3,6 +3,7 @@
         <title>{{ page.title }}</title>
         <meta name="keywords" content="{{ page.keywords }}" />
         <meta name="description" content="{{ page.description }}" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <link type="application/json+oembed" rel="alternate" href="{{ page.json_link }}" title="{{ page.title }}" />
         {% feed_meta %}
 
@@ -25,7 +26,6 @@
         <!-- End Google Tag Manager -->   
 	    
         <!-- Urbanic Template http://www.templatemo.com/templates/templatemo_395_urbanic/ -->
-        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    
         <!-- Web Font Embed -->
