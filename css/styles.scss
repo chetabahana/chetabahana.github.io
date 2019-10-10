@@ -71,10 +71,14 @@
     height: 48px;
 }
 
-.doc-explorer-contents {
+#graphiql-container .doc-explorer-contents {
     min-height: 341px;
 }
 
-.doc-explorer-title, .doc-explorer-back  {
-    padding: 0;
+#graphiql-container doc-explorer-title  {
+    padding: 5px 0 0px 10px;;
+}
+
+#graphiql-container .doc-explorer-back  {
+    padding: 17px 12px 0 16px;
 }
