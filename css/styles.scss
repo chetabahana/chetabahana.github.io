@@ -21,36 +21,68 @@
     fill-opacity: 0.1,
 }
 
-.editor, .editor-wrapper {
+.editor-wrapper, .editor {
     display: block;
     min-height: 285px;
     width: 100%;
 }
 
-#viewport {
-    display: block;
-    min-height: 375px;
-    position: relative;
-    width: 100%;
-}
-
-#graphiql {
-    display: none;
-    z-index:999;
-    width: 100%;
-}
-
-#graphiql, .diagram svg {
-    position: absolute;
-    height: 375px;
-    left: 0;
-    top: 0;
+.status_left p {
+    margin: 0;
+    padding: 0;
 }
 
 .loadingImg {
     display: block;
     position: absolute;
-    width: 50%;
-    left: 25%;
-    top: 50px;
+    background:url('/images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 375px;
+    left: 0;
+    top: 0;
+}
+
+.diagram{
+    position: absolute;
+    min-height: 375px;
+    z-index: 999;
+    left: 0;
+    top: 0;
+}
+
+#graphiql {
+    display: block;
+    height: 375px;
+    width: 100%;
+}
+
+#viewport {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    height: 341px;
+    right: 15px;
+    top: 48px;
+}
+
+#graphiql .topBar {
+    height: 48px;
+}
+
+#graphiql-container .doc-explorer-contents {
+    min-height: 341px;
+}
+
+#graphiql-container doc-explorer-title  {
+    padding: 0;
+}
+
+#graphiql-container .doc-explorer-back  {
+    padding: 17px 12px 0 16px;
+}
+
+#graphiql-container .docExplorerHide {
+    margin: -11px -8px -6px 0;
 }
