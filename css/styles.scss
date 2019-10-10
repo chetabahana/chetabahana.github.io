@@ -30,9 +30,12 @@
 #viewport {
     display: block;
     min-height: 375px;
-    position: relative;
-    width: 100%;
-}
+    position: absolute;
+    right: 0;
+    top: 48px;
+    height: calc(100vh - 48px);
+    overflow: hidden;
+ }
 
 #graphiql {
     display: none;
