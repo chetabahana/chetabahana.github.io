@@ -7,6 +7,7 @@
                     <div class="col-md-4 contact_left">
                     </div>    
                     <div class="col-md-8">
+                        <div class="loadingImg"></div>
                     </div>
                 </div><!-- /.row -->
             </div><!-- /.container -->
