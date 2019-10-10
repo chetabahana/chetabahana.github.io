@@ -44,6 +44,12 @@
     top: 0;
 }
 
+#graphiql {
+    display: block;
+    height: 100vh;
+    width: 100%;
+}
+
 #viewport {
     display: block;
     position: absolute;
@@ -52,12 +58,6 @@
     overflow: hidden;
     right: 0;
     top: 48px;
-}
-
-#graphiql {
-    display: block;
-    height: 100vh;
-    width: 100%;
 }
 
 #graphiql, .diagram svg {
