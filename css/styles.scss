@@ -57,23 +57,30 @@
  * Include this rule to trigger hasLayout and contain floats.
  **/
 
-.cf { *zoom: 1; }
+.cf { 
+    *zoom: 1; 
+    position: absolute;
+    min-height: 375px;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
 
 #graphiql {
     display: block;
+    height: 375px;
     width: 100%;
 }
 
 #viewport {
     display: block;
-    position: absolute;
     overflow: hidden;
     height: 327px;
     top: 48px;
     right: 0;
 }
 
-#graphiql, .diagram svg {
+.diagram svg {
     position: absolute;
     min-height: 375px;
     left: 0;
