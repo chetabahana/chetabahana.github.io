@@ -27,10 +27,22 @@
     width: 100%;
 }
 
+.loadingImg {
+    display: block;
+    position: absolute;
+    background:url('/images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 375px;
+    left: 0;
+    top: 0;
+}
+
 #viewport {
     display: block;
     position: absolute;
-    min-height: 375px;
+    min-height: 327px;
     height: calc(100vh - 48px);
     overflow: hidden;
     right: 0;
@@ -50,14 +62,3 @@
     top: 0;
 }
 
-.loadingImg {
-    display: block;
-    position: absolute;
-    background:url('/images/loading.gif');
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    min-height: 375px;
-    left: 0;
-    top: 0;
-}
