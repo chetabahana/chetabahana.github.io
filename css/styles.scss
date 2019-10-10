@@ -29,13 +29,13 @@
 
 #viewport {
     display: block;
-    min-height: 375px;
     position: absolute;
-    right: 0;
-    top: 48px;
+    min-height: 375px;
     height: calc(100vh - 48px);
     overflow: hidden;
- }
+    right: 0;
+    top: 48px;
+}
 
 #graphiql {
     display: block;
