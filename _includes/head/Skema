@@ -4,7 +4,7 @@
                     <div class="templatemo-line-header">
                         <h4>{{ section.title }}</h4>
                     </div>
-                    <div class="col-md-4 contact_left">
+                    <div class="col-md-4 status_left">
                         <span>Status:</span>
                         <select class="theme">
                             <option value="hand" selected>Konsep</option>
