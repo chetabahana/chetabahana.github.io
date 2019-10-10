@@ -21,10 +21,15 @@
     fill-opacity: 0.1,
 }
 
-.editor, .editor-wrapper {
+.editor-wrapper, .editor {
     display: block;
     min-height: 285px;
     width: 100%;
+}
+
+.editor-wrapper p {
+    margin: 0;
+    padding: 0;
 }
 
 .loadingImg {
