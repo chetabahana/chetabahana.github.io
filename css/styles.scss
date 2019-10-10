@@ -76,9 +76,13 @@
 }
 
 #graphiql-container doc-explorer-title  {
-    padding: 5px 0 0px 10px;;
+    padding: 5px 0 0 10px;;
 }
 
 #graphiql-container .doc-explorer-back  {
     padding: 17px 12px 0 16px;
+}
+
+#graphiql-container .docExplorerHide {
+    margin: -11px -8px -6px 0;
 }
