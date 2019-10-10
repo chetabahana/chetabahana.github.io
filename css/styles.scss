@@ -52,28 +52,6 @@
     top: 0;
 }
 
-.cf:before,
-.cf:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
-}
-
-.cf:after { clear: both; }
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- **/
-
-.cf { 
-    *zoom: 1; 
-    position: absolute;
-    min-height: 375px;
-    width: 100%;
-    left: 0;
-    top: 0;
-}
-
 #graphiql {
     display: block;
     height: 375px;
