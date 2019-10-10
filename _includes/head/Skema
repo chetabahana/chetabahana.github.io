@@ -22,10 +22,7 @@
                     <div class="col-md-8">
                         <div class="loadingImg"></div>
                         <div id="diagram" class="diagram"></div>
-                        <div class="cf">
-                            <section id="graphiql"> </section>
-                            <section id="viewport"> <canvas></canvas> </section>
-                        </div>
+                        <section id="graphiql"> </section><section id="viewport"> <canvas></canvas> </section>
                     </div>
                 </div><!-- /.row -->
             </div><!-- /.container -->
