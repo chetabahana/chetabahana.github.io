@@ -26,7 +26,7 @@
         <!-- End Google Tag Manager -->   
 	    
         <!-- Urbanic Template http://www.templatemo.com/templates/templatemo_395_urbanic/ -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- meta name="viewport" content="width=device-width, initial-scale=1.0" -->
 	    
         <!-- Web Font Embed -->
         <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
