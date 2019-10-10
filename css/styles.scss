@@ -44,6 +44,14 @@
     top: 0;
 }
 
+.diagram{
+    position: absolute;
+    min-height: 375px;
+    z-index: 999;
+    left: 0;
+    top: 0;
+}
+
 .cf:before,
 .cf:after {
   content: " "; /* 1 */
@@ -78,11 +86,4 @@
     height: 327px;
     top: 48px;
     right: 0;
-}
-
-.diagram svg {
-    position: absolute;
-    min-height: 375px;
-    left: 0;
-    top: 0;
 }
