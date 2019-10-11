@@ -95,7 +95,7 @@ function scrollTo(selectors)
     $('html,body').animate({ scrollTop: selector_top }, 'slow');
 }
 
-//juicerFeed
+/*juicerFeed
 function juicerFeed() { 
     if (!$('#gfeeds').find('a')[0] || !$('#___community_0')) {
          window.requestAnimationFrame(juicerFeed);       
@@ -105,7 +105,7 @@ function juicerFeed() {
     }    
   } 
 
-//instafeed
+instafeed
 var feed = new Instafeed({
     get: 'user',
     limit: 100,
@@ -122,4 +122,5 @@ var feed = new Instafeed({
 
 });
 
-//feed.run();
+feed.run();
+*/
