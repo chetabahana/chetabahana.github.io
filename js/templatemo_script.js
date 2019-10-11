@@ -122,4 +122,4 @@ var feed = new Instafeed({
 
 });
 
-feed.run();
+//feed.run();

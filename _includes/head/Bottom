@@ -1,6 +1,7 @@
         <script type="text/javascript" src="js/d3.min.js"></script>
         <script type="text/javascript" src="js/disqus.js"></script>
         <script type="text/javascript" src="js/jquery.min.js"></script>
+        <!-- script type="text/javascript" src="js/prototype.js"></script -->
         <!-- script type="text/javascript" src="js/juicer.min.js"></script -->
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/stickUp.min.js"></script>
@@ -9,7 +10,7 @@
         <script type="text/javascript" src="js/coffee/trycoffee.js"></script>
         <script type="text/javascript" src="js/colorbox/jquery.colorbox-min.js"></script>
         <script type="text/javascript" src="ace-builds/src-min/ace.js"></script>
-        <script type="text/javascript" src="feed/js/instafeed.min.js"></script>
+        <!-- script type="text/javascript" src="feed/js/instafeed.min.js"></script -->
         <script type="text/javascript" src="slick/slick/slick.min.js"></script>
         <script type="text/javascript" src="scroll/jquery.simplyscroll.min.js"></script>
         <script type="text/javascript" src="sequence/js/webfont.js"></script>
