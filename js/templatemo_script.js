@@ -21,9 +21,8 @@ jQuery(function($) {
 	}
 	    
     });
-    
-    jQuery.noConflict();
-    jQuery(document).ready(function($) {
+		
+    $(document).ready( function() {
 
 	// to stick navbar on top and hash
 	$('.templatemo-top-menu').stickUp(); 
