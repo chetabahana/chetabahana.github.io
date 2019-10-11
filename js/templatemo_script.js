@@ -21,8 +21,9 @@ jQuery(function($) {
 	}
 	    
     });
-		
-    $(document).ready( function() {
+    
+    jQuery.noConflict();
+    jQuery(document).ready(function($) {
 
 	// to stick navbar on top and hash
 	$('.templatemo-top-menu').stickUp(); 
@@ -122,4 +123,4 @@ var feed = new Instafeed({
 
 });
 
-feed.run();
+//feed.run();
