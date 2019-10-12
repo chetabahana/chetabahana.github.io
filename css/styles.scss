@@ -57,7 +57,12 @@
     min-height: 390px;
     z-index: 999;
     width: 100%;
-    left: 0;
+}
+
+.diagram-flowchart {
+    height: 400px;
+    left: -30px;
+    top: -10px;
 }
 
 .diagram-railroad {
