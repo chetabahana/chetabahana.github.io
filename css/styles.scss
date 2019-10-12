@@ -27,9 +27,13 @@
     width: 100%;
 }
 
-.status_left p {
+.skema_left p {
     margin: 0;
     padding: 0;
+}
+
+.skema_right {
+    overflow: auto;
 }
 
 .loadingImg {
