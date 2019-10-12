@@ -37,7 +37,7 @@
 }
 
 .skema_right {
-    height: 390px;
+    height: 400px;
 }
 
 .loadingImg {
@@ -54,10 +54,14 @@
 
 #diagram{
     position: absolute;
-    min-height: 400px;
+    min-height: 390px;
     z-index: 999;
     left: 0;
     top: 0;
+}
+
+.diagram-railroad {
+    overflow: auto;
 }
 
 #graphiql {
