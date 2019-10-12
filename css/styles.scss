@@ -52,17 +52,27 @@
     top: 0;
 }
 
-#diagram{
+#diagram {
     position: absolute;
     min-height: 390px;
     z-index: 999;
     width: 100%;
-    left: 0;
+}
+
+.diagram-sequence {
+    left: -5px;
+}
+
+.diagram-flowchart {
+    height: 400px;
+    left: -45px;
+    top: -10px;
 }
 
 .diagram-railroad {
     overflow: auto;
     height: 418px;
+    left: -10px;
     top: -28px;
 }
 

@@ -4,10 +4,10 @@
         {
             "x": -10,
             "y": -5,
+            "font-size": 15,
             "line-width": 3,
-            "line-length": 45,
+            "line-length": 43,
             "text-margin": 10,
-            "font-size": 12,
             "font-color": "black",
             "line-color": "black",
             "element-color": "black",
@@ -33,7 +33,7 @@
                 },
             "flowstate":
                 {
-                    "past": {"font-size": 12},
+                    "past": {"font-size": 15},
                     "current": {"font-weight": "bold"},
                     "future": {"font-weight": "bold"},
                     "invalid": {"font-weight": "bold"},
