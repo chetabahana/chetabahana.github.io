@@ -48,14 +48,14 @@
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    min-height: 375px;
+    min-height: 400px;
     left: 0;
     top: 0;
 }
 
 .diagram{
     position: absolute;
-    min-height: 375px;
+    min-height: 400px;
     z-index: 999;
     left: 0;
     top: 0;
@@ -63,7 +63,7 @@
 
 #graphiql {
     display: block;
-    height: 375px;
+    height: 400px;
     width: 100%;
 }
 
