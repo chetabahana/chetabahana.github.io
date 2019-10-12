@@ -2,8 +2,10 @@ jQuery(function($) {
 
     $(window).on('beforeunload', function(){
 
-    // to stick navbar on top and hash
-    $('.templatemo-top-menu').stickUp();});
+        // to stick navbar on top and hash
+        $('.templatemo-top-menu').stickUp();
+
+    });
 
     $(window).on('load', function(){
 
@@ -12,7 +14,7 @@ jQuery(function($) {
             return this.hostname != window.location.hostname;
         }).attr('target', '_blank'); 
 
-        // do scroll and clear the hash anytime someone arrives with a hash tag    
+        // do scroll and clear the hash anytime someone arrives with a hash tag
         if( typeof(location.hash) !== 'undefined' && location.hash.length ) {
             scrollTo(location.hash);
             history.replaceState(null, null, location.pathname); // https://stackoverflow.com/a/50688363/4058484
