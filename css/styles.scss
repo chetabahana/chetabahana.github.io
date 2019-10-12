@@ -37,7 +37,6 @@
 }
 
 .skema_right {
-    overflow: auto;
     height: 390px;
 }
 
@@ -53,7 +52,7 @@
     top: 0;
 }
 
-.diagram{
+#diagram{
     position: absolute;
     min-height: 400px;
     z-index: 999;
