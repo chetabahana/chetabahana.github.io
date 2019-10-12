@@ -27,7 +27,7 @@
     width: 100%;
 }
 
-.skema_right {
+.skema_left, .skema_right {
     height: 400px;
 }
 
@@ -38,7 +38,6 @@
 
 .skema_right {
     overflow: auto;
-    height: 400px;
 }
 
 .loadingImg {
