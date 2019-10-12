@@ -23,13 +23,21 @@
 
 .editor-wrapper, .editor {
     display: block;
-    min-height: 285px;
+    min-height: 300px;
     width: 100%;
 }
 
-.status_left p {
+.skema_left {
+    height: 400px;
+}
+
+.skema_left p {
     margin: 0;
     padding: 0;
+}
+
+.skema_right {
+    height: 400px;
 }
 
 .loadingImg {
@@ -39,22 +47,28 @@
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    min-height: 375px;
+    min-height: 400px;
     left: 0;
     top: 0;
 }
 
-.diagram{
+#diagram{
     position: absolute;
-    min-height: 375px;
+    min-height: 390px;
     z-index: 999;
+    width: 100%;
     left: 0;
-    top: 0;
+}
+
+.diagram-railroad {
+    overflow: auto;
+    height: 418px;
+    top: -28px;
 }
 
 #graphiql {
     display: block;
-    height: 375px;
+    height: 390px;
     width: 100%;
 }
 

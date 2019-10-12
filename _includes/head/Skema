@@ -4,7 +4,7 @@
                     <div class="templatemo-line-header">
                         <h4>{{ section.title }}</h4>
                     </div>
-                    <div class="col-md-4 status_left">
+                    <div class="col-md-4 skema_left">
                         <span>Status:</span>
                         <select class="theme">
                             <option value="hand" selected>Konsep</option>
@@ -19,7 +19,7 @@
                         <p>Silahkan <a href='https://jsfiddle.net/chetabahana/rrxnah40/'>sunting</a> dan <a href='#chetabahana-diskusi' class='internal-link'>usulkan</a> gambar <a href="#" class="download">bagannya..</a></p>
                         <p>Tautan: <a id="json" href="/skema.json" style="text-transform" target='_blank'>skema.json</a> / <a id="type" href="/skema/js/draw.js" style="text-transform;" target='_blank'>skema.js</a></p>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 skema_right">
                         <div class="loadingImg"></div>
                         <div id="diagram" class="diagram"></div>
                         <section id="graphiql"></section><section id="viewport"></section>
