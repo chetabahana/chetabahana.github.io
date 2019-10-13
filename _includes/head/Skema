@@ -12,7 +12,7 @@
                             <option value="priority" disabled="disabled">Urgensi</option>
                         </select>
                         <p>Tipe Diagram: <a id="type" href="/sequence" style="text-transform:capitalize;" target='_blank'>sequence</a></p>
-                        <p>Tautan: <a id="json" href="/skema.json" style="text-transform" target='_blank'>skema.json</a> / <a id="type" href="/skema/js/draw.js" style="text-transform;" target='_blank'>skema.js</a></p>
+                        <p>Tautan: <a id="json" href="/feed.json" style="text-transform" target='_blank'>skema.json</a> / <a id="js" href="/skema/js/draw.js" style="text-transform;" target='_blank'>skema.js</a></p>
                         <div class="editor-wrapper">
                             <div id="editor" class="editor">{% include skema.json %}</div>
                         </div>
