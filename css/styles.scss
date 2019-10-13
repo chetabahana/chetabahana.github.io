@@ -23,7 +23,7 @@
 
 .editor-wrapper, .editor {
     display: block;
-    min-height: 300px;
+    min-height: 278px;
     width: 100%;
 }
 
@@ -60,25 +60,27 @@
 }
 
 .diagram-sequence {
+    height: 398px;
     left: -5px;
+    top: -8px;
 }
 
 .diagram-flowchart {
-    height: 400px;
+    height: 410px;
     left: -45px;
-    top: -10px;
+    top: -20px;
 }
 
 .diagram-railroad {
     overflow: auto;
-    height: 418px;
+    height: 393px;
     left: -10px;
     top: -28px;
 }
 
 #graphiql {
     display: block;
-    height: 390px;
+    height: 364px;
     width: 100%;
 }
 
@@ -86,7 +88,7 @@
     display: block;
     overflow: hidden;
     position: absolute;
-    height: 341px;
+    height: 316px;
     right: 15px;
     top: 48px;
 }
