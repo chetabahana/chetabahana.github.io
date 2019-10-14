@@ -66,6 +66,9 @@ redirect_from:
   - /0003/feed.json
   - /9999/feed.json
   - /00000/feed.json
+  - /00001/feed.json
+  - /00002/feed.json
+  - /00003/feed.json
   - /99999/feed.json
 ---
 {% include feed.json %}
