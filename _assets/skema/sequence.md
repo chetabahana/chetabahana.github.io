@@ -1,5 +1,5 @@
 ---
-weight: 0
+weight: 2
 layout: assets/skema
 permalink: /assets/skema/sequence.json
 js: sequence/js/sequence-diagram-snap-min.js
