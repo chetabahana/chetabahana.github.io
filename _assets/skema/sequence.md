@@ -3,6 +3,7 @@ weight: 0
 layout: assets/skema
 permalink: /assets/skema/sequence.json
 js: sequence/js/sequence-diagram-snap-min.js
+json: /skema.json
 redirect_from:
   - /0/skema.json
   - /0/skema.json
