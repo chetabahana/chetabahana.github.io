@@ -3,6 +3,15 @@ layout: null
 permalink: /assets/feed.json
 redirect_from:
   - /0/feed.json
+  - /1/feed.json
+  - /2/feed.json
+  - /3/feed.json
+  - /4/feed.json
+  - /5/feed.json
+  - /6/feed.json
+  - /7/feed.json
+  - /8/feed.json
+  - /9/feed.json
   - /00/feed.json
   - /01/feed.json
   - /02/feed.json
@@ -20,6 +29,10 @@ redirect_from:
   - /14/feed.json
   - /15/feed.json
   - /16/feed.json
+  - /17/feed.json
+  - /18/feed.json
+  - /19/feed.json
+  - /20/feed.json
   - /21/feed.json
   - /22/feed.json
   - /23/feed.json
