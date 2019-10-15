@@ -1,26 +1,54 @@
-{
+## Render a scene into a viewport with
+## a PerspectiveCamera and a Scene containing
+## a Mesh constructed with a BoxGeometry and
+## a MeshBasicMaterial
+query render($width: Float,
+             $height: Float,
+             #$rotateX: Float,
+             #$rotateY: Float
+             $tickr: Float) {
+  ## Describes renderer
+  WebGLRenderer {
+    ## set viewport width/height based on context inputs
+    setSize(width: $width, height: $height)
+
+    ## Configures a PerspectiveCamera
     PerspectiveCamera(fov: 75, aspect: 1, near: 1, far: 10000) {
-        setPosition(z: 500)
+      setPosition(z: 500)
     }
 
+    ## Describes a Scene
     Scene {
 
-        a: Mesh(name: "box-a") {
-            setRotation(x: $tickr)
-            setPosition(x: 200, y: 200)
-            ...BoxWireframe
-        }
+      ## Describes a named Mesh
+      a: Mesh(name: "box-a") {
+        setRotation(x: $tickr)
+        setPosition(x: 200, y: 200)
+        ...BoxWireframe
+      }
 
-        b: Mesh(name: "box-b") {
-            setPosition(x: -200, y: -200)
-            setRotation(y: $tickr)
-            ...Box
-        }
+      b: Mesh(name: "box-b") {
+        setPosition(x: -200, y: -200)
+        setRotation(y: $tickr)
+        ...Box
+      }
 
-        c: Mesh(name: "box-c") {
-            setRotation(z: $tickr)
-            setPosition(x: 0)
-            ...Box
-        }
+      c: Mesh(name: "box-c") {
+        setRotation(z: $tickr)
+        setPosition(x: 0)
+        ...Box
+      }
     }
+  }
+}
+
+fragment BoxWireframe on Mesh {
+  ## Contruct geometry and material for mesh
+  BoxGeometry(width: 100, height: 100, depth: 100)
+  MeshBasicMaterial(wireframe: true)
+}
+
+fragment Box on Mesh {
+  BoxGeometry(width: 100, height: 100, depth: 100)
+  MeshBasicMaterial(wireframe: false)
 }
