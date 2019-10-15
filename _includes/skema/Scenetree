@@ -1,4 +1,4 @@
-## Renders a scene into a viewport with
+## Render a scene into a viewport with
 ## a PerspectiveCamera and a Scene containing
 ## a Mesh constructed with a BoxGeometry and
 ## a MeshBasicMaterial
