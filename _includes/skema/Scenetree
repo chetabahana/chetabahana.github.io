@@ -1,32 +1,26 @@
 {
-    ## set viewport width/height based on context inputs
-    setSize(width: $width, height: $height)
-
-    ## Configures a PerspectiveCamera
     PerspectiveCamera(fov: 75, aspect: 1, near: 1, far: 10000) {
-      setPosition(z: 500)
+        setPosition(z: 500)
     }
 
-    ## Describes a Scene
     Scene {
 
-        ## Describes a named Mesh
         a: Mesh(name: "box-a") {
-        setRotation(x: $tickr)
-        setPosition(x: 200, y: 200)
-        ...BoxWireframe
+            setRotation(x: $tickr)
+            setPosition(x: 200, y: 200)
+            ...BoxWireframe
         }
 
         b: Mesh(name: "box-b") {
-        setPosition(x: -200, y: -200)
-        setRotation(y: $tickr)
-        ...Box
+            setPosition(x: -200, y: -200)
+            setRotation(y: $tickr)
+            ...Box
         }
 
         c: Mesh(name: "box-c") {
-        setRotation(z: $tickr)
-        setPosition(x: 0)
-        ...Box
+            setRotation(z: $tickr)
+            setPosition(x: 0)
+            ...Box
         }
     }
 }
