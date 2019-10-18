@@ -1,6 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-{% assign assets = site.assets | sort: 'weight' %}{% assign sections = assets | where_exp:"item", "item.path contains '/head/'" %}{% for section in sections %}
-{% include {{ section.title | prepend: 'head/' }} %}
+<!DOCTYPE html>{% assign assets = site.assets | sort: 'weight' %}
+<html lang="en">{% assign sections = assets | where_exp:"item", "item.path contains '/section/'" %}
+    <head>{% for section in sections %}
+{% include {{ section.path | replace: "_assets/", "" | replace: ".md", ".html" }} %}
 {% endfor %}
+    </body>
 </html>
