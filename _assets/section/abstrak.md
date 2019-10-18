@@ -2,4 +2,4 @@
 weight: 3
 layout: assets/head
 ---
-{{ page.path }}
+{{ page.path | replace: "_assets/", "" | replace: ".md", ".html" }}
