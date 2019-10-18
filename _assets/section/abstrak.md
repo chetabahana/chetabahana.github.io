@@ -2,4 +2,4 @@
 weight: 3
 layout: assets/head
 ---
-{{ section.path | replace: "_assets/", "" | replace: ".md", ".html" }}
+{% assign page_path = page.path | replace: "_assets/", "" | replace: ".md", ".html" %}{% include {{ page_path }} %}
