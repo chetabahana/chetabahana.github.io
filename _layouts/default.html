@@ -3,6 +3,6 @@
 {% assign assets = site.assets | sort: 'weight' %}
 {% assign sections = assets | where_exp:"item", "item.path contains '/section/'" %}
 {% for section in sections %}
-{{ section.content }}
+{{ section.path }}
 {% endfor %}
 </html>
