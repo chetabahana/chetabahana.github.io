@@ -37,6 +37,6 @@
                     <div class="row text-center">
                         <a href="http://toko.chetabahana.com/" target="_blank" class="btn_loadmore btn btn-lg btn-orange" role="button">Selengkapnya</a>
                     </div>
-                </section>
+                </div>
             </div><!-- /.container -->
         </div><!-- /{{ section.title }}-->
