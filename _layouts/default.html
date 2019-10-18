@@ -3,4 +3,5 @@
     <head>{% for section in sections %}
 {% include {{ section.path | replace: "_assets/", "" | replace: ".md", ".html" }} %}
 {% endfor %}
+   </body>
 </html>
