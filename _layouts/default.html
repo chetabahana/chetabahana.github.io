@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 {% assign assets = site.assets | sort: 'weight' %}{% assign sections = assets | where_exp:"item", "item.path contains '/section/'" %}{% for section in sections %}
-{{ section.content }}
+{% include {{ section.path | replace: "_assets/", "" | replace: ".md", ".html" }} %}
 {% endfor %}
 </html>
