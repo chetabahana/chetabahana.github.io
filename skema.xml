@@ -2,4 +2,4 @@
 permalink: /skema.xml
 navbar: false
 ---
-{% include skema.xml %}
+{% include _assets/skema.xml %}
