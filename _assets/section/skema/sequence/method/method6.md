@@ -8,7 +8,7 @@ event: object
 label: eShop SEO
 tag_name: ubuntu
 run_time: /bin/python
-layout: assets/section/skema/sequence/method
+layout: _assets/section/skema/sequence/method
 redirect_from: /assets/skema/sequence/method/method6
 ---
 Portfolio-->>Network: eShop SEO

@@ -1,5 +1,5 @@
 ---
 weight: 0
-layout: assets/section/skema/sequence
+layout: _assets/section/skema/sequence
 redirect_from: /assets/skema/sequence/object
 ---

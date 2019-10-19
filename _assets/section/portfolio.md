@@ -1,4 +1,4 @@
 ---
 weight: 6
-layout: assets/section
+layout: _assets/section
 ---
