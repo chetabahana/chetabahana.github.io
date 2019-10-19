@@ -1,4 +1,4 @@
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"weight": {{ my_asset.weight | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"path": {{ my_asset.path | jsonify }},
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"items": []
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"items": []
