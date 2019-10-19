@@ -8,7 +8,7 @@ flow: external
 label: Google-Ads-API
 tag_name: ubuntu
 run_time: /bin/python
-layout: assets/skema/sequence/method
+layout: assets/section/skema/sequence/method
 redirect_from: /assets/skema/sequence/method/method4
 ---
 Peluang Terbaik->>Portfolio: Google-Ads-API
