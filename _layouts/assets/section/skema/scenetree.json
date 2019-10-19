@@ -1,1 +1,1 @@
-{% include section/skema/Scenetree %}
+{% include _assets/section/skema/Scenetree %}

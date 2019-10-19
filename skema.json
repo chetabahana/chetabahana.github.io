@@ -2,4 +2,4 @@
 layout: null
 permalink: /skema.json
 ---
-{% include skema.json %}
+{% include _assets/skema.json %}

@@ -1,1 +1,1 @@
-{% include section/skema/Flowchart %}
+{% include _assets/section/skema/Flowchart %}

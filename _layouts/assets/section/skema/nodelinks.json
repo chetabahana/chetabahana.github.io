@@ -1,1 +1,1 @@
-{% include section/skema/Nodelinks %}
+{% include _assets/section/skema/Nodelinks %}
