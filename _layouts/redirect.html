@@ -1,6 +1,6 @@
 {% capture json %}{% include feed.json %}{% endcapture %}
 
-{{product.metafields.test['json']['object']['string_array'][0]}}
-{{product.metafields.test['json']['object_array'][0]['string']}}
-{{product.metafields.test.json.object.string_array[0]}}
-{{product.metafields.test.json.object_array[0].string}}
+{{product.metafields.test['json']['items'][0]}}
+{{product.metafields.test['json']['items'][0]['items']}}
+{{product.metafields.test.json.items[0]}}
+{{product.metafields.test.json.items[0].items[0]}}
