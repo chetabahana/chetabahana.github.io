@@ -1,1 +1,1 @@
-{% assign site_items = site.assets | where_exp:"item", "item.redirect_from contains page.redirect.from" %}{{ site_items }}{{ site_items.content | strip_html | replace: "&amp;", "&" }}
+{% assign site_items = site.assets | where_exp:"item", "item.redirect_from contains page.redirect.from" %}{{ site_items.path }}{{ site_items.content | strip_html | replace: "&amp;", "&" }}
