@@ -1,1 +1,1 @@
-{% assign site_items = site.assets | where_exp:"item", "item.redirect_from contains page.redirect.from" %}{% capture my_weight %}{{ site_items[0].weight }}{% endcapture %}{% include section.json %}
+{% assign site_items = site.assets | where_exp:"item", "item.redirect_from contains page.redirect.from" %}{% capture my_weight %}{{ site_items[0].weight }}{% endcapture %}{% include _assets/section.json %}
