@@ -1,3 +1,9 @@
-{% capture json_data %}{% include feed.json %}{% endcapture %}{% assign result = json_data | json_parse %}
+{% capture json_data %}{% include feed.json %}{% endcapture %}
+
+{% assign result = json_data | json_parse %}
+result["items"]: {{ result["items"] }}
+result.items: {{ result.items }}
+
+{% assign result = json_data | as_json %}
 result["items"]: {{ result["items"] }}
 result.items: {{ result.items }}
