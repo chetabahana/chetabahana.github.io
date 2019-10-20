@@ -1,6 +1,6 @@
 {% capture json_data %}{% include feed.json %}{% endcapture %}{% assign result = json_data | json_parse %}
 
 
-{% for item in product.metafields.instructions['json_data'] %}
+{% for item in product.metafields.instructions['json_data.items'] %}
 test {{ item[1] }}
 {% endfor %}
