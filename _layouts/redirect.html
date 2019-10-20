@@ -1,5 +1,1 @@
-{% capture json_data %}{% include feed.json %}{% endcapture %}{% assign result = json_data | json_parse %}
-{% for item in result.items %}
-   {% assign json = item.items | as_json %}
-       {{ json }}
-{% endfor %}
+{% assign site_items = site.assets | where_exp:"item", "item.redirect_from contains page.redirect.from" %}{% capture weight %}{{ site_items[0].weight }}{% endcapture %}{% include feed.json item_weight=weight %}
