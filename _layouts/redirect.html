@@ -1,1 +1,1 @@
-{% capture json %}{% include feed.json %}{% endcapture %}{% assign result = json.items[4] %}{{ result }}
+{% capture json_data %}{% include feed.json %}{% endcapture %}{% assign result = json_data | json %}{{ result }}
