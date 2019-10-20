@@ -1,1 +1,1 @@
-{% assign site_items = site.assets | where_exp:"item", "item.redirect_from contains page.redirect.from" %}{% include feed.json item_weight={{ site_items[0].weight }} %}
+{% assign site_items = site.assets | where_exp:"item", "item.redirect_from contains page.redirect.from" %}{% capture weight %}{{ site_items[0].weight }}{% endcapture %}{% include feed.json item_weight=weight %}
