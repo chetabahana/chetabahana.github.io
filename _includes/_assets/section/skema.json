@@ -1,1 +1,1 @@
-{{ my_asset.title }}
+{{ my_skema | append: "/" | append: my_asset.title }}
