@@ -1,1 +1,1 @@
-{% include {{ my_skema | append: "/" | append: my_asset.slug | append: ".json"}} | jsonify %}
+{% include {{ my_skema | append: "/" | append: my_asset.slug | append: ".json"}} %}
