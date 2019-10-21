@@ -70,3 +70,4 @@ redirect_from:
   - /00000/skema.json
   - /99999/skema.json
 ---
+test content
