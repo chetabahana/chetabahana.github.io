@@ -82,7 +82,7 @@ partner6_src: /images/partners/stackoverflow.png
 <!DOCTYPE html>{% assign assets = site.assets | sort: 'weight' %}
 <html lang="en">{% assign sections = assets | where_exp:"item", "item.layout == '_assets/section'" %}
     <head>{% for section in sections %}
-{% include_relative {{ section.path | prefend: "_layouts/" | replace: ".md", ".html" }} %}
+{{ section.path | prefend: "_layouts/" | replace: ".md", ".html" }}
 {% endfor %}
     </body>
 </html>
