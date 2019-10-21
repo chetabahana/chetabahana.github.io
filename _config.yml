@@ -4,6 +4,7 @@ encoding: utf-8
 highlighter: rouge
 
 includes:
+  - assets
   - feed.xml
   - feed.json
 
