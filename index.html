@@ -80,3 +80,10 @@ partner6_href: https://stackoverflow.com/users/4058484/chetabahana?tab=profile
 partner6_src: /images/partners/stackoverflow.png
 ---
 {% include_relative robots.txt %}
+<!DOCTYPE html>{% assign assets = site.assets | sort: 'weight' %}
+<html lang="en">{% assign sections = assets | where_exp:"item", "item.layout == '_assets/section'" %}
+    <head>{% for section in sections %}
+{% include {{ section.path | replace: ".md", ".html" }} %}
+{% endfor %}
+    </body>
+</html>
