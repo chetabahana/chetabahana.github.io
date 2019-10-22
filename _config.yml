@@ -65,6 +65,7 @@ defaults:
 
 # Site info
 url: https://chetabahana.github.io
+base: _assets/section
 title: Chetabahana Project - A Way To Win The Market | GitHub Page
 
 # GitHub metadata
