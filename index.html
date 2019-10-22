@@ -84,5 +84,15 @@ partner6_src: /images/partners/stackoverflow.png
     <head>{% for section in sections %}
 {% include_relative {{ section.path | prepend: "_layouts/" | replace: ".md", ".html" }} %}
 {% endfor %}
+
+{% for collection in site.collections %}
+  <h2>Items from {{ collection.label }}</h2>
+  <ul>
+    {% for item in site[collection.label] %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+
     </body>
 </html>
