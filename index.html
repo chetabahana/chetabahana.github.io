@@ -85,5 +85,17 @@ partner6_src: /images/partners/stackoverflow.png
 {% for section in sections %}
 {% include_relative {{ section.path | remove_first: "_" | prepend: "_layouts/" | replace: ".md", ".html" }} %}
 {% endfor %}
+
+{% assign my_data = site.data %}
+{% assign my_level = "assets/section/skema" | split: "/" %}
+{% assign my_size = my_level | size %}
+
+{% for i in (1..my_size) %}
+    {% assign my_data = my_data[my_level[i]] %}
+    {% for data in my_data %}
+        {{ data }} : {{ my_data[data] }}
+    {% endfor %}
+{% endfor %}
+
     </body>
 </html>
