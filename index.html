@@ -94,7 +94,9 @@ partner6_src: /images/partners/stackoverflow.png
 {% endfor %}
 
 {% for data in my_data %}
-    {{ data }} : {{ my_data[data] }}
+    {% if data.title == "flowchart" %}{% assign my_input = data.content %}% endif %}
 {% endfor %}
+    {{ my_input }}
+
     </body>
 </html>
