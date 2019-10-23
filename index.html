@@ -87,6 +87,10 @@ partner6_src: /images/partners/stackoverflow.png
 {% endfor %}
 
 {% assign my_data = site.data %}
+    {% for data in my_data %}
+        {{ data }} : {{ my_data[data] }}
+    {% endfor %}
+
 {% assign my_level = "assets/section/skema" | split: "/" %}
 {% assign my_size = my_level | size %}
 
