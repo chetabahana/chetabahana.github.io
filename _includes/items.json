@@ -4,12 +4,8 @@
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}{{ item | jsonify }}: {{ my_asset[item] | jsonify }},{% endunless %}{% endfor %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"layout": {{ my_asset.layout | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"path": {{ my_asset.path | jsonify }},
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"data": {% assign data = site.data %}{% assign my_hash = my_asset.path | remove_first: "_" | split: "/" | pop %}{% for hash in my_hash %}{% assign data = data[hash] %}{% endfor %}
-{% for hash in data %}
-slug:{{ my_asset.slug }} title:{{ hash[1].title }} content:{{ hash[1].content }}
-{% if hash.title == my_asset.slug %}{{ hash }}:{{ data[hash] }}
-    {% if hash.content %}
-        {% assign my_input = hash.content %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"data": {% assign data = site.data %}{% assign my_hash = my_asset.path | remove_first: "_" | split: "/" | pop %}{% for hash in my_hash %}{% assign data = data[hash] %}{% endfor %}{% for hash in data %}{% if hash[1].title == my_asset.slug %}{% if hash[1].content %}
+        {% assign my_input = hash[1].content %}
         {% assign my_data = my_hash | join: "." | prepend: 'site.data.' | append: '.' | append: my_asset.slug %}
     {% endif %}
 {% endif %}
