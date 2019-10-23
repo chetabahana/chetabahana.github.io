@@ -1,6 +1,7 @@
 ---
 weight: 4
-layout: _assets/section
+category: section
+layout: assets/section
 redirect_from:
   - /skema.json
   - /0/skema.json

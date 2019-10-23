@@ -8,7 +8,7 @@ flow: internal
 label: Cloud-Site-API
 tag_name: ubuntu
 run_time: /bin/python
-layout: _assets/section/skema/sequence/method
+layout: assets/section/skema/sequence/method
 redirect_from: /assets/skema/sequence/method/method3
 ---
 Google Merchant Center->Peluang Terbaik: Cloud-Site-API
