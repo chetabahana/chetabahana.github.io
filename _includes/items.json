@@ -9,9 +9,9 @@
 {% assign data = site.data %}
 {% assign my_hash = my_asset.path | remove_first: "_" | split: "/" | pop %}
 {% for hash in my_hash %}{% assign data = data[hash] %}{% endfor %}
-{% for hash in data %}{{ hash }}:{{ data[hash] }}
+{% for hash in data %}
 
-{% if hash.title == my_asset.slug %}
+{% if hash.title == my_asset.slug %}{{ hash }}:{{ data[hash] }}
     {% if hash.content %}
         {% assign my_input = hash.content %}
         {% assign my_data = my_hash | join: "." | prepend: 'site.data.' | append: '.' | append: my_asset.slug %}
