@@ -7,7 +7,7 @@
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"data": 
 
 {% assign data = site.data %}
-{% assign my_hash = my_asset.path | remove_first: "_" | split: "/" %}
+{% assign my_hash = my_asset.path | remove_first: "_" | split: "/" | pop %}
 {% for hash in my_hash %}{{ hash }}{% assign data = data[hash] %}{% endfor %}
 {% for hash in data %}
 
