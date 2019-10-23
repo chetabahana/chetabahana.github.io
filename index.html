@@ -85,10 +85,5 @@ partner6_src: /images/partners/stackoverflow.png
 {% for section in sections %}
 {% include_relative {{ section.path | remove_first: "_" | prepend: "_layouts/" | replace: ".md", ".html" }} %}
 {% endfor %}
-<ul>
-{% for t in site.config sort_natural %}
-  <li>{{ t }} : {{ site.config[t] }}</li>
-{% endfor %}
-</ul>
     </body>
 </html>
