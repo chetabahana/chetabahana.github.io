@@ -90,8 +90,8 @@ partner6_src: /images/partners/stackoverflow.png
 {% assign my_level = "assets/section/skema" | split: "/" %}
 {% assign my_size = my_level | size %}
 
-{% for i in my_level %}
-    {% assign my_data = my_data[i] %}
+{% for level in my_level %}
+    {% assign my_data = my_data[level] %}
 {% endfor %}
 
 {% for data in my_data %}
