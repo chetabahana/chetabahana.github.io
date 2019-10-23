@@ -85,18 +85,5 @@ partner6_src: /images/partners/stackoverflow.png
 {% for section in sections %}
 {% include_relative {{ section.path | remove_first: "_" | prepend: "_layouts/" | replace: ".md", ".html" }} %}
 {% endfor %}
-
-{% assign my_data = site.data %}
-{% assign my_level = "assets/section/skema" | split: "/" %}
-
-{% for level in my_level %}
-    {% assign my_data = my_data[level] %}
-{% endfor %}
-
-{% for data in my_data %}
-    {% if data.title == "flowchart" %}{% assign my_input = data.content %}% endif %}
-{% endfor %}
-    {{ my_input }}
-
     </body>
 </html>
