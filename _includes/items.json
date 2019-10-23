@@ -4,11 +4,7 @@
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}{{ item | jsonify }}: {{ my_asset[item] | jsonify }},{% endunless %}{% endfor %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"layout": {{ my_asset.layout | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"path": {{ my_asset.path | jsonify }},
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"data": 
-
-{% assign data = site.data %}
-{% assign my_hash = my_asset.path | remove_first: "_" | split: "/" | pop %}
-{% for hash in my_hash %}{% assign data = data[hash] %}{% endfor %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"data": {% assign data = site.data %}{% assign my_hash = my_asset.path | remove_first: "_" | split: "/" | pop %}{% for hash in my_hash %}{% assign data = data[hash] %}{% endfor %}
 {% for hash in data %}
 {{ my_asset.slug }} {{ hash.title }}
 {% if hash.title == my_asset.slug %}{{ hash }}:{{ data[hash] }}
