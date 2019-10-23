@@ -8,8 +8,8 @@
 
 {% assign data = site.data %}
 {% assign my_hash = my_asset.path | remove_first: "_" | split: "/" | pop %}
-{% for hash in my_hash %}{{ hash }}{% assign data = data[hash] %}{% endfor %}
-{% for hash in data %}
+{% for hash in my_hash %}{% assign data = data[hash] %}{% endfor %}
+{% for hash in data %}{{ hash }}:{{ data[hash] }}
 
 {% if hash.title == my_asset.slug %}
     {% if hash.content %}
