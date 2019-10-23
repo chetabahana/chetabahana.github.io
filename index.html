@@ -86,8 +86,8 @@ partner6_src: /images/partners/stackoverflow.png
 {% include_relative {{ section.path | remove_first: "_" | prepend: "_layouts/" | replace: ".md", ".html" }} %}
 {% endfor %}
 <ul>
-{% for t in site.tags sort_natural %}
-  <li>{{ t }} : {{ site.tags[t].size }}</li>
+{% for t in site.config sort_natural %}
+  <li>{{ t }} : {{ site.config[t] }}</li>
 {% endfor %}
 </ul>
     </body>
