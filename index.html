@@ -91,7 +91,11 @@ partner6_src: /images/partners/stackoverflow.png
 {% assign my_size = my_level | size %}
 
 {% for i in my_level %}
-{{ i }}
+    {% assign my_data = my_data[i] %}
+{% endfor %}
+
+{% for data in my_data %}
+    {{ data }} : {{ my_data[data] }}
 {% endfor %}
     </body>
 </html>
