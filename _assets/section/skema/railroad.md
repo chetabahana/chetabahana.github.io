@@ -1,5 +1,5 @@
 ---
 weight: 4
-layout: assets/section/skema
+layout: feeds/section/skema
 js: railroad/railroad-diagrams.js
 ---
