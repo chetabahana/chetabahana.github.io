@@ -49,7 +49,7 @@ form_engines:
 - formbucket
 
 collections:
-  assets:
+  feeds:
     output: true
     permalink: /:collection/:path/
 
@@ -59,13 +59,13 @@ defaults:
   -
     scope:
       path: ""
-      type: "assets"
+      type: "feeds"
     values:
       layout: "default"
 
 # Site info
 url: https://chetabahana.github.io
-base: _assets/section
+base: _feeds/section
 title: Chetabahana Project - A Way To Win The Market | GitHub Page
 
 # GitHub metadata
