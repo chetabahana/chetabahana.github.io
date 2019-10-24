@@ -2,4 +2,4 @@
 permalink: /feed.xml
 navbar: false
 ---
-{% include feed.xml %}
+{% include feeds.xml %}
