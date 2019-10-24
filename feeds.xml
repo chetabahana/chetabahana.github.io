@@ -1,5 +1,5 @@
 ---
-permalink: /feed.xml
 navbar: false
+permalink: /feed.xml
 ---
 {% include feeds.xml %}
