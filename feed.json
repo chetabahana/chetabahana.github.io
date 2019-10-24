@@ -1,4 +1,3 @@
 ---
 layout: feeds
 ---
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{
