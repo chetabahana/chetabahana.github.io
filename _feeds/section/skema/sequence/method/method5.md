@@ -9,6 +9,6 @@ label: Google-Trend-API
 tag_name: ubuntu
 run_time: /bin/python
 layout: feeds/section/skema/sequence/method
-redirect_from: /assets/skema/sequence/method/method5
+redirect_from: /feeds/skema/sequence/method/method5
 ---
 Portfolio->>Stok Barang: Google-Trend-API

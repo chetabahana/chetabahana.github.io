@@ -9,6 +9,6 @@ label: eShop SEO
 tag_name: ubuntu
 run_time: /bin/python
 layout: feeds/section/skema/sequence/method
-redirect_from: /assets/skema/sequence/method/method6
+redirect_from: /feeds/skema/sequence/method/method6
 ---
 Portfolio-->>Network: eShop SEO
