@@ -1,5 +1,0 @@
-{ from: "Alpha", to: "Beta" },
-{ from: "Alpha", to: "Gamma" },
-{ from: "Beta", to: "Beta" },
-{ from: "Gamma", to: "Delta" },
-{ from: "Delta", to: "Alpha" }
