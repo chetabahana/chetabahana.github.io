@@ -1,95 +1,43 @@
 {
     "title": "nodelinks",
-    "content": [ 
+    "node": [
         {
-            "node": [
-                {
-                    "key": "Alpha",
-                    "color": "lightblue" 
-                },
-                {
-                    "key": "Beta",
-                    "color": "orange" 
-                },
-                {
-                    "key": "Gamma",
-                    "color": "lightgreen" 
-                },
-                {
-                    "key": "Delta",
-                    "color": "pink" 
-                }
-            ]
-        }, 
+            "key": "Alpha",
+            "color": "lightblue" 
+        },
         {
-            "link": [
-                {
-                    "from": "Alpha",
-                    "to": "Beta" 
-                },
-                {
-                    "from": "Alpha",
-                    "to": "Gamma" 
-                },
-                {
-                    "from": "Beta",
-                    "to": "Beta" 
-                },
-                {
-                    "from": "Gamma",
-                    "to": "Delta" 
-                },
-                {
-                    "from": "Delta",
-                    "to": "Alpha" 
-                }
-            ]
+            "key": "Beta",
+            "color": "orange" 
+        },
+        {
+            "key": "Gamma",
+            "color": "lightgreen" 
+        },
+        {
+            "key": "Delta",
+            "color": "pink" 
         }
     ],
-   "input": [ 
+    "link": [
         {
-            "node": [
-                {
-                    "key": "Alpha",
-                    "color": "lightblue" 
-                },
-                {
-                    "key": "Beta",
-                    "color": "orange" 
-                },
-                {
-                    "key": "Gamma",
-                    "color": "lightgreen" 
-                },
-                {
-                    "key": "Delta",
-                    "color": "pink" 
-                }
-            ]
-        }, 
+            "from": "Alpha",
+            "to": "Beta" 
+        },
         {
-            "link": [
-                {
-                    "from": "Alpha",
-                    "to": "Beta" 
-                },
-                {
-                    "from": "Alpha",
-                    "to": "Gamma" 
-                },
-                {
-                    "from": "Beta",
-                    "to": "Beta" 
-                },
-                {
-                    "from": "Gamma",
-                    "to": "Delta" 
-                },
-                {
-                    "from": "Delta",
-                    "to": "Alpha" 
-                }
-            ]
+            "from": "Alpha",
+            "to": "Gamma" 
+        },
+        {
+            "from": "Beta",
+            "to": "Beta" 
+        },
+        {
+            "from": "Gamma",
+            "to": "Delta" 
+        },
+        {
+            "from": "Delta",
+            "to": "Alpha" 
         }
     ]
 }
