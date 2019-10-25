@@ -1,6 +1,6 @@
 {
     "title": "nodelinks",
-    "node": {
+    "node": [
         {
             "key": "Alpha",
             "color": "lightblue" 
@@ -17,8 +17,8 @@
             "key": "Delta",
             "color": "pink" 
         }
-    },
-    "link": {
+    ],
+    "link": [
         {
             "from": "Alpha",
             "to": "Beta" 
@@ -39,5 +39,5 @@
             "from": "Delta",
             "to": "Alpha" 
         }
-    }
+    ]
 }
