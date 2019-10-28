@@ -5,10 +5,10 @@
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"layout": {{ my_feed.layout | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"path": {{ my_feed.path | jsonify }},{% assign my_items = "" | split: "," %}{% for item in my_feed %}{% assign my_items = my_items | push:item %}{% endfor %}{% assign sorted_items = my_items | sort_natural %}{% for item in sorted_items %}{% unless my_atributs contains item %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}{{ item | jsonify }}: {{ my_feed[item] | jsonify }},{% endunless %}{% endfor %}
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"input": {{ my_input | jsonify }},,
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"query": {{ my_query | jsonify }},,
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"result": {{ my_result | jsonify }},,
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"output": {{ my_output | jsonify }},,
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"input": {{ my_input | jsonify }},
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"query": {{ my_query | jsonify }},
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"result": {{ my_result | jsonify }},
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"output": {{ my_output | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"data": {% assign my_data = null %}{% assign data = site.data %}{% assign my_hash = my_feed.path | remove_first: "_" | split: "/" | pop %}{% for hash in my_hash %}{% assign data = data[hash] %}{% endfor %}{% for hash in data %}{% if hash[1].title == my_feed.slug %}{% assign my_data = hash[1] %}{% assign my_feed_hash = my_hash | join: "." | prepend: 'site.data.' | append: '.' | append: my_feed.slug %}{% endif %}{% endfor %}{{ my_data | jsonify }},
 {% assign my_index_size = my_index | size %}{% if my_index_size > 0 %}{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"items": [{% for index in my_index %}{{ my_captures[index] }}{% unless forloop.last %},{% endunless %}{% endfor %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}]{% else %}{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"items": []{% endif %}
