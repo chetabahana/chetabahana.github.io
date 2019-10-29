@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-{% comment %}
+    <head>{% comment %}
 *
 *  This loop loops through a collection called `feeds` with category 'section'
 *  and sorts it by the front matter variable 'weight' and than render
 *  each of the {{ output }} with their own layout
 *
-{% endcomment %}
-{% assign sections = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'section'" %}
+{% endcomment %}{% assign sections = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'section'" %}
 {% for section in sections %}
 {{ section.output }}
 {% endfor %}
