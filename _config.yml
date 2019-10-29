@@ -66,8 +66,8 @@ defaults:
 # Site link
 base: _feeds/section
 url: https://chetabahana.github.io
+slogan_link: https://www.chetabahana.com/
 json_link: https://chetabahana.github.io/feed.json
-slogan_link: https://chetabahana.com/info/tentang-89.html
 
 # Site metadata
 # https://help.github.com/articles/repository-metadata-on-github-pages/
