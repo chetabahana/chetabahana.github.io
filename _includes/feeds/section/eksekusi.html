@@ -1,9 +1,9 @@
-        <div class="templatemo-blog" id="chetabahana-{{ section.title | downcase }}">
+        <div class="templatemo-blog" id="chetabahana-{{ page.title | downcase }}">
             <div class="container">
                 <div class="row">
                     <div class="templatemo-line-header" style="margin-top: 0px;" >
                         <div class="text-center">
-                            <h4>{{ section.title }}</h4>
+                            <h4>{{ page.title }}</h4>
                         </div>
                     </div>
                     <br class="clearfix"/>
@@ -36,4 +36,4 @@
                     </div> <!-- /.blog_post {{ post.weight }} -->{% endif %}{% endfor %}
                </div>
             </div>
-        </div><!-- /{{ section.title }}-->
+        </div><!-- /{{ page.title }}-->
