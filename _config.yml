@@ -68,7 +68,6 @@ base: _feeds/section
 url: https://chetabahana.github.io
 json_link: https://chetabahana.github.io/feed.json
 slogan_link: https://chetabahana.com/info/tentang-89.html
-menus: ['abstrak', 'skema', 'eksekusi', 'portfolio', 'network', 'publikasi', 'diskusi']
 
 # Site metadata
 # https://help.github.com/articles/repository-metadata-on-github-pages/
