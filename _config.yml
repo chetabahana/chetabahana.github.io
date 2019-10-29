@@ -63,16 +63,16 @@ defaults:
     values:
       layout: "feeds"
 
-# Site info
+# Site link
 base: _feeds/section
 url: https://chetabahana.github.io
 json_link: https://chetabahana.github.io/feed.json
 slogan_link: https://chetabahana.com/info/tentang-89.html
+
+# Site metadata
+# https://help.github.com/articles/repository-metadata-on-github-pages/
+repository: chetabahana/chetabahana.github.io
 title: Chetabahana Project - A Way To Win The Market | GitHub Page
 keywords: chetabahana, projek, toko online, market leader, e-shop, eshop, scripts, open source, github page
 slogan: We are providing an Integrated Open Source Project about The World of e-Commerce.
 description: Situs GitHub Toko Chetabahana | Projek prestisius dari Toko Chetabahana untuk e-Shop di Indonesia..
-
-# GitHub metadata
-# https://help.github.com/articles/repository-metadata-on-github-pages/
-repository: chetabahana/chetabahana.github.io
