@@ -71,4 +71,4 @@ redirect_from:
   - /00000/skema.json
   - /99999/skema.json
 ---
-{% for hash in site.data._feeds._section._skema %}{% if hash[1].title == "sequence" %}{{ hash[1].skema | strip_html | replace: "&amp;", "&" | replace: "&gt;", ">" | replace: "&lt;", "<" | replace: "&apos;", "'" | replace: '&quot;', '"' | replace: "‘", "'" | replace: "’", "'"}}}}{% endif %}{% endfor %}
+{% for hash in site.data._feeds._section._skema %}{% if hash[1].title == "sequence" %}{{ hash[1].skema | strip_html | replace: "&amp;", "&" | replace: "&gt;", ">" | replace: "&lt;", "<" | replace: "&apos;", "'" | replace: '&quot;', '"' | replace: "‘", "'" | replace: "’", "'"}}{% endif %}{% endfor %}
