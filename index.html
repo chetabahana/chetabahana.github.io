@@ -83,7 +83,7 @@ partner6_src: /images/partners/stackoverflow.png
 <html lang="en">
     <head>{% assign sections = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'section'" %}
 {% for section in sections %}
-{{ section.path }}
+{{ section.content }}
 {% endfor %}
     </body>
 </html>
