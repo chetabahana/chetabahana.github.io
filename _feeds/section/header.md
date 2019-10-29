@@ -2,6 +2,7 @@
 weight: 1
 category: section
 layout: feeds/section
+menus: ['abstrak', 'skema', 'eksekusi', 'portfolio', 'network', 'publikasi', 'diskusi']
 service_title0: abstrak
 service_title1: skema
 service_title2: eksekusi

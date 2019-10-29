@@ -33,7 +33,9 @@
                         </div>
                         <div class="navbar-collapse collapse" id="templatemo-nav-bar">
                             <ul class="nav navbar-nav navbar-right" style="margin-top: 40px;">
-                                <li class="active"><a href="#templatemo-top">Beranda</a></li>
+                                <li class="active"><a href="#templatemo-top">Beranda</a></li>{% for menu in page.menus %}
+{{ menu }}
+{% endfor %}
                                 <li><a href="#chetabahana-{{ page.service_title0 }}">{{ page.service_title0 }}</a></li>
                                 <li><a href="#chetabahana-{{ page.service_title1 }}">{{ page.service_title1 }}</a></li>
                                 <li><a href="#chetabahana-{{ page.service_title2 }}">{{ page.service_title2 }}</a></li>
