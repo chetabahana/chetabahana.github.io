@@ -1,15 +1,15 @@
-        <div class="templatemo-welcome" id="chetabahana-{{ section.title | downcase }}">
+        <div class="templatemo-welcome" id="chetabahana-{{ page.title | downcase }}">
             <div class="container">
                 <div class="templatemo-slogan text-center">
-                    <span class="txt_darkgrey">Welcome to </span><a href="{{ page.slogan_link }}">Chetabahana</a>
-                    <p class="txt_slogan"><i>{{ page.slogan }}</i></p>
+                    <span class="txt_darkgrey">Welcome to </span><a href="{{ site.slogan_link }}">Chetabahana</a>
+                    <p class="txt_slogan"><i>{{ site.slogan }}</i></p>
                 </div>
             </div>
         </div>
 
         <div class="templatemo-service">
             <div class="container">
-                <div class="row">{% assign title = section.title | downcase %}{% assign posts = site.posts | sort: 'weight' %}{% for post in posts %}{% if post.path contains title %}
+                <div class="row">{% assign title = page.title | downcase %}{% assign posts = site.posts | sort: 'weight' %}{% for post in posts %}{% if post.path contains title %}
                     <div class="col-md-4">
                         <div class="templatemo-service-item" >
                             <div>
@@ -25,4 +25,4 @@
                     </div>{% endif %}{% endfor %}
                 </div>
             </div><!-- /container -->
-        </div><!-- /{{ section.title }} -->
+        </div><!-- /{{ page.title }} -->

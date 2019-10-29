@@ -2,4 +2,5 @@
 weight: 2
 category: section
 layout: feeds/section
+slides: ['Chetabahana Project', 'An Open Source Project on GitHub<br>(We are on Construction)', 'A Way To Win The Market', 'Sebuah peta jalan menuju sukses<br>Strategi di bidang e-Commerce.', 'Networking With Us!', 'Terbuka bagi siapa saja<br>Bersama kita bisa!']
 ---

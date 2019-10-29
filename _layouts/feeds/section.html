@@ -1,0 +1,4 @@
+---
+menus: ['abstrak', 'skema', 'eksekusi', 'portfolio', 'network', 'publikasi', 'diskusi']
+---
+{% include {{ page.path | remove_first: "_" | replace: ".md", ".html" }} %}

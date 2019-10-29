@@ -1,1 +1,0 @@
-{% include {{ my_skema | append: "/" | append: my_feed.slug | append: ".json"}} %}
