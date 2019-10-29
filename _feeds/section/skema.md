@@ -71,4 +71,3 @@ redirect_from:
   - /00000/skema.json
   - /99999/skema.json
 ---
-A kind of development item lies a unified assignment in hexagonal form by six (6) corresponding sets while each sets pick a combination of six (6) routes with a pairing of six (6) to six (6) of all channels.
