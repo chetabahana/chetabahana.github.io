@@ -9,7 +9,7 @@
                     <br class="clearfix"/>
                 </div>
                 <div class="blog_box">
-{% assign title = section.title | downcase %}{% assign posts = site.posts | sort: 'weight' %}{% for post in posts %}{% if post.path contains title %}		
+{% assign title = page.title | downcase %}{% assign posts = site.posts | sort: 'weight' %}{% for post in posts %}{% if post.path contains title %}		
                     <div class="col-sm-5 col-md-6 blog_post">
                         <ul itemscope itemtype="http://schema.org/Article" class="list-inline">
                             <li class="col-md-4">
