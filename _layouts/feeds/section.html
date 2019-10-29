@@ -1,1 +1,1 @@
-{{ page.path }}
+{% include {{ page.path | remove_first: "_" | replace: ".md", ".html" }} %}
