@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>{% assign sections = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'section'" %}
+{% for section in sections %}
+{{ section.output }}
+{% endfor %}
+    </body>
+</html>
