@@ -9,7 +9,7 @@
 
         <div class="templatemo-service">
             <div class="container">
-                <div class="row">{% assign title = section.title | downcase %}{% assign posts = site.posts | sort: 'weight' %}{% for post in posts %}{% if post.path contains title %}
+                <div class="row">{% assign title = page.title | downcase %}{% assign posts = site.posts | sort: 'weight' %}{% for post in posts %}{% if post.path contains title %}
                     <div class="col-md-4">
                         <div class="templatemo-service-item" >
                             <div>
