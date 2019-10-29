@@ -61,7 +61,7 @@ defaults:
       path: ""
       type: "feeds"
     values:
-      layout: "default"
+      layout: "feeds"
 
 # Site info
 url: https://chetabahana.github.io
