@@ -15,16 +15,6 @@
 {% endfor %}
     </body>
 </html>
-{% if page.url == page.dir %}
-   {% assign dn1 = '.' | append: page.url | split: '/' %}
    {%- for each in site.html_pages -%}
-      {%- assign dn2 = '.' | append: each.url | split: '/' | pop -%}
-      {%- if dn2 == dn1 -%}
-         {% if each.url == each.dir %}
       <a href="{{ each.url | relative_url }}">{{ each.title }}</a></p>
-         {% else %}
-       <a href="{{ each.url | relative_url }}">{{ each.title }}</a></p>
-         {% endif %}
-      {%- endif -%}
    {%- endfor -%}
-{% endif %}
