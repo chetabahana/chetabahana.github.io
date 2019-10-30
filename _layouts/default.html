@@ -17,10 +17,9 @@
 *
 {% endcomment %}{% assign feeds = site.feeds | sort:0 %}{% for feed in feeds %}{% assign feed_size = feed.path | split: "/" | size %}{% if feed_size > my_size %}{% assign sizes = sizes | push:feed_size %}{% assign my_size = feed_size %}{% endif %}{% endfor %}{% comment %}
 *
-*  collect feeds base on weight (sort reverse)
+*  sort feeds base on weight (reverse order)
 *
-{% endcomment %}{% assign feeds = site.feeds | sort: 'weight' %}{% for size in sizes reversed %}{% for feed in feeds %}{% assign my_dir = feed.path | split: "/" | pop | join: "/" %}{% unless my_dir == my_base %}{% assign feed_size = feed.path | split: "/" | size %}{% if feed_size == size %}{% assign my_feeds = my_feeds | push:feed %}{% endif %}{% endunless %}{% endfor %}{% endfor %}{% for feed in my_feeds %}{{ feed.path }}
-{% endfor %}{% comment %}
+{% endcomment %}{% assign feeds = site.feeds | sort: 'weight' %}{% for size in sizes reversed %}{% for feed in feeds %}{% assign my_dir = feed.path | split: "/" | pop | join: "/" %}{% unless my_dir == my_base %}{% assign feed_size = feed.path | split: "/" | size %}{% if feed_size == size %}{% assign my_feeds = my_feeds | push:feed %}{% endif %}{% endunless %}{% endfor %}{% endfor %}{% comment %}
 *
 *  capture each outputs
 *
