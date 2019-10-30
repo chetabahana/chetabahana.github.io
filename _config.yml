@@ -53,6 +53,7 @@ collections:
     output: true
     permalink: /:collection/:path/
   includes:
+    permalink: /:collection/:path/
 
 # Default Setting
 # https://jekyllrb.com/docs/configuration/front-matter-defaults/
