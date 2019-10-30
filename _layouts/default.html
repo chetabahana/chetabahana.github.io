@@ -9,7 +9,7 @@
 *  To provide it with an online work you may see the running code here:
 *  https://github.com/chetabahana/chetabahana.github.io/blob/master/_layouts/default.html
 *
-{% endcomment %}{% assign sections = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'form'" %}
+{% endcomment %}{% assign sections = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'section'" %}
 {% for section in sections %}
 {{ section.output }}
 {% endfor %}
