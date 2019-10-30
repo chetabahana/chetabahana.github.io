@@ -1,7 +1,6 @@
 ---
 weight: 8
 category: section
-layout: feeds/section
 partner_alt[1]: partner 1
 partner1_alt: partner 1
 partner1_title: Our project on GitHub
