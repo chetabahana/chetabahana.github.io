@@ -19,7 +19,8 @@
 *
 *  collect feeds base on weight (sort reverse)
 *
-{% endcomment %}{% assign feeds = site.feeds | sort: 'weight' %}{% for size in sizes reversed %}{% for feed in feeds %}{% assign my_dir = feed.path | split: "/" | pop | join: "/" %}{% unless my_dir == my_base %}{% assign feed_size = feed.path | split: "/" | size %}{% if feed_size == size %}{% assign my_feeds = my_feeds | push:feed %}{% endif %}{% endunless %}{% endfor %}{% endfor %}{% for feed in my_feeds %}{{ feed.path }}{% endfor %}{% comment %}
+{% endcomment %}{% assign feeds = site.feeds | sort: 'weight' %}{% for size in sizes reversed %}{% for feed in feeds %}{% assign my_dir = feed.path | split: "/" | pop | join: "/" %}{% unless my_dir == my_base %}{% assign feed_size = feed.path | split: "/" | size %}{% if feed_size == size %}{% assign my_feeds = my_feeds | push:feed %}{% endif %}{% endunless %}{% endfor %}{% endfor %}{% for feed in my_feeds %}{{ feed.path }}
+{% endfor %}{% comment %}
 *
 *  capture each outputs
 *
