@@ -1,5 +1,4 @@
 ---
 layout: page
 ---
-{% assign items = "" | split: "," %}{% assign my_size = page.path | split: '/' | size | plus:1 %}{% assign my_path = page.path | split: '/' | pop | join: '/' | append: '/' | append: page.slug | append: '/' %}{% assign feeds = site.feeds | sort: 'weight' | where_exp:'item', 'item.path contains my_path' %}{% for feed in feeds %}{% assign feed_size = feed.path | split: '/' | size %}{% if feed_size == my_size %}{% assign items = items | push:feed %}{% endif %}{% endfor %}_layouts\doc.html
-{% for item in items %}{{ item.path }}{% if item.slug == "sequence" %}{{ item.path }}{% endif %}{% endfor %}
+{% assign items = "" | split: "," %}{% assign my_size = page.path | split: '/' | size | plus:1 %}{% assign my_path = page.path | split: '/' | pop | join: '/' | append: '/' | append: page.slug | append: '/' %}{% assign feeds = site.feeds | sort: 'weight' | where_exp:'item', 'item.path contains my_path' %}{% for feed in feeds %}{% assign feed_size = feed.path | split: '/' | size %}{% if feed_size == my_size %}{% assign items = items | push:feed %}{% endif %}{% endfor %}{% for item in items %}{% if item.slug == "sequence" %}{{ item.path }}{{ item.output }}{% endif %}{% endfor %}
