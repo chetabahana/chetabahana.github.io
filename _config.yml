@@ -52,7 +52,6 @@ collections:
   feeds:
     output: true
     permalink: /:collection/:path/
-  includes:
 
 # Default Setting
 # https://jekyllrb.com/docs/configuration/front-matter-defaults/
@@ -63,12 +62,6 @@ defaults:
       type: "feeds"
     values:
       layout: "feeds"
-  -
-    scope:
-      path: ""
-      type: "includes"
-    values:
-      layout: null
 
 # Site link
 base: _feeds/section
