@@ -9,7 +9,13 @@
 *  To provide it with an online work you may see the running code here:
 *  https://github.com/chetabahana/chetabahana.github.io/blob/master/_layouts/default.html
 *
-{% endcomment %}{% assign sections = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'section'" %}
+*  assign the required variables
+*
+{% endcomment %}{% assign my_atributs = "weight, title, next, content, output, previous, relative_path, id, collection, excerpt, category, categories, ext, layout, tags, path, url, draft, slug" | split:", " %}{% assign my_size = 2 %}{% assign my_tab = "    " %}{% assign my_base = "_feeds/section" %}{% assign my_skema = my_base | remove_first: "_" | append: "/skema" %}{% assign my_path = "" | split: "," %}{% assign feeds = site.feeds | sort:0 %}{% comment %}
+*
+*  get current size of json 
+*
+{% endcomment %}{% for feed in feeds %}{% assign my_split = feed.path | split: "/" %}{% assign size = my_split | size %}{% if size > my_size %}{% assign my_path = my_path | push:size %}{% assign my_size = size %}{% endif %}{% endfor %}{% assign sections = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'section'" %}
 {% for section in sections %}
 {{ section.output }}
 {% endfor %}
