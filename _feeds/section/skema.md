@@ -1,5 +1,6 @@
 ---
 weight: 4
+layout: doc
 category: section
 redirect_from:
   - /skema.json
