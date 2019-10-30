@@ -19,7 +19,7 @@
 *
 *  sort feeds base on weight (reverse order)
 *
-{% endcomment %}{% assign feeds = site.feeds | sort: 'weight' %}{% for size in sizes reversed %}{% for feed in feeds %}{% assign my_dir = feed.path | split: "/" | pop | join: "/" %}{% unless my_dir == my_base %}{% assign feed_size = feed.path | split: "/" | size %}{% if feed_size == size %}{% assign my_feeds = my_feeds | push:feed %}{% endif %}{% endunless %}{% endfor %}{% endfor %}{% comment %}
+{% endcomment %}{% assign feeds = site.feeds | sort: 'weight' %}{% for size in sizes reversed %}{% for feed in feeds %}{% if feed.path == '_feeds/section/skema/sequence.md' %}{{ feed.path }}{{ feed.output }}{% endif %}{% assign my_dir = feed.path | split: "/" | pop | join: "/" %}{% unless my_dir == my_base %}{% assign feed_size = feed.path | split: "/" | size %}{% if feed_size == size %}{% assign my_feeds = my_feeds | push:feed %}{% endif %}{% endunless %}{% endfor %}{% endfor %}{% comment %}
 *
 *  capture each outputs
 *
