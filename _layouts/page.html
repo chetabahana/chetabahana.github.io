@@ -1,2 +1,1 @@
-_layouts\page.html
-{{ content }}
+{% if page.category %}{% include {{ page.path | remove_first: "_" | replace: ".md", ".html" }} %}{% endif %}
