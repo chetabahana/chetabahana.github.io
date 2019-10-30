@@ -62,6 +62,7 @@ defaults:
       type: "feeds"
     values:
       layout: "feeds"
+      includes: false
 
 # Site link
 base: _feeds/section
