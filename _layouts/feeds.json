@@ -1,0 +1,4 @@
+{% capture snippet_content %}{% include snippet %}{% endcapture %}
+{% unless snippet_content contains "Liquid error" %}
+  {{ snippet_content }}
+{% endunless %}
