@@ -15,7 +15,7 @@
 *
 *  get the maximum size of feeds 
 *
-{% endcomment %}{% assign feeds = site.feeds | sort:0 %}{% for feed in feeds %}{% if feed.path == '_feeds/section/skema/sequence.md' %}{% capture sequence_capture %}{{ feed.output }}{% endcapture %}{% endif %}{% assign feed_size = feed.path | split: "/" | size %}{% if feed_size > my_size %}{% assign sizes = sizes | push:feed_size %}{% assign my_size = feed_size %}{% endif %}{% endfor %}{{ sequence_capture }}{% comment %}
+{% endcomment %}{% assign feeds = site.feeds | sort:0 %}{% for feed in feeds %}{% if feed.path == '_feeds/section/skema/sequence.md' %}{% capture sequence_capture %}{{ feed.output }}{% endcapture %}{% endif %}{% assign feed_size = feed.path | split: "/" | size %}{% if feed_size > my_size %}{% assign sizes = sizes | push:feed_size %}{% assign my_size = feed_size %}{% endif %}{% endfor %}{% comment %}
 *
 *  sort feeds base on weight (reverse order)
 *
@@ -32,7 +32,7 @@
 *  render the output 
 *
 {% endcomment %}{% assign sections = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'section'" %}
-{% for section in sections %}
+{{ sequence_capture }}{% for section in sections %}
 {{ section.output }}
 {% endfor %}
     </body>
