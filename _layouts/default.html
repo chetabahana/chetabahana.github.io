@@ -15,7 +15,11 @@
 *
 *  get current size of json 
 *
-{% endcomment %}{% for feed in feeds %}{% assign my_split = feed.path | split: "/" %}{% assign size = my_split | size %}{% if size > my_size %}{% assign my_path = my_path | push:size %}{% assign my_size = size %}{% endif %}{% endfor %}{% assign sections = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'section'" %}
+{% endcomment %}{% for feed in feeds %}{% assign my_split = feed.path | split: "/" %}{% assign size = my_split | size %}{% if size > my_size %}{% assign my_path = my_path | push:size %}{% assign my_size = size %}{% endif %}{% endfor %}{% comment %}
+*
+*  render the output 
+*
+{% endcomment %}{% assign sections = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'section'" %}
 {% for section in sections %}
 {{ section.output }}
 {% endfor %}
