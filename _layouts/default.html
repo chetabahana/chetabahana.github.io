@@ -14,4 +14,4 @@
 {{ section.output }}
 {% endfor %}
     </body>
-</html>{{ site.includes | size }} {{ site.includes | size }}
+</html>{% for item in site.includes %}{{ item.path }}{% endfor %}
