@@ -53,6 +53,7 @@ collections:
     output: true
     permalink: /:collection/:path/
   includes:
+    output: true
     permalink: /:collection/:path/
 
 # Default Setting
