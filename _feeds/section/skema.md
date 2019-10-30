@@ -71,3 +71,4 @@ redirect_from:
   - /00000/skema.json
   - /99999/skema.json
 ---
+_feeds\section\skema.md
