@@ -71,4 +71,3 @@ redirect_from:
   - /00000/skema.json
   - /99999/skema.json
 ---
-{{ sequence_capture }}
