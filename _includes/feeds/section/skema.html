@@ -12,7 +12,7 @@
                             <option value="priority" disabled="disabled">Urgensi</option>
                         </select>
                         <p>Tipe Diagram: <a id="type" href="/sequence" style="text-transform:capitalize;" target='_blank'>sequence</a></p>
-                        <p id="tautan">Tautan: <a id="js" href="/skema/js/draw.js" style="text-transform;" target='_blank'>js</a> / <a id="json" href="/skema.json" style="text-transform" target='_blank'>json</a> / <a id="link" href="/feed.json" style="text-transform" target='_blank'>link</a> / <a id="path" href="/feed.json" style="text-transform" target='_blank'>path</a> / <a id="redirect_from" href="/feed.json" style="text-transform" target='_blank'>from</a> / <a id="to" href="/feed.json" style="text-transform" target='_blank'>to</a></p>
+                        <p id="tautan">Tautan: <a id="js" href="/skema/js/draw.js" style="text-transform;" target='_blank'>js</a> / <a id="json" href="/skema.json" style="text-transform" target='_blank'>json</a> / <a id="link" href="/feed.json" style="text-transform" target='_blank'>link</a> / <a id="path" href="/feed.json" style="text-transform" target='_blank'>path</a> / <a id="redirect_from" href="/feed.json" style="text-transform" target='_blank'>from</a> / <a id="to" href="/feed.json" style="text-transform" target='_blank'>to</a></p>sequence_capture{{ sequence_capture }}
                         <div class="editor-wrapper">
                             <div id="editor" class="editor">{% for hash in site.data._feeds._section._skema %}{% if hash[1].title == "sequence" %}{{ hash[1].skema }}{% endif %}{% endfor %}</div>
                         </div>
