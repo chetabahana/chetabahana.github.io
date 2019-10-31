@@ -11,6 +11,6 @@ layout: default
 *  https://github.com/chetabahana/chetabahana.github.io/blob/master/index.html
 *
 {% endcomment %}{% assign sections = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'section'" %}
-{% include_relative _layouts/feed.json %}{% for section in sections %}
+{% for section in sections %}
 {{ section.output }}
 {% endfor %}
