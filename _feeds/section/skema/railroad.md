@@ -6,5 +6,33 @@ redirect_from:
   - /0001/skema.json
   - /0002/skema.json
   - /0003/skema.json
+  - /0004/skema.json
+  - /0005/skema.json
+  - /0006/skema.json
+  - /0007/skema.json
+  - /0008/skema.json
+  - /0009/skema.json
+  - /0010/skema.json
+  - /0011/skema.json
+  - /0012/skema.json
+  - /0013/skema.json
+  - /0014/skema.json
+  - /0015/skema.json
+  - /0016/skema.json
+  - /0017/skema.json
+  - /0018/skema.json
+  - /0019/skema.json
+  - /0020/skema.json
+  - /0021/skema.json
+  - /0022/skema.json
+  - /0023/skema.json
+  - /0024/skema.json
+  - /0025/skema.json
+  - /0026/skema.json
+  - /0027/skema.json
+  - /0028/skema.json
+  - /0029/skema.json
+  - /0030/skema.json
+  - /0031/skema.json
   - /9999/skema.json
 ---
