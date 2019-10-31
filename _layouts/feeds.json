@@ -3,12 +3,11 @@ menus: ['abstrak', 'skema', 'eksekusi', 'portfolio', 'network', 'publikasi', 'di
 ---
 {% comment %}
 *
-*  This loop loops through a collection called `feeds` with category 'section'
-*  and sorts it by the front matter variable 'weight' and than render
-*  each of the {{ output }} with their own layout
+*  This layout loops through a collection called `feeds` from redirection
+*  and collect site data and page for inclusion to the output
 *
 *  You may see the running code here:
-*  https://chetabahana.github.io/feed.json
+*  https://chetabahana.github.io/skema.json
 *
 {% endcomment %}{% if page.redirect.from %}{% assign feed = site.feeds | where_exp:'item', 'item.redirect_from contains page.redirect.from' %}{% assign my_feed = feed[0] %}{% else %}{% assign my_feed = page %}{% endif %}{% comment %}
 *
