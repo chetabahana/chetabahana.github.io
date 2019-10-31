@@ -65,7 +65,6 @@ defaults:
       includes: false
 
 # Site link
-val: feeds
 base: _feeds/section
 url: https://chetabahana.github.io
 slogan_link: https://www.chetabahana.com/
