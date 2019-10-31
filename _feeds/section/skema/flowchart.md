@@ -1,5 +1,6 @@
 ---
 weight: 1
+category: form
 js: flowchart/flowchart-latest.js
 redirect_from:
   - /0/skema.json
@@ -10,4 +11,6 @@ redirect_from:
   - /5/skema.json
   - /6/skema.json
   - /7/skema.json
+  - /8/skema.json
+  - /9/skema.json
 ---
