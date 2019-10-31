@@ -9,11 +9,11 @@
 *
 *  assign the required variables
 *
-{% endcomment %}{% unless page.layout == 'default' %}{{ content }}{% endunless %}{% assign my_atributs = "weight, title, next, content, output, previous, relative_path, id, collection, excerpt, category, categories, ext, layout, tags, path, url, draft, slug" | split:", " %}{% assign my_captures = "" | split: "," %}{% assign my_feeds = "" | split: "," %}{% assign my_size = 2 %}{% assign my_tab = "    " %}{% assign my_base = "_feeds/section" %}{% assign my_skema = my_base | remove_first: "_" | append: "/skema" %}{% assign sizes = "" | split: "," %}{% comment %}
+{% endcomment %}{% unless page.layout == 'default' %}{{ content }}{% endunless %}{% assign my_atributs = "weight, title, next, content, output, previous, relative_path, id, collection, excerpt, category, categories, ext, layout, tags, path, url, draft, slug" | split:", " %}{% assign my_size = 2 %}{% assign my_tab = "    " %}{% assign my_base = "_feeds/section" %}{% assign my_skema = my_base | remove_first: "_" | append: "/skema" %}{% assign my_path = "" | split: "," %}{% comment %}
 *
 *  get the maximum size of feeds 
 *
-{% endcomment %}{% assign feeds = site.feeds | sort:0 %}{% for feed in feeds %}{% if feed.path == '_feeds/section/skema/sequence.md' %}{% capture sequence_capture %}{{ feed.output }}{% endcapture %}{% endif %}{% assign feed_size = feed.path | split: "/" | size %}{% if feed_size > my_size %}{% assign sizes = sizes | push:feed_size %}{% assign my_size = feed_size %}{% endif %}{% endfor %}{% comment %}
+{% endcomment %}{% assign sizes = "" | split: "," %}{% assign feeds = site.feeds | sort:0 %}{% for feed in feeds %}{% if feed.path == '_feeds/section/skema/sequence.md' %}{% capture sequence_capture %}{{ feed.output }}{% endcapture %}{% endif %}{% assign feed_size = feed.path | split: "/" | size %}{% if feed_size > my_size %}{% assign sizes = sizes | push:feed_size %}{% assign my_size = feed_size %}{% endif %}{% endfor %}{% comment %}
 *
 *  sort feeds base on weight (reverse order)
 *
@@ -21,7 +21,7 @@
 *
 *  capture each outputs
 *
-{% endcomment %}{% for feed in my_feeds %}{% assign my_split = feed.path | split: "/" %}{% assign feed_size = my_split | size %}{% assign my_part = my_split | size | minus:2 %}{% assign my_size = my_split | size | times:2 | minus:4 %}{% assign my_dir = my_split[my_part] | prepend: "/" | append: "/" %}{% assign my_title = feed.title | downcase | prepend: my_dir | append: "/" %}{% assign my_index = "" | split: "," %}{% for my_push in my_feeds %}{% assign my_num = my_push.path | split: "/" | size | minus:feed_size %}{% if my_num == 1 and my_push.path contains my_title %}{% assign my_index = my_index | push:forloop.index0 %}{% endif %}{% endfor %}{% capture my_capture %}{% unless page.layout == 'default' %}{% include feeds.json %}{% endunless %}{% endcapture %}{% assign my_captures = my_captures | push:my_capture %}{% endfor %}{% comment %}
+{% endcomment %}{% assign my_captures = "" | split: "," %}{% assign my_feeds = "" | split: "," %}{% for feed in my_feeds %}{% assign my_split = feed.path | split: "/" %}{% assign feed_size = my_split | size %}{% assign my_part = my_split | size | minus:2 %}{% assign my_size = my_split | size | times:2 | minus:4 %}{% assign my_dir = my_split[my_part] | prepend: "/" | append: "/" %}{% assign my_title = feed.title | downcase | prepend: my_dir | append: "/" %}{% assign my_index = "" | split: "," %}{% for my_push in my_feeds %}{% assign my_num = my_push.path | split: "/" | size | minus:feed_size %}{% if my_num == 1 and my_push.path contains my_title %}{% assign my_index = my_index | push:forloop.index0 %}{% endif %}{% endfor %}{% capture my_capture %}{% unless page.layout == 'default' %}{% include feeds.json %}{% endunless %}{% endcapture %}{% assign my_captures = my_captures | push:my_capture %}{% endfor %}{% comment %}
 *
 *  index the output 
 *
