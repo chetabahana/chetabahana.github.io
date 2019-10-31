@@ -31,10 +31,7 @@
 *
 *  render the output 
 *
-{% endcomment %}{% assign sections = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'section'" %}
-{% capture output %}{% for section in sections %}
-{{ section.output }}
-{% endfor %}{% endcapture %}{% assign output = output | replace: "sequence_capture", sequence_capture %}{% comment %}
+{% endcomment %}{% assign output = content | replace: "sequence_capture", sequence_capture %}{% comment %}
 *
 *  send the output 
 *
