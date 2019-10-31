@@ -1,2 +1,1 @@
-test by
-_layouts\test.json
+{% if page.category %}{% include {{ page.path | remove_first: "_" | replace: ".md", ".html" }} %}{% endif %}
