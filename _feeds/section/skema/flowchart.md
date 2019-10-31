@@ -11,4 +11,6 @@ redirect_from:
   - /5/skema.json
   - /6/skema.json
   - /7/skema.json
+  - /8/skema.json
+  - /9/skema.json
 ---
