@@ -1,1 +1,4 @@
+---
+layout: feeds
+---
 {% assign feed = site.feeds | where_exp:"item", "item.redirect_from contains page.redirect.from" %}{{ feed[0].path }}
