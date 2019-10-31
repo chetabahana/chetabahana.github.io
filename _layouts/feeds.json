@@ -10,7 +10,7 @@ menus: ['abstrak', 'skema', 'eksekusi', 'portfolio', 'network', 'publikasi', 'di
 *  You may see the running code here:
 *  https://chetabahana.github.io/feed.json
 *
-{% endcomment %}{% if page.redirect.from %}{% assign feed = site.feeds | where_exp:'item', 'item.redirect_from contains page.redirect.from' %}{% assign my_feed = feed[0] %}{{ my_feed.category  }}{% else %}{% assign my_feed = page %}{% endif %}{% comment %}
+{% endcomment %}{% if page.redirect.from %}{% assign feed = site.feeds | where_exp:'item', 'item.redirect_from contains page.redirect.from' %}{% assign my_feed = feed[0] %}{% else %}{% assign my_feed = page %}{% endif %}{% comment %}
 *
 *  assign the hash variables
 *
