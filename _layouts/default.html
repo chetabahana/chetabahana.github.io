@@ -32,7 +32,8 @@
 *  render the output 
 *
 {% endcomment %}{% assign sections = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'section'" %}
-{{ sequence_capture }}{% capture output %}{% for section in sections %}{{ section.output }}
-{% endfor %}{% endcapture %}{{ output }}
+{% capture output %}{% for section in sections %}{{ section.output }}
+{% endfor %}{% endcapture %}{% assign output = output | replace: "sequence_capture", sequence_capture %}
+{{ output }}
     </body>
 </html>
