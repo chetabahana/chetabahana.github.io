@@ -1,1 +1,1 @@
-{% if page.redirect.from %}{{ data }}{% else %}{{ data.skema }}{% endif %}
+{% if page.redirect.from %}{{ data | jsonify}}{% else %}{{ data.skema }}{% endif %}
