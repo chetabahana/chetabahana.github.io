@@ -31,10 +31,10 @@
 *
 *  render the output 
 *
-{% endcomment %}{% assign output = content | replace: "sequence_capture", sequence_capture %}{% comment %}
+{% endcomment %}{% assign content = content | replace: "sequence_capture", sequence_capture %}{% comment %}
 *
 *  send the output 
 *
-{% endcomment %}{{ output }}
+{% endcomment %}{{ content }}
     </body>
 </html>
