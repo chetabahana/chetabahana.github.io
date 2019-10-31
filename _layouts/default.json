@@ -1,4 +1,4 @@
-{{page.slug}}{% comment %}
+{{page.path}}{% comment %}
 *
 *  This loop loops through a collection called `feeds` with category 'section'
 *  and sorts it by the front matter variable 'weight' and than render
