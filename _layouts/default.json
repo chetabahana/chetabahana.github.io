@@ -30,7 +30,8 @@
 *
 *  render the output 
 *
-{% endcomment %}{% if page.path != 'index.html' %}{% include feeds.json %}{{ my_tab }}{{ my_tab }}}{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}{% if page.path == 'index.html' %}{% assign content = content | replace: "sequence_capture", sequence_capture %}{{ content }}{% else %}
+{% endcomment %}{% if page.path != 'index.html' %}{% include feeds.json %}{{ my_tab }}{{ my_tab }}}{% unless forloop.last %},
+{% endunless %}{% endif %}{% endfor %}{% if page.path == 'index.html' %}{% assign content = content | replace: "sequence_capture", sequence_capture %}{{ content }}{% else %}
 {{ my_tab }}]
 }
 {% endif %}
