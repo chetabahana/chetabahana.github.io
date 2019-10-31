@@ -1,1 +1,1 @@
-{% assign site_items = site.feeds | where_exp:"item", "item.redirect_from contains page.redirect.from" %}{% capture my_weight %}{{ site_items[0].weight }}{% endcapture %}{% capture my_section %}{{ include feeds/section.json }}{% endcapture %}{{ my_section | strip_html | replace: "&amp;", "&" | replace: "&gt;", ">" | replace: "&lt;", "<" | replace: "&apos;", "'" | replace: '&quot;', '"' | replace: "‘", "'" | replace: "’", "'"}}
+{% assign feed = site.feeds | where_exp:"item", "item.redirect_from contains page.redirect.from" %}{{ feed[0].path }}
