@@ -1,5 +1,6 @@
 ---
 weight: 3
+category: form
 js: nodelinks/release/go.js
 redirect_from:
   - /000/skema.json

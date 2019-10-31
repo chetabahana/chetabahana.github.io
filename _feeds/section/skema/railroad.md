@@ -1,5 +1,6 @@
 ---
 weight: 4
+category: form
 js: railroad/railroad-diagrams.js
 redirect_from:
   - /0000/skema.json
