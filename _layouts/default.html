@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{% assign site.val = "test" %}{{ site.val }}<!DOCTYPE html>
 <html lang="en">
     <head>{% comment %}
 *
@@ -32,7 +32,7 @@
 *  render the output 
 *
 {% endcomment %}{% assign sections = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'section'" %}
-{% assign site.val = "test" %}{{ site.val }}{% for section in sections %}{% for section in sections %}
+{% for section in sections %}{% for section in sections %}
 {{ section.output }}
 {% endfor %}
     </body>
