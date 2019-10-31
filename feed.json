@@ -1,3 +1,12 @@
 ---
 layout: feed
 ---
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "{{ site.title | xml_escape }}",
+    "description": {{ site.description | jsonify }},
+    "home_page_url": "{{ "/" | absolute_url }}",
+    "feed_url": "{{ page.url | absolute_url }}",{% if page.redirect.from %}
+    "redirect_from": "{{ page.redirect.from | absolute_url }}",{% endif %}
+    "user_comment": "This feed allows you to read the skema from this site in any feed readers that support JSON-Feed format.",
+    "items": [
