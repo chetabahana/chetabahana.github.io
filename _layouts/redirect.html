@@ -1,4 +1,13 @@
 ---
 layout: feeds
 ---
-{% assign feed = site.feeds | where_exp:"item", "item.redirect_from contains page.redirect.from" %}{{ feed[0].path }}
+{% comment %}
+*
+*  This loop loops through a collection called `feeds` with category 'section'
+*  and sorts it by the front matter variable 'weight' and than render
+*  each of the {{ output }} with their own layout
+*
+*  You may see the running code here:
+*  https://chetabahana.github.io/_layout/redirect.html
+*
+{% endcomment %}
