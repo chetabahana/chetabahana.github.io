@@ -30,6 +30,6 @@
 *
 *  render the output 
 *
-{% endcomment %}{% unless page.slug == 'index' %}{% include feeds.json %}{{ my_tab }}{{ my_tab }}}{% unless forloop.last %},{% endunless %}{% endunless %}{% endfor %}{% unless page.slug == 'index' %}
+{% endcomment %}{% unless page.slug == 'index' %}{% include feeds.json %}{{ my_tab }}{{ my_tab }}}{% unless forloop.last %},{% endunless %}{% endunless %}{% endfor %}{% if page.slug == 'feed' %}
 {{ my_tab }}]
-}{% else %}{% assign content = content | replace: "sequence_capture", sequence_capture %}{{ content }}{% endunless %}
+}{% else %}{% assign content = content | replace: "sequence_capture", sequence_capture %}{{ content }}{% endif %}
