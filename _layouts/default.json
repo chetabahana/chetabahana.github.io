@@ -7,9 +7,20 @@
 *  To provide it with an online work you may see the running code here:
 *  https://github.com/chetabahana/chetabahana.github.io/blob/master/_layouts/default.json
 *
+{% endcomment %}{% if page.path != 'index.html' %}{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "{{ site.title | xml_escape }}",
+    "description": {{ site.description | jsonify }},
+    "home_page_url": "{{ "/" | absolute_url }}",
+    "feed_url": "{{ page.url | absolute_url }}",{% if page.redirect.from %}
+    "redirect_from": "{{ page.redirect.from | absolute_url }}",{% endif %}
+    "user_comment": "This feed allows you to read the skema from this site in any feed readers that support JSON-Feed format",
+    "items": [
+{% endif %}{% comment %}
+*
 *  assign the required variables
 *
-{% endcomment %}{% if page.path != 'index.html' %}{{ content }}{% endif %}{% assign my_atributs = "weight, title, next, content, output, previous, relative_path, id, collection, excerpt, category, categories, ext, layout, tags, path, url, draft, slug" | split:", " %}{% assign my_size = 2 %}{% assign my_tab = "    " %}{% assign my_base = "_feeds/section" %}{% assign my_skema = my_base | remove_first: "_" | append: "/skema" %}{% assign my_path = "" | split: "," %}{% comment %}
+{% endcomment %}{% assign my_atributs = "weight, title, next, content, output, previous, relative_path, id, collection, excerpt, category, categories, ext, layout, tags, path, url, draft, slug" | split:", " %}{% assign my_size = 2 %}{% assign my_tab = "    " %}{% assign my_base = "_feeds/section" %}{% assign my_skema = my_base | remove_first: "_" | append: "/skema" %}{% assign my_path = "" | split: "," %}{% comment %}
 *
 *  get the maximum size of feeds 
 *
