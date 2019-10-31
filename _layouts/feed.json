@@ -33,4 +33,8 @@
 *
 {% endcomment %}{% unless page.layout == 'default' %}{% include feeds.json %}{{ my_tab }}{{ my_tab }}}{% unless forloop.last %},{% endunless %}{% endunless %}{% endfor %}{% unless page.layout == 'default' %}
 {{ my_tab }}]
-}{% endunless %}
+}{% endunless %}{% assign content = content | replace: "sequence_capture", sequence_capture %}{% comment %}
+*
+*  send the output 
+*
+{% endcomment %}{{ content }}
