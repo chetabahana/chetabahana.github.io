@@ -34,5 +34,13 @@ redirect_from:
   - /0029/skema.json
   - /0030/skema.json
   - /0031/skema.json
+  - /0032/skema.json
+  - /0033/skema.json
+  - /0034/skema.json
+  - /0035/skema.json
+  - /0036/skema.json
+  - /0037/skema.json
+  - /0038/skema.json
+  - /0039/skema.json
   - /9999/skema.json
 ---
