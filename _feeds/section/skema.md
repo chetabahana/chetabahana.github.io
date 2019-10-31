@@ -1,7 +1,6 @@
 ---
 weight: 4
 category: section
-layout: feeds/section
 redirect_from:
   - /skema.json
   - /0/skema.json

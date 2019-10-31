@@ -1,6 +1,5 @@
 ---
 weight: 2
-layout: feeds/section/skema
-permalink: /feeds/skema/sequence.json
+category: form
 js: sequence/js/sequence-diagram-snap-min.js
 ---

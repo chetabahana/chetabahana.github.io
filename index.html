@@ -1,3 +1,7 @@
 ---
 layout: default
 ---
+{% assign sections = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'section'" %}
+{% for section in sections %}
+{{ section.output }}
+{% endfor %}
