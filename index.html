@@ -19,6 +19,6 @@ layout: default
 {% endfor %}
     </body>
 </html>
-{% assign my_items = site.github.public_repositories %}
-{% for item in my_items %}{{ my_items[item] | neat_json}}
+{% assign my_items = site.github.public_repositories %}{% for item in my_items %}
+{{ my_items[item] | pretty_json }}
 {% endfor %}
