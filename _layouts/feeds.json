@@ -21,7 +21,7 @@ menus: ['abstrak', 'skema', 'eksekusi', 'portfolio', 'network', 'publikasi', 'di
 *
 *  collect public data
 *
-{% endcomment %}{% assign repos = "" | split: "," %}{% assign my_repo = site.github.public_repositories %}{% for item in my_repo %}{% assign repos = repos| push:item.name %}{% endfor %}{% assign data = data | push:repos %}{% comment %}
+{% endcomment %}{% assign repos = "" | split: "," %}{% assign my_repo = site.github.public_repositories %}{% for item in my_repo %}{% assign repos = repos | push:item.name %}{% endfor %}{% comment %}
 *
 *  get page for inclusion
 *
