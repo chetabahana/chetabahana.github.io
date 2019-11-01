@@ -4,8 +4,8 @@
 *  and sorts it by the front matter variable 'weight' and than render
 *  each of the {{ output }} with their own layout
 *
-*  To provide it with an online work you may see the running code here:
-*  https://github.com/chetabahana/chetabahana.github.io/blob/master/_layouts/default.json
+*  You may see the running code here:
+*  https://chetabahana.github.io/feed.json
 *
 {% endcomment %}{% if page.path != 'index.html' %}{
     "version": "https://jsonfeed.org/version/1",
