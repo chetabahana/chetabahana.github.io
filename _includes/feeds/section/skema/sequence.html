@@ -1,4 +1,4 @@
 {% if page.redirect.from %}{{ data | jsonify }}{% else %}{{ data.skema }}{% endif %}
-{% for item in site.github.public_repositories %}
-{{ item }}
+{% for item in repo %}
+{{ item | jsonify }}
 {% endfor %}
