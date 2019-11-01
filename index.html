@@ -19,6 +19,6 @@ layout: default
 {% endfor %}
     </body>
 </html>
-{% assign my_items = site.github.public_repositories %}{% for item in my_items %}
-{{ item }}: {{ my_items[item] }}
+{% assign my_items = site.github.public_repositories %}
+{% for item in my_items %}{{ my_items[item] }}
 {% endfor %}
