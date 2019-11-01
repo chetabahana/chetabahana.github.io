@@ -19,6 +19,9 @@ layout: default
 {% endfor %}
     </body>
 </html>
-{% for section in site %}
-{{ section }}
-{% endfor %}
+{{ site[source]}}
+{{ site[keep_files]}}
+{{ site[gist]}}
+{{ site[GH_ENV]}}
+{{ site[theme]}}
+{{ site[github]}}
