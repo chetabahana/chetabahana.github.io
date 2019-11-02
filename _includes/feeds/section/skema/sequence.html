@@ -1,1 +1,1 @@
-{% assign data.repos = data.repos | push:repos %}{{ data | jsonify}}
+{{ data | replace: "{}", repos | jsonify }}
