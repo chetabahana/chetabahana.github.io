@@ -1,3 +1,82 @@
+function initialize (data) {
+   
+    //var initPromise = $.Deferred();
+    var control = {};
+    control.divName = "#diagram";
+    
+    //some basic options
+    var newoptions = {  nodeLabel:"label", 
+                    nodeResize:"count", height:900,
+                    nodeFocus:true, radius:3, charge:-500};
+    // defaults
+    control.options = $.extend({
+            stackHeight : 12,
+            radius : 5,
+            fontSize : 14,
+            labelFontSize : 8,
+            labelLineSpacing: 2.5,
+            nodeLabel : null,
+            markerWidth : 0,
+            markerHeight : 0,
+            width : $(control.divName).outerWidth(),
+            gap : 1.5,
+            nodeResize : "",
+            linkDistance : 80,
+            charge : -120,
+            styleColumn : null,
+            styles : null,
+            linkName : null,
+            nodeFocus: true,
+            nodeFocusRadius: 25,
+            nodeFocusColor: "FireBrick",
+            labelOffset: 5,
+            gravity: .05,
+            routeFocusStroke: "FireBrick",
+            routeFocusStrokeWidth: 3,
+            circleFill: "Black",
+            routeStroke: "Black",
+            routeStrokeWidth: 1,
+            height : $(control.divName).outerHeight()
+           
+        }, newoptions);
+        
+    var options = control.options;
+    options.gap = options.gap * options.radius;
+    control.width = options.width;
+    control.height = options.height;
+    // this is an element that can be used to determine the width of a text label
+    
+    control.scratch = $(document.createElement('span'))
+        .addClass('shadow')
+        .css('display','none')
+        .css("font-size",control.options.labelFontSize + "px");   
+    $('body').append(control.scratch);
+    
+    //getTheData(skema, control).then( function (data) {  
+        
+        control.data = data;
+        control.nodes = data.nodes;
+        control.links = data.links;
+        control.color = d3.scale.category20();
+        control.clickHack = 200;
+    
+        control.svg = d3.select(control.divName)
+            .append("svg:svg")
+            .attr("width", control.width)
+            .attr("height", control.height);
+        
+        control.force = d3.layout.force().
+            size([control.width, control.height])
+            .linkDistance(control.options.linkDistance)
+            .charge(control.options.charge)
+            .gravity(control.options.gravity);
+    
+       //initPromise.resolve(control);
+    //});
+    //return initPromise.promise();
+    doTheTreeViz(control);
+}
+
   function doTheTreeViz(control) {
 
     var svg = control.svg;
@@ -242,85 +321,6 @@ function getPixelDims(scratch,t) {
     scratch.append(document.createTextNode(t));
     return { width: scratch.outerWidth(), height: scratch.outerHeight() } ;
 }
-function initialize (data) {
-   
-    //var initPromise = $.Deferred();
-    var control = {};
-    control.divName = "#diagram";
-    
-    //some basic options
-    var newoptions = {  nodeLabel:"label", 
-                    nodeResize:"count", height:900,
-                    nodeFocus:true, radius:3, charge:-500};
-    // defaults
-    control.options = $.extend({
-            stackHeight : 12,
-            radius : 5,
-            fontSize : 14,
-            labelFontSize : 8,
-            labelLineSpacing: 2.5,
-            nodeLabel : null,
-            markerWidth : 0,
-            markerHeight : 0,
-            width : $(control.divName).outerWidth(),
-            gap : 1.5,
-            nodeResize : "",
-            linkDistance : 80,
-            charge : -120,
-            styleColumn : null,
-            styles : null,
-            linkName : null,
-            nodeFocus: true,
-            nodeFocusRadius: 25,
-            nodeFocusColor: "FireBrick",
-            labelOffset: 5,
-            gravity: .05,
-            routeFocusStroke: "FireBrick",
-            routeFocusStrokeWidth: 3,
-            circleFill: "Black",
-            routeStroke: "Black",
-            routeStrokeWidth: 1,
-            height : $(control.divName).outerHeight()
-           
-        }, newoptions);
-        
-    var options = control.options;
-    options.gap = options.gap * options.radius;
-    control.width = options.width;
-    control.height = options.height;
-    // this is an element that can be used to determine the width of a text label
-    
-    control.scratch = $(document.createElement('span'))
-        .addClass('shadow')
-        .css('display','none')
-        .css("font-size",control.options.labelFontSize + "px");   
-    $('body').append(control.scratch);
-    
-    //getTheData(skema, control).then( function (data) {  
-        
-        control.data = data;
-        control.nodes = data.nodes;
-        control.links = data.links;
-        control.color = d3.scale.category20();
-        control.clickHack = 200;
-    
-        control.svg = d3.select(control.divName)
-            .append("svg:svg")
-            .attr("width", control.width)
-            .attr("height", control.height);
-        
-        control.force = d3.layout.force().
-            size([control.width, control.height])
-            .linkDistance(control.options.linkDistance)
-            .charge(control.options.charge)
-            .gravity(control.options.gravity);
-    
-       //initPromise.resolve(control);
-    //});
-    //return initPromise.promise();
-    doTheTreeViz(control);
-}
-
 function getTheData(skema, control) {
     var dataPromise = getTheRawData();
     var massage = $.Deferred();
