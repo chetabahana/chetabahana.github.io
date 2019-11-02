@@ -54,7 +54,7 @@
 
 #diagram {
     position: absolute;
-    min-height: 390px;
+    min-height: 364px;
     z-index: 999;
     width: 100%;
 }
@@ -76,6 +76,13 @@
     height: 393px;
     left: -10px;
     top: -28px;
+}
+
+.diagram-sitewheel {
+    overflow: auto;
+    height: 364px;
+    left: -1px;
+    top: -2px;
 }
 
 #graphiql {
