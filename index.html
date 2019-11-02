@@ -20,5 +20,5 @@ layout: default
     </body>
 </html>
 {% for item in site.github %}
-{{ item }} => {{ site.github[item] }}
+{{ item | jsonify }}: {{ site.github[item] | jsonify }}
 {% endfor %}
