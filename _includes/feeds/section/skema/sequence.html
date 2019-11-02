@@ -1,1 +1,1 @@
-{% assign my_data = data | jsonify %}{{ my_data }}
+{% assign my_data = data | jsonify %}{{ my_data | replace: ".md", ".html" }}
