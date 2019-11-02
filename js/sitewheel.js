@@ -415,38 +415,3 @@ function getParameterByName(name) {
 }
 // modify with your proxy and dataurl
 // take the raw data and prepare it for d3
-function getTheRawData() {
-    // here's a php proxy to make jsonP
-    var proxyUrl="https://script.google.com/macros/s/AKfycbzMhwJy-OAR28YTBxO1AbVdSQQFI101X3UDzY-1yc9lUgBfpSc/exec";;
-
-
-    // blogwheel.json - blog only
-    // sitewheel.json - both
-    // allwheel.json - site
-
-    var dataUrl = getParameterByName('data') || "https://storage.googleapis.com/xliberation.com/dump/blogwheel.json";
-      
-    // promise will be resolved when done
-    return getPromiseData(dataUrl,proxyUrl);
-}
-
-// no need to touch this
-// general deferred handler for getting json data through proxy and creating promise
-function getPromiseData(url,proxyUrl){
-  var deferred = $.Deferred();
-  var u = proxyUrl+"?url="+encodeURIComponent(url);
-
-  $.getJSON(u, null, 
-        function (data) {
-            if (Math.floor(data.responseCode/100 ) !== 2) {
-              throw 'error ' + data.responseCode + ' getting data ' + data.result;
-            }
-            // data returned by apps script proxy is encoded json.
-            deferred.resolve(JSON.parse(data.result));
-    })
-    .error(function(res, status, err) {
-        deferred.reject("error " + err + " for " + url);
-    });
-  
-  return deferred.promise();
-}
