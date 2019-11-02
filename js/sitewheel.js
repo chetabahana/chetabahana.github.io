@@ -242,9 +242,9 @@ function getPixelDims(scratch,t) {
     scratch.append(document.createTextNode(t));
     return { width: scratch.outerWidth(), height: scratch.outerHeight() } ;
 }
-function initialize (skema) {
+function initialize (data) {
    
-    var initPromise = $.Deferred();
+    //var initPromise = $.Deferred();
     var control = {};
     control.divName = "#diagram";
     
@@ -296,7 +296,7 @@ function initialize (skema) {
         .css("font-size",control.options.labelFontSize + "px");   
     $('body').append(control.scratch);
     
-    getTheData(skema, control).then( function (data) {  
+    //getTheData(skema, control).then( function (data) {  
         
         control.data = data;
         control.nodes = data.nodes;
@@ -315,13 +315,14 @@ function initialize (skema) {
             .charge(control.options.charge)
             .gravity(control.options.gravity);
     
-       initPromise.resolve(control);
-    });
-    return initPromise.promise();
+       //initPromise.resolve(control);
+    //});
+    //return initPromise.promise();
+    doTheTreeViz(control);
 }
 
 function getTheData(skema, control) {
-    var dataPromise = skema;
+    var dataPromise = getTheRawData();
     var massage = $.Deferred();
     dataPromise.done ( function (data) {
         // need to massage it
