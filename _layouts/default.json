@@ -41,8 +41,8 @@
 *
 *  render the feeds output 
 *
-{% endcomment %}{% if page.path != 'index.html' %}{% include feeds.json %}{{ my_tab }}{{ my_tab }}}{% unless forloop.last %},
-{% endunless %}{% endif %}{% endfor %}{% if page.path != 'index.html' %}
+{% endcomment %}{% if page.path != 'index.html' %}{% if !page.redirect.from %}{% include feeds.json %}{{ my_tab }}{{ my_tab }}}{% unless forloop.last %},
+{% endunless %}{% endif %}{% endif %}{% endfor %}{% if page.path != 'index.html' %}
 {{ my_tab }}]
 }
 {% else %}{% comment %}
