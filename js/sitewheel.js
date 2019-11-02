@@ -242,7 +242,7 @@ function getPixelDims(scratch,t) {
     scratch.append(document.createTextNode(t));
     return { width: scratch.outerWidth(), height: scratch.outerHeight() } ;
 }
-function initialize () {
+function initialize (skema) {
    
     var initPromise = $.Deferred();
     var control = {};
@@ -296,7 +296,7 @@ function initialize () {
         .css("font-size",control.options.labelFontSize + "px");   
     $('body').append(control.scratch);
     
-    getTheData(control).then( function (data) {  
+    getTheData(skema, control).then( function (data) {  
         
         control.data = data;
         control.nodes = data.nodes;
@@ -320,8 +320,8 @@ function initialize () {
     return initPromise.promise();
 }
 
-function getTheData(control) {
-    var dataPromise = getTheRawData();
+function getTheData(skema, control) {
+    var dataPromise = skema;
     var massage = $.Deferred();
     dataPromise.done ( function (data) {
         // need to massage it
