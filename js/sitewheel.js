@@ -1,6 +1,6 @@
 function initialize (skema) {
    
-    //var initPromise = $.Deferred();
+    var initPromise = $.Deferred();
     var control = {};
     control.divName = "#diagram";
     
