@@ -1,1 +1,1 @@
-{{ repos | jsonify }}{{ data | jsonify }}
+{{ repos | jsonify }}{{ data | jsonify | replace: "{}", ".html"}}
