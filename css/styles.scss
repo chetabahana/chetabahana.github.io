@@ -71,11 +71,18 @@
     top: -20px;
 }
 
-.diagram-railroad, .diagram-sitewheel {
+.diagram-railroad {
     overflow: auto;
     height: 393px;
     left: -10px;
     top: -28px;
+}
+
+.diagram-sitewheel {
+    overflow: auto;
+    height: 393px;
+    left: -1px;
+    top: -2px;
 }
 
 #graphiql {
