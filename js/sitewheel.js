@@ -6,7 +6,7 @@ function initialize (skema) {
     
     //some basic options
     var newoptions = {  nodeLabel:"label", 
-                    nodeResize:"count", height:900,
+                    nodeResize:"count", height:700,
                     nodeFocus:true, radius:3, charge:-500};
     // defaults
     control.options = $.extend({
