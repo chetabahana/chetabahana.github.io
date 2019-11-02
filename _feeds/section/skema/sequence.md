@@ -3,6 +3,7 @@ weight: 2
 category: form
 js: sequence/js/sequence-diagram-snap-min.js
 redirect_from:
+  - /skema.json
   - /0/skema.json
   - /1/skema.json
   - /2/skema.json
