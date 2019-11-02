@@ -1,4 +1,4 @@
-function initialize (data) {
+function initialize (skema) {
    
     //var initPromise = $.Deferred();
     var control = {};
@@ -52,7 +52,7 @@ function initialize (data) {
         .css("font-size",control.options.labelFontSize + "px");   
     $('body').append(control.scratch);
     
-    //getTheData(skema, control).then( function (data) {  
+    getPromise(control,skema).then( function (data) {  
         
         control.data = data;
         control.nodes = data.nodes;
@@ -71,10 +71,9 @@ function initialize (data) {
             .charge(control.options.charge)
             .gravity(control.options.gravity);
     
-       //initPromise.resolve(control);
-    //});
-    //return initPromise.promise();
-    doTheTreeViz(control);
+       initPromise.resolve(control);
+    });
+    return initPromise.promise();
 }
 
   function doTheTreeViz(control) {
@@ -321,17 +320,17 @@ function getPixelDims(scratch,t) {
     scratch.append(document.createTextNode(t));
     return { width: scratch.outerWidth(), height: scratch.outerHeight() } ;
 }
-function getTheData(skema, control) {
-    var dataPromise = getTheRawData();
+function getPromise(control,data) {
+    //var dataPromise = getTheRawData();
     var massage = $.Deferred();
-    dataPromise.done ( function (data) {
+    //dataPromise.done ( function (data) {
         // need to massage it
         massage.resolve ( dataMassage (control,data));    
-    })
-    .fail (function (error) {
-        console.log (error);
-        massage.reject(error);
-    });
+    //})
+    //.fail (function (error) {
+        //console.log (error);
+        //massage.reject(error);
+    //});
     return massage.promise();
 }
 
