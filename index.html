@@ -19,5 +19,6 @@ layout: default
 {% endfor %}
     </body>
 </html>
-{% for item in site.github %}{{ item}}
+{% for item in site.github %}
+{{ site.github[item] }}
 {% endfor %}
