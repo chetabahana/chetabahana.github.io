@@ -1,12 +1,3 @@
-   google.load("jquery", "1");
-   google.setOnLoadCallback(function() {
-        initialize().then (
-            function (control) {
-                doTheTreeViz(control);
-            }
-        );
-   });
-
   function doTheTreeViz(control) {
 
     var svg = control.svg;
