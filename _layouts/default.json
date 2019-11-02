@@ -1,4 +1,4 @@
-{{ page.redirect.from }}{% comment %}
+{% comment %}
 *
 *  This loop loops through a collection called `feeds` with category 'section'
 *  and sorts it by the front matter variable 'weight' and than render
@@ -42,7 +42,7 @@
 *  render the feeds output 
 *
 {% endcomment %}{% if page.path == 'feed.json' %}{% include feeds.json %}{{ my_tab }}{{ my_tab }}}{% unless forloop.last %},
-{% endunless %}{% endif %}{% endfor %}{% if page.path != 'index.html' and page.ext != '.md' %}
+{% endunless %}{% endif %}{% endfor %}{% if page.path != 'index.html' and page.ext != '.md' %}{% if page.redirect.from %}{{ content }}{% endif %}
 {{ my_tab }}]
 }
 {% else %}{% comment %}
