@@ -24,7 +24,7 @@
 *
 *  get the maximum size of feeds 
 *
-{% endcomment %}{% assign feeds = site.feeds | sort:0 %}{% for feed in feeds %}{% if feed.path == '_feeds/section/skema/sequence.md' %}{% capture sequence_capture %}{{ feed.output }}{% endcapture %}{% endif %}{% assign my_split = feed.path | split: "/" %}{% assign size = my_split | size %}{% if size > my_size %}{% assign my_path = my_path | push:size %}{% assign my_size = size %}{% endif %}{% endfor %}{% comment %}
+{% endcomment %}{% assign feeds = site.feeds | sort:0 %}{% for feed in feeds %}{% if feed.path == '_feeds/section/skema/sequence.md' %}{% capture sequence_capture %}Title: Bagan Eksekusi\nparticipant Buka Toko\nparticipant Stok Barang\nparticipant Merchant Center\nparticipant Peluang Terbaik\nparticipant Portfolio\nparticipant Network\nBuka Toko-->Stok Barang: Optimasi\nStok Barang->Merchant Center: Cloud-Task-API\nMerchant Center->Peluang Terbaik: Cloud-Site-API\nPeluang Terbaik->>Portfolio: Google-Ads-API\nPortfolio->>Stok Barang: Google-Trend-API\nPortfolio-->>Network: eShop SEO\n{% endcapture %}{% endif %}{% assign my_split = feed.path | split: "/" %}{% assign size = my_split | size %}{% if size > my_size %}{% assign my_path = my_path | push:size %}{% assign my_size = size %}{% endif %}{% endfor %}{% comment %}
 *
 *  sort feeds base on weight (reversed order)
 *
