@@ -1,2 +1,2 @@
-{% for item in data %}{{ item | jsonify }}: {{ data[item] | jsonify }},
+{% assign my_tab = "    " %}{% for item in data %}{{ my_tab }}{{ item | jsonify }}: {{ data[item] | jsonify }},
 {% endfor %}
