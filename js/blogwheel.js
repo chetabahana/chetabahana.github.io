@@ -255,7 +255,7 @@ function initialize () {
    
     var initPromise = $.Deferred();
     var control = {};
-    control.divName = "#chart";
+    control.divName = "#diagram";
     
     //some basic options
     var newoptions = {  nodeLabel:"label", 
