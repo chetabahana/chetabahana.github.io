@@ -81,7 +81,7 @@ function doTheTreeViz(diagram) {
     // Update the links
     var link = svg.selectAll("line.link")
         .data(diagram.links, function(d) {return d.key;})
-        .each(function(d,i) {d.select(this).attr('id', i));
+        .each(function(d,i) {d3.select(this).attr('id', i));
 
    // Enter any new links
     var linkEnter = link.enter().insert("svg:line", ".node")
@@ -100,7 +100,7 @@ function doTheTreeViz(diagram) {
   // Update the nodes
     var node = svg.selectAll("g.node")
         .data(diagram.nodes, function(d) { return d.key;})
-        .each(function(d,i) {d.select(this).attr('id', i));
+        .each(function(d,i) {d3.select(this).attr('id', i));
 
     node.select("circle").style("cursor", "pointer")
         .style("fill", function(d) {return getColor(d);})
