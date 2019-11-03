@@ -51,7 +51,7 @@ form_engines:
 collections:
   feeds:
     output: true
-    redirect_from : /:collection/:path/
+    redirect_from : /:path/
 
 # Default Setting
 # https://jekyllrb.com/docs/configuration/front-matter-defaults/
