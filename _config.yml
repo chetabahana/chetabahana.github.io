@@ -25,13 +25,11 @@ whitelist:
   - jekyll-feed
   - jekyll-coffeescript
   - jekyll-redirect-from
-  - jekyll-github-metadata
   
 plugins:
   - jekyll-feed
   - jekyll-coffeescript
   - jekyll-redirect-from
-  #- jekyll-github-metadata
 
 input_types:
 - text
