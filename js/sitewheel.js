@@ -101,12 +101,8 @@ function doTheTreeViz(diagram) {
         .data(diagram.nodes, function(d) { return d.key; });
 
     node.select("circle")
-        .style("fill", function(d) {
-            return getColor(d);
-        })
-        .attr("r", function(d) {
-            return getRadius(d);
-        })
+        .style("fill", function(d) {return getColor(d);})
+        .attr("r", function(d) {return getRadius(d);})
 
   // Enter any new nodes.
     var nodeEnter = node.enter()
