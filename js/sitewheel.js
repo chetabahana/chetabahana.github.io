@@ -396,15 +396,3 @@ function findOrAddPage(diagram,page,nodes) {
     page.count = 0;
     return nodes[nodes.push(page) - 1] ;
 }
-
-
-// modify with your proxy and dataurl
-// take the raw data and prepare it for d3
-function getParameterByName(name) {
-    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-        results = regex.exec(location.search);
-    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-}
-// modify with your proxy and dataurl
-// take the raw data and prepare it for d3
