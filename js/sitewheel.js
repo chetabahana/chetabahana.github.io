@@ -101,7 +101,7 @@ function doTheTreeViz(diagram) {
 
 
   // Update the nodes
-    var node = svg.selectAll("g.node")
+    var node = svg.selectAll("g.node").style("cursor", "pointer")
         .data(diagram.nodes, function(d) { return d.key;})
         .attr("id", function(d,i) { return i; })
         .on("dblclick", function(d){diagram.nodeClickInProgress=false; draw.click(this);});
