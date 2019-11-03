@@ -106,7 +106,7 @@ function doTheTreeViz(diagram) {
 
   // Enter any new nodes.
     var nodeEnter = node.enter()
-      .append("svg:g")
+      .append("svg:g").style("cursor", "pointer")
         .attr("class", "node")
         .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
         .on("dblclick", function(d){
@@ -131,7 +131,7 @@ function doTheTreeViz(diagram) {
         .call(force.drag);
 
     nodeEnter
-      .append("svg:circle")
+      .append("svg:circle").style("cursor", "pointer")
         .attr("r", function(d) {
             return getRadius(d);
         })
