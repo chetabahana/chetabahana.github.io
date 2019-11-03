@@ -25,13 +25,11 @@ whitelist:
   - jekyll-feed
   - jekyll-coffeescript
   - jekyll-redirect-from
-  - jekyll-github-metadata
   
 plugins:
   - jekyll-feed
   - jekyll-coffeescript
   - jekyll-redirect-from
-  #- jekyll-github-metadata
 
 input_types:
 - text
@@ -51,7 +49,7 @@ form_engines:
 collections:
   feeds:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:path
 
 # Default Setting
 # https://jekyllrb.com/docs/configuration/front-matter-defaults/
@@ -62,7 +60,6 @@ defaults:
       type: "feeds"
     values:
       layout: "feeds"
-      includes: false
 
 # Site link
 base: _feeds/section
