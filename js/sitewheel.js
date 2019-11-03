@@ -1,16 +1,15 @@
 function initialize (skema) {
-
+   
     var initPromise = $.Deferred();
-    var diagram = {};
-    diagram.divName = "#diagram";
+    var control = {};
+    control.divName = "#diagram";
     
     //some basic options
     var newoptions = {  nodeLabel:"label", 
                     nodeResize:"count", height:700,
                     nodeFocus:true, radius:3, charge:-500};
-
     // defaults
-    diagram.options = $.extend({
+    control.options = $.extend({
             stackHeight : 12,
             radius : 5,
             fontSize : 14,
@@ -19,7 +18,7 @@ function initialize (skema) {
             nodeLabel : null,
             markerWidth : 0,
             markerHeight : 0,
-            width : $(diagram.divName).outerWidth(),
+            width : $(control.divName).outerWidth(),
             gap : 1.5,
             nodeResize : "",
             linkDistance : 80,
@@ -37,55 +36,58 @@ function initialize (skema) {
             circleFill: "Black",
             routeStroke: "Black",
             routeStrokeWidth: 1,
-            height : $(diagram.divName).outerHeight()
+            height : $(control.divName).outerHeight()
            
         }, newoptions);
         
-    var options = diagram.options;
+    var options = control.options;
     options.gap = options.gap * options.radius;
-    diagram.width = options.width;
-    diagram.height = options.height;
-    diagram.scratch = $(document.createElement('span'))
+    control.width = options.width;
+    control.height = options.height;
+    // this is an element that can be used to determine the width of a text label
+    
+    control.scratch = $(document.createElement('span'))
         .addClass('shadow')
         .css('display','none')
-        .css("font-size",diagram.options.labelFontSize + "px");   
-    $('body').append(diagram.scratch);
+        .css("font-size",control.options.labelFontSize + "px");   
+    $('body').append(control.scratch);
     
-    getPromise(diagram,skema).then( function (data) {  
-        diagram.data = data;
-        diagram.nodes = data.nodes;
-        diagram.links = data.links;
-        diagram.color = d3.scale.category20();
-        diagram.clickHack = 200;
-    
-        diagram.svg = d3.select(diagram.divName)
-            .append("svg:svg")
-            .attr("width", diagram.width)
-            .attr("height", diagram.height);
+    getPromise(control,skema).then( function (data) {  
         
-        diagram.force = d3.layout.force().
-            size([diagram.width, diagram.height])
-            .linkDistance(diagram.options.linkDistance)
-            .charge(diagram.options.charge)
-            .gravity(diagram.options.gravity);
+        control.data = data;
+        control.nodes = data.nodes;
+        control.links = data.links;
+        control.color = d3.scale.category20();
+        control.clickHack = 200;
     
-       initPromise.resolve(diagram);
+        control.svg = d3.select(control.divName)
+            .append("svg:svg")
+            .attr("width", control.width)
+            .attr("height", control.height);
+        
+        control.force = d3.layout.force().
+            size([control.width, control.height])
+            .linkDistance(control.options.linkDistance)
+            .charge(control.options.charge)
+            .gravity(control.options.gravity);
+    
+       initPromise.resolve(control);
     });
     return initPromise.promise();
 }
 
-function doTheTreeViz(diagram) {
+  function doTheTreeViz(control) {
 
-    var svg = diagram.svg;
+    var svg = control.svg;
 
-    var force = diagram.force;
-    force.nodes(diagram.nodes)
-        .links(diagram.links)
+    var force = control.force;
+    force.nodes(control.nodes)
+        .links(control.links)
         .start();
 
     // Update the links
     var link = svg.selectAll("line.link")
-        .data(diagram.links, function(d) { 
+        .data(control.links, function(d) { 
             return d.key; 
         } );
  
@@ -96,111 +98,162 @@ function doTheTreeViz(diagram) {
         .attr("y1", function(d) { return d.source.y; })
         .attr("x2", function(d) { return d.target.x; })
         .attr("y2", function(d) { return d.target.y; })
-        .append("svg:title")
+      .append("svg:title")
         .text(function(d) { return d.target.name + ":" + d.source.name ; });
     
     // Exit any old links.
     link.exit().remove();
 
-    // Update the nodes
+
+  // Update the nodes
     var node = svg.selectAll("g.node")
-        .data(diagram.nodes, function(d) { return d.key; });
+        .data(control.nodes, function(d) { return d.key; });
 
-    node.select("circle").css({'cursor':'pointer'})
-        .style("fill", function(d) {return getColor(d);})
-        .attr("r", function(d) {return getRadius(d);})
+    node.select("circle")
+        .style("fill", function(d) {
+            return getColor(d);
+        })
+        .attr("r", function(d) {
+            return getRadius(d);
+        })
 
-    // Enter any new nodes.
+  // Enter any new nodes.
     var nodeEnter = node.enter()
-        .append("svg:g")
+      .append("svg:g")
         .attr("class", "node")
         .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
-        .on("dblclick", function(d){diagram.nodeClickInProgress=false;if (d.url) draw.click(d);})
+        .on("dblclick", function(d){
+            control.nodeClickInProgress=false;
+            if (d.url)window.open(d.url);
+        })
         .on("click", function(d){
             // this is a hack so that click doesnt fire on the1st click of a dblclick
-            if (!diagram.nodeClickInProgress ) {
-                diagram.nodeClickInProgress = true;
+            if (!control.nodeClickInProgress ) {
+                control.nodeClickInProgress = true;
                 setTimeout(function(){
-                    if (diagram.nodeClickInProgress) { 
-                        diagram.nodeClickInProgress = false;
-                        if (diagram.options.nodeFocus) {
+                    if (control.nodeClickInProgress) { 
+                        control.nodeClickInProgress = false;
+                        if (control.options.nodeFocus) {
                             d.isCurrentlyFocused = !d.isCurrentlyFocused;
-                            doTheTreeViz(makeFilteredData(diagram));
+                            doTheTreeViz(makeFilteredData(control));
                         }
                     }
-                },diagram.clickHack); 
+                },control.clickHack); 
             }
         })
         .call(force.drag);
 
-    nodeEnter.append("svg:circle").css({'cursor':'pointer'})
-        .attr("r", function(d) {return getRadius(d})
-        .style("fill", function(d) {return getColor(d);})
-        .on("mouseover", function(d){enhanceNode (d);})
-        .on("mouseout", function(d){resetNode(d);})
-        .append("svg:title").text(function(d) { return d[diagram.options.nodeLabel]; })
+    nodeEnter
+      .append("svg:circle")
+        .attr("r", function(d) {
+            return getRadius(d);
+        })
+        .style("fill", function(d) {
+            return getColor(d);
+        })
+        .on("mouseover", function(d){
+            // enhance all the links that end here
+            enhanceNode (d);
+        })
+        
+        .on("mouseout", function(d){
+            resetNode(d);
+            
+        })
+      .append("svg:title")
+        .text(function(d) { return d[control.options.nodeLabel]; })
         
     function enhanceNode(selectedNode) {
-        link.filter (function (d) {return d.source.key == selectedNode.key || d.target.key == selectedNode.key;})
-        .style("stroke", diagram.options.routeFocusStroke)
-        .style("stroke-width", diagram.options.routeFocusStrokeWidth);
+        link.filter ( function (d) {
+            return d.source.key == selectedNode.key || d.target.key == selectedNode.key;
+        } )
+        .style("stroke", control.options.routeFocusStroke)
+        .style("stroke-width", control.options.routeFocusStrokeWidth);
         
-        if (text) {text.filter ( function (d) {return areWeConnected (selectedNode,d);})
-            .style("fill", diagram.options.routeFocusStroke);
+        if (text) {
+            text.filter ( function (d) {
+                return areWeConnected (selectedNode,d);
+            } )
+            .style("fill", control.options.routeFocusStroke);
         }
     }
-
+    
     function areWeConnected (node1,node2) {
-        for (var i=0; i < diagram.data.links.length ; i++) {
-            var lnk = diagram.data.links[i];
+        for (var i=0; i < control.data.links.length ; i++) {
+            var lnk = control.data.links[i];
             if ( (lnk.source.key === node1.key && lnk.target.key === node2.key) ||
                  (lnk.source.key === node2.key && lnk.target.key === node1.key) ) return lnk;
         }
         return null;
     }
-
     function resetNode(selectedNode) {
-        link.style("stroke", diagram.options.routeStroke)
-            .style("stroke-width", diagram.options.routeStrokeWidth);
-        if (text) {text.style("fill", diagram.options.routeStroke);}
+        link.style("stroke", control.options.routeStroke)
+            .style("stroke-width", control.options.routeStrokeWidth);
+        if (text) { 
+            text.style("fill", control.options.routeStroke);
+        }
     }
 
-    if (diagram.options.nodeLabel) {       
+   if (control.options.nodeLabel) {       
        // text is done once for shadow as well as for text
         var textShadow = nodeEnter.append("svg:text")
             .attr("x", function(d) {
-                var x = (d.right || !d.fixed)? diagram.options.labelOffset : (-d.dim.width - diagram.options.labelOffset);
+                var x = (d.right || !d.fixed) ? 
+                    control.options.labelOffset : 
+                    (-d.dim.width - control.options.labelOffset)  ;
                 return x;
             })
             .attr("dy", ".31em")
             .attr("class", "shadow")
-            .attr("text-anchor", function(d) {return !d.right ? 'start' : 'start';})
-            .style("font-size",diagram.options.labelFontSize + "px")
-            .text(function(d) {return d.shortName ? d.shortName : d.name;});
+            .attr("text-anchor", function(d) { 
+                return !d.right ? 'start' : 'start' ;
+            })
+            .style("font-size",control.options.labelFontSize + "px")
+            .text(function(d) {
+                return d.shortName ? d.shortName : d.name;
+            });
 
         var text = nodeEnter.append("svg:text")
             .attr("x", function(d) {
-                var x = (d.right || !d.fixed)? diagram.options.labelOffset: (-d.dim.width - diagram.options.labelOffset);
+                var x = (d.right || !d.fixed) ? 
+                    control.options.labelOffset : 
+                    (-d.dim.width - control.options.labelOffset)  ;
                 return x;
             })
             .attr("dy", ".35em")
             .attr("class", "text")
-            .attr("text-anchor", function(d) {return !d.right ? 'start' : 'start' ;})
-            .style("font-size",diagram.options.labelFontSize + "px")
-            .text(function(d) {return d.shortName ? d.shortName : d.name;})
-            .on("mouseover", function(d){enhanceNode (d);d3.select(this).style('fill',diagram.options.routeFocusStroke);})
-            .on("mouseout", function(d){resetNode(d);});
+            .attr("text-anchor", function(d) { 
+                return !d.right ? 'start' : 'start' ;})
+            .style("font-size",control.options.labelFontSize + "px")
+            .text(function(d) {
+                return d.shortName ? d.shortName : d.name;
+            })
+            
+            .on("mouseover", function(d){
+            // enhance all the links that end here
+                enhanceNode (d);
+                d3.select(this)
+                    .style('fill',control.options.routeFocusStroke);
+            })
+        
+            .on("mouseout", function(d){
+                resetNode(d);
+            });
     }
 
     // Exit any old nodes.
     node.exit().remove();
-    diagram.link = svg.selectAll("line.link");
-    diagram.node = svg.selectAll("g.node");
+    control.link = svg.selectAll("line.link");
+    control.node = svg.selectAll("g.node");
     force.on("tick", tick);
 
-    if (diagram.options.linkName) {
+
+
+    if (control.options.linkName) {
         link.append("title")
-            .text(function(d) {return d[diagram.options.linkName];});
+            .text(function(d) {
+                return d[control.options.linkName];
+        });
     }
 
 
@@ -209,31 +262,33 @@ function doTheTreeViz(diagram) {
             .attr("y1", function(d) { return d.source.y; })
             .attr("x2", function(d) { return d.target.x; })
             .attr("y2", function(d) { return d.target.y; });
-        node.attr("transform", function(d) {return "translate(" + d.x + "," + d.y + ")";});
+        node.attr("transform", function(d) {
+            return "translate(" + d.x + "," + d.y + ")";
+        });
+
     }
  
     function getRadius(d) {
-        return makeRadius(diagram,d);
+        return makeRadius(control,d);
     }
-
     function getColor(d) {
-        return diagram.options.nodeFocus && d.isCurrentlyFocused ? diagram.options.nodeFocusColor  : diagram.color(d.group) ;
+        return control.options.nodeFocus && d.isCurrentlyFocused ? control.options.nodeFocusColor  : control.color(d.group) ;
     }
 
+   }
+   
+function makeRadius(control,d) {
+     var r = control.options.radius * (control.options.nodeResize ? Math.sqrt(d[control.options.nodeResize]) / Math.PI : 1);
+     return control.options.nodeFocus && d.isCurrentlyFocused ? control.options.nodeFocusRadius  : r;
 }
 
-function makeRadius(diagram,d) {
-     var r = diagram.options.radius * (diagram.options.nodeResize ? Math.sqrt(d[diagram.options.nodeResize]) / Math.PI : 1);
-     return diagram.options.nodeFocus && d.isCurrentlyFocused ? diagram.options.nodeFocusRadius  : r;
-}
-
-function makeFilteredData(diagram,selectedNode){
+function makeFilteredData(control,selectedNode){
     // we'll keep only the data where filterned nodes are the source or target
     var newNodes = [];
     var newLinks = [];
 
-    for (var i = 0; i < diagram.data.links.length ; i++) {
-        var link = diagram.data.links[i];
+    for (var i = 0; i < control.data.links.length ; i++) {
+        var link = control.data.links[i];
         if (link.target.isCurrentlyFocused || link.source.isCurrentlyFocused) {
             newLinks.push(link);
             addNodeIfNotThere(link.source,newNodes);
@@ -242,14 +297,14 @@ function makeFilteredData(diagram,selectedNode){
     }
     // if none are selected reinstate the whole dataset
     if (newNodes.length > 0) {
-        diagram.links = newLinks;
-        diagram.nodes = newNodes;
+        control.links = newLinks;
+        control.nodes = newNodes;
     }
     else {
-        diagram.nodes = diagram.data.nodes;
-        diagram.links = diagram.data.links;
+        control.nodes = control.data.nodes;
+        control.links = control.data.links;
     }
-    return diagram;
+    return control;
     
     function addNodeIfNotThere( node, nodes) {
         for ( var i=0; i < nodes.length; i++) {
@@ -265,24 +320,31 @@ function getPixelDims(scratch,t) {
     scratch.append(document.createTextNode(t));
     return { width: scratch.outerWidth(), height: scratch.outerHeight() } ;
 }
-
-function getPromise(diagram,data) {
+function getPromise(control,data) {
+    //var dataPromise = getTheRawData();
     var massage = $.Deferred();
-    massage.resolve ( dataMassage (diagram,data));
+    //dataPromise.done ( function (data) {
+        // need to massage it
+        massage.resolve ( dataMassage (control,data));    
+    //})
+    //.fail (function (error) {
+        //console.log (error);
+        //massage.reject(error);
+    //});
     return massage.promise();
 }
 
-function dataMassage(diagram,data) {
+function dataMassage(control,data) {
 
-    var ind = data, nodes = [],links =[];
-    // the tags are to be circles
-    for (var i=0;i<ind.length;i++) {
+var ind = data, nodes = [],links =[];
+   // the tags are to be circles
+   for (var i=0;i<ind.length;i++) {
         ind[i].isCurrentlyFocused = false;
         nodes.push(ind[i]);
        // add links to pages
        for ( var j=0; j < ind[i].pages.length; j++) {
            //push this page as a node
-           var node = findOrAddPage(diagram,ind[i].pages[j],nodes);
+           var node = findOrAddPage(control,ind[i].pages[j],nodes);
            node.isCurrentlyFocused = false;
            // create a link
            var link = { source:node , target:ind[i], key : node.key + "_" + ind[i].key };
@@ -291,35 +353,35 @@ function dataMassage(diagram,data) {
    }
    // sort nodes alpha
    nodes.sort ( function (a,b) { return a.name < b.name  ? -1 : (a.name == b.name ? 0 : 1 ) ; });
-   diagram.pageCount = 0;
-   diagram.pageRectSize = {width:0,height:0,radius:0};   
+   control.pageCount = 0;
+   control.pageRectSize = {width:0,height:0,radius:0};   
    for ( var i = 0; i < nodes.length ; i++) {
        page= nodes[i];
        page.group =0;
-       page.dim = getPixelDims(diagram.scratch, page.name);
+       page.dim = getPixelDims(control.scratch, page.name);
        if (page.fixed) { 
-           diagram.pageCount++;
+           control.pageCount++;
           // this will calculate the width/height in pixels of the largest label
-           diagram.pageRectSize.width = Math.max(diagram.pageRectSize.width,page.dim.width);
-           diagram.pageRectSize.height = Math.max(diagram.pageRectSize.height,page.dim.height);
-           diagram.pageRectSize.radius = Math.max(diagram.pageRectSize.radius,makeRadius(diagram,page));
+           control.pageRectSize.width = Math.max(control.pageRectSize.width,page.dim.width);
+           control.pageRectSize.height = Math.max(control.pageRectSize.height,page.dim.height);
+           control.pageRectSize.radius = Math.max(control.pageRectSize.radius,makeRadius(control,page));
            page.group =1;    
        }
        
    }
-   var options= diagram.options;
+   var options= control.options;
 
    // we're going to fix the nodes that are pages into two columns
     for ( var i = 0, c=0; i < nodes.length ; i++) {
         var page = nodes[i];
         if (page.fixed) {
-            page.right= (c > diagram.pageCount/2);
+            page.right= (c > control.pageCount/2);
             // y dimension calc same for each column
-            page.y = ((c % (diagram.pageCount/2)) + .5) * (diagram.pageRectSize.height)  ;
+            page.y = ((c % (control.pageCount/2)) + .5) * (control.pageRectSize.height)  ;
             
             // x based on right or left column
             page.x = page.right ? 
-                        diagram.width - diagram.pageRectSize.width - options.labelOffset  :
+                        control.width - control.pageRectSize.width - options.labelOffset  :
                         page.dim.width + options.labelOffset ;
             c++;
         }
@@ -330,7 +392,7 @@ function dataMassage(diagram,data) {
 
 }
 
-function findOrAddPage(diagram,page,nodes) {
+function findOrAddPage(control,page,nodes) {
     for ( var i=0;i<nodes.length;i++) {
         if ( nodes[i].key === page.key ) { 
             nodes[i].count++;
@@ -341,3 +403,15 @@ function findOrAddPage(diagram,page,nodes) {
     page.count = 0;
     return nodes[nodes.push(page) - 1] ;
 }
+
+
+// modify with your proxy and dataurl
+// take the raw data and prepare it for d3
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+// modify with your proxy and dataurl
+// take the raw data and prepare it for d3
