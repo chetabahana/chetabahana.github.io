@@ -76,7 +76,7 @@ function initialize (skema) {
     return initPromise.promise();
 }
 
-  function doTheTreeViz(diagram) {
+function doTheTreeViz(diagram) {
 
     var svg = diagram.svg;
 
@@ -109,13 +109,9 @@ function initialize (skema) {
     var node = svg.selectAll("g.node")
         .data(diagram.nodes, function(d) { return d.key; });
 
-    node.select("circle")
-        .style("fill", function(d) {
-            return getColor(d);
-        })
-        .attr("r", function(d) {
-            return getRadius(d);
-        })
+    node.select("circle").css({'cursor':'pointer'})
+        .style("fill", function(d) {return getColor(d);})
+        .attr("r", function(d) {return getRadius(d);})
 
   // Enter any new nodes.
     var nodeEnter = node.enter()
@@ -143,37 +139,19 @@ function initialize (skema) {
         })
         .call(force.drag);
 
-    nodeEnter
-      .append("svg:circle")
-        .attr("r", function(d) {
-            return getRadius(d);
-        })
-        .style("fill", function(d) {
-            return getColor(d);
-        })
-        .on("mouseover", function(d){
-            // enhance all the links that end here
-            enhanceNode (d);
-        })
-        
-        .on("mouseout", function(d){
-            resetNode(d);
-            
-        })
-      .append("svg:title")
-        .text(function(d) { return d[diagram.options.nodeLabel]; })
+    nodeEnter.append("svg:circle").css({'cursor':'pointer'})
+        .attr("r", function(d) {return getRadius(d})
+        .style("fill", function(d) {return getColor(d);})
+        .on("mouseover", function(d){enhanceNode (d);})
+        .on("mouseout", function(d){resetNode(d);})
+        .append("svg:title").text(function(d) { return d[diagram.options.nodeLabel]; })
         
     function enhanceNode(selectedNode) {
-        link.filter ( function (d) {
-            return d.source.key == selectedNode.key || d.target.key == selectedNode.key;
-        } )
+        link.filter (function (d) {return d.source.key == selectedNode.key || d.target.key == selectedNode.key;})
         .style("stroke", diagram.options.routeFocusStroke)
         .style("stroke-width", diagram.options.routeFocusStrokeWidth);
         
-        if (text) {
-            text.filter ( function (d) {
-                return areWeConnected (selectedNode,d);
-            } )
+        if (text) {text.filter ( function (d) {return areWeConnected (selectedNode,d);})
             .style("fill", diagram.options.routeFocusStroke);
         }
     }
@@ -186,12 +164,11 @@ function initialize (skema) {
         }
         return null;
     }
+
     function resetNode(selectedNode) {
         link.style("stroke", diagram.options.routeStroke)
             .style("stroke-width", diagram.options.routeStrokeWidth);
-        if (text) { 
-            text.style("fill", diagram.options.routeStroke);
-        }
+        if (text) {text.style("fill", diagram.options.routeStroke);}
     }
 
    if (diagram.options.nodeLabel) {       
@@ -247,13 +224,9 @@ function initialize (skema) {
     diagram.node = svg.selectAll("g.node");
     force.on("tick", tick);
 
-
-
     if (diagram.options.linkName) {
         link.append("title")
-            .text(function(d) {
-                return d[diagram.options.linkName];
-        });
+            .text(function(d) {return d[diagram.options.linkName];});
     }
 
 
@@ -262,21 +235,19 @@ function initialize (skema) {
             .attr("y1", function(d) { return d.source.y; })
             .attr("x2", function(d) { return d.target.x; })
             .attr("y2", function(d) { return d.target.y; });
-        node.attr("transform", function(d) {
-            return "translate(" + d.x + "," + d.y + ")";
-        });
-
+        node.attr("transform", function(d) {return "translate(" + d.x + "," + d.y + ")";});
     }
  
     function getRadius(d) {
         return makeRadius(diagram,d);
     }
+
     function getColor(d) {
         return diagram.options.nodeFocus && d.isCurrentlyFocused ? diagram.options.nodeFocusColor  : diagram.color(d.group) ;
     }
 
-   }
-   
+}
+
 function makeRadius(diagram,d) {
      var r = diagram.options.radius * (diagram.options.nodeResize ? Math.sqrt(d[diagram.options.nodeResize]) / Math.PI : 1);
      return diagram.options.nodeFocus && d.isCurrentlyFocused ? diagram.options.nodeFocusRadius  : r;
@@ -320,25 +291,18 @@ function getPixelDims(scratch,t) {
     scratch.append(document.createTextNode(t));
     return { width: scratch.outerWidth(), height: scratch.outerHeight() } ;
 }
+
 function getPromise(diagram,data) {
-    //var dataPromise = getTheRawData();
     var massage = $.Deferred();
-    //dataPromise.done ( function (data) {
-        // need to massage it
-        massage.resolve ( dataMassage (diagram,data));    
-    //})
-    //.fail (function (error) {
-        //console.log (error);
-        //massage.reject(error);
-    //});
+    massage.resolve ( dataMassage (diagram,data));
     return massage.promise();
 }
 
 function dataMassage(diagram,data) {
 
-var ind = data, nodes = [],links =[];
-   // the tags are to be circles
-   for (var i=0;i<ind.length;i++) {
+    var ind = data, nodes = [],links =[];
+    // the tags are to be circles
+    for (var i=0;i<ind.length;i++) {
         ind[i].isCurrentlyFocused = false;
         nodes.push(ind[i]);
        // add links to pages
