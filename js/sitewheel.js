@@ -95,15 +95,16 @@ function doTheTreeViz(diagram) {
     // Exit any old links.
     link.exit().remove();
 
-    // Update the nodes
+
+  // Update the nodes
     var node = svg.selectAll("g.node")
         .data(diagram.nodes, function(d) { return d.key; });
 
-    node.select("circle").css({'cursor':'pointer'})
+    node.select("circle")
         .style("fill", function(d) {return getColor(d);})
         .attr("r", function(d) {return getRadius(d);})
 
-    // Enter any new nodes.
+  // Enter any new nodes.
     var nodeEnter = node.enter()
       .append("svg:g")
         .attr("class", "node")
@@ -130,7 +131,7 @@ function doTheTreeViz(diagram) {
         .call(force.drag);
 
     nodeEnter
-      .append("svg:circle").css({'cursor':'pointer'})
+      .append("svg:circle")
         .attr("r", function(d) {
             return getRadius(d);
         })
