@@ -49,7 +49,7 @@ form_engines:
 collections:
   feeds:
     output: true
-    permalink : /:path/
+    permalink : /:path
 
 # Default Setting
 # https://jekyllrb.com/docs/configuration/front-matter-defaults/
