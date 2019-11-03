@@ -1,5 +1,5 @@
 ---
 weight: 0
-category: form
+category: skema
 js: scenetree/build.js
 ---

@@ -1,6 +1,6 @@
 ---
 weight: 5
-category: form
+category: skema
 js: js/sitewheel.js
 redirect_from:
   - /0000/skema.json
