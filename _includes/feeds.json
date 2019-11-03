@@ -1,13 +1,7 @@
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"weight": {{ feed.weight | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"title": {{ feed.title | jsonify }},
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"category": {{ feed.category | jsonify }},
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"path": {{ feed.path | jsonify }},{% assign my_items = "" | split: "," %}{% for item in feed %}{% assign my_items = my_items | push:item %}{% endfor %}{% assign sorted_items = my_items | sort_natural %}{% for item in sorted_items %}{% unless my_atributs contains item %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"category": {{ feed.category | jsonify }},{% assign my_items = "" | split: "," %}{% for item in feed %}{% assign my_items = my_items | push:item %}{% endfor %}{% assign sorted_items = my_items | sort_natural %}{% for item in sorted_items %}{% unless my_atributs contains item %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}{{ item | jsonify }}: {{ feed[item] | jsonify }},{% endunless %}{% endfor %}
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"input": {{ input | jsonify }},
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"query": {{ query | jsonify }},
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"result": {{ result | jsonify }},
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"output": {{ output | jsonify }},
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"data": {% assign data = null %}{% assign my_data = site.data %}{% assign my_hash = feed.path | split: '/' | pop %}{% for hash in my_hash %}{% if hash contains '_' %}{% assign my_data = my_data[hash] %}{% else %}{% assign _hash = hash | prepend: '_' %}{% assign my_data = my_data[_hash] %}{% endif %}{% endfor %}{% for hash in my_data %}{% if hash[1].title == feed.slug %}{% assign data = hash[1] %}{% endif %}{% endfor %}{{ data | jsonify }},
 {% assign my_index_size = my_index | size %}{% if my_index_size > 0 %}{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"items": [{% for index in my_index %}{{ my_captures[index] }}{% unless forloop.last %},{% endunless %}{% endfor %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}]{% else %}{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"items": []{% endif %}
