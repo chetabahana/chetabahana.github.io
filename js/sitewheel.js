@@ -1,59 +1,52 @@
 function initialize (skema) {
-   
-    var initPromise = $.Deferred();
+
     var diagram = {};
     diagram.divName = "#diagram";
-    
-    //some basic options
-    var newoptions = {  nodeLabel:"label", 
-                    nodeResize:"count", height:700,
-                    nodeFocus:true, radius:3, charge:-500};
-    // defaults
+    var newoptions = {nodeLabel:"label", nodeResize:"count", height:700, nodeFocus:true, radius:3, charge:-500};
+
     diagram.options = $.extend({
-            stackHeight : 12,
-            radius : 5,
-            fontSize : 14,
-            labelFontSize : 8,
-            labelLineSpacing: 2.5,
-            nodeLabel : null,
-            markerWidth : 0,
-            markerHeight : 0,
-            width : $(diagram.divName).outerWidth(),
-            gap : 1.5,
-            nodeResize : "",
-            linkDistance : 80,
-            charge : -120,
-            styleColumn : null,
-            styles : null,
-            linkName : null,
-            nodeFocus: true,
-            nodeFocusRadius: 25,
-            nodeFocusColor: "FireBrick",
-            labelOffset: 5,
-            gravity: .05,
-            routeFocusStroke: "FireBrick",
-            routeFocusStrokeWidth: 3,
-            circleFill: "Black",
-            routeStroke: "Black",
-            routeStrokeWidth: 1,
-            height : $(diagram.divName).outerHeight()
-           
-        }, newoptions);
-        
+        stackHeight : 12,
+        radius : 5,
+        fontSize : 14,
+        labelFontSize : 8,
+        labelLineSpacing: 2.5,
+        nodeLabel : null,
+        markerWidth : 0,
+        markerHeight : 0,
+        width : $(diagram.divName).outerWidth(),
+        gap : 1.5,
+        nodeResize : "",
+        linkDistance : 80,
+        charge : -120,
+        styleColumn : null,
+        styles : null,
+        linkName : null,
+        nodeFocus: true,
+        nodeFocusRadius: 25,
+        nodeFocusColor: "FireBrick",
+        labelOffset: 5,
+        gravity: .05,
+        routeFocusStroke: "FireBrick",
+        routeFocusStrokeWidth: 3,
+        circleFill: "Black",
+        routeStroke: "Black",
+        routeStrokeWidth: 1,
+        height : $(diagram.divName).outerHeight()
+    }, newoptions);
+  
     var options = diagram.options;
     options.gap = options.gap * options.radius;
     diagram.width = options.width;
     diagram.height = options.height;
-    // this is an element that can be used to determine the width of a text label
-    
     diagram.scratch = $(document.createElement('span'))
         .addClass('shadow')
         .css('display','none')
         .css("font-size",diagram.options.labelFontSize + "px");   
     $('body').append(diagram.scratch);
-    
-    getPromise(diagram,skema).then( function (data) {  
-        
+
+    var initPromise = $.Deferred();
+    getPromise(diagram,skema).then( function (data) {
+
         diagram.data = data;
         diagram.nodes = data.nodes;
         diagram.links = data.links;
@@ -70,13 +63,13 @@ function initialize (skema) {
             .linkDistance(diagram.options.linkDistance)
             .charge(diagram.options.charge)
             .gravity(diagram.options.gravity);
-    
-       initPromise.resolve(diagram);
+
+        initPromise.resolve(diagram);
     });
     return initPromise.promise();
 }
 
-  function doTheTreeViz(diagram) {
+function doTheTreeViz(diagram) {
 
     var svg = diagram.svg;
 
@@ -155,14 +148,12 @@ function initialize (skema) {
             // enhance all the links that end here
             enhanceNode (d);
         })
-        
         .on("mouseout", function(d){
             resetNode(d);
-            
         })
       .append("svg:title")
         .text(function(d) { return d[diagram.options.nodeLabel]; })
-        
+
     function enhanceNode(selectedNode) {
         link.filter ( function (d) {
             return d.source.key == selectedNode.key || d.target.key == selectedNode.key;
@@ -177,7 +168,7 @@ function initialize (skema) {
             .style("fill", diagram.options.routeFocusStroke);
         }
     }
-    
+
     function areWeConnected (node1,node2) {
         for (var i=0; i < diagram.data.links.length ; i++) {
             var lnk = diagram.data.links[i];
@@ -186,6 +177,7 @@ function initialize (skema) {
         }
         return null;
     }
+
     function resetNode(selectedNode) {
         link.style("stroke", diagram.options.routeStroke)
             .style("stroke-width", diagram.options.routeStrokeWidth);
@@ -362,9 +354,9 @@ var ind = data, nodes = [],links =[];
        }
        
    }
-   var options= diagram.options;
 
-   // we're going to fix the nodes that are pages into two columns
+    var options= diagram.options;
+    // we're going to fix the nodes that are pages into two columns
     for ( var i = 0, c=0; i < nodes.length ; i++) {
         var page = nodes[i];
         if (page.fixed) {
@@ -378,11 +370,8 @@ var ind = data, nodes = [],links =[];
                         page.dim.width + options.labelOffset ;
             c++;
         }
-        
-   }
-
-   return {  nodes: nodes, links: links };
-
+    }
+    return {  nodes: nodes, links: links };
 }
 
 function findOrAddPage(diagram,page,nodes) {
