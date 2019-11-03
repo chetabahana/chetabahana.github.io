@@ -51,7 +51,6 @@ form_engines:
 collections:
   feeds:
     output: true
-    permalink: /:collection/:path/
 
 # Default Setting
 # https://jekyllrb.com/docs/configuration/front-matter-defaults/
@@ -63,6 +62,7 @@ defaults:
     values:
       layout: "feeds"
       includes: false
+      redirect_from : /:collection/:path/
 
 # Site link
 base: _feeds/section
