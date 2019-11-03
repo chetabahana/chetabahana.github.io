@@ -124,7 +124,7 @@ function initialize (skema) {
         .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
         .on("dblclick", function(d){
             control.nodeClickInProgress=false;
-            if (d.url)window.open(d.url);
+            if (d.url) draw.click(d);
         })
         .on("click", function(d){
             // this is a hack so that click doesnt fire on the1st click of a dblclick
