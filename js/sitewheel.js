@@ -320,17 +320,10 @@ function getPixelDims(scratch,t) {
     scratch.append(document.createTextNode(t));
     return { width: scratch.outerWidth(), height: scratch.outerHeight() } ;
 }
+
 function getPromise(diagram,data) {
-    //var dataPromise = getTheRawData();
     var massage = $.Deferred();
-    //dataPromise.done ( function (data) {
-        // need to massage it
-        massage.resolve ( dataMassage (diagram,data));    
-    //})
-    //.fail (function (error) {
-        //console.log (error);
-        //massage.reject(error);
-    //});
+    massage.resolve ( dataMassage (diagram,data));    
     return massage.promise();
 }
 
