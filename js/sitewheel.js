@@ -8,6 +8,7 @@ function initialize (skema) {
     var newoptions = {  nodeLabel:"label", 
                     nodeResize:"count", height:700,
                     nodeFocus:true, radius:3, charge:-500};
+
     // defaults
     diagram.options = $.extend({
             stackHeight : 12,
@@ -44,8 +45,6 @@ function initialize (skema) {
     options.gap = options.gap * options.radius;
     diagram.width = options.width;
     diagram.height = options.height;
-    // this is an element that can be used to determine the width of a text label
-    
     diagram.scratch = $(document.createElement('span'))
         .addClass('shadow')
         .css('display','none')
@@ -53,7 +52,6 @@ function initialize (skema) {
     $('body').append(diagram.scratch);
     
     getPromise(diagram,skema).then( function (data) {  
-        
         diagram.data = data;
         diagram.nodes = data.nodes;
         diagram.links = data.links;
@@ -98,14 +96,13 @@ function doTheTreeViz(diagram) {
         .attr("y1", function(d) { return d.source.y; })
         .attr("x2", function(d) { return d.target.x; })
         .attr("y2", function(d) { return d.target.y; })
-      .append("svg:title")
+        .append("svg:title")
         .text(function(d) { return d.target.name + ":" + d.source.name ; });
     
     // Exit any old links.
     link.exit().remove();
 
-
-  // Update the nodes
+    // Update the nodes
     var node = svg.selectAll("g.node")
         .data(diagram.nodes, function(d) { return d.key; });
 
@@ -113,7 +110,7 @@ function doTheTreeViz(diagram) {
         .style("fill", function(d) {return getColor(d);})
         .attr("r", function(d) {return getRadius(d);})
 
-  // Enter any new nodes.
+    // Enter any new nodes.
     var nodeEnter = node.enter()
         .append("svg:g")
         .attr("class", "node")
