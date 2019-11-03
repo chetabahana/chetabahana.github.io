@@ -100,7 +100,7 @@ function doTheTreeViz(diagram) {
     var node = svg.selectAll("g.node")
         .data(diagram.nodes, function(d) { return d.key; });
 
-    node.select("circle")
+    node.select("circle").style("cursor", "pointer")
         .style("fill", function(d) {return getColor(d);})
         .attr("r", function(d) {return getRadius(d);})
 
@@ -257,7 +257,7 @@ function doTheTreeViz(diagram) {
         return diagram.options.nodeFocus && d.isCurrentlyFocused ? diagram.options.nodeFocusColor  : diagram.color(d.group) ;
     }
 
-   }
+}
    
 function makeRadius(diagram,d) {
      var r = diagram.options.radius * (diagram.options.nodeResize ? Math.sqrt(d[diagram.options.nodeResize]) / Math.PI : 1);
