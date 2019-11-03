@@ -109,10 +109,7 @@ function doTheTreeViz(diagram) {
       .append("svg:g").style("cursor", "pointer")
         .attr("class", "node")
         .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
-        .on("dblclick", function(d){
-            diagram.nodeClickInProgress=false;
-            if (d.url)window.open(d.url);
-        })
+        .on("dblclick", function(d){diagram.nodeClickInProgress=false; draw.click(this);})
         .on("click", function(d){
             // this is a hack so that click doesnt fire on the1st click of a dblclick
             if (!diagram.nodeClickInProgress ) {
@@ -138,6 +135,7 @@ function doTheTreeViz(diagram) {
         .style("fill", function(d) {
             return getColor(d);
         })
+        .on("dblclick", function(d){diagram.nodeClickInProgress=false; draw.click(this);})
         .on("mouseover", function(d){
             // enhance all the links that end here
             enhanceNode (d);
