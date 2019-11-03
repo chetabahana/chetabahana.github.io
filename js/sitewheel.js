@@ -80,9 +80,8 @@ function doTheTreeViz(diagram) {
 
     // Update the links
     var link = svg.selectAll("line.link")
-        .data(diagram.links, function(d) {return d.key;})
-        .attr("id", function(d,i) { return i; });
-
+        .data(diagram.links, function(d) {return d.key;});
+ 
    // Enter any new links
     var linkEnter = link.enter().insert("svg:line", ".node")
         .attr("class", "link")
@@ -90,34 +89,30 @@ function doTheTreeViz(diagram) {
         .attr("y1", function(d) { return d.source.y; })
         .attr("x2", function(d) { return d.target.x; })
         .attr("y2", function(d) { return d.target.y; })
-        .on("dblclick", function(d){diagram.nodeClickInProgress=false; draw.click(this);})
-
       .append("svg:title")
         .text(function(d) { return d.target.name + ":" + d.source.name ; });
-        .on("dblclick", function(d){diagram.nodeClickInProgress=false; draw.click(this);})
-
+    
     // Exit any old links.
     link.exit().remove();
 
 
   // Update the nodes
-    var node = svg.selectAll("g.node").style("cursor", "pointer")
-        .data(diagram.nodes, function(d) { return d.key;})
-        .attr("id", function(d,i) { return i; })
-        .on("dblclick", function(d){diagram.nodeClickInProgress=false; draw.click(this);});
+    var node = svg.selectAll("g.node")
+        .data(diagram.nodes, function(d) { return d.key; });
 
     node.select("circle").style("cursor", "pointer")
         .style("fill", function(d) {return getColor(d);})
         .attr("r", function(d) {return getRadius(d);})
-        .attr("id", function(d,i) { return i; });
 
   // Enter any new nodes.
     var nodeEnter = node.enter()
       .append("svg:g").style("cursor", "pointer")
         .attr("class", "node")
         .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
-        .on("dblclick", function(d){diagram.nodeClickInProgress=false; draw.click(this);})
-
+        .on("dblclick", function(d){
+            diagram.nodeClickInProgress=false;
+            if (d.url)window.open(d.url);
+        })
         .on("click", function(d){
             // this is a hack so that click doesnt fire on the1st click of a dblclick
             if (!diagram.nodeClickInProgress ) {
@@ -143,8 +138,6 @@ function doTheTreeViz(diagram) {
         .style("fill", function(d) {
             return getColor(d);
         })
-        .on("dblclick", function(d){diagram.nodeClickInProgress=false; draw.click(this);})
-
         .on("mouseover", function(d){
             // enhance all the links that end here
             enhanceNode (d);
@@ -154,7 +147,6 @@ function doTheTreeViz(diagram) {
         })
       .append("svg:title")
         .text(function(d) { return d[diagram.options.nodeLabel]; })
-        .attr("id", function(d,i) { return i; });
 
     function enhanceNode(selectedNode) {
         link.filter ( function (d) {
@@ -222,8 +214,7 @@ function doTheTreeViz(diagram) {
             .text(function(d) {
                 return d.shortName ? d.shortName : d.name;
             })
-            .on("dblclick", function(d){diagram.nodeClickInProgress=false; draw.click(this);})
-
+            
             .on("mouseover", function(d){
             // enhance all the links that end here
                 enhanceNode (d);
@@ -238,8 +229,8 @@ function doTheTreeViz(diagram) {
 
     // Exit any old nodes.
     node.exit().remove();
-    diagram.link = svg.selectAll("line.link").attr("id", function(d,i) { return i; });
-    diagram.node = svg.selectAll("g.node").attr("id", function(d,i) { return i; });
+    diagram.link = svg.selectAll("line.link");
+    diagram.node = svg.selectAll("g.node");
     force.on("tick", tick);
 
     if (diagram.options.linkName) {
