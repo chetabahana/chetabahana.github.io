@@ -109,7 +109,10 @@ function doTheTreeViz(diagram) {
       .append("svg:g").style("cursor", "pointer")
         .attr("class", "node")
         .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
-        .on("dblclick", function(d){diagram.nodeClickInProgress=false; draw.click(this);})
+        .on("dblclick", function(d){
+            diagram.nodeClickInProgress=false;
+            if (d.url)window.open(d.url);
+        })
         .on("click", function(d){
             // this is a hack so that click doesnt fire on the1st click of a dblclick
             if (!diagram.nodeClickInProgress ) {
@@ -129,16 +132,26 @@ function doTheTreeViz(diagram) {
 
     nodeEnter
       .append("svg:circle").style("cursor", "pointer")
-        .attr("r", function(d) {return getRadius(d);})
-        .style("fill", function(d) {return getColor(d);})
-        .on("dblclick", function(d){diagram.nodeClickInProgress=false; draw.click(this);})
-        .on("mouseover", function(d){enhanceNode (d);})
-        .on("mouseout", function(d){resetNode(d);})
+        .attr("r", function(d) {
+            return getRadius(d);
+        })
+        .style("fill", function(d) {
+            return getColor(d);
+        })
+        .on("mouseover", function(d){
+            // enhance all the links that end here
+            enhanceNode (d);
+        })
+        .on("mouseout", function(d){
+            resetNode(d);
+        })
       .append("svg:title")
         .text(function(d) { return d[diagram.options.nodeLabel]; })
 
     function enhanceNode(selectedNode) {
-        link.filter ( function (d) {return d.source.key == selectedNode.key || d.target.key == selectedNode.key;})
+        link.filter ( function (d) {
+            return d.source.key == selectedNode.key || d.target.key == selectedNode.key;
+        } )
         .style("stroke", diagram.options.routeFocusStroke)
         .style("stroke-width", diagram.options.routeFocusStrokeWidth);
         
@@ -170,22 +183,48 @@ function doTheTreeViz(diagram) {
    if (diagram.options.nodeLabel) {       
        // text is done once for shadow as well as for text
         var textShadow = nodeEnter.append("svg:text")
-            .attr("x", function(d) {ar x = (d.right || !d.fixed)? diagram.options.labelOffset :(-d.dim.width - diagram.options.labelOffset);return x;})
+            .attr("x", function(d) {
+                var x = (d.right || !d.fixed) ? 
+                    diagram.options.labelOffset : 
+                    (-d.dim.width - diagram.options.labelOffset)  ;
+                return x;
+            })
             .attr("dy", ".31em")
             .attr("class", "shadow")
-            .attr("text-anchor", function(d) {return !d.right ? 'start' : 'start' ;})
+            .attr("text-anchor", function(d) { 
+                return !d.right ? 'start' : 'start' ;
+            })
             .style("font-size",diagram.options.labelFontSize + "px")
-            .text(function(d) {return d.shortName ? d.shortName : d.name;});
+            .text(function(d) {
+                return d.shortName ? d.shortName : d.name;
+            });
 
         var text = nodeEnter.append("svg:text")
-            .attr("x", function(d) {var x = (d.right || !d.fixed)? diagram.options.labelOffset:(-d.dim.width - diagram.options.labelOffset);return x;})
+            .attr("x", function(d) {
+                var x = (d.right || !d.fixed) ? 
+                    diagram.options.labelOffset : 
+                    (-d.dim.width - diagram.options.labelOffset)  ;
+                return x;
+            })
             .attr("dy", ".35em")
             .attr("class", "text")
-            .attr("text-anchor", function(d) {return !d.right ? 'start' : 'start' ;})
+            .attr("text-anchor", function(d) { 
+                return !d.right ? 'start' : 'start' ;})
             .style("font-size",diagram.options.labelFontSize + "px")
-            .text(function(d) {return d.shortName ? d.shortName : d.name;})
-            .on("mouseover", function(d){enhanceNode (d); d3.select(this).style('fill',diagram.options.routeFocusStroke);})
-            .on("mouseout", function(d){resetNode(d);});
+            .text(function(d) {
+                return d.shortName ? d.shortName : d.name;
+            })
+            
+            .on("mouseover", function(d){
+            // enhance all the links that end here
+                enhanceNode (d);
+                d3.select(this)
+                    .style('fill',diagram.options.routeFocusStroke);
+            })
+        
+            .on("mouseout", function(d){
+                resetNode(d);
+            });
     }
 
     // Exit any old nodes.
