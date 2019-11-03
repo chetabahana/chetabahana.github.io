@@ -10,4 +10,4 @@ layout: feeds
 *  You may see the repository code here:
 *  https://github.com/jekyll/jekyll-redirect-from
 *
-{% endcomment %}{{ page.redirect.from }}
+{% endcomment %}
