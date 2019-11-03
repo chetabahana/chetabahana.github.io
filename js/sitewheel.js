@@ -115,13 +115,10 @@ function doTheTreeViz(diagram) {
 
   // Enter any new nodes.
     var nodeEnter = node.enter()
-      .append("svg:g")
+        .append("svg:g")
         .attr("class", "node")
         .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
-        .on("dblclick", function(d){
-            diagram.nodeClickInProgress=false;
-            if (d.url) draw.click(d);
-        })
+        .on("dblclick", function(d){diagram.nodeClickInProgress=false;if (d.url) draw.click(d);})
         .on("click", function(d){
             // this is a hack so that click doesnt fire on the1st click of a dblclick
             if (!diagram.nodeClickInProgress ) {
@@ -155,7 +152,7 @@ function doTheTreeViz(diagram) {
             .style("fill", diagram.options.routeFocusStroke);
         }
     }
-    
+
     function areWeConnected (node1,node2) {
         for (var i=0; i < diagram.data.links.length ; i++) {
             var lnk = diagram.data.links[i];
@@ -171,51 +168,31 @@ function doTheTreeViz(diagram) {
         if (text) {text.style("fill", diagram.options.routeStroke);}
     }
 
-   if (diagram.options.nodeLabel) {       
+    if (diagram.options.nodeLabel) {       
        // text is done once for shadow as well as for text
         var textShadow = nodeEnter.append("svg:text")
             .attr("x", function(d) {
-                var x = (d.right || !d.fixed) ? 
-                    diagram.options.labelOffset : 
-                    (-d.dim.width - diagram.options.labelOffset)  ;
+                var x = (d.right || !d.fixed)? diagram.options.labelOffset : (-d.dim.width - diagram.options.labelOffset);
                 return x;
             })
             .attr("dy", ".31em")
             .attr("class", "shadow")
-            .attr("text-anchor", function(d) { 
-                return !d.right ? 'start' : 'start' ;
-            })
+            .attr("text-anchor", function(d) {return !d.right ? 'start' : 'start';})
             .style("font-size",diagram.options.labelFontSize + "px")
-            .text(function(d) {
-                return d.shortName ? d.shortName : d.name;
-            });
+            .text(function(d) {return d.shortName ? d.shortName : d.name;});
 
         var text = nodeEnter.append("svg:text")
             .attr("x", function(d) {
-                var x = (d.right || !d.fixed) ? 
-                    diagram.options.labelOffset : 
-                    (-d.dim.width - diagram.options.labelOffset)  ;
+                var x = (d.right || !d.fixed)? diagram.options.labelOffset: (-d.dim.width - diagram.options.labelOffset);
                 return x;
             })
             .attr("dy", ".35em")
             .attr("class", "text")
-            .attr("text-anchor", function(d) { 
-                return !d.right ? 'start' : 'start' ;})
+            .attr("text-anchor", function(d) {return !d.right ? 'start' : 'start' ;})
             .style("font-size",diagram.options.labelFontSize + "px")
-            .text(function(d) {
-                return d.shortName ? d.shortName : d.name;
-            })
-            
-            .on("mouseover", function(d){
-            // enhance all the links that end here
-                enhanceNode (d);
-                d3.select(this)
-                    .style('fill',diagram.options.routeFocusStroke);
-            })
-        
-            .on("mouseout", function(d){
-                resetNode(d);
-            });
+            .text(function(d) {return d.shortName ? d.shortName : d.name;})
+            .on("mouseover", function(d){enhanceNode (d);d3.select(this).style('fill',diagram.options.routeFocusStroke);})
+            .on("mouseout", function(d){resetNode(d);});
     }
 
     // Exit any old nodes.
