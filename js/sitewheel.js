@@ -80,9 +80,7 @@ function doTheTreeViz(diagram) {
 
     // Update the links
     var link = svg.selectAll("line.link")
-        .data(diagram.links, function(d) { 
-            return d.key; 
-        } );
+        .data(diagram.links, function(d) {return d.key;});
  
    // Enter any new links
     var linkEnter = link.enter().insert("svg:line", ".node")
@@ -239,15 +237,12 @@ function doTheTreeViz(diagram) {
     diagram.node = svg.selectAll("g.node");
     force.on("tick", tick);
 
-
-
     if (diagram.options.linkName) {
         link.append("title")
             .text(function(d) {
                 return d[diagram.options.linkName];
         });
     }
-
 
     function tick() {
         link.attr("x1", function(d) { return d.source.x; })
@@ -257,7 +252,6 @@ function doTheTreeViz(diagram) {
         node.attr("transform", function(d) {
             return "translate(" + d.x + "," + d.y + ")";
         });
-
     }
  
     function getRadius(d) {
