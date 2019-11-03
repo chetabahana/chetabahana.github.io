@@ -2,4 +2,46 @@
 weight: 0
 category: skema
 js: scenetree/build.js
+redirect_from:
+  - /00000/skema.json
+  - /00001/skema.json
+  - /00002/skema.json
+  - /00003/skema.json
+  - /00004/skema.json
+  - /00005/skema.json
+  - /00006/skema.json
+  - /00007/skema.json
+  - /00008/skema.json
+  - /00009/skema.json
+  - /00010/skema.json
+  - /00011/skema.json
+  - /00012/skema.json
+  - /00013/skema.json
+  - /00014/skema.json
+  - /00015/skema.json
+  - /00016/skema.json
+  - /00017/skema.json
+  - /00018/skema.json
+  - /00019/skema.json
+  - /00020/skema.json
+  - /00021/skema.json
+  - /00022/skema.json
+  - /00023/skema.json
+  - /00024/skema.json
+  - /00025/skema.json
+  - /00026/skema.json
+  - /00027/skema.json
+  - /00028/skema.json
+  - /00029/skema.json
+  - /00030/skema.json
+  - /00031/skema.json
+  - /00032/skema.json
+  - /00033/skema.json
+  - /00034/skema.json
+  - /00035/skema.json
+  - /00036/skema.json
+  - /00037/skema.json
+  - /00038/skema.json
+  - /00039/skema.json
+  - /99999/skema.json
 ---
