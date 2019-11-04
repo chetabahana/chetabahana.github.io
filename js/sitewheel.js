@@ -83,24 +83,25 @@ function doTheTreeViz(diagram) {
         .data(diagram.links, function(d) {return d.key;});
  
    // Enter any new links
-    var linkEnter = link.enter().insert("svg:line", ".node")
-        .attr("class", "link")
-        .attr("x1", function(d) { return d.source.x; })
-        .attr("y1", function(d) { return d.source.y; })
-        .attr("x2", function(d) { return d.target.x; })
-        .attr("y2", function(d) { return d.target.y; })
-      .append("svg:title")
-        .text(function(d) { return d.target.name + ":" + d.source.name ; });
-    
+    var linkEnter = link.enter()
+        .insert("svg:line", ".node")
+            .attr("class", "link")
+            .attr("x1", function(d) { return d.source.x; })
+            .attr("y1", function(d) { return d.source.y; })
+            .attr("x2", function(d) { return d.target.x; })
+            .attr("y2", function(d) { return d.target.y; })
+        .append("svg:title")
+            .text(function(d) { return d.target.name + ":" + d.source.name ; });
+
     // Exit any old links.
     link.exit().remove();
-
 
   // Update the nodes
     var node = svg.selectAll("g.node")
         .data(diagram.nodes, function(d) { return d.key; });
 
-    node.select("circle").style("cursor", "pointer")
+    node.select("circle")
+        .style("cursor", "pointer")
         .style("fill", function(d) {return getColor(d);})
         .attr("r", function(d) {return getRadius(d);})
 
@@ -127,35 +128,25 @@ function doTheTreeViz(diagram) {
         })
         .call(force.drag);
 
+    // enhance all the links that end here
     nodeEnter
-      .append("svg:circle").style("cursor", "pointer")
-        .attr("r", function(d) {
-            return getRadius(d);
-        })
-        .style("fill", function(d) {
-            return getColor(d);
-        })
-        .on("mouseover", function(d){
-            // enhance all the links that end here
-            enhanceNode (d);
-        })
-        .on("mouseout", function(d){
-            resetNode(d);
-        })
-      .append("svg:title")
-        .text(function(d) { return d[diagram.options.nodeLabel]; })
+        .append("svg:circle").style("cursor", "pointer")
+            .attr("r", function(d) {return getRadius(d);})
+            .style("fill", function(d) {return getColor(d);})
+            .on("mouseover", function(d){enhanceNode (d);})
+            .on("mouseout", function(d){resetNode(d);})
+        .append("svg:title")
+            .text(function(d) { return d[diagram.options.nodeLabel]; })
 
     function enhanceNode(selectedNode) {
-        link.filter ( function (d) {
-            return d.source.key == selectedNode.key || d.target.key == selectedNode.key;
-        } )
-        .style("stroke", diagram.options.routeFocusStroke)
-        .style("stroke-width", diagram.options.routeFocusStrokeWidth);
+        link.filter ( function (d) {return d.source.key == selectedNode.key || d.target.key == selectedNode.key;})
+            .style("stroke", diagram.options.routeFocusStroke)
+            .style("stroke-width", diagram.options.routeFocusStrokeWidth);
         
         if (text) {
             text.filter ( function (d) {
                 return areWeConnected (selectedNode,d);
-            } )
+            })
             .style("fill", diagram.options.routeFocusStroke);
         }
     }
