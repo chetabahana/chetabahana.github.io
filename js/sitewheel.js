@@ -115,7 +115,7 @@ function doTheTreeViz(diagram) {
             if (!diagram.nodeClickInProgress ) {
                 diagram.nodeClickInProgress = true;
                 setTimeout(function(){
-                    if (diagram.nodeClickInProgress) { 
+                    if (diagram.nodeClickInProgress) {
                         diagram.nodeClickInProgress = false;
                         if (diagram.options.nodeFocus) {
                             d.isCurrentlyFocused = !d.isCurrentlyFocused;
@@ -162,12 +162,12 @@ function doTheTreeViz(diagram) {
     function resetNode(selectedNode) {
         link.style("stroke", diagram.options.routeStroke)
             .style("stroke-width", diagram.options.routeStrokeWidth);
-        if (text) { 
+        if (text) {
             text.style("fill", diagram.options.routeStroke);
         }
     }
 
-   if (diagram.options.nodeLabel) {       
+   if (diagram.options.nodeLabel) {
        // text is done once for shadow as well as for text
         var textShadow = nodeEnter.append("svg:text")
             .attr("x", function(d) {var x = (d.right || !d.fixed)? 
@@ -266,7 +266,7 @@ function getPixelDims(scratch,t) {
     // scratch is an elemen with the correct styling, t is the text to be counted in pixels
     scratch.empty();
     scratch.append(document.createTextNode(t));
-    return { width: scratch.outerWidth(), height: scratch.outerHeight() } ;
+    return {width: scratch.outerWidth(), height: scratch.outerHeight() } ;
 }
 
 function getPromise(diagram,data) {
@@ -287,7 +287,7 @@ function dataMassage(diagram,data) {
            var node = findOrAddPage(diagram,ind[i].pages[j],nodes);
            node.isCurrentlyFocused = false;
            // create a link
-           var link = { source:node , target:ind[i], key : node.key + "_" + ind[i].key };
+           var link = {source:node , target:ind[i], key : node.key + "_" + ind[i].key };
            links.push(link);
        }
    }
@@ -300,7 +300,7 @@ function dataMassage(diagram,data) {
        page= nodes[i];
        page.group =0;
        page.dim = getPixelDims(diagram.scratch, page.name);
-       if (page.fixed) { 
+       if (page.fixed) {
            diagram.pageCount++;
           // this will calculate the width/height in pixels of the largest label
            diagram.pageRectSize.width = Math.max(diagram.pageRectSize.width,page.dim.width);
@@ -327,12 +327,12 @@ function dataMassage(diagram,data) {
             c++;
         }
     }
-    return {  nodes: nodes, links: links };
+    return {nodes: nodes, links: links };
 }
 
 function findOrAddPage(diagram,page,nodes) {
     for ( var i=0;i<nodes.length;i++) {
-        if ( nodes[i].key === page.key ) { 
+        if ( nodes[i].key === page.key ) {
             nodes[i].count++;
             return nodes[i];
         }
