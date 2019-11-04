@@ -85,10 +85,12 @@ function doTheTreeViz(diagram) {
     var linkEnter = link.enter()
         .insert("svg:line", ".node")
             .attr("class", "link")
+            .attr("id", function(d,i) {return i;})
             .attr("x1", function(d) {return d.source.x;})
             .attr("y1", function(d) {return d.source.y;})
             .attr("x2", function(d) {return d.target.x;})
             .attr("y2", function(d) {return d.target.y;})
+            .style("cursor", "pointer")
         .append("svg:title")
             .text(function(d) {return d.target.name + ":" + d.source.name ;});
 
@@ -100,16 +102,18 @@ function doTheTreeViz(diagram) {
         .data(diagram.nodes, function(d) {return d.key;});
 
     node.select("circle")
-        .style("cursor", "pointer")
         .attr("id", function(d,i) {return i;})
-        .style("fill", function(d) {return getColor(d);})
-        .attr("r", function(d) {return getRadius(d);});
+        .attr("r", function(d) {return getRadius(d);})
+        .style("cursor", "pointer")
+        .style("fill", function(d) {return getColor(d);});
 
   // Enter any new nodes.
     var nodeEnter = node.enter()
-        .append("svg:g").style("cursor", "pointer")
+        .append("svg:g")
             .attr("class", "node")
+            .attr("id", function(d,i) {return i;})
             .attr("transform", function(d) {return "translate(" + d.x + "," + d.y + ")";})
+            .style("cursor", "pointer")
             .on("dblclick", function(d){diagram.nodeClickInProgress=false; draw.click(this);})
             .on("click", function(d){
                 // this is a hack so that click doesnt fire on the1st click of a dblclick
@@ -130,8 +134,10 @@ function doTheTreeViz(diagram) {
 
     // enhance all the links that end here
     nodeEnter
-        .append("svg:circle").style("cursor", "pointer")
+        .append("svg:circle")
+            .attr("id", function(d,i) {return i;})
             .attr("r", function(d) {return getRadius(d);})
+            .style("cursor", "pointer")
             .style("fill", function(d) {return getColor(d);})
             .on("mouseover", function(d){enhanceNode (d);})
             .on("mouseout", function(d){resetNode(d);})
