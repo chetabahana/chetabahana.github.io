@@ -45,7 +45,7 @@ function initialize (skema) {
     $('body').append(diagram.scratch);
 
     var initPromise = $.Deferred();
-    getPromise(diagram,skema).then( function (data) {
+    getPromise(diagram,skema).then(function (data) {
 
         diagram.data = data;
         diagram.nodes = data.nodes;
@@ -135,15 +135,15 @@ function doTheTreeViz(diagram) {
             .on("mouseover", function(d){enhanceNode (d);})
             .on("mouseout", function(d){resetNode(d);})
         .append("svg:title")
-            .text(function(d) { return d[diagram.options.nodeLabel]; })
+            .text(function(d) {return d[diagram.options.nodeLabel]; })
 
     function enhanceNode(selectedNode) {
-        link.filter ( function (d) {return d.source.key == selectedNode.key || d.target.key == selectedNode.key;})
+        link.filter (function (d) {return d.source.key == selectedNode.key || d.target.key == selectedNode.key;})
             .style("stroke", diagram.options.routeFocusStroke)
             .style("stroke-width", diagram.options.routeFocusStrokeWidth);
         
         if (text) {
-            text.filter ( function (d) {
+            text.filter (function (d) {
                 return areWeConnected (selectedNode,d);
             })
             .style("fill", diagram.options.routeFocusStroke);
@@ -293,7 +293,7 @@ function dataMassage(diagram,data) {
    }
 
    // sort nodes alpha
-   nodes.sort ( function (a,b) { return a.name < b.name  ? -1 : (a.name == b.name ? 0 : 1 ) ; });
+   nodes.sort (function (a,b) { return a.name < b.name  ? -1 : (a.name == b.name ? 0 : 1 ) ; });
    diagram.pageCount = 0;
    diagram.pageRectSize = {width:0,height:0,radius:0};   
    for ( var i = 0; i < nodes.length ; i++) {
