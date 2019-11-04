@@ -1,6 +1,7 @@
 jQuery(function($) {
-$(window).load(function() {draw.getJSON();});
 
+    // set synchronous code that blocks the event loop
+    // https://stackoverflow.com/a/42914045/4058484
     $(window).on('beforeunload', function(){
 
         // to stick navbar on top and hash
@@ -8,21 +9,8 @@ $(window).load(function() {draw.getJSON();});
 
     });
 
-    $(window).on('load', function(){
-
-        // open links which point outside
-        $(document.links).filter(function() {
-            return this.hostname != window.location.hostname;
-        }).attr('target', '_blank'); 
-
-        // do scroll and clear the hash anytime someone arrives with a hash tag
-        if( typeof(location.hash) !== 'undefined' && location.hash.length ) {
-            scrollTo(location.hash);
-            history.replaceState(null, null, location.pathname); // https://stackoverflow.com/a/50688363/4058484
-        }
-
-    });
-
+    // jQuery document.ready will be executed just after html dom tree has been parsed out.
+    // So it is far more earlier executed than window onload.
     $(document).ready( function() {
 
         // to stick navbar on top and hash
@@ -83,11 +71,46 @@ $(window).load(function() {draw.getJSON();});
         });
 
         // chetabahana-portfolio https://stackoverflow.com/a/50299022/4058484
-        $(".templatemo-project-gallery").simplyScroll(); 
+        $(".templatemo-project-gallery").simplyScroll();
 
     });
 
+    // Window.onload event will be executed only when all page resources
+    // ( images, audio, video etc ) has been downloaded in the page.
+    $(window).on('load', function(){
+
+        // open links which point outside
+        $(document.links).filter(function() {
+            return this.hostname != window.location.hostname;
+        }).attr('target', '_blank'); 
+
+        // do scroll and clear the hash anytime someone arrives with a hash tag
+        // https://stackoverflow.com/a/50688363/4058484
+        if( typeof(location.hash) !== 'undefined' && location.hash.length ) {
+            scrollTo(location.hash);
+            history.replaceState(null, null, location.pathname);
+        }
+
+        // draw skema
+        draw.getJSON();
+
+    });
+
+    // load page in sequence with Jquery via  div loaded
+    // https://stackoverflow.com/questions/15674733/is-there-a-way-to-load-page-in-sequence-with-jquery
+    /*$('#one').load("one.php", function() {  // first div loaded
+        $('#two').load("two.php", function() { // second div loaded
+            $('#three').load("three.php", function() { // third div loaded  });
+        });
+    });*/
+
+    // This API has been removed in jQuery 3.0; please use .on( "load", handler ) 
+    // instead of .load( handler ) and .trigger( "load" ) instead of .load().
+    // https://api.jquery.com/load-event/
+    //$(window).load(function() {draw.getJSON();});
+
 });
+
 
 // scrollTo 
 var top_menu_height = 0;
