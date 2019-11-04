@@ -1,9 +1,18 @@
+// init function 
+var top_menu_height = 0;
+function scrollTo(selectors)
+{
+    if(!$(selectors).length) return;
+    var selector_top = $(selectors).offset().top - top_menu_height;
+    $('html,body').animate({scrollTop: selector_top }, 'slow');
+}
+
 jQuery(function($) {
 
     // set synchronous code that blocks the event loop
     // https://stackoverflow.com/a/42914045/4058484
     $(window).on('beforeunload', function(){
-
+console.log('beforeunload');
         // to stick navbar on top and hash
         $('.templatemo-top-menu').stickUp();
 
@@ -12,6 +21,7 @@ jQuery(function($) {
     // jQuery document.ready will be executed just after html dom tree has been parsed out.
     // So it is far more earlier executed than window onload.
     $(document).ready( function() {
+console.log('ready');
 
         // unbind external link
         $('.external-link').unbind('click');
@@ -37,6 +47,7 @@ jQuery(function($) {
     // Window.onload event will be executed only when all page resources
     // ( images, audio, video etc ) has been downloaded in the page.
     $(window).on('load', function(){
+console.log('onload');
 
         // open links which point outside
         $(document.links).filter(function() {
@@ -112,16 +123,6 @@ jQuery(function($) {
     //$(window).load(function() {draw.getJSON();});
 
 });
-
-
-// scrollTo 
-var top_menu_height = 0;
-function scrollTo(selectors)
-{
-    if(!$(selectors).length) return;
-    var selector_top = $(selectors).offset().top - top_menu_height;
-    $('html,body').animate({scrollTop: selector_top }, 'slow');
-}
 
 /*juicerFeed
 function juicerFeed() { 
