@@ -25,8 +25,11 @@ jQuery(function($) {
         // do scroll and clear the hash anytime someone arrives with a hash tag
         // https://stackoverflow.com/a/50688363/4058484
         if( typeof(location.hash) !== 'undefined' && location.hash.length ) {
+
+            var location_hash = location.hash;
             history.replaceState(null, null, location.pathname);
-            scrollTo(location.hash);
+            scrollTo(location_hash);
+
         }
 
     });
