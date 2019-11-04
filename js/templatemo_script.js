@@ -88,8 +88,8 @@ jQuery(function($) {
             $(linkClass).fadeIn();  
         });
 
-        // chetabahana-portfolio https://stackoverflow.com/a/50299022/4058484
-        $(".templatemo-project-gallery").simplyScroll();
+        // chetabahana-portfolio
+        // $(".templatemo-project-gallery").simplyScroll();
 
         // draw skema
         draw.getJSON();
