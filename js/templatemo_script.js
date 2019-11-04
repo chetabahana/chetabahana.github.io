@@ -7,13 +7,6 @@ jQuery(function($) {
         // to stick navbar on top and hash
         $('.templatemo-top-menu').stickUp();
 
-        // do scroll and clear the hash anytime someone arrives with a hash tag
-        // https://stackoverflow.com/a/50688363/4058484
-        if( typeof(location.hash) !== 'undefined' && location.hash.length ) {
-            scrollTo(location.hash);
-            history.replaceState(null, null, location.pathname);
-        }
-
     });
 
     // jQuery document.ready will be executed just after html dom tree has been parsed out.
@@ -29,6 +22,24 @@ jQuery(function($) {
         // scroll spy to auto active the nav item
         top_menu_height = $('.templatemo-top-menu').height();
         $('body').scrollspy({ target: '#templatemo-nav-bar', offset: top_menu_height + 10 });
+
+        // do scroll and clear the hash anytime someone arrives with a hash tag
+        // https://stackoverflow.com/a/50688363/4058484
+        if( typeof(location.hash) !== 'undefined' && location.hash.length ) {
+            scrollTo(location.hash);
+            history.replaceState(null, null, location.pathname);
+        }
+
+    });
+
+    // Window.onload event will be executed only when all page resources
+    // ( images, audio, video etc ) has been downloaded in the page.
+    $(window).on('load', function(){
+
+        // open links which point outside
+        $(document.links).filter(function() {
+            return this.hostname != window.location.hostname;
+        }).attr('target', '_blank'); 
 
         // scroll to top
         $('#btn-back-to-top').click(function(e){
@@ -79,17 +90,6 @@ jQuery(function($) {
 
         // chetabahana-portfolio https://stackoverflow.com/a/50299022/4058484
         $(".templatemo-project-gallery").simplyScroll();
-
-    });
-
-    // Window.onload event will be executed only when all page resources
-    // ( images, audio, video etc ) has been downloaded in the page.
-    $(window).on('load', function(){
-
-        // open links which point outside
-        $(document.links).filter(function() {
-            return this.hostname != window.location.hostname;
-        }).attr('target', '_blank'); 
 
         // draw skema
         draw.getJSON();
