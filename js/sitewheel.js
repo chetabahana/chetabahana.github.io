@@ -79,7 +79,6 @@ function doTheTreeViz(diagram) {
 
     // Update the links
     var link = svg.selectAll("line.link")
-        .attr("id", function(d,i) {return i;})
         .data(diagram.links, function(d) {return d.key;});
  
    // Enter any new links
@@ -98,36 +97,35 @@ function doTheTreeViz(diagram) {
 
   // Update the nodes
     var node = svg.selectAll("g.node")
-        .attr("id", function(d,i) {return i;})
         .data(diagram.nodes, function(d) {return d.key;});
 
     node.select("circle")
         .style("cursor", "pointer")
         .attr("id", function(d,i) {return i;})
         .style("fill", function(d) {return getColor(d);})
-        .attr("r", function(d) {return getRadius(d);})
+        .attr("r", function(d) {return getRadius(d);});
 
   // Enter any new nodes.
     var nodeEnter = node.enter()
-      .append("svg:g").style("cursor", "pointer")
-        .attr("class", "node")
-        .attr("transform", function(d) {return "translate(" + d.x + "," + d.y + ")";})
-        .on("dblclick", function(d){diagram.nodeClickInProgress=false; draw.click(this);})
-        .on("click", function(d){
-            // this is a hack so that click doesnt fire on the1st click of a dblclick
-            if (!diagram.nodeClickInProgress ) {
-                diagram.nodeClickInProgress = true;
-                setTimeout(function(){
-                    if (diagram.nodeClickInProgress) {
-                        diagram.nodeClickInProgress = false;
-                        if (diagram.options.nodeFocus) {
-                            d.isCurrentlyFocused = !d.isCurrentlyFocused;
-                            doTheTreeViz(makeFilteredData(diagram));
+        .append("svg:g").style("cursor", "pointer")
+            .attr("class", "node")
+            .attr("transform", function(d) {return "translate(" + d.x + "," + d.y + ")";})
+            .on("dblclick", function(d){diagram.nodeClickInProgress=false; draw.click(this);})
+            .on("click", function(d){
+                // this is a hack so that click doesnt fire on the1st click of a dblclick
+                if (!diagram.nodeClickInProgress ) {
+                    diagram.nodeClickInProgress = true;
+                    setTimeout(function(){
+                        if (diagram.nodeClickInProgress) {
+                            diagram.nodeClickInProgress = false;
+                            if (diagram.options.nodeFocus) {
+                                d.isCurrentlyFocused = !d.isCurrentlyFocused;
+                                doTheTreeViz(makeFilteredData(diagram));
+                            }
                         }
-                    }
-                },diagram.clickHack); 
-            }
-        })
+                    },diagram.clickHack); 
+                }
+            })
         .call(force.drag);
 
     // enhance all the links that end here
@@ -138,7 +136,7 @@ function doTheTreeViz(diagram) {
             .on("mouseover", function(d){enhanceNode (d);})
             .on("mouseout", function(d){resetNode(d);})
         .append("svg:title")
-            .text(function(d) {return d[diagram.options.nodeLabel];})
+            .text(function(d) {return d[diagram.options.nodeLabel];});
 
     function enhanceNode(selectedNode) {
         link.filter (function (d) {return d.source.key == selectedNode.key || d.target.key == selectedNode.key;})
