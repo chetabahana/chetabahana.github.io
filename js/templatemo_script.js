@@ -71,13 +71,6 @@ console.log('onload');
             return false;
         });
 
-        //gallery light box setup
-        $('a.colorbox').colorbox({
-            rel: function(){
-                return $(this).data('group');
-            }
-        });
-
         // gallery category
         $('.templatemo-gallery-category a').click(function(e){
             e.preventDefault(); 
@@ -95,23 +88,30 @@ console.log('onload');
         // chetabahana-portfolio
         // $(".templatemo-project-gallery").simplyScroll();
 
+        //gallery light box setup
+        $('a.colorbox').colorbox({
+            rel: function(){
+                return $(this).data('group');
+            }
+        });
+
+        // load page in sequence with Jquery via  div loaded
+        // https://stackoverflow.com/q/15674733/4058484
+        /*$('#one').load("one.php", function() {  // first div loaded
+            $('#two').load("two.php", function() { // second div loaded
+                $('#three').load("three.php", function() { // third div loaded  });
+            });
+        });*/
+
+        // This API has been removed in jQuery 3.0; please use .on( "load", handler ) 
+        // instead of .load( handler ) and .trigger( "load" ) instead of .load().
+        // https://api.jquery.com/load-event/
+        //$(window).load(function() {draw.getJSON();});
+
         // draw skema
         draw.getJSON();
 
     });
-
-    // load page in sequence with Jquery via  div loaded
-    // https://stackoverflow.com/questions/15674733/is-there-a-way-to-load-page-in-sequence-with-jquery
-    /*$('#one').load("one.php", function() {  // first div loaded
-        $('#two').load("two.php", function() { // second div loaded
-            $('#three').load("three.php", function() { // third div loaded  });
-        });
-    });*/
-
-    // This API has been removed in jQuery 3.0; please use .on( "load", handler ) 
-    // instead of .load( handler ) and .trigger( "load" ) instead of .load().
-    // https://api.jquery.com/load-event/
-    //$(window).load(function() {draw.getJSON();});
 
 });
 
