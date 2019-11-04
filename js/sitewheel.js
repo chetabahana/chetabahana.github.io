@@ -143,10 +143,8 @@ function doTheTreeViz(diagram) {
             .style("stroke-width", diagram.options.routeFocusStrokeWidth);
         
         if (text) {
-            text.filter (function (d) {
-                return areWeConnected (selectedNode,d);
-            })
-            .style("fill", diagram.options.routeFocusStroke);
+            text.filter (function (d) {return areWeConnected (selectedNode,d);})
+                .style("fill", diagram.options.routeFocusStroke);
         }
     }
 
