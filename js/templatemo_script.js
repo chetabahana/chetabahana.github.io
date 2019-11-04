@@ -9,15 +9,6 @@ function scrollTo(selectors)
 
 jQuery(function($) {
 
-    // set synchronous code that blocks the event loop
-    // https://stackoverflow.com/a/42914045/4058484
-    $(window).on('beforeunload', function(){
-console.log('beforeunload');
-        // to stick navbar on top and hash
-        $('.templatemo-top-menu').stickUp();
-
-    });
-
     // jQuery document.ready will be executed just after html dom tree has been parsed out.
     // So it is far more earlier executed than window onload.
     $(document).ready( function() {
