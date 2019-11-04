@@ -85,12 +85,12 @@ function doTheTreeViz(diagram) {
     var linkEnter = link.enter()
         .insert("svg:line", ".node")
             .attr("class", "link")
-            .attr("id", function(d,i) {return getId(d,i);})
+            .style("cursor", "pointer")
             .attr("x1", function(d) {return d.source.x;})
             .attr("y1", function(d) {return d.source.y;})
             .attr("x2", function(d) {return d.target.x;})
             .attr("y2", function(d) {return d.target.y;})
-            .style("cursor", "pointer")
+            .attr("id", function(d,i) {return getId(d,i);})
         .append("svg:title")
             .text(function(d) {return d.target.name + ":" + d.source.name ;});
 
@@ -102,18 +102,18 @@ function doTheTreeViz(diagram) {
         .data(diagram.nodes, function(d) {return d.key;});
 
     node.select("circle")
-        .attr("id", function(d,i) {return getId(d,i);})
         .attr("r", function(d) {return getRadius(d);})
         .style("cursor", "pointer")
-        .style("fill", function(d) {return getColor(d);});
+        .style("fill", function(d) {return getColor(d);})
+        .attr("id", function(d,i) {return getId(d,i);});
 
   // Enter any new nodes.
     var nodeEnter = node.enter()
         .append("svg:g")
             .attr("class", "node")
+            .style("cursor", "pointer")
             .attr("id", function(d,i) {return getId(d,i);})
             .attr("transform", function(d) {return "translate(" + d.x + "," + d.y + ")";})
-            .style("cursor", "pointer")
             .on("dblclick", function(d){diagram.nodeClickInProgress=false; draw.click(this);})
             .on("click", function(d){
                 // this is a hack so that click doesnt fire on the1st click of a dblclick
@@ -135,12 +135,12 @@ function doTheTreeViz(diagram) {
     // enhance all the links that end here
     nodeEnter
         .append("svg:circle")
-            .attr("id", function(d,i) {return getId(d,i);})
-            .attr("r", function(d) {return getRadius(d);})
             .style("cursor", "pointer")
+            .attr("r", function(d) {return getRadius(d);})
             .style("fill", function(d) {return getColor(d);})
             .on("mouseover", function(d){enhanceNode (d);})
             .on("mouseout", function(d){resetNode(d);})
+            .attr("id", function(d,i) {return getId(d,i);})
         .append("svg:title")
             .text(function(d) {return d[diagram.options.nodeLabel];});
 
