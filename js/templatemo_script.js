@@ -13,13 +13,12 @@ jQuery(function($) {
     // So it is far more earlier executed than window onload.
     $(document).ready( function() {
 
-        // to stick navbar on top and hash
-        $('.templatemo-top-menu').stickUp(); 
-
         // unbind external link
         $('.external-link').unbind('click');
 
+        // to stick navbar on top and hash
         // scroll spy to auto active the nav item
+        $('.templatemo-top-menu').stickUp(); 
         top_menu_height = $('.templatemo-top-menu').height();
         $('body').scrollspy({ target: '#templatemo-nav-bar', offset: top_menu_height + 10 });
 
