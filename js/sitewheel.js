@@ -233,7 +233,7 @@ function doTheTreeViz(diagram) {
             diagram.options.nodeFocusColor  : diagram.color(d.group) ;
     }
     function getId(d,i,e) {
-        var pads = ['node', 'link', 'text', 'shadow', 'circle', 'stroke'];
+        var pads = ['stroke', 'shadow', 'text', 'circle', 'link', 'node'];
         var pad = pads.indexOf(e.attr('class'));
         var s = String(i); while (s.length < (pad || 6)) {s = "0" + s;}
         return s;
