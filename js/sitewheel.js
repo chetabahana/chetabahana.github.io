@@ -234,7 +234,7 @@ function doTheTreeViz(diagram) {
     }
     function getId(d,i,e) {
         var pads = ['stroke', 'shadow', 'text', 'circle', 'link', 'node'];
-        var pad = pads.indexOf(e.attr('class'));
+        var pad = pads.indexOf(d3.select(e).attr('class'));
         var s = String(i); while (s.length < (pad || 6)) {s = "0" + s;}
         return s;
     }
