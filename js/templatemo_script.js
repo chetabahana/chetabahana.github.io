@@ -12,7 +12,6 @@ jQuery(function($) {
     // jQuery document.ready will be executed just after html dom tree has been parsed out.
     // So it is far more earlier executed than window onload.
     $(document).ready( function() {
-console.log('ready');
 
         // unbind external link
         $('.external-link').unbind('click');
@@ -38,7 +37,6 @@ console.log('ready');
     // Window.onload event will be executed only when all page resources
     // ( images, audio, video etc ) has been downloaded in the page.
     $(window).on('load', function(){
-console.log('onload');
 
         // open links which point outside
         $(document.links).filter(function() {
