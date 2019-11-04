@@ -72,7 +72,6 @@ function initialize (skema) {
 function doTheTreeViz(diagram) {
 
     var svg = diagram.svg;
-
     var force = diagram.force;
     force.nodes(diagram.nodes)
         .links(diagram.links)
@@ -171,12 +170,8 @@ function doTheTreeViz(diagram) {
    if (diagram.options.nodeLabel) {       
        // text is done once for shadow as well as for text
         var textShadow = nodeEnter.append("svg:text")
-            .attr("x", function(d) {
-                var x = (d.right || !d.fixed) ? 
-                    diagram.options.labelOffset : 
-                    (-d.dim.width - diagram.options.labelOffset)  ;
-                return x;
-            })
+            .attr("x", function(d) {var x = (d.right || !d.fixed)? 
+                diagram.options.labelOffset: (-d.dim.width - diagram.options.labelOffset); return x;})
             .attr("dy", ".31em")
             .attr("class", "shadow")
             .attr("text-anchor", function(d) {return !d.right ? 'start' : 'start' ;})
@@ -184,28 +179,16 @@ function doTheTreeViz(diagram) {
             .text(function(d) {return d.shortName ? d.shortName : d.name;});
 
         var text = nodeEnter.append("svg:text")
-            .attr("x", function(d) {
-                var x = (d.right || !d.fixed) ? 
-                    diagram.options.labelOffset : 
-                    (-d.dim.width - diagram.options.labelOffset)  ;
-                return x;
-            })
+            .attr("x", function(d) {var x = (d.right || !d.fixed) ? 
+                diagram.options.labelOffset: (-d.dim.width - diagram.options.labelOffset);return x;})
             .attr("dy", ".35em")
             .attr("class", "text")
             .attr("text-anchor", function(d) {return !d.right ? 'start' : 'start' ;})
             .style("font-size",diagram.options.labelFontSize + "px")
             .text(function(d) {return d.shortName ? d.shortName : d.name;})
-            
-            .on("mouseover", function(d){
             // enhance all the links that end here
-                enhanceNode (d);
-                d3.select(this)
-                    .style('fill',diagram.options.routeFocusStroke);
-            })
-        
-            .on("mouseout", function(d){
-                resetNode(d);
-            });
+            .on("mouseover", function(d){enhanceNode (d); d3.select(this).style('fill',diagram.options.routeFocusStroke);})
+            .on("mouseout", function(d){resetNode(d);});
     }
 
     // Exit any old nodes.
@@ -235,13 +218,14 @@ function doTheTreeViz(diagram) {
         return makeRadius(diagram,d);
     }
     function getColor(d) {
-        return diagram.options.nodeFocus && d.isCurrentlyFocused ? diagram.options.nodeFocusColor  : diagram.color(d.group) ;
+        return diagram.options.nodeFocus && d.isCurrentlyFocused? 
+            diagram.options.nodeFocusColor  : diagram.color(d.group) ;
     }
 
 }
    
 function makeRadius(diagram,d) {
-     var r = diagram.options.radius * (diagram.options.nodeResize ? Math.sqrt(d[diagram.options.nodeResize]) / Math.PI : 1);
+     var r = diagram.options.radius * (diagram.options.nodeResize? Math.sqrt(d[diagram.options.nodeResize]) / Math.PI : 1);
      return diagram.options.nodeFocus && d.isCurrentlyFocused ? diagram.options.nodeFocusRadius  : r;
 }
 
@@ -258,6 +242,7 @@ function makeFilteredData(diagram,selectedNode){
             addNodeIfNotThere(link.target,newNodes);
         }
     }
+
     // if none are selected reinstate the whole dataset
     if (newNodes.length > 0) {
         diagram.links = newLinks;
@@ -291,10 +276,9 @@ function getPromise(diagram,data) {
 }
 
 function dataMassage(diagram,data) {
-
-var ind = data, nodes = [],links =[];
-   // the tags are to be circles
-   for (var i=0;i<ind.length;i++) {
+    var ind = data, nodes = [],links =[];
+    // the tags are to be circles
+    for (var i=0;i<ind.length;i++) {
         ind[i].isCurrentlyFocused = false;
         nodes.push(ind[i]);
        // add links to pages
@@ -307,6 +291,7 @@ var ind = data, nodes = [],links =[];
            links.push(link);
        }
    }
+
    // sort nodes alpha
    nodes.sort ( function (a,b) { return a.name < b.name  ? -1 : (a.name == b.name ? 0 : 1 ) ; });
    diagram.pageCount = 0;
@@ -354,5 +339,5 @@ function findOrAddPage(diagram,page,nodes) {
     }
     page.fixed = true;
     page.count = 0;
-    return nodes[nodes.push(page) - 1] ;
+    return nodes[nodes.push(page) - 1];
 }
