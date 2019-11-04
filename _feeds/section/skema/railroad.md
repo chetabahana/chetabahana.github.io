@@ -1,7 +1,11 @@
 ---
 weight: 4
 category: skema
-js: railroad/railroad-diagrams.js
+js: railroad/diagrams_samples/diagram.min.js
+file: https://sap.github.io/chevrotain/docs/guide/generating_syntax_diagrams.html
+link: https://sap.github.io/chevrotain/docs/guide/performance.html
+from: https://chetabahana.github.io/railroad/diagrams_samples/json.html
+to: https://chetabahana.github.io/railroad/diagrams_samples/css.html
 redirect_from:
   - /000/skema.json
   - /001/skema.json
