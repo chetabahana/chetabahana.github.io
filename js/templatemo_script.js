@@ -1,11 +1,23 @@
-// init function 
+// init functions 
 var top_menu_height = 0;
+
+// init scrollTo 
 function scrollTo(selectors)
 {
     if(!$(selectors).length) return;
     var selector_top = $(selectors).offset().top - top_menu_height;
     $('html,body').animate({scrollTop: selector_top }, 'slow');
 }
+
+// juicerFeed
+function juicerFeed() {
+    if (!$('#gfeeds').find('a')[0] || !$('#___community_0')) {
+         window.requestAnimationFrame(juicerFeed);       
+    } else {
+       $('#___community_0').css({ 'margin-top': '-5px' });  
+       $('#gfeeds').slick({slidesToShow: 10, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2000});
+    }
+  }
 
 jQuery(function($) {
 
@@ -14,7 +26,11 @@ jQuery(function($) {
     $(document).ready( function() {
 
         // unbind external link
+        // open and set links which point outside
         $('.external-link').unbind('click');
+        $(document.links).filter(function() {
+            return this.hostname != window.location.hostname;
+        }).attr('target', '_blank'); 
 
         // to stick navbar on top and hash
         // scroll spy to auto active the nav item
@@ -37,11 +53,6 @@ jQuery(function($) {
     // Window.onload event will be executed only when all page resources
     // ( images, audio, video etc ) has been downloaded in the page.
     $(window).on('load', function(){
-
-        // open links which point outside
-        $(document.links).filter(function() {
-            return this.hostname != window.location.hostname;
-        }).attr('target', '_blank'); 
 
         // scroll to top
         $('#btn-back-to-top').click(function(e){
@@ -93,9 +104,6 @@ jQuery(function($) {
         $('.theme').change(function() {draw.change();});
         draw.getJSON();
 
-        // chetabahana-portfolio
-        // $(".templatemo-project-gallery").simplyScroll();
-
         // gallery category
         $('.templatemo-gallery-category a').click(function(e){
             e.preventDefault(); 
@@ -117,36 +125,27 @@ jQuery(function($) {
             }
         });
 
+        /* chetabahana-portfolio
+        $(".templatemo-project-gallery").simplyScroll();
+
+        var feed = new Instafeed({
+            get: 'user',
+            limit: 100,
+            sortBy:'most-recent',
+            userId: 6982272811,
+            resolution: 'standard_resolution',
+            accessToken: '6982272811.1677ed0.b6dcfc26877b4ad3854d1a276fdf4de6',
+            template: '<li><a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="insta-likes"><div style="display: table; vertical-align: middle; height: 100%; width: 100%;"><span style="display: table-cell; vertical-align: middle; height: 100%; width: 100%;">{{likes}} <i class="fa fa-heart"></i><br/>{{comments}} <i class="fa fa-comment"></i></span></div></div></a></li>',
+
+            after: function() {
+                $('#instafeed').slick({slidesToShow: 5, slidesToScroll: 1, autoplay: true, arrows: true, autoplaySpeed: 2000});
+                juicerFeed();	    
+            }
+
+        });
+
+        feed.run();
+        */
     });
 
 });
-
-/*juicerFeed
-function juicerFeed() {
-    if (!$('#gfeeds').find('a')[0] || !$('#___community_0')) {
-         window.requestAnimationFrame(juicerFeed);       
-    } else {
-       $('#___community_0').css({ 'margin-top': '-5px' });  
-       $('#gfeeds').slick({slidesToShow: 10, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2000});
-    }
-  }
-
-instafeed
-var feed = new Instafeed({
-    get: 'user',
-    limit: 100,
-    sortBy:'most-recent',
-    userId: 6982272811,
-    resolution: 'standard_resolution',
-    accessToken: '6982272811.1677ed0.b6dcfc26877b4ad3854d1a276fdf4de6',
-    template: '<li><a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="insta-likes"><div style="display: table; vertical-align: middle; height: 100%; width: 100%;"><span style="display: table-cell; vertical-align: middle; height: 100%; width: 100%;">{{likes}} <i class="fa fa-heart"></i><br/>{{comments}} <i class="fa fa-comment"></i></span></div></div></a></li>',
-
-    after: function() {
-        $('#instafeed').slick({slidesToShow: 5, slidesToScroll: 1, autoplay: true, arrows: true, autoplaySpeed: 2000});
-        juicerFeed();	    
-    }
-
-});
-
-feed.run();
-*/
