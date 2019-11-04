@@ -1,11 +1,10 @@
 ---
 weight: 2
-category: form
+category: skema
 js: sequence/js/sequence-diagram-snap-min.js
 link: https://api.github.com/orgs/MarketLeader/repos
 file: https://raw.githubusercontent.com/MarketLeader/Google-Sites-API/master/kelola_atribut/data_terkini/Workspace
 redirect_from:
-  - /skema.json
   - /0/skema.json
   - /1/skema.json
   - /2/skema.json
