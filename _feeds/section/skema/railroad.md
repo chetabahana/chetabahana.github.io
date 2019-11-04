@@ -1,7 +1,7 @@
 ---
 weight: 4
 category: skema
-js: railroad/railroad-diagrams.js
+js: /chevrotain/diagrams_samples/railroad-diagrams.js
 redirect_from:
   - /000/skema.json
   - /001/skema.json
