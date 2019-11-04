@@ -2,6 +2,7 @@
 weight: 4
 category: skema
 js: railroad/diagrams_samples/railroad-diagrams.js
+link: https://chetabahana.github.io/railroad/diagrams_samples/json.html
 redirect_from:
   - /000/skema.json
   - /001/skema.json
