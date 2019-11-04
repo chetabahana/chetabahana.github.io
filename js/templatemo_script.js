@@ -80,7 +80,6 @@ jQuery(function($) {
             return false;
         });
 
-        //$(window).load(function() {});
         // This API has been removed in jQuery 3.0; please use .on( "load", handler ) 
         // instead of .load( handler ) and .trigger( "load" ) instead of .load().
         // https://api.jquery.com/load-event/
@@ -136,10 +135,11 @@ jQuery(function($) {
         feed.run();
         */
 
-        // chetabahana-skema
+         //
+       // chetabahana-skema
         $('.download').click(function(ev) {draw.xmlData();});
         $('.theme').change(function() {draw.change();});
-        draw.getJSON();
+        $(window).load(function() {draw.getJSON();});
 
     });
 
