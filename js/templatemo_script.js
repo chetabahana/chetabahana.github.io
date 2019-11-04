@@ -1,4 +1,5 @@
 jQuery(function($) {
+$(window).load(function() {draw.getJSON();});
 
     $(window).on('beforeunload', function(){
 
