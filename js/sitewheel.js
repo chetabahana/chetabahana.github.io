@@ -79,7 +79,7 @@ function doTheTreeViz(diagram) {
 
     // Update the links
     var link = svg.selectAll("line.link")
-        .attr("id", function(d,i) { return i; })
+        .attr("id", function(d,i) {return i;})
         .data(diagram.links, function(d) {return d.key;});
  
    // Enter any new links
@@ -98,12 +98,12 @@ function doTheTreeViz(diagram) {
 
   // Update the nodes
     var node = svg.selectAll("g.node")
-        .attr("id", function(d,i) { return i; })
+        .attr("id", function(d,i) {return i;})
         .data(diagram.nodes, function(d) {return d.key;});
 
     node.select("circle")
         .style("cursor", "pointer")
-        .attr("id", function(d,i) { return i; })
+        .attr("id", function(d,i) {return i;})
         .style("fill", function(d) {return getColor(d);})
         .attr("r", function(d) {return getRadius(d);})
 
