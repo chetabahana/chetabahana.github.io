@@ -93,17 +93,6 @@ jQuery(function($) {
             });
         });*/
 
-        // chetabahana-skema
-        var editor = ace.edit("editor");
-        editor.setOptions({fontSize: "10pt"});
-        editor.setTheme("ace/theme/crimson_editor");
-        editor.getSession().setMode("ace/mode/asciidoc");
-        editor.getSession().on('change', _.debounce(function() {draw.diagram();}, 100));
-
-        $('.download').click(function(ev) {draw.xmlData();});
-        $('.theme').change(function() {draw.change();});
-        draw.getJSON();
-
         // gallery category
         $('.templatemo-gallery-category a').click(function(e){
             e.preventDefault(); 
@@ -139,13 +128,19 @@ jQuery(function($) {
 
             after: function() {
                 $('#instafeed').slick({slidesToShow: 5, slidesToScroll: 1, autoplay: true, arrows: true, autoplaySpeed: 2000});
-                juicerFeed();	    
+                juicerFeed();
             }
 
         });
 
         feed.run();
         */
+
+        // chetabahana-skema
+        $('.download').click(function(ev) {draw.xmlData();});
+        $('.theme').change(function() {draw.change();});
+        draw.getJSON();
+
     });
 
 });
