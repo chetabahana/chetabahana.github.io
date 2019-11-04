@@ -179,13 +179,9 @@ function doTheTreeViz(diagram) {
             })
             .attr("dy", ".31em")
             .attr("class", "shadow")
-            .attr("text-anchor", function(d) { 
-                return !d.right ? 'start' : 'start' ;
-            })
+            .attr("text-anchor", function(d) {return !d.right ? 'start' : 'start' ;})
             .style("font-size",diagram.options.labelFontSize + "px")
-            .text(function(d) {
-                return d.shortName ? d.shortName : d.name;
-            });
+            .text(function(d) {return d.shortName ? d.shortName : d.name;});
 
         var text = nodeEnter.append("svg:text")
             .attr("x", function(d) {
@@ -196,12 +192,9 @@ function doTheTreeViz(diagram) {
             })
             .attr("dy", ".35em")
             .attr("class", "text")
-            .attr("text-anchor", function(d) { 
-                return !d.right ? 'start' : 'start' ;})
+            .attr("text-anchor", function(d) {return !d.right ? 'start' : 'start' ;})
             .style("font-size",diagram.options.labelFontSize + "px")
-            .text(function(d) {
-                return d.shortName ? d.shortName : d.name;
-            })
+            .text(function(d) {return d.shortName ? d.shortName : d.name;})
             
             .on("mouseover", function(d){
             // enhance all the links that end here
