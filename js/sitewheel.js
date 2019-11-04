@@ -90,7 +90,7 @@ function doTheTreeViz(diagram) {
             .attr("y1", function(d) {return d.source.y;})
             .attr("x2", function(d) {return d.target.x;})
             .attr("y2", function(d) {return d.target.y;})
-            .attr("id", function(d,i) {return getId(getId(d,i));})
+            .attr("id", function(d,i) {return getId(getId(d,i,this));})
         .append("svg:title")
             .text(function(d) {return d.target.name + ":" + d.source.name ;});
 
@@ -106,14 +106,14 @@ function doTheTreeViz(diagram) {
         .style("cursor", "pointer")
         .attr("r", function(d) {return getRadius(d);})
         .style("fill", function(d) {return getColor(d);})
-        .attr("id", function(d,i) {return getId(getId(d,i));});
+        .attr("id", function(d,i) {return getId(getId(d,i,this));});
 
   // Enter any new nodes.
     var nodeEnter = node.enter()
         .append("svg:g")
             .attr("class", "node")
             .style("cursor", "pointer")
-            .attr("id", function(d,i) {return getId(getId(d,i));})
+            .attr("id", function(d,i) {return getId(getId(d,i,this));})
             .attr("transform", function(d) {return "translate(" + d.x + "," + d.y + ")";})
             .on("dblclick", function(d){diagram.nodeClickInProgress=false; draw.click(this);})
             .on("click", function(d){
@@ -142,7 +142,7 @@ function doTheTreeViz(diagram) {
             .style("fill", function(d) {return getColor(d);})
             .on("mouseover", function(d){enhanceNode (d);})
             .on("mouseout", function(d){resetNode(d);})
-            .attr("id", function(d,i) {return getId(getId(d,i));})
+            .attr("id", function(d,i) {return getId(getId(d,i,this));})
         .append("svg:title")
             .text(function(d) {return d[diagram.options.nodeLabel];});
 
@@ -150,7 +150,7 @@ function doTheTreeViz(diagram) {
         link.filter (function (d) {return d.source.key == selectedNode.key || d.target.key == selectedNode.key;})
             .attr("class", "stroke")
             .style("stroke", diagram.options.routeFocusStroke)
-            .attr("id", function(d,i) {return getId(getId(d,i));})
+            .attr("id", function(d,i) {return getId(getId(d,i,this));})
             .style("stroke-width", diagram.options.routeFocusStrokeWidth);
         
         if (text) {
@@ -181,7 +181,7 @@ function doTheTreeViz(diagram) {
         var textShadow = nodeEnter.append("svg:text")
             .attr("dy", ".31em")
             .attr("class", "shadow")
-            .attr("id", function(d,i) {return getId(getId(d,i));})
+            .attr("id", function(d,i) {return getId(getId(d,i,this));})
             .style("font-size",diagram.options.labelFontSize + "px")
             .attr("text-anchor", function(d) {return !d.right? 'start' : 'start' ;})
             .attr("x", function(d) {var x = (d.right || !d.fixed)? 
@@ -192,7 +192,7 @@ function doTheTreeViz(diagram) {
         var text = nodeEnter.append("svg:text")
             .attr("dy", ".35em")
             .attr("class", "text")
-            .attr("id", function(d,i) {return getId(getId(d,i));})
+            .attr("id", function(d,i) {return getId(getId(d,i,this));})
             .attr("text-anchor", function(d) {return !d.right? 'start' : 'start' ;})
             .style("font-size",diagram.options.labelFontSize + "px")
             .attr("x", function(d) {var x = (d.right || !d.fixed)? 
@@ -232,9 +232,9 @@ function doTheTreeViz(diagram) {
         return diagram.options.nodeFocus && d.isCurrentlyFocused? 
             diagram.options.nodeFocusColor  : diagram.color(d.group) ;
     }
-    function getId(d,i) {
+    function getId(d,i,e) {
         var pads = ['stroke', 'shadow', 'text', 'circle', 'link', 'node'];
-        var pad = pads.indexOf(d3.select(this).attr('class'));
+        var pad = pads.indexOf(e.getAttribute('class'));
         var s = String(i); while (s.length < (pad || 6)) {s = "0" + s;}
         return s;
     }
