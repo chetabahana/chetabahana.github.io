@@ -139,7 +139,7 @@ jQuery(function($) {
        // chetabahana-skema
         $('.download').click(function(ev) {draw.xmlData();});
         $('.theme').change(function() {draw.change();});
-        $(window).load(function() {draw.getJSON();});
+        draw.getJSON();
 
     });
 
