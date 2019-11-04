@@ -2,6 +2,7 @@
 weight: 5
 category: skema
 js: js/sitewheel.js
+link: http://xliberation.com/googlecharts/d3concept.html
 redirect_from:
   - /0000/skema.json
   - /0001/skema.json
