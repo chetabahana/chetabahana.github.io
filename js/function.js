@@ -45,7 +45,6 @@ jQuery(function($) {
             var location_hash = location.hash;
             history.replaceState(null, null, location.pathname);
             scrollTo(location_hash);
-            draw.getJSON();
 
         }
 
@@ -139,6 +138,7 @@ jQuery(function($) {
        // chetabahana-skema
         $('.download').click(function(ev) {draw.xmlData();});
         $('.theme').change(function() {draw.change();});
+        draw.getJSON();
 
     });
 
