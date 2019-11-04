@@ -7,6 +7,13 @@ jQuery(function($) {
         // to stick navbar on top and hash
         $('.templatemo-top-menu').stickUp();
 
+        // do scroll and clear the hash anytime someone arrives with a hash tag
+        // https://stackoverflow.com/a/50688363/4058484
+        if( typeof(location.hash) !== 'undefined' && location.hash.length ) {
+            scrollTo(location.hash);
+            history.replaceState(null, null, location.pathname);
+        }
+
     });
 
     // jQuery document.ready will be executed just after html dom tree has been parsed out.
@@ -83,13 +90,6 @@ jQuery(function($) {
         $(document.links).filter(function() {
             return this.hostname != window.location.hostname;
         }).attr('target', '_blank'); 
-
-        // do scroll and clear the hash anytime someone arrives with a hash tag
-        // https://stackoverflow.com/a/50688363/4058484
-        if( typeof(location.hash) !== 'undefined' && location.hash.length ) {
-            scrollTo(location.hash);
-            history.replaceState(null, null, location.pathname);
-        }
 
         // draw skema
         draw.getJSON();
