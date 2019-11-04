@@ -85,7 +85,7 @@ function doTheTreeViz(diagram) {
     var linkEnter = link.enter()
         .insert("svg:line", ".node")
             .attr("class", "link")
-            .attr("id", function(d,i) {return i;})
+            .attr("id", function(d,i) {return getId(d,i);})
             .attr("x1", function(d) {return d.source.x;})
             .attr("y1", function(d) {return d.source.y;})
             .attr("x2", function(d) {return d.target.x;})
@@ -102,7 +102,7 @@ function doTheTreeViz(diagram) {
         .data(diagram.nodes, function(d) {return d.key;});
 
     node.select("circle")
-        .attr("id", function(d,i) {return i;})
+        .attr("id", function(d,i) {return getId(d,i);})
         .attr("r", function(d) {return getRadius(d);})
         .style("cursor", "pointer")
         .style("fill", function(d) {return getColor(d);});
@@ -111,7 +111,7 @@ function doTheTreeViz(diagram) {
     var nodeEnter = node.enter()
         .append("svg:g")
             .attr("class", "node")
-            .attr("id", function(d,i) {return i;})
+            .attr("id", function(d,i) {return getId(d,i);})
             .attr("transform", function(d) {return "translate(" + d.x + "," + d.y + ")";})
             .style("cursor", "pointer")
             .on("dblclick", function(d){diagram.nodeClickInProgress=false; draw.click(this);})
@@ -135,7 +135,7 @@ function doTheTreeViz(diagram) {
     // enhance all the links that end here
     nodeEnter
         .append("svg:circle")
-            .attr("id", function(d,i) {return i;})
+            .attr("id", function(d,i) {return getId(d,i);})
             .attr("r", function(d) {return getRadius(d);})
             .style("cursor", "pointer")
             .style("fill", function(d) {return getColor(d);})
@@ -226,7 +226,11 @@ function doTheTreeViz(diagram) {
         return diagram.options.nodeFocus && d.isCurrentlyFocused? 
             diagram.options.nodeFocusColor  : diagram.color(d.group) ;
     }
-
+    function getId(d,i) {
+        var s = String(i); var pad = 5; var size = 6;
+        while (s.length < (pad || size)) {s = "0" + s;}
+        return s;
+    }
 }
    
 function makeRadius(diagram,d) {
