@@ -1,9 +1,9 @@
 function initialize (skema) {
 
     var diagram = {};
-    diagram.divName = "#diagram";
     var newoptions = {nodeLabel:"label", nodeResize:"count", height:700, nodeFocus:true, radius:3, charge:-500};
 
+    diagram.divName = "#diagram";
     diagram.options = $.extend({
         stackHeight : 12,
         radius : 5,
