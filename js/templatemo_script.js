@@ -69,6 +69,33 @@ jQuery(function($) {
             return false;
         });
 
+        //$(window).load(function() {});
+        // This API has been removed in jQuery 3.0; please use .on( "load", handler ) 
+        // instead of .load( handler ) and .trigger( "load" ) instead of .load().
+        // https://api.jquery.com/load-event/
+
+        // load page in sequence with Jquery via  div loaded
+        // https://stackoverflow.com/q/15674733/4058484
+        /*$('#one').load("one.php", function() {  // first div loaded
+            $('#two').load("two.php", function() { // second div loaded
+                $('#three').load("three.php", function() { // third div loaded  });
+            });
+        });*/
+
+        // chetabahana-skema
+        var editor = ace.edit("editor");
+        editor.setOptions({fontSize: "10pt"});
+        editor.setTheme("ace/theme/crimson_editor");
+        editor.getSession().setMode("ace/mode/asciidoc");
+        editor.getSession().on('change', _.debounce(function() {draw.diagram();}, 100));
+
+        $('.download').click(function(ev) {draw.xmlData();});
+        $('.theme').change(function() {draw.change();});
+        draw.getJSON();
+
+        // chetabahana-portfolio
+        // $(".templatemo-project-gallery").simplyScroll();
+
         // gallery category
         $('.templatemo-gallery-category a').click(function(e){
             e.preventDefault(); 
@@ -83,31 +110,12 @@ jQuery(function($) {
             $(linkClass).fadeIn();  
         });
 
-        // chetabahana-portfolio
-        // $(".templatemo-project-gallery").simplyScroll();
-
-        //gallery light box setup
+        //chetabahana-gallery
         $('a.colorbox').colorbox({
             rel: function(){
                 return $(this).data('group');
             }
         });
-
-        // load page in sequence with Jquery via  div loaded
-        // https://stackoverflow.com/q/15674733/4058484
-        /*$('#one').load("one.php", function() {  // first div loaded
-            $('#two').load("two.php", function() { // second div loaded
-                $('#three').load("three.php", function() { // third div loaded  });
-            });
-        });*/
-
-        // This API has been removed in jQuery 3.0; please use .on( "load", handler ) 
-        // instead of .load( handler ) and .trigger( "load" ) instead of .load().
-        // https://api.jquery.com/load-event/
-        //$(window).load(function() {draw.getJSON();});
-
-        // draw skema
-        draw.getJSON();
 
     });
 
