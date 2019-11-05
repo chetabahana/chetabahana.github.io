@@ -3,7 +3,7 @@
    "href": "https://stackoverflow.com/a/50218559/4058484",
    "loc": "https://chetabahana.github.io/#chetabahana-portfolio",
    "gallery":[
-      {
+        {
            "title":"Jilbab 2in1 Priciella",
            "href":"https://image.winmarket.id/I/EvIOyX",
            "src":"https://image.winmarket.id/I/EvIOyX",
@@ -33,5 +33,5 @@
            "src":"https://image.winmarket.id/I/H7n6f0",
            "group":"inspiration"
         }
-   ]
+    ]
 }
