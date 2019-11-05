@@ -1,0 +1,38 @@
+{
+   "title": "portfolio",
+   "method": "load-data-from-json-in-jekyll",
+   "href": "https://stackoverflow.com/a/50218559/4058484",
+   "loc": "https://chetabahana.github.io/#chetabahana-portfolio",
+   "gallery":[
+        {
+           "title":"Jilbab 2in1 Priciella",
+           "href":"https://image.winmarket.id/I/EvIOyX",
+           "src":"https://image.winmarket.id/I/EvIOyX",
+           "group":"graphic"
+        },
+        {
+           "title":"TEA CUP",
+           "href":"https://image.winmarket.id/I/A7p16B",
+           "src":"https://image.winmarket.id/I/A7p16B",
+           "group":"graphic"
+        },
+        {
+           "title":"NATURE",
+           "href":"https://image.winmarket.id/img/winmarket/966/150966/2018/01/18/0084a5000cd641553267ce0fe790edfa553675ad_0.47799600_1516260428.jpeg",
+           "src":"https://image.winmarket.id/img/winmarket/966/150966/2018/01/18/0084a5000cd641553267ce0fe790edfa553675ad_0.47799600_1516260428.jpeg",
+           "group":"inspiration"
+        },
+        {
+           "title":"TEA CUP",
+           "href":"https://image.winmarket.id/img/2017/11/09/ehuHWA/I_0.jpg",
+           "src":"https://image.winmarket.id/img/2017/11/09/ehuHWA/I_0.jpg",
+           "group":"graphic"
+        },
+        {
+           "title":"NATURE",
+           "href":"https://image.winmarket.id/I/H7n6f0",
+           "src":"https://image.winmarket.id/I/H7n6f0",
+           "group":"inspiration"
+        }
+    ]
+}
