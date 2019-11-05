@@ -24,28 +24,13 @@
                         </div>
                         <div class="col-md-2"></div>
                     </div>
-{{ data.partner }}
+
                     <div class="text-center">
                         <div style="margin-top:60px;">
-                            <ul class="list-inline">
+                            <ul class="list-inline">{% for partner in data.partner %}
                                 <li class="col-sm-2 col-md-2 templatemo-partner-item">
-                                    <a href="{{ page.partner1_href }}" title="{{ page.partner1_title }}"><img src="{{ page.partner1_src }}" class="img-responsive" alt="{{ page.partner1_alt }}" /></a>
-                                </li>
-                                <li class="col-sm-2 col-md-2 templatemo-partner-item">
-                                    <a href="{{ page.partner2_href }}" title="{{ page.partner2_title }}"><img src="{{ page.partner2_src }}" class="img-responsive" alt="{{ page.partner2_alt }}" /></a>
-                                </li>
-                                <li class="col-sm-2 col-md-2 templatemo-partner-item">
-                                    <a href="{{ page.partner3_href }}" title="{{ page.partner3_title }}"><img src="{{ page.partner3_src }}" class="img-responsive" alt="{{ page.partner3_alt }}" /></a>
-                                </li>
-                                <li class="col-sm-2 col-md-2 templatemo-partner-item">
-                                    <a href="{{ page.partner4_href }}" title="{{ page.partner4_title }}"><img src="{{ page.partner4_src }}" class="img-responsive" alt="{{ page.partner4_alt }}" /></a>
-                                </li>
-                                <li class="col-sm-2 col-md-2 templatemo-partner-item">
-                                    <a href="{{ page.partner5_href }}" title="{{ page.partner5_title }}"><img src="{{ page.partner5_src }}" class="img-responsive" alt="{{ page.partner5_alt }}" /></a>
-                                </li>
-                                <li class="col-sm-2 col-md-2 templatemo-partner-item">
-                                    <a href="{{ page.partner6_href }}" title="{{ page.partner6_title }}"><img src="{{ page.partner6_src }}" class="img-responsive" alt="{{ page.partner6_alt }}" /></a>
-                                </li>
+                                    <a href="{{ partner.href }}" title="{{ partner.text }}"><img src="{{ partner.src }}" class="img-responsive" alt="{{ partner.text }}" /></a>
+                                </li>{% endfor %}
                             </ul>
                         </div>
                     </div>
