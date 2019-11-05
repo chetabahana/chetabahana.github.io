@@ -5,7 +5,7 @@ js: railroad/diagrams_samples/diagram.min.js
 link: https://sap.github.io/chevrotain/docs/guide/generating_syntax_diagrams.html
 file: https://sap.github.io/chevrotain/documentation/6_5_0/globals.html
 from: https://chetabahana.github.io/railroad/diagrams_samples/json.html
-to: https://chetabahana.github.io/railroad/diagrams_samples/css.html
+to: https://sap.github.io/chevrotain/playground/
 redirect_from:
   - /000/skema.json
   - /001/skema.json
