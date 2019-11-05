@@ -1,7 +1,6 @@
 ---
 weight: 8
 category: section
-partner_alt[1]: partner 1
 partner1_alt: partner 1
 partner1_title: Our project on GitHub
 partner1_href: https://github.com/chetabahana/chetabahana.github.io/wiki
