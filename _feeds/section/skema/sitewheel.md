@@ -4,7 +4,7 @@ category: skema
 js: sitewheel/js/diagram.js
 link: http://xliberation.com/googlecharts/d3concept.html
 file: https://chetabahana.github.io/sitewheel/API
-from: https://observablehq.com/@d3/stacked-bar-chart
+from: https://observablehq.com/@d3/stacked-horizontal-bar-chart?collection=@d3/d3-shape
 to: https://observablehq.com/@d3/programmatic-zoom
 redirect_from:
   - /0000/skema.json
