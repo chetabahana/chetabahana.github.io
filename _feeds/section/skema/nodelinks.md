@@ -2,6 +2,10 @@
 weight: 3
 category: skema
 js: nodelinks/release/go.js
+file: https://sap.github.io/chevrotain/docs/guide/generating_syntax_diagrams.html
+link: https://chetabahana.github.io/nodelinks/api/index.html
+from: https://chetabahana.github.io/nodelinks/samples/parseTree.html
+to: https://chetabahana.github.io/nodelinks/samples/ldLayout.html
 redirect_from:
   - /00/skema.json
   - /01/skema.json
