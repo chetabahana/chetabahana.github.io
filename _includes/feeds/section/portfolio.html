@@ -16,8 +16,7 @@
                 <!-- div class="clearfix"></div -->
                 <div class="text-center">
                     <ul class="templatemo-project-gallery" >
-                        <!-- load-data-from-json-in-jekyll https://stackoverflow.com/a/50218559/4058484 -->
-                        {% for item in data.gallery %}
+                        <!-- load-data-from-json-in-jekyll https://stackoverflow.com/a/50218559/4058484 -->{% for item in data.gallery %}
                         <li class="col-lg-2 col-md-2 col-sm-2 gallery gallery-{{ item.group }}">
                             <a class="colorbox" href="{{ item.href }}" data-group="gallery-{{ item.group }}">
                                 <div class="templatemo-project-box">
