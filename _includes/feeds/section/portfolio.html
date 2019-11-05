@@ -9,7 +9,7 @@
                     <div class="clearfix"></div>
                     <div class="templatemo-gallery-category" style="font-size:16px;">
                         <div class="text-center">
-                            <a class="active" href=".gallery">all</a>{% assign my_array = "" | split:"," %}{% for product in data.gallery %}{% for item in product.items %}{% if my_array contains item.group %}{% continue %}{% else %}{% assign my_array = my_array | push: item.group %} / <a href=".gallery-{{ item.group }}">{{ item.group }}</a>{% endif %}{% endfor %}{% endfor %}
+                            <a class="active" href=".gallery">all</a>{% assign my_array = "" | split:"," %}{% for product in site.data.portfolio.gallery %}{% for item in product.items %}{% if my_array contains item.group %}{% continue %}{% else %}{% assign my_array = my_array | push: item.group %} / <a href=".gallery-{{ item.group }}">{{ item.group }}</a>{% endif %}{% endfor %}{% endfor %}
                         </div>
                     </div>
                 </div> <!-- /.row -->
