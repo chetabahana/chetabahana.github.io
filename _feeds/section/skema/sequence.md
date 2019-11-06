@@ -3,7 +3,7 @@ weight: 2
 category: skema
 js: sequence/js/sequence-diagram-snap-min.js
 link: https://en.wikipedia.org/wiki/CoffeeScript
-file: https://coffeescript.org/#conditionals
+file: https://coffeescript.org/#functions
 from: https://coffeescript.org/v1/
 to: https://coffeescript.org/v1/annotated-source/grammar.html
 redirect_from:
