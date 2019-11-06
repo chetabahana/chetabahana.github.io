@@ -2,6 +2,10 @@
 weight: 0
 category: skema
 js: scenetree/build.js
+link: https://github.com/chetabahana/scenetree
+file: https://github.com/mrdoob/three.js/
+from: https://www.jsonrpc.org/specification
+to: https://www.jsonrpc.org/specification
 redirect_from:
   - /00000/skema.json
   - /00001/skema.json
