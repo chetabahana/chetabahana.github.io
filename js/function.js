@@ -35,7 +35,7 @@ jQuery(function($) {
         // to stick navbar on top and hash
         // scroll spy to auto active the nav item
         $('.templatemo-top-menu').stickUp(); 
-        top_menu_height = $('.templatemo-top-menu').height() + 10;
+        top_menu_height = $('.templatemo-top-menu').height();
         $('body').scrollspy({ target: '#templatemo-nav-bar', offset: top_menu_height});
 
         // do scroll and clear the hash anytime someone arrives with a hash tag
