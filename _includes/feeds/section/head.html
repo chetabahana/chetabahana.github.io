@@ -4,6 +4,14 @@
         <meta name="description" content="{{ site.description }}" />
         {% feed_meta %}
 
+        <!-- Clear the hash anytime someone arrives with a hash tag -->
+        <!-- https://stackoverflow.com/a/50688363/4058484 -->
+        <script>
+            if( typeof(location.hash) !== 'undefined' && location.hash.length ) {
+                scrollTo(location_hash); history.replaceState(null, null, location.pathname);
+            }
+        </script>
+
         <!-- Page hiding snippet (recommended) -->
         <!-- style>.async-hide { opacity: 0 !important} </style -->
         <!-- script>
