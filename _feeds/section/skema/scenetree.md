@@ -3,7 +3,7 @@ weight: 0
 category: skema
 js: scenetree/build.js
 link: https://github.com/chetabahana/scenetree
-file: https://github.com/mrdoob/three.js/
+file: https://chetabahana.github.io/threejs/
 from: https://www.jsonrpc.org/specification
 to: https://www.jsonrpc.org/specification
 redirect_from:
