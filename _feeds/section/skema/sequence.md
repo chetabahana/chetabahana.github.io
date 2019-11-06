@@ -2,10 +2,10 @@
 weight: 2
 category: skema
 js: sequence/js/sequence-diagram-snap-min.js
-link: https://en.wikipedia.org/wiki/Centered_hexagonal_number
-file: https://raw.githubusercontent.com/MarketLeader/Google-Sites-API/master/kelola_atribut/data_terkini/Workspace
+link: https://en.wikipedia.org/wiki/CoffeeScript
+file: https://coffeescript.org/v1/
 from: https://coffeescript.org/#conditionals
-to: https://coffeescript.org/v1/
+to: https://coffeescript.org/v1/annotated-source/grammar.html
 redirect_from:
   - /0/skema.json
   - /1/skema.json
