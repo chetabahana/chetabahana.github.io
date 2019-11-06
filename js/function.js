@@ -1,8 +1,11 @@
-// scrollTo 
+// init functions 
+var top_menu_height = 0;
+
+// init scrollTo 
 function scrollTo(selectors)
 {
     if(!$(selectors).length) return;
-    var selector_top = $(selectors).offset().top;
+    var selector_top = $(selectors).offset().top - top_menu_height;
     $('html,body').animate({scrollTop: selector_top }, 'slow');
 }
 
@@ -32,8 +35,18 @@ jQuery(function($) {
         // to stick navbar on top and hash
         // scroll spy to auto active the nav item
         $('.templatemo-top-menu').stickUp(); 
-        var top_menu_height = $('.templatemo-top-menu').height();
-        $('body').scrollspy({target: '#templatemo-nav-bar', offset: top_menu_height + 10 });
+        top_menu_height = $('.templatemo-top-menu').height();
+        $('body').scrollspy({ target: '#templatemo-nav-bar', offset: top_menu_height + 10 });
+
+        // do scroll and clear the hash anytime someone arrives with a hash tag
+        // https://stackoverflow.com/a/50688363/4058484
+        if( typeof(location.hash) !== 'undefined' && location.hash.length ) {
+
+            var location_hash = location.hash;
+            history.replaceState(null, null, location.pathname);
+            scrollTo(location_hash);
+
+        }
 
     });
 
