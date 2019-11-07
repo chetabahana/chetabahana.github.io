@@ -2,10 +2,10 @@
 weight: 2
 category: skema
 js: sequence/js/sequence-diagram-snap-min.js
-link: https://en.wikipedia.org/wiki/CoffeeScript
-file: https://coffeescript.org/#overview
-from: https://coffeescript.org/v1/
-to: https://coffeescript.org/v1/annotated-source/grammar.html
+link: /feed.xml
+file: http://xliberation.com/googlecharts/d3concept.html
+from: https://api.github.com/users/chetabahana/repos
+to: https://api.github.com/orgs/MarketLeader/repos
 redirect_from:
   - /0/skema.json
   - /1/skema.json
