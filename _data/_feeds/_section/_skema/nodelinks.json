@@ -1,5 +1,12 @@
 {
     "title": "nodelinks",
+    "guide": {
+        "js": "nodelinks/release/go.js",
+        "link": "https://chetabahana.github.io/nodelinks/learn/index.html",
+        "file": "https://chetabahana.github.io/nodelinks/api/index.html",
+        "from": "https://chetabahana.github.io/nodelinks/samples/parseTree.html",
+        "to": "https://chetabahana.github.io/nodelinks/samples/ldLayout.html"
+    },
     "style": [
         { "key": "Alpha", "color": "lightblue" },
         { "key": "Beta", "color": "orange" },

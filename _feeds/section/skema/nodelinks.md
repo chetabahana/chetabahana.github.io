@@ -1,7 +1,6 @@
 ---
 weight: 3
 category: skema
-js: nodelinks/release/go.js
 redirect_from:
   - /00/skema.json
   - /01/skema.json
