@@ -104,8 +104,8 @@
     height: 48px;
 }
 
-#graphiql-container .doc-explorer-contents {
-    min-height: 341px;
+#graphiql-container .docExplorerHide {
+    margin: -11px -8px -6px 0;
 }
 
 #graphiql-container doc-explorer-title  {
@@ -116,6 +116,11 @@
     padding: 17px 12px 0 16px;
 }
 
-#graphiql-container .docExplorerHide {
-    margin: -11px -8px -6px 0;
+#graphiql-container .doc-explorer-contents {
+    min-height: 341px;
+}
+
+.execute-button-wrap > button:first-child svg path {
+    transform: rotate(180deg);
+    transform-origin: 48% 47%;
 }
