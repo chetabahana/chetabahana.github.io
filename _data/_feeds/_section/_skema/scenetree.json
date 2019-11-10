@@ -6,7 +6,7 @@
     },
     "guide": {
         "js": "scenetree/build.js",
-        "link": "https://github.com/chetabahana/scenetree",
+        "link": "https://github.com/mrdoob/three.js/blob/dev/examples/js/loaders/VRMLLoader.js",
         "file": "https://chetabahana.github.io/threejs/",
         "from": "https://nodejs.org/api/",
         "to": "https://www.jsonrpc.org/specification"
