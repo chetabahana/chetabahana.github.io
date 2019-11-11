@@ -17,7 +17,7 @@ function juicerFeed() {
        $('#___community_0').css({ 'margin-top': '-5px' });  
        $('#gfeeds').slick({slidesToShow: 10, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2000});
     }
-  }
+}
 
 jQuery(function($) {
 
