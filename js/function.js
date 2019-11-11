@@ -6,7 +6,7 @@ function scrollTo(selectors)
 {
     if(!$(selectors).length) return;
     var selector_top = $(selectors).offset().top - top_menu_height;
-    $(window).animate({scrollTop: selector_top }, 'slow');
+    $('html,body').animate({scrollTop: selector_top }, 'slow');
 }
 
 // juicerFeed
