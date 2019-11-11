@@ -1,6 +1,8 @@
 // init functions 
 var top_menu_height = 0;
 
+jQuery(function($)
+{
 // init scrollTo 
 function scrollTo(selectors)
 {
@@ -20,8 +22,6 @@ function juicerFeed()
     }
 }
 
-jQuery(function($)
-{
     // jQuery document.ready will be executed just after html dom tree has been parsed out.
     // So it is far more earlier executed than window onload.
     $(document).ready( function()
