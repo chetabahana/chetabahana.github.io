@@ -88,6 +88,10 @@ jQuery(function($)
             }
         });
 
+        //chetabahana-skema
+        $('.download').click(function(ev) {draw.xmlData();});
+        $('.theme').change(function() {draw.change();});
+
         //chetabahana-portfolio
         $(".templatemo-project-gallery").simplyScroll();
 
@@ -119,10 +123,10 @@ jQuery(function($)
         });
 
        // chetabahana-skema
-        $('.download').click(function(ev) {draw.xmlData();});
-        $('.theme').change(function() {draw.change();});
         draw.getJSON();
-        //feed.run();
+
+        //chetabahana-portfolio
+        feed.run();
 
     });
 
