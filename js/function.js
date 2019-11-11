@@ -97,7 +97,6 @@ jQuery(function($)
     // ( images, audio, video etc ) has been downloaded in the page.
     $(window).on('load', function()
     {
-        /* 
         var feed = new Instafeed({
             get: 'user',
             limit: 100,
@@ -114,13 +113,11 @@ jQuery(function($)
 
         });
 
-        feed.run();
-        */
-
        // chetabahana-skema
         $('.download').click(function(ev) {draw.xmlData();});
         $('.theme').change(function() {draw.change();});
         draw.getJSON();
+        //feed.run();
 
     });
 
