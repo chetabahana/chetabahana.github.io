@@ -97,7 +97,8 @@ jQuery(function($)
     // ( images, audio, video etc ) has been downloaded in the page.
     $(window).on('load', function()
     {
-        var feed = new Instafeed({
+        var feed = new Instafeed(
+        {
             get: 'user',
             limit: 100,
             sortBy:'most-recent',
@@ -106,8 +107,12 @@ jQuery(function($)
             accessToken: '6982272811.1677ed0.b6dcfc26877b4ad3854d1a276fdf4de6',
             template: '<li><a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="insta-likes"><div style="display: table; vertical-align: middle; height: 100%; width: 100%;"><span style="display: table-cell; vertical-align: middle; height: 100%; width: 100%;">{{likes}} <i class="fa fa-heart"></i><br/>{{comments}} <i class="fa fa-comment"></i></span></div></div></a></li>',
 
-            after: function() {
-                $('#instafeed').slick({slidesToShow: 5, slidesToScroll: 1, autoplay: true, arrows: true, autoplaySpeed: 2000});
+            after: function()
+            {
+                $('#instafeed').slick(
+                {
+                    slidesToShow: 5, slidesToScroll: 1, autoplay: true, arrows: true, autoplaySpeed: 2000
+                });
                 juicerFeed();
             }
 
