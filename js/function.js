@@ -47,7 +47,8 @@ jQuery(function($)
             e.preventDefault(); 
             var linkId = $(this).attr('href');
             scrollTo(linkId);
-            if($('.navbar-toggle').is(":visible") == true){
+            if($('.navbar-toggle').is(":visible") == true)
+            {
                 $('.navbar-collapse').collapse('toggle');
             }
             $(this).blur();
