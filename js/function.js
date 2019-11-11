@@ -20,19 +20,11 @@ jQuery(function($)
         // do scroll and clear the hash anytime someone arrives with a hash tag
         // https://stackoverflow.com/a/50688363/4058484
         if( typeof(location.hash) !== 'undefined' && location.hash.length ) {
-
             var location_hash = location.hash;
             history.replaceState(null, null, location.pathname);
             scrollTo(location_hash);
-
         }
 
-    });
-
-    // Window.onload event will be executed only when all page resources
-    // ( images, audio, video etc ) has been downloaded in the page.
-    $(window).on('load', function()
-    {
         // scroll to top
         $('#btn-back-to-top').click(function(e)
         {
@@ -96,9 +88,16 @@ jQuery(function($)
             }
         });
 
-        /* chetabahana-portfolio
+        //chetabahana-portfolio
         $(".templatemo-project-gallery").simplyScroll();
 
+    });
+
+    // Window.onload event will be executed only when all page resources
+    // ( images, audio, video etc ) has been downloaded in the page.
+    $(window).on('load', function()
+    {
+        /* 
         var feed = new Instafeed({
             get: 'user',
             limit: 100,
