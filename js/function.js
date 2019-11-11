@@ -6,7 +6,7 @@ function scrollTo(selectors)
 {
     if(!$(selectors).length) return;
     var selector_top = $(selectors).offset().top - top_menu_height;
-    $('html,body').animate({scrollTop: selector_top }, 'slow');
+    $(document).animate({scrollTop: selector_top }, 'slow');
 }
 
 // juicerFeed
@@ -17,7 +17,7 @@ function juicerFeed() {
        $('#___community_0').css({ 'margin-top': '-5px' });  
        $('#gfeeds').slick({slidesToShow: 10, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2000});
     }
-  }
+}
 
 jQuery(function($) {
 
@@ -36,7 +36,7 @@ jQuery(function($) {
         // scroll spy to auto active the nav item
         $('.templatemo-top-menu').stickUp(); 
         top_menu_height = $('.templatemo-top-menu').height();
-        $('body').scrollspy({target: '#templatemo-nav-bar', offset: top_menu_height});
+        $(document).scrollspy({target: '#templatemo-nav-bar', offset: top_menu_height});
 
         // do scroll and clear the hash anytime someone arrives with a hash tag
         // https://stackoverflow.com/a/50688363/4058484
