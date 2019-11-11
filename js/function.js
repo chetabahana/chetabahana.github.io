@@ -6,7 +6,7 @@ function scrollTo(selectors)
 {
     if(!$(selectors).length) return;
     var selector_top = $(selectors).offset().top - top_menu_height;
-    $(document).animate({scrollTop: selector_top }, 'slow');
+    $('body').animate({scrollTop: selector_top }, 'slow');
 }
 
 // juicerFeed
@@ -36,7 +36,7 @@ jQuery(function($) {
         // scroll spy to auto active the nav item
         $('.templatemo-top-menu').stickUp(); 
         top_menu_height = $('.templatemo-top-menu').height();
-        $(document).scrollspy({target: '#templatemo-nav-bar', offset: top_menu_height});
+        $('body').scrollspy({target: '#templatemo-nav-bar', offset: top_menu_height});
 
         // do scroll and clear the hash anytime someone arrives with a hash tag
         // https://stackoverflow.com/a/50688363/4058484
