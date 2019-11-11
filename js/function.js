@@ -10,7 +10,8 @@ function scrollTo(selectors)
 }
 
 // juicerFeed
-function juicerFeed() {
+function juicerFeed()
+{
     if (!$('#gfeeds').find('a')[0] || !$('#___community_0')) {
          window.requestAnimationFrame(juicerFeed);       
     } else {
@@ -19,12 +20,12 @@ function juicerFeed() {
     }
 }
 
-jQuery(function($) {
-
+jQuery(function($)
+{
     // jQuery document.ready will be executed just after html dom tree has been parsed out.
     // So it is far more earlier executed than window onload.
-    $(document).ready( function() {
-
+    $(document).ready( function()
+    {
         // unbind external link
         // open and set links which point outside
         $('.external-link').unbind('click');
@@ -52,16 +53,18 @@ jQuery(function($) {
 
     // Window.onload event will be executed only when all page resources
     // ( images, audio, video etc ) has been downloaded in the page.
-    $(window).on('load', function(){
-
+    $(window).on('load', function()
+    {
         // scroll to top
-        $('#btn-back-to-top').click(function(e){
+        $('#btn-back-to-top').click(function(e)
+        {
             e.preventDefault();
             scrollTo('#templatemo-top');
         });
 
         // scroll to specific id when click on link
-        $('.internal-link, .carousel-inner a').click(function(e){
+        $('.internal-link, .carousel-inner a').click(function(e)
+        {
             e.preventDefault(); 
             var linkId = $(this).attr('href');
             scrollTo(linkId);
@@ -69,7 +72,8 @@ jQuery(function($) {
         });
 
         // scroll to specific id when click on menu
-        $('.templatemo-top-menu .navbar-nav a').click(function(e){
+        $('.templatemo-top-menu .navbar-nav a').click(function(e)
+        {
             e.preventDefault(); 
             var linkId = $(this).attr('href');
             scrollTo(linkId);
@@ -93,7 +97,8 @@ jQuery(function($) {
         });*/
 
         // gallery category
-        $('.templatemo-gallery-category a').click(function(e){
+        $('.templatemo-gallery-category a').click(function(e)
+        {
             e.preventDefault(); 
             $(this).parent().children('a').removeClass('active');
             $(this).addClass('active');
