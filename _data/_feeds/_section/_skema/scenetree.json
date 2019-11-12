@@ -5,7 +5,7 @@
         "font-size": 14
     },
     "guide": {
-        "js": "scenetree/build.js",
+        "js": "node/test/fixtures/three.graphql/build.js",
         "link": "https://chetabahana.github.io/node/doc/guides/writing-tests.html",
         "file": "https://nodejs.org/api/all.json",
         "from": "https://github.com/chetabahana/scenetree/blob/gh-pages/node_modules/three/examples/js/loaders/VRMLLoader.js",
