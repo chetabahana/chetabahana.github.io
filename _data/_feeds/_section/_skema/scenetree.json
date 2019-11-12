@@ -6,7 +6,7 @@
     },
     "guide": {
         "js": "scenetree/build.js",
-        "link": "https://github.com/chetabahana/scenetree/tree/gh-pages/node_modules",
+        "link": "https://chetabahana.github.io/node/doc/guides/writing-tests.html",
         "file": "https://nodejs.org/api/all.json",
         "from": "https://github.com/chetabahana/scenetree/blob/gh-pages/node_modules/three/examples/js/loaders/VRMLLoader.js",
         "to": "https://github.com/chetabahana/threejs/blob/master/examples/js/loaders/VRMLLoader.js#L5"
