@@ -99,6 +99,11 @@
     top: 48px;
 }
 
+#viewport canvas {
+    width: 375.5px;
+    height: 316px;
+}
+
 #graphiql .topBar {
     height: 48px;
 }
