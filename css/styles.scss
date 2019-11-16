@@ -84,12 +84,6 @@
     top: -2px;
 }
 
-#graphiql {
-    display: block;
-    height: 364px;
-    width: 100%;
-}
-
 #viewport {
     display: block;
     overflow: hidden;
@@ -102,6 +96,12 @@
 #viewport canvas {
     width: 375.5px;
     height: 316px;
+}
+
+#graphiql {
+    display: block;
+    height: 364px;
+    width: 100%;
 }
 
 #graphiql .topBar {
