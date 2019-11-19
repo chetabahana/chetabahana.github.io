@@ -89,14 +89,14 @@
     overflow: hidden;
     position: absolute;
     width: 100%;
-    height: 316px;
+    height: 317px;
     right: 5px;
     top: 48px;
 }
 
 #viewport canvas {
     position: absolute;
-    height: 316px;
+    height: 317px;
     width: 50%;
     right: -4px;
     top: -1px;
@@ -119,20 +119,20 @@
 }
 
 #graphiql .history-contents {
-    height: 316px;
+    height: 317px;
 }
 
 #graphiql .history-title,
 #graphiql .doc-explorer-title {
-    padding: 0;
+    padding: 5px 12px 0 3px;
 }
 
 #graphiql .doc-explorer-back  {
-    padding: 17px 12px 0 16px;
+    padding: 7px 12px 0 6px;
 }
 
 #graphiql .doc-explorer-contents {
-    height: 316px;
+    height: 317px;
 }
 
 .execute-button-wrap > button:first-child svg path {
