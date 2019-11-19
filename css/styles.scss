@@ -95,8 +95,11 @@
 }
 
 #viewport canvas {
+    position: absolute;
     width: 400px;
     height: 316px;
+    left: 100px;
+    top: -1px;
 }
 
 #graphiql {
