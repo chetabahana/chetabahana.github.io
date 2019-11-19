@@ -118,7 +118,12 @@
     margin: -11px -8px -6px 0;
 }
 
-#graphiql-container doc-explorer-title  {
+#graphiql-container .history-contents {
+    height: 316px;
+}
+
+#graphiql-container .history-title,
+#graphiql-container .doc-explorer-title {
     padding: 0;
 }
 
@@ -127,7 +132,7 @@
 }
 
 #graphiql-container .doc-explorer-contents {
-    min-height: 341px;
+    height: 316px;
 }
 
 .execute-button-wrap > button:first-child svg path {
