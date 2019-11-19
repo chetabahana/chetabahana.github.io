@@ -135,6 +135,10 @@
     height: 317px;
 }
 
+.execute-button-wrap > button:focus {
+    outline: none !important;
+}
+
 .execute-button-wrap > button:first-child svg path {
     transform: rotate(180deg);
     transform-origin: 48% 47%;
