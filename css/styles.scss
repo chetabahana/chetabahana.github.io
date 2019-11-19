@@ -99,9 +99,11 @@
 }
 
 #graphiql {
-    display: block;
+    position: absolute;
     height: 364px;
     width: 100%;
+    left: -5px;
+    top: 1px;
 }
 
 #graphiql .topBar {
