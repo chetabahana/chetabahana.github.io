@@ -141,7 +141,7 @@ function scrollTo(selectors)
     $('html,body').animate({scrollTop: selector_top }, 'slow');
 }
 
-// juicerFeed
+// juicer Feed
 function juicerFeed()
 {
     if (!$('#gfeeds').find('a')[0] || !$('#___community_0')) {
@@ -152,7 +152,47 @@ function juicerFeed()
     }
 }
 
-// initial variables 
+//juicer plugin
+function updateFilters() {
+
+  var feeds = document.getElementById("feeds");
+  var obj = feeds.querySelectorAll('.j-image');
+
+  document.getElementsByClassName('juicer-feed').remove();
+
+  for(var index in obj) {
+    if (obj[index].tagName == 'A') {
+      
+      var img = obj[index].getElementsByTagName('img')[0];
+      
+      if(img && img.style) {
+        
+          if (obj[index].hostname == 'www.facebook.com') {
+               img.style.height = '50px';
+               img.style.width = '50px';               
+          }
+          else if (obj[index].hostname == 'plus.google.com') {
+               img.style.height = '25px';
+               img.style.width = '25px';               
+          }
+        
+          img.style.float = 'left';
+          img.style.padding = 0;
+          img.style.margin = 0; 
+      }
+    }
+    
+    if (obj[index].hostname == 'www.facebook.com') {
+          feeds.appendChild(obj[index]);
+    } else if (obj[index].hostname == 'plus.google.com') {
+          document.getElementById("gfeeds").appendChild(obj[index]);
+    }
+    
+  }
+  
+}  
+
+// get params 
 var params, regex = /[?&]([^=#]+)=([^&#]*)/g, url = window.location.href, params = {}, match;
 while(match = regex.exec(url)) {params[match[1]] = match[2];}
 var top_menu_height = 0;
