@@ -22,12 +22,7 @@ jQuery(function($)
         if( typeof(location.hash) !== 'undefined' && location.hash.length ) 
         {
             var location_hash = location.hash.split('?')[0];
-            if(location.hash.split('?')[1]) parameter_on_hash = location.hash.split('?')[1];
-            var regex = /[?&]([^=#]+)=([^&#]*)/g, url = window.location.href, params = {}, match;
-            while(match = regex.exec(url)) {params[match[1]] = match[2];}
-
-            history.replaceState(null, null, location.pathname);
-            scrollTo(location_hash);
+            history.replaceState(null, null, location.pathname); scrollTo(location_hash);
         }
 
         // scroll to top
@@ -157,6 +152,7 @@ function juicerFeed()
     }
 }
 
-// init functions 
-var params = null;
+// initial variables 
+var params, regex = /[?&]([^=#]+)=([^&#]*)/g, url = window.location.href, params = {}, match;
+while(match = regex.exec(url)) {params[match[1]] = match[2];}
 var top_menu_height = 0;
