@@ -1,11 +1,11 @@
 {
-    "title": "nodelinks",
+    "title": "channel",
     "guide": {
-        "js": "nodelinks/release/go.js",
-        "link": "https://chetabahana.github.io/nodelinks/learn/index.html",
-        "file": "https://chetabahana.github.io/nodelinks/samples/classHierarchy.html",
-        "from": "https://chetabahana.github.io/nodelinks/samples/parseTree.html",
-        "to": "https://chetabahana.github.io/nodelinks/samples/ldLayout.html"
+        "js": "channel/release/go.js",
+        "link": "https://chetabahana.github.io/channel/learn/index.html",
+        "file": "https://chetabahana.github.io/channel/samples/classHierarchy.html",
+        "from": "https://chetabahana.github.io/channel/samples/parseTree.html",
+        "to": "https://chetabahana.github.io/channel/samples/ldLayout.html"
     },
     "style": [
         { "key": "Alpha", "color": "lightblue" },
