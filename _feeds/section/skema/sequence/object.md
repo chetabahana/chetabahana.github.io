@@ -1,4 +1,4 @@
 ---
-weight: 2
+weight: 3
 redirect_from: /feeds/skema/sequence/object
 ---
