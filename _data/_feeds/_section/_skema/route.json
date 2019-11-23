@@ -1,5 +1,5 @@
 {
-    "title": "sitewheel",
+    "title": "route",
     "style": [
         { "key": "Alpha", "color": "lightblue" },
         { "key": "Beta", "color": "orange" },
@@ -7,9 +7,9 @@
         { "key": "Delta", "color": "pink" }
     ],
     "guide": {
-        "js": "sitewheel/js/diagram.js",
+        "js": "route/js/diagram.js",
         "link": "http://xliberation.com/googlecharts/d3concept.html",
-        "file": "https://chetabahana.github.io/sitewheel/API",
+        "file": "https://chetabahana.github.io/route/API",
         "from": "https://observablehq.com/@d3/stacked-horizontal-bar-chart?collection=@d3/d3-shape",
         "to": "https://observablehq.com/@d3/programmatic-zoom"
     },

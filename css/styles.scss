@@ -6,7 +6,6 @@
 @import "bootstrap";
 @import "templatemo";
 @import "embedfeeds";
-@import "graphiql";
 
 .content {
     width: 45rem;
@@ -71,51 +70,74 @@
     top: -20px;
 }
 
-.diagram-railroad {
+.diagram-grammar {
     overflow: auto;
-    height: 393px;
-    left: -10px;
-    top: -28px;
+    height: 364px;
+    left: -5px;
+    top: 1px;
 }
 
-.diagram-sitewheel {
+.diagram-route {
     overflow: auto;
     height: 364px;
     left: -1px;
     top: -2px;
 }
 
-#graphiql {
-    display: block;
-    height: 364px;
-    width: 100%;
-}
-
 #viewport {
     display: block;
     overflow: hidden;
     position: absolute;
-    height: 316px;
-    right: 15px;
+    width: 100%;
+    height: 317px;
+    right: 5px;
     top: 48px;
+}
+
+#viewport canvas {
+    height: 317px;
+    right: -4px;
+    top: -1px;
+}
+
+#graphiql {
+    position: absolute;
+    height: 364px;
+    width: 100%;
+    left: -1px;
+    top: -1px;
 }
 
 #graphiql .topBar {
     height: 48px;
 }
 
-#graphiql-container .doc-explorer-contents {
-    min-height: 341px;
-}
-
-#graphiql-container doc-explorer-title  {
-    padding: 0;
-}
-
-#graphiql-container .doc-explorer-back  {
-    padding: 17px 12px 0 16px;
-}
-
-#graphiql-container .docExplorerHide {
+#graphiql .docExplorerHide {
     margin: -11px -8px -6px 0;
+}
+
+#graphiql .history-contents {
+    height: 317px;
+}
+
+#graphiql .history-title,
+#graphiql .doc-explorer-title {
+    padding: 5px 12px 0 3px;
+}
+
+#graphiql .doc-explorer-back  {
+    padding: 7px 12px 0 6px;
+}
+
+#graphiql .doc-explorer-contents {
+    height: 317px;
+}
+
+.execute-button-wrap > button:focus {
+    outline: none !important;
+}
+
+.execute-button-wrap > button:first-child svg path {
+    transform: rotate(180deg);
+    transform-origin: 48% 47%;
 }

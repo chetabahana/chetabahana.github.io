@@ -1,15 +1,15 @@
 {
-    "title": "railroad",
+    "title": "grammar",
     "style": {
         "theme": "hand",
         "font-size": 12
     },
     "guide": {
-        "js": "railroad/diagrams_samples/diagram.min.js",
+        "js": "grammar/diagrams_samples/diagram.min.js",
         "link": "https://sap.github.io/chevrotain/docs/guide/generating_syntax_diagrams.html",
-        "file": "https://sap.github.io/chevrotain/documentation/6_5_0/globals.html",
-        "from": "https://en.wikipedia.org/wiki/Syntax_diagram",
-        "to": "https://chetabahana.github.io/railroad/playground/"
+        "file": "https://sap.github.io/chevrotain/docs/guide/custom_apis.html#gast-structure",
+        "from": "https://github.com/chetabahana/grammar/blob/master/examples/implementation_languages/coffeescript/coffeescript_json.coffee",
+        "to": "https://chetabahana.github.io/grammar/playground/"
     },
     "grammar": "Diagram(\nStack(\nSequence(\n'SELECT',\nOptional('DISTINCT','skip'),\nChoice(0,\n'*',\nOneOrMore(\nSequence(NonTerminal('expression'),Optional(Sequence('AS',NonTerminal('output_name')))),\n','\n)\n),\n'FROM',\nOneOrMore(NonTerminal('from_item'),','),\nOptional(Sequence('WHERE',NonTerminal('condition')))\n),\nSequence(\nOptional(Sequence('GROUPBY',NonTerminal('expression'))),\nOptional(Sequence('HAVING',NonTerminal('condition'))),\nOptional(Sequence(\nChoice(0,'UNION','INTERSECT','EXCEPT'),\nOptional('ALL'),\nNonTerminal('select')\n))\n),\nSequence(\nOptional(Sequence(\n'ORDERBY',\nOneOrMore(Sequence(NonTerminal('expression'),Choice(0,Skip(),'ASC','DESC')),','))\n),\nOptional(Sequence(\n'LIMIT',\nChoice(0,NonTerminal('count'),'ALL')\n)),\nOptional(Sequence('OFFSET',NonTerminal('start'),Optional('ROWS')))\n)\n)\n)",
     "skema": [

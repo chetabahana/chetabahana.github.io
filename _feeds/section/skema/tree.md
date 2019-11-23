@@ -1,5 +1,5 @@
 ---
-weight: 0
+weight: 6
 category: skema
 redirect_from:
   - /00000/skema.json

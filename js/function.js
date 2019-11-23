@@ -1,30 +1,9 @@
-// init functions 
-var top_menu_height = 0;
-
-// init scrollTo 
-function scrollTo(selectors)
+jQuery(function($)
 {
-    if(!$(selectors).length) return;
-    var selector_top = $(selectors).offset().top - top_menu_height;
-    $('html,body').animate({scrollTop: selector_top }, 'slow');
-}
-
-// juicerFeed
-function juicerFeed() {
-    if (!$('#gfeeds').find('a')[0] || !$('#___community_0')) {
-         window.requestAnimationFrame(juicerFeed);       
-    } else {
-       $('#___community_0').css({ 'margin-top': '-5px' });  
-       $('#gfeeds').slick({slidesToShow: 10, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2000});
-    }
-  }
-
-jQuery(function($) {
-
     // jQuery document.ready will be executed just after html dom tree has been parsed out.
     // So it is far more earlier executed than window onload.
-    $(document).ready( function() {
-
+    $(document).ready( function()
+    {
         // unbind external link
         // open and set links which point outside
         $('.external-link').unbind('click');
@@ -36,32 +15,26 @@ jQuery(function($) {
         // scroll spy to auto active the nav item
         $('.templatemo-top-menu').stickUp(); 
         top_menu_height = $('.templatemo-top-menu').height();
-        $('body').scrollspy({target: '#templatemo-nav-bar', offset: top_menu_height});
+        $('html,body').scrollspy({target: '#templatemo-nav-bar', offset: top_menu_height});
 
         // do scroll and clear the hash anytime someone arrives with a hash tag
         // https://stackoverflow.com/a/50688363/4058484
-        if( typeof(location.hash) !== 'undefined' && location.hash.length ) {
-
-            var location_hash = location.hash;
-            history.replaceState(null, null, location.pathname);
-            scrollTo(location_hash);
-
+        if( typeof(location.hash) !== 'undefined' && location.hash.length ) 
+        {
+            var location_hash = location.hash.split('?')[0];
+            history.replaceState(null, null, location.pathname); scrollTo(location_hash);
         }
 
-    });
-
-    // Window.onload event will be executed only when all page resources
-    // ( images, audio, video etc ) has been downloaded in the page.
-    $(window).on('load', function(){
-
         // scroll to top
-        $('#btn-back-to-top').click(function(e){
+        $('#btn-back-to-top').click(function(e)
+        {
             e.preventDefault();
             scrollTo('#templatemo-top');
         });
 
         // scroll to specific id when click on link
-        $('.internal-link, .carousel-inner a').click(function(e){
+        $('.internal-link, .carousel-inner a').click(function(e)
+        {
             e.preventDefault(); 
             var linkId = $(this).attr('href');
             scrollTo(linkId);
@@ -69,11 +42,13 @@ jQuery(function($) {
         });
 
         // scroll to specific id when click on menu
-        $('.templatemo-top-menu .navbar-nav a').click(function(e){
+        $('.templatemo-top-menu .navbar-nav a').click(function(e)
+        {
             e.preventDefault(); 
             var linkId = $(this).attr('href');
             scrollTo(linkId);
-            if($('.navbar-toggle').is(":visible") == true){
+            if($('.navbar-toggle').is(":visible") == true)
+            {
                 $('.navbar-collapse').collapse('toggle');
             }
             $(this).blur();
@@ -93,7 +68,8 @@ jQuery(function($) {
         });*/
 
         // gallery category
-        $('.templatemo-gallery-category a').click(function(e){
+        $('.templatemo-gallery-category a').click(function(e)
+        {
             e.preventDefault(); 
             $(this).parent().children('a').removeClass('active');
             $(this).addClass('active');
@@ -113,10 +89,21 @@ jQuery(function($) {
             }
         });
 
-        /* chetabahana-portfolio
+        //chetabahana-skema
+        $('.download').click(function(ev) {draw.xmlData();});
+        $('.theme').change(function() {draw.change();});
+
+        //chetabahana-portfolio
         $(".templatemo-project-gallery").simplyScroll();
 
-        var feed = new Instafeed({
+    });
+
+    // Window.onload event will be executed only when all page resources
+    // ( images, audio, video etc ) has been downloaded in the page.
+    $(window).on('load', function()
+    {
+        var feed = new Instafeed(
+        {
             get: 'user',
             limit: 100,
             sortBy:'most-recent',
@@ -125,21 +112,87 @@ jQuery(function($) {
             accessToken: '6982272811.1677ed0.b6dcfc26877b4ad3854d1a276fdf4de6',
             template: '<li><a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="insta-likes"><div style="display: table; vertical-align: middle; height: 100%; width: 100%;"><span style="display: table-cell; vertical-align: middle; height: 100%; width: 100%;">{{likes}} <i class="fa fa-heart"></i><br/>{{comments}} <i class="fa fa-comment"></i></span></div></div></a></li>',
 
-            after: function() {
-                $('#instafeed').slick({slidesToShow: 5, slidesToScroll: 1, autoplay: true, arrows: true, autoplaySpeed: 2000});
+            after: function()
+            {
+                $('#instafeed').slick(
+                {
+                    slidesToShow: 5, slidesToScroll: 1, autoplay: true, arrows: true, autoplaySpeed: 2000
+                });
                 juicerFeed();
             }
 
         });
 
-        feed.run();
-        */
-
        // chetabahana-skema
-        $('.download').click(function(ev) {draw.xmlData();});
-        $('.theme').change(function() {draw.change();});
         draw.getJSON();
+
+        //chetabahana-portfolio
+        feed.run();
 
     });
 
 });
+
+// init scrollTo 
+function scrollTo(selectors)
+{
+    if(!$(selectors).length) return;
+    var selector_top = $(selectors).offset().top - top_menu_height;
+    $('html,body').animate({scrollTop: selector_top }, 'slow');
+}
+
+// juicer Feed
+function juicerFeed()
+{
+    if (!$('#gfeeds').find('a')[0] || !$('#___community_0')) {
+         window.requestAnimationFrame(juicerFeed);       
+    } else {
+       $('#___community_0').css({ 'margin-top': '-5px' });  
+       $('#gfeeds').slick({slidesToShow: 10, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2000});
+    }
+}
+
+//juicer plugin
+function updateFilters() {
+
+  var feeds = document.getElementById("feeds");
+  var obj = feeds.querySelectorAll('.j-image');
+
+  document.getElementsByClassName('juicer-feed').remove();
+
+  for(var index in obj) {
+    if (obj[index].tagName == 'A') {
+      
+      var img = obj[index].getElementsByTagName('img')[0];
+      
+      if(img && img.style) {
+        
+          if (obj[index].hostname == 'www.facebook.com') {
+               img.style.height = '50px';
+               img.style.width = '50px';               
+          }
+          else if (obj[index].hostname == 'plus.google.com') {
+               img.style.height = '25px';
+               img.style.width = '25px';               
+          }
+        
+          img.style.float = 'left';
+          img.style.padding = 0;
+          img.style.margin = 0; 
+      }
+    }
+    
+    if (obj[index].hostname == 'www.facebook.com') {
+          feeds.appendChild(obj[index]);
+    } else if (obj[index].hostname == 'plus.google.com') {
+          document.getElementById("gfeeds").appendChild(obj[index]);
+    }
+    
+  }
+  
+}  
+
+// get params 
+var params, regex = /[?&]([^=#]+)=([^&#]*)/g, url = window.location.href, params = {}, match;
+while(match = regex.exec(url)) {params[match[1]] = match[2];}
+var top_menu_height = 0;

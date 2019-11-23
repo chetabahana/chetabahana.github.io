@@ -1,8 +1,8 @@
 {
     "title": "sequence",
     "style": {
-        "theme": "hand",
-        "font-size": 13
+        "theme": "simple",
+        "font-size": 15
     },
     "guide": {
         "js": "sequence/js/sequence-diagram-snap-min.js",
