@@ -1,7 +1,7 @@
 ---
 to: 4
 from: 3
-weight: 3
+weight: 4
 event: object
 type: internal
 flow: external
