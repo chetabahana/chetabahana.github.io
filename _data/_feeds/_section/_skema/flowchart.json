@@ -3,10 +3,10 @@
     "style": 
         {
             "x": -10,
-            "y": -5,
+            "y": -7,
             "font-size": 15,
             "line-width": 3,
-            "line-length": 45,
+            "line-length": 46,
             "text-margin": 10,
             "font-color": "black",
             "line-color": "black",
