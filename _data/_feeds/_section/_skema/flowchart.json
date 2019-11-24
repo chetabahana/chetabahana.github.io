@@ -2,7 +2,7 @@
     "title": "flowchart",
     "style": 
         {
-            "x": -5,
+            "x": 5,
             "y": -5,
             "font-size": 15,
             "line-width": 3,
@@ -37,7 +37,7 @@
                     "current": {"font-weight": "bold"},
                     "future": {"font-weight": "bold"},
                     "invalid": {"font-weight": "bold"},
-                    "approved": {"font-weight": "bold", "yes-text": "OK", "no-text": "DITOLAK"},
+                    "approved": {"font-weight": "bold", "yes-text": "DITERIMA", "no-text": "DITOLAK"},
                     "rejected": {"font-weight": "bold", "yes-text": "LULUS", "no-text": "TIDAK LULUS"}
                 }
     },
