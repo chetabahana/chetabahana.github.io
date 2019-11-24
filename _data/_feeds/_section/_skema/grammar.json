@@ -5,7 +5,7 @@
         "font-size": 12
     },
     "guide": {
-        "js": "grammar/diagrams_samples/diagram.min.js",
+        "js": "grammar/diagrams/diagram.min.js",
         "link": "https://chetabahana.github.io/grammar/playground/",
         "file": "https://sap.github.io/chevrotain/docs/guide/custom_apis.html#gast-structure",
         "from": "https://github.com/chetabahana/grammar/blob/master/examples/implementation_languages/coffeescript/coffeescript_json.coffee",
