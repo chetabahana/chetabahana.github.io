@@ -31,6 +31,36 @@ plugins:
   - jekyll-coffeescript
   - jekyll-redirect-from
 
+input_types:
+- text
+- textarea
+- email
+- date
+- checkbox
+- radio
+- number
+- submit
+
+form_engines:
+- cloudcannon
+- formspree
+- formbucket
+
+collections:
+  feeds:
+    output: true
+    permalink: /:path
+
+# Default Setting
+# https://jekyllrb.com/docs/configuration/front-matter-defaults/
+defaults:
+  -
+    scope:
+      path: ""
+      type: "feeds"
+    values:
+      layout: "feeds"
+
 # Site link
 base: _feeds/section
 url: https://chetabahana.github.io
