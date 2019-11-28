@@ -58,8 +58,8 @@ defaults:
     scope:
       path: ""
       type: "feeds"
-#    values:
-#      layout: "feeds"
+    values:
+      layout: "feeds"
 
 # Site link
 base: _feeds/section
