@@ -4,7 +4,7 @@ jQuery(function($)
     // So it is far more earlier executed than window onload.
     $(document).ready( function()
     {
-        // scroll spy to auto active the nav item
+        // to stick navbar on top and hash
         top_menu_height = $('.templatemo-top-menu').height();
         $('html,body').scrollspy({target: '#templatemo-nav-bar', offset: top_menu_height + 10});
 
@@ -53,7 +53,7 @@ jQuery(function($)
             return false;
         });
 
-        // to stick navbar on top and hash
+        // scroll spy to auto active the nav item
         $('.templatemo-top-menu').stickUp(); 
 
         // This API has been removed in jQuery 3.0; please use .on( "load", handler ) 
