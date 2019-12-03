@@ -4,26 +4,24 @@ jQuery(function($)
     // So it is far more earlier executed than window onload.
     $(document).ready( function()
     {
-        // unbind external link
-        // open and set links which point outside
-        $('.external-link').unbind('click');
-        $(document.links).filter(function() {
-            return this.hostname != window.location.hostname;
-        }).attr('target', '_blank'); 
-
         // to stick navbar on top and hash
-        // scroll spy to auto active the nav item
-        $('.templatemo-top-menu').stickUp(); 
         top_menu_height = $('.templatemo-top-menu').height();
-        $('html,body').scrollspy({target: '#templatemo-nav-bar', offset: top_menu_height});
+        $('html,body').scrollspy({target: '#templatemo-nav-bar', offset: top_menu_height + 10});
 
         // do scroll and clear the hash anytime someone arrives with a hash tag
         // https://stackoverflow.com/a/50688363/4058484
         if( typeof(location.hash) !== 'undefined' && location.hash.length ) 
         {
             var location_hash = location.hash.split('?')[0];
-            history.replaceState(null, null, location.pathname); scrollTo(location_hash);
+            history.replaceState(null, null, location.pathname);
+            scrollTo(location_hash);
         }
+
+        // set links which point outside
+        $('.external-link').unbind('click');
+        $(document.links).filter(function() {
+            return this.hostname != window.location.hostname;
+        }).attr('target', '_blank'); 
 
         // scroll to top
         $('#btn-back-to-top').click(function(e)
@@ -54,6 +52,9 @@ jQuery(function($)
             $(this).blur();
             return false;
         });
+
+        // scroll spy to auto active the nav item
+        $('.templatemo-top-menu').stickUp(); 
 
         // This API has been removed in jQuery 3.0; please use .on( "load", handler ) 
         // instead of .load( handler ) and .trigger( "load" ) instead of .load().
@@ -102,6 +103,9 @@ jQuery(function($)
     // ( images, audio, video etc ) has been downloaded in the page.
     $(window).on('load', function()
     {
+        // unbind external link
+        $('.external-link').unbind('click');
+
         var feed = new Instafeed(
         {
             get: 'user',
