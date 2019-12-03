@@ -11,6 +11,12 @@ jQuery(function($)
             return this.hostname != window.location.hostname;
         }).attr('target', '_blank'); 
 
+        // to stick navbar on top and hash
+        // scroll spy to auto active the nav item
+        $('.templatemo-top-menu').stickUp(); 
+        top_menu_height = $('.templatemo-top-menu').height();
+        $('html,body').scrollspy({target: '#templatemo-nav-bar', offset: top_menu_height});
+
         // do scroll and clear the hash anytime someone arrives with a hash tag
         // https://stackoverflow.com/a/50688363/4058484
         if( typeof(location.hash) !== 'undefined' && location.hash.length ) 
@@ -19,12 +25,6 @@ jQuery(function($)
             history.replaceState(null, null, location.pathname);
             scrollTo(location_hash);
         }
-
-        // to stick navbar on top and hash
-        // scroll spy to auto active the nav item
-        $('.templatemo-top-menu').stickUp(); 
-        top_menu_height = $('.templatemo-top-menu').height();
-        $('html,body').scrollspy({target: '#templatemo-nav-bar', offset: top_menu_height});
 
         // scroll to top
         $('#btn-back-to-top').click(function(e)
