@@ -2,9 +2,9 @@
 to: 4
 from: 3
 weight: 3
-event: object
 type: internal
 flow: internal
+event: property
 label: Cloud-Site-API
 tag_name: ubuntu
 run_time: /bin/python
