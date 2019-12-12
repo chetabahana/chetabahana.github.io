@@ -1,4 +1,3 @@
 ---
-weight: 2
+weight: 3
 ---
-square = (x) -> x * x

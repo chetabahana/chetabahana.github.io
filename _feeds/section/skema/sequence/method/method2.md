@@ -2,9 +2,9 @@
 to: 3
 from: 2
 weight: 2
-event: object
 type: internal
 flow: internal
+event: property
 label: Cloud-Task-API
 tag_name: ubuntu
 run_time: /bin/python

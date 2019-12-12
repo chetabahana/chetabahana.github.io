@@ -2,9 +2,9 @@
 to: 2
 from: 5
 weight: 5
-event: object
 type: internal
 flow: external
+event: property
 label: Google-Trend-API
 tag_name: ubuntu
 run_time: /bin/python

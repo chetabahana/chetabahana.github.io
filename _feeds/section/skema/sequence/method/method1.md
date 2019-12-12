@@ -2,9 +2,9 @@
 to: 2
 from: 1
 weight: 1
-event: object
 type: external
 flow: internal
+event: property
 label:  Optimasi
 tag_name: ubuntu
 run_time: /bin/python

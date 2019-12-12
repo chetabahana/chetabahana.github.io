@@ -128,6 +128,7 @@ jQuery(function($)
         });
 
        // chetabahana-skema
+        $('.theme').val('hand');
         draw.getJSON();
 
         //chetabahana-portfolio
