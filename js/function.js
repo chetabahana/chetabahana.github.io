@@ -53,7 +53,7 @@ jQuery(function($)
             return false;
         });
 
-        // scroll spy to auto active the nav item
+        // scrollspy to auto active the nav item
         $('.templatemo-top-menu').stickUp(); 
 
         // This API has been removed in jQuery 3.0; please use .on( "load", handler ) 
@@ -135,6 +135,12 @@ jQuery(function($)
         feed.run();
 
     });
+
+    //catch Scrollspy event
+    $(window).on('activate.bs.scrollspy', function (event) {
+        console.log('activate.bs.scrollspy', event);
+        draw.change();
+    })
 
 });
 
