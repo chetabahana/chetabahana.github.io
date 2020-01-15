@@ -91,8 +91,9 @@ jQuery(function($)
         });
 
         //chetabahana-skema
-        $('.download').click(function(ev) {draw.xmlData();});
+        $('.theme').val('hand');
         $('.theme').change(function() {draw.change();});
+        $('.download').click(function(ev) {draw.xmlData();});
 
         //chetabahana-portfolio
         $(".templatemo-project-gallery").simplyScroll();
@@ -134,7 +135,7 @@ jQuery(function($)
     //catch scrollspy event prior running skema
     $(window).on('activate.bs.scrollspy', function (event) {
         //console.log('activate.bs.scrollspy', event);
-        if (!$('#diagram svg')) {$('.theme').val('hand'); draw.getJSON();}
+        if (!$('#diagram svg') && $(".theme").val() == 'hand') draw.getJSON();
         else if ($('#diagram svg').width() < $('#diagram').width()) draw.change();
     })
 
