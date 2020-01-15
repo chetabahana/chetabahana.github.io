@@ -127,19 +127,15 @@ jQuery(function($)
 
         });
 
-       // chetabahana-skema
-        $('.theme').val('hand');
-        draw.getJSON();
-
-        //chetabahana-portfolio
         feed.run();
 
     });
 
-    //catch Scrollspy event
+    //catch scrollspy event prior running skema
     $(window).on('activate.bs.scrollspy', function (event) {
-        if ($('#diagram svg').width() < 780) draw.change();
-        console.log('activate.bs.scrollspy', event);
+        //console.log('activate.bs.scrollspy', event);
+        if (!$('#diagram svg')) {$('.theme').val('hand'); draw.getJSON();}
+        else if ($('#diagram svg').width() < $('#diagram').width()) draw.change();
     })
 
 });
