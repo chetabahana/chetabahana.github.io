@@ -136,7 +136,7 @@ jQuery(function($)
 
     //catch Scrollspy event
     $(window).on('activate.bs.scrollspy', function (event) {
-        if ($('#diagram svg').width() < $('#diagram').width()) draw.change();
+        //if ($('#diagram svg').width() < $('#diagram').width()) draw.change();
     })
 
 });
