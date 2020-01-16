@@ -5,6 +5,7 @@ jQuery(function($)
     $(document).ready( function()
     {
         // to stick navbar on top and hash
+        $('.theme').val('hand');
         top_menu_height = $('.templatemo-top-menu').height();
         $('html,body').scrollspy({target: '#templatemo-nav-bar', offset: top_menu_height + 10});
 
@@ -90,10 +91,6 @@ jQuery(function($)
             }
         });
 
-        //chetabahana-skema
-        $('.theme').change(function() {draw.change();});
-        $('.download').click(function(ev) {draw.xmlData();});
-
         //chetabahana-portfolio
         $(".templatemo-project-gallery").simplyScroll();
 
@@ -105,6 +102,10 @@ jQuery(function($)
     {
         // unbind external link
         $('.external-link').unbind('click');
+
+        // chetabahana-skema
+        $('.theme').change(function() {draw.change();});
+        $('.download').click(function(ev) {draw.xmlData();});
 
         var feed = new Instafeed(
         {
@@ -127,7 +128,6 @@ jQuery(function($)
 
         });
 
-        $('.theme').val('hand');
         feed.run();
 
     });
