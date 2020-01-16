@@ -91,7 +91,6 @@ jQuery(function($)
         });
 
         //chetabahana-skema
-        $('.theme').val('hand');
         $('.theme').change(function() {draw.change();});
         $('.download').click(function(ev) {draw.xmlData();});
 
@@ -128,6 +127,7 @@ jQuery(function($)
 
         });
 
+        $('.theme').val('hand');
         feed.run();
 
     });
