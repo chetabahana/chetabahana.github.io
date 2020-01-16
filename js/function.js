@@ -5,7 +5,6 @@ jQuery(function($)
     $(document).ready( function()
     {
         // to stick navbar on top and hash
-        $('.theme').val('hand');
         top_menu_height = $('.templatemo-top-menu').height();
         $('html,body').scrollspy({target: '#templatemo-nav-bar', offset: top_menu_height + 10});
 
@@ -91,6 +90,10 @@ jQuery(function($)
             }
         });
 
+        //chetabahana-skema
+        $('.download').click(function(ev) {draw.xmlData();});
+        $('.theme').change(function() {draw.change();});
+
         //chetabahana-portfolio
         $(".templatemo-project-gallery").simplyScroll();
 
@@ -102,10 +105,6 @@ jQuery(function($)
     {
         // unbind external link
         $('.external-link').unbind('click');
-
-        // chetabahana-skema
-        $('.theme').change(function() {draw.change();});
-        $('.download').click(function(ev) {draw.xmlData();});
 
         var feed = new Instafeed(
         {
@@ -128,15 +127,16 @@ jQuery(function($)
 
         });
 
+       // chetabahana-skema
+        $('.theme').val('hand');
+        draw.getJSON();
         feed.run();
 
     });
 
-    //catch scrollspy event prior running skema
+    //catch Scrollspy event
     $(window).on('activate.bs.scrollspy', function (event) {
-        //console.log('activate.bs.scrollspy', event);
-        if (!$('#diagram svg') && $(".theme").val() == 'hand') draw.getJSON();
-        else if ($('#diagram svg').width() < $('#diagram').width()) draw.change();
+        if ($('#diagram svg').width() < $('#diagram').width()) draw.change();
     })
 
 });
