@@ -53,7 +53,7 @@ jQuery(function($)
             return false;
         });
 
-        // scroll spy to auto active the nav item
+        // scrollspy to auto active the nav item
         $('.templatemo-top-menu').stickUp(); 
 
         // This API has been removed in jQuery 3.0; please use .on( "load", handler ) 
@@ -130,11 +130,14 @@ jQuery(function($)
        // chetabahana-skema
         $('.theme').val('hand');
         draw.getJSON();
-
-        //chetabahana-portfolio
         feed.run();
 
     });
+
+    //catch Scrollspy event
+    $(window).on('activate.bs.scrollspy', function (event) {
+        //if ($('#diagram svg').width() < $('#diagram').width()) draw.change();
+    })
 
 });
 
