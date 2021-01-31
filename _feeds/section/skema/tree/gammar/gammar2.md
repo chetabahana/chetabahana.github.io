@@ -1,5 +1,5 @@
 ---
-weight: 2
+weight: 9
 label: Stok Barang
 tag_name: ubuntu
 run_time: /bin/python

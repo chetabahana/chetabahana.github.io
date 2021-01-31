@@ -1,5 +1,5 @@
 ---
-weight: 3
+weight: 10
 label: Merchant Center
 tag_name: ubuntu
 run_time: /bin/python
