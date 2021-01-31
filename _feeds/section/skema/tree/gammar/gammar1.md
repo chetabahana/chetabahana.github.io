@@ -1,5 +1,6 @@
 ---
-weight: 8
+myId: 8
+weight: 1
 label: Buka Toko
 tag_name: ubuntu
 run_time: /bin/python
