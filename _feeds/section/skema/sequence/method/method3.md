@@ -1,13 +1,10 @@
 ---
-to: 4
-from: 3
+myId: 40
 weight: 3
-type: internal
-flow: internal
-event: property
-label: Cloud-Site-API
+type: user
+label: Peluang Terbaik
 tag_name: ubuntu
 run_time: /bin/python
-redirect_from: /feeds/skema/sequence/method/method3
+layout: feeds/section/skema/sequence/property
 ---
-Google Merchant Center->Peluang Terbaik: Cloud-Site-API
+participant Peluang Terbaik

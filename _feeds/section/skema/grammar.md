@@ -1,6 +1,7 @@
 ---
+myId: 59
 weight: 3
-category: skema
+type: main
 redirect_from:
   - /00/skema.json
   - /01/skema.json

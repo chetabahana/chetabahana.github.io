@@ -1,13 +1,10 @@
 ---
-to: 2
-from: 5
+myId: 42
 weight: 5
-type: internal
-flow: external
-event: property
-label: Google-Trend-API
+type: user
+label: Network
 tag_name: ubuntu
 run_time: /bin/python
-redirect_from: /feeds/skema/sequence/method/method5
+layout: feeds/section/skema/sequence/property
 ---
-Portfolio->>Stok Barang: Google-Trend-API
+participant Network

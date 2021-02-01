@@ -1,3 +1,5 @@
 ---
-weight: 100
+myId: 73
+weight: 3
+type: user
 ---
