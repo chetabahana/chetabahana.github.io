@@ -1,4 +1,4 @@
 ---
 myId: 90
-eight: 1
+weight: 1
 ---

@@ -1,4 +1,4 @@
 ---
 myId: 100
-weight: 5
+weight: 2
 ---

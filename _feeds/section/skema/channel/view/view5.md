@@ -1,4 +1,4 @@
 ---
 myId: 94
-wweight: 5
+weight: 5
 ---
