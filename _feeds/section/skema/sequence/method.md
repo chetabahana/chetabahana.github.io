@@ -1,5 +1,5 @@
 ---
-myId: 31
-weight: 1
+myId: 37
+weight: 2
 redirect_from: /feeds/skema/sequence/method
 ---

@@ -1,14 +1,8 @@
 ---
-myId: 36
 weight: 6
-to: 6
-from: 5
-type: external
-flow: external
-label: eShop SEO
-event: property
+label: Network
 tag_name: ubuntu
 run_time: /bin/python
-redirect_from: /feeds/skema/sequence/method/method6
+layout: feeds/section/skema/sequence/property
 ---
-Portfolio-->>Network: eShop SEO
+participant Network
