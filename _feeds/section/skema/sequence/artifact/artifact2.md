@@ -3,7 +3,8 @@ myId: 32
 to: 3
 from: 2
 weight: 2
-type: internal
+type: user
+init: internal
 flow: internal
 event: property
 label: Cloud-Task-API

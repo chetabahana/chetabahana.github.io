@@ -1,6 +1,7 @@
 ---
 myId: 48
 weight: 5
+type: main
 label: Network
 tag_name: ubuntu
 run_time: /bin/python

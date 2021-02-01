@@ -1,6 +1,7 @@
 ---
 myId: 46
 weight: 3
+type: user
 label: Peluang Terbaik
 tag_name: ubuntu
 run_time: /bin/python

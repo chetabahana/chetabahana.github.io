@@ -3,7 +3,8 @@ myId: 33
 to: 4
 from: 3
 weight: 3
-type: internal
+type: main
+init: internal
 flow: internal
 event: property
 label: Cloud-Site-API

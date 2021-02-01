@@ -3,6 +3,7 @@ myId: 31
 to: 2
 from: 1
 weight: 1
+type: user
 type: external
 flow: internal
 event: property

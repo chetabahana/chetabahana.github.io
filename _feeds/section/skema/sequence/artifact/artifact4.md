@@ -3,7 +3,8 @@ myId: 34
 to: 5
 from: 4
 weight: 4
-type: internal
+type: main
+init: internal
 flow: external
 event: property
 label: Google-Ads-API
