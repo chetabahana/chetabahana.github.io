@@ -2,7 +2,7 @@
 myId: 57
 weight: 1
 type: main
-category: skema
+category: eksekusi
 redirect_from:
   - /skema.json
 ---
