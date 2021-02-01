@@ -3,7 +3,7 @@ myId: 34
 to: 5
 from: 4
 weight: 4
-type: main
+type: user
 init: internal
 flow: external
 event: property

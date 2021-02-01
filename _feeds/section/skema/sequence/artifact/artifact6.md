@@ -3,7 +3,7 @@ myId: 36
 weight: 6
 to: 6
 from: 5
-type: main
+type: user
 init: external
 flow: external
 label: eShop SEO

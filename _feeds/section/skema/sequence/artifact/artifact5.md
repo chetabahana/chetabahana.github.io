@@ -3,7 +3,8 @@ myId: 35
 to: 2
 from: 5
 weight: 5
-type: internal
+type: user
+init: internal
 flow: external
 event: property
 label: Google-Trend-API
