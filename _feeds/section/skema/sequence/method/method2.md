@@ -1,13 +1,10 @@
 ---
-to: 3
-from: 2
+myId: 39
 weight: 2
-type: internal
-flow: internal
-event: property
-label: Cloud-Task-API
+type: user
+label: Stok Barang
 tag_name: ubuntu
 run_time: /bin/python
-redirect_from: /feeds/skema/sequence/method/method2
+layout: feeds/section/skema/sequence/property
 ---
-Stok Barang->Google Merchant Center: Cloud-Task-API
+participant Stok Barang

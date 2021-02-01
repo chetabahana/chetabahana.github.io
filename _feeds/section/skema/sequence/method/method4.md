@@ -1,13 +1,10 @@
 ---
-to: 5
-from: 4
+myId: 41
 weight: 4
-type: internal
-flow: external
-event: property
-label: Google-Ads-API
+type: user
+label: Portfolio
 tag_name: ubuntu
 run_time: /bin/python
-redirect_from: /feeds/skema/sequence/method/method4
+layout: feeds/section/skema/sequence/property
 ---
-Peluang Terbaik->>Portfolio: Google-Ads-API
+participant Portfolio
