@@ -1,8 +1,9 @@
 ---
+myId: 44
 weight: 1
-label: Buka Toko
+label: Stok Barang
 tag_name: ubuntu
 run_time: /bin/python
 layout: feeds/section/skema/sequence/property
 ---
-participant Buka Toko
+participant Stok Barang

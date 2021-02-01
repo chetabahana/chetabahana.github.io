@@ -1,4 +1,5 @@
 ---
+myId: 40
 weight: 2
 label: Stok Barang
 tag_name: ubuntu
