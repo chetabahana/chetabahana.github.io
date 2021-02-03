@@ -1,9 +1,9 @@
 ---
-myId: 33
+myId: 89
 to: 4
 from: 3
 weight: 3
-type: main
+type: user
 init: internal
 flow: internal
 event: property

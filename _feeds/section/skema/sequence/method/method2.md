@@ -1,5 +1,5 @@
 ---
-myId: 39
+myId: 94
 weight: 2
 type: user
 label: Stok Barang

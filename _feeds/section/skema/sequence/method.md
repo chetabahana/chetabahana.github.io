@@ -1,7 +1,8 @@
 ---
-myId: 37
+myId: 92
 weight: 2
 type: user
+label: Buka Toko
 redirect_from: /feeds/skema/sequence/method
 layout: feeds/section/skema/sequence/property
 ---
