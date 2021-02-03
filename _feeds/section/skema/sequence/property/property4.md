@@ -1,7 +1,7 @@
 ---
 myId: 102
 weight: 4
-type: main
+type: user
 label: Portfolio
 tag_name: ubuntu
 run_time: /bin/python
