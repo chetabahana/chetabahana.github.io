@@ -1,7 +1,7 @@
 ---
-myId: 104
+myId: 110
 weight: 3
-type: user
+type: main
 label: Buka Toko
 run_time: /bin/python
 layout: feeds/section/skema/sequence/property
