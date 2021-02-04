@@ -1,6 +1,6 @@
 ---
-myId: 92
-weight: 2
+myId: 109
+weight: 1
 type: user
 label: Stok Barang
 tag_name: ubuntu
