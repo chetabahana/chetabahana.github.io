@@ -1,5 +1,5 @@
 ---
-myId: 110
+myId: 114
 weight: 1
 type: main
 label: Stok Barang
