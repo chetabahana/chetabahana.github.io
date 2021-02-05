@@ -1,5 +1,5 @@
 ---
 myId: 6
-weight: 6
+weight: 5
 type: user
 ---
