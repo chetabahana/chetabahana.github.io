@@ -1,6 +1,6 @@
 ---
 myId: 98
-weight: 2
+weight: 3
 type: main
 label: Buka Toko
 redirect_from: /feeds/skema/sequence/method
