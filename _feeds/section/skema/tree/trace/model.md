@@ -1,5 +1,5 @@
 ---
 myId: 47
-weight: 2
+weight: 1
 type: main
 ---
