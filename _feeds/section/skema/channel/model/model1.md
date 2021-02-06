@@ -1,5 +1,5 @@
 ---
-myId: 24
+myId: 25
 weight: 1
-type: main
+type: user
 ---
