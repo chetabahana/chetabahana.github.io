@@ -1,5 +1,5 @@
 ---
 myId: 39
-weight: 6
+weight: 2
 type: user
 ---
