@@ -1,5 +1,5 @@
 ---
-myId: 96
+myId: 93
 weight: 2
 type: user
 label: Merchant Center
