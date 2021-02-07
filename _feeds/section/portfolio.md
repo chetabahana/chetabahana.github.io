@@ -1,6 +1,5 @@
 ---
-myId: 63
+myId: 121
 weight: 7
-type: main
 category: section
 ---

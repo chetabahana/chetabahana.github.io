@@ -1,6 +1,5 @@
 ---
-myId: 52
+myId: 116
 weight: 2
-type: user
 category: section
 ---
