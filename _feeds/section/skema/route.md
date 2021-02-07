@@ -1,7 +1,7 @@
 ---
 myId: 161
 weight: 5
-type: main
+type: route
 category: skema
 redirect_from:
   - /0000/skema.json

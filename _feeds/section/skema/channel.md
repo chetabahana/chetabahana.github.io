@@ -1,7 +1,7 @@
 ---
 myId: 160
 weight: 4
-type: main
+type: channel
 category: skema
 redirect_from:
   - /000/skema.json

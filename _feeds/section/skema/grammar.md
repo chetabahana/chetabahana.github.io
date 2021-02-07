@@ -1,7 +1,7 @@
 ---
 myId: 159
 weight: 3
-type: main
+type: grammar
 category: skema
 redirect_from:
   - /00/skema.json
