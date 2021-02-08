@@ -1,5 +1,5 @@
 ---
 myId: 149
-weight: 1
+weight: 3
 type: test
 ---
