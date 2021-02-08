@@ -1,5 +1,6 @@
 ---
 myId: 147
 weight: 1
-type: test
+primes:  1
+type: subroutine
 ---
