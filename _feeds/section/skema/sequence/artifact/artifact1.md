@@ -3,6 +3,7 @@ myId: 87
 to: 2
 from: 1
 weight: 1
+primes: 200
 type: user
 init: external
 flow: internal
