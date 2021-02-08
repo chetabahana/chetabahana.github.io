@@ -1,6 +1,7 @@
 ---
 myId: 93
 weight: 2
+primes: 400
 type: user
 label: Merchant Center
 tag_name: ubuntu

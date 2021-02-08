@@ -1,6 +1,7 @@
 ---
 myId: 96
 weight: 5
+primes: 40
 type: user
 label: Network
 tag_name: ubuntu
