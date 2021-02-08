@@ -1,6 +1,6 @@
 ---
 myId: 153
 weight: 2
-type: method
+type: artifacts
 category: section
 ---
