@@ -2,5 +2,5 @@
 myId: 120
 weight: 1
 primes: 70
-type: test
+type: line
 ---
