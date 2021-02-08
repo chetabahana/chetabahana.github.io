@@ -1,7 +1,7 @@
 ---
 myId: 152
 weight: 1
-primes: 10143
+primes: 95
 type: attribute
 category: section
 ---

@@ -1,6 +1,6 @@
 ---
 myId: 150
 weight: 2
-primes: 200
+primes: 90
 type: start
 ---

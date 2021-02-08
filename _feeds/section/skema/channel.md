@@ -1,6 +1,7 @@
 ---
 myId: 160
 weight: 4
+primes: 299
 type: channel
 category: skema
 redirect_from:
