@@ -1,6 +1,6 @@
 ---
 myId: 115
 weight: 3
-primes: 50
+primes: 1000
 type: class
 ---
