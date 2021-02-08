@@ -1,6 +1,6 @@
 ---
 myId: 143
 weight: 1
-primes: 102
-type: 289
+primes: 289
+type: test
 ---
