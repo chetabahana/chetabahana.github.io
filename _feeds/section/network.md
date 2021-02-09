@@ -1,7 +1,7 @@
 ---
 myId: 166
 weight: 9
-primes: 155
+primes: 31
 type: looping
 category: section
 ---

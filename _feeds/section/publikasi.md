@@ -1,7 +1,7 @@
 ---
 myId: 165
 weight: 8
-primes: 1879
+primes: 922
 type: listener
 category: section
 ---

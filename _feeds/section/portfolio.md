@@ -1,7 +1,7 @@
 ---
 myId: 164
 weight: 7
-primes: 1210
+primes: 37
 type: sorting
 category: section
 ---
