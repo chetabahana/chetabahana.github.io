@@ -1,7 +1,7 @@
 ---
 myId: 161
 weight: 5
-primes: 791
+primes: 6
 type: route
 category: skema
 redirect_from:

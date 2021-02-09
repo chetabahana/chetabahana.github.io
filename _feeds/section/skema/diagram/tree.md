@@ -1,7 +1,7 @@
 ---
 myId: 162
 weight: 6
-primes: 561
+primes: 2
 type: tree
 category: skema
 redirect_from:

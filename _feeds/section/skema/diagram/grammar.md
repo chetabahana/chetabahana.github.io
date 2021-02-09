@@ -1,7 +1,7 @@
 ---
 myId: 159
 weight: 3
-primes: 681
+primes: 1000
 type: grammar
 category: skema
 redirect_from:

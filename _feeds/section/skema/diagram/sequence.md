@@ -1,7 +1,7 @@
 ---
 myId: 158
 weight: 2
-primes: 330
+primes: 40
 type: sequence
 category: skema
 redirect_from:
