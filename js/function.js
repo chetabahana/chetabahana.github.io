@@ -128,7 +128,7 @@ jQuery(function($)
 
         });
 
-       // chetabahana-skema
+       // Ref: Cross-Origin Read Blocking (CORB)
         $('.theme').val('hand');
         draw.getJSON();
         //feed.run();
