@@ -106,7 +106,6 @@ jQuery(function($)
         // unbind external link
         $('.external-link').unbind('click');
 
-        // ref: https://www.instagram.com/developer/
         var feed = new Instafeed(
         {
             get: 'user',
@@ -128,7 +127,7 @@ jQuery(function($)
 
         });
 
-       // Ref: Cross-Origin Read Blocking (CORB)
+        // Ref: Cross-Origin Read Blocking (CORB)
         $('.theme').val('hand');
         draw.getJSON();
         //feed.run();
