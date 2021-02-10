@@ -106,6 +106,7 @@ jQuery(function($)
         // unbind external link
         $('.external-link').unbind('click');
 
+        // ref: https://www.instagram.com/developer/
         var feed = new Instafeed(
         {
             get: 'user',
@@ -130,7 +131,7 @@ jQuery(function($)
        // chetabahana-skema
         $('.theme').val('hand');
         draw.getJSON();
-        feed.run();
+        //feed.run();
 
     });
 
