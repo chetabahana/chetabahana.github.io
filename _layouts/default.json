@@ -9,13 +9,13 @@
 *
 {% endcomment %}{% if page.path != 'index.html' and page.ext != '.md' %}{
     "name": "{{ site.name | xml_escape }}",
-    "title": "{{ site.title | xml_escape }}",
-    "description": {{ site.description | jsonify }},
+    "version": "https://jsonfeed.org/version/1",
     "home_page_url": "{{ "/" | absolute_url }}",
     "feed_url": "{{ page.url | absolute_url }}",{% if page.redirect.from %}
+    "title": "{{ site.title | xml_escape }}",
+    "description": {{ site.description | jsonify }},
     "redirect_from": "{{ page.redirect.from | absolute_url }}",{% endif %}
-    "user_comment": "This feed allows you to read the skema from this site in any feed readers that support JSON-Feed format",
-    "version": "https://jsonfeed.org/version/1",
+    "user_comment": "This feed allows you to read the skema from this site",
     "items": [
 {% endif %}{% comment %}
 *
