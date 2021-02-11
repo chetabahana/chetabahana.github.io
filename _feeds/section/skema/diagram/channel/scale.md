@@ -2,6 +2,7 @@
 myId: 17
 weight: 3
 primes: 8
-value: [59,4,1,1]
 type: user
+value: [59,4,1,1]
+object: [10,22,39,60,70,77,82,100,104,111]
 ---
