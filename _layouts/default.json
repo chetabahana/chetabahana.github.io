@@ -21,7 +21,7 @@
 *
 *  assign the required variables
 *
-{% endcomment %}{% assign my_atributs = "id, weight, title, next, content, output, previous, redirect_from, relative_path, collection, excerpt, category, categories, ext, layout, tags, path, url, draft, slug, myId, type, primes" | split:", " %}{% assign my_size = 2 %}{% assign my_count = 0 %}{% assign my_key = 10143 %}{% assign my_tab = "    " %}{% assign my_base = "_feeds/section" %}{% assign my_skema = my_base | remove_first: "_" | append: "/skema" %}{% assign my_path = "" | split: "," %}{% comment %}
+{% endcomment %}{% assign my_atributs = "id, weight, title, next, content, output, previous, redirect_from, relative_path, collection, excerpt, category, categories, ext, layout, tags, path, url, draft, slug, myId, type, primes, value" | split:", " %}{% assign my_size = 2 %}{% assign my_count = 0 %}{% assign my_key = 10143 %}{% assign my_tab = "    " %}{% assign my_base = "_feeds/section" %}{% assign my_skema = my_base | remove_first: "_" | append: "/skema" %}{% assign my_path = "" | split: "," %}{% comment %}
 *
 *  get the maximum size of feeds 
 *
