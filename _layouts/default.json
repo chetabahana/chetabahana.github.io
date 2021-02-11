@@ -15,7 +15,7 @@
     "title": "{{ site.title | xml_escape }}",
     "description": {{ site.description | jsonify }},{% if page.redirect.from %}
     "redirect_from": "{{ page.redirect.from | absolute_url }}",{% endif %}
-    "user_comment": "This feed allows you to read the skema from this site",
+    "user_comment": "This feed allows you to read the project mapping",
     "items": [
 {% endif %}{% comment %}
 *
