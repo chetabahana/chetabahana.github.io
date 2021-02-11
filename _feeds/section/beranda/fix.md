@@ -1,7 +1,7 @@
 ---
-myId: 116
+myId: 147
 weight: 1
-primes: 10
-value: [641,0,-1,2]
-type: query
+primes: 90
+value: [853,1,-1,0]
+type: iqro
 ---

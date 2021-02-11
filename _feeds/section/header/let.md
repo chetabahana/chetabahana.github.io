@@ -1,7 +1,7 @@
 ---
-myId: 115
+myId: 148
 weight: 1
-primes: 1000
-value: [631,1,-1,2]
-type: class
+primes: 200
+value: [857,0,-1,0]
+type: start
 ---
