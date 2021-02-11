@@ -4,7 +4,7 @@ weight: 6
 primes: 2
 type: tree
 category: skema
-value: [947,0,1,-2]
+value: [953,0,-1,-2]
 redirect_from:
   - /00000/skema.json
   - /00001/skema.json
