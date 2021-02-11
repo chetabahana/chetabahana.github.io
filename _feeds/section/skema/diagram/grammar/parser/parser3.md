@@ -2,5 +2,6 @@
 myId: 106
 weight: 3
 primes: 50
-type: user
+tvalue: [577,3,1,1]
+ype: user
 ---

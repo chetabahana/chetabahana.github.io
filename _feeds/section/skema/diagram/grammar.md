@@ -2,6 +2,7 @@
 myId: 159
 weight: 3
 primes: 1000
+value: 
 type: grammar
 category: skema
 redirect_from:
