@@ -1,6 +1,6 @@
 {% comment %}
 *
-*  collect all id
+*  collect id
 *
 {% endcomment %}{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"id": {{ feed.myId | jsonify }},
