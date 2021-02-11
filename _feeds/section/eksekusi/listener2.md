@@ -1,7 +1,7 @@
 ---
-myId: 127
+myId: 129
 weight: 1
-primes: 10
-value: [709,1,-1,1]
+primes: 40
+value: [727,5,-1,0]
 type: test
 ---
