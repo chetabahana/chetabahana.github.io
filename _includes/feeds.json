@@ -1,9 +1,5 @@
 {% comment %}
 *
-*  check primes
-*
-{% endcomment %}{% if feed.myId < 140 %}{% assign my_count = my_count | plus:feed.primes %}{% else %}{% assign my_count = my_count | minus:feed.primes %}{% endif %}{% comment %}
-*
 *  collect all id
 *
 {% endcomment %}{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{
@@ -12,8 +8,13 @@
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"primes": {{ feed.primes | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"count": {{ my_count | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"title": {{ feed.title | jsonify }},
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"tag": {{ feed.type | jsonify }},
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"category": {{ feed.type | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"value": {{ feed.value | jsonify }},{% comment %}
+*
+*  collect primes
+*
+{% endcomment %}{% if feed.myId < 140 %}{% assign my_count = my_count | plus:feed.primes %}{% else %}{% assign my_count = my_count | minus:feed.primes %}{% endif %}{% if feed.myId < 114 %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"maps": {{ feed.value | jsonify }},{% endif %}{% comment %}
 *
 *  other attributes
 *
