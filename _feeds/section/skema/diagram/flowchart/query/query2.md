@@ -2,6 +2,7 @@
 myId: 80
 weight: 2
 primes: 5
-value: [409,3,1,1]
 type: user
+value: [409,3,1,1]
+object: [10,16,21,23,32,37,42]
 ---
