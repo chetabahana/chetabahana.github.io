@@ -1,7 +1,7 @@
 ---
-myId: 119
+myId: 121
 weight: 2
-primes: 30
-value: [653,4,1,1]
-type: query
+primes: 1000
+value: [661,3,-1,1]
+type: test
 ---

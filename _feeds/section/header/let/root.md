@@ -1,7 +1,7 @@
 ---
-myId: 115
+myId: 119
 weight: 3
-primes: 1000
-value: [631,1,-1,2]
-type: class
+primes: 30
+value: [653,4,1,1]
+type: query
 ---
