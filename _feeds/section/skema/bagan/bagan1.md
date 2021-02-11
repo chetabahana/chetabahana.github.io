@@ -1,7 +1,7 @@
 ---
-myId: 115
+myId: 143
 weight: 1
 primes: 1000
-value: 
+value: [823,5,-1,0]
 type: test
 ---

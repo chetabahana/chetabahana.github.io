@@ -2,7 +2,7 @@
 myId: 158
 weight: 2
 primes: 40
-value: 
+value: [929,2,-1,-2]
 type: sequence
 category: skema
 redirect_from:
