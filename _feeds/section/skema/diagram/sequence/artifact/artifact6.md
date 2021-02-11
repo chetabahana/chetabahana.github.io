@@ -4,6 +4,7 @@ to: 1
 from: 6
 weight: 6
 primes: 60
+value: [479,4,-1,2]
 type: user
 init: internal
 flow: external
