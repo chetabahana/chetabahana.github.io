@@ -1,7 +1,7 @@
 ---
-myId: 146
+myId: 155
 weight: 1
 primes: 1000
-value: [839,2,-1,0]
+value: [907,5,-1,-2]
 type: frame
 ---
