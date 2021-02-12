@@ -1,10 +1,10 @@
 ---
-myId: 157
+myId: 156
 weight: 1
 primes: 31
-value: [919,3,-1,-2]
 type: flowchart
 category: skema
+value: [911,4,-1,-2]
 redirect_from:
   - /skema.json
 ---

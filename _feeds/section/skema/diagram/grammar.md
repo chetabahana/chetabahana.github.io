@@ -1,10 +1,10 @@
 ---
-myId: 159
+myId: 158
 weight: 3
 primes: 1000
-value: [937,1,-1,-2]
 type: grammar
 category: skema
+value: [929,2,-1,-2]
 redirect_from:
   - /00/skema.json
   - /01/skema.json

@@ -1,10 +1,10 @@
 ---
-myId: 161
+myId: 160
 weight: 5
 primes: 6
 type: route
 category: skema
-value: [947,0,1,-2]
+value: [941,0,-1,-2]
 redirect_from:
   - /0000/skema.json
   - /0001/skema.json

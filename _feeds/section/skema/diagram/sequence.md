@@ -1,10 +1,10 @@
 ---
-myId: 158
+myId: 157
 weight: 2
 primes: 40
-value: [929,2,-1,-2]
 type: sequence
 category: skema
+value: [919,3,-1,-2]
 redirect_from:
   - /0/skema.json
   - /1/skema.json
