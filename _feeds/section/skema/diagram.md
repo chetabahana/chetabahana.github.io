@@ -1,7 +1,7 @@
 ---
-myId: 145
+myId: 155
 weight: 2
 primes: 10
-value: [829,3,-1,0]
+value: [907,5,-1,-2]
 type: basis
 ---
