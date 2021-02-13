@@ -1,7 +1,7 @@
 ---
-myId: 144
-weight: 3
-primes: 1879
-value: [827,4,-1,0]
-type: test
+myId: 145
+weight: 1
+primes: 1000
+value: [829,3,-1,0]
+type: frame
 ---
