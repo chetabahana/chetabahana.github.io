@@ -1,6 +1,6 @@
 ---
 myId: 163
-pos: 166
+pos: 163
 weight: 6
 primes: 155
 type: sizing

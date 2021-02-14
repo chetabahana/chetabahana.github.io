@@ -1,8 +1,8 @@
 ---
 myId: 160
-pos: 122
+pos: 160
 weight: 5
-primes: 800
+primes: 299
 type: route
 category: skema
 value: [941,0,-1,-2]

@@ -1,8 +1,8 @@
 ---
 myId: 157
-pos: 119
+pos: 157
 weight: 2
-primes: 30
+primes: 61
 type: sequence
 category: skema
 value: [919,3,-1,-2]

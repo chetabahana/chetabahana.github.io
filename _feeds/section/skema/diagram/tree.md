@@ -1,8 +1,8 @@
 ---
 myId: 161
-pos: 123
+pos: 161
 weight: 6
-primes: 6
+primes: 791
 type: tree
 category: skema
 value: [947,0,1,-2]

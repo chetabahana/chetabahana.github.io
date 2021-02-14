@@ -1,8 +1,8 @@
 ---
 myId: 159
-pos: 121
+pos: 159
 weight: 4
-primes: 1000
+primes: 681
 type: channel
 category: skema
 value: [937,1,-1,-2]
