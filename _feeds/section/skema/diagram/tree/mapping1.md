@@ -1,8 +1,8 @@
 ---
-myId: 128
-pos: 116
-weight: 3
-primes: 200
-type: layer
-value: [719,0,-1,1]
+myId: 155
+pos: 165
+weight: 1
+primes: 1000
+type: basis
+value: [907,5,-1,-2]
 ---
