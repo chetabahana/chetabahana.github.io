@@ -1,8 +1,8 @@
 ---
-myId: 128
-pos: 116
-weight: 1
+myId: 156
+pos: 156
+weight: 2
 primes: 10
 type: diagram
-value: [719,0,-1,1]
+value: [911,4,-1,-2]
 ---

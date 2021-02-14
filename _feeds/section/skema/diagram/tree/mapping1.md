@@ -1,8 +1,8 @@
 ---
-myId: 156
-pos: 156
-weight: 4
-primes: 561
+myId: 128
+pos: 116
+weight: 3
+primes: 200
 type: layer
-value: [911,4,-1,-2]
+value: [719,0,-1,1]
 ---

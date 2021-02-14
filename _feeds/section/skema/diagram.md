@@ -1,8 +1,8 @@
 ---
 myId: 155
 pos: 165
-weight: 2
-primes: 1879
+weight: 1
+primes: 1000
 type: basis
 value: [907,5,-1,-2]
 ---
