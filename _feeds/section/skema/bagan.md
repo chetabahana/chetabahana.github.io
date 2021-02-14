@@ -1,6 +1,6 @@
 ---
 myId: 155
-pos: 165
+pos: 155
 weight: 1
 primes: 1000
 type: basis

@@ -1,6 +1,6 @@
 ---
 myId: 160
-pos: 160
+pos: 150
 weight: 4
 primes: 681
 type: channel
