@@ -1,8 +1,8 @@
 ---
 myId: 158
-pos: 121
+pos: 120
 weight: 3
-primes: 1000
+primes: 40
 type: grammar
 category: skema
 value: [929,2,-1,-2]
