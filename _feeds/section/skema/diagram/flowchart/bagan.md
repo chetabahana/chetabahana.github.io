@@ -1,8 +1,8 @@
 ---
-myId: 144
-pos: 144
-weight: 5
-primes: 83
-type: frame
-value: [827,4,-1,0]
+myId: 147
+pos: 147
+weight: 4
+primes: 231
+value: [853,1,-1,0]
+type: iqro
 ---
