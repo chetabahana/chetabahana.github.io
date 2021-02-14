@@ -1,11 +1,11 @@
 ---
-myId: 161
-pos: 161
+myId: 162
+pos: 162
 weight: 6
 primes: 791
 type: tree
 category: skema
-value: [947,0,1,-2]
+value: [953,0,-1,-2]
 redirect_from:
   - /00000/skema.json
   - /00001/skema.json

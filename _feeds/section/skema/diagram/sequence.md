@@ -1,11 +1,11 @@
 ---
-myId: 157
-pos: 157
+myId: 158
+pos: 158
 weight: 2
 primes: 61
 type: sequence
 category: skema
-value: [919,3,-1,-2]
+value: [929,2,-1,-2]
 redirect_from:
   - /0/skema.json
   - /1/skema.json

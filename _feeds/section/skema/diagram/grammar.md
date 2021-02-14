@@ -1,11 +1,11 @@
 ---
-myId: 158
-pos: 158
+myId: 159
+pos: 159
 weight: 3
 primes: 330
 type: grammar
 category: skema
-value: [929,2,-1,-2]
+value: [937,1,-1,-2]
 redirect_from:
   - /00/skema.json
   - /01/skema.json

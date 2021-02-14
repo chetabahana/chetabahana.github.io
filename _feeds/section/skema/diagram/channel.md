@@ -1,11 +1,11 @@
 ---
-myId: 159
-pos: 159
+myId: 160
+pos: 160
 weight: 4
 primes: 681
 type: channel
 category: skema
-value: [937,1,-1,-2]
+value: [941,0,-1,-2]
 redirect_from:
   - /000/skema.json
   - /001/skema.json
