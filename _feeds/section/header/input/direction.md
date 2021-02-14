@@ -1,8 +1,8 @@
 ---
 myId: 120
-pos: 103
+pos: 104
 weight: 3
-primes: 40
+primes: 50
 value: [659,4,-1,1]
 type: fix
 ---
