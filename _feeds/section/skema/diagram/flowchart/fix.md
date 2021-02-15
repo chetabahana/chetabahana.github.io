@@ -5,4 +5,5 @@ weight: 2
 primes: 65
 type: organization
 value: [829,3,-1,0]
+object: [30,30,5]
 ---
