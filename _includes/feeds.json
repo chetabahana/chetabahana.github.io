@@ -22,8 +22,7 @@
 *
 {% endcomment %}{% assign my_items = "" | split: "," %}{% for item in feed %}{% assign my_items = my_items | push:item %}{% endfor %}{% assign sorted_items = my_items | sort_natural %}{% for item in sorted_items %}{% unless my_atributs contains item %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}{{ item | jsonify }}: {{ feed[item] | jsonify }},{% endunless %}{% endfor %}
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"feeds": {{ feed.object | jsonify }},
-{% if feed.ratio %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"feeds": {{ feed.object | jsonify }},{% if feed.ratio %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"ratio": {{ feed.ratio | jsonify }},{% endif %}
 {% comment %}
 *
