@@ -3,6 +3,7 @@ myId: 122
 pos: 108
 weight: 2
 primes: 40
-value: [673,3,1,1]
 type: test
+value: [673,3,1,1]
+object: [1,24,38,41,62,76,78]
 ---
