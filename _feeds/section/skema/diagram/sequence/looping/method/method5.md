@@ -1,5 +1,6 @@
 ---
 myId: 96
+key: 1
 weight: 5
 primes: 40
 type: user

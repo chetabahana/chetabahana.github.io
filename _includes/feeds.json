@@ -4,6 +4,7 @@
 *
 {% endcomment %}{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"id": {{ feed.myId | jsonify }},
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"key": {{ feed.key | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"pos": {{ feed.pos| jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"weight": {{ feed.weight | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"primes": {{ feed.primes | jsonify }},
