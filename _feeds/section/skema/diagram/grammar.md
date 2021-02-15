@@ -3,7 +3,7 @@ myId: 159
 key: 101
 pos: 159
 weight: 3
-primes: 330
+primes: 681
 type: grammar
 category: skema
 value: [937,1,-1,-2]
