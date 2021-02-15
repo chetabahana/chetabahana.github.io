@@ -6,5 +6,6 @@ primes: 1210
 type: sorting
 category: section
 value: [971,4,-1,-3]
-object: [50,70,2,4]
+frame: [50,70,2,4]
+object: [1,13,14]
 ---

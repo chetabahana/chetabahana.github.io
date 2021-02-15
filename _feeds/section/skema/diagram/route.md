@@ -6,7 +6,8 @@ primes: 299
 type: route
 category: skema
 value: [947,0,1,-2]
-object: [10,6,40]
+frame: [10,6,40]
+object: [1,4,6,9,13,14]
 redirect_from:
   - /0000/skema.json
   - /0001/skema.json

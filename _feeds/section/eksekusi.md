@@ -6,5 +6,6 @@ primes: 155
 type: sizing
 category: section
 value: [967,5,-1,-3]
-object: [1,10,1,20]
+frame: [1,10,1,20]
+object: [1,8,11]
 ---
