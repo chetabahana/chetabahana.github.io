@@ -1,6 +1,6 @@
 ---
 myId: 107
-weight: 2
+weight: 17
 primes: 70
 type: user
 value: [587,4,1,1]
