@@ -4,6 +4,6 @@ weight: 3
 primes: 40
 type: user
 value: [37,1,1,1]
-vektor: [1,30,200]
+zones: [1,30,200]
 object: [2,101,111]
 ---
