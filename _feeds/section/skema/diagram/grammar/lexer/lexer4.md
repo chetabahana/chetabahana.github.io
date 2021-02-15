@@ -1,9 +1,10 @@
 ---
-myId: 110
-key: 114
+myId: 114
+pos: 96
+key: 21
 weight: 4
-primes: 70
-type: main
-value: [601,5,1,1]
-object: [1,2,3]
+primes: 40
+type: user
+value: [619,1,1,2]
+object: [3,5,6]
 ---
