@@ -14,7 +14,8 @@
 *
 *  collect primes
 *
-{% endcomment %}{% if feed.myId < 140 %}{% assign my_count = my_count | plus:feed.primes %}{% else %}{% assign my_count = my_count | minus:feed.primes %}{% endif %}{% if feed.myId < 114 %}
+{% endcomment %}{% if feed.myId < 140 %}{% assign my_count = my_count | plus:feed.primes %}{% else %}{% assign my_count = my_count | minus:feed.primes %}{% else %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"frame": {{ feed.object | jsonify }},{% endif %}{% if feed.myId < 114 %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"feeds": {{ feed.object | jsonify }},{% endif %}{% comment %}
 *
 *  other attributes
