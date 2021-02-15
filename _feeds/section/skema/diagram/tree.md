@@ -6,7 +6,7 @@ primes: 791
 type: tree
 category: skema
 value: [953,0,-1,-2]
-object: [1,50,70,40,400]
+object: [1,30,4,10,50]
 redirect_from:
   - /00000/skema.json
   - /00001/skema.json
