@@ -6,5 +6,6 @@ primes: 561
 type: model
 category: section
 value: [881,2,-1,-1]
-object: [1,50,70,40,400]
+frame: [1,50,70,40,400]
+object: [1,28,43,49]
 ---

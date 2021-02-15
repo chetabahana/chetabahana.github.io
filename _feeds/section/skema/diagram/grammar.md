@@ -6,7 +6,8 @@ primes: 330
 type: grammar
 category: skema
 value: [937,1,-1,-2]
-object: [1,30,40,60,400,100,10,40]
+frame: [1,30,40,60,400,100,10,40]
+object: [1,5,10,17,24]
 redirect_from:
   - /00/skema.json
   - /01/skema.json

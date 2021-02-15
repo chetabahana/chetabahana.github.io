@@ -6,5 +6,6 @@ primes: 791
 type: artifacts
 category: section
 value: [877,3,-1,-1]
-object: [1,30,700,10,50]
+frame: [1,30,700,10,50]
+object: [1,6,20,21,46,49,57,58,60]
 ---
