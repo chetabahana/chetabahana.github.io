@@ -3,7 +3,7 @@ myId: 160
 key: 91
 pos: 150
 weight: 4
-primes: 681
+primes: 90
 type: channel
 category: skema
 value: [941,0,-1,-2]

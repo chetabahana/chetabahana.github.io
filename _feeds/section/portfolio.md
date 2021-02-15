@@ -3,7 +3,7 @@ myId: 164
 key: 108
 pos: 154
 weight: 7
-primes: 1210
+primes: 126
 type: sorting
 category: section
 value: [971,4,-1,-3]

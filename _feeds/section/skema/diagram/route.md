@@ -3,7 +3,7 @@ myId: 161
 key: 109
 pos: 151
 weight: 5
-primes: 299
+primes: 56
 type: route
 category: skema
 value: [947,0,1,-2]

@@ -3,7 +3,7 @@ myId: 163
 key: 103
 pos: 153
 weight: 6
-primes: 155
+primes: 32
 type: sizing
 category: section
 value: [967,5,-1,-3]

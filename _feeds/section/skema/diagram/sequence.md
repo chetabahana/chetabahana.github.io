@@ -3,7 +3,7 @@ myId: 158
 key: 105
 pos: 158
 weight: 2
-primes: 61
+primes: 330
 type: sequence
 category: skema
 value: [929,2,-1,-2]

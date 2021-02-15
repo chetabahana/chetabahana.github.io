@@ -3,7 +3,7 @@ myId: 162
 key: 110
 pos: 152
 weight: 6
-primes: 791
+primes: 95
 type: tree
 category: skema
 value: [953,0,-1,-2]
