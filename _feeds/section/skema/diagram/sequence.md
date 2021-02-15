@@ -6,6 +6,7 @@ primes: 61
 type: sequence
 category: skema
 value: [929,2,-1,-2]
+object: [1,30,90,200,9]
 redirect_from:
   - /0/skema.json
   - /1/skema.json

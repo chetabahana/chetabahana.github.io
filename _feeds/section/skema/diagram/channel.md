@@ -6,6 +6,7 @@ primes: 681
 type: channel
 category: skema
 value: [941,0,-1,-2]
+object: [90,200,9]
 redirect_from:
   - /000/skema.json
   - /001/skema.json
