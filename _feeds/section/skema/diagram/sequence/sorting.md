@@ -5,4 +5,5 @@ weight: 3
 primes: 329
 type: test
 value: [821,0,-1,1]
+object: [1,30,200,8,40,50]
 ---
