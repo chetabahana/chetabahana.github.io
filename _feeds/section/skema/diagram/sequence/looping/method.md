@@ -1,5 +1,6 @@
 ---
 myId: 98
+key: 100
 weight: 3
 primes: 200
 type: main
