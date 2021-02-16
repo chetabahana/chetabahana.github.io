@@ -3,7 +3,7 @@ myId: 24
 key: 102
 pos: 110
 weight: 5
-primes: 4
+primes: 70
 type: main
 value: [89,4,-1,1]
 object: [34,40,46,57,64]
