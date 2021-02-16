@@ -1,11 +1,11 @@
 ---
-myId: 2
-key: 87
+myId: 7
+key: 39
 pos: 90
 weight: 1
-primes: 60
-type: main
-value: [3,1,1,0]
-zones: [1,30,40]
-object: [20,39,103,141,152,177,253,284,286]
+primes: 30
+type: user
+value: [17,0,1,1]
+zones: [1,30,40,0]
+object: [56,71,85,89,94,102,171,206]
 ---

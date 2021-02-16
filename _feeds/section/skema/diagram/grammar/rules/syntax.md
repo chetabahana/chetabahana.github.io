@@ -1,11 +1,11 @@
 ---
-myId: 1
-key: 5
+myId: 8
+key: 88
 pos: 89
 link: 159
-weight: 4
-primes: 2
-type: user
-value: [2,0,1,0]
-object: [19,17,12,11,19,18,43]
+weight: 7
+primes: 1
+type: main
+value: [19,1,1,1]
+object: [4,14,26,40,47,54,71,75]
 ---
