@@ -4,7 +4,7 @@ key: 9
 pos: 3
 to: 1
 from: 6
-weight: 6
+weight: 3
 primes: 40
 type: user
 init: internal

@@ -2,7 +2,7 @@
 myId: 98
 key: 100
 pos: 8
-weight: 3
+weight: 1
 primes: 1
 type: main
 label: Buka Toko

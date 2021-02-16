@@ -2,7 +2,7 @@
 myId: 96
 key: 1
 pos: 13
-weight: 5
+weight: 6
 primes: 50
 type: user
 label: Network

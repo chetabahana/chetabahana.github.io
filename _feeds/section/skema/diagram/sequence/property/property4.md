@@ -4,7 +4,7 @@ key: 10
 pos: 7
 to: 4
 from: 3
-weight: 3
+weight: 4
 primes: 5
 type: user
 init: internal
@@ -15,6 +15,5 @@ tag_name: ubuntu
 run_time: /bin/python
 value: [461,2,1,2]
 object: [5,14,16,20,26,30]
-redirect_from: /feeds/skema/sequence/method/method3
 ---
 Google Merchant Center->Peluang Terbaik: Cloud-Site-API

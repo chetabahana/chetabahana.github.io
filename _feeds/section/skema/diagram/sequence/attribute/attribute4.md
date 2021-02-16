@@ -2,7 +2,7 @@
 myId: 94
 key: 12
 pos: 11
-weight: 3
+weight: 4
 primes: 8
 type: user
 label: Peluang Terbaik

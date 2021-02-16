@@ -4,7 +4,7 @@ key: 8
 pos: 5
 to: 2
 from: 1
-weight: 1
+weight: 2
 primes: 30
 type: user
 init: external
@@ -15,7 +15,6 @@ tag_name: ubuntu
 run_time: /bin/python
 value: [449,0,1,2]
 object: [5,8,13,15,19]
-redirect_from: /feeds/skema/sequence/method/method1.txt
 ---
 #!{{ page.run_time }}
 

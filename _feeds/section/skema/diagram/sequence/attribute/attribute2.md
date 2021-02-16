@@ -1,15 +1,15 @@
 ---
-myId: 101
-key: 30
-pos: 16
+myId: 97
+key: 25
+pos: 9
 weight: 2
-primes: 200
+primes: 30
 type: user
-label: Merchant Center
+label: Stok Barang
 tag_name: ubuntu
 run_time: /bin/python
-value: [547,5,-1,1]
-object: [5,11]
+value: [509,0,1,2]
+object: [3,5]
 layout: feeds/section/skema/sequence/property
 ---
 participant Stok Barang

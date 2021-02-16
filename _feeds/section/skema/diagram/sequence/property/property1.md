@@ -15,6 +15,5 @@ tag_name: ubuntu
 run_time: /bin/python
 value: [443,0,-1,2]
 object: [4,10,14,17]
-redirect_from: /feeds/skema/sequence/method/method6
 ---
 Portfolio-->>Network: eShop SEO
