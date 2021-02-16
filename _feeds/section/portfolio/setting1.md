@@ -1,7 +1,6 @@
 ---
 myId: 133
 key: 90
-pos: 130
 weight: 1
 primes: 231
 type: operation
