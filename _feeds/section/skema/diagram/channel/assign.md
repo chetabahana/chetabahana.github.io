@@ -1,7 +1,7 @@
 ---
 myId: 22
 key: 103
-pos: 105
+pos: 60
 weight: 4
 primes: 1
 type: main
