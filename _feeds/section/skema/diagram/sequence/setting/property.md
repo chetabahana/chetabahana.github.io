@@ -1,8 +1,9 @@
 ---
 myId: 99
 key: 93
-weight: 2
-primes: 9
+pos: 14
+weight: 1
+primes: 1
 type: main
 label: Buka Toko
 run_time: /bin/python

@@ -1,11 +1,11 @@
 ---
-myId: 141
-key: 61
-pos: 141
-weight: 2
-primes: 66
-type: test4
-value: [811,1,-1,1]
-frame: [1,30,30,5]
-object: [1,8,12,18,29,36,48,54]
+myId: 140
+key: 60
+pos: 140
+weight: 1
+primes: 102
+type: test3
+value: [809,2,-1,1]
+frame: [2,60,40]
+object: [1,22,27,54,76,85]
 ---

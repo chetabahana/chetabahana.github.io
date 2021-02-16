@@ -1,8 +1,9 @@
 ---
 myId: 97
 key: 25
+pos: 9
 weight: 1
-primes: 90
+primes: 30
 type: user
 label: Stok Barang
 tag_name: ubuntu

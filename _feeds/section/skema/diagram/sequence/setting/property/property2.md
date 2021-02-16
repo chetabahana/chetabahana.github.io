@@ -1,8 +1,9 @@
 ---
 myId: 101
 key: 30
+pos: 16
 weight: 2
-primes: 30
+primes: 200
 type: user
 label: Merchant Center
 tag_name: ubuntu

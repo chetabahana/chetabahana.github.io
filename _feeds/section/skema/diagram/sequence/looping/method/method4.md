@@ -1,8 +1,9 @@
 ---
 myId: 95
 key: 28
+pos: 12
 weight: 4
-primes: 10
+primes: 40
 type: user
 label: Portfolio
 tag_name: ubuntu

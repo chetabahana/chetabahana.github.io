@@ -1,8 +1,9 @@
 ---
 myId: 98
 key: 100
+pos: 8
 weight: 3
-primes: 200
+primes: 1
 type: main
 label: Buka Toko
 value: [521,0,-1,2]

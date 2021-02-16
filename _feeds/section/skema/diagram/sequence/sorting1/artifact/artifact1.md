@@ -1,10 +1,11 @@
 ---
 myId: 87
 key: 8
+pos: 5
 to: 2
 from: 1
 weight: 1
-primes: 200
+primes: 30
 type: user
 init: external
 flow: internal
