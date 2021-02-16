@@ -1,13 +1,13 @@
 ---
 myId: 161
 key: 109
-pos: 152
+pos: 151
 weight: 5
 primes: 56
 type: route
 category: skema
 value: [947,0,1,-2]
-frame: [1,30,4,10,50]
+frame: [10,6,40]
 object: [1,4,6,9,13,14]
 redirect_from:
   - /0000/skema.json
