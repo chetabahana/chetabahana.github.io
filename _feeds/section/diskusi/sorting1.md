@@ -1,7 +1,7 @@
 ---
 myId: 136
 key: 41
-pos: 136
+pos: 122
 eight: 1
 primes: 6
 type: test

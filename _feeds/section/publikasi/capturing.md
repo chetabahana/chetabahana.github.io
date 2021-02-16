@@ -1,7 +1,7 @@
 ---
 myId: 134
-pos: 134
 key: 58
+pos: 120
 weight: 4
 primes: 30
 type: test
