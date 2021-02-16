@@ -2,7 +2,7 @@
 myId: 38
 key: 38
 pos: 46
-weight: 1
+weight: 3
 primes: 8
 type: user
 zones: [10,60]

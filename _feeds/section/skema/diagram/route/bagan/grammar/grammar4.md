@@ -2,7 +2,7 @@
 myId: 33
 key: 90
 pos: 41
-weight: 2
+weight: 4
 primes: 40
 type: main
 value: [137,2,1,0]

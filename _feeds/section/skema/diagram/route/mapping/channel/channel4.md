@@ -2,7 +2,7 @@
 myId: 39
 key: 59
 pos: 47
-weight: 2
+weight: 4
 primes: 10
 type: user
 value: [167,0,1,1]

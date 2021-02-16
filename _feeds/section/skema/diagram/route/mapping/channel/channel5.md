@@ -2,7 +2,7 @@
 myId: 40
 key: 60
 pos: 48
-weight: 3
+weight: 5
 primes: 40
 type: user
 zones: [8,40]
