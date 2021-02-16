@@ -1,10 +1,10 @@
 ---
-myId: 107
-key: 17
+myId: 108
+key: 15
 pos: 86
-weight: 17
-primes: 70
+weight: 2
+primes: 90
 type: user
-value: [587,4,1,1]
-object: [2,7]
+value: [593,4,-1,1]
+object: [2,3,4]
 ---
