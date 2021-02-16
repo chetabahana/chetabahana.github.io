@@ -2,7 +2,7 @@
 myId: 10
 key: 51
 weight: 1
-primes: 200
+primes: 40
 type: user
 value: [29,2,-1,1]
 zones: [1,30,200]
