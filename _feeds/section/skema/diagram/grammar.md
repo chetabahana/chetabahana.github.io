@@ -2,6 +2,7 @@
 myId: 159
 key: 101
 pos: 159
+link: 1
 weight: 3
 primes: 681
 type: grammar
