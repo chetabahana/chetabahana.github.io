@@ -3,7 +3,7 @@ myId: 8
 key: 88
 pos: 89
 link: 159
-weight: 7
+weight: 3
 primes: 1
 type: main
 value: [19,1,1,1]
