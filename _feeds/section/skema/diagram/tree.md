@@ -1,13 +1,13 @@
 ---
 myId: 162
 key: 110
-pos: 152
+pos: 151
 weight: 6
 primes: 95
 type: tree
 category: skema
 value: [953,0,-1,-2]
-frame: [1,30,4,10,50]
+frame: [10,6,40]
 object: [1,9,13,19,34]
 redirect_from:
   - /00000/skema.json
