@@ -1,12 +1,13 @@
 ---
 myId: 160
 key: 91
+pos: 150
 weight: 4
-primes: 299
+primes: 90
 type: channel
 category: skema
-frame: [90,200,9]
 value: [941,0,-1,-2]
+frame: [40,30,20]
 object: [1,3,8,11]
 redirect_from:
   - /000/skema.json
