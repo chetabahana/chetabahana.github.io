@@ -1,8 +1,9 @@
 ---
 myId: 15
 key: 54
+pos: 53
 weight: 2
-primes: 30
+primes: 6
 type: user
 value: [47,4,1,1]
 zones: [1,30,200]
