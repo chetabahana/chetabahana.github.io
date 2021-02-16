@@ -1,10 +1,10 @@
 ---
-myId: 38
-key: 38
-weight: 1
-primes: 30
+myId: 37
+key: 56
+pos: 45
+weight: 3
+primes: 200
 type: user
-zones: [10,60]
-value: [163,5,1,0]
-object: [16,29,40,44,48,64,85,88]
+value: [157,5,-1,0]
+object: [74,148,166,179,182]
 ---
