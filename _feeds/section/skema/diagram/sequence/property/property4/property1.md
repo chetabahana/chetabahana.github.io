@@ -1,10 +1,10 @@
 ---
 myId: 88
 key: 68
-pos: 6
+pos: 5
 to: 3
 from: 2
-weight: 3
+weight: 1
 primes: 30
 type: user
 init: internal

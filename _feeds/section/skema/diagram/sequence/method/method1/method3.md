@@ -1,20 +1,20 @@
 ---
-myId: 91
-key: 26
-pos: 2
-to: 2
-from: 5
+myId: 92
+key: 9
+pos: 3
+to: 1
+from: 6
 weight: 2
-primes: 60
+primes: 40
 type: user
 init: internal
 flow: external
 event: property
-label: Google-Trend-API
+label: eShop-SEO
 tag_name: ubuntu
 run_time: /bin/python
-value: [467,4,1,2]
-object: [8,10,15]
+value: [479,4,-1,2]
+object: [4,7,11,13,21]
 redirect_from: /feeds/skema/sequence/method/method5
 ---
-Portfolio->>Stok Barang: Google-Trend-API
+Portfolio->Network: eShop-SEO
