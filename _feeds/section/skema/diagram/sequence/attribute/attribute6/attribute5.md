@@ -2,7 +2,7 @@
 myId: 97
 key: 25
 pos: 9
-weight: 5
+weight: 1
 primes: 30
 type: user
 label: Stok Barang

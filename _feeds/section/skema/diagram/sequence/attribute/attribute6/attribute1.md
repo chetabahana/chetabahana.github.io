@@ -2,7 +2,7 @@
 myId: 93
 key: 11
 pos: 13
-weight: 1
+weight: 5
 primes: 50
 type: user
 label: Merchant Center
