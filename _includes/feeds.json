@@ -6,7 +6,7 @@
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"id": {{ feed.myId | jsonify }},{% if feed.myId > 114 %}{% assign my_key = feed.myId | minus:101 %}{% else %}{% assign my_key = feed.myId | minus:1 %}{% endif %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"key": {{ page.module[my_key] | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"pos": {{ feed.pos | jsonify }},{% if feed.link %}
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"link": {{ feed.link | jsonify }},{% endif %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"link": {{ feed.link | jsonify }},{% endif %}{% 
 comment %}
 *
 *  collect primes
@@ -14,7 +14,7 @@ comment %}
 {% endcomment %}{% assign my_pos = feed.pos | minus:1 %}{% include data/primes.json %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"node": {{ my_count.val }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"count": {{ page.object[my_pos] | jsonify }},
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"weight": {{ feed.weight | jsonify }},{% {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"title": {{ feed.title | jsonify }},
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"weight": {{ feed.weight | jsonify }},{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"title": {{ feed.title | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"category": {{ feed.type | jsonify }},{% comment %}
 *
 *  other attributes
