@@ -2,8 +2,8 @@
 *
 *  collect id
 *
-{% endcomment %}{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"id": {{ feed.myId | jsonify }},
+{% endcomment %}{% assign id = feed.myId %}{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"id": {{ id | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"key": {{ feed.key | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"pos": {{ feed.pos| jsonify }},{% if feed.link %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"link": {{ feed.link | jsonify }},{% endif %}
