@@ -1,0 +1,1 @@
+{% assign my_count = site.data.primes[my_pos] %}
