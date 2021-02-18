@@ -8,7 +8,7 @@
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"pos": {{ feed.pos| jsonify }},{% if feed.link %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"link": {{ feed.link | jsonify }},{% endif %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"weight": {{ feed.weight | jsonify }},
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"mytest": {{ mytest | jsonify }},
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"mytest": {{ page.mytest | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"primes": {{ feed.primes | jsonify }},{% comment %}
 *
 *  collect primes
