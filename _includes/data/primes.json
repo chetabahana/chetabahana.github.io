@@ -16,4 +16,4 @@
 *  Documentation availabe (in bahasa):
 *  https://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid
 *
-{% endcomment %}{% assign my_count = site.data.primes[my_pos] %}
+{% endcomment %}{% assign my_primes = site.data.primes %}{% assign my_limit = my_primes[size] %}{% assign my_count = my_primes[my_pos] %}
