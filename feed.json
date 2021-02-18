@@ -1,4 +1,4 @@
 ---
 layout: default
+mytest: mytester
 ---
-{% assign mytest = "my_tester" %}
