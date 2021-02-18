@@ -2,12 +2,7 @@ name: Init CI
 on:
   push:
     branches:
-      - '*'
-      - '!master'
-      - '!compose'
-      - '!production'
-      - '!development'
-      - '!Chetabahana'
+      - 'Chetabahana'
 jobs:
   job1:
     runs-on: ubuntu-latest
