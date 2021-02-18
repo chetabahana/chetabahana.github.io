@@ -11,7 +11,7 @@
 *
 *  collect primes
 *
-{% endcomment %}{% assign my_pos = feed.pos | minus:1 %}{% include data/prime.json %}
+{% endcomment %}{% assign my_pos = feed.pos | minus:1 %}{% include data/primes.json %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"node": {{ my_count.val }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"primes": {{ page.object[my_pos] | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"title": {{ feed.title | jsonify }},
