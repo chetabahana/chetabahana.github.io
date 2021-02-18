@@ -11,4 +11,4 @@ layout: default
 *
 *  assign the required variables
 *
-{% endcomment %}
+{% endcomment %}{% assign my_test = "my_tester" %}

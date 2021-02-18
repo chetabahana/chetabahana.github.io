@@ -7,7 +7,7 @@
 *  You may see the running code here:
 *  https://chetabahana.github.io/feed.json
 *
-{% endcomment %}{% assign my_test = "my_tester" %}{% if page.path != 'index.html' and page.ext != '.md' %}{
+{% endcomment %}{% if page.path != 'index.html' and page.ext != '.md' %}{
     "name": "{{ site.name | xml_escape }}",
     "version": "https://jsonfeed.org/version/1",
     "home_page_url": "{{ "/" | absolute_url }}",
