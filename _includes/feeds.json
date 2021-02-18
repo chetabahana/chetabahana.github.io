@@ -11,9 +11,9 @@
 *
 *  collect primes
 *
-{% endcomment %}{% assign my_pos = feed.pos | minus:1 %}
+{% endcomment %}{% assign my_pos = feed.pos | minus:1 %}{% assign my_count = site.data.primes[my_pos] %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"primes": {{ page.object[my_pos] | jsonify }},
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"count": {{ site.data.primes[my_pos] | jsonify }},
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"count": {{ my_count.val | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"title": {{ feed.title | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"category": {{ feed.type | jsonify }},{% comment %}
 *
