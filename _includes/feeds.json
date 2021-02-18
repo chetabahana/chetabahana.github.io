@@ -3,12 +3,12 @@
 *  collect id
 *
 {% endcomment %}{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"id": {{ feed.myId | jsonify }},{% assign id = feed.myId | minus:1 %}{% assign event = page.events[id] %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"id": {{ feed.myId | jsonify }},{% assign key = feed.myId | minus:1 %}{% assign event = page.events[key] %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"key": {{ event | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"pos": {{ feed.pos| jsonify }},{% if feed.link %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"link": {{ feed.link | jsonify }},{% endif %}
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"weight": {{ feed.weight | jsonify }},{% assign pos = feed.pos | minus:1 %}{% assign prime = page.object[pos] %}
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"primes": {{ feed.primes | jsonify }},{% comment %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"weight": {{ feed.weight | jsonify }},{% assign pos = feed.pos | minus:1 %}{% assign primes = page.object[pos] %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"primes": {{ primes | jsonify }},{% comment %}
 *
 *  collect primes
 *
