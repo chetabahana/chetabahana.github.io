@@ -13,7 +13,7 @@
 *  node[168] = tree[168] - tree[168-1]
 *  tree[168] = 4 + 25 + 139 + 1091 + 8884 = 10143
 *
-*  Documentation available (in bahasa):
+*  Documentation (available only in bahasa):
 *  https://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid
 *
 {%- endcomment -%}
@@ -172,6 +172,7 @@
 {%- comment -%}
 *
 *  π(10000) Schema
+*  Injected via 1000 - 50
 *
 *    Sub  | i  |  ii  β  | f   
 *  =======+====+=====+=========  ===   ===   ===   ===   ===   ===
@@ -231,9 +232,9 @@
 *  -------+----+-------+----                        |     |     |
 *   3:4:7 | 28 |100000 | 100 = 90 + 10              |     |     |
 *  =======+====+=======+====                       ===  ====  ---- ---> π(10000)
-*  *3:4:8 | 29 |200000 | 118 = 100 + 3 x (2x3)       10³  Δ600  Δ300
+*  *3:4:8 | 29 |200000 | 118 = 100 + 3 x (2x3)     10³  Δ600  Δ300
 *  =======+====+=======+====                        Δ         ====
-*   3:4:9 | 30 |300000 | 121 = 118 + log 10³ ---------¤         Δ900   
+*   3:4:9 | 30 |300000 | 121 = 118 + log 10³ -------¤         Δ900   
 *
 {%- endcomment -%}
 {%- comment -%}
@@ -244,6 +245,7 @@
 {%- comment -%}
 *
 *  π(100000) Schema
+*  Injected to 300000/1000 + 900/100 => 300/10 + 9/9 = 31
 *
 *    Sub  | i  |     β  | f   
 *  =======+====+========+=========  ===   ===   ===   ===   ===   ===
@@ -376,6 +378,6 @@
 *
 * Here's my quote about prime numbers:
 * Getting the way of 'how they presence' is far more important
-* than trying to find 'how many of them' are exist exactly.
+* than trying to find 'how many all of them' are exactly exist.
 *
 {%- endcomment -%}
