@@ -1,6 +1,6 @@
 {% comment %}
 * 
-*  collect primes
+*  Collect Primes
 *
 *  Loop:
 *  loop(10) => 4
