@@ -1,3 +1,2 @@
 {%- assign my_primes = site.data.primes -%}
-{%- assign my_limit = my_primes[size] -%}
-{%- assign my_count = my_primes[my_pos]-%}
+{%- assign my_count = my_primes[my_pos] -%}
