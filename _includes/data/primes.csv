@@ -429,7 +429,7 @@
 * https://primes.utm.edu/howmany.html
 *
 {%- endcomment -%}
-{%- assign my_prime = my_primes[my_pos] -%}
+{%- assign my_prime = my_data.primes[my_pos] -%}
 {%- comment -%}
 *
 * Here's my quote about prime numbers:
