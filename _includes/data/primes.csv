@@ -16,5 +16,4 @@
 *  Documentation available (in bahasa):
 *  https://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid
 *
-{% endcomment %}
-{%- assign my_primes = site.data.primes[my_pos] -%}
+{% endcomment %}{% assign my_prime = my_primes[my_pos] %}

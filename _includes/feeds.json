@@ -12,7 +12,7 @@ comment %}
 *  collect primes
 *
 {% endcomment %}{% assign my_pos = feed.pos | minus:1 %}{% include data/primes.csv %}
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"node": {{ my_primes.val }},
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"node": {{ my_prime.val }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"count": {{ page.object[my_pos] | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"weight": {{ feed.weight | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"title": {{ feed.title | jsonify }},
