@@ -1,2 +1,1 @@
-{%- assign my_primes = site.data.primes -%}
-{%- assign my_count = my_primes[my_pos] -%}
+{% assign my_primes = site.data.primes[my_pos] %}
