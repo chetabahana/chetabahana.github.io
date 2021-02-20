@@ -1,3 +1,6 @@
+---
+menus: ['abstrak', 'skema', 'eksekusi', 'portfolio', 'publikasi', 'network', 'diskusi']
+---
 {% comment %}
 *
 *  This layout loops through a collection called `feeds` and collect site data 
