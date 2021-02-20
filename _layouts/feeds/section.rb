@@ -5,7 +5,7 @@ menus: ['abstrak', 'skema', 'eksekusi', 'portfolio', 'publikasi', 'network', 'di
 {% comment %}
 *
 *  This layout loops through a collection called `feeds` and collect site data 
-*  and page for inclusion to the output
+*  by page title and its category for inclusion to the sections output
 *
 *  You may see the running code here:
 *  https://chetabahana.github.io/
