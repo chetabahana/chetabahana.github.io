@@ -1,7 +1,9 @@
 # Jekyll configuration
 
 encoding: utf-8
+livereload: true
 highlighter: rouge
+timezone: Asia/Jakarta
 
 includes:
   - feed.xml
@@ -54,7 +56,6 @@ collections:
 
 # Default Setting
 # https://jekyllrb.com/docs/configuration/front-matter-defaults/
-base: _feeds/section
 defaults:
   -
     scope:
@@ -63,12 +64,14 @@ defaults:
     values:
       layout: "feeds/section"
 
-# Site link
+# Site Setting
+# https://jekyllrb.com/docs/configuration/options/
+base: _feeds/section
 baseurl: https://chetabahana.github.io
 slogan_link: https://www.chetabahana.com/
 json_link: https://chetabahana.github.io/feed.json
 
-# Site metadata
+# Site Metadata
 # https://help.github.com/articles/repository-metadata-on-github-pages/
 name: Project Maps
 repository: chetabahana/chetabahana.github.io
