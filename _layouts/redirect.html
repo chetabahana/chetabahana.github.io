@@ -10,3 +10,4 @@ layout: feeds/section/skema
 *  https://github.com/jekyll/jekyll-redirect-from
 *
 {%- endcomment -%}
+{% assign feed = site.feeds | where_exp:'item', 'item.redirect_from contains page.redirect.from' %}{% assign my_feed = feed[0] %}
