@@ -9,7 +9,7 @@ menus: ['abstrak', 'skema', 'eksekusi', 'portfolio', 'publikasi', 'network', 'di
 *  You may see the running code here:
 *  https://chetabahana.github.io/
 *
-{% endcomment %}{% if page.redirect.from %}{% assign feed = site.feeds | where_exp:'item', 'item.redirect_from contains page.redirect.from' %}{% assign my_feed = feed[0] %}{% else %}{% assign my_feed = page %}{% endif %}{% comment %}
+{% endcomment %}{% assign my_feed = page %}{% comment %}
 *
 *  assign the hash variables
 *
