@@ -1,13 +1,31 @@
 ---
-layout: feeds
+layout: default
+menus: ['abstrak', 'skema', 'eksekusi', 'portfolio', 'publikasi', 'network', 'diskusi']
 ---
 {% comment %}
 *
 *  This redirects are performed by serving an HTML file with an HTTP-REFRESH
-*  meta tag which points to the destination via '_layout/feeds.json'
-*  which configured via variable {{ page.redirect.from }}
+*  meta tag which  configured via variable {{ page.redirect.from }}
 *
 *  You may see the repository code here:
 *  https://github.com/jekyll/jekyll-redirect-from
 *
-{% endcomment %}
+*  This layout loops through a collection called `feeds` and collect site data 
+*  and page for inclusion to the output
+*
+*  You may see the running code here:
+*  https://chetabahana.github.io/
+*
+{% endcomment %}{% if page.redirect.from %}{% assign feed = site.feeds | where_exp:'item', 'item.redirect_from contains page.redirect.from' %}{% assign my_feed = feed[0] %}{% else %}{% assign my_feed = page %}{% endif %}{% comment %}
+*
+*  assign the hash variables
+*
+{% endcomment %}{% assign items = "" | split: "," %}{% assign my_size = my_feed.path | split: '/' | size | plus:1 %}{% assign my_path = my_feed.path | split: '/' | pop | join: '/' | append: '/' | append: my_feed.slug | append: '/' %}{% assign feeds = site.feeds | sort: 'weight' | where_exp:'item', 'item.path contains my_path' %}{% for feed in feeds %}{% assign feed_size = feed.path | split: '/' | size %}{% if feed_size == my_size %}{% assign items = items | push:feed %}{% endif %}{% endfor %}{% comment %}
+*
+*  collect matched data
+*
+{% endcomment %}{% assign data = null %}{% assign my_data = site.data %}{% assign my_hash = my_feed.path | split: '/' | pop %}{% for hash in my_hash %}{% if hash contains '_' %}{% assign my_data = my_data[hash] %}{% else %}{% assign _hash = hash | prepend: '_' %}{% assign my_data = my_data[_hash] %}{% endif %}{% endfor %}{% for hash in my_data %}{% if hash[1].title == my_feed.slug %}{% assign data = hash[1] %}{% endif %}{% endfor %}{% comment %}
+*
+*  get page for inclusion
+*
+{% endcomment %}{%- assign my_tab = "    " -%}{% if my_feed.category %}{% include {{ my_feed.path | remove_first: "_" | replace: ".md", ".html" }} %}{% endif %}
