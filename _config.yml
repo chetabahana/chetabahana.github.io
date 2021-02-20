@@ -65,8 +65,8 @@ collections:
 defaults:
   -
     scope:
-      path: ""
       type: "feeds"
+      path: "feeds/section"
     values:
       layout: "feeds/section"
 
