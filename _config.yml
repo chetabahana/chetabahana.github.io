@@ -69,6 +69,12 @@ defaults:
       path: "feeds/section"
     values:
       layout: "feeds/section"
+  -
+    scope:
+      type: "feeds"
+      path: "feeds/section/skema"
+    values:
+      layout: null
 
 # Site Setting
 # https://jekyllrb.com/docs/configuration/options/
