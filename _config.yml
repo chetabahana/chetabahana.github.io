@@ -59,7 +59,7 @@ defaults:
       path: ""
       type: "feeds"
     values:
-      layout: "feeds"
+      layout: "feeds/section"
 
 # Site link
 base: _feeds/section
