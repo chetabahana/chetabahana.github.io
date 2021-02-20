@@ -7,10 +7,10 @@
 {%- comment -%}
 *
 *  collect matched data
-* {% for item_hash in site.data %}{% assign item = item_hash[1] %}item: {{ item.name }}{% endfor %}
+* | where_exp:"item", "item[1].title != 'primes'" 
 *
 {%- endcomment -%}
-{%- assign data = null %}{% assign my_data = site.data | where_exp:"item", "item[1].title != 'primes'" %}{% assign my_hash = my_feed.path | split: '/' | pop %}{% for hash in my_hash %}{% if hash contains '_' %}{% assign my_data = my_data[hash] %}{% else %}{% assign _hash = hash | prepend: '_' %}{% assign my_data = my_data[_hash] %}{% endif %}{% endfor %}{% for hash in my_data %}{% if hash[1].title == my_feed.slug %}{% assign data = hash[1] %}{% endif %}{% endfor %}{%- assign my_tab = "    " -%}
+{%- assign data = null %}{% assign my_data = site.data %}{% assign my_hash = my_feed.path | split: '/' | pop %}{% for hash in my_hash %}{% if hash contains '_' %}{% assign my_data = my_data[hash] %}{% else %}{% assign _hash = hash | prepend: '_' %}{% assign my_data = my_data[_hash] %}{% endif %}{% endfor %}{% for hash in my_data %}{% if hash[1].title == my_feed.slug %}{% assign data = hash[1] %}{% endif %}{% endfor %}{%- assign my_tab = "    " -%}
 {%- comment -%}
 *
 *  get page for inclusion
