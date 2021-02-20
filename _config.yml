@@ -1,13 +1,19 @@
-# Jekyll configuration
+# Jekyll Configuration
+
+# General Settings
+# https://jekyllrb.com/docs/configuration/
 
 encoding: utf-8
 livereload: true
-highlighter: rouge
 timezone: Asia/Jakarta
 
-includes:
-  - feed.xml
+# Build Settings
+# https://jekyllrb.com/docs/configuration/options/
+
+include:
+  - .htaccess
   - feed.json
+  - feed.xml
 
 exclude:
   - .babelrc
@@ -48,14 +54,14 @@ form_engines:
 - formspree
 - formbucket
 
+# Default Setting
+# https://jekyllrb.com/docs/configuration/front-matter-defaults/
+
 collections:
   feeds:
     output: true
     permalink: /:path
 
-
-# Default Setting
-# https://jekyllrb.com/docs/configuration/front-matter-defaults/
 defaults:
   -
     scope:
@@ -66,13 +72,26 @@ defaults:
 
 # Site Setting
 # https://jekyllrb.com/docs/configuration/options/
+
 base: _feeds/section
 baseurl: https://chetabahana.github.io
 slogan_link: https://www.chetabahana.com/
 json_link: https://chetabahana.github.io/feed.json
 
+# Kramdown Options
+# https://kramdown.gettalong.org/options.html
+# https://jekyllrb.com/docs/configuration/markdown/
+
+kramdown:
+  toc_levels: 4
+  line_width: 72
+  html_to_native: true
+  syntax_highlighter: pygments
+  math_engine_opts configuration: mathjax
+ 
 # Site Metadata
 # https://help.github.com/articles/repository-metadata-on-github-pages/
+
 name: Project Maps
 repository: chetabahana/chetabahana.github.io
 title: Toko Chetabahana | Projek e-Shop di Indonesia
