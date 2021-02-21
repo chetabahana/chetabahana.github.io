@@ -8,6 +8,7 @@
 *  https://chetabahana.github.io/feed.json
 *
 {% endcomment %}{% if page.path != 'index.html' and page.ext != '.md' %}{
+    "id": {% if page.id %}{{ page.id }}{% else %}{{ data.id }}"test"{% endif %},
     "name": "{{ site.name | xml_escape }}",
     "version": "https://jsonfeed.org/version/1",
     "home_page_url": "{{ "/" | absolute_url }}",
