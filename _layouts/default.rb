@@ -12,8 +12,8 @@
     "name": {% if data.name %}{{ data.name }}{% else %}"{{ site.name | xml_escape }}"{% endif %},
     "version": "https://jsonfeed.org/version/1",
     "home_page_url": "{{ "/" | absolute_url }}",
-    "feed_url": {% if data.feed_url %}{{ data.feed_url }}{% else %}"{{ page.url | absolute_url }}"{% endif %},
-    "title": {% if data.title %}{{ data.title }}{% else %}"{{ site.title | xml_escape }}"{% endif %},
+    "feed_url": {% if data.feed_url %}"{{ data.feed_url }}"{% else %}"{{ page.url | absolute_url }}"{% endif %},
+    "title": {% if data.title %}"{{ data.title }}"{% else %}"{{ site.title | xml_escape }}"{% endif %},
     "description": {{ site.description | jsonify }},{% if page.redirect.from %}
     "redirect_from": "{{ page.redirect.from | absolute_url }}",{% endif %}
     "user_comment": "This feed allows you to read the project mapping",
