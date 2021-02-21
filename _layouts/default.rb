@@ -7,7 +7,7 @@
 *  You may see the running code here:
 *  https://chetabahana.github.io/feed.json
 *
-{% endcomment %}{% include data.rb %}{% if page.path != 'index.html' and page.ext != '.md' %}{
+{% endcomment %}{{ page.id }}{% include data.rb %}{% if page.path != 'index.html' and page.ext != '.md' %}{
     "id": {% if data.id %}{{ data.id }}{% else %}{{ page.id }}{% endif %},
     "name": {% if data.name %}{{ data.name }}{% else %}"{{ site.name | xml_escape }}"{% endif %},
     "version": "https://jsonfeed.org/version/1",
