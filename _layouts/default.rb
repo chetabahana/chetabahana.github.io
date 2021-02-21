@@ -10,7 +10,7 @@
 {% endcomment %}{% include data.rb %}{% if page.path != 'index.html' and page.ext != '.md' %}{
     "id": {% if data.id %}{{ data.id }}{% else %}{{ page.id }}{% endif %},
     "name": {% if data.name %}{{ data.name }}{% else %}"{{ site.name | xml_escape }}"{% endif %},
-    "version": "https://jsonfeed.org/version/1",
+    "version": "https://jsonfeed.org/version/1.1",
     "home_page_url": "{{ "/" | absolute_url }}",
     "feed_url": {% if data.feed_url %}"{{ data.feed_url }}"{% else %}"{{ page.url | absolute_url }}"{% endif %},
     "title": {% if data.title %}"{{ data.title }}"{% else %}"{{ site.title | xml_escape }}"{% endif %},

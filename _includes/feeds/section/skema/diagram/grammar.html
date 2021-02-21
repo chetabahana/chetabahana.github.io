@@ -1,2 +1,2 @@
-{{ my_tab }}{{ my_tab }}{{ data.items | jsonify }}{%- comment -%},
+{{ my_tab }}{{ my_tab }}{{ data.items[0] | jsonify }}{%- comment -%},
 {{ my_tab }}{{ my_tab }}{"files": {{ site.static_files | jsonify }}}{%- endcomment -%}
