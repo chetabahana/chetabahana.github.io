@@ -10,7 +10,8 @@ layout: default
 *  To provide it with an online work you may see the running code here:
 *  https://github.com/chetabahana/chetabahana.github.io/blob/master/index.html
 *
-{% endcomment %}{%- assign sections = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'section'" -%}
+{% endcomment %}
+{%- assign sections = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'section'" -%}
 <!DOCTYPE html>
 <html lang="en">
     <head>
