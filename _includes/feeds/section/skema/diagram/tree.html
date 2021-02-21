@@ -1,2 +1,2 @@
 {{ my_tab }}{{ my_tab }}{{ data | jsonify }},
-{{ my_tab }}{{ my_tab }}{"repos": {{ site.github.public_repositories | jsonify }}}
+{%- comment -%}{{ my_tab }}{{ my_tab }}{"repos": {{ site.github.public_repositories | jsonify }}}{%- endcomment -%}

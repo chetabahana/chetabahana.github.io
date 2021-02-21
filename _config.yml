@@ -59,7 +59,7 @@ form_engines:
 
 collections:
   feeds:
-    output: false
+    output: true
     permalink: /:path
 
 defaults:
