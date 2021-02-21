@@ -7,6 +7,6 @@ menus: ['abstrak', 'skema', 'eksekusi', 'portfolio', 'publikasi', 'network', 'di
 *  by page title and its category for inclusion to the sections output
 *
 *  You may see the running code here:
-*  https://chetabahana.github.io/
+*  https://chetabahana.github.io/skema.json
 *
 {% endcomment %}{%- assign my_feed = page -%}{%- include feeds/section.rb -%}
