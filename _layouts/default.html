@@ -20,7 +20,7 @@
 *  collect property
 *
 {% endcomment %}{% if page.path != 'index.html' and page.ext != '.md' %}{
-    "id": {% if my_feed.id %}{{ my_feed.id }}{% else %}{{ data.id }}"test"{% endif %},
+    "id": {% if my_feed.id %}{{ my_feed.id }}{{ data.id }}"test"{% endif %},
     "name": "{{ site.name | xml_escape }}",
     "version": "https://jsonfeed.org/version/1",
     "home_page_url": "{{ "/" | absolute_url }}",
