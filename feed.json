@@ -10,4 +10,4 @@ layout: feeds
 *  You may see the running code here:
 *  https://chetabahana.github.io/feed.json
 *
-{% endcomment %}{%- assign my_feed = page -%}
+{% endcomment %}
