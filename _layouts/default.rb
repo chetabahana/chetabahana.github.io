@@ -9,13 +9,12 @@
 *
 {% endcomment %}{% include data.rb %}{% if page.path != 'index.html' and page.ext != '.md' %}{
     "id": {% if data.id %}{{ data.id }}{% else %}{{ page.id }}{% endif %},
-    "name": {% if data.name %}{{ data.name }}{% else %}"{{ site.name | xml_escape }}"{% endif %},
+    "title": {% if data.title %}"{{ data.title | capitalize }}"{% else %}"{{ site.title }}"{% endif %},
     "version": "https://jsonfeed.org/version/1.1",
     "home_page_url": "{{ "/" | absolute_url }}",
-    "feed_url": {% if data.feed_url %}"{{ data.feed_url }}"{% else %}"{{ page.url | absolute_url }}"{% endif %},
-    "title": {% if data.title %}"{{ data.title }}"{% else %}"{{ site.title | xml_escape }}"{% endif %},
-    "description": {{ site.description | jsonify }},{% if page.redirect.from %}
-    "redirect_from": "{{ page.redirect.from | absolute_url }}",{% endif %}
+    "feed_url": "{{ page.url | absolute_url }}",
+    "name": "{{ site.name | xml_escape }}",
+    "description": {{ site.description | jsonify }},
     "user_comment": "This feed allows you to read the project mapping",
     "items": [
 {% endif %}{% comment %}

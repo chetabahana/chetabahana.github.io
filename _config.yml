@@ -102,9 +102,9 @@ kramdown:
 # Site Metadata
 # https://help.github.com/articles/repository-metadata-on-github-pages/
 
-name: Project Maps
+title: Project Maps
 repository: chetabahana/chetabahana.github.io
-title: Toko Chetabahana | Projek e-Shop di Indonesia
+name: Toko Chetabahana | Projek e-Shop di Indonesia
 description: Chetabahana Project - A Way To Win The Market
 slogan: We are providing an Integrated Open Source Project about The World of e-Commerce.
 keywords: chetabahana, projek, toko online, market leader, e-shop, eshop, scripts, open source, github page
