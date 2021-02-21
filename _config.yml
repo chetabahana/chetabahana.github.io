@@ -94,10 +94,10 @@ kramdown:
 # Custom Headers
 # https://jekyllrb.com/docs/configuration/webrick/
 
-webrick:
-  headers:
-    My-Header: My-Value
-    My-Other-Header: My-Other-Value
+# webrick:
+#   headers:
+#     My-Header: My-Value
+#     My-Other-Header: My-Other-Value
 
 # Site Metadata
 # https://help.github.com/articles/repository-metadata-on-github-pages/
