@@ -1,24 +1,28 @@
 {
     "id": 260,
     "title": "channel",
-    "guide": {
-        "js": "channel/release/go.js",
-        "link": "https://chetabahana.github.io/channel/learn/index.html",
-        "file": "https://chetabahana.github.io/channel/samples/classHierarchy.html",
-        "from": "https://chetabahana.github.io/channel/samples/parseTree.html",
-        "to": "https://chetabahana.github.io/channel/samples/ldLayout.html"
-    },
-    "style": [
-        { "key": "Alpha", "color": "lightblue" },
-        { "key": "Beta", "color": "orange" },
-        { "key": "Gamma", "color": "lightgreen" },
-        { "key": "Delta", "color": "pink" }
-    ],
-    "skema": [
-        { "from": "Alpha", "to": "Beta" },
-        { "from": "Alpha", "to": "Gamma" },
-        { "from": "Beta", "to": "Beta" },
-        { "from": "Gamma", "to": "Delta" },
-        { "from": "Delta", "to": "Alpha" }
+    "items": [
+        {
+            "guide": {
+                "js": "channel/release/go.js",
+                "link": "https://chetabahana.github.io/channel/learn/index.html",
+                "file": "https://chetabahana.github.io/channel/samples/classHierarchy.html",
+                "from": "https://chetabahana.github.io/channel/samples/parseTree.html",
+                "to": "https://chetabahana.github.io/channel/samples/ldLayout.html"
+            },
+            "style": [
+                { "key": "Alpha", "color": "lightblue" },
+                { "key": "Beta", "color": "orange" },
+                { "key": "Gamma", "color": "lightgreen" },
+                { "key": "Delta", "color": "pink" }
+            ],
+            "skema": [
+                { "from": "Alpha", "to": "Beta" },
+                { "from": "Alpha", "to": "Gamma" },
+                { "from": "Beta", "to": "Beta" },
+                { "from": "Gamma", "to": "Delta" },
+                { "from": "Delta", "to": "Alpha" }
+            ]
+        }
     ]
 }
