@@ -9,7 +9,7 @@
 *
 {% endcomment %}{% include data.rb %}{% if page.path != 'index.html' and page.ext != '.md' %}{
     "id": {% if data.id %}{{ data.id }}{% else %}{{ page.id }}{% endif %},
-    "title": {% if data.title %}"{{ data.title | capitalize }}"{% else %}"{{ site.title }}"{% endif %},
+    "title": {% if data.title %}"{{ data.title | capitalize }} | "{% endif %}"{{ site.title }}",
     "version": "https://jsonfeed.org/version/1.1",
     "home_page_url": "{{ "/" | absolute_url }}",
     "feed_url": "{{ page.url | absolute_url }}",
