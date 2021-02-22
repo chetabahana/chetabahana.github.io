@@ -13,8 +13,7 @@
     "version": "https://jsonfeed.org/version/1.1",
     "home_page_url": "{{ "/" | absolute_url }}",
     "feed_url": "{{ page.url | absolute_url }}",
-    "name": "{{ site.name | xml_escape }}",
-    "description": {{ site.description | jsonify }},
+    "description": {{ site.slogan | jsonify }},
     "user_comment": "This feed allows you to read the project mapping",
     "items": [
 {% endif %}{% comment %}
