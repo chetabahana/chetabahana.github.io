@@ -13,7 +13,7 @@
 *  node[168] = tree[168] - tree[168-1]
 *  tree[168] = 4 + 25 + 139 + 1091 + 8884 = 10143
 *
-*  Documentation (available only in bahasa):
+*  Documentation (currently available in bahasa only):
 *  https://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid
 *
 {%- endcomment -%}
