@@ -1,1 +1,3 @@
-{{ data.property }}
+---
+weight: 1
+---

@@ -57,7 +57,7 @@ form_engines:
 # Default Setting
 # https://jekyllrb.com/docs/configuration/front-matter-defaults/
 
-base: _feeds
+base: _feeds/section
 
 collections:
   feeds:
