@@ -5,7 +5,7 @@ pos: 150
 weight: 4
 primes: 299
 type: channel
-category: skema
+category: diagram
 frame: [90,200,9]
 value: [941,0,-1,-2]
 object: [1,3,8,11]
