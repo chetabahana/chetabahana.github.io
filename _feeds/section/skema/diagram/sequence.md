@@ -11,14 +11,14 @@ value: [929,2,-1,-2]
 frame: [1,30,90,200,9]
 object: [1,4,13,22]
 redirect_from:
-  - /0/skema.json
-  - /1/skema.json
-  - /2/skema.json
-  - /3/skema.json
-  - /4/skema.json
-  - /5/skema.json
-  - /6/skema.json
-  - /7/skema.json
-  - /8/skema.json
-  - /9/skema.json
+  - /0/diagram.json
+  - /1/diagram.json
+  - /2/diagram.json
+  - /3/diagram.json
+  - /4/diagram.json
+  - /5/diagram.json
+  - /6/diagram.json
+  - /7/diagram.json
+  - /8/diagram.json
+  - /9/diagram.json
 ---
