@@ -92,6 +92,25 @@ kramdown:
 #     My-Header: My-Value
 #     My-Other-Header: My-Other-Value
 
+# Tags Setting
+# https://github.com/chetabahana/chetabahana.github.io/tags
+
+case_labels:
+- Buka Toko
+- Stok Barang
+- Merchant Center
+- Peluang Terbaik
+- Portfolio
+- Network
+
+flow_labels:
+- Optimasi
+- Cloud-Task-API
+- Cloud-Site-API
+- Google-Ads-API
+- Google-Trend-API
+- eShop SEO
+
 # Site Setting
 # https://jekyllrb.com/docs/configuration/options/
 
