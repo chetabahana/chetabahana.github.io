@@ -60,6 +60,7 @@ weight: 3
 *  - From id: 102 to 168 on the first collumn is the same as id: 2 to 68 shown on collumn 2 to 4
 *  - Therefore id: 102 to 168 is the part of Δ31 to 200 from Δ329 which take id: 1 up to id: 329  
 *  - As pair we count id: 68 to 102 as process that taking Δ289 start from id: 330 up to id: 618 
+*  - The scheme of (68,89) will be driven from id: (29,43) that both perform the scheme of id: 2
 *  - This page and childs are assigned to collumn 4, taking Δ90 start from id: 239 up to id: 329 
 *
 *  Note:
