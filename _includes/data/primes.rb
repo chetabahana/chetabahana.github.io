@@ -433,7 +433,7 @@
 {%- assign my_prime = my_primes[my_pos] -%}
 {%- comment -%}
 *
-* Here’s my quote about prime numbers:
+* Here is my quote about prime numbers:
 * Finding the way of ‘how they presence’ is far more important
 * than trying to find ‘how many all of them’ are exactly exist.
 *
