@@ -56,7 +56,7 @@ weight: 2
 *  We will count how many id that required to be assigned on different proses that uniq only.
 *
 *  - From id: 102 to 168 on the first collumn is the same as id: 2 to 68 shown on collumn 2 to 4
-*  - Therefore we count id: 2 to 68 as process that taking Δ329 start from id: 1 up to id: 329 
+*  - Therefore we count id: 102 to 168 as a part that taking Δ329 start from id: 1 up to id: 329  
 *  - As pair we count id: 68 to 102 as process that taking Δ289 start from id: 330 up to id: 618 
 *  - This page and childs are assigned to collumn 3, taking Δ208 start from id: 32 up to id: 239 
 *
