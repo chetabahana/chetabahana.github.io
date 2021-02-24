@@ -60,7 +60,7 @@ weight: 1
 *  - From id: 102 to 168 on the first collumn is the same as id: 2 to 68 shown on collumn 2 to 4
 *  - Therefore id: 102 to 168 is the part of Δ31 to 200 from Δ329 which take id: 1 up to id: 329  
 *  - As pair we count id: 68 to 102 as process that taking Δ289 start from id: 330 up to id: 618 
-*  - This page and childs are assigned to collumn 2, taking Δ31 start from id: 1 up to id: 31 
+*  - This page and its childs are assigned to collumn 2 taking Δ31 start from id: 1 up to id: 31 
 *
 *  Note:
 *  Documentation is currently available only in bahasa:
