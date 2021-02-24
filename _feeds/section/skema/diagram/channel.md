@@ -39,8 +39,5 @@ redirect_from:
   - /026/diagram.json
   - /027/diagram.json
   - /028/diagram.json
-  - /029/diagram.json
-  - /030/diagram.json
-  - /031/diagram.json
   - /999/diagram.json
 ---

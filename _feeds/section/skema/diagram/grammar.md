@@ -30,4 +30,15 @@ redirect_from:
   - /16/diagram.json
   - /17/diagram.json
   - /18/diagram.json
+  - /19/diagram.json
+  - /20/diagram.json
+  - /21/diagram.json
+  - /22/diagram.json
+  - /23/diagram.json
+  - /24/diagram.json
+  - /25/diagram.json
+  - /26/diagram.json
+  - /27/diagram.json
+  - /28/diagram.json
+  - /29/diagram.json
 ---
