@@ -63,7 +63,7 @@ weight: 3
 *  - The scheme (68,89) will be driven from id: (29,43) which are presence by the scheme of id: 2
 *  - This page childs are assigned to collumn 4 by taking Δ90 start from id: 239 up to id: 329.
 *  
-*  Thus combining all schemes will turn to a new layer with 40+50+10+50 = 150 objects out of 168:
+*  Thus combining all schemes will turn to a new layer of 168 started with id (40+50+10+50)=150:
 *  https://chetabahana.github.io/feed.json
 *
 *  Note:
