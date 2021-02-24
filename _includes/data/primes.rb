@@ -45,13 +45,13 @@
 *       |  1  | 5
 *    1  +-----+
 *       |  2  | 7
-*  -----+-----+---  } 36 » 6®
+*  -----+-----+---   36 » 6®
 *       |  3  | 11
 *    2  +-----+
 *       |  4  | 13
 *  -----+-----+---------
 *       |  5  | 17
-*    3  +-----+     } 36 » 6®
+*    3  +-----+      36 » 6®
 *       |  6  | 19
 *  -----+-----+---------
 *
@@ -76,7 +76,7 @@
 *        |      |  4  +-----+                 |
 *        |  3   |     |  8  |  1x  ----       |        (11)
 *        |      +-----+-----+          |      |
-*        |      |     |  9  |  ..     {2x}----
+*        |      |     |  9  |  ..      2x ----
 *    2   +------|  5  +-----+-----     |
 *        |      |     |  10 |  1x  ----
 *        |      |-----+-----+
@@ -433,8 +433,8 @@
 {%- assign my_prime = my_primes[my_pos] -%}
 {%- comment -%}
 *
-* Here's my quote about prime numbers:
-* Finding the way of 'how they presence' is far more important
-* than trying to find 'how many all of them' are exactly exist.
+* Here’s my quote about prime numbers:
+* Finding the way of ‘how they presence’ is far more important
+* than trying to find ‘how many all of them’ are exactly exist.
 *
 {%- endcomment -%}
