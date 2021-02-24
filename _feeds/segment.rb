@@ -61,6 +61,9 @@ weight: 6
 *  - As pairs we count id: 68 to 102 as process that taking Δ289 start from id: 330 up to id: 618 
 *  - The scheme (68,89) will be driven from id: (29,43) which are presence by the scheme of id: 2
 *  - This page childs are assigned to collumn 7 by taking Δ50 start from id: 569 up to id: 618.
+*  
+*  Thus combining all schemes will turn to a new layer with 40+50+10+50 = 150 objects out of 168:
+*  https://chetabahana.github.io/feed.json
 *
 *  Note:
 *  Documentation is currently available only in bahasa:
