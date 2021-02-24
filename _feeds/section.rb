@@ -45,22 +45,22 @@ weight: 5
 *  +-----+-----+-----+-----+-----+-----+-----+-----+                -----------
 *  | 168 |  31   208    90 |  31   208    50 | 943 | 1729  → 102 
 *  | 168 |------ 329 ------|------ 289 ------|
-*  | 168 |------------ 618 = 1000/Φ ---------------|
+*  | 168 |---------- 618 = 1000/Φ -----------|
 *        Δ     Δ     Δ     Δ     Δ     Δ     Δ
 *      id:2  id:30 id:36 id:68 id:71 id:89 id:102
-*     π(1000)=168          π(10000)=1229        π(89²)=1000
-*        └─── 168              └───  329           └─── 289
+*     π(1000)=168       π(10000)=1229      π(89²)=1000
+*        └─── 168           └───  329         └─── 289
 *
-*  We will count how many id that required to be assigned on different proses that uniq only.
+*  We will count how many id's that required to be assigned on different proses that is uniq only
 *
-*  Consider that cyclic is happen every Δ100 so such proses on id:102 would be the same as id:2
+*  Consider that cyclics are happen every Δ100 so such proses on id:102 would be the same as id:2
 *  https://github.com/chetabahana/chetabahana.github.io/blob/Chetabahana/_includes/data/primes.rb
 *
-*  - From id: 102 to 168 on the first collumn is the same as id: 2 to 68 shown on collumn 2 to 4
-*  - Therefore id: 102 to 168 is the part of Δ31 to 200 from Δ329 which take id: 1 up to id: 329  
-*  - As pair we count id: 68 to 102 as process that taking Δ289 start from id: 330 up to id: 618 
-*  - The scheme of (68,89) will be driven from id: (29,43) that both perform the scheme of id: 2
-*  - This page and childs are assigned to collumn 6 taking Δ208 start from id: 361 up to id: 568 
+*  - From id: 102 to 168 on first collumn is the same plot of id: 2 to 68 shown on collumn 2 to 4
+*  - Therefore id: 102 to 168 is the part of Δ31 to 200 from Δ329 which takes id: 1 up to id: 329  
+*  - As pairs we count id: 68 to 102 as process that taking Δ289 start from id: 330 up to id: 618 
+*  - The scheme (68,89) will be driven from id: (29,43) which are presence by the scheme of id: 2
+*  - This page childs are assigned to collumn 6 by taking Δ208 start from id: 361 up to id: 568.
 *
 *  Note:
 *  Documentation is currently available only in bahasa:
