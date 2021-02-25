@@ -468,7 +468,7 @@
 *
 * Note:
 * - Consider that the prime hexagon is 6 (six) spin
-* - There is no 7th hexagon thus 619 is landed as hexagon-1’
+* - There is no 7th hexagon so 619 is landed on hexagon-1’ as 0’
 * - Reference: https://www.hexspin.com/0-1-and-negative-numbers/
 *
 *    Sub  | i  |    β  | f   
