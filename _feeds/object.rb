@@ -64,7 +64,7 @@ weight: 5
 *  - This page childs are assigned to collumn 6 by taking Δ208 start from id: 361 up to id: 568.
 *  
 *  Thus combining all the schemes will turn a new layer of 168 started with id (40+50+10+50)=150:
-*  https://chetabahana.github.io/feed.json
+* - See the scheme of layer on https://chetabahana.github.io/feed.json
 *
 *  Note:
 *  Documentation is currently available only in bahasa:

@@ -456,20 +456,25 @@
 *  π(10000) Schema
 *  Injected via 1000 - 50
 *
-*  Part   | Real Part   | Imajinary  | Real Part   | Imajinary
-*  =======+=============+============+=============+============
-*  Step-1 |    2 to  68 |  71 to  50 |   50 to 118 | 121 to 100  <-- hexagon-1
-*  Step-2 |  102 to 168 | 171 to 150 |  150 to 218 | 221 to 200  <-- hexagon-2
-*  Step-3 |  202 to 268 | 271 to 250 |  250 to 318 | 321 to 300  <-- hexagon-3
-*  Step-4 |  302 to 368 | 371 to 350 |  350 to 418 | 421 to 400  <-- hexagon-4
-*  Step-5 |  402 to 468 | 471 to 450 |  450 to 518 | 521 to 500  <-- hexagon-5
-*  Step-6 |  502 to 568 | 571 to 550 |  550 to 618 | 621 to 600  <-- 2’ to 600
-*  Step-7 |    2’to  68’|  71’to  50’|   50’to 118’| 121’to 100’ --> Cyclic at 619’
-*
 * Note:
 * - Consider that the prime hexagon is 6 (six) spin
-* - There is no 7th hexagon so 619 is landed on hexagon-1’ as 0’
+* - There is no 7th hexagon so 619 is landed on hexagon-1 as 0’
 * - Reference: https://www.hexspin.com/0-1-and-negative-numbers/
+*
+*  Part   | Leading     | Imajinary  | Lagging     | Imajinary
+*  =======+=============+============+=============+============
+*  Step-1 |    2 to  68 |  71 to 150 |  150 to 118 | 121 to 100  <-- hexagon-1
+*  Step-2 |  102 to 168 | 171 to 250 |  250 to 218 | 221 to 200  <-- hexagon-2
+*  Step-3 |  202 to 268 | 271 to 350 |  350 to 318 | 321 to 300  <-- hexagon-3
+*  Step-4 |  302 to 368 | 371 to 450 |  450 to 418 | 421 to 400  <-- hexagon-4
+*  Step-5 |  402 to 468 | 471 to 550 |  550 to 518 | 521 to 500  <-- hexagon-5
+*  Step-6 |  502 to 568 | 571 to 650 |  650 to 618 | 621 to 600  <-- 2’ to 600
+*  Step-7 |    2’to  68’|  71’to 150’|  150’to 118’| 121’to 100’ --> Cyclic at 619’
+*
+* Note:
+* - Thus every 6th scheme is the 1st-layer in a higher level of 150 to π(1000)=168
+* - The layer turns to feed out when π((1000/Φ)+1)+1=π(619)+1=115 landed to 150
+* - See the scheme of this layer on https://chetabahana.github.io/feed.json
 *
 *    Sub  | i  |    β  | f   
 *  =======+====+=======+=======  ===   ===   ===   ===   ===   === <-- π(1000-50)
