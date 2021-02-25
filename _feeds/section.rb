@@ -45,8 +45,9 @@ weight: 7
 *  |  66 |  30 |  8  |  50 |  30 |   8 |   - | 594 | 786=618+168    19¨ » Network
 *  +-----+-----+-----+-----+-----+-----+-----+-----+                -----------
 *  | 168 |  31   208    90 |  31   208    50 | 943 | 1729  → 102 
-*  | 168 |------ 329 ------|------ 289 ------|
-*  | 168 |---------- 618 = 1000/Φ -----------|
+*  | 168 | 199   407   497 | 528   736   786 | 157
+*  | 168 |------ 329 ------|------ 289 ------| 786
+*  | 168 |---------- 618 = 1000/Φ -----------| 168
 *        Δ     Δ     Δ     Δ     Δ     Δ     Δ
 *      id:2  id:30 id:36 id:68 id:71 id:89 id:102
 *     π(1000)=168       π(10000)=1229      π(89²)=1000
@@ -61,7 +62,7 @@ weight: 7
 *  - Therefore id: 102 to 168 is the part of Δ31 to 200 from Δ329 which takes id: 1 up to id: 329  
 *  - As pairs we count id: 68 to 102 as process that taking Δ289 start from id: 330 up to id: 618 
 *  - The scheme (68,89) will be driven from id: (29,43) which are presence by the scheme of id: 2
-*  - This page childs are assigned to collumn 1 by taking Δ168 start from id: 1 up to id: 168.
+*  - This page childs are assigned to collumn 1 by taking Δ168 span 1~618 as id: 1 to id: 168.
 *  
 *  Thus combining all the schemes will turn a new layer of 168 started with id (40+50+10+50)=150:
 * - See the scheme of layer on https://chetabahana.github.io/feed.json
