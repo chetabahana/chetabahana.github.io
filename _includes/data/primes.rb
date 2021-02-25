@@ -456,9 +456,9 @@
 *  π(10000) Schema
 *  Injected via 1000 - 50
 *
-*  Cmplex  | Real Part   | Imajinary
+*  Complex | Real Part   | Imajinary
 *  ========+=============+=============
-*  Step-1  |     2 to 68 |  71 to 50
+*  Step-1  |     2 to 68 |  71 to  50
 *  Step-2  |   52 to 118 | 121 to 100
 *  Step-3  |  102 to 168 | 171 to 150
 *  Step-4  |  152 to 218 | 221 to 200
