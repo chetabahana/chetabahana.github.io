@@ -458,13 +458,18 @@
 *
 *  Part   | Real Part   | Imajinary  | Real Part   | Imajinary
 *  =======+=============+============+=============+============
-*  Step-1 |    2 to  68 |  71 to  50 |   52 to 118 | 121 to 100
-*  Step-2 |  102 to 168 | 171 to 150 |  152 to 218 | 221 to 200
-*  Step-3 |  202 to 268 | 271 to 250 |  252 to 318 | 321 to 300
-*  Step-4 |  302 to 368 | 371 to 350 |  352 to 418 | 421 to 400
-*  Step-5 |  402 to 468 | 471 to 450 |  452 to 518 | 521 to 500
-*  Step-6 |  502 to 568 | 571 to 550 |  552 to 618 | 621 to 600  <-- 21’ to 0’
-*  Step-7 |    2’to  68’|  71’to  50’|   52’to 118’| 121’to 100’ --> Cyclic 619’
+*  Step-1 |    2 to  68 |  71 to  50 |   52 to 118 | 121 to 100  <-- hexagon-1
+*  Step-2 |  102 to 168 | 171 to 150 |  152 to 218 | 221 to 200  <-- hexagon-2
+*  Step-3 |  202 to 268 | 271 to 250 |  252 to 318 | 321 to 300  <-- hexagon-3
+*  Step-4 |  302 to 368 | 371 to 350 |  352 to 418 | 421 to 400  <-- hexagon-4
+*  Step-5 |  402 to 468 | 471 to 450 |  452 to 518 | 521 to 500  <-- hexagon-5
+*  Step-6 |  502 to 568 | 571 to 550 |  552 to 618 | 621 to 600  <-- 2’ to 600
+*  Step-7 |    2’to  68’|  71’to  50’|   52’to 118’| 121’to 100’ --> Cyclic at 619’
+*
+* Note:
+* - Consider that the prime hexagon is 6 (six) spin
+* - There is no 7th hexagon thus 619 is landed as hexagon-1’
+* - Reference: https://www.hexspin.com/0-1-and-negative-numbers/
 *
 *    Sub  | i  |    β  | f   
 *  =======+====+=======+=======  ===   ===   ===   ===   ===   === <-- π(1000-50)
