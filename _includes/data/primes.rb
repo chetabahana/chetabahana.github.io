@@ -456,19 +456,20 @@
 *  π(10000) Schema
 *  Injected via 1000 - 50
 *
-*  Step-1: 2 to 68 by 71 to 50
-*  Step-2: 52 to 118 by 121 to 100
-*  Step-3: 102 to 168 by 171 to 150
-*  Step-4: 152 to 218 by 221 to 200
-*  Step-5: 202 to 268 by 271 to 250
-*  Step-6: 252 to 318 by 321 to 300
-*  Step-7: 302 to 368 by 371 to 350
-*  Step-8: 352 to 418 by 421 to 400
-*  Step-9: 402 to 468 by 471 to 450
-*  Step-10: 452 to 518 by 521 to 500
-*  Step-11: 502 to 568 by 571 to 550
-*
-*  Step-12: 552 to 618
+*  Cmplex  | Real Part   | Imajinary
+*  ========+=============+=============
+*  Step-1  |     2 to 68 |  71 to 50
+*  Step-2  |   52 to 118 | 121 to 100
+*  Step-3  |  102 to 168 | 171 to 150
+*  Step-4  |  152 to 218 | 221 to 200
+*  Step-5  |  202 to 268 | 271 to 250
+*  Step-6  |  252 to 318 | 321 to 300
+*  Step-7  |  302 to 368 | 371 to 350
+*  Step-8  |  352 to 418 | 421 to 400
+*  Step-9  |  402 to 468 | 471 to 450
+*  Step-10 |  452 to 518 | 521 to 500
+*  Step-11 |  502 to 568 | 571 to 550
+*  Step-12 |  552 to 618 | 621 to 700
 *
 *    Sub  | i  |    β  | f   
 *  =======+====+=======+=======  ===   ===   ===   ===   ===   === <-- π(1000-50)
