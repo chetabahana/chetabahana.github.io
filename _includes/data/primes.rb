@@ -463,13 +463,13 @@
 *
 *  Part   | i(Leading)  | j(Leading) | i(Lagging)  | j(Lagging)
 *  =======+=============+============+=============+============
-*  Step-1 |    2 to  68 |  71 to 150 |  150 to 118 | 121 to 100  <-- hexagon-1
-*  Step-2 |  102 to 168 | 171 to 250 |  250 to 218 | 221 to 200  <-- hexagon-2
-*  Step-3 |  202 to 268 | 271 to 350 |  350 to 318 | 321 to 300  <-- hexagon-3
-*  Step-4 |  302 to 368 | 371 to 450 |  450 to 418 | 421 to 400  <-- hexagon-4
-*  Step-5 |  402 to 468 | 471 to 550 |  550 to 518 | 521 to 500  <-- hexagon-5
-*  Step-6 |  502 to 568 | 571 to 650 |  650 to 618 | 621 to 600  <-- 2’ to 600
-*  Step-7 |    2’to  68’|  71’to 150’|  150’to 118’| 121’to 100’ --> Cyclic at 619’
+*  Step-1 |    2 to  68 |  71 to 150 |  150 to 118 | 115 to 102  <-- hexagon-1
+*  Step-2 |  102 to 168 | 171 to 250 |  250 to 218 | 215 to 202  <-- hexagon-2
+*  Step-3 |  202 to 268 | 271 to 350 |  350 to 318 | 315 to 302  <-- hexagon-3
+*  Step-4 |  302 to 368 | 371 to 450 |  450 to 418 | 415 to 402  <-- hexagon-4
+*  Step-5 |  402 to 468 | 471 to 550 |  550 to 518 | 515 to 502  <-- hexagon-5
+*  Step-6 |  502 to 568 | 571 to 650 |  650 to 618 | 615 to 602  <-- 2’ to 602
+*  Step-7 |    2’to  68’|  71’to 150’|  150’to 118’| 115’to 102’ --> Cyclic at 619’
 *
 * Note:
 * - Thus every 6th scheme would be 1st-layer in a higher level of 1 to π(1000)=168
