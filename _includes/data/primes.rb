@@ -472,7 +472,7 @@
 *  Step-7 |    2’to  68’|  71’to 150’|  150’to 118’| 115’to 102’ --> Cyclic at 619’
 *
 * Note:
-* - Thus every 6th scheme would be 1st-layer in a higher level of 1 to π(1000)=168
+* - Every 6th scheme would be the 1st-layer in a higher level of 1 to π(1000)=168
 * - The layer turns to feed out when π((1000/Φ)+1)+1=π(619)+1=115 landed to 150
 * - See the scheme of this layer on https://chetabahana.github.io/feed.json
 *
