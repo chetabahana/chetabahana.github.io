@@ -535,9 +535,9 @@
 {%- endcomment -%}
 {%- comment -%}
 *
-*  True Prime Vektors ζ(s):
-*  (2,3), (29,89), (36,68), (72,42), (100,50), (2,3), (29,89), ...infinity
-*
+*  Tabulate Prime Vektors ζ(s). Reference:
+*  https://medium.com/cantors-paradise/the-riemann-hypothesis-explained-fa01c1f75d3f
+*  
 *  ----------------------+-----+-----+-----+                                    ---
 *       7 --------- 1,2:1|   1 |  30 |  40 | 71 (2,3) ‹-------------@----        |
 *       |                +-----+-----+-----+-----+                        |      |
