@@ -461,7 +461,7 @@
 * - There is no 7th hexagon so 619 is landed on hexagon-1 as 0’
 * - Reference: https://www.hexspin.com/0-1-and-negative-numbers/
 *
-*  Part   | Leading     | Imajinary  | Lagging     | Imajinary
+*  Part   | i(Leading)  | j(Leading) | i(Lagging)  | j(Lagging)
 *  =======+=============+============+=============+============
 *  Step-1 |    2 to  68 |  71 to 150 |  150 to 118 | 121 to 100  <-- hexagon-1
 *  Step-2 |  102 to 168 | 171 to 250 |  250 to 218 | 221 to 200  <-- hexagon-2
