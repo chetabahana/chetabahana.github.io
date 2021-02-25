@@ -18,6 +18,7 @@
 *  https://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid
 *
 {%- endcomment -%}
+{%- assign my_prime = my_primes[my_pos] -%}
 {%- comment -%}
 *
 *  π(10) = 4
@@ -634,7 +635,6 @@
 * https://primes.utm.edu/howmany.html
 *
 {%- endcomment -%}
-{%- assign my_prime = my_primes[my_pos] -%}
 {%- comment -%}
 *
 * Here is my quote about prime numbers:
