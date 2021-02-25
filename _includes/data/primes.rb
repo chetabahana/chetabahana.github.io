@@ -1,3 +1,4 @@
+{%- assign my_prime = my_primes[my_pos] -%}
 {%- comment -%}
 * 
 *  Primes Mapping
@@ -18,7 +19,6 @@
 *  https://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid
 *
 {%- endcomment -%}
-{%- assign my_prime = my_primes[my_pos] -%}
 {%- comment -%}
 *
 *  π(10) = 4
