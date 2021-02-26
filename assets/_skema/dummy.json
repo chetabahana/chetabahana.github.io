@@ -1,1 +1,4 @@
+---
+layout: default
+---
 {% assign my_test = "ok" %}{{ my_test }}
