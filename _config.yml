@@ -59,22 +59,15 @@ form_engines:
 
 collections:
   feeds:
-    output: true
-    permalink: /:path
+    output: false
 
 defaults:
   -
     scope:
+      path: ""
       type: "feeds"
-      path: "section"
     values:
       layout: "feeds/section"
-  -
-    scope:
-      type: "feeds"
-      path: "section/skema"
-    values:
-      layout: null
 
 # Kramdown Options
 # https://kramdown.gettalong.org/options.html
