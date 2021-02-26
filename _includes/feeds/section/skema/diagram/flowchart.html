@@ -1,2 +1,2 @@
 {{ my_tab }}{{ my_tab }}{{ data.items[0] | jsonify }}{%- comment -%},
-{{ my_tab }}{{ my_tab }}{"feeds": {{ site.feeds | jsonify }}}{%- endcomment -%}
+{{ my_tab }}{{ my_tab }}{"assets": {{ site.collections | jsonify }}}{%- endcomment -%}

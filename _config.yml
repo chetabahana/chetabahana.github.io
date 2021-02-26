@@ -60,7 +60,7 @@ form_engines:
 collections:
   feeds:
     output: false
-  skema:
+  group:
     output: true
     permalink: /:categories/:short_year/:month/:day/:title:output_ext
 
