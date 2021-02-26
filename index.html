@@ -11,7 +11,7 @@ layout: default
 *  https://chetabahana.github.io/
 *
 {% endcomment %}
-{%- assign sections = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'section'" -%}
+{%- assign sections = site.collections | sort: 'weight' | where_exp:"item", "item.category == 'section'" -%}
 <!DOCTYPE html>
 <html lang="en">
     <head>
