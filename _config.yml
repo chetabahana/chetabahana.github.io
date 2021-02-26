@@ -67,8 +67,14 @@ defaults:
     scope:
       type: "feeds"
       path: "section"
-   values:
+    values:
       layout: "feeds/section"
+  -
+    scope:
+      type: "feeds"
+      path: "section/skema"
+    values:
+      layout: null
 
 # Kramdown Options
 # https://kramdown.gettalong.org/options.html
