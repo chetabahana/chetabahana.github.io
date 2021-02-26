@@ -60,7 +60,7 @@ form_engines:
 collections:
   feeds:
     output: false
-  object:
+  posts:
     permalink: /:categories/:short_year/:month/:day/:title:output_ext
 
 collections_dir: assets
