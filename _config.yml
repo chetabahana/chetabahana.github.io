@@ -60,6 +60,8 @@ form_engines:
 collections:
   feeds:
     output: false
+  skema:
+    permalink: /:path
 
 collections_dir: assets
 
