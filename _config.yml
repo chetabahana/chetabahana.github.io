@@ -113,7 +113,6 @@ flow_labels:
 # https://jekyllrb.com/docs/configuration/options/
 
 baseurl: ""
-title: My Feed
 user: chetabahana
 organization: marketleader
 url: https://chetabahana.github.io
@@ -124,6 +123,7 @@ json_link: https://chetabahana.github.io/feed.json
 # Site Metadata
 # https://help.github.com/articles/repository-metadata-on-github-pages/
 
+title: Project Feed
 name: Toko Chetabahana | Projek e-Shop di Indonesia
 slogan: Chetabahana Project - A Way To Win The Market
 description: We are providing an Integrated Open Source Project about The World of e-Commerce.
