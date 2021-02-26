@@ -61,7 +61,7 @@ collections:
   feeds:
     output: false
   skema:
-    permalink: /:title.json
+    permalink: /:path
 
 collections_dir: assets
 

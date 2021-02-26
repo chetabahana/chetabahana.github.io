@@ -1,4 +1,3 @@
 ---
-layout: null
 ---
 {% assign my_test = "ok" %}{{ my_test }}
