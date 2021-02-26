@@ -5,7 +5,7 @@ category: section
 {% comment %}
 *
 *  This layout loops through a collection called `feeds` and collect site data 
-*  permalink: /:categories/:year/:month/:day/:title/
+*  permalink: /:categories/:year/:month/:day/:title:output_ext
 *
 *  You may see the running code here:
 *  https://chetabahana.github.io/section/2018/05/12/dummy.json
