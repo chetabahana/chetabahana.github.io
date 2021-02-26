@@ -1,6 +1,6 @@
 ---
-layout: default
 category: diagram
+layout: feeds/section/skema
 ---
 {% comment %}
 *
