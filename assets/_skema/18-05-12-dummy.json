@@ -5,9 +5,9 @@ category: section
 {% comment %}
 *
 *  This layout loops through a collection called `feeds` and collect site data 
-*  permalink: /:categories/:year/:month/:day/:title:output_ext
+*  permalink: /:categories/:short_year/:month/:day/:title:output_ext
 *
 *  You may see the running code here:
-*  https://chetabahana.github.io/section/2018/05/12/dummy.json
+*  https://chetabahana.github.io/section/18/05/12/dummy.json
 *
 {% endcomment %}{%- include feeds/section.rb -%}
