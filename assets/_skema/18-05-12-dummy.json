@@ -1,6 +1,6 @@
 ---
 layout: default
-category: section
+category: diagram
 ---
 {% comment %}
 *
@@ -8,6 +8,6 @@ category: section
 *  permalink: /:categories/:short_year/:month/:day/:title:output_ext
 *
 *  You may see the running code here:
-*  https://chetabahana.github.io/section/18/05/12/dummy.json
+*  https://chetabahana.github.io/diagram/18/05/12/dummy.json
 *
 {% endcomment %}{%- include feeds/section.rb -%}
