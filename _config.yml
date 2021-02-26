@@ -65,9 +65,9 @@ collections:
 defaults:
   -
     scope:
-      path: ""
       type: "feeds"
-    values:
+      path: "section"
+   values:
       layout: "feeds/section"
 
 # Kramdown Options
