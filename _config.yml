@@ -62,7 +62,7 @@ collections:
     output: false
   skema:
     output: true
-    permalink: /:path
+    permalink: /:title.json
 
 collections_dir: assets
 
