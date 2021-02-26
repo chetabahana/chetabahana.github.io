@@ -62,7 +62,7 @@ collections:
     output: false
   skema:
     output: true
-    permalink: /:categories/:year/:month/:day/:title:output_ext
+    permalink: /:title.json
 
 collections_dir: assets
 
