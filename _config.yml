@@ -62,7 +62,7 @@ collections:
     output: false
   skema:
     output: true
-    permalink: pretty
+    permalink: /:title.html
 
 collections_dir: assets
 
