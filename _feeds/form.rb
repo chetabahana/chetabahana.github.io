@@ -3,6 +3,7 @@ myId: 32
 key: 29
 pos: 286
 weight: 2
+redirect_from: /form.json
 ---
 {%- comment -%}
 *  True Prime Pairs:
