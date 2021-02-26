@@ -1,5 +1,1 @@
-section
-type
-group
-class
-channel
+{% assign my_test = "ok" %}{{ my_test }}
