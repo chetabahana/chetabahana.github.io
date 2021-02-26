@@ -54,12 +54,17 @@ form_engines:
 - formspree
 - formbucket
 
-# Default Setting
-# https://jekyllrb.com/docs/configuration/front-matter-defaults/
+# Collections Setting
+# https://jekyllrb.com/docs/collections/
 
 collections:
   feeds:
     output: false
+
+collections_dir: assets
+
+# Default Setting
+# https://jekyllrb.com/docs/configuration/front-matter-defaults/
 
 defaults:
   -
