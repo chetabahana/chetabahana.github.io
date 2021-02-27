@@ -30,16 +30,6 @@ exclude:
   - Dockerfile
   - docker_compose.yml
 
-whitelist:
-  - jekyll-feed
-  - jekyll-coffeescript
-  - jekyll-redirect-from
-  
-plugins:
-  - jekyll-feed
-  - jekyll-coffeescript
-  - jekyll-redirect-from
-
 input_types:
 - text
 - textarea
@@ -55,6 +45,21 @@ form_engines:
 - formspree
 - formbucket
 
+# Plugins Setting
+# https://github.com/jekyll/jekyll-feed
+# https://en.wikipedia.org/wiki/CoffeeScript
+# https://github.com/jekyll/jekyll-redirect-from
+
+plugins:
+  - jekyll-feed
+  - jekyll-coffeescript
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-feed
+  - jekyll-coffeescript
+  - jekyll-redirect-from
+  
 # Default Setting
 # https://jekyllrb.com/docs/configuration/front-matter-defaults/
 

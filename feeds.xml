@@ -1,4 +1,0 @@
----
-navbar: false
----
-{% include feeds.xml %}
