@@ -4,7 +4,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/">
 <html>
 <body>
-  <h2>Project Feed</h2>
+  <h2>Project Feeds</h2>
   <table border="1">
     <tr bgcolor="#9acd32">
       <th>Title</th>
@@ -14,13 +14,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <tr>
       <td><xsl:value-of select="title"/></td>
       <xsl:choose>
-      <xsl:when test="price > 10">
+      <xsl:when test="updated > 10">
          <td bgcolor="#ff00ff">
-         <xsl:value-of select="link"/>
+         <xsl:value-of select="id"/>
          </td>
       </xsl:when>
       <xsl:otherwise>
-         <td><xsl:value-of select="link"/></td>
+         <td><xsl:value-of select="id"/></td>
       </xsl:otherwise>
       </xsl:choose>
     </tr>
