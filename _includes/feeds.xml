@@ -3,7 +3,6 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://www.w3.org/1999/xhtml"
     xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:xml="http://www.w3.org/XML/1998/namespace"
     elementFormDefault="qualified">
 
   <xs:annotation>
