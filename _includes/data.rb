@@ -2,7 +2,7 @@
 *
 *  collect asset
 *
-{% endcomment %}{% if page.redirect.from %}{% assign my_assign = site.leads %}{% assign asset = my_assign | where_exp:'item', 'item.redirect_from contains page.redirect.from' %}{% assign my_asset = asset[0] %}{% else %}{% assign my_asset = page %}{% endif %}{% comment %}
+{% endcomment %}{% assign my_assign = site.feeds %}{% if page.redirect.from %}{% assign my_assign = site.leads %}{% assign asset = my_assign | where_exp:'item', 'item.redirect_from contains page.redirect.from' %}{% assign my_asset = asset[0] %}{% else %}{% assign my_asset = page %}{% endif %}{% comment %}
 *
 *  collect property
 *
