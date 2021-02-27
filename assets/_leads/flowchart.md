@@ -1,4 +1,6 @@
 ---
+myId: 157
+weight: 1
 redirect_from:
   - /diagram.json
 category: diagram
