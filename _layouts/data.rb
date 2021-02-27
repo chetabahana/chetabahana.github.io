@@ -1,1 +1,4 @@
-{{ site.slogan | jsonify }}
+---
+layout: default
+---
+{%- include feeds/section.rb -%}

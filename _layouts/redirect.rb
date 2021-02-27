@@ -1,5 +1,5 @@
 ---
-layout: feeds/section/skema
+layout: data
 ---
 {% comment %}
 *
