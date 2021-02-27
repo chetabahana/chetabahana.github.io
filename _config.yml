@@ -61,6 +61,7 @@ collections:
   feeds:
     output: false
   posts:
+    output: false
     permalink: /:categories/:short_year/:month/:day/:title:output_ext
 
 collections_dir: assets
