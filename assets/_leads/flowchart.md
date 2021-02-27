@@ -4,7 +4,7 @@ weight: 1
 redirect_from:
   - /diagram.json
 category: diagram
-layout: feeds/section/skema
+
 ---
 {% comment %}
 *
