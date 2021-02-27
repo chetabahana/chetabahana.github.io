@@ -55,6 +55,17 @@ form_engines:
 - formspree
 - formbucket
 
+# Default Setting
+# https://jekyllrb.com/docs/configuration/front-matter-defaults/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "feeds"
+    values:
+      layout: "feeds/section"
+
 # Permalinks
 # https://jekyllrb.com/docs/permalinks/
 # https://chetabahana.github.io/object/05/132/2018/dummy.json
@@ -68,17 +79,6 @@ collections:
   replies:
     output: true
     permalink: /:path
-
-# Default Setting
-# https://jekyllrb.com/docs/configuration/front-matter-defaults/
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "feeds"
-    values:
-      layout: "feeds/section"
 
 # Kramdown Options
 # https://kramdown.gettalong.org/options.html
