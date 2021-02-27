@@ -65,6 +65,9 @@ collections:
   posts:
     output: false
     permalink: /:categories/:month/:y_day/:year/:title:output_ext
+  replies:
+    output: true
+    permalink: /:path
 
 # Default Setting
 # https://jekyllrb.com/docs/configuration/front-matter-defaults/
