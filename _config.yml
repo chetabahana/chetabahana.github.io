@@ -1,4 +1,4 @@
-# Jekyll Configuration
+# Configuration
 
 # General Settings
 # https://jekyllrb.com/docs/configuration/
@@ -6,6 +6,7 @@
 encoding: utf-8
 livereload: true
 timezone: Asia/Jakarta
+collections_dir: assets
 
 # Build Settings
 # https://jekyllrb.com/docs/configuration/options/
@@ -54,17 +55,15 @@ form_engines:
 - formspree
 - formbucket
 
-# Collections Setting
-# https://jekyllrb.com/docs/collections/
+# Permalinks
+# https://jekyllrb.com/docs/permalinks/
 
 collections:
   feeds:
     output: false
   posts:
     output: false
-    permalink: /:categories/:short_year/:month/:day/:title:output_ext
-
-collections_dir: assets
+    permalink: /:categories/:w_day/:week/:day/:y_day/:month/:short_year/:title:output_ext
 
 # Default Setting
 # https://jekyllrb.com/docs/configuration/front-matter-defaults/
