@@ -73,7 +73,7 @@ defaults:
 collections:
   feeds:
     output: false
-  replies:
+  leads:
     output: true
     permalink: /:path
   posts:
