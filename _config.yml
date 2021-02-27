@@ -73,12 +73,12 @@ defaults:
 collections:
   feeds:
     output: false
-  posts:
-    output: false
-    permalink: /:categories/:month/:y_day/:year/:title:output_ext
   replies:
     output: true
     permalink: /:path
+  posts:
+    output: false
+    permalink: /:categories/:month/:y_day/:year/:title:output_ext
 
 # Kramdown Options
 # https://kramdown.gettalong.org/options.html
