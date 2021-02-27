@@ -6,7 +6,7 @@
 *
 *  collect property
 *
-{% endcomment %}{% assign items = "" | split: "," %}{% assign my_size = my_feed.path | split: '/' | size | plus:1 %}{% assign my_path = my_feed.path | split: '/' | pop | join: '/' | append: '/' | append: my_feed.slug | append: '/' %}{% assign feeds = site.feeds | sort: 'weight' | where_exp:'item', 'item.path contains my_path' %}{% for feed in feeds %}{% assign feed_size = feed.path | split: '/' | size %}{% if feed_size == my_size %}{% assign items = items | push:feed %}{% endif %}{% endfor %}{"items": {{ items | jsonify  }}}{% comment %}
+{% endcomment %}{% assign items = "" | split: "," %}{% assign my_size = my_feed.path | split: '/' | size | plus:1 %}{% assign my_path = my_feed.path | split: '/' | pop | join: '/' | append: '/' | append: my_feed.slug | append: '/' %}{% assign feeds = site.feeds | sort: 'weight' | where_exp:'item', 'item.path contains my_path' %}{"feeds": {{ feeds | jsonify }}}{% for feed in feeds %}{% assign feed_size = feed.path | split: '/' | size %}{% if feed_size == my_size %}{% assign items = items | push:feed %}{% endif %}{% endfor %}{"items": {{ items | jsonify  }}}{% comment %}
 *
 *  collect mathed data
 *
