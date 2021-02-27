@@ -60,6 +60,13 @@ whitelist:
   - jekyll-coffeescript
   - jekyll-redirect-from
   
+feed:
+  tags: true
+  excerpt_only: true
+  collections:
+    feeds:
+      path: "/feeds.xml"
+      
 # Default Setting
 # https://jekyllrb.com/docs/configuration/front-matter-defaults/
 
