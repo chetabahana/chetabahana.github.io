@@ -1,4 +1,4 @@
-{% comment %}
+{%- comment -%}
 *
 *  This loop loops through all collection called `feeds` with category 'section'
 *  and sorts it by the front matter variable 'weight' and than render
@@ -7,7 +7,8 @@
 *  You may see the running code here:
 *  https://chetabahana.github.io/feed.json
 *
-{% endcomment %}{% include data.rb %}{% if page.path != 'index.html' and page.ext != '.md' %}{
+{%- endcomment -%}{%- if data == null -%}{%- include data.rb -%}{%- endif -%}
+{%- if page.path != 'index.html' and page.ext != '.md' -%}{
     "id": {% if data.id %}{{ data.id }}{% else %}{{ page.id }}{% endif %},
     "title": "{% if data.title %}{{ data.title | capitalize }} | {% endif %}Project Maps",
     "version": "https://jsonfeed.org/version/1.1",
