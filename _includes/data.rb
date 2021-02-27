@@ -2,7 +2,7 @@
 *
 *  collect feed
 *
-{% endcomment %}{"assets": {{ site.leads | json }}}{% if page.redirect.from %}{% assign feed = site.leads | where_exp:'item', 'item.redirect_from contains page.redirect.from' %}{% assign my_feed = feed[0] %}{% else %}{% assign my_feed = page %}{% endif %}{% comment %}
+{% endcomment %}{"assets": {{ site.leads[0] | jsonify  }}}{% if page.redirect.from %}{% assign feed = site.leads | where_exp:'item', 'item.redirect_from contains page.redirect.from' %}{% assign my_feed = feed[0] %}{% else %}{% assign my_feed = page %}{% endif %}{% comment %}
 *
 *  collect property
 *
