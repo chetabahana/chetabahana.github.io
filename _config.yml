@@ -63,6 +63,7 @@ defaults:
     scope:
       path: ""
       type: "feeds"
+      category: "section"
     values:
       layout: "feeds/section"
 
