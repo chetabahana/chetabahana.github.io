@@ -46,6 +46,7 @@ exclude:
   - docker_compose.yml
 
 # Plugins Setting
+# https://pages.github.com/versions/
 # https://github.com/jekyll/jekyll-feed
 # https://en.wikipedia.org/wiki/CoffeeScript
 # https://github.com/jekyll/jekyll-redirect-from
