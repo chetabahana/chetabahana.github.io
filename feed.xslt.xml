@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-<xsl:template match="entry">
-<html>
-<body>
+
+<xsl:template match="/">
+  <html>
+  <body>
   <h2>Project Feeds</h2>
-  <table border="1">
-    <tr bgcolor="#9acd32">
-      <th>Title</th>
-      <th>Link</th>
-    </tr>
-    <xsl:for-each select="entry">
-    <tr>
-      <td><xsl:value-of select="title"/></td>
-      <xsl:choose>
-      <xsl:when test="updated > 10">
-         <td bgcolor="#ff00ff">
-         <xsl:value-of select="id"/>
-         </td>
-      </xsl:when>
-      <xsl:otherwise>
-         <td><xsl:value-of select="id"/></td>
-      </xsl:otherwise>
-      </xsl:choose>
-    </tr>
-    </xsl:for-each>
-  </table>
-</body>
-</html>
+  <xsl:apply-templates/>
+  </body>
+  </html>
 </xsl:template>
+
+<xsl:template match="entry">
+  <p>
+  <xsl:apply-templates select="title"/>
+  <xsl:apply-templates select="id"/>
+  </p>
+</xsl:template>
+
+<xsl:template match="title">
+  Title: <span style="color:#ff0000">
+  <xsl:value-of select="."/></span>
+  <br />
+</xsl:template>
+
+<xsl:template match="id">
+  Artist: <span style="color:#00ff00">
+  <xsl:value-of select="."/></span>
+  <br />
+</xsl:template>
+
 </xsl:stylesheet>
