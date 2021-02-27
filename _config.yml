@@ -57,7 +57,7 @@ form_engines:
 
 # Permalinks
 # https://jekyllrb.com/docs/permalinks/
-# https://chetabahana.github.io/diagram/18/05/132/dummy.json
+# https://chetabahana.github.io/object/05/132/2018/dummy.json
 
 collections:
   feeds:
