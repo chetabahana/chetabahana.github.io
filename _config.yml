@@ -57,13 +57,14 @@ form_engines:
 
 # Permalinks
 # https://jekyllrb.com/docs/permalinks/
+# https://chetabahana.github.io/diagram/18/05/12/dummy.json
 
 collections:
   feeds:
     output: false
   posts:
     output: false
-    permalink: /:categories/:short_year/:month//:title:output_ext
+    permalink: /:categories/:short_year/:month//:y_day/:title:output_ext
 
 # Default Setting
 # https://jekyllrb.com/docs/configuration/front-matter-defaults/
