@@ -63,7 +63,7 @@ collections:
     output: false
   posts:
     output: false
-    permalink: /:categories/:w_day/:week/:day/:y_day/:month/:short_year/:title:output_ext
+    permalink: /:categories/:short_year/:month//:title:output_ext
 
 # Default Setting
 # https://jekyllrb.com/docs/configuration/front-matter-defaults/
