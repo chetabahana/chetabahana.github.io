@@ -2,7 +2,7 @@
 *
 *  collect feed
 *
-{% endcomment %}{% if page.redirect.from %}{% assign feed = site.leads | where_exp:'item', 'item.redirect_from contains page.redirect.from' %}{% assign my_feed = feed[0] %}{% else %}{% assign my_feed = page %}{% endif %}{{ my_feed }}{% comment %}
+{% endcomment %}{% if page.redirect.from %}{% assign feed = site.leads | where_exp:'item', 'item.redirect_from contains page.redirect.from' %}{% assign my_feed = feed[0] %}{% else %}{% assign my_feed = page %}{% endif %}{{ site.leads }}{% comment %}
 *
 *  collect property
 *
