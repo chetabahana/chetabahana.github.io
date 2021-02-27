@@ -11,6 +11,21 @@ collections_dir: assets
 # Build Settings
 # https://jekyllrb.com/docs/configuration/options/
 
+input_types:
+- text
+- textarea
+- email
+- date
+- checkbox
+- radio
+- number
+- submit
+
+form_engines:
+- cloudcannon
+- formspree
+- formbucket
+
 include:
   - .htaccess
   - feed.json
@@ -29,21 +44,6 @@ exclude:
   - node_modules
   - Dockerfile
   - docker_compose.yml
-
-input_types:
-- text
-- textarea
-- email
-- date
-- checkbox
-- radio
-- number
-- submit
-
-form_engines:
-- cloudcannon
-- formspree
-- formbucket
 
 # Plugins Setting
 # https://github.com/jekyll/jekyll-feed
