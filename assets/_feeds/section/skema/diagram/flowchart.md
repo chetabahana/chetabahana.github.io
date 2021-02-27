@@ -10,4 +10,6 @@ category: diagram
 value: [919,3,-1,-2]
 frame: [1,5,4,50,1]
 object: [1,15,17,20,24,29]
+redirect_from:
+  - /diagram.json
 ---
