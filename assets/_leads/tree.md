@@ -146,6 +146,6 @@ redirect_from:
 *  This layout loops through a collection called `feeds` and collect site data 
 *
 *  You may see the running code here:
-*  https://chetabahana.github.io//00000/diagram.json
+*  https://chetabahana.github.io/00000/diagram.json
 *
 {% endcomment %}
