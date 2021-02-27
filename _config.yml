@@ -75,7 +75,7 @@ collections:
   feeds:
     output: false
   leads:
-    output: true
+    output: false
     permalink: /:path
   posts:
     output: false
