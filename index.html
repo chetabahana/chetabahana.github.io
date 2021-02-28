@@ -13,7 +13,7 @@ layout: default
 {% endcomment %}
 {%- assign sections = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'section'" -%}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
     <head>
 {% for section in sections %}
 {{ section.output }}
