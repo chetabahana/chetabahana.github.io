@@ -91,7 +91,7 @@ collections:
   feeds:
     output: false
   leads:
-    output: true
+    output: false
     permalink: /:path
   posts:
     output: false
@@ -111,11 +111,12 @@ kramdown:
  
 # Custom Headers
 # https://jekyllrb.com/docs/configuration/webrick/
+# https://en.wikipedia.org/wiki/Content_Security_Policy
 
-# webrick:
-#   headers:
-#     My-Header: My-Value
-#     My-Other-Header: My-Other-Value
+webrick:
+  headers:
+    Content-Security-Policy: default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';
+#   My-Other-Header: My-Other-Value
 
 # Tags Setting
 # https://github.com/chetabahana/chetabahana.github.io/tags
