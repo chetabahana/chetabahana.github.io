@@ -2,3 +2,21 @@
 id: 169
 layout: feed
 ---
+{%- comment -%}
+*
+*  This layout loops through a collection called `feeds` and provide stylesheet 
+*  and page for inclusion to the project mapping via layout.
+*
+*  You may see the running code here:
+*  https://chetabahana.github.io/feed.xml
+*
+*  The Structure of a Feed
+*  The JSON Feed format as JSON Feed Version 1.1
+*  
+*  Reference:
+*  https://tools.ietf.org/html/rfc4287
+#  https://github.com/jekyll/jekyll-feed
+#  https://www.w3schools.com/xml/xsl_elementref.asp
+*  https://www.data2type.de/xml-xslt-xslfo/newsfeeds-rss-atom/referenz-atom-elemente/atom-link/
+*  
+{%- endcomment -%}
