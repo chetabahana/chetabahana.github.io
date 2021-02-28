@@ -25,7 +25,7 @@
 <xsl:template match="atom:feed/atom:entry">
       <TR>
         <TD><xsl:value-of select="atom:title"/></TD>              
-        <TD><A><xsl:attribute name="href"><xsl:value-of select="atom:link"/></xsl:attribute><xsl:value-of select="atom:id"/></A></TD>
+        <TD><A><xsl:attribute name="href"><xsl:value-of select="atom:link/@href"/></xsl:attribute><xsl:value-of select="atom:id"/></A></TD>
         <TD><xsl:value-of select="atom:published"/></TD>
       </TR>
       </xsl:template>
