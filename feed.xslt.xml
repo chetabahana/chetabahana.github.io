@@ -15,8 +15,12 @@ layout: feed
 *  
 *  Reference:
 *  https://tools.ietf.org/html/rfc4287
+*  https://ef.gy/serving-an-atom-bundle
 #  https://github.com/jekyll/jekyll-feed
+#  https://awasu.com/kb/content/URL_Rewriting.php
 #  https://www.w3schools.com/xml/xsl_elementref.asp
+*  https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ms762660(v=vs.85)
 *  https://www.data2type.de/xml-xslt-xslfo/newsfeeds-rss-atom/referenz-atom-elemente/atom-link/
+*  https://github.com/chetabahana/chetabahana.github.io/blob/Chetabahana/_layouts/feeds.xsl#L28
 *  
 {%- endcomment -%}
