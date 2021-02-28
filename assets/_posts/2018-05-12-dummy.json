@@ -1,11 +1,12 @@
 ---
 layout: data
+title: dummy
 category: object
 ---
 {% comment %}
 *
-*  This layout loops through a collection called `feeds` and collect site data 
-*  permalink: /:categories/:short_year/:month/:day/:title:output_ext
+*  This layout loops through a collection called `posts` and collect site data and configured
+*  with permalink: /:categories/:year/:y_day/:month/:hour/:minute/:second/:title:output_ext
 *
 *  You may see the running code here:
 *  https://chetabahana.github.io/object/05/132/2018/dummy.json

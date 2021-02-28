@@ -10,7 +10,7 @@
     <TABLE BORDER="2">
       <TR>
         <TD>Name</TD>
-        <TD>Id</TD>
+        <TD>Feed Id</TD>
         <TD>Published</TD>
       </TR>
       <xsl:apply-templates select="atom:feed/atom:entry">
