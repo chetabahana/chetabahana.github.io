@@ -61,11 +61,14 @@ whitelist:
   - jekyll-coffeescript
   - jekyll-redirect-from
   
+# Feed Setting
+# https://www.w3schools.com/xml/xsl_elementref.asp
+
 feed:
   tags: true
   excerpt_only: true
   collections:
-    feeds:
+    leads:
       path: "/feeds.xml"
       
 # Default Setting
