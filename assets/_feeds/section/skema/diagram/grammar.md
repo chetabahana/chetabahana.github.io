@@ -5,7 +5,7 @@ pos: 159
 link: 8
 weight: 3
 primes: 681
-type: grammar
+type: channel
 category: diagram
 value: [937,1,-1,-2]
 frame: [1,30,40,60,400,100,10,40]
