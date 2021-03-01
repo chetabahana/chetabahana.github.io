@@ -91,7 +91,7 @@ collections:
   feeds:
     output: false
   leads:
-    output: false
+    output: true
     permalink: /:path
   posts:
     output: false
