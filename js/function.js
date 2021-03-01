@@ -125,12 +125,12 @@ jQuery(function($)
                 juicerFeed();
             }
 
-        });*/
+        });
+        feed.run();*/
 
         // Ref: Cross-Origin Read Blocking (CORB)
         $('.theme').val('hand');
         draw.getJSON();
-        //feed.run();
 
     });
 
