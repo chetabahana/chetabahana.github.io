@@ -1,4 +1,5 @@
 ---
+layout: coffee
 ---
 # Assignment:
 number   = 42
