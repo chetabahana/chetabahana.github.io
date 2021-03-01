@@ -105,7 +105,7 @@ jQuery(function($)
     {
         // unbind external link
         $('.external-link').unbind('click');
-
+        /*
         var feed = new Instafeed(
         {
             get: 'user',
@@ -125,7 +125,7 @@ jQuery(function($)
                 juicerFeed();
             }
 
-        });
+        });*/
 
         // Ref: Cross-Origin Read Blocking (CORB)
         $('.theme').val('hand');
