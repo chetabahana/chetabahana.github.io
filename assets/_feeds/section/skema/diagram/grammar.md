@@ -1,10 +1,10 @@
 ---
-myId: 159
-key: 101
-pos: 159
+myId: 160
+key: 91
+pos: 150
 link: 8
 weight: 4
-primes: 681
+primes: 299
 type: grammar
 category: diagram
 value: [937,1,-1,-2]
