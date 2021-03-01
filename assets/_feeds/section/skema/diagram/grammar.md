@@ -5,40 +5,40 @@ pos: 159
 link: 8
 weight: 3
 primes: 681
-type: channel
+type: grammar
 category: diagram
 value: [937,1,-1,-2]
 frame: [1,30,40,60,400,100,10,40]
 object: [1,5,10,17,24]
 redirect_from:
-  - /000/diagram.json
-  - /001/diagram.json
-  - /002/diagram.json
-  - /003/diagram.json
-  - /004/diagram.json
-  - /005/diagram.json
-  - /006/diagram.json
-  - /007/diagram.json
-  - /008/diagram.json
-  - /009/diagram.json
-  - /010/diagram.json
-  - /011/diagram.json
-  - /012/diagram.json
-  - /013/diagram.json
-  - /014/diagram.json
-  - /015/diagram.json
-  - /016/diagram.json
-  - /017/diagram.json
-  - /018/diagram.json
-  - /019/diagram.json
-  - /020/diagram.json
-  - /021/diagram.json
-  - /022/diagram.json
-  - /023/diagram.json
-  - /024/diagram.json
-  - /025/diagram.json
-  - /026/diagram.json
-  - /027/diagram.json
-  - /028/diagram.json
-  - /999/diagram.json
+  - /00/diagram.json
+  - /01/diagram.json
+  - /02/diagram.json
+  - /03/diagram.json
+  - /04/diagram.json
+  - /05/diagram.json
+  - /06/diagram.json
+  - /07/diagram.json
+  - /08/diagram.json
+  - /09/diagram.json
+  - /10/diagram.json
+  - /11/diagram.json
+  - /12/diagram.json
+  - /13/diagram.json
+  - /14/diagram.json
+  - /15/diagram.json
+  - /16/diagram.json
+  - /17/diagram.json
+  - /18/diagram.json
+  - /19/diagram.json
+  - /20/diagram.json
+  - /21/diagram.json
+  - /22/diagram.json
+  - /23/diagram.json
+  - /24/diagram.json
+  - /25/diagram.json
+  - /26/diagram.json
+  - /27/diagram.json
+  - /28/diagram.json
+  - /29/diagram.json
 ---
