@@ -1,6 +1,3 @@
----
-layout: default
----
 {%- comment -%}
 *
 *  Jekyll provides built-in support for Sass and can work with 
