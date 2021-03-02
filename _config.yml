@@ -89,10 +89,11 @@ defaults:
 # https://chetabahana.github.io/object/2018/132/05/00/00/00/dummy.json
 
 collections:
+  feeds:
+    sort_by: id
   leads:
     output: true
-  feeds:
-    sort_by: myId
+    redirect_from: /:name.json
   posts:
     permalink: /:categories/:year/:y_day/:month/:hour/:minute/:second/:title:output_ext
 
