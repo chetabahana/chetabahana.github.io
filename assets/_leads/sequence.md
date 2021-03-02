@@ -1,5 +1,5 @@
 ---
-myId: 358
+redirect_from: /sequence.json
 ---
 {% comment %}
 *

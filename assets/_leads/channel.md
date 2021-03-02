@@ -1,5 +1,5 @@
 ---
-myId: 360
+redirect_from: /channel.json
 ---
 {% comment %}
 *

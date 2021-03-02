@@ -1,5 +1,5 @@
 ---
-myId: 359
+redirect_from: /grammar.json
 ---
 {% comment %}
 *
