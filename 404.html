@@ -13,14 +13,20 @@ permalink: /404.html
 <html lang="id">
     <head>
         <style type="text/css">
-        .centerImage
-        {
-         text-align:center;
-         display:block;
-        }
+            body {
+              margin: 0;
+            }
+            .image-container {
+                display: flex;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+            }        
         </style>
     </head>
     <body>
-        <img src="/images/404-page.png" alt="Page not found!" class="centerImage">
+        <div class="image-container">
+            <img src="/images/404-page.png" alt="Page not found!"  width="700px" class="centerImage">
+        </div>
     </body>
 </html>
