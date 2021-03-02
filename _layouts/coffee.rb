@@ -3,6 +3,7 @@
 *  Jekyll provides built-in support for Sass and can work with CoffeeScript via a Ruby gem.
 *  https://jekyllrb.com/docs/assets/
 *  https://coffeescript.org/#modules
+*  https://coffeescript.org/announcing-coffeescript-2/
 *
 *  You may see the running code here:
 *  https://chetabahana.github.io/try.js
