@@ -72,6 +72,7 @@ feed:
       path: "/feeds.xml"
       
 # Default Setting
+# https://jekyllrb.com/docs/collections/
 # https://jekyllrb.com/docs/configuration/front-matter-defaults/
 
 defaults:
@@ -90,12 +91,13 @@ defaults:
 collections:
   feeds:
     output: false
+    sort_by: myId
   leads:
     output: true
     permalink: /:path
   posts:
     output: false
-    permalink: /:categories/:year/:y_day/:month/:hour/:minute/:second/test.xml
+    permalink: /:categories/:year/:y_day/:month/:hour/:minute/:second/:title:output_ext
 
 # Kramdown Options
 # https://kramdown.gettalong.org/options.html
