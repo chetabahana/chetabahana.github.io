@@ -1,7 +1,6 @@
-# Configuration
-
 # General Settings
 # https://jekyllrb.com/docs/configuration/
+# https://learn.cloudcannon.com/jekyll-cheat-sheet/
 
 encoding: utf-8
 livereload: true
@@ -72,6 +71,7 @@ feed:
       path: "/feeds.xml"
       
 # Default Setting
+# https://stackoverflow.com/a/49428493
 # https://jekyllrb.com/docs/collections/
 # https://jekyllrb.com/docs/configuration/front-matter-defaults/
 
