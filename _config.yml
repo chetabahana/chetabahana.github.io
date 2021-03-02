@@ -90,13 +90,11 @@ defaults:
 
 collections:
   feeds:
-    output: false
     sort_by: myId
   leads:
     output: true
     permalink: /:path
   posts:
-    output: false
     permalink: /:categories/:year/:y_day/:month/:hour/:minute/:second/:title:output_ext
 
 # Kramdown Options
