@@ -1,5 +1,5 @@
 ---
-redirect_from: /flowchart.vml
+redirect_from: /flowchart.xml
 ---
 {% comment %}
 *
