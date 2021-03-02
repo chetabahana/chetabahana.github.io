@@ -1,6 +1,7 @@
 ---
 redirect_from:
   - /diagram.json
+  - /flowchart.json
 category: diagram
 ---
 {% comment %}
