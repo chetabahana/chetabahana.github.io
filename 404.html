@@ -10,23 +10,20 @@ permalink: /404.html
 *
 {%- endcomment -%}
 <!DOCTYPE html>
-<html lang="id">
+<html style="height: 100%;">
     <head>
+        <meta name="viewport" content="width=device-width, minimum-scale=0.1">
+        <title>Page not found</title>
         <style type="text/css">
             body {
-              margin: 0;
+                margin: 0px; background: #0e0e0e; height: 100%;
             }
             .image-container {
-                display: flex;
-                height: 100vh;
-                justify-content: center;
-                align-items: center;
+                -webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;
             }        
         </style>
     </head>
     <body>
-        <div class="image-container">
-            <img src="/images/404-page.png" alt="Page not found!"  width="700px" class="centerImage">
-        </div>
+        <img alt="Page not found!" src="https://chetabahana.github.io/images/404-page.png" class="image-container">
     </body>
 </html>
