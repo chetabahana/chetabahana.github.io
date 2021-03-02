@@ -95,7 +95,7 @@ collections:
     permalink: /:path
   posts:
     output: false
-    permalink: /:categories/:year/:y_day/:month/:hour/:minute/:second/:title/node.json
+    permalink: /:categories/:year/:y_day/:month/:hour/:minute/:second/:title/node.xml
 
 # Kramdown Options
 # https://kramdown.gettalong.org/options.html
