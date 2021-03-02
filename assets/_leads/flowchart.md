@@ -1,5 +1,4 @@
 ---
-category: diagram
 redirect_from:
   - /flowchart.json
 ---
