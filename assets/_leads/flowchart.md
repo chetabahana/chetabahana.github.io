@@ -1,6 +1,5 @@
 ---
-redirect_from:
-   - /flowchart.json
+redirect_from: /flowchart.json
 ---
 {% comment %}
 *

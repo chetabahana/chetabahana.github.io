@@ -85,7 +85,7 @@ defaults:
 # Permalinks
 # https://jekyllrb.com/docs/permalinks/
 # https://chetabahana.github.io/diagram.json
-# https://chetabahana.github.io/object/05/132/2018/dummy.json
+# https://chetabahana.github.io/object/2018/132/05/00/00/00/dummy.json
 
 collections:
   feeds:
