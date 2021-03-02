@@ -1,5 +1,5 @@
 ---
-myId: 357
+redirect_from: /flowchart.json
 ---
 {% comment %}
 *
