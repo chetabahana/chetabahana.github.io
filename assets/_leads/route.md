@@ -1,5 +1,5 @@
 ---
-myId: 361
+redirect_from: /route.json
 ---
 {% comment %}
 *

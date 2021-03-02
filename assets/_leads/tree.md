@@ -1,5 +1,5 @@
 ---
-myId: 362
+redirect_from: /tree.json
 ---
 {% comment %}
 *
