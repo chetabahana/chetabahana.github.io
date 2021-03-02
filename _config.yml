@@ -61,6 +61,7 @@ whitelist:
   - jekyll-redirect-from
   
 # Feed Setting
+# https://jekyllrb.com/docs/variables/
 # https://www.w3schools.com/xml/xsl_elementref.asp
 
 feed:
