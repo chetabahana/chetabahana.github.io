@@ -1,6 +1,5 @@
 ---
-redirect_from:
-  - /route.json
+redirect_from: /route.json
 ---
 {% comment %}
 *

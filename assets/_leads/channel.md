@@ -1,6 +1,5 @@
 ---
-redirect_from:
-  - /channel.json
+redirect_from: /channel.json
 ---
 {% comment %}
 *

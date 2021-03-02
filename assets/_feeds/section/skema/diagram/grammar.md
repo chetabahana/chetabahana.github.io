@@ -10,6 +10,5 @@ category: diagram
 value: [937,1,-1,-2]
 frame: [1,30,40,60,400,100,10,40]
 object: [1,5,10,17,24]
-redirect_from:
-  - /grammar.json
+redirect_from: /grammar.json
 ---

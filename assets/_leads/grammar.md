@@ -1,6 +1,5 @@
 ---
-redirect_from:
-  - /grammar.json
+redirect_from: /grammar.json
 ---
 {% comment %}
 *

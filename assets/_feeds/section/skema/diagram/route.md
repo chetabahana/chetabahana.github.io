@@ -9,6 +9,5 @@ category: diagram
 value: [947,0,1,-2]
 frame: [10,6,40]
 object: [1,4,6,9,13,14]
-redirect_from:
-  - /route.json
+redirect_from: /route.json
 ---

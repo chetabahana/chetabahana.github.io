@@ -1,6 +1,5 @@
 ---
-redirect_from:
-  - /tree.json
+redirect_from: /tree.json
 ---
 {% comment %}
 *

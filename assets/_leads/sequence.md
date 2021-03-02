@@ -1,6 +1,5 @@
 ---
-redirect_from:
-  - /sequence.json
+redirect_from: /sequence.json
 ---
 {% comment %}
 *
