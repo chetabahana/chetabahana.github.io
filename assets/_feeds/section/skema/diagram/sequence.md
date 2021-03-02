@@ -10,5 +10,4 @@ category: diagram
 value: [929,2,-1,-2]
 frame: [1,30,90,200,9]
 object: [1,4,13,22]
-redirect_from: /sequence.json
 ---
