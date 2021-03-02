@@ -2,7 +2,7 @@
 *
 *  collect feed
 *
-{% endcomment %}{% if page.redirect.from %}{{ page.slug | jsonify }}{% assign feed = site.feeds | where_exp:'item', 'item.path contains page.slug' %}{% assign my_feed = feed[0] %}{% else %}{% assign my_feed = page %}{% endif %}{% comment %}
+{% endcomment %}{% if page.redirect.from %}{{ page.name | jsonify }}{{ page.id | jsonify }}{% assign feed = site.feeds | where_exp:'item', 'item.path contains page.slug' %}{% assign my_feed = feed[0] %}{% else %}{% assign my_feed = page %}{% endif %}{% comment %}
 *
 *  collect property
 *
