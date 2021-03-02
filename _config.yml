@@ -93,7 +93,6 @@ collections:
   feeds:
     sort_by: id
   leads:
-    output: true
     redirect_from: /:title.json
   posts:
     permalink: /:categories/:year/:y_day/:month/:hour/:minute/:second/:title:output_ext
