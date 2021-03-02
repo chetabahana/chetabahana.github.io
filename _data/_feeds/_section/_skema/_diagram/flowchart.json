@@ -49,7 +49,8 @@
                 "link": "https://en.wikipedia.org/wiki/Centered_hexagonal_number",
                 "file": "https://techdows.com/2016/02/notepad-6-9-adds-folder-as-workspace.html",
                 "from": "https://marketleader.github.io/Cloud-Site-API/",
-                "to": "http://chetabahana.github.io/raphael/"
+                "to": "http://chetabahana.github.io/raphael/",
+                "docs": "https://medium.com/cantors-paradise/the-riemann-hypothesis-explained-fa01c1f75d3f"
             },
             "skema": "st=>start: Get|past\ne=>end: Set|past\nop1=>operation: Input|future\nop2=>operation: Output|future\nsub1=>subroutine: Let Query|current\nsub2=>subroutine: Let Result|current\nuji1=>condition: Uji Query|rejected\nuji2=>condition: Uji Result|approved\nio1=>inputoutput: Fix Query|invalid\nio2=>parallel: Fix Result|invalid\nst->op1(right)->sub1\nsub1(right)->uji1(yes, right)->sub2\nuji1(no)->io1(left)->sub1\nsub2->uji2(yes, right)->op2\nuji2(no)->io2(path1, left)->io1\nio2(path2, right)->sub2\nop2->e\n"
         }
