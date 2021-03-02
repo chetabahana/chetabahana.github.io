@@ -1,5 +1,5 @@
 ---
-weight: 1
+redirect_from: /flowchart.json
 ---
 {% comment %}
 *
