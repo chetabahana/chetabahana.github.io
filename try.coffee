@@ -3,7 +3,8 @@ layout: coffee
 # https://www.google.com/search?q=es2015+modules+coffeescript
 # https://medium.com/@atilafassina/es2015-modules-101-d9977dc4d4c7*
 ---
-import './local-file.coffee'
+require 'coffeescript/register'
+App = require './app
 import 'coffeescript'
 
 import _ from 'underscore'
