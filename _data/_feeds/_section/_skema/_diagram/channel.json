@@ -9,7 +9,7 @@
                 "file": "https://chetabahana.github.io/channel/samples/classHierarchy.html",
                 "from": "https://chetabahana.github.io/channel/samples/parseTree.html",
                 "to": "https://chetabahana.github.io/channel/samples/ldLayout.html",
-                "docs": "https://chetabahana.github.io/styles/skema/build.xml"
+                "docs": "https://chetabahana.github.io/styles/skema/xsl/XSLTdocConfig.xml"
             },
             "style": [
                 { "key": "Alpha", "color": "lightblue" },
