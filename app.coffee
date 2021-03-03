@@ -1,7 +1,7 @@
 ---
 # https://www.google.com/search?q=es2015+modules+coffeescript
-# https://stackoverflow.com/questions/19716696/cant-require-local-coffeescript-modules
+# https://github.com/jashkenas/coffeescript/blob/cc1b056b03a12ada575efdeb7b2a930f51eae33d/src/browser.coffee#L6
 ---
-CoffeeScript = require 'coffeescript/register'
+CoffeeScript = require './coffee-script'
 console.log(CoffeeScript)
 eval CoffeeScript.compile 'console.log "Mmmmm, I could really go for some #{Math.pi}"'
