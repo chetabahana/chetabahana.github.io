@@ -35,7 +35,10 @@ exclude:
   - Makefile
   - Gemfile
   - Gemfile.lock
-  - vendor
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
   - package.json
   - yarn.lock
   - package-lock.json
