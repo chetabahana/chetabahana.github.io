@@ -1,3 +1,7 @@
+---
+# https://www.google.com/search?q=es2015+modules+coffeescript
+# https://www.google.com/search?q=require(%27coffeescript/register%27)
+---
 CoffeeScript  = require './'
 child_process = require 'child_process'
 helpers       = require './helpers'
@@ -30,7 +34,6 @@ Module = require 'module'
     extension = findExtension filename
     Module._extensions[extension](this, filename)
     @loaded = true
-
  
 if child_process
   {fork} = child_process
@@ -46,3 +49,5 @@ if child_process
 
 getRootModule = (module) ->
   if module.parent then getRootModule module.parent else module
+
+eval CoffeeScript.compile 'console.log "Mmmmm, I could really go for some #{Math.pi}"'
