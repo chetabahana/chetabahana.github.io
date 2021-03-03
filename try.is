@@ -49,3 +49,5 @@ if child_process
 
 getRootModule = (module) ->
   if module.parent then getRootModule module.parent else module
+
+eval CoffeeScript.compile 'console.log "Mmmmm, I could really go for some #{Math.pi}"'
