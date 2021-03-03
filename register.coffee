@@ -1,9 +1,9 @@
 ---
 # https://www.google.com/search?q=es2015+modules+coffeescript
-# https://stackoverflow.com/questions/31606941/node-js-coffeescript-and-compiled-js-files
+# https://stackoverflow.com/questions/19716696/cant-require-local-coffeescript-modules
 ---
+require 'coffeescript/register'
 CoffeeScript = require 'coffeescript'
-CoffeeScript.register()
 
 require './src/main'
 console.log(CoffeeScript)
