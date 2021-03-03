@@ -8,7 +8,8 @@
                 "link": "https://chetabahana.github.io/channel/learn/index.html",
                 "file": "https://chetabahana.github.io/channel/samples/classHierarchy.html",
                 "from": "https://chetabahana.github.io/channel/samples/parseTree.html",
-                "to": "https://chetabahana.github.io/channel/samples/ldLayout.html"
+                "to": "https://chetabahana.github.io/channel/samples/ldLayout.html",
+                "docs": "https://chetabahana.github.io/styles/skema/build.xml"
             },
             "style": [
                 { "key": "Alpha", "color": "lightblue" },
