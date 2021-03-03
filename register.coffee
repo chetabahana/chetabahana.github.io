@@ -1,6 +1,6 @@
 ---
 # https://www.google.com/search?q=es2015+modules+coffeescript
-# https://www.google.com/search?q=require(%27coffeescript/register%27)
+# https://stackoverflow.com/questions/19716696/cant-require-local-coffeescript-modules
 ---
 CoffeeScript  = require './'
 child_process = require 'child_process'
@@ -49,5 +49,3 @@ if child_process
 
 getRootModule = (module) ->
   if module.parent then getRootModule module.parent else module
-
-eval CoffeeScript.compile 'console.log "Mmmmm, I could really go for some #{Math.pi}"'
