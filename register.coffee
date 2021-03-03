@@ -3,4 +3,4 @@
 # https://stackoverflow.com/questions/19716696/cant-require-local-coffeescript-modules
 ---
 require 'coffeescript/register'
-App = require './app'
+CoffeeScript = require 'coffeescript'
