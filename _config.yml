@@ -31,6 +31,7 @@ include:
   - feed.json
   - .htaccess
   - node_modules
+  - package.json
 
 exclude:
   - Gemfile
@@ -39,7 +40,6 @@ exclude:
   - yarn.lock
   - Dockerfile
   - Gemfile.lock
-  - package.json
   - vendor/ruby/
   - vendor/gems/
   - vendor/cache/
