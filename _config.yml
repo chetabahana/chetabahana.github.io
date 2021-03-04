@@ -9,7 +9,6 @@ collections_dir: assets
 
 # Build Settings
 # https://jekyllrb.com/docs/configuration/options/
-# https://jekyllrb.com/docs/troubleshooting/#configuration-problems
 
 input_types:
 - text
@@ -28,21 +27,20 @@ form_engines:
 
 include:
   - .htaccess
-  - node_modules
+  - feed.json
+  - feed.xml
 
 exclude:
   - .babelrc
   - Makefile
   - Gemfile
   - Gemfile.lock
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+  - vendor
   - package.json
   - yarn.lock
   - package-lock.json
   - webpack.config.js
+  - node_modules
   - Dockerfile
   - docker_compose.yml
 
@@ -105,7 +103,6 @@ collections:
 
 highlighter: rouge
 markdown: kramdown
-excerpt_separator: ""
 
 kramdown:
   html_to_native: true
