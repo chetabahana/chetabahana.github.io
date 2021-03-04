@@ -18,13 +18,13 @@ Main Code: []()
 1. [ ] GraphQL schema and type definitions are up to date.
 1. [ ] Changes are mentioned in the changelog.
 
-### Screenshots
-<!-- If your changes affect the UI, providing "before" and "after" screenshots will
-greatly reduce the amount of work needed to review your work. -->
-
 ### Reference
 <!-- Put some necessary link for referrence of the PR  -->
 
 - []()
 - []()
 - []()
+
+### Screenshots
+<!-- If your changes affect the UI, providing "before" and "after" screenshots will
+greatly reduce the amount of work needed to review your work. -->
