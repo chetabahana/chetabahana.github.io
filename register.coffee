@@ -3,6 +3,7 @@
 # http://nickdesaulniers.github.io/blog/2013/08/28/making-great-node-dot-js-modules-with-coffeescript/
 ---
 require 'coffee-script/register'
+console.log(coffee-script)
+
 App = require './app'
-console.log(typeof App)
 console.log(App)
