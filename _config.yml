@@ -26,9 +26,9 @@ form_engines:
 - formbucket
 
 include:
-  - .htaccess
-  - feed.json
   - feed.xml
+  - feed.json
+  - .htaccess
   - node_modules
 
 exclude:
@@ -36,7 +36,10 @@ exclude:
   - Makefile
   - Gemfile
   - Gemfile.lock
-  - vendor
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
   - package.json
   - yarn.lock
   - package-lock.json
