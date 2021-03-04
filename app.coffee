@@ -1,10 +1,6 @@
 ---
-# https://coffeescript.org/#nodejs-usage
-# https://github.com/jashkenas/coffeescript/blob/cc1b056b03a12ada575efdeb7b2a930f51eae33d/src/browser.coffee#L6
+# https://stackoverflow.com/questions/17729871/node-js-coffeescript-issues-with-requiring-modules
+# http://nickdesaulniers.github.io/blog/2013/08/28/making-great-node-dot-js-modules-with-coffeescript/
 ---
-class MyModule
-
-  myFunction : () ->
-    console.log("debugging hello world!")
-
-module.exports = MyModule
+CoffeeScript = require 'coffee-script'
+console.log(CoffeeScript)

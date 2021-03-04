@@ -26,6 +26,7 @@ form_engines:
 - formbucket
 
 include:
+  - app.js
   - feed.xml
   - feed.json
   - .htaccess
