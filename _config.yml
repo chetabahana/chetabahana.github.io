@@ -32,19 +32,19 @@ include:
   - node_modules
 
 exclude:
+  - Gemfile
   - .babelrc
   - Makefile
-  - Gemfile
-  - Gemfile.lock
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - package.json
   - yarn.lock
+  - Dockerfile
+  - Gemfile.lock
+  - package.json
+  - vendor/ruby/
+  - vendor/gems/
+  - vendor/cache/
+  - vendor/bundle/
   - package-lock.json
   - webpack.config.js
-  - Dockerfile
   - docker_compose.yml
 
 # Plugins Setting
