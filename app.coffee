@@ -4,4 +4,5 @@
 ---
 require 'coffee-script/register'
 CoffeeScript = require 'coffee-script'
+
 console.log(CoffeeScript)
