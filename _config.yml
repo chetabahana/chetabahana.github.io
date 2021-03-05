@@ -115,7 +115,7 @@ highlighter: rouge
 markdown: kramdown
 
 kramdown:
-  html_to_native: false
+  html_to_native: true
   syntax_highlighter: pygments
   math_engine_opts configuration: mathjax
  
