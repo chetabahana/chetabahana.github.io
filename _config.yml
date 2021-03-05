@@ -103,7 +103,7 @@ feed:
   excerpt_only: true
   collections:
     leads:
-      path: "/feeds.xml"
+      path: "/leads.xml"
 
 # Kramdown Options
 # https://kramdown.gettalong.org/options.html
