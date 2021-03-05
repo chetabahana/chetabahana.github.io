@@ -98,7 +98,7 @@ collections:
   leads:
     output: true
   feeds:
-    permalink: /:title:output_ext
+    permalink: /:path
   posts:
     permalink: /:categories/:year/:y_day/:month/:hour/:minute/:second/:title:output_ext
 
