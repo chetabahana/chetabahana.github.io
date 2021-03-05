@@ -1,9 +1,8 @@
 ---
-weight: 2
-host: "Kelola Situs Toko"
-href: "Google-Sites-API"
+weight: 1
 title: "objective"
-link: "https://chetabahana.blogspot.com/"
-src: "PLYRlcwn4Yj9e2EI26CQwkdEGXk-rBQvvF"
+src: images/leaf.png
+href: https://github.com/MarketLeader/marketleader.github.io/wiki
+link: https://marketleader.github.io/
 ---
-Fase kedua adalah mebampilkan barang yang sudah dipilih kedalam ke situs online. Dalam hal ini kita manfaatkan fasilitas dari Google Sites. Sebelum data dimasukan maka kita perlu melakukan analisa dan koreksi atribut barang. [...]
+Keberhasilan jual beli online adalah sama dengam bisnis lain, bukan tergantung besarnya promosi atau murahnya barang, tapi strategi untuk bisa menjangkau pelanggan lebih cepat dan beri pelayanan secara tepat. Projek ini akan fokus kepada pengembangan dari teknik dan metoda yang diambil untuk memperoleh strategi yang paling akurat untuk dijalankan guna peroleh hasil yang paling optimal.
