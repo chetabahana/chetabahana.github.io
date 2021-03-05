@@ -79,7 +79,7 @@ defaults:
 
 # Permalinks
 # https://jekyllrb.com/docs/permalinks/
-# feeds: https://chetabahana.github.io/fe.json
+# feeds: https://chetabahana.github.io/feed.json
 # leads: https://chetabahana.github.io/flowchart.json
 # posts: https://chetabahana.github.io/object/2018/132/05/00/00/00/dummy.json
 
