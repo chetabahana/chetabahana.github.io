@@ -45,6 +45,7 @@
                         }
             },
             "guide": {
+                "xml": "/leads.xml",
                 "js": "flowchart/flowchart-latest.js",
                 "link": "https://en.wikipedia.org/wiki/Centered_hexagonal_number",
                 "file": "https://techdows.com/2016/02/notepad-6-9-adds-folder-as-workspace.html",
