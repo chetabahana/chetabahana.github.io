@@ -64,17 +64,6 @@ whitelist:
   - jekyll-coffeescript
   - jekyll-redirect-from
   
-# Feed Setting
-# https://jekyllrb.com/docs/variables/
-# https://www.w3schools.com/xml/xsl_elementref.asp
-
-feed:
-  tags: true
-  excerpt_only: true
-  collections:
-    leads:
-      path: "/feeds.xml"
-      
 # Default Setting
 # https://stackoverflow.com/a/49428493
 # https://jekyllrb.com/docs/collections/
@@ -101,6 +90,17 @@ collections:
     permalink: /:path
   posts:
     permalink: /:categories/:year/:y_day/:month/:hour/:minute/:second/:title:output_ext
+
+# Feed Setting
+# https://jekyllrb.com/docs/variables/
+# https://www.w3schools.com/xml/xsl_elementref.asp
+
+feed:
+  tags: true
+  excerpt_only: true
+  collections:
+    feeds:
+      path: "/feeds.xml"
 
 # Kramdown Options
 # https://kramdown.gettalong.org/options.html
