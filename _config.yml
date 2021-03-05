@@ -86,10 +86,11 @@ defaults:
 # posts: https://chetabahana.github.io/object/2018/132/05/00/00/00/dummy.json
 
 collections:
+  feeds:
+    output: true
   leads:
     output: true
-  feeds:
-    permalink: /:categories/:title:output_ext
+    permalink: /feeds/:title:output_ext
   posts:
     permalink: /:categories/:year/:y_day/:month/:hour/:minute/:second/:title:output_ext
 
