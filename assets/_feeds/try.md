@@ -1,0 +1,4 @@
+---
+permalink: /try.html
+---
+try
