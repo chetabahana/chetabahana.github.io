@@ -102,7 +102,7 @@ feed:
   posts_limit: 618
   excerpt_only: true
   collections:
-    posts:
+    leads:
       path: "/feeds.xml"
 
 # Kramdown Options
