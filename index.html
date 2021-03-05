@@ -16,6 +16,7 @@ layout: default
 <html lang="id">
     <head>
 {% for section in sections %}
+{{ section.path }}
 {{ section.output }}
 {% endfor %}
     </body>
