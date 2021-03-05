@@ -99,7 +99,7 @@ feed:
   tags: true
   excerpt_only: true
   collections:
-    feeds:
+    leads:
       path: "/feeds.xml"
 
 # Kramdown Options
