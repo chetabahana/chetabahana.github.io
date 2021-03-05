@@ -102,6 +102,8 @@ feed:
   posts_limit: 618
   excerpt_only: true
   collections:
+    feeds:
+      path: "/feeds.xml"
     leads:
       path: "/leads.xml"
 
