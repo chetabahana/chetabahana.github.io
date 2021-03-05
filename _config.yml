@@ -91,8 +91,7 @@ collections:
   feeds:
     permalink: /:path
   posts:
-    permalink: /feeds/:name
-# /:categories/:year/:y_day/:month/:hour/:minute/:second/:title:output_ext
+    permalink: /:categories/:year/:y_day/:month/:hour/:minute/:second/:title:output_ext
 
 # Feed Setting
 # https://jekyllrb.com/docs/variables/
