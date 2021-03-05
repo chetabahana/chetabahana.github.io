@@ -64,6 +64,65 @@ whitelist:
   - jekyll-coffeescript
   - jekyll-redirect-from
   
+# Default Setting
+# https://stackoverflow.com/a/49428493
+# https://jekyllrb.com/docs/collections/
+# https://jekyllrb.com/docs/configuration/front-matter-defaults/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "feeds"
+    values:
+      layout: "feeds/section"
+
+# Permalinks
+# https://jekyllrb.com/docs/permalinks/
+# feeds: https://chetabahana.github.io/feed.json
+# leads: https://chetabahana.github.io/flowchart.json
+# posts: https://chetabahana.github.io/object/2018/132/05/00/00/00/dummy.json
+
+collections:
+  leads:
+    output: true
+  feeds:
+    permalink: /:path
+  posts:
+    permalink: /:categories/:year/:y_day/:month/:hour/:minute/:second/:title:output_ext
+
+# Feed Setting
+# https://jekyllrb.com/docs/variables/
+# https://www.w3schools.com/xml/xsl_elementref.asp
+
+feed:
+  tags: true
+  excerpt_only: true
+  collections:
+    leads:
+      path: "/feeds.xml"
+
+# Kramdown Options
+# https://kramdown.gettalong.org/options.html
+# https://jekyllrb.com/docs/configuration/markdown/
+
+highlighter: rouge
+markdown: kramdown
+
+kramdown:
+  html_to_native: true
+  syntax_highlighter: pygments
+  math_engine_opts configuration: mathjax
+ 
+# Custom Headers
+# https://jekyllrb.com/docs/configuration/webrick/
+# https://en.wikipedia.org/wiki/Content_Security_Policy
+
+webrick:
+  headers:
+    Content-Security-Policy: default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';
+#   My-Other-Header: My-Other-Value
+
 # Tags Setting
 # https://github.com/chetabahana/chetabahana.github.io/tags
 
