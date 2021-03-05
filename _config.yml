@@ -89,7 +89,7 @@ collections:
   feeds:
     output: true
   leads:
-    permalink: /feeds/:name
+    permalink: /leads/:name
   posts:
     permalink: /:categories/:year/:y_day/:month/:hour/:minute/:second/:title:output_ext
 
