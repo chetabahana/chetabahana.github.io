@@ -86,9 +86,9 @@ defaults:
 # posts: https://chetabahana.github.io/object/2018/132/05/00/00/00/dummy.json
 
 collections:
-  leads:
-    output: true
   feeds:
+    output: true
+  leads:
     permalink: /feeds/:name
   posts:
     permalink: /:categories/:year/:y_day/:month/:hour/:minute/:second/:title:output_ext
@@ -102,7 +102,7 @@ feed:
   posts_limit: 618
   excerpt_only: true
   collections:
-    leads:
+    posts:
       path: "/feeds.xml"
 
 # Kramdown Options
