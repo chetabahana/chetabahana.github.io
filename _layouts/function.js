@@ -146,11 +146,11 @@ function updateFilters() {
 
                 if (obj[index].hostname == 'www.facebook.com') {
                    img.style.height = '50px';
-                   img.style.width = '50px';               
+                   img.style.width = '50px';
                 }
                 else if (obj[index].hostname == 'plus.google.com') {
                    img.style.height = '25px';
-                   img.style.width = '25px';               
+                   img.style.width = '25px';
                 }
 
               img.style.float = 'left';
