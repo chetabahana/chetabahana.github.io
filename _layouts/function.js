@@ -132,40 +132,41 @@ function scrollTo(selectors)
 //juicer plugin
 function updateFilters() {
 
-  var feeds = document.getElementById("feeds");
-  var obj = feeds.querySelectorAll('.j-image');
+    var feeds = document.getElementById("feeds");
+    var obj = feeds.querySelectorAll('.j-image');
 
-  document.getElementsByClassName('juicer-feed').remove();
+    document.getElementsByClassName('juicer-feed').remove();
 
-  for(var index in obj) {
-    if (obj[index].tagName == 'A') {
-      
-      var img = obj[index].getElementsByTagName('img')[0];
-      
-      if(img && img.style) {
-        
-          if (obj[index].hostname == 'www.facebook.com') {
-               img.style.height = '50px';
-               img.style.width = '50px';               
-          }
-          else if (obj[index].hostname == 'plus.google.com') {
-               img.style.height = '25px';
-               img.style.width = '25px';               
-          }
-        
-          img.style.float = 'left';
-          img.style.padding = 0;
-          img.style.margin = 0; 
-      }
+    for(var index in obj) {
+        if (obj[index].tagName == 'A') {
+
+            var img = obj[index].getElementsByTagName('img')[0];
+
+            if(img && img.style) {
+
+                if (obj[index].hostname == 'www.facebook.com') {
+                   img.style.height = '50px';
+                   img.style.width = '50px';               
+                }
+                else if (obj[index].hostname == 'plus.google.com') {
+                   img.style.height = '25px';
+                   img.style.width = '25px';               
+                }
+
+              img.style.float = 'left';
+              img.style.padding = 0;
+              img.style.margin = 0; 
+
+            }
+        }
+
+        if (obj[index].hostname == 'www.facebook.com') {
+              feeds.appendChild(obj[index]);
+        } else if (obj[index].hostname == 'plus.google.com') {
+              document.getElementById("gfeeds").appendChild(obj[index]);
+        }
+
     }
-    
-    if (obj[index].hostname == 'www.facebook.com') {
-          feeds.appendChild(obj[index]);
-    } else if (obj[index].hostname == 'plus.google.com') {
-          document.getElementById("gfeeds").appendChild(obj[index]);
-    }
-    
-  }
   
 }  
 
