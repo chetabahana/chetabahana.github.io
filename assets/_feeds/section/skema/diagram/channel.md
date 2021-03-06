@@ -9,6 +9,7 @@ category: diagram
 frame: [90,200,9]
 value: [941,0,-1,-2]
 object: [1,3,8,11]
+permalink: /diagram/channel.js
 ---
 var Channel = {
 

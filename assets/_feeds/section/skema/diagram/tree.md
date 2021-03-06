@@ -9,6 +9,7 @@ category: diagram
 value: [953,0,-1,-2]
 frame: [1,30,4,10,50]
 object: [1,9,13,19,34]
+permalink: /diagram/tree.js
 ---
 var dom, keys, node, root, element, Tree = {
 
