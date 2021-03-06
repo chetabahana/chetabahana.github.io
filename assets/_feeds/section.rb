@@ -3,7 +3,6 @@ myId: 619
 key: 168
 pos: 150
 weight: 7
-redirect_from: /section.json
 ---
 {%- comment -%}
 *  True Prime Pairs:

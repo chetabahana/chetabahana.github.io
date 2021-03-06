@@ -3,7 +3,6 @@ myId: 1
 key: 2
 pos: 114
 weight: 1
-redirect_from: /core.json
 ---
 {%- comment -%}
 *  True Prime Pairs:
