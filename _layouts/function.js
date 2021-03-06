@@ -105,32 +105,12 @@ jQuery(function($)
     {
         // unbind external link
         $('.external-link').unbind('click');
-        /*
-        var feed = new Instafeed(
-        {
-            get: 'user',
-            limit: 100,
-            sortBy:'most-recent',
-            userId: 6982272811,
-            resolution: 'standard_resolution',
-            accessToken: '6982272811.1677ed0.b6dcfc26877b4ad3854d1a276fdf4de6',
-            template: '<li><a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="insta-likes"><div style="display: table; vertical-align: middle; height: 100%; width: 100%;"><span style="display: table-cell; vertical-align: middle; height: 100%; width: 100%;">{{likes}} <i class="fa fa-heart"></i><br/>{{comments}} <i class="fa fa-comment"></i></span></div></div></a></li>',
+        $.getScript('/diagram.js?t=' + $.now(), function() {
 
-            after: function()
-            {
-                $('#instafeed').slick(
-                {
-                    slidesToShow: 5, slidesToScroll: 1, autoplay: true, arrows: true, autoplaySpeed: 2000
-                });
-                juicerFeed();
-            }
+            $('.theme').val('hand');
+            draw.getJSON();
 
         });
-        feed.run();*/
-
-        // Ref: Cross-Origin Read Blocking (CORB)
-        $('.theme').val('hand');
-        draw.getJSON();
 
     });
 
@@ -147,17 +127,6 @@ function scrollTo(selectors)
     if(!$(selectors).length) return;
     var selector_top = $(selectors).offset().top - top_menu_height;
     $('html,body').animate({scrollTop: selector_top }, 'slow');
-}
-
-// juicer Feed
-function juicerFeed()
-{
-    if (!$('#gfeeds').find('a')[0] || !$('#___community_0')) {
-         window.requestAnimationFrame(juicerFeed);       
-    } else {
-       $('#___community_0').css({ 'margin-top': '-5px' });  
-       $('#gfeeds').slick({slidesToShow: 10, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2000});
-    }
 }
 
 //juicer plugin
