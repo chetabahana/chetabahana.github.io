@@ -90,7 +90,7 @@ collections:
     output: true
   leads:
     output: true
-    permalink: /feeds/:title:output_ext
+    permalink: /:title:output_ext
   posts:
     permalink: /:categories/:year/:y_day/:month/:hour/:minute/:second/:title:output_ext
 
