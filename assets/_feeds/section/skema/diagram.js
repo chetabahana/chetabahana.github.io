@@ -369,8 +369,9 @@ var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, quer
     feed : function() {
 
         //Support Unlimited Scripts on Workflows Algorithm (#36)
+        var js = '/feeds/section/skema/diagram/' + type.toLowerCase();
         if (window[type]) {window[type].feed(id, size); $('.loadingImg').hide();}
-        else {$.getScript('/skema/js/draw/' + type + '.js', function() {draw.feed();});}
+        else {$.getScript('/skema/js/draw/' + type + '.js?t=' + $.now(), function() {draw.feed();});}
 
     },
 
