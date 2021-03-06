@@ -382,7 +382,7 @@ var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, quer
 
         var button = e.clone(); button.prependTo(e.parent()); button.attr('title',title);
         button.click(function() {draw.click($('.eQuery').first());});  
- 
+
         e.mouseup(_.debounce(function(){draw.loading();}, 600));
         return $(path).attr('class','eQuery');
 
