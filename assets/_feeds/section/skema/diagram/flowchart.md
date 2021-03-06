@@ -11,3 +11,13 @@ value: [919,3,-1,-2]
 frame: [1,5,4,50,1]
 object: [1,15,17,20,24,29]
 ---
+var Flowchart = {
+
+    feed : function(id, size) {
+
+        if (!data) feed = '/flowchart.json?t=' + $.now();
+        draw.getJSON();
+
+    }
+
+}
