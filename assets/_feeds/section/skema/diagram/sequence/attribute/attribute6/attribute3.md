@@ -4,7 +4,7 @@ key: 28
 pos: 11
 weight: 3
 primes: 8
-type: user
+category: user
 label: Portfolio
 tag_name: ubuntu
 run_time: /bin/python

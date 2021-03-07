@@ -4,7 +4,7 @@ key: 103
 pos: 135
 weight: 1
 primes: 20
-type: main
+category: main
 value: [307,3,-1,1]
 object: [8,11]
 ---

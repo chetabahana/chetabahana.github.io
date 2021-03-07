@@ -4,7 +4,7 @@ key: 1
 pos: 10
 weight: 2
 primes: 200
-type: user
+category: user
 label: Network
 tag_name: ubuntu
 run_time: /bin/python

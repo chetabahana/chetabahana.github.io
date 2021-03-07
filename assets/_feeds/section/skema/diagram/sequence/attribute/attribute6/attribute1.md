@@ -4,7 +4,7 @@ key: 11
 pos: 13
 weight: 5
 primes: 50
-type: user
+category: user
 label: Merchant Center
 tag_name: ubuntu
 run_time: /bin/python

@@ -4,7 +4,7 @@ key: 13
 pos: 18
 weight: 4
 primes: 10
-type: user
+category: user
 label: Peluang Terbaik
 tag_name: ubuntu
 run_time: /bin/python

@@ -4,7 +4,7 @@ key: 93
 pos: 14
 weight: 1
 primes: 1
-type: main
+category: main
 label: Buka Toko
 run_time: /bin/python
 value: [523,5,-1,1]

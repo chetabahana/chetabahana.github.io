@@ -6,7 +6,7 @@ to: 4
 from: 3
 weight: 2
 primes: 1
-type: user
+category: user
 init: internal
 flow: internal
 event: property

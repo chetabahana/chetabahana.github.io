@@ -4,7 +4,7 @@ key: 40
 pos: 33
 weight: 2
 primes: 30
-type: user
+category: user
 value: [359,2,-1,1]
 object: [15,19,28]
 ---

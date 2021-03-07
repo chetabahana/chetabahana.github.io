@@ -4,7 +4,7 @@ key: 98
 pos: 28
 weight: 1
 primes: 200
-type: main
+category: main
 value: [383,0,-1,1]
 object: [4,22,26,28,31]
 ---

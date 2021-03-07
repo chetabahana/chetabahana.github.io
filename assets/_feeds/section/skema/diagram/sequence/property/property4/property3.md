@@ -6,7 +6,7 @@ to: 6
 from: 5
 weight: 3
 primes: 5
-type: user
+category: user
 init: external
 flow: external
 label: eShop SEO
