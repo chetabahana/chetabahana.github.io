@@ -102,7 +102,7 @@ var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, quer
 
             var skema = init;
             var style = {theme: 'hand', "font-size": 13};
-            var file = '/sequence/js/sequence-diagram-snap-min.js';
+            var file = {{ '/sequence/js/sequence-diagram-snap-min.js' | jsonify }};
 
         }
 
