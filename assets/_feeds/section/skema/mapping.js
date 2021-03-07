@@ -10,4 +10,4 @@ frame: [50,60,400,70,10,50]
 object: [1,9,26,40,56,74,82,96]
 permalink: /mapping.js
 ---
-{"assets": {{ site.data.mapping | jsonify }}}
+{"assets": {{ my_roots | jsonify }}}
