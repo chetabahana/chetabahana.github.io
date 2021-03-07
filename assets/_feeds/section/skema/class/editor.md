@@ -1,1 +1,1 @@
-{{ data.property }}
+{{ data.magnitude }}
