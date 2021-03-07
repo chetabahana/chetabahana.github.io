@@ -10,6 +10,7 @@
                 { "key": "Delta", "color": "pink" }
             ],
             "guide": {
+                "xml": "/feed/feeds/section.xml",
                 "link": "http://xliberation.com/googlecharts/d3concept.html",
                 "file": "route/test/d3concept.js",
                 "from": "https://observablehq.com/@d3/stacked-horizontal-bar-chart?collection=@d3/d3-shape",

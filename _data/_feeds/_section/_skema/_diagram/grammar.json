@@ -8,6 +8,7 @@
                 "font-size": 12
             },
             "guide": {
+                "xml": "/leads.xml",
                 "link": "https://chetabahana.github.io/grammar/playground/",
                 "file": "grammar/diagrams/diagram.min.js",
                 "from": "https://github.com/chetabahana/grammar/blob/master/examples/implementation_languages/coffeescript/coffeescript_json.coffee",

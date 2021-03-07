@@ -111,6 +111,7 @@ feed:
       categories:
         - main
         - user
+        - section
 
 # Kramdown Options
 # https://kramdown.gettalong.org/options.html

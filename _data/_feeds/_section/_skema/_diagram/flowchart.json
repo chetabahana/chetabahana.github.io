@@ -45,7 +45,7 @@
                         }
             },
             "guide": {
-                "xml": "/leads.xml",
+                "xml": "/feed/feeds/main.xml",
                 "link": "https://en.wikipedia.org/wiki/Centered_hexagonal_number",
                 "file": "flowchart/flowchart-latest.js",
                 "from": "https://marketleader.github.io/Cloud-Site-API/",
