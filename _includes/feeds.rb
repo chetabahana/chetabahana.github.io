@@ -16,7 +16,7 @@ comment %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"count": {{ layout.object[my_pos] | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"weight": {{ feed.weight | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"title": {{ feed.title | jsonify }},
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"category": {{ feed.type | jsonify }},{% comment %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"category": {{ feed.category | jsonify }},{% comment %}
 *
 *  other attributes
 *
