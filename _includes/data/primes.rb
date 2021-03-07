@@ -1,4 +1,4 @@
-{%- assign my_prime = my_primes[my_pos] -%}
+{%- assign my_node = my_nodes[my_pos] -%}
 {%- comment -%}
 * 
 *  Primes Mapping
