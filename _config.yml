@@ -96,6 +96,7 @@ collections:
 
 # Feed Setting
 # https://jekyllrb.com/docs/variables/
+# https://github.com/jekyll/jekyll-feed/issues/2
 # https://www.w3schools.com/xml/xsl_elementref.asp
 
 feed:
@@ -107,6 +108,9 @@ feed:
       path: /leads.xml
     feeds:
       path: /feeds.xml
+      categories:
+        - main
+        - user
 
 # Kramdown Options
 # https://kramdown.gettalong.org/options.html
