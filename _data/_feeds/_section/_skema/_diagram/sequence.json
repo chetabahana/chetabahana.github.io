@@ -9,7 +9,6 @@
             },
             "guide": {
                 "xml": "/feeds.xml",
-                "js": "/diagram/sequence.js",
                 "link": "https://en.wikipedia.org/wiki/CoffeeScript",
                 "file": "sequence/js/sequence-diagram-snap-min.js",
                 "from": "https://coffeescript.org/#overview",

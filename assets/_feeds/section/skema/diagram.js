@@ -71,8 +71,9 @@ var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, quer
                 this.href = link.slice(key,key+1).get(0).href;
                 $('#doc')[0].href = href.replace(path, 'Programming');
             } else {
-                if (this.id == 'json') {this.href = feed;}
-                else if (data) {this.href = data.guide[this.id];}
+                if (this.id == 'js') {this.href = js;}
+                else if (this.id == 'json') {this.href = feed;}
+                else {this.href = data.guide[this.id];}
                 $('#doc')[0].href = href.replace(path, type);
             }
 
@@ -369,8 +370,9 @@ var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, quer
     feed : function() {
 
         //Support Unlimited Scripts on Workflows Algorithm (#36)
+        js = '/diagram/' + type.toLowerCase() + '.js?t=' + $.now();
         if (window[type]) {window[type].feed(id, size); $('.loadingImg').hide();}
-        else {$.getScript('/diagram/' + type.toLowerCase() + '.js?t=' + $.now(), function() {draw.feed();});}
+        else {$.getScript(js, function() {draw.feed();});}
 
     },
 

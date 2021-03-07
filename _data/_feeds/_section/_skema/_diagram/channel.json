@@ -4,7 +4,6 @@
     "items": [
         {
             "guide": {
-                "js": "/diagram/channel.js",
                 "link": "https://chetabahana.github.io/channel/learn/index.html",
                 "file": "channel/release/go.js",
                 "from": "https://chetabahana.github.io/channel/samples/parseTree.html",

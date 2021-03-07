@@ -8,7 +8,6 @@
                 "font-size": 14
             },
             "guide": {
-                "js": "/diagram/tree.js",
                 "link": "https://chetabahana.github.io/tree/doc/guides/writing-tests.html",
                 "file": "tree/test/fixtures/three.graphql/build.js",
                 "from": "https://github.com/chetabahana/scenetree/blob/gh-pages/node_modules/three/examples/js/loaders/VRMLLoader.js",
