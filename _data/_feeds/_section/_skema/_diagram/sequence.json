@@ -9,10 +9,10 @@
             },
             "guide": {
                 "xml": "/feeds.xml",
-                "js": "sequence/js/sequence-diagram-snap-min.js",
+                "js": "/diagram/sequence.js",
                 "link": "https://en.wikipedia.org/wiki/CoffeeScript",
-                "file": "https://coffeescript.org/#overview",
-                "from": "https://coffeescript.org/v1/",
+                "file": "sequence/js/sequence-diagram-snap-min.js",
+                "from": "https://coffeescript.org/#overview",
                 "to": "https://coffeescript.org/v1/annotated-source/grammar.html",
                 "docs": "https://chetabahana.github.io/styles/skema/doc/index.html"
             },

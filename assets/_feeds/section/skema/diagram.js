@@ -95,17 +95,17 @@ var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, quer
 
             var style = data.style;
             var skema = data.skema;
-            var js = '/' + data.guide['js'];
+            var file = '/' + data.guide['file'];
 
         } else {
 
             var skema = init;
             var style = {theme: 'hand', "font-size": 13};
-            var js = '/sequence/js/sequence-diagram-snap-min.js';
+            var file = '/sequence/js/sequence-diagram-snap-min.js';
 
         }
 
-        $.getScript(js + '?t=' + $.now(), function() {
+        $.getScript(file + '?t=' + $.now(), function() {
 
             try {
 

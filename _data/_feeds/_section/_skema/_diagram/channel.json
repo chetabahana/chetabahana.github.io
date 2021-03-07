@@ -4,12 +4,12 @@
     "items": [
         {
             "guide": {
-                "js": "channel/release/go.js",
+                "js": "/diagram/channel.js",
                 "link": "https://chetabahana.github.io/channel/learn/index.html",
-                "file": "https://chetabahana.github.io/channel/samples/classHierarchy.html",
+                "file": "channel/release/go.js",
                 "from": "https://chetabahana.github.io/channel/samples/parseTree.html",
                 "to": "https://chetabahana.github.io/channel/samples/ldLayout.html",
-                "docs": "https://chetabahana.github.io/styles/skema/xsl/XSLTdocConfig.xml"
+                "docs": "https://chetabahana.github.io/channel/samples/classHierarchy.html"
             },
             "style": [
                 { "key": "Alpha", "color": "lightblue" },
