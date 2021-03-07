@@ -14,6 +14,7 @@ layout: feeds
 *  The JSON Feed format as JSON Feed Version 1.1
 *  
 *  Reference:
+*  https://github.com/XSLTdoc/XSLTdoc
 *  https://tools.ietf.org/html/rfc4287
 *  https://ef.gy/serving-an-atom-bundle
 #  https://github.com/jekyll/jekyll-feed
