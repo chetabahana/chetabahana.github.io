@@ -1,4 +1,4 @@
-{%- assign my_node = my_nodes[my_pos] -%}
+{%- assign my_node = site.data.feeds[my_pos] -%}
 {%- comment -%}
 * 
 *  Primes Mapping
