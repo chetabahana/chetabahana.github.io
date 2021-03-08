@@ -16,8 +16,8 @@ permalink: /mapping.js
 *  as the relations between their nodes with our feeds object.
 *
 *  You may see the reference of the code here:
-*  https://chetabahana.github.io/mapping.js?t=123456
+*  https://chetabahana.github.io/mapping.js?t=123
 *
 {%- endcomment -%}
-{ "data": {{ data[0] | jsonify }}}
-{ "roots": {{ my_roots | jsonify }}}
+{ "data": {{ data[0] | jsonify }} }
+{ "roots": {{ my_roots | jsonify }} }
