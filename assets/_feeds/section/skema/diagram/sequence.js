@@ -20,8 +20,6 @@ permalink: /diagram/sequence.js
 *  https://javascript.plainenglish.io/how-to-traverse-the-dom-in-javascript-d6555c335b4e
 *
 {%- endcomment -%}
-{ "data": {{ data[0] | jsonify }} }
-{ "roots": {{ my_roots | jsonify }} }
 var Sequence = {
 
     feed : function(id, size) {
