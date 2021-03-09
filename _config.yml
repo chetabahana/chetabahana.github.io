@@ -101,9 +101,9 @@ collections:
 
 feed:
   tags: true
-  posts_limit: 618
-  excerpt_only: true
   collections:
+    - feeds
+    - leads
     leads:
       path: /leads.xml
     feeds:
@@ -112,6 +112,8 @@ feed:
         - main
         - user
         - section
+  posts_limit: 618
+  excerpt_only: true
 
 # Kramdown Options
 # https://kramdown.gettalong.org/options.html
