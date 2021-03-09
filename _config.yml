@@ -102,8 +102,6 @@ collections:
 feed:
   tags: true
   collections:
-    - feeds
-    - leads
     leads:
       path: /leads.xml
     feeds:
