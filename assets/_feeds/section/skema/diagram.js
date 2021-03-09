@@ -1,5 +1,5 @@
 ---
-myId: 128
+slug: 128
 link: 28
 key: 49
 pos: 67

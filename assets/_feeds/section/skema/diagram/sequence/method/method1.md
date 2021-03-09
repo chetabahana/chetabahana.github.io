@@ -1,5 +1,5 @@
 ---
-myId: 90
+slug: 90
 key: 35
 pos: 1
 to: 5

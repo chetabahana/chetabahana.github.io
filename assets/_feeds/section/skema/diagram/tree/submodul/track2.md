@@ -1,5 +1,5 @@
 ---
-myId: 43
+slug: 43
 key: 63
 pos: 70
 weight: 2

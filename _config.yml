@@ -136,6 +136,7 @@ webrick:
 
 # Tags Setting
 # https://github.com/chetabahana/chetabahana.github.io/tags
+# https://github.com/jekyll/jekyll-feed/issues/207#issuecomment-787490785
 
 case_labels:
 - Buka Toko
