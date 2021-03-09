@@ -19,5 +19,3 @@ permalink: /mapping.js
 *  https://chetabahana.github.io/mapping.js?t=123
 *
 {%- endcomment -%}
-{ "data": {{ data[0] | jsonify }} }
-{ "roots": {{ my_roots | jsonify }} }
