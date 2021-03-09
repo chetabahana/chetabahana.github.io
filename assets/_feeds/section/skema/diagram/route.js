@@ -10,6 +10,7 @@ value: [947,0,1,-2]
 frame: [10,6,40]
 object: [1,4,6,9,13,14]
 redirect_from: /route.json
+permalink: /diagram/route.js
 ---
 {% comment %}
 *
@@ -17,5 +18,17 @@ redirect_from: /route.json
 *
 *  You may see the running code here:
 *  https://chetabahana.github.io/route.json
+*  https://chetabahana.github.io/diagram/route.js
+*
 *
 {% endcomment %}
+var Route = {
+
+    feed : function(id, size) {
+
+        if (!data) feed = '/route.json?t=' + $.now();
+        draw.getJSON();
+
+    }
+
+}
