@@ -158,7 +158,8 @@ flow_labels:
 # https://jekyllrb.com/docs/configuration/options/
 
 baseurl: ""
-user: chetabahana
+basedir: _feeds
+username: chetabahana
 organization: marketleader
 slogan_link: https://www.chetabahana.com/
 repository: chetabahana/chetabahana.github.io
