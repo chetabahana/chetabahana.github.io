@@ -4,8 +4,6 @@ key: 109
 pos: 151
 weight: 5
 primes: 56
-type: route
-category: diagram
 value: [947,0,1,-2]
 frame: [10,6,40]
 object: [1,4,6,9,13,14]
