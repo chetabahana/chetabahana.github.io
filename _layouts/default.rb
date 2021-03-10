@@ -9,7 +9,7 @@
 *
 {%- endcomment -%}{%- if data == null -%}{%- include data.rb -%}{%- endif -%}
 {%- if page.path != 'index.html' and page.ext != '.md' -%}{
-    "id": {% if data.id %}{{ data.id }}{% else %}{{ page.id }}{% endif %},
+    {{ 'id' | jsonify }}: {% if data.id %}{{ data.id }}{% else %}{{ page.id }}{% endif %},
     "title": "{% if data.title %}{{ data.title | capitalize }} | {% endif %}Project Maps",
     "version": "https://jsonfeed.org/version/1.1",
     "home_page_url": "{{ "/" | absolute_url }}",
@@ -21,7 +21,7 @@
 *
 *  assign the required variables
 *
-{% endcomment %}{% assign my_atributs = "id, key, link, weight, title, next, content, output, previous, redirect_from, relative_path, collection, excerpt, category, categories, ext, layout, tags, path, url, draft, slug, pos, myId, type, primes, value, object, frame, ratio" | split:", " %}{% assign my_base = site.basedir %}{% assign my_tab = "    " %}{% assign my_path = "" | split: "," %}{% comment %}
+{% endcomment %}{% assign my_base = site.basedir %}{% assign my_atributs = 'id, key, link, weight, title, next, content, output, previous, redirect_from, relative_path, collection, excerpt, category, categories, ext, layout, tags, path, url, draft, slug, pos, myId, type, primes, value, object, frame, ratio' | split:", " %}{% assign my_tab = "    " %}{% assign my_path = "" | split: "," %}{% comment %}
 *
 *  get the maximum size of feeds 
 *
