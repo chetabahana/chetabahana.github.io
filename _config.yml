@@ -111,6 +111,7 @@ feed:
       categories:
         - main
         - user
+        - diagram
         - section
 
 # Kramdown Options
