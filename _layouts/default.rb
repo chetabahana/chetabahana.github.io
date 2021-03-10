@@ -21,15 +21,15 @@
 *
 *  assign the required variables
 *
-{% endcomment %}{% assign my_base = site.basedir %}{% assign my_atributs = 'id, key, link, weight, title, next, content, output, previous, redirect_from, relative_path, collection, excerpt, category, categories, ext, layout, tags, path, url, draft, slug, pos, myId, type, primes, value, object, frame, ratio' | split:', ' %}{% assign my_tab = '    ' %}{% assign my_path = '' | split: ',' %}{% comment %}
+{% endcomment %}{% assign my_base = site.basedir %}{% assign my_size = 0 %}{% assign my_atributs = 'id, key, link, weight, title, next, content, output, previous, redirect_from, relative_path, collection, excerpt, category, categories, ext, layout, tags, path, url, draft, slug, pos, myId, type, primes, value, object, frame, ratio' | split:', ' %}{% assign my_tab = '    ' %}{% assign my_path = '' | split: ',' %}{% comment %}
 *
 *  get the maximum size of feeds 
 *
-{% endcomment %}{% assign feeds = site.feeds | sort:0 %}{% for feed in feeds %}{% assign my_split = feed.path | split: '/' %}{% assign size = my_split | size %}{% if size > my_size %}{% assign my_path = my_path | push:size %}{% assign my_size = size %}{% endif %}{% endfor %}{% comment %}
+{% endcomment %}{% assign feeds = site.feeds | sort:0 %}{% for feed in feeds %}{% assign my_split = feed.path | split: '/' %}{% assign size = my_split | size %}{% if size > my_size %}{% assign my_path = my_path | push: size %}{% assign my_size = size %}{% endif %}{% endfor %}{% comment %}
 *
 *  sort feeds base on weight (reversed order)
 *
-{% endcomment %}{% assign feeds = site.feeds | sort: 'weight' %}{% assign my_paths = '' | split: ',' %}{% for my_size in my_path reversed %}{% for feed in feeds %}{% assign my_dir = feed.path | split: '/' | pop | join: '/' %}{% unless my_dir == my_base %}{% assign my_split = feed.path | split: '/' %}{% assign size = my_split | size %}{% if size == my_size %}{% assign my_paths = my_paths | push:feed %}{% endif %}{% endunless %}{% endfor %}{% endfor %}{% comment %}
+{% endcomment %}{% assign feeds = site.feeds | sort: 'weight' %}{% assign my_paths = '' | split: ',' %}{% for my_size in my_path reversed %}{% for feed in feeds %}{% assign my_dir = feed.path | split: '/' | pop | join: '/' %}{% unless my_dir == my_base %}{% assign my_split = feed.path | split: '/' %}{% assign size = my_split | size %}{% if size == my_size %}{% assign my_paths = my_paths | push: feed %}{% endif %}{% endunless %}{% endfor %}{% endfor %}{% comment %}
 *
 *  capture each outputs
 *
