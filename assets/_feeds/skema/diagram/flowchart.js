@@ -20,6 +20,7 @@ permalink: /diagram/flowchart.js
 *  https://chetabahana.github.io/diagram/flowchart.js
 *
 {% endcomment %}
+{{ data.items[0] | jsonify }}
 var Flowchart = {
 
     feed : function(id, size) {
