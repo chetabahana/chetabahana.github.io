@@ -1,10 +1,10 @@
 ---
 id: 169
-layout: feeds
+layout: atom
 ---
 {%- comment -%}
 *
-*  This layout loops through a collection called `feeds` and provide stylesheet 
+*  This layout loops through all of the collections and provide stylesheet 
 *  and page for inclusion to the project mapping via layout.
 *
 *  You may see the running code here:
@@ -17,11 +17,11 @@ layout: feeds
 *  https://github.com/XSLTdoc/XSLTdoc
 *  https://tools.ietf.org/html/rfc4287
 *  https://ef.gy/serving-an-atom-bundle
-#  https://github.com/jekyll/jekyll-feed
-#  https://awasu.com/kb/content/URL_Rewriting.php
-#  https://www.w3schools.com/xml/xsl_elementref.asp
+*  https://github.com/jekyll/jekyll-feed
+*  https://awasu.com/kb/content/URL_Rewriting.php
+*  https://www.w3schools.com/xml/xsl_elementref.asp
 *  https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ms762660(v=vs.85)
+*  https://github.com/chetabahana/chetabahana.github.io/blob/Chetabahana/_layouts/atom.xsl#L28
 *  https://www.data2type.de/xml-xslt-xslfo/newsfeeds-rss-atom/referenz-atom-elemente/atom-link/
-*  https://github.com/chetabahana/chetabahana.github.io/blob/Chetabahana/_layouts/feeds.xsl#L28
 *  
 {%- endcomment -%}
