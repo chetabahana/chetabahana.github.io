@@ -47,7 +47,7 @@ exclude:
   - webpack.config.js
   - docker_compose.yml
 
-limit_posts: 618
+limit_posts: 1000
 collections_dir: assets
 
 # Plugins Setting
@@ -101,7 +101,7 @@ collections:
 
 feed:
   tags: true
-  posts_limit: 618
+  posts_limit: 1000
   excerpt_only: true
   collections:
     leads:

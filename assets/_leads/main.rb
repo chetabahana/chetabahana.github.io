@@ -1,5 +1,4 @@
 ---
-slug: 239
 key: 68
 pos: 139
 weight: 3
