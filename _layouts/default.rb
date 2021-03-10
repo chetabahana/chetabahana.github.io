@@ -10,13 +10,13 @@
 {%- endcomment -%}{%- if data == null -%}{%- include data.rb -%}{%- endif -%}
 {%- if page.path != 'index.html' and page.ext != '.md' -%}{
     {{ 'id' | jsonify }}: {% if data.id %}{{ data.id }}{% else %}{{ page.id }}{% endif %},
-    "title": "{% if data.title %}{{ data.title | capitalize }} | {% endif %}Project Maps",
-    "version": "https://jsonfeed.org/version/1.1",
-    "home_page_url": "{{ "/" | absolute_url }}",
-    "feed_url": "{{ page.url | absolute_url }}",
-    "description": {{ site.slogan | jsonify }},
-    "user_comment": "This feed allows you to read the project mapping",
-    "items": [
+    {{ 'title' | jsonify }}: "{% if data.title %}{{ data.title | capitalize }} | {% endif %}Project Maps",
+    {{ 'version' | jsonify }}: {{ 'https://jsonfeed.org/version/1.1' | jsonify }},
+    {{ 'home_page_url' | jsonify }}: {{ '/' | absolute_url  | jsonify }},
+    {{ 'feed_url' | jsonify }}: {{ page.url | absolute_url  | jsonify }},
+    {{ 'description' | jsonify }}: {{ site.slogan | jsonify }},
+    {{ 'user_comment' | jsonify }}: {{ 'This feed allows you to read the project mapping' | jsonify }},
+    {{ 'items' | jsonify }}: [
 {% endif %}{% comment %}
 *
 *  assign the required variables
