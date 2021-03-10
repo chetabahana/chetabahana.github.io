@@ -9,6 +9,6 @@ label: Merchant Center
 tag_name: ubuntu
 run_time: /bin/python
 value: [487,3,-1,2]
-object: [5,8,11]
+tags: [5,8,11]
 ---
 participant Stok Barang

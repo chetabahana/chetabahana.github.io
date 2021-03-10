@@ -8,5 +8,5 @@ type: looping
 category: section
 value: [983,4,-1,-3]
 frame: [70,30,10,5,40]
-object: [1,5,8,9,12]
+tags: [1,5,8,9,12]
 ---

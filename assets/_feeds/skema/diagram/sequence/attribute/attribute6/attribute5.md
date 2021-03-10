@@ -9,6 +9,6 @@ label: Stok Barang
 tag_name: ubuntu
 run_time: /bin/python
 value: [509,0,1,2]
-object: [3,5]
+tags: [3,5]
 ---
 participant Stok Barang

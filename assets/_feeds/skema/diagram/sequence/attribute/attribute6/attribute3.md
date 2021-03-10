@@ -9,6 +9,6 @@ label: Portfolio
 tag_name: ubuntu
 run_time: /bin/python
 value: [499,1,-1,2]
-object: [5,8]
+tags: [5,8]
 ---
 participant Portfolio

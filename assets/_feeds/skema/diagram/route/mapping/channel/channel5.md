@@ -7,5 +7,5 @@ primes: 40
 category: user
 zones: [8,40]
 value: [173,0,-1,1]
-object: [22,27,54,76,85]
+tags: [22,27,54,76,85]
 ---

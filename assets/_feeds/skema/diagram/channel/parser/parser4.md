@@ -6,5 +6,5 @@ weight: 4
 primes: 9
 category: user
 value: [577,3,1,1]
-object: [2,4]
+tags: [2,4]
 ---

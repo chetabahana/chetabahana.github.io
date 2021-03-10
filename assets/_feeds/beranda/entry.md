@@ -6,5 +6,5 @@ weight: 2
 primes: 40
 type: test
 value: [673,3,1,1]
-object: [1,24,38,41,62,76,78]
+tags: [1,24,38,41,62,76,78]
 ---

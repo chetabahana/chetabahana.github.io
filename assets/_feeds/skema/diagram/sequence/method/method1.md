@@ -14,6 +14,6 @@ label: Google-Ads-API
 tag_name: ubuntu
 run_time: /bin/python
 value: [463,3,1,2]
-object: [4,10,18,20]
+tags: [4,10,18,20]
 ---
 Peluang Terbaik->>Portfolio: Google-Ads-API

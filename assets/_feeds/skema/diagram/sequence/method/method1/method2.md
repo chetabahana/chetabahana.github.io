@@ -14,6 +14,6 @@ label: Google-Trend-API
 tag_name: ubuntu
 run_time: /bin/python
 value: [467,4,1,2]
-object: [8,10,15]
+tags: [8,10,15]
 ---
 Portfolio->>Stok Barang: Google-Trend-API

@@ -14,6 +14,6 @@ label: Cloud-Site-API
 tag_name: ubuntu
 run_time: /bin/python
 value: [461,2,1,2]
-object: [5,14,16,20,26,30]
+tags: [5,14,16,20,26,30]
 ---
 Google Merchant Center->Peluang Terbaik: Cloud-Site-API

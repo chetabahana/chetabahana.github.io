@@ -14,7 +14,7 @@ label:  Optimasi
 tag_name: ubuntu
 run_time: /bin/python
 value: [449,0,1,2]
-object: [5,8,13,15,19]
+tags: [5,8,13,15,19]
 ---
 #!{{ page.run_time }}
 

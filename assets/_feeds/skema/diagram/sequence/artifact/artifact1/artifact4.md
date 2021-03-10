@@ -9,6 +9,6 @@ label: Network
 tag_name: ubuntu
 run_time: /bin/python
 value: [557,4,-1,1]
-object: [5,8]
+tags: [5,8]
 ---
 participant Network

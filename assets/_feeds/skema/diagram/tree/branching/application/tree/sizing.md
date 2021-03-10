@@ -6,5 +6,5 @@ weight: 1
 primes: 20
 category: main
 value: [307,3,-1,1]
-object: [8,11]
+tags: [8,11]
 ---

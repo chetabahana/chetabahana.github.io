@@ -6,5 +6,5 @@ weight: 8
 primes: 50
 category: main
 value: [311,2,-1,1]
-object: [13,14]
+tags: [13,14]
 ---

@@ -6,5 +6,5 @@ weight: 4
 primes: 40
 type: subroutine
 value: [743,4,-1,0]
-object: [1,6,14,22,27,30]
+tags: [1,6,14,22,27,30]
 ---

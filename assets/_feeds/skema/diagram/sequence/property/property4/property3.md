@@ -14,6 +14,6 @@ event: property
 tag_name: ubuntu
 run_time: /bin/python
 value: [443,0,-1,2]
-object: [4,10,14,17]
+tags: [4,10,14,17]
 ---
 Portfolio-->>Network: eShop SEO
