@@ -1,4 +1,4 @@
 ---
 layout: default
 ---
-{%- include section.rb -%}
+{%- include feeds.rb -%}
