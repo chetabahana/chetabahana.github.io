@@ -161,7 +161,7 @@ baseurl: ""
 basedir: _feeds
 username: chetabahana
 organization: marketleader
-slogan_link: https://www.chetabahana.com/
+project_link: https://www.chetabahana.com/
 repository: chetabahana/chetabahana.github.io
 json_link: https://chetabahana.github.io/feed.json
 
