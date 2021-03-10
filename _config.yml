@@ -1,13 +1,7 @@
 # General Settings
 # https://jekyllrb.com/docs/configuration/
-# https://learn.cloudcannon.com/jekyll-cheat-sheet/
-
-encoding: utf-8
-livereload: true
-timezone: Asia/Jakarta
-
-# Build Settings
 # https://jekyllrb.com/docs/configuration/options/
+# https://learn.cloudcannon.com/jekyll-cheat-sheet/
 
 input_types:
 - text
@@ -47,7 +41,11 @@ exclude:
   - webpack.config.js
   - docker_compose.yml
 
+
+encoding: utf-8
+livereload: true
 limit_posts: 1000
+timezone: Asia/Jakarta
 collections_dir: assets
 
 # Plugins Setting
