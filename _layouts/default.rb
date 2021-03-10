@@ -12,8 +12,8 @@
     {{ 'id' | jsonify }}: {% if data.id %}{{ data.id }}{% else %}{{ page.id }}{% endif %},
     {{ 'title' | jsonify }}: "{% if data.title %}{{ data.title | capitalize }} | {% endif %}Project Maps",
     {{ 'version' | jsonify }}: {{ 'https://jsonfeed.org/version/1.1' | jsonify }},
-    {{ 'home_page_url' | jsonify }}: {{ '/' | absolute_url  | jsonify }},
-    {{ 'feed_url' | jsonify }}: {{ page.url | absolute_url  | jsonify }},
+    {{ 'home_page_url' | jsonify }}: {{ '/' | absolute_url | jsonify }},
+    {{ 'feed_url' | jsonify }}: {{ page.url | absolute_url | jsonify }},
     {{ 'description' | jsonify }}: {{ site.slogan | jsonify }},
     {{ 'user_comment' | jsonify }}: {{ 'This feed allows you to read the project mapping' | jsonify }},
     {{ 'items' | jsonify }}: [
