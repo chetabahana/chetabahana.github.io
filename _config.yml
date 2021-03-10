@@ -88,11 +88,11 @@ defaults:
 collections:
   feeds:
     output: true
-  leads:
-    output: true
-    permalink: /:title:output_ext
-  posts:
-    permalink: /:categories/:year/:y_day/:month/:hour/:minute/:second/:title:output_ext
+#  leads:
+#    output: true
+#    permalink: /:title:output_ext
+#  posts:
+#    permalink: /:categories/:year/:y_day/:month/:hour/:minute/:second/:title:output_ext
 
 # Feed Setting
 # https://jekyllrb.com/docs/variables/
@@ -103,15 +103,15 @@ feed:
   tags: true
   posts_limit: 618
   excerpt_only: true
-  collections:
-#     leads:
-#       path: /leads.xml
-    feeds:
-      path: /feeds.xml
-      categories:
-        - main
-        - user
-        - section
+#  collections:
+#    leads:
+#      path: /leads.xml
+#    feeds:
+#      path: /feeds.xml
+#      categories:
+#        - main
+#        - user
+#        - section
 
 # Kramdown Options
 # https://kramdown.gettalong.org/options.html
