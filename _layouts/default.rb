@@ -25,7 +25,7 @@
 *
 *  get the maximum size of feeds 
 *
-{% endcomment %}{% assign feeds = site.feeds | sort:0 %}{% for feed in feeds %}{% assign my_split = feed.path | split: '/' %}{% assign size = my_split | size %}{% if size > my_size %}{% assign my_path = my_path | push: size %}{% assign my_size = size %}{% endif %}{% endfor %}{% comment %}
+{% endcomment %}{% assign my_size = 1 %}{% assign feeds = site.feeds | sort:0 %}{% for feed in feeds %}{% assign my_split = feed.path | split: '/' %}{% assign size = my_split | size %}{% if size > my_size %}{% assign my_path = my_path | push: size %}{% assign my_size = size %}{% endif %}{% endfor %}{% comment %}
 *
 *  sort feeds base on weight (reversed order)
 *
@@ -33,12 +33,12 @@
 *
 *  capture each outputs
 *
-{% endcomment %}{% assign my_captures = '' | split: ',' %}{% for feed in my_paths %}{% assign my_split = feed.path | split: '/' %}{% assign my_path_size = my_split | size %}{% assign my_part = my_split | size | minus: 2 %}{% assign my_size = my_split | size | times: 2 | minus: 4 %}{% assign my_dir = my_split[my_part] | prepend: '/' | append: '/' %}{% assign my_title = feed.title | downcase | prepend: my_dir | append: '/' %}{% assign my_index = '' | split: ',' %}{% for my_push in my_paths %}{% assign my_num = my_push.path | split: '/' | size | minus: my_path_size %}{% if my_num == 1 and my_push.path contains my_title %}{% assign my_index = my_index | push:forloop.index0 %}{% endif %}{% endfor %}{% comment %}
+{% endcomment %}{% assign my_captures = '' | split: ',' %}{% for feed in my_paths %}{% assign my_split = feed.path | split: '/' %}{% assign my_path_size = my_split | size %}{% assign my_part = my_split | size | minus: 2 %}{% assign my_size = my_split | size | times: 2 | minus: 2 %}{% assign my_dir = my_split[my_part] | prepend: '/' | append: '/' %}{% assign my_title = feed.title | downcase | prepend: my_dir | append: '/' %}{% assign my_index = '' | split: ',' %}{% for my_push in my_paths %}{% assign my_num = my_push.path | split: '/' | size | minus: my_path_size %}{% if my_num == 1 and my_push.path contains my_title %}{% assign my_index = my_index | push: forloop.index0 %}{% endif %}{% endfor %}{% comment %}
 *
 *  index the feeds output
 *
 {% endcomment %}{% capture my_capture %}
-{% if page.path != 'index.html' %}{% include items.rb %}{% endif %}{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}}{% endcapture %}{% assign my_captures = my_captures | push: my_capture %}{% endfor %}{% assign my_feeds = '' | split: ',' %}{% for feed in feeds %}{% assign my_dir = feed.path | split: '/' | pop | join: '/' %}{% if my_dir == my_base %}{% assign my_feeds = my_feeds | push:feed %}{% endif %}{% endfor %}{% for feed in my_feeds %}{% assign my_title = feed.title | downcase | prepend: '/' | prepend: my_base | append: '/' %}{% assign my_index = '' | split: ',' %}{% for my_path in my_paths %}{% assign my_split = my_path.path | split: '/' | size %}{% if my_split == 3 and my_path.path contains my_title %}{% assign my_index = my_index | push:forloop.index0 %}{% endif %}{% endfor %}{% assign my_size = 2 %}{% comment %}
+{% if page.path != 'index.html' %}{% include items.rb %}{% endif %}{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}}{% endcapture %}{% assign my_captures = my_captures | push: my_capture %}{% endfor %}{% assign my_feeds = '' | split: ',' %}{% for feed in feeds %}{% assign my_dir = feed.path | split: '/' | pop | join: '/' %}{% if my_dir == my_base %}{% assign my_feeds = my_feeds | push: feed %}{% endif %}{% endfor %}{% for feed in my_feeds %}{% assign my_title = feed.title | downcase | prepend: '/' | prepend: my_base | append: '/' %}{% assign my_index = '' | split: ',' %}{% for my_path in my_paths %}{% assign my_split = my_path.path | split: '/' | size %}{% if my_split == 3 and my_path.path contains my_title %}{% assign my_index = my_index | push: forloop.index0 %}{% endif %}{% endfor %}{% assign my_size = 2 %}{% comment %}
 *
 *  render the feeds output
 *  <pre>JSON.pretty_generate(@data)</pre>
