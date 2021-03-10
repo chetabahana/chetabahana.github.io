@@ -107,12 +107,12 @@ feed:
     leads:
       path: /leads.xml
     feeds:
-      path: /feeds.xml
       categories:
         - main
         - user
         - diagram
         - section
+      path: /feeds.xml
 
 # Kramdown Options
 # https://kramdown.gettalong.org/options.html
