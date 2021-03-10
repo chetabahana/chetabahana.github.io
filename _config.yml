@@ -77,7 +77,7 @@ defaults:
       path: ""
       type: "feeds"
     values:
-      layout: "feeds/section"
+      layout: "feeds"
 
 # Permalinks
 # https://jekyllrb.com/docs/permalinks/
