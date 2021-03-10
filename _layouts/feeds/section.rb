@@ -9,4 +9,4 @@ menus: ['abstrak', 'skema', 'eksekusi', 'portfolio', 'publikasi', 'network', 'di
 *  You may see the running code here:
 *  https://chetabahana.github.io/diagram.js
 *
-{% endcomment %}{%- include feeds/section.rb -%}
+{% endcomment %}{%- include section.rb -%}
