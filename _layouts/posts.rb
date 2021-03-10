@@ -10,4 +10,4 @@ layout: default
 *  https://chetabahana.github.io/object/2018/132/05/00/00/00/dummy.json
 *
 {%- endcomment -%}
-{%- include feeds.rb -%}
+{%- include items.rb -%}
