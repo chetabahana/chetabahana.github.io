@@ -267,8 +267,7 @@ var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, quer
         else if (!pad) pad = (params.pad)? (params.pad * 1): null;
 
         $.getJSON(feed).done(function(result){
-
-{%- comment -%}
+{% comment %}
 * 
 *  Scheme 5‘ and 3‘
 *
@@ -286,7 +285,9 @@ var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, quer
 *  Documentation is currently available in bahasa only
 *  https://github.com/chetabahana/chetabahana.github.io/wiki#skema
 *
-{%- endcomment -%}
+{% endcomment %}
+            //Set pos to {{ my_loop5 }} and {{ my_root3 }}
+            //ref https://github.com/chetabahana/chetabahana.github.io/blob/Chetabahana/assets/_feeds/skema/diagram.js#L270
             if (!json) json = result.items[{{ my_loop5 | jsonify }}].items[{{ my_root3 | jsonify }}].items;
             if (!size) size = json.length;
             if (!type) type = 'Sequence';
