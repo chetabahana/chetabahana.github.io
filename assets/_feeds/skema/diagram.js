@@ -268,7 +268,26 @@ var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, quer
 
         $.getJSON(feed).done(function(result){
 
-            if (!json) json = result.items[4].items[2].items;
+{%- comment -%}
+* 
+*  Scheme 5‘ and 3‘
+*
+*  Array:
+*  loop(5‘) => 4
+*  loop(3‘) => 2
+*
+{%- endcomment -%}
+{%- assign my_loop5 = 4 -%}
+{%- assign my_root3 = 2 -%}
+{%- comment -%}
+*
+*
+*  Note:
+*  Documentation is currently available in bahasa only
+*  https://github.com/chetabahana/chetabahana.github.io/wiki#skema
+*
+{%- endcomment -%}
+            if (!json) json = result.items[{{ my_loop5 | jsonify }}].items[{{ my_root3 | jsonify }}].items;
             if (!size) size = json.length;
             if (!type) type = 'Sequence';
 
