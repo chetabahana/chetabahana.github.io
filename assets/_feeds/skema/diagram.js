@@ -280,6 +280,46 @@ var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, quer
 {%- assign my_root3 = 2 -%}
 {%- comment -%}
 *
+*  This will finaly land to id: 128
+*  https://chetabahana.github.io/feed.json
+*
+*                  },
+*                  {
+*                      "id": 128,
+*                      "key": 49,
+*                      "pos": 67,
+*                      "link": 28,
+*                      "root": 331,
+*                      "count": 4,
+*                      "weight": 3,
+*                      "title": "Diagram",
+*                      "category": null,
+*                      "permalink": "/diagram.js",
+*                      "value": [719,0,-1,1],
+*                      "feeds": [1,6,13,21,28,42,60,75,82,88],
+*                      "items": [
+*                          {
+*                              "id": 157,
+*                              "key": 94,
+*                              "pos": 157,
+*                              "root": 919,
+*                              "count": 61,
+*                              "weight": 1,
+*                              "title": "Flowchart",
+*                              "category": "diagram",
+*                              "permalink": "/diagram/flowchart.js",
+*                              "value": [919,3,-1,-2],
+*                              "frame": [1,5,4,50,1],
+*                              "feeds": [1,15,17,20,24,29],
+*                              "items": [
+*                                  {
+*                                      "id": 147,
+*                                      "key": 95,
+*                                      "pos": 147,
+*                                      "root": 853,
+*                                      "count": 231,
+*                                      "weight": 1,
+*
 *  Note:
 *  Documentation is currently available in bahasa only
 *  https://github.com/chetabahana/chetabahana.github.io/wiki#skema
