@@ -285,7 +285,7 @@ var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, quer
 *  https://github.com/chetabahana/chetabahana.github.io/wiki#skema
 *
 {% endcomment %}
-            //Set pos to {{ my_loop5 }} and {{ my_root3 }}
+            //Set pos to {{ my_loop5 }} and {{ my_root3 }} per the Scheme of 5‘ and 3‘. See more detail on the source code.
             //ref https://github.com/chetabahana/chetabahana.github.io/blob/Chetabahana/assets/_feeds/skema/diagram.js#L270
             if (!json) json = result.items[{{ my_loop5 | jsonify }}].items[{{ my_root3 | jsonify }}].items;
             if (!size) size = json.length;
