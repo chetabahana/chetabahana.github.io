@@ -129,46 +129,25 @@ function scrollTo(selectors)
     $('html,body').animate({scrollTop: selector_top }, 'slow');
 }
 
-//juicer plugin
-function updateFilters() {
-
-    var feeds = document.getElementById("feeds");
-    var obj = feeds.querySelectorAll('.j-image');
-
-    document.getElementsByClassName('juicer-feed').remove();
-
-    for(var index in obj) {
-        if (obj[index].tagName == 'A') {
-
-            var img = obj[index].getElementsByTagName('img')[0];
-
-            if(img && img.style) {
-
-                if (obj[index].hostname == 'www.facebook.com') {
-                   img.style.height = '50px';
-                   img.style.width = '50px';
-                }
-                else if (obj[index].hostname == 'plus.google.com') {
-                   img.style.height = '25px';
-                   img.style.width = '25px';
-                }
-
-              img.style.float = 'left';
-              img.style.padding = 0;
-              img.style.margin = 0; 
-
-            }
-        }
-
-        if (obj[index].hostname == 'www.facebook.com') {
-              feeds.appendChild(obj[index]);
-        } else if (obj[index].hostname == 'plus.google.com') {
-              document.getElementById("gfeeds").appendChild(obj[index]);
-        }
-
+// filtering json object
+function filterBy(data, filters = {}) {
+    // Set up the specific defaults that will show everything:
+    const defaults = {
+        category: null,
+        yearFrom: 1895,
+        yearTo: 2100,
+        gender: null
     }
-  
-}  
+
+    // Merge any filters with the defaults
+    filters = Object.assign({}, defaults, filters);
+
+    // Filter based on that filters object:
+    return data.filter(laur => {
+        return (laur.yearFrom >= filters.yearFrom) &&
+           (laur.yearTo <= filters.yearTo) 
+  });
+}
 
 // get params 
 var params, regex = /[?&]([^=#]+)=([^&#]*)/g, url = window.location.href, params = {}, match;

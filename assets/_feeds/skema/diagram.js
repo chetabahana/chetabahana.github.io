@@ -266,11 +266,16 @@ var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, quer
         if ($(".theme").val() == 'hand' && pad) pad = null;
         else if (!pad) pad = (params.pad)? (params.pad * 1): null;
 
-        // ref https://www.w3cschool.cn/doc_jquery/jquery-jquery-getjson.html
-        //$.getJSON(feed, {name: "Project Maps"}).done(function(result){
         $.getJSON(feed).done(function(result){
 
+            // Underscore.js : findWhere with nested property value
+            // ref https://stackoverflow.com/a/21600748/4058484
+            if (!json) var filtered = _.filter(result, function(obj) {
+                return _.some(obj.items, {id: 128});
+            });console.log(filtered);
+
             if (!json) json = result.items[4].items[2].items;
+
             if (!size) size = json.length;
             if (!type) type = 'Sequence';
 
