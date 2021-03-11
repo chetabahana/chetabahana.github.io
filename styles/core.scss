@@ -54,7 +54,7 @@
 
 #diagram {
     position: absolute;
-    min-height: 364px;
+    min-height: 376px;
     z-index: 999;
     width: 100%;
 }
@@ -73,14 +73,14 @@
 
 .diagram-grammar {
     overflow: auto;
-    height: 364px;
+    height: 376px;
     left: -5px;
     top: 1px;
 }
 
 .diagram-route {
     overflow: auto;
-    height: 364px;
+    height: 376px;
     left: -1px;
     top: -2px;
 }
@@ -103,7 +103,7 @@
 
 #graphiql {
     position: absolute;
-    height: 364px;
+    height: 376px;
     width: 100%;
     left: -1px;
     top: -1px;
