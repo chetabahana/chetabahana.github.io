@@ -9,6 +9,19 @@ value: [719,0,-1,1]
 tags: [1,6,13,21,28,42,60,75,82,88]
 permalink: /diagram.js
 ---
+{%- comment -%}
+*
+*  Here we are defining The Document Object Model (DOM) with JavaScript
+*  as the relations between their nodes with our feeds object.
+*
+*  You may see the running code here:
+*  https://chetabahana.github.io/diagram.js
+*
+*  Note:
+*  Documentation is currently available in bahasa only
+*  https://github.com/chetabahana/chetabahana.github.io/wiki#skema
+*
+{%- endcomment -%}
 // Set editor
 var editor = ace.edit("editor");
 editor.setOptions({fontSize: "10pt"});
@@ -320,9 +333,13 @@ var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, quer
 *                                      "count": 231,
 *                                      "weight": 1,
 *
+*  This id: 128 is under id: 154 where the first child is id: 157.
+*  Therefore both id will perform the scheme of ’2857’ on P(7): ’142857’ where the scheme of ’14’ is done
+*  through 4xid: 150 up to 153. So they are 6 (six) steps which will be translated started on id: 157 up to 162.
+*
 *  Note:
 *  Documentation is currently available in bahasa only
-*  https://github.com/chetabahana/chetabahana.github.io/wiki#skema
+*  https://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid#Mekanisme
 *
 {% endcomment %}
             //Set pos to {{ my_loop5 }} and {{ my_root3 }} per the Scheme of 5‘ and 3‘. See more detail on source code
