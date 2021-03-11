@@ -280,7 +280,6 @@ var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, quer
 {%- assign my_root3 = 2 -%}
 {%- comment -%}
 *
-*
 *  Note:
 *  Documentation is currently available in bahasa only
 *  https://github.com/chetabahana/chetabahana.github.io/wiki#skema
