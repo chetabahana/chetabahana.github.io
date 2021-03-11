@@ -271,7 +271,7 @@ var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, quer
             // Underscore.js : findWhere with nested property value
             // ref https://stackoverflow.com/a/21600748/4058484
             if (!json) var filtered = _.filter(result.items, function(obj) {
-                return _.some(obj.items, {id: 128});
+                return _.some(obj.items, {id: 157});
             });console.log(filtered);
 
             if (!json) json = result.items[4].items[2].items;
