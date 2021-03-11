@@ -23,7 +23,7 @@
 
 .editor-wrapper, .editor {
     display: block;
-    min-height: 278px;
+    min-height: 266px;
     width: 100%;
 }
 
@@ -54,13 +54,13 @@
 
 #diagram {
     position: absolute;
-    min-height: 376px;
+    min-height: 364px;
     z-index: 999;
     width: 100%;
 }
 
 .diagram-sequence {
-    height: 410px;
+    height: 398px;
     left: -5px;
     top: -8px;
 }
@@ -73,14 +73,14 @@
 
 .diagram-grammar {
     overflow: auto;
-    height: 376px;
+    height: 364px;
     left: -5px;
     top: 1px;
 }
 
 .diagram-route {
     overflow: auto;
-    height: 376px;
+    height: 364px;
     left: -1px;
     top: -2px;
 }
@@ -103,7 +103,7 @@
 
 #graphiql {
     position: absolute;
-    height: 376px;
+    height: 364px;
     width: 100%;
     left: -1px;
     top: -1px;
