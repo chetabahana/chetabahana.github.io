@@ -145,7 +145,7 @@ function filterBy(data, filters = {}) {
     // Filter based on that filters object:
     return data.filter(laur => {
         return (laur.yearFrom >= filters.yearFrom) &&
-           (laur.yearTo <= filters.yearTo) 
+           (laur.yearTo <= filters.yearTo);
   });
 }
 
