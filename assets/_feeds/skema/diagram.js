@@ -273,7 +273,7 @@ var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, quer
             if (!json) var filtered = _.filter(result.items, function(obj) {
                 //return _.some(obj.items, {id: 128});
                 return _.where(obj.items, {id: 128}).length > 0;
-            });console.log(filtered[0].items);
+            });console.log(_.some(filtered[0].items, {id: 128}));
 
             if (!json) json = result.items[4].items[2].items;
 
