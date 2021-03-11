@@ -268,21 +268,7 @@ var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, quer
 
         $.getJSON(feed).done(function(result){
 
-            // Underscore.js : findWhere JSON
-            // ref https://stackoverflow.com/a/21600748/4058484
-            // ref https://stackoverflow.com/a/2722213/4058484
-            if (!json) {var leads = _.filter(result.items, function(obj) {
-                    return _.some(obj.items, {id: 128});
-                });
-
-                var newArray = _.filter (leads[0].items, function(lead) {
-                    return lead.title = "Diagram";
-                });
-                console.log(newArray);
-            }
-
             if (!json) json = result.items[4].items[2].items;
-
             if (!size) size = json.length;
             if (!type) type = 'Sequence';
 
