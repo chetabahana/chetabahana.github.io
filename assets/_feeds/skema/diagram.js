@@ -268,8 +268,9 @@ var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, quer
 
         $.getJSON(feed).done(function(result){
 
-            // Underscore.js : findWhere with nested property value
+            // Underscore.js : findWhere JSON
             // ref https://stackoverflow.com/a/21600748/4058484
+            // ref https://stackoverflow.com/a/2722213/4058484
             if (!json) {var leads = _.filter(result.items, function(obj) {
                     return _.some(obj.items, {id: 128});
                 });
