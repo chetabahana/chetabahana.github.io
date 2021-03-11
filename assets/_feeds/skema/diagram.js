@@ -276,9 +276,9 @@ var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, quer
                 });
 
                 var newArray = _.filter (leads[0].items, function(lead) {
-                    return lead.id = 128;
+                    return lead.title = "Diagram";
                 });
-                console.log(leads);
+                console.log(newArray);
             }
 
             if (!json) json = result.items[4].items[2].items;
