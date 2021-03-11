@@ -278,7 +278,7 @@ var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, quer
                 var newArray = _.filter (leads[0].items, function(lead) {
                     return lead.id = 128;
                 });
-                console.log(leads[0].items);
+                console.log(leads);
             }
 
             if (!json) json = result.items[4].items[2].items;
