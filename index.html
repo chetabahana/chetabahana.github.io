@@ -11,12 +11,12 @@ layout: default
 *  https://chetabahana.github.io/
 *
 {% endcomment %}
-{%- assign sections = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'section'" -%}
+{%- assign my_feeds = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'section'" -%}
 <!DOCTYPE html>
 <html lang="id">
     <head>
-{% for section in sections %}
-{{ section.output }}
+{% for my_feed in my_feeds %}
+{{ my_feed.output }}
 {% endfor %}
     </body>
 </html>
