@@ -1,4 +1,4 @@
-{%- assign my_root = site.data.roots[my_pos] -%}
+{%- assign my_root = my_roots[my_pos] -%}
 {%- comment -%}
 * 
 *  Primes Mapping

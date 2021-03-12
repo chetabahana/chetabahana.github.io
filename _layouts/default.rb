@@ -21,9 +21,9 @@
 *
 *  assign the required variables
 *
-{% endcomment %}{% assign my_base = site.basedir %}{% assign my_atributs = 'id, key, link, weight, title, next, content, output, previous, redirect_from, relative_path, collection, excerpt, category, categories, ext, layout, tags, path, url, draft, slug, pos, myId, type, primes, value, object, frame, ratio, pairs, zones' | split:', ' %}{% assign my_tab = '    ' %}{% assign my_path = '' | split: ',' %}{% comment %}
+{% endcomment %}{% assign my_base = site.basedir %}{% assign my_roots = site.data.feeds.skema.roots %}{% assign my_atributs = 'id, key, link, weight, title, next, content, output, previous, redirect_from, relative_path, collection, excerpt, category, categories, ext, layout, tags, path, url, draft, slug, pos, myId, type, primes, value, object, frame, ratio, pairs, zones' | split:', ' %}{% assign my_tab = '    ' %}{% assign my_path = '' | split: ',' %}{% comment %}
 *
-*  get the maximum size of feeds 
+*  get the maximum size of feeds
 *
 {% endcomment %}{% assign my_size = 1 %}{% assign feeds = site.feeds | sort:0 %}{% for feed in feeds %}{% assign my_split = feed.path | split: '/' %}{% assign size = my_split | size %}{% if size > my_size %}{% assign my_path = my_path | push: size %}{% assign my_size = size %}{% endif %}{% endfor %}{% comment %}
 *
