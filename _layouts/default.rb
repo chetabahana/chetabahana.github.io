@@ -21,7 +21,7 @@
 *
 *  assign the required variables
 *
-{% endcomment %}{% assign my_base = site.basedir %}{% assign my_roots = site.data.roots %}{% assign my_atributs = 'id, key, link, weight, title, next, content, output, previous, redirect_from, relative_path, collection, excerpt, category, categories, ext, layout, tags, path, url, draft, slug, pos, myId, type, primes, value, object, frame, ratio, pairs, zones' | split:', ' %}{% assign my_tab = '    ' %}{% assign my_path = '' | split: ',' %}{% comment %}
+{% endcomment %}{% assign my_base = site.basedir %}{% assign my_atributs = 'id, key, link, weight, title, next, content, output, previous, redirect_from, relative_path, collection, excerpt, category, categories, ext, layout, tags, path, url, draft, slug, pos, myId, type, primes, value, object, frame, ratio, pairs, zones' | split:', ' %}{% assign my_tab = '    ' %}{% assign my_path = '' | split: ',' %}{% comment %}
 *
 *  get the maximum size of feeds
 *
