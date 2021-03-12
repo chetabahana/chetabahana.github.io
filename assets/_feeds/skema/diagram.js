@@ -283,7 +283,7 @@ var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, quer
 
             //Set pos to {{ my_loop5 }} and {{ my_root3 }} per the Scheme of 5‘ and 3‘. See more detail on source code
             //ref https://github.com/chetabahana/chetabahana.github.io/blob/Chetabahana/assets/_feeds/skema/diagram.js
-            {%- comment -%}
+            {% comment %}
             * 
             *  Scheme 5‘ and 3‘
             *  Injected by 53 objects of id: 142
@@ -345,7 +345,7 @@ var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, quer
             *  Documentation is currently available in bahasa only
             *  https://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid#Mekanisme
             *
-            {%- endcomment -%}
+            {% endcomment %}
             if (!json) json = result.items[{{ my_loop5 | jsonify }}].items[{{ my_root3 | jsonify }}].items;
             if (!size) size = json.length;
             if (!type) type = 'Sequence';
