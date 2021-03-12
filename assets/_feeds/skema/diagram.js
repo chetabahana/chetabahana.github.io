@@ -280,70 +280,72 @@ var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, quer
         else if (!pad) pad = (params.pad)? (params.pad * 1): null;
 
         $.getJSON(feed).done(function(result){
-{% comment %}
-* 
-*  Scheme 5‘ and 3‘
-*
-*  Array:
-*  loop(5‘) => 4
-*  loop(3‘) => 2
-*
-{%- endcomment -%}
-{%- assign my_loop5 = 4 -%}
-{%- assign my_root3 = 2 -%}
-{%- comment -%}
-*
-*  This will finaly land to id: 128
-*  https://chetabahana.github.io/feed.json
-*
-*                  },
-*                  {
-*                      "id": 128,
-*                      "key": 49,
-*                      "pos": 67,
-*                      "link": 28,
-*                      "root": 331,
-*                      "count": 4,
-*                      "weight": 3,
-*                      "title": "Diagram",
-*                      "category": null,
-*                      "permalink": "/diagram.js",
-*                      "value": [719,0,-1,1],
-*                      "feeds": [1,6,13,21,28,42,60,75,82,88],
-*                      "items": [
-*                          {
-*                              "id": 157,
-*                              "key": 94,
-*                              "pos": 157,
-*                              "root": 919,
-*                              "count": 61,
-*                              "weight": 1,
-*                              "title": "Flowchart",
-*                              "category": "diagram",
-*                              "permalink": "/diagram/flowchart.js",
-*                              "value": [919,3,-1,-2],
-*                              "frame": [1,5,4,50,1],
-*                              "feeds": [1,15,17,20,24,29],
-*                              "items": [
-*                                  {
-*                                      "id": 147,
-*                                      "key": 95,
-*                                      "pos": 147,
-*                                      "root": 853,
-*                                      "count": 231,
-*                                      "weight": 1,
-*
-*  This id: 128 is under id: 154 where the first child is id: 157.
-*  Therefore both id will perform the scheme of ’2857’ on P(7): ’142857’ where the scheme of ’14’ is done
-*  through 4xid: 150 up to 153. So they are 6 (six) steps which will be translated started on id: 157 up to 162.
-*
-*  Note:
-*  Documentation is currently available in bahasa only
-*  https://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid#Mekanisme
-*
-{% endcomment %}
+
             //Set pos to {{ my_loop5 }} and {{ my_root3 }} per the Scheme of 5‘ and 3‘. See more detail on source code
             //ref https://github.com/chetabahana/chetabahana.github.io/blob/Chetabahana/assets/_feeds/skema/diagram.js
+            {%- comment -%}
+            * 
+            *  Scheme 5‘ and 3‘
+            *  Injected by 53 objects of id: 142
+            *
+            *  Array:
+            *  loop(5‘) => 4
+            *  loop(3‘) => 2
+            *
+            {%- endcomment -%}
+            {%- assign my_loop5 = 4 -%}
+            {%- assign my_root3 = 2 -%}
+            {%- comment -%}
+            *
+            *  This will finaly land to id: 128
+            *  https://chetabahana.github.io/feed.json
+            *
+            *                  },
+            *                  {
+            *                      "id": 128,
+            *                      "key": 49,
+            *                      "pos": 67,
+            *                      "link": 28,
+            *                      "root": 331,
+            *                      "count": 4,
+            *                      "weight": 3,
+            *                      "title": "Diagram",
+            *                      "category": null,
+            *                      "permalink": "/diagram.js",
+            *                      "value": [719,0,-1,1],
+            *                      "feeds": [1,6,13,21,28,42,60,75,82,88],
+            *                      "items": [
+            *                          {
+            *                              "id": 157,
+            *                              "key": 94,
+            *                              "pos": 157,
+            *                              "root": 919,
+            *                              "count": 61,
+            *                              "weight": 1,
+            *                              "title": "Flowchart",
+            *                              "category": "diagram",
+            *                              "permalink": "/diagram/flowchart.js",
+            *                              "value": [919,3,-1,-2],
+            *                              "frame": [1,5,4,50,1],
+            *                              "feeds": [1,15,17,20,24,29],
+            *                              "items": [
+            *                                  {
+            *                                      "id": 147,
+            *                                      "key": 95,
+            *                                      "pos": 147,
+            *                                      "root": 853,
+            *                                      "count": 231,
+            *                                      "weight": 1,
+            *
+            *  This id: 128 is under id: 154 where the first child is id: 157.
+            *  Therefore both id will perform the scheme of ’2857’ on P(7): ’142857’ where the scheme of ’14’ is done
+            *  through 4xid: 150 up to 153. So they are 6 (six) steps which will be translated started on id: 157 up to 162.
+            *
+            *  Note:
+            *  Documentation is currently available in bahasa only
+            *  https://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid#Mekanisme
+            *
+            {%- endcomment -%}
             if (!json) json = result.items[{{ my_loop5 | jsonify }}].items[{{ my_root3 | jsonify }}].items;
             if (!size) size = json.length;
             if (!type) type = 'Sequence';
