@@ -3,7 +3,6 @@
 *  collect id
 *
 {%- endcomment -%}
-{%- assign my_tab = "    " -%}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"id": {{ feed.slug | jsonify }},{% if feed.slug > 114 %}{% assign my_key = feed.slug | minus: 101 %}{% else %}{% assign my_key = feed.slug | minus: 1 %}{% endif %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"key": {{ layout.module[my_key] | jsonify }},
