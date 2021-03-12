@@ -6,5 +6,6 @@ weight: 1
 primes: 10
 category: main
 value: [283,5,-1,1]
+pairs: [1,30,90,80]
 tags: [1,4,6,9,13,14]
 ---
