@@ -19,9 +19,7 @@ permalink: /diagram/grammar.js
 *  https://chetabahana.github.io/grammar.json
 *  https://chetabahana.github.io/diagram/grammar.js
 *
-*
-{% endcomment %}
-var Grammar = {
+{% endcomment %}var Grammar = {
 
     feed : function(id, size) {
 

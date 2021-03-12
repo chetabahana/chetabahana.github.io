@@ -19,8 +19,7 @@ permalink: /diagram/flowchart.js
 *  https://chetabahana.github.io/flowchart.json
 *  https://chetabahana.github.io/diagram/flowchart.js
 *
-{% endcomment %}
-var Flowchart = {
+{% endcomment %}var Flowchart = {
 
     feed : function(id, size) {
 

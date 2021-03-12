@@ -21,16 +21,7 @@ permalink: /diagram.js
 *  Documentation is currently available in bahasa only
 *  https://github.com/chetabahana/chetabahana.github.io/wiki#skema
 *
-{%- endcomment -%}
-// Set editor
-var editor = ace.edit("editor");
-editor.setOptions({fontSize: "10pt"});
-editor.setTheme("ace/theme/crimson_editor");
-editor.getSession().setMode("ace/mode/asciidoc");
-editor.getSession().on('change', _.debounce(function() {draw.diagram();}, 100));
-
-// Put all of the process variables in to global
-var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, query, click, diagram, options, elements, draw = {
+{%- endcomment -%}var id, js, ids, pad, back, data, feed, json, link, init, size, test, type, query, click, diagram, options, elements, draw = {
 
     diagram : function() {
 

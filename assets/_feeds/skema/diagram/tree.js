@@ -19,9 +19,7 @@ permalink: /diagram/tree.js
 *  https://chetabahana.github.io/tree.json
 *  https://chetabahana.github.io/diagram/tree.js
 *
-*
-{% endcomment %}
-var dom, keys, node, root, element, Tree = {
+{% endcomment %}var dom, keys, node, root, element, Tree = {
 
     feed : function(id, size) {
 

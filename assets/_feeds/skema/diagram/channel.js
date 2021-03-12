@@ -19,9 +19,7 @@ permalink: /diagram/channel.js
 *  https://chetabahana.github.io/channel.json
 *  https://chetabahana.github.io/diagram/channel.js
 *
-*
-{% endcomment %}
-var Channel = {
+{% endcomment %}var Channel = {
 
     feed : function(id, size) {
 

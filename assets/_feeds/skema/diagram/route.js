@@ -19,9 +19,7 @@ permalink: /diagram/route.js
 *  https://chetabahana.github.io/route.json
 *  https://chetabahana.github.io/diagram/route.js
 *
-*
-{% endcomment %}
-var Route = {
+{% endcomment %}var Route = {
 
     feed : function(id, size) {
 

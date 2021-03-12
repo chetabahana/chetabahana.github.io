@@ -149,6 +149,13 @@ function filterBy(data, filters = {}) {
   });
 }
 
+// set editor
+var editor = ace.edit("editor");
+editor.setOptions({fontSize: "10pt"});
+editor.setTheme("ace/theme/crimson_editor");
+editor.getSession().setMode("ace/mode/asciidoc");
+editor.getSession().on('change', _.debounce(function() {draw.diagram();}, 100));
+
 // get params 
 var params, regex = /[?&]([^=#]+)=([^&#]*)/g, url = window.location.href, params = {}, match;
 while(match = regex.exec(url)) {params[match[1]] = match[2];}
