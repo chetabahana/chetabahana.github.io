@@ -7,62 +7,62 @@
    "gallery":[
         {
            "title":"TEA CUP",
-           "href":"/images/gallery-image-1.jpg",
-           "src":"/images/full-gallery-image-1.jpg",
+           "href":"/images/full-gallery-image-1.jpg",
+           "src":"/images/gallery-image-1.jpg",
            "group":"graphic"
         },
         {
            "title":"TEA CUP",
-           "href":"/images/gallery-image-2.jpg",
-           "src":"/images/full-gallery-image-2.jpg",
+           "href":"/images/full-gallery-image-2.jpg",
+           "src":"/images/gallery-image-2.jpg",
            "group":"graphic"
         },
         {
            "title":"PLANT",
-           "href":"/images/gallery-image-3.jpg",
-           "src":"/images/full-gallery-image-3.jpg",
+           "href":"/images/full-gallery-image-3.jpg",
+           "src":"/images/gallery-image-3.jpg",
            "group":"inspiration"
         },
         {
            "title":"CAMERA",
-           "href":"/images/gallery-image-4.jpg",
-           "src":"/images/full-gallery-image-4.jpg",
+           "href":"/images/full-gallery-image-4.jpg",
+           "src":"/images/gallery-image-4.jpg",
            "group":"graphic"
         },
         {
            "title":"PLANT",
-           "href":"/images/gallery-image-5.jpg",
-           "src":"/images/full-gallery-image-5.jpg",
+           "href":"/images/full-gallery-image-5.jpg",
+           "src":"/images/gallery-image-5.jpg",
            "group":"inspiration"
         },
         {
            "title":"NATURE",
-           "href":"/images/gallery-image-6.jpg",
-           "src":"/images/full-gallery-image-6.jpg",
+           "href":"/images/full-gallery-image-6.jpg",
+           "src":"/images/gallery-image-6.jpg",
            "group":"graphic"
         },
         {
            "title":"NATURE",
-           "href":"/images/gallery-image-7.jpg",
-           "src":"/images/full-gallery-image-7.jpg",
+           "href":"/images/full-gallery-image-7.jpg",
+           "src":"/images/gallery-image-7.jpg",
            "group":"inspiration"
         },
         {
            "title":"ANIMAL",
-           "href":"/images/gallery-image-8.jpg",
-           "src":"/images/full-gallery-image-8.jpg",
+           "href":"/images/full-gallery-image-8.jpg",
+           "src":"/images/gallery-image-8.jpg",
            "group":"graphic"
         },
         {
            "title":"NATURE",
-           "href":"/images/gallery-image-9.jpg",
-           "src":"/images/full-gallery-image-9.jpg",
+           "href":"/images/full-gallery-image-9.jpg",
+           "src":"/images/gallery-image-9.jpg",
            "group":"inspiration"
         },
         {
            "title":"ANIMAL",
-           "href":"/images/gallery-image-10.jpg",
-           "src":"/images/full-gallery-image-10.jpg",
+           "href":"/images/full-gallery-image-10.jpg",
+           "src":"/images/gallery-image-10.jpg",
            "group":"inspiration"
         }
 
