@@ -3,8 +3,6 @@
 *  get page for inclusion
 *
 {%- endcomment -%}
-{%- include data.rb -%}
 {%- if data.js %}{%- include {{ data.js }} -%}
 {%- elsif data.items -%}{{ my_tab }}{{ my_tab }}{{ data.items[0] | jsonify }}
-{%- elsif my_feed.category == 'section' %}{%- include {{ my_feed.path | remove_first: "_" | replace: my_feed.ext, ".html" }} -%}
 {%- else -%}{{ my_feed.content }}{%- endif -%}
