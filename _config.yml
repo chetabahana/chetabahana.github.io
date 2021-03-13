@@ -56,11 +56,13 @@ collections_dir: assets
 
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
   - jekyll-coffeescript
   - jekyll-redirect-from
 
 whitelist:
   - jekyll-feed
+  - jekyll-sitemap
   - jekyll-coffeescript
   - jekyll-redirect-from
   
@@ -154,6 +156,7 @@ flow_labels:
 - eShop SEO
 
 # Site Setting
+# https://stackoverflow.com/a/30828197/4058484
 # https://jekyllrb.com/docs/configuration/options/
 
 baseurl: ""
