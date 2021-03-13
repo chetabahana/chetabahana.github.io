@@ -58,12 +58,14 @@ plugins:
   - jekyll-feed
   - jekyll-coffeescript
   - jekyll-redirect-from
+  - jekyll-optional-front-matter
 
 whitelist:
   - jekyll-feed
   - jekyll-coffeescript
   - jekyll-redirect-from
-  
+  - jekyll-optional-front-matter
+
 # Default Setting
 # https://stackoverflow.com/a/49428493
 # https://jekyllrb.com/docs/collections/
