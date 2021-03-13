@@ -1,6 +1,6 @@
 ---
-layout: data
 title: dummy
+layout: default
 category: object
 ---
 {% comment %}
@@ -11,4 +11,4 @@ category: object
 *  You may see the running code here:
 *  https://chetabahana.github.io/object/2018/132/05/00/00/00/dummy.json
 *
-{% endcomment %}
+{% endcomment %}{%- include data.rb -%}{%- include feeds.rb -%}

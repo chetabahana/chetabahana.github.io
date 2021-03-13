@@ -1,5 +1,5 @@
 ---
-layout: data
+layout: default
 ---
 {% comment %}
 *
@@ -9,4 +9,5 @@ layout: data
 *  You may see the repository code here:
 *  https://github.com/jekyll/jekyll-redirect-from
 *
-{%- endcomment -%}
+{%- endcomment -%}{%- include data.rb -%}
+{%- if data.items -%}{{ my_tab }}{{ my_tab }}{{ data.items[0] | jsonify }}{%- endif -%}
