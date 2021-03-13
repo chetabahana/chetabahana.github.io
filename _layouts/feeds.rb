@@ -1,5 +1,4 @@
 ---
-layout: default
 menus: ['abstrak', 'skema', 'eksekusi', 'portfolio', 'publikasi', 'network', 'diskusi']
 ---
 {% comment %}
