@@ -156,6 +156,7 @@ flow_labels:
 - eShop SEO
 
 # Site Setting
+# https://stackoverflow.com/a/30828197/4058484
 # https://jekyllrb.com/docs/configuration/options/
 
 baseurl: ""
