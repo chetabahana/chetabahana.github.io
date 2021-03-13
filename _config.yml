@@ -56,11 +56,13 @@ collections_dir: assets
 
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
   - jekyll-coffeescript
   - jekyll-redirect-from
 
 whitelist:
   - jekyll-feed
+  - jekyll-sitemap
   - jekyll-coffeescript
   - jekyll-redirect-from
   
