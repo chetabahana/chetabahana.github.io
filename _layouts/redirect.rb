@@ -12,14 +12,14 @@ layout: default
 *  Addressing JSON object in Jekyll _data file
 *  https://stackoverflow.com/a/55094996/4058484
 *
-{% endcomment %}{%- assign my_tab = '    ' -%}{%- include data.rb -%}{% if data.items %}
-{{ my_tab }}{{ my_tab }}{
+{% endcomment %}{% include data.rb %}{%- if data.items -%}
+{% assign my_tab = '    ' %}{{ my_tab }}{{ my_tab }}{
 {% for item in data.items[0] %}
   {%- for prop in item %}
     {%- if forloop.first %}
-        {{ prop }}
+        {{ prop[0] }}: {{ prop[1] }}
     {%- else %}
-      {%- for subprop in prop %}
+        {%- for subprop in prop %}
         {{ subprop[0] }}: {{ subprop[1] }}
       {%- endfor %}
     {%- endif %}
