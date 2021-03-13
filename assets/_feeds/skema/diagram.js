@@ -8,7 +8,6 @@ primes: 4
 value: [719,0,-1,1]
 tags: [1,6,13,21,28,42,60,75,82,88]
 permalink: /diagram.js
-layout: default
 ---
 {%- comment -%}
 *
@@ -273,7 +272,7 @@ layout: default
 
         $.getJSON(feed).done(function(result){
 
-            //Set to {{ data.id }} and {{ data.root }} per the Scheme of 5‘ and 3‘. See more detail on source code
+            //Set to {{ data.loop }} and {{ data.root }} per the Scheme of 5‘ and 3‘. See more detail on source code
             //ref https://github.com/chetabahana/chetabahana.github.io/blob/Chetabahana/assets/_feeds/skema/diagram.js
             {% comment %}
             * 
