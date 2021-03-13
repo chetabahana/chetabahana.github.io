@@ -45,7 +45,7 @@
 {% endcomment %}{% if page.path == 'feed.json' %}{% include items.rb %}{{ my_tab }}{{ my_tab }}}{% unless forloop.last %},
 {% endunless %}{% endif %}{% endfor %}{% if page.path != 'index.html' and page.ext != '.md' %}{% if page.redirect.from %}{{ content }}{% endif %}
 {{ my_tab }}]
-}
+}{{ content }}
 {% else %}{% comment %}
 *
 *  render the main page 
