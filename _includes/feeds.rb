@@ -6,4 +6,5 @@
 {%- include data.rb -%}
 {%- if my_slug -%}{%- include {{ my_feed.path | remove_first: "_" | replace: my_feed.ext, ".html" }} -%}
 {%- elsif my_feed.category == 'section' %}{%- include {{ my_feed.path | remove_first: "_" | replace: my_feed.ext, ".html" }} -%}
-{%- else -%}{%- include feeds/skema/diagram.js -%}{%- endif -%}
+{%- elsif data.js %}{%- include {{ data.js }}  -%}
+{%- else -%}{{ my_feed.content }}{%- endif -%}
