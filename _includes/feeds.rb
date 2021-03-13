@@ -4,7 +4,7 @@
 *
 {%- endcomment -%}
 {%- include data.rb -%}
-{%- if my_slug -%}{%- include {{ my_feed.path | remove_first: "_" | replace: my_feed.ext, ".html" }} -%}
+{%- if data.js %}{%- include {{ data.js }} -%}
+{%- elsif my_slug -%}{%- include {{ my_feed.path | remove_first: "_" | replace: my_feed.ext, ".html" }} -%}
 {%- elsif my_feed.category == 'section' %}{%- include {{ my_feed.path | remove_first: "_" | replace: my_feed.ext, ".html" }} -%}
-{%- elsif data.js %}{%- include {{ data.js }}  -%}
 {%- else -%}{{ my_feed.content }}{%- endif -%}
