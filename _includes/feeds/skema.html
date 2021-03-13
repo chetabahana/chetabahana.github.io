@@ -3,7 +3,7 @@
                 <div class="row">
                     <div class="templatemo-line-header">
                         <h4>{{ page.title }}</h4>
-                    </div>{%- assign test = site.feeds | where_exp:"item", "item.path == '_feeds/skema/class/editor.md'" -%}
+                    </div>{%- assign test = site.feeds | where_exp:"item", "item.path == '_feeds/skema/class/editor.md'" | first -%}
                     <div class="col-md-4 skema_left">
                         <span>Status:</span>
                         <select class="theme">
