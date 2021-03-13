@@ -1,5 +1,8 @@
 {
+
     "id": 128,
     "loop": 4,
-    "root": 2
+    "root": 2,
+    "js": "feeds/skema/diagram.js"
+
 }
