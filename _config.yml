@@ -79,7 +79,10 @@ defaults:
     values:
       layout: "feeds"
 
-# Permalinks
+optional_front_matter:
+  remove_originals: true
+
+  # Permalinks
 # https://jekyllrb.com/docs/permalinks/
 # feeds: https://chetabahana.github.io/feed.json
 # leads: https://chetabahana.github.io/flowchart.json
