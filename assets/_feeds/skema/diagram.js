@@ -272,7 +272,7 @@ permalink: /diagram.js
 
         $.getJSON(feed).done(function(result){
 
-            //Set pos to 4 and 2 per the Scheme of 5‘ and 3‘. See more detail on source code
+            //Set to {{ data.loop }} and {{ data.root }} per the Scheme of 5‘ and 3‘. See more detail on source code
             //ref https://github.com/chetabahana/chetabahana.github.io/blob/Chetabahana/assets/_feeds/skema/diagram.js
             {% comment %}
             * 
@@ -282,11 +282,6 @@ permalink: /diagram.js
             *  Array:
             *  loop(5‘) => 4
             *  loop(3‘) => 2
-            *
-            {%- endcomment -%}
-            {%- assign my_loop5 = 4 -%}
-            {%- assign my_root3 = 2 -%}
-            {%- comment -%}
             *
             *  This will finaly land to id: 128
             *  https://chetabahana.github.io/feed.json
@@ -337,7 +332,7 @@ permalink: /diagram.js
             *  https://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid#Mekanisme
             *
             {% endcomment %}
-            if (!json) json = result.items[{{ my_loop5 | jsonify }}].items[{{ my_root3 | jsonify }}].items;
+            if (!json) json = result.items[{{ data.loop }}].items[{{ data.root }}].items;
             if (!size) size = json.length;
             if (!type) type = 'Sequence';
 
