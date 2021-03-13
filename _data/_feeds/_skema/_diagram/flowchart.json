@@ -1,6 +1,7 @@
 {
     "id": 157,
     "title": "flowchart",
+    "js": "feeds/skema/diagram/flowchart.js",
     "items": [
         {
             "style": 

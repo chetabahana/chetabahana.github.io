@@ -1,6 +1,7 @@
 {
     "id": 161,
     "title": "route",
+    "js": "feeds/skema/diagram/route.js",
     "items": [
         {
             "style": [

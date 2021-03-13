@@ -1,6 +1,7 @@
 {
     "id": 159,
     "title": "channel",
+    "js": "feeds/skema/diagram/channel.js",
     "items": [
         {
             "guide": {

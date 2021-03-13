@@ -1,6 +1,7 @@
 {
     "id": 160,
     "title": "grammar",
+    "js": "feeds/skema/diagram/grammar.js",
     "items": [
         {
             "style": {
