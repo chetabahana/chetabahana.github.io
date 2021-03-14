@@ -25,13 +25,12 @@ layout: default
                     {{- my_tabn }}{{ item | jsonify }}: {
                 {%- else %}
                     {%- for subitem in item %}
-                        {{- my_tabn }}{{ my_tab }}{{ subitem[0] | jsonify}}: {{ subitem[1] | jsonify}}
+                        {{- my_tabn }}{{ my_tab }}{{ subitem[0] | jsonify}}: {{ subitem[1] | jsonify -}}
+                        {%- unless forloop.last %},{% endunless %}
                     {%- endfor %}
                 {%- endif %}
             {%- endfor %}
             {{- my_tabn }}}
-
-
         {%- else %}
             {{- my_tabn }}{{ items[0] | jsonify }}: {{ items[1] | jsonify }}
         {%- endif %}{% unless forloop.last %},{% endunless %}
