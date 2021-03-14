@@ -81,13 +81,13 @@ defaults:
       type: "feeds"
     values:
       layout: "feeds"
+  -
+    scope:
+      path: "docs/*/test.md"
+    values:
+      layout: "feeds/skema"
       redirect_from: /:title:output_ext
-#   -
-#     scope:
-#       path: "section/*/special-page.html"
-#     values:
-#       layout: "specific-layout"
-      
+
 # Permalinks
 # https://jekyllrb.com/docs/permalinks/
 # feeds: https://chetabahana.github.io/feed.json

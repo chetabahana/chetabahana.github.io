@@ -16,6 +16,8 @@ layout: default
 {% endcomment %}{% include data.rb %}{%- if data.items -%}
 {% assign my_tab = '    ' %}{{ my_tab }}{{ my_tab }}{
 {%- for items in data.items[0] %}
+
+
         {% if items[1].first %}
 
             {% for item in items %}
@@ -27,7 +29,7 @@ layout: default
         {% else %}
 
 
-
+                {{ items[0] | jsonify }}: {{ items[1] | jsonify }}{% unless forloop.last %},{% endunless %}
 
 
         {%- endif -%}
