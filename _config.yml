@@ -82,11 +82,11 @@ defaults:
     values:
       layout: "feeds"
       redirect_from: /:title:output_ext
-  -
-    scope:
-      path: "section/*/special-page.html"
-    values:
-      layout: "specific-layout"
+#   -
+#     scope:
+#       path: "section/*/special-page.html"
+#     values:
+#       layout: "specific-layout"
       
 # Permalinks
 # https://jekyllrb.com/docs/permalinks/

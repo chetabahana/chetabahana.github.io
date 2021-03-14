@@ -16,14 +16,21 @@ layout: default
 {% endcomment %}{% include data.rb %}{%- if data.items -%}
 {% assign my_tab = '    ' %}{{ my_tab }}{{ my_tab }}{
 {%- for items in data.items[0] %}
+        {% if items[1].first %}
 
-    {% if items[1].first %}array{% else %}string{% endif %}
-    
-        {% for item in items %}
-        {%- for prop in item %}
-            {{ prop | jsonify }}
-        {%- endfor %}
-    {%- endfor %}
+            {% for item in items %}
+                {%- for prop in item %}
+                    {{ prop | jsonify }}
+                {%- endfor %}
+            {%- endfor %}
+
+        {% else %}
+
+
+
+
+
+        {%- endif -%}
 {%- endfor %}
         }
 {%- endif -%}
