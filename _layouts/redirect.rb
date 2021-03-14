@@ -17,15 +17,8 @@ layout: default
 {% assign my_tab = '    ' %}{{ my_tab }}{{ my_tab }}{
 {%- for items in data.items[0] -%}
         {%- if items[1].first -%}
-            {%- for item in items -%}
-                {%- if forloop.first -%}
-                    {{- my_tab }}{{ my_tab }}{{ my_tab }}{{ item | jsonify }}: {
 
 
-
-                    {{- my_tab }}{{ my_tab }}{{ my_tab }}}
-                {%- endif %}{% unless forloop.last %},{% endunless %}
-            {%- endfor %}
         {% else %}
             {{ items[0] | jsonify }}: {{ items[1] | jsonify }}{% unless forloop.last %},{% endunless %}
         {%- endif -%}
