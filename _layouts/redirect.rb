@@ -20,7 +20,7 @@ layout: default
         {%- if items[1].first %}
             {%- for item in items %}
                 {%- if forloop.first %}
-                    {{- my_tabs }}{{ item | jsonify}}:
+                    {{- my_tabs }}{{ item | jsonify }}:
                 {%- else %}
                     {%- for subitem in item %}
                         {{- my_tabs }}{{ my_tab }}{{ subitem[0] | jsonify}}: {{ subitem[1] | jsonify}}
@@ -31,7 +31,7 @@ layout: default
 
 
         {%- else %}
-            {{- my_tabs }}{{ items[0] | jsonify }}: {{ items[1] | jsonify -}}
+            {{- my_tabs }}{{ items[0] | jsonify }}: {{ items[1] | jsonify }}
         {%- endif %}{% unless forloop.last %},{% endunless %}
     {%- endfor %}
     {{- my_tabs }}}
