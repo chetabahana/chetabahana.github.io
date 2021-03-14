@@ -26,7 +26,7 @@ layout: default
                 {%- else %}
                     {%- for subitem in item %}
                         {%- if subitem[1].first %}
-                            {{- my_tabn }}{{ my_tab }}{{ subitem | jsonify}}
+                            {{- my_tabn }}{{ my_tab }}{{ subitem[1] | jsonify }}
                         {%- else %}
                             {{- my_tabn }}{{ my_tab }}{{ subitem[0] | jsonify}}: {{ subitem[1] | jsonify -}}
                         {%- endif %}
