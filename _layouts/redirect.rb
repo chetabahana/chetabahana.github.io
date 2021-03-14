@@ -22,7 +22,7 @@ layout: default
                 {{ prop | jsonify }}
             }
         {%- endif -%}
-    {%- endfor %}
+    {%- endfor %}{% unless forloop.last %},{% endunless %}
 {%- endfor %}
         }
 {%- endif -%}
