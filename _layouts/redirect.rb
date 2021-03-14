@@ -21,8 +21,8 @@ layout: default
             test
 
         {%- else %}
-            {{ items[0] | jsonify }}: {{ items[1] | jsonify }}{% unless forloop.last %},{% endunless %}
-        {%- endif %}
-{%- endfor -%}
+            {{ items[0] | jsonify }}: {{ items[1] | jsonify -}}
+        {%- endif -%}{% unless forloop.last %},{% endunless %}
+{%- endfor %}
         }
 {%- endif -%}
