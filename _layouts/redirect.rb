@@ -18,8 +18,8 @@ layout: default
     {%- for prop in item %}
         {%- if forloop.first %}
             {{ prop | jsonify }}: {
-            }{% unless forloop.last %},{% endunless %}
         {%- endif %}
+            }{% unless forloop.last %},{% endunless %}
     {%- endfor %}
 {%- endfor %}
         }
