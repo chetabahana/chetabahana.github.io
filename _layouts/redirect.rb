@@ -23,7 +23,7 @@ layout: default
             {%- for item in items %}
 
                 {%- if item[1].first %}
-                    {{- my_tabn }}{{ item | jsonify }}
+
 
 
                 {%- else %}
