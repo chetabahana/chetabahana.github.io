@@ -18,8 +18,8 @@ layout: default
     {%- for prop in item %}
         {%- if forloop.first %}
             {{ prop | jsonify }}: {
-        {%- else %}{{ prop | jsonify | split: ',' | size | times: 1 }}-{{ prop[0] | jsonify | split: ',' | size | times: 1 }}
-            {%- if prop | size == 1 %}
+        {%- else %}{% assign my_size = prop | jsonify | split: ',' | size | times: 1 -%}
+            {%- if my_size == 1 %}
                 {{ prop | jsonify }}
             {%- else %}
                 {%- for subprop in prof %}
