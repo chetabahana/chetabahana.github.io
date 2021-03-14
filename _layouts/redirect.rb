@@ -37,4 +37,4 @@ layout: default
         {%- endif %}{% unless forloop.last %},{% endunless %}
     {%- endfor %}
 {{ my_tabs }}}
-{% endif -%}
+{%- endif -%}
