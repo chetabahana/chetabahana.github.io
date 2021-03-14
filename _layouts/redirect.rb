@@ -23,17 +23,20 @@ layout: default
             {%- for item in items %}
 
                 {%- if item[1].first %}
-                    {{- my_tabn }}{{ item | jsonify }}: [
-                    array
+                    {{- my_tabn }}{{ item | jsonify }}
+
+
                 {%- else %}
-                {%- if forloop.first %}
-                    {{- my_tabn }}{{ item | jsonify }}: {
-                {%- else %}
-                    {%- for subitem in item %}
-                        {{- my_tabn }}{{ my_tab }}{{ subitem[0] | jsonify}}: {{ subitem[1] | jsonify -}}
-                        {%- unless forloop.last %},{% endunless %}
-                    {%- endfor %}
-                {%- endif %}
+
+
+                    {%- if forloop.first %}
+                        {{- my_tabn }}{{ item | jsonify }}: {
+                    {%- else %}
+                        {%- for subitem in item %}
+                            {{- my_tabn }}{{ my_tab }}{{ subitem[0] | jsonify}}: {{ subitem[1] | jsonify -}}
+                            {%- unless forloop.last %},{% endunless %}
+                        {%- endfor %}
+                    {%- endif %}
 
                 {%- endif %}
 
