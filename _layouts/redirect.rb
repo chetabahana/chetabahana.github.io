@@ -17,7 +17,7 @@ layout: default
 {% assign my_tab = '    ' %}{{ my_tab }}{{ my_tab }}{
 {%- for items in data.items[0] %}
 
-    {{% if items[1].first %}array{% else %}string{% endif %}
+    {% if items[1].first %}array{% else %}string{% endif %}
     
         {% for item in items %}
         {%- for prop in item %}
