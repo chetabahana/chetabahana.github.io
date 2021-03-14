@@ -21,6 +21,15 @@ layout: default
 
 
 
+              {%- for item in items %}
+                {%- if forloop.first %}
+                    {{ item }}
+                {%- else %}
+                  {%- for subitem in item %}
+                        {{ subitem[0] }}: {{ subitem[1] }}
+                  {%- endfor %}
+                {%- endif %}
+              {%- endfor %}
 
 
 
