@@ -23,9 +23,9 @@ layout: default
             {%- for item in items %}
 
                 {%- if item[1].first %}
-                array
+                    {{- my_tabn }}{{ item | jsonify }}: [
+                    array
                 {%- else %}
-
                 {%- if forloop.first %}
                     {{- my_tabn }}{{ item | jsonify }}: {
                 {%- else %}
