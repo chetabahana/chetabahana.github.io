@@ -25,7 +25,7 @@ layout: default
             {{- my_tabs }}{{ my_tab }}}
         {%- else %}
             {{- my_tabs }}{{ my_tab }}{{ items[0] | jsonify }}: {{ items[1] | jsonify -}}
-        {%- endif -%}{% unless forloop.last %},{% endunless %}
+        {%- endif %}{% unless forloop.last %},{% endunless %}
 {% endfor %}
         {{- my_tabs }}}
 {% endif -%}
