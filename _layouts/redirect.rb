@@ -18,13 +18,14 @@ layout: default
     {%- for prop in item %}
         {%- if forloop.first %}
             {{ prop | jsonify }}: {
-        {%- elsif prop | size == 1 %}
-            {{ prop | jsonify }}
-            }
         {%- else %}
-            {%- for subprop in prof %}
-                {{ subprop[0] | jsonify }}: {{ subprop[1] | jsonify }}{% unless forloop.last %},{% endunless %}
-            {%- endfor %}
+            {%- if prop | size == 1 %}
+                {{ prop | jsonify }}
+            {%- else %}
+                {%- for subprop in prof %}
+                    {{ subprop[0] | jsonify }}: {{ subprop[1] | jsonify }}{% unless forloop.last %},{% endunless %}
+                {%- endfor %}
+            {%- endif -%}
             }
         {%- endif -%}
     {%- endfor %}{% unless forloop.last %},{% endunless %}
