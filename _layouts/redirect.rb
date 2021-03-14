@@ -32,8 +32,8 @@ layout: default
                         {%- unless forloop.last %},{% endunless %}
                     {%- endfor %}
                 {%- endif %}
-             {{- my_tabn }}}
-           {%- endfor %}
+                {{- my_tabn }}{%- unless forloop.last %}}{% endunless %}
+            {%- endfor %}
 
 
 
