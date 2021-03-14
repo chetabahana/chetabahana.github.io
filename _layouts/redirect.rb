@@ -17,9 +17,14 @@ layout: default
 {% assign my_tab = '    ' %}{{ my_tab }}{{ my_tab }}{
 {%- for items in data.items[0] -%}
     {%- for item in items %}
+        {% assign my_size = item[1] | jsonify | split: ',' | size | times: 1 -%}
+        {%- if my_size == 1 %}
+            {{ item[0] | jsonify }}: {{ item[1] | jsonify }}{% unless forloop.last %},{% endunless %}
+        {%- else %}
         {%- for prop in item %}
             {{ prop | jsonify }}
         {%- endfor %}
+        {%- endif -%}
     {%- endfor %}
 {%- endfor %}
         }
