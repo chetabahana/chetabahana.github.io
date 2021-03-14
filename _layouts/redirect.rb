@@ -23,7 +23,7 @@ layout: default
                 {{ subprop[0] | jsonify }}: {{ subprop[1] | jsonify }}
                 {% unless forloop.last %},{% endunless %}
             {%- endfor %}
-            }{% unless forloop.last %},{% endunless %}
+            }{% unless forloop.last %},{% endunless %}{% endif %}
         {%- endif %}
     {%- endfor %}
 {%- endfor %}
