@@ -18,7 +18,7 @@ layout: default
     {%- for prop in item %}
         {%- if forloop.first %}
             {{ prop | jsonify }}: {
-        {%- elsif prop.size == 1 %}
+        {%- elsif prop | size == 1 %}
             {{ prop | jsonify }}
             }
         {%- else %}
