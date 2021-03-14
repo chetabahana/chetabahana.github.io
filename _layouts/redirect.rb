@@ -14,9 +14,9 @@ layout: default
 *  https://stackoverflow.com/q/34048313/4058484
 *
 {% endcomment %}{% include data.rb %}{% if data.items -%}
-    {% assign variable = data.items[0] %}{% assign my_tabs = 2 %}{% assign my_tab = '    ' -%}
-    {% capture my_tabs %}{% for i in (1..my_tabs) %}{{ my_tab }}{% endfor %}{% endcapture %}{{ my_tabs }}{
-    {% for items in variable %}
+    {%- assign variable = data.items[0] %}{% assign my_tabs = 2 %}{% assign my_tab = '    ' -%}
+    {%- capture my_tabs %}{% for i in (1..my_tabs) %}{{ my_tab }}{% endfor %}{% endcapture %}{{ my_tabs }}{
+    {%- for items in variable %}
         {%- if items[1].first %}
             {%- for item in items %}
                 {%- if forloop.first %}
