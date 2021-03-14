@@ -22,7 +22,10 @@ layout: default
         {%- if items[1].first %}
 
             {%- for item in items %}
-test
+
+
+{%- if item[1].first %}array{%- else %}string{%- endif %}
+
 
                 {%- if forloop.first %}
                     {{- my_tabn }}{{ item | jsonify }}: {
