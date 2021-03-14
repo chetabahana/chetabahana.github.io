@@ -11,17 +11,17 @@ layout: default
 *  https://chetabahana.github.io/sequence.json
 *
 *  jekyll debug or print all variables
-*  
+*  https://stackoverflow.com/q/34048313/4058484
 *
 {% endcomment %}{% include data.rb %}{%- if data.items -%}
 {% assign my_tab = '    ' %}{{ my_tab }}{{ my_tab }}{
 {%- for items in data.items[0] -%}
         {%- if items[1].first %}
-            {{ items[0] | jsonify | escape }}: {
+            {{ items[0] | jsonify }}: {
 
             }
         {%- else %}
-            {{ items[0] | jsonify  | escape }}: {{ items[1] | jsonify | escape -}}
+            {{ items[0] | jsonify }}: {{ items[1] | jsonify -}}
         {%- endif -%}{% unless forloop.last %},{% endunless %}
 {%- endfor %}
         }
