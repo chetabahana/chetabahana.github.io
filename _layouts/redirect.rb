@@ -24,11 +24,11 @@ layout: default
             {%- for item in items %}
 
 
-{%- if item[1].first %}array{%- else %}string{%- endif %}
+
 
 
                 {%- if forloop.first %}
-                    {{- my_tabn }}{{ item | jsonify }}: {
+                    {{- my_tabn }}{{ item | jsonify }}: {%- if item[1].first %}array{%- else %}string{%- endif %}{
                 {%- else %}
                     {%- for subitem in item %}
                         {{- my_tabn }}{{ my_tab }}{{ subitem[0] | jsonify}}: {{ subitem[1] | jsonify -}}
