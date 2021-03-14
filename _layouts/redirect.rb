@@ -25,7 +25,7 @@ layout: default
                 {%- for subprop in prof %}
                     {{ subprop[0] | jsonify }}: {{ subprop[1] | jsonify }}{% unless forloop.last %},{% endunless %}
                 {%- endfor %}
-            {%- endif -%}
+            {%- endif %}
             }
         {%- endif -%}
     {%- endfor %}{% unless forloop.last %},{% endunless %}
