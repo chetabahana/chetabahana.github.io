@@ -18,8 +18,6 @@ layout: default
     {%- for prop in item %}
             {{ prop | jsonify }}: {
             }
-        {%- endif %}
     {%- endfor %}
 {%- endfor %}
         }
-{%- endif -%}
