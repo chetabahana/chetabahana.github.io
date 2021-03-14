@@ -15,15 +15,15 @@ layout: default
 *
 {%- endcomment %}{% include data.rb %}{% if data.items -%}
 {%- assign my_tabs = 2 %}{% assign my_tab = '    ' -%}
-{%- for i in (1..my_tabs) %}{{ my_tab }}{% endfor %}{
+{%- capture my_tabs %}{% for i in (1..my_tabs) %}{{ my_tab }}{% endfor %}{% endcapture %}{{ my_tabs }}{
 {%- for items in data.items[0] -%}
         {%- if items[1].first %}
-            {{ items[0] | jsonify }}: {
+            {{- my_tabs }}{{ my_tab }}{{ items[0] | jsonify }}: {
 
-            }
+            {{- my_tabs }}{{ my_tab }}}
         {%- else %}
-            {{ items[0] | jsonify }}: {{ items[1] | jsonify -}}
+            {{- my_tabs }}{{ my_tab }}{{ items[0] | jsonify }}: {{ items[1] | jsonify -}}
         {%- endif -%}{% unless forloop.last %},{% endunless %}
 {%- endfor %}
-        }
+        {{- my_tabs }}}
 {%- endif -%}
