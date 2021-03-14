@@ -13,10 +13,10 @@ layout: default
 *  jekyll debug or print all variables
 *  https://stackoverflow.com/q/34048313/4058484
 *
-{%- endcomment %}{% include data.rb %}{% if data.items -%}
-{%- assign my_tabs = 2 %}{% assign my_tab = '    ' -%}
-{%- capture my_tabs %}{% for i in (1..my_tabs) %}{{ my_tab }}{% endfor %}{% endcapture %}{{ my_tabs }}{
-{%- for items in data.items[0] -%}
+{% endcomment %}{% include data.rb %}{% if data.items -%}
+{% assign variable = data.items[0] %}{% assign my_tabs = 2 %}{% assign my_tab = '    ' -%}
+{% capture my_tabs %}{% for i in (1..my_tabs) %}{{ my_tab }}{% endfor %}{% endcapture %}{{ my_tabs }}{
+{% for items in variable -%}
         {%- if items[1].first %}
             {{- my_tabs }}{{ my_tab }}{{ items[0] | jsonify }}: {
 
@@ -24,6 +24,6 @@ layout: default
         {%- else %}
             {{- my_tabs }}{{ my_tab }}{{ items[0] | jsonify }}: {{ items[1] | jsonify -}}
         {%- endif -%}{% unless forloop.last %},{% endunless %}
-{%- endfor %}
+{% endfor %}
         {{- my_tabs }}}
-{%- endif -%}
+{% endif -%}
