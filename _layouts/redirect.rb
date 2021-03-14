@@ -13,8 +13,9 @@ layout: default
 *  jekyll debug or print all variables
 *  https://stackoverflow.com/q/34048313/4058484
 *
-{% endcomment %}{% include data.rb %}{%- if data.items -%}
-{% assign my_tab = '    ' %}{{ my_tab }}{{ my_tab }}{
+{%- endcomment %}{% include data.rb %}{% if data.items -%}
+{%- assign my_tabs = 2 %}{% assign my_tab = '    ' -%}
+{%- for i in (1..my_tabs) %}{{ my_tab }}{% endfor %}{
 {%- for items in data.items[0] -%}
         {%- if items[1].first %}
             {{ items[0] | jsonify }}: {
