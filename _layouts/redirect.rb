@@ -13,7 +13,7 @@ layout: default
 *  https://stackoverflow.com/a/55094996/4058484
 *
 {% endcomment %}{% include data.rb %}{%- if data.items -%}
-        {
+{% assign my_tab = '    ' %}{{ my_tab }}{{ my_tab }}{
 {%- for item in data.items[0] -%}
     {%- for prop in item %}
         {%- if forloop.first %}
