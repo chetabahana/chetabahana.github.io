@@ -21,3 +21,4 @@ layout: default
     {%- endfor %}
 {%- endfor %}
         }
+{%- endif -%}
