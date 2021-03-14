@@ -19,9 +19,10 @@ layout: default
 {% for items in variable -%}
         {%- if items[1].first %}
             {{- my_tabs }}{{ my_tab }}{{ items[0] | jsonify }}: {
-            {%- for item in items[2] %}
-                {{- my_tabs }}{{ my_tab }}{{ my_tab }}{{ item[0] | jsonify }}: {{ item[1] | jsonify }}
-            {%- endfor %}
+
+
+
+
             {{- my_tabs }}{{ my_tab }}}
         {%- else %}
             {{- my_tabs }}{{ my_tab }}{{ items[0] | jsonify }}: {{ items[1] | jsonify -}}
