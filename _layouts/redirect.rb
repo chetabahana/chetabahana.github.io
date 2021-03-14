@@ -19,16 +19,12 @@ layout: default
         {% if items[1].first %}
             {% for item in items %}
                 {%- for prop in item %}
+                    {%- if forloop.first %}{{ my_tab }}{{ my_tab }}{{ my_tab }}{{ prop | jsonify }}: {
+                    {%- else %}
 
-            {%- if forloop.first %}
-                {{ prop | jsonify }}: {
-            {%- else %}
-                {%- for subprop in prop %}
-                {{ subprop[0] | jsonify }}: {{ subprop[1] | jsonify }}{% unless forloop.last %},{% endunless %}
-                {%- endfor %}
-            {%- endif %}
-            }
 
+                    {%- endif %}
+                    }
                 {%- endfor %}
             {%- endfor %}
         {% else %}
