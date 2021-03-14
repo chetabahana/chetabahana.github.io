@@ -16,7 +16,7 @@ layout: default
 {% endcomment %}{% include data.rb %}{%- if data.items -%}
 {% assign my_tab = '    ' %}{{ my_tab }}{{ my_tab }}{
 {%- for items in data.items[0] -%}
-    {{ item[1] | jsonify }}
+        {{ items[1] | jsonify }}
         {%- for item in items %}
         {%- for prop in item %}
             {{ prop | jsonify }}
