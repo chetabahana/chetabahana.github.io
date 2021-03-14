@@ -27,11 +27,7 @@ layout: default
             {%- endfor %}
 
         {% else %}
-
-
-                {{ items[0] | jsonify }}: {{ items[1] | jsonify }}{% unless forloop.last %},{% endunless %}
-
-
+            {{ items[0] | jsonify }}: {{ items[1] | jsonify }}{% unless forloop.last %},{% endunless %}
         {%- endif -%}
 {%- endfor %}
         }
