@@ -17,7 +17,7 @@ layout: default
     {%- assign variable = data.items[0] %}{% assign my_tabs = 2 -%}{%- assign my_tab = '    ' -%}
     {%- capture my_tabs %}{% for i in (1..my_tabs) %}{{ my_tab }}{% endfor %}{% endcapture -%}
     {%- capture my_tabn %}
-{{ my_tabs }}{% endcapture -%}{{- my_tabs }}{
+    {{ my_tabs }}{% endcapture -%}{{- my_tabs }}{
     {%- for items in variable %}
         {%- if items[1].first %}
             {%- for item in items %}
