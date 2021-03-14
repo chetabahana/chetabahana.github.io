@@ -17,7 +17,7 @@ layout: default
 {% assign my_tab = '    ' %}{{ my_tab }}{{ my_tab }}{
 {%- for items in data.items[0] -%}
         {%- for item in items %}
-        {{ item.first }}
+        {{ item.first }}:{% if item.first %}array{% else %}string{% endif %}
         {%- for prop in item %}
             {{ prop | jsonify }}
         {%- endfor %}
