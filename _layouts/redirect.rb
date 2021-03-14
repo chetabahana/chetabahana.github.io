@@ -17,9 +17,10 @@ layout: default
 {%- for item in data.items[0] -%}
     {%- for prop in item %}
         {%- if forloop.first %}
-            {{ prop | jsonify }}
+            {{ prop | jsonify }}: {
         {%- else %}
                 {{ prop | jsonify }}
+            }
         {%- endif -%}
     {%- endfor %}
 {%- endfor %}
