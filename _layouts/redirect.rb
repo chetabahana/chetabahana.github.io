@@ -8,7 +8,7 @@ layout: default
 *  Ref: https://github.com/jekyll/jekyll-redirect-from
 *
 *  You may see the running code here:
-*  https://chetabahana.github.io/sequence.json
+*  https://chetabahana.github.io/channel.json
 *
 *  jekyll debug or print all variables
 *  https://stackoverflow.com/q/34048313/4058484
@@ -25,7 +25,11 @@ layout: default
                     {{- my_tabn }}{{ item | jsonify }}: {
                 {%- else %}
                     {%- for subitem in item %}
-                        {{- my_tabn }}{{ my_tab }}{{ subitem[0] | jsonify}}: {{ subitem[1] | jsonify -}}
+                        {%- if subitem[1].first %}
+                            {{- my_tabn }}{{ my_tab }}{{ subitem | jsonify}}
+                        {%- else %}
+                            {{- my_tabn }}{{ my_tab }}{{ subitem[0] | jsonify}}: {{ subitem[1] | jsonify -}}
+                        {%- endif %}
                         {%- unless forloop.last %},{% endunless %}
                     {%- endfor %}
                 {%- endif %}
