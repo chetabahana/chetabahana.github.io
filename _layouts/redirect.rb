@@ -20,25 +20,27 @@ layout: default
     {{ my_tabs }}{% endcapture -%}{{- my_tabs }}{
     {%- for items in variable %}
         {%- if items[1].first %}
-
-
-
             {%- for item in items %}
-                {%- if forloop.first %}
-                    {{- my_tabn }}{{ item | jsonify }}: {
+
+                {%- if item[1].first %}
+
                 {%- else %}
-                    {%- for subitem in item %}
-                        {{- my_tabn }}{{ my_tab }}{{ subitem[0] | jsonify}}: {{ subitem[1] | jsonify -}}
-                        {%- unless forloop.last %},{% endunless %}
-                    {%- endfor %}
-                    {%- if forloop.last %}{{- my_tabn }}}{% endif %}
+
+                    {%- if forloop.first %}
+                        {{- my_tabn }}{{ item | jsonify }}: {
+                    {%- else %}
+                        {%- for subitem in item %}
+                            {{- my_tabn }}{{ my_tab }}{{ subitem[0] | jsonify}}: {{ subitem[1] | jsonify -}}
+                            {%- unless forloop.last %},{% endunless %}
+                        {%- endfor %}
+                        {%- if forloop.last %}{{- my_tabn }}}{% endif %}
+                    {%- endif %}
+
+
                 {%- endif %}
+
+
             {%- endfor %}
-
-
-
-
-
         {%- else %}
             {{- my_tabn }}{{ items[0] | jsonify }}: {{ items[1] | jsonify }}
         {%- endif %}{% unless forloop.last %},{% endunless %}
