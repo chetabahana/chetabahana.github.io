@@ -23,10 +23,10 @@ layout: default
 
               {%- for item in items %}
                 {%- if forloop.first %}
-                    {{ item }}
+                    {{ item  | jsonify}}
                 {%- else %}
                   {%- for subitem in item %}
-                        {{ subitem[0] }}: {{ subitem[1] }}
+                        {{ subitem[0] | jsonify}}: {{ subitem[1] | jsonify}}
                   {%- endfor %}
                 {%- endif %}
               {%- endfor %}
