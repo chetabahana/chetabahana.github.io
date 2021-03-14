@@ -18,6 +18,9 @@ form_engines:
 - formspree
 - formbucket
 
+# Repository Settings
+# https://blog.webjeda.com/jekyll-redirect/
+
 include:
   - app.js
   - feed.xml
@@ -78,7 +81,13 @@ defaults:
       type: "feeds"
     values:
       layout: "feeds"
-
+      redirect_from: /:title:output_ext
+  -
+    scope:
+      path: "section/*/special-page.html"
+    values:
+      layout: "specific-layout"
+      
 # Permalinks
 # https://jekyllrb.com/docs/permalinks/
 # feeds: https://chetabahana.github.io/feed.json

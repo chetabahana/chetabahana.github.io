@@ -6,11 +6,12 @@
 {%- if data.js %}{%- include {{ data.js }} -%}
 {%- else -%}{{ my_feed.content }}{% endif %}{%- comment -%}
 *
-*  {"data": {{ site.data | jsonify }}}
-*  {"pages": {{ site.pages | jsonify }}}
-*  {"html": {{ site.html_pages | jsonify }}}
-*  {"assets": {{ site.collections | jsonify }}}
-*  {"files": {{ site.static_files | jsonify }}}
-*  {"repos": {{ site.github.public_repositories | jsonify }}}
+*  {"site": {{ site | jsonify | escape }}}
+*  {"page": {{ page | jsonify | escape }}}
+*  {"layout": {{ layout | jsonify | escape }}}
+*  {"content": {{ content | jsonify | escape }}}
+*  {"paginator": {{ paginator | jsonify | escape }}}
+*
+*  ref: https://stackoverflow.com/a/53693728/4058484
 *
 {%- endcomment -%}
