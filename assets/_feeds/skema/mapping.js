@@ -7,7 +7,6 @@ primes: 640
 value: [911,4,-1,-2]
 frame: [50,60,400,70,10,50]
 tags: [1,9,26,40,56,74,82,96]
-permalink: /mapping.js
 ---
 {%- comment -%}
 *
