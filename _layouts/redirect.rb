@@ -29,13 +29,13 @@ layout: default
                         {%- if subitem[1].first %}
                              {{- my_tabn }}{{ my_tab }}{{ my_tab }}{{ my_tab }}array in array
                         {%- else %}
-                             {{- my_tabn }}{{ my_tab }}{{ my_tab }}2nd string in array
+                             {{- my_tabn }}{{ my_tab }}{{ my_tab }}{{ subitem[0] | jsonify }}: {{ subitem[1] | jsonify }}
                         {%- endif %}
                     {%- endfor %}
 
                 {%- else -%}
 
-                    {{- my_tabn }}{{ my_tab }}1st string in array
+                    {{- my_tabn }}{{ my_tab }}{{ item[0] | jsonify }}: {{ item[1] | jsonify }}
 
                 {%- endif %}
             {%- endfor %}
