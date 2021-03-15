@@ -19,6 +19,14 @@
         if (!data) feed = '/sequence.json?t=' + $.now();
         draw.getJSON();
 
+    },
+
+
+    test : function(id, size) {
+
+        {{ content }}
+
     }
+
 
 }
