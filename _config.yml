@@ -104,9 +104,9 @@ collections:
     permalink: /:categories/:year/:y_day/:month/:hour/:minute/:second/:title:output_ext
 
 # Feed Setting
-# https://jekyllrb.com/docs/variables/
 # https://github.com/jekyll/jekyll-feed/issues/2
 # https://www.w3schools.com/xml/xsl_elementref.asp
+# https://github.com/jekyll/jekyll-feed/issues/207#issuecomment-787490785
 
 feed:
   tags: true
@@ -114,14 +114,14 @@ feed:
   excerpt_only: true
   collections:
     leads:
-      path: /leads.xml
+      path: /leads.xml # https://chetabahana.github.io/leads.xml
     feeds:
       categories:
-        - main
-        - user
-        - diagram
-        - section
-      path: /feeds.xml
+        - main # https://chetabahana.github.io/feed/feeds/main.xml
+        - user # https://chetabahana.github.io/feed/feeds/user.xml
+        - diagram # https://chetabahana.github.io/feed/feeds/diagram.xml
+        - section # https://chetabahana.github.io/feed/feeds/section.xml
+      path: /feeds.xml # https://chetabahana.github.io/feeds.xml
 
 # Kramdown Options
 # https://kramdown.gettalong.org/options.html
@@ -145,8 +145,9 @@ webrick:
 #   My-Other-Header: My-Other-Value
 
 # Tags Setting
+# http://codinfox.github.io/blog/tags/
+# https://longqian.me/2017/02/09/github-jekyll-tag/
 # https://github.com/chetabahana/chetabahana.github.io/tags
-# https://github.com/jekyll/jekyll-feed/issues/207#issuecomment-787490785
 
 case_labels:
 - Buka Toko
@@ -165,6 +166,7 @@ flow_labels:
 - eShop SEO
 
 # Site Setting
+# https://jekyllrb.com/docs/variables/
 # https://stackoverflow.com/a/30828197/4058484
 # https://jekyllrb.com/docs/configuration/options/
 
