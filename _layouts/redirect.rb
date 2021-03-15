@@ -31,17 +31,7 @@ layout: default
                     {%- endfor -%}
                 {%- else -%}
 
-
-                    {%- for prop in item -%}
-                        {%- if forloop.first -%}
-                            {{- my_tabn }}{{ prop | jsonify }}: {
-                        {%- else -%}
-                            {{- my_tabn }}{{ my_tab }}{{ prop[0] | jsonify}}: {{ prop[1] | jsonify -}}
-                            {%- unless forloop.last %},{% endunless -%}
-                            {%- if forloop.last %}{{- my_tabn }}}{% endif -%}
-                        {%- endif -%}
-                    {%- endfor -%}
-
+                    {{- my_tabn }}{{ item | jsonify }}
 
                 {%- endif -%}
             {%- endfor -%}
