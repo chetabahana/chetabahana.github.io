@@ -20,8 +20,8 @@ layout: default
     {%- capture my_tabs %}{% for i in (1..my_tabs) %}{{ my_tab }}{% endfor %}{% endcapture -%}
     {%- capture my_tabn %}
     {{ my_tabs }}{% endcapture -%}{{- my_tabs }}{
-    {%- for items in variable -%}
-        {%- if items[0] -%}
+    {%- for items in variable -%}{{ items.first }}-{{ items[0] }}-{{ items[0].first }}-{{ items.first.first }}-{{ items.size }}-{{ items.first.size }}-{{ items[0].size }}--{{ items.first.first.size }}
+        {%- if items.first -%}
             {%- for item in items -%}
                 {%- if item[0] -%}
                     {%- for subitem in item -%}
@@ -32,9 +32,7 @@ layout: default
                         {%- endif -%}
                     {%- endfor -%}
                 {%- else -%}
-
                     {{- my_tabn }}sa{{ item | jsonify }}
-
                 {%- endif -%}
             {%- endfor -%}
         {%- else -%}
