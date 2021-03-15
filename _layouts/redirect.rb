@@ -27,15 +27,15 @@ layout: default
 
                     {%- for subitem in item %}
                         {%- if subitem[1].first %}
-                             array in array
+                             {{- my_tabn }}{{ my_tab }}{{ my_tab }}{{ my_tab }}array in array
                         {%- else %}
-                             2nd string in array
+                             {{- my_tabn }}{{ my_tab }}{{ my_tab }}2nd string in array
                         {%- endif %}
                     {%- endfor %}
 
                 {%- else -%}
 
-                    1st string in array
+                    {{- my_tabn }}{{ my_tab }}1st string in array
 
                 {%- endif %}
             {%- endfor %}
