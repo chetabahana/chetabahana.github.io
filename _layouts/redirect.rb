@@ -12,15 +12,28 @@ layout: default
 *
 *  jekyll debug or print json
 *  https://docs.treepl.co/liquid
+*  https://stackoverflow.com/a/41646032/4058484
 *  https://stackoverflow.com/q/34048313/4058484
 *  https://avada.io/shopify/devdocs/how-to-convert-jekyll-data-to-json.html
+*
+*  # var1 = "a"     // string
+*  {% var1.first %} // return:   // nil -> falsy
+*  
+*  # var2 = [a,b,c] // array
+*  {% var2.first %} // return: a
+*  
+*  # var3 = {k1: a, k2: b, k3: c} // hash
+*  {% var1.first %} // return: k1a
+*  
+*  # var4 = {k1, k2, k3: c} // hash, first element is a key without associated value
+*  {% var1.first %} // return: k1
 *
 {% endcomment %}{% include data.rb %}{% if data.items -%}
     {%- assign variable = data.items[0] %}{% assign my_tabs = 2 %}{%- assign my_tab = '    ' -%}
     {%- capture my_tabs %}{% for i in (1..my_tabs) %}{{ my_tab }}{% endfor %}{% endcapture -%}
     {%- capture my_tabn %}
     {{ my_tabs }}{% endcapture -%}{{- my_tabs }}{
-    {%- for items in variable -%}{{ items.first }}-{{ items[0] }}-{{ items.size }}-{{ items.first.size }}-{{ items[0].size }}
+    {%- for items in variable -%}{{ items | jsonify | split: ',' | size }}
         {%- if items.first -%}
             {%- for item in items -%}
                 {%- if item[0] -%}
