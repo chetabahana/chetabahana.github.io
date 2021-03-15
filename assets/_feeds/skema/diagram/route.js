@@ -9,5 +9,4 @@ frame: [10,6,40]
 tags: [1,4,6,9,13,14]
 category: diagram
 redirect_from: /route.json
-permalink: /diagram/route.js
 ---

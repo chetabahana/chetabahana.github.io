@@ -9,5 +9,4 @@ frame: [1,30,4,10,50]
 tags: [1,9,13,19,34]
 category: diagram
 redirect_from: /tree.json
-permalink: /diagram/tree.js
 ---
