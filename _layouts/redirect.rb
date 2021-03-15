@@ -10,7 +10,8 @@ layout: default
 *  You may see the running code here:
 *  https://chetabahana.github.io/sequence.json
 *
-*  jekyll debug or print all variables
+*  jekyll debug or print json
+*  https://docs.treepl.co/liquid
 *  https://stackoverflow.com/q/34048313/4058484
 *
 {% endcomment %}{% include data.rb %}{% if data.items -%}
@@ -24,14 +25,14 @@ layout: default
                 {%- if item[1].first -%}
                     {%- for subitem in item -%}
                         {%- if subitem[1].first -%}
-                             {{- my_tabn }}aa{{ subitem | jsonify }}
+                             {{- my_tabn }}aa{{ subitem | to_json }}
                         {%- else -%}
-                             {{- my_tabn }}sa{{ subitem | jsonify }}
+                             {{- my_tabn }}sa{{ subitem | to_json }}
                         {%- endif -%}
                     {%- endfor -%}
                 {%- else -%}
 
-                    {{- my_tabn }}as{{ item | jsonify }}
+                    {{- my_tabn }}as{{ item | to_json }}
 
                 {%- endif -%}
             {%- endfor -%}
