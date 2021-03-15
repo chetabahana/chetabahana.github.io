@@ -21,11 +21,11 @@ layout: default
     {%- capture my_tabn %}
     {{ my_tabs }}{% endcapture -%}{{- my_tabs }}{
     {%- for items in variable -%}
-        {%- if items.first -%}
+        {%- if items[0] -%}
             {%- for item in items -%}
-                {%- if item.first -%}
+                {%- if item[0] -%}
                     {%- for subitem in item -%}
-                        {%- if subitem.first -%}
+                        {%- if subitem[0] -%}
                              {{- my_tabn }}aa{{ subitem | jsonify }}
                         {%- else -%}
                              {{- my_tabn }}as{{ subitem | jsonify }}
