@@ -12,6 +12,8 @@ layout: default
 *
 *  jekyll debug or print json
 *  https://docs.treepl.co/liquid
+*  https://warfares.github.io/pretty-json/
+*  https://github.com/chetabahana/code-prettify
 *  https://stackoverflow.com/a/41646032/4058484
 *  https://stackoverflow.com/q/34048313/4058484
 *  https://avada.io/shopify/devdocs/how-to-convert-jekyll-data-to-json.html
@@ -47,6 +49,18 @@ layout: default
                         {%- endif -%}
                     {%- endfor -%}
                 {%- else -%}
+{%- comment -%}
+                    {%- for prop in item -%}
+                        {%- if forloop.first -%}
+                            {{- my_tabn }}{{ prop | jsonify }}: {
+                        {%- else -%}
+                            {{- my_tabn }}{{ my_tab }}{{ prop[0] | jsonify}}: {{ prop[1] | jsonify -}}
+                            {%- unless forloop.last %},{% endunless -%}
+                            {%- if forloop.last %}{{- my_tabn }}}{% endif -%}
+                        {%- endif -%}
+                    {%- endfor -%}
+
+{%- endcomment -%}
                     {{- my_tabn }}sa{{ item | jsonify }}
                 {%- endif -%}
             {%- endfor -%}
