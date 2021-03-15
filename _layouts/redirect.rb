@@ -21,47 +21,37 @@ layout: default
 
     {%- for items in variable %}
         {%- if items[1].first %}
+
             {%- for item in items %}
+                {%- if item[1].first %}
 
-
-{%- if item[1].first %}
-
-    {%- for subitem in item %}
-
-        {%- if subitem[1].first %}
-
-array
-        {%- else %}
-
-string
-
-        {%- endif %}
-
-    {%- endfor %}
-
-{%- else -%}
-
-                {%- if forloop.first %}
-                    {{- my_tabn }}{{ item | jsonify }}: {% if item[1].first %}array{% else %}string{% endif %}
-                {%- else %}
                     {%- for subitem in item %}
-                        {{- my_tabn }}{{ my_tab }}{{ subitem[0] | jsonify}}: {{ subitem[1] | jsonify -}}
-                        {%- unless forloop.last %},{% endunless %}
+                        {%- if subitem[1].first %}
+                             array
+                        {%- else %}
+                             string
+                        {%- endif %}
                     {%- endfor %}
-                    {%- if forloop.last %}{{- my_tabn }}}{% endif %}
-                {%- endif %}
 
-{%- endif %}
+                {%- else -%}
 
+                    {%- if forloop.first %}
+                        {{- my_tabn }}{{ item | jsonify }}: {
+                    {%- else %}
+                        {%- for subitem in item %}
+                            {{- my_tabn }}{{ my_tab }}{{ subitem[0] | jsonify}}: {{ subitem[1] | jsonify -}}
+                            {%- unless forloop.last %},{% endunless %}
+                        {%- endfor %}
+                        {%- if forloop.last %}{{- my_tabn }}}{% endif %}
+                    {%- endif %}
 
+               {%- endif %}
             {%- endfor %}
+
         {%- else %}
             {{- my_tabn }}{{ items[0] | jsonify }}: {{ items[1] | jsonify }}
         {%- endif %}{% unless forloop.last %},{% endunless %}
     {%- endfor %}
-
-
-
 
 {{ my_tabs }}}
 {%- endif -%}
