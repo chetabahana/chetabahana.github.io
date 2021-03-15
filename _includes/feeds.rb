@@ -15,4 +15,4 @@
 *
 {%- endcomment -%}
 {%- if data.js %}{%- include {{ data.js }} -%}
-{%- else -%}{{ my_feed.content }}{% endif %}{%- comment -%}
+{%- else -%}{{ my_feed.content }}{% endif %}
