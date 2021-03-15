@@ -26,14 +26,14 @@ layout: default
                 {%- if item.first -%}
                     {%- for subitem in item -%}
                         {%- if subitem.first -%}
-                             {{- my_tabn }}aa{{ subitem | to_json }}
+                             {{- my_tabn }}aa{{ subitem | jsonify }}
                         {%- else -%}
-                             {{- my_tabn }}sa{{ subitem | to_json }}
+                             {{- my_tabn }}sa{{ subitem | jsonify }}
                         {%- endif -%}
                     {%- endfor -%}
                 {%- else -%}
 
-                    {{- my_tabn }}as{{ item | to_json }}
+                    {{- my_tabn }}as{{ item | jsonify }}
 
                 {%- endif -%}
             {%- endfor -%}
