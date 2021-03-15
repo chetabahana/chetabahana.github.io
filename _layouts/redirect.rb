@@ -38,7 +38,7 @@ layout: default
                         {%- else -%}
                             {{- my_tabn }}{{ my_tab }}{{ prop[0] | jsonify}}: {{ prop[1] | jsonify -}}
                             {%- unless forloop.last %},{% endunless -%}
-                            {{- my_tabn }}}
+                            {%- if forloop.last %}{{- my_tabn }}}{% endif -%}
                         {%- endif -%}
                     {%- endfor -%}
 
