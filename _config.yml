@@ -83,9 +83,9 @@ defaults:
       layout: "feeds"
   -
     scope:
-      path: "*/diagram/*.json"
+      path: "*/application/*.json"
     values:
-      redirect_from: /diagram/:title:output_ext
+      redirect_from: /app/:title:output_ext
 
 # Permalinks
 # https://jekyllrb.com/docs/permalinks/
