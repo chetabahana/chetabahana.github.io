@@ -84,7 +84,7 @@ defaults:
   -
     scope:
       type: "feeds"
-      path: "skema/diagram/sequence.json"
+      path: "*/diagram/*.json"
     values:
       redirect_from: /:title:output_ext
 
