@@ -72,7 +72,7 @@ whitelist:
 # Default Setting
 # https://stackoverflow.com/a/49428493
 # https://jekyllrb.com/docs/collections/
-# https://jekyllrb.com/docs/configuration/front-matter-defaults/
+# https://jekyllrb.com/docs/configuration/front-matter-defaults/#glob-patterns-in-front-matter-defaults
 
 defaults:
   -
@@ -83,7 +83,6 @@ defaults:
       layout: "feeds"
   -
     scope:
-      type: "feeds"
       path: "*/diagram/*.json"
     values:
       redirect_from: /:title:output_ext
