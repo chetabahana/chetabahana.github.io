@@ -287,7 +287,6 @@
             *                      "weight": 3,
             *                      "title": "Diagram",
             *                      "category": null,
-            *                      "permalink": "/diagram.js",
             *                      "value": [719,0,-1,1],
             *                      "feeds": [1,6,13,21,28,42,60,75,82,88],
             *                      "items": [
