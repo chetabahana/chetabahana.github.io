@@ -10,4 +10,4 @@ tags: [1,4,13,22]
 category: diagram
 redirect_from: /sequence.json
 ---
-var init = {{ page.redirect_from }};
+var init = '{{ page.redirect_from }}';
