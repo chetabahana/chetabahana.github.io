@@ -83,7 +83,8 @@ defaults:
       layout: "feeds"
   -
     scope:
-      path: "*.json"
+      type: "feeds"
+      path: "_feeds/skema/*/*.json"
     values:
       redirect_from: /:title:output_ext
 
