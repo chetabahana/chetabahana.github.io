@@ -28,17 +28,17 @@ layout: default
                         {%- if subitem.first -%}
                              {{- my_tabn }}aa{{ subitem | jsonify }}
                         {%- else -%}
-                             {{- my_tabn }}sa{{ subitem | jsonify }}
+                             {{- my_tabn }}as{{ subitem | jsonify }}
                         {%- endif -%}
                     {%- endfor -%}
                 {%- else -%}
 
-                    {{- my_tabn }}as{{ item | jsonify }}
+                    {{- my_tabn }}sa{{ item | jsonify }}
 
                 {%- endif -%}
             {%- endfor -%}
         {%- else -%}
-            {{- my_tabn }}{{ items[0] | jsonify }}: {{ items[1] | jsonify }}
+            {{- my_tabn }}ss{{ items[0] | jsonify }}: {{ items[1] | jsonify }}
         {%- endif %}{% unless forloop.last %},{% endunless -%}
     {%- endfor %}
 {{ my_tabs }}}
