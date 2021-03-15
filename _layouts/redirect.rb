@@ -13,6 +13,7 @@ layout: default
 *  jekyll debug or print json
 *  https://docs.treepl.co/liquid
 *  https://stackoverflow.com/q/34048313/4058484
+*  https://avada.io/shopify/devdocs/how-to-convert-jekyll-data-to-json.html
 *
 {% endcomment %}{% include data.rb %}{% if data.items -%}
     {%- assign variable = data.items[0] %}{% assign my_tabs = 2 %}{%- assign my_tab = '    ' -%}
@@ -20,11 +21,11 @@ layout: default
     {%- capture my_tabn %}
     {{ my_tabs }}{% endcapture -%}{{- my_tabs }}{
     {%- for items in variable -%}
-        {%- if items[1].first -%}
+        {%- if items.first -%}
             {%- for item in items -%}
-                {%- if item[1].first -%}
+                {%- if item.first -%}
                     {%- for subitem in item -%}
-                        {%- if subitem[1].first -%}
+                        {%- if subitem.first -%}
                              {{- my_tabn }}aa{{ subitem | to_json }}
                         {%- else -%}
                              {{- my_tabn }}sa{{ subitem | to_json }}
