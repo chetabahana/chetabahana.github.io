@@ -18,14 +18,28 @@ layout: default
     {%- capture my_tabs %}{% for i in (1..my_tabs) %}{{ my_tab }}{% endfor %}{% endcapture -%}
     {%- capture my_tabn %}
     {{ my_tabs }}{% endcapture -%}{{- my_tabs }}{
+
     {%- for items in variable %}
         {%- if items[1].first %}
-
             {%- for item in items %}
 
 
+{%- if item[1].first %}
 
+    {%- for subitem in item %}
 
+        {%- if subitem[1].first %}
+
+array
+        {%- else %}
+
+string
+
+        {%- endif %}
+
+    {%- endfor %}
+
+{%- else -%}
 
                 {%- if forloop.first %}
                     {{- my_tabn }}{{ item | jsonify }}: {% if item[1].first %}array{% else %}string{% endif %}
@@ -37,14 +51,17 @@ layout: default
                     {%- if forloop.last %}{{- my_tabn }}}{% endif %}
                 {%- endif %}
 
+{%- endif %}
 
 
             {%- endfor %}
-
-
         {%- else %}
             {{- my_tabn }}{{ items[0] | jsonify }}: {{ items[1] | jsonify }}
         {%- endif %}{% unless forloop.last %},{% endunless %}
     {%- endfor %}
+
+
+
+
 {{ my_tabs }}}
 {%- endif -%}
