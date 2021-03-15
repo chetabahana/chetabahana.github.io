@@ -96,7 +96,6 @@ defaults:
 collections:
   feeds:
     output: true
-    permalink: /:title:output_ext
   leads:
     output: true
     permalink: /:title:output_ext
