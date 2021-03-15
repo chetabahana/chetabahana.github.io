@@ -83,9 +83,8 @@ defaults:
       layout: "feeds"
   -
     scope:
-      path: "docs/*/test.md"
+      path: "*.json"
     values:
-      layout: "feeds/skema/diagram"
       redirect_from: /:title:output_ext
 
 # Permalinks
