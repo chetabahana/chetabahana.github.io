@@ -41,7 +41,7 @@ layout: default
             {%- endfor %}
 
         {%- else %}
-            {{- my_tabn }}{{ items | jsonify }}
+            {{- my_tabn }}{{ items[0] | jsonify }}: {{ items[1] | jsonify }}
         {%- endif %}{% unless forloop.last %},{% endunless %}
     {%- endfor %}
 
