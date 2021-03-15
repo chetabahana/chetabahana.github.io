@@ -14,7 +14,7 @@ layout: default
 *  https://stackoverflow.com/q/34048313/4058484
 *
 {% endcomment %}{% include data.rb %}{% if data.items -%}
-    {%- assign variable = data.items[0] %}{% assign my_tabs = 2 -%}{%- assign my_tab = '    ' -%}
+    {%- assign variable = data.items[0] %}{% assign my_tabs = 2 %}{%- assign my_tab = '    ' -%}
     {%- capture my_tabs %}{% for i in (1..my_tabs) %}{{ my_tab }}{% endfor %}{% endcapture -%}
     {%- capture my_tabn %}
     {{ my_tabs }}{% endcapture -%}{{- my_tabs }}{
@@ -27,11 +27,11 @@ layout: default
                              {{- my_tabn }}{{ subitem | jsonify }}
                         {%- else -%}
                              {{- my_tabn }}{{ subitem | jsonify }}
-                        {%- endif %}{% unless forloop.last %},{% endunless -%}
+                        {%- endif -%}
                     {%- endfor -%}
                 {%- else -%}
                     {{- my_tabn }}{{ item | jsonify }}
-                {%- endif %}{% unless forloop.last %},{% endunless -%}
+                {%- endif -%}
             {%- endfor -%}
         {%- else -%}
             {{- my_tabn }}{{ items[0] | jsonify }}: {{ items[1] | jsonify }}
