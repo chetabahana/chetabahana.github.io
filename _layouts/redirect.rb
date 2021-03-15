@@ -33,7 +33,7 @@ layout: default
     {%- capture my_tabs %}{% for i in (1..my_tabs) %}{{ my_tab }}{% endfor %}{% endcapture -%}
     {%- capture my_tabn %}
     {{ my_tabs }}{% endcapture -%}{{- my_tabs }}{
-    {%- for items in variable -%}{{ items | jsonify | split: ',' | size }}
+    {%- for items in variable -%}{{ items[1] | jsonify | split: ',' | size }}
         {%- if items.first -%}
             {%- for item in items -%}
                 {%- if item[0] -%}
