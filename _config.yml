@@ -85,7 +85,7 @@ defaults:
     scope:
       path: "*/diagram/*.json"
     values:
-      redirect_from: /:title:output_ext
+      redirect_from: /diagram/:title:output_ext
 
 # Permalinks
 # https://jekyllrb.com/docs/permalinks/
