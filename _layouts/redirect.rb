@@ -27,11 +27,11 @@ layout: default
                              {{- my_tabn }}{{ subitem | jsonify }}
                         {%- else -%}
                              {{- my_tabn }}{{ subitem | jsonify }}
-                        {%- endif -%}
+                        {%- endif %}{% unless forloop.last %},{% endunless -%}
                     {%- endfor -%}
                 {%- else -%}
                     {{- my_tabn }}{{ item | jsonify }}
-                {%- endif -%}
+                {%- endif %}{% unless forloop.last %},{% endunless -%}
             {%- endfor -%}
         {%- else -%}
             {{- my_tabn }}{{ items[0] | jsonify }}: {{ items[1] | jsonify }}
