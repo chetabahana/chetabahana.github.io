@@ -27,21 +27,21 @@ layout: default
 
                     {%- for subitem in item %}
                         {%- if subitem[1].first %}
-                             {{- my_tabn }}{{ my_tab }}{{ my_tab }}{{ my_tab }}array in array
+                             {{- my_tabn }}{{ my_tab }}{{ my_tab }}{{ subitem | jsonify }}
                         {%- else %}
-                             {{- my_tabn }}{{ my_tab }}{{ my_tab }}{{ subitem[0] | jsonify }}: {{ subitem[1] | jsonify }}
+                             {{- my_tabn }}{{ my_tab }}{{ my_tab }}{{ subitem | jsonify }}
                         {%- endif %}
                     {%- endfor %}
 
                 {%- else -%}
 
-                    {{- my_tabn }}{{ my_tab }}{{ item[0] | jsonify }}: {{ item[1] | jsonify }}
+                    {{- my_tabn }}{{ my_tab }}{{ item | jsonify }}
 
                 {%- endif %}
             {%- endfor %}
 
         {%- else %}
-            {{- my_tabn }}{{ items[0] | jsonify }}: {{ items[1] | jsonify }}
+            {{- my_tabn }}{{ items | jsonify }}
         {%- endif %}{% unless forloop.last %},{% endunless %}
     {%- endfor %}
 
