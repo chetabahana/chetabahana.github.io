@@ -27,25 +27,17 @@ layout: default
 
                     {%- for subitem in item %}
                         {%- if subitem[1].first %}
-                             array
+                             array in array
                         {%- else %}
-                             string
+                             2nd string in array
                         {%- endif %}
                     {%- endfor %}
 
                 {%- else -%}
 
-                    {%- if forloop.first %}
-                        {{- my_tabn }}{{ item | jsonify }}: {
-                    {%- else %}
-                        {%- for subitem in item %}
-                            {{- my_tabn }}{{ my_tab }}{{ subitem[0] | jsonify}}: {{ subitem[1] | jsonify -}}
-                            {%- unless forloop.last %},{% endunless %}
-                        {%- endfor %}
-                        {%- if forloop.last %}{{- my_tabn }}}{% endif %}
-                    {%- endif %}
+                    1st string in array
 
-               {%- endif %}
+                {%- endif %}
             {%- endfor %}
 
         {%- else %}
