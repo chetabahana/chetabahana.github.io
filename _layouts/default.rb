@@ -7,7 +7,8 @@
 *  You may see the running code here:
 *  https://chetabahana.github.io/feed.json
 *
-{% endcomment %}{% include data.rb %}{%- if page.path != 'index.html' and page.ext != '.md' %}{
+{% endcomment %}{% if data == null %}{% include data.rb %}{% endif -%}
+{%- if page.path != 'index.html' and page.ext != '.md' %}{
     {{ 'id' | jsonify }}: {% if data.id %}{{ data.id }}{% else %}{{ page.id }}{% endif %},
     {{ 'title' | jsonify }}: "{% if data.title %}{{ data.title | capitalize }} | {% endif %}Project Maps",
     {{ 'version' | jsonify }}: {{ 'https://jsonfeed.org/version/1.1' | jsonify }},
@@ -16,7 +17,7 @@
     {{ 'description' | jsonify }}: {{ site.slogan | jsonify }},
     {{ 'user_comment' | jsonify }}: {{ 'This feed allows you to read the project mapping' | jsonify }},
     {{ 'items' | jsonify }}: [
-{% endif %}{% comment %}
+{% endif %}{% if my_feed.category != 'section' %}{% comment %}
 *
 *  assign the required variables
 *
@@ -50,4 +51,4 @@
 *
 *  render the main page 
 *
-{% endcomment %}{{ content }}{% endif %}
+{% endcomment %}{{ content }}{% endif %}{% endif -%}
