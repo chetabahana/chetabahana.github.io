@@ -14,5 +14,6 @@
 *  https://stackoverflow.com/a/53693728/4058484
 *
 {%- endcomment -%}
-{%- if data.js %}{%- include {{ data.js }} -%}
+{%- if data.id and my_feed.ext == '.json' %}{{ data.item[0] | jsonify -}}
+{%- elsif data.id %}{% assign my_include = 'data' | append: my_feed.ext %}{% include {{ my_include }} -%}
 {%- else -%}{{ my_feed.content }}{% endif %}
