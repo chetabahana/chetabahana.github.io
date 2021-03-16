@@ -10,4 +10,4 @@
 *
 *  collect data
 *
-{% endcomment %}{% for hashs in my_datas %}{% for hash in hashs %}{{hash[1].id}}{% if hash[1].id == my_feed.myId %}{% assign data = hash[1] %}{% endif %}{%- endfor -%}{%- endfor -%}
+{% endcomment %}{% for hashs in my_datas %}{% for hash in hashs %}{% if hash[1].id == my_feed.myId %}{% assign data = hash[1] %}{% endif %}{% endfor %}{%- endfor -%}
