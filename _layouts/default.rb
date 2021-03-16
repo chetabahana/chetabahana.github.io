@@ -17,7 +17,7 @@
     {{ 'description' | jsonify }}: {{ site.slogan | jsonify }},
     {{ 'user_comment' | jsonify }}: {{ 'This feed allows you to read the project mapping' | jsonify }},
     {{ 'items' | jsonify }}: [
-{% endif %}{% if my_feed.category != 'section' %}{% comment %}
+{% endif %}{% comment %}
 *
 *  assign the required variables
 *
@@ -51,4 +51,4 @@
 *
 *  render the main page 
 *
-{% endcomment %}{{ content }}{% endif %}{% endif -%}
+{% endcomment %}{{ content }}{% endif %}
