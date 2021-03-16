@@ -33,7 +33,7 @@ layout: default
 {% endcomment %}{% include data.rb %}{% assign variable = data.items[0] -%}
     {%- assign my_tabs = 2 %}{%- assign my_tab = '    ' -%}
     {%- capture my_tabs %}{% for i in (1..my_tabs) %}{{ my_tab }}{% endfor %}{% endcapture -%}
-    {%- if data.items %}{{- my_tabs }}{{ variable | jsonify }}{% else %}{% capture my_tabn %}
+    {%- if variable == null %}{{- my_tabs }}{{ data | jsonify }}{% else %}{% capture my_tabn %}
     {{ my_tabs }}{% endcapture -%}{{- my_tabs }}{
     {%- for items in variable -%}{{ items.first }}
         {%- if !items.first -%}
