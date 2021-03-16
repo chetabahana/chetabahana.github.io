@@ -87,6 +87,8 @@ defaults:
     scope:
       path: ""
       ext: ".json"
+      type: "feeds"
+      category: "main"
     values:
       redirect_from: /app/:title:output_ext
 
