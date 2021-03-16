@@ -6,4 +6,4 @@
 *
 *  collect property
 *
-{% endcomment %}{% assign my_data = site.data %}{% assign my_hash = my_feed.path | remove_first: '_' | split: '/' | pop %}{% for hash in my_hash %}{% assign _hash = hash | prepend: '_' %}{% assign my_data = my_data[_hash] %}{% endfor %}{% for hash in my_data %}{% if hash[1].id == my_feed.myId %}{% assign data = hash[1] %}{% endif %}{%- endfor -%}
+{% endcomment %}{% assign my_data = site.data %}{% assign my_datas = '' | split: ',' %}{% assign my_hash = my_feed.path | remove_first: '_' | split: '/' | pop %}{% for hash in my_hash %}{% assign _hash = hash | prepend: '_' %}{% assign my_data = my_data[_hash] %}{% assign my_datas = my_datas | push: my_data %}{% endfor %}{% for hash in my_datas %}{% if hash[1].id == my_feed.myId %}{% assign data = hash[1] %}{% endif %}{%- endfor -%}
