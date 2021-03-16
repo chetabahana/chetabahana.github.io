@@ -64,7 +64,7 @@
                 $('#doc')[0].href = href.replace(path, 'Programming');
             } else {
                 if (this.id == 'js') {this.href = js;}
-                else if (this.id == 'json') {this.href = feed;}
+                else if (this.id == 'json') {this.href = feed.replace('/main', '') ;}
                 else {this.href = data.guide[this.id];}
                 $('#doc')[0].href = href.replace(path, type);
             }
