@@ -20,6 +20,7 @@ form_engines:
 
 # Repository Settings
 # https://blog.webjeda.com/jekyll-redirect/
+# https://github.com/daattali/beautiful-jekyll/blob/master/_config.yml
 
 include:
   - app.js
