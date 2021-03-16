@@ -10,7 +10,8 @@
 
     feed : function(id, size) {
 
-        if (!data) feed = '/flowchart.json?t=' + $.now();
+        {%- assign my_feed = site.feeds | where_exp:"item", "item.myId == myId" | first %}
+        if (!data) feed = '/{{ my_feed.category }}/{{ my_feed.slug }}.json?t=' + $.now();
         draw.getJSON();
 
     }
