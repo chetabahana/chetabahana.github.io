@@ -11,7 +11,7 @@
     feed : function(id, size) {
 
         // Accessing data file: console.log(node.props.onRun);
-        {%- assign my_feed = site.feeds | where_exp:"item", "item.myId == myId" | first -%}
+        {%- assign my_feed = site.feeds | where_exp:"item", "item.myId == myId" | first %}
         if (!data) feed = '/{{ my_feed.category }}/{{ my_feed.slug }}.json?t=' + $.now();
         else if (query) node = this.getReact();
         draw.getJSON();
