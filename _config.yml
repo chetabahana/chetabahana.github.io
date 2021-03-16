@@ -83,7 +83,7 @@ defaults:
       layout: "feeds"
   -
     scope:
-      path: "*/application/*.json"
+      path: "*.json"
     values:
       redirect_from: /app/:title:output_ext
 
