@@ -11,7 +11,7 @@
     feed : function(id, size) {
 
         // Accessing data file: console.log(node.props.onRun);
-        if (!data) feed = '/main/tree.json?t=' + $.now();
+        if (!data) feed = '/{{ my_feed.category }}/{{ my_feed.slug }}.json?t=' + $.now();
         else if (query) node = this.getReact();
         draw.getJSON();
 
