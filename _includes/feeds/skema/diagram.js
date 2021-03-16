@@ -84,17 +84,23 @@
 
     getScript : function() {
 
-        if ($(".theme").val() != 'hand') {
+        if ($(".theme").val() == 'hand') {
+
+            var skema = init;
+            var style = {theme: 'hand', "font-size": 13};
+            var file = {{ '/sequence/js/sequence-diagram-snap-min.js' | jsonify }};
+
+        } else if ($(".theme").val() == 'simple') {
 
             var style = data.style;
             var skema = data.skema;
             var file = '/' + data.guide['file'];
 
-        } else {
+        } else if ($(".theme").val() == 'tracking') {
 
-            var skema = init;
-            var style = {theme: 'hand', "font-size": 13};
-            var file = {{ '/sequence/js/sequence-diagram-snap-min.js' | jsonify }};
+            var style = data.style;
+            var skema = data.skema;
+            var file = '/' + data.guide['file'];
 
         }
 

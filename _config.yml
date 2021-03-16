@@ -73,6 +73,7 @@ whitelist:
 # Default Setting
 # https://stackoverflow.com/a/49428493
 # https://jekyllrb.com/docs/collections/
+# https://chetabahana.github.io/app/flowchart.json
 # https://jekyllrb.com/docs/configuration/front-matter-defaults/#glob-patterns-in-front-matter-defaults
 
 defaults:
