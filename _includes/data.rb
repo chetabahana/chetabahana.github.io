@@ -23,13 +23,13 @@
     {{ 'description' | jsonify }}: {{ site.slogan | jsonify }},
     {{ 'user_comment' | jsonify }}: {{ 'This feed allows you to read the project mapping' | jsonify }},
     {{ 'items' | jsonify }}: [
-{% comment %}
+{%- comment %}
 *
 *  collect root
 *
-{% endcomment %}{% if my_feed.path != 'feed.json' -%}
+{% endcomment %}{% if my_feed.path != 'feed.json' %}
         {{ data.items[0] | jsonify }},
-        {"test": {{ site.slogan | jsonify -}}}
-{% if my_feed.ext == '.json' %}
+        {"test": {{ site.slogan | jsonify }}}
+{%- if my_feed.ext == '.json' %}
     ]
-}{% endif %}{% endif %}{% endif -%}
+}{%- endif %}{% endif %}{% endif -%}
