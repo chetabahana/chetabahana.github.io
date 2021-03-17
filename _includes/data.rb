@@ -27,4 +27,4 @@
         {{ data.items[0] | jsonify }},
         {"test": {{ site.slogan | jsonify }}}
     ]
-}{% endif -%}{% endif -%}
+}{%- endif %}{% endif -%}
