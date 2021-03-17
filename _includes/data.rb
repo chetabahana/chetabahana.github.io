@@ -12,9 +12,9 @@
 *
 {% endcomment %}{% if my_feed.myId > 114 %}{% assign myId = my_feed.myId | modulo: 100 %}{% else %}{% assign myId = my_feed.myId %}{% endif %}{% for hashs in my_datas %}{% for hash in hashs %}{% if hash[1].id == myId %}{% assign data = hash[1] %}{% endif %}{% endfor %}{%- endfor -%}{% comment %}
 *
-*  collect json
+*  collect root
 *
-{% endcomment %}{% capture my_json %}
+{% endcomment %}{% if data.id and my_feed.ext == '.json' %}{
     {{ 'id' | jsonify }}: {% if data.id %}{{ data.id }}{% else %}{{ page.id }}{% endif %},
     {{ 'title' | jsonify }}: "{% if data.title %}{{ data.title | capitalize }} | {% endif %}Project Maps",
     {{ 'version' | jsonify }}: {{ 'https://jsonfeed.org/version/1.1' | jsonify }},
@@ -26,4 +26,4 @@
         {{ data.items[0] | jsonify }},
         {"test": {{ site.slogan | jsonify }}}
     ]
-{% endcapture -%}
+}{% endif -%}
