@@ -1,8 +1,8 @@
-{% comment %}
+{%- comment -%}
 *
 *  collect id
 *
-{% endcomment %}
+{%- endcomment -%}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"id": {{ feed.myId | jsonify }},{% if feed.myId > 114 %}{% assign my_key = feed.myId | minus: 101 %}{% else %}{% assign my_key = feed.myId | minus: 1 %}{% endif %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"key": {{ layout.module[my_key] | jsonify }},
