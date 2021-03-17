@@ -22,8 +22,7 @@
     {{ 'feed_url' | jsonify }}: {{ page.url | absolute_url | jsonify }},
     {{ 'description' | jsonify }}: {{ site.slogan | jsonify }},
     {{ 'user_comment' | jsonify }}: {{ 'This feed allows you to read the project mapping' | jsonify }},
-    {{ 'items' | jsonify }}: [
-{%- comment %}
+    {{ 'items' | jsonify }}: [{% comment %}
 *
 *  collect root
 *
