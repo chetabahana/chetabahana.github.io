@@ -14,7 +14,7 @@
 *
 *  collect root
 *
-{% endcomment %}{{ my_feed.path | jsonify }}{% if my_feed.path == 'feed.json' or my_feed.ext == '.json' %}{
+{% endcomment %}{% if my_feed.path == 'feed.json' or my_feed.ext == '.json' %}{
     {{ 'id' | jsonify }}: {% if data.id %}{{ data.id }}{% else %}{{ page.id }}{% endif %},
     {{ 'title' | jsonify }}: "{% if data.title %}{{ data.title | capitalize }} | {% endif %}Project Maps",
     {{ 'version' | jsonify }}: {{ 'https://jsonfeed.org/version/1.1' | jsonify }},
@@ -23,7 +23,8 @@
     {{ 'description' | jsonify }}: {{ site.slogan | jsonify }},
     {{ 'user_comment' | jsonify }}: {{ 'This feed allows you to read the project mapping' | jsonify }},
     {{ 'items' | jsonify }}: [
+    {% if my_feed.path != 'feed.json' %}
         {{ data.items[0] | jsonify }},
         {"test": {{ site.slogan | jsonify }}}
     ]
-}{% endif -%}
+}{% endif -%}{% endif -%}
