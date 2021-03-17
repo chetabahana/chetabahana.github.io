@@ -1,5 +1,6 @@
+{%- assign my_roots = '' | split: ',' -%}
 {%- assign my_root = site.data.roots[my_pos] -%}
-{%- comment -%}
+{%- assign my_roots = my_roots | push: my_root %}{%- comment -%}
 * 
 *  Primes Mapping
 *
