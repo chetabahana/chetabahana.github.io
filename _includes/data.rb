@@ -30,6 +30,6 @@
 {% endcomment %}{% if my_feed.path != 'feed.json' %}
         {{ data.items[0] | jsonify }},
         {"test": {{ site.slogan | jsonify }}}
-{% if !page.redirect.from %
+{% if !page.redirect.from %}
     ]
 }{% endif %}{% endif %}{% endif -%}
