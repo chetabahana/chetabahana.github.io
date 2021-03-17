@@ -1,6 +1,3 @@
----
-layout: default
----
 {% comment %}
 *
 *  This redirects are performed by serving a data file with an HTTP-REFRESH
