@@ -14,19 +14,7 @@
 *  https://stackoverflow.com/a/53693728/4058484
 *
 {%- endcomment -%}
-{%- if data.css and my_feed.ext == '.css' %}{%- include {{ data.css }} -%}
+{%- if data.id and my_feed.ext == '.json' %}(( my_data }}
 {%- elsif data.js and my_feed.ext == '.js' %}{%- include {{ data.js }} -%}
-{%- elsif data.id and my_feed.ext == '.json' %}{
-    {{ 'id' | jsonify }}: {% if data.id %}{{ data.id }}{% else %}{{ page.id }}{% endif %},
-    {{ 'title' | jsonify }}: "{% if data.title %}{{ data.title | capitalize }} | {% endif %}Project Maps",
-    {{ 'version' | jsonify }}: {{ 'https://jsonfeed.org/version/1.1' | jsonify }},
-    {{ 'home_page_url' | jsonify }}: {{ '/' | absolute_url | jsonify }},
-    {{ 'feed_url' | jsonify }}: {{ page.url | absolute_url | jsonify }},
-    {{ 'description' | jsonify }}: {{ site.slogan | jsonify }},
-    {{ 'user_comment' | jsonify }}: {{ 'This feed allows you to read the project mapping' | jsonify }},
-    {{ 'items' | jsonify }}: [
-        {{ data.items[0] | jsonify }},
-        {"test": {{ site.slogan | jsonify }}}
-    ]
-}
+{%- elsif data.css and my_feed.ext == '.css' %}{%- include {{ data.css }} -%}
 {%- else -%}{{ my_feed.content }}{% endif %}
