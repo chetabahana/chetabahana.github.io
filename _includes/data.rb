@@ -12,7 +12,7 @@
 *
 {% endcomment %}{% if my_feed.myId > 114 %}{% assign myId = my_feed.myId | modulo: 100 %}{% else %}{% assign myId = my_feed.myId %}{% endif %}{% for hashs in my_datas %}{% for hash in hashs %}{% if hash[1].id == myId %}{% assign data = hash[1] %}{% endif %}{% endfor %}{%- endfor -%}{% comment %}
 *
-*  collect root
+*  collect json
 *
 {% endcomment %}{% if my_feed.path == 'feed.json' or my_feed.ext == '.json' %}{
     {{ 'id' | jsonify }}: {% if data.id %}{{ data.id }}{% else %}{{ page.id }}{% endif %},
@@ -23,7 +23,11 @@
     {{ 'description' | jsonify }}: {{ site.slogan | jsonify }},
     {{ 'user_comment' | jsonify }}: {{ 'This feed allows you to read the project mapping' | jsonify }},
     {{ 'items' | jsonify }}: [
-{% if my_feed.path != 'feed.json' %}
+{% comment %}
+*
+*  collect root
+*
+{% endcomment %}{% if my_feed.path != 'feed.json' %}
         {{ data.items[0] | jsonify }},
         {"test": {{ site.slogan | jsonify }}}
     ]
