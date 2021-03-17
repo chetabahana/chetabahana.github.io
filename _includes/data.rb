@@ -27,9 +27,9 @@
 *
 *  collect root
 *
-{% endcomment %}{% if my_feed.path != 'feed.json' %}
+{% endcomment %}{% if my_feed.path != 'feed.json' -%}
         {{ data.items[0] | jsonify }},
-        {"test": {{ site.slogan | jsonify }}}
+        {"test": {{ site.slogan | jsonify -}}}
 {% if my_feed.ext == '.json' %}
     ]
 }{% endif %}{% endif %}{% endif -%}
