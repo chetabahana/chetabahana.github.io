@@ -10,4 +10,8 @@
 *
 *  collect data
 *
-{% endcomment %}{% if my_feed.myId > 114 %}{% assign myId = my_feed.myId | modulo: 100 %}{% else %}{% assign myId = my_feed.myId %}{% endif %}{% for hashs in my_datas %}{% for hash in hashs %}{% if hash[1].id == myId %}{% assign data = hash[1] %}{% endif %}{% endfor %}{%- endfor -%}
+{% endcomment %}{% if my_feed.myId > 114 %}{% assign myId = my_feed.myId | modulo: 100 %}{% else %}{% assign myId = my_feed.myId %}{% endif %}{% for hashs in my_datas %}{% for hash in hashs %}{% if hash[1].id == myId %}{% assign data = hash[1] %}{% endif %}{% endfor %}{%- endfor -%}{% comment %}
+*
+*  collect root
+*
+{% endcomment %}{% assign my_root = 'test' %}{% assign data.items = data.items | push: my_root -%}
