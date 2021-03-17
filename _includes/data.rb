@@ -14,7 +14,7 @@
 *
 *  collect root
 *
-{% endcomment %}{% if my_feed.ext == '.json' %}{
+{% endcomment %}{% if data.id and my_feed.ext == '.json' %}{
     {{ 'id' | jsonify }}: {% if data.id %}{{ data.id }}{% else %}{{ page.id }}{% endif %},
     {{ 'title' | jsonify }}: "{% if data.title %}{{ data.title | capitalize }} | {% endif %}Project Maps",
     {{ 'version' | jsonify }}: {{ 'https://jsonfeed.org/version/1.1' | jsonify }},
