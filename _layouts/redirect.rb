@@ -30,7 +30,7 @@ layout: default
 *  # var4 = {k1, k2, k3: c} // hash, first element is a key without associated value
 *  {% var1.first %} // return: k1
 *
-{% endcomment %}{% include data.rb %}{% assign variable = data.items[0] -%}
+{% endcomment %}{% include data.rb %}{% assign variable = data.items -%}
     {%- assign my_tabs = 2 %}{%- assign my_tab = '    ' -%}
     {%- capture my_tabs %}{% for i in (1..my_tabs) %}{{ my_tab }}{% endfor %}{% endcapture -%}
     {%- if variable == null %}{{- my_tabs }}{{ data | jsonify }}{% else %}{% capture my_tabn %}
