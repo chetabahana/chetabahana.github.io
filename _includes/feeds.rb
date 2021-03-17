@@ -14,7 +14,7 @@
 *  https://stackoverflow.com/a/53693728/4058484
 *
 {%- endcomment -%}
-{%- if data.id and my_feed.ext == '.json' %}(( my_data }}
+{%- if data.id and my_feed.ext == '.json' %}(( my_json }}
 {%- elsif data.js and my_feed.ext == '.js' %}{%- include {{ data.js }} -%}
 {%- elsif data.css and my_feed.ext == '.css' %}{%- include {{ data.css }} -%}
 {%- else -%}{{ my_feed.content }}{% endif %}
