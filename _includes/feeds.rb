@@ -25,8 +25,8 @@
     {{ 'description' | jsonify }}: {{ site.slogan | jsonify }},
     {{ 'user_comment' | jsonify }}: {{ 'This feed allows you to read the project mapping' | jsonify }},
     {{ 'items' | jsonify }}: [
-        {{ data.items | jsonify }},
-        {"test": {{ site.slogan | jsonify}}}
+        {{ data.items[0] | jsonify }},
+        {"test": {{ site.slogan | jsonify }}}
     ]
 }
 {%- else -%}{{ my_feed.content }}{% endif %}
