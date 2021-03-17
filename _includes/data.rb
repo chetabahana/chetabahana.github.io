@@ -14,7 +14,7 @@
 *
 *  collect json
 *
-{% endcomment %}{% capture my_json %}{
+{% endcomment %}{% capture my_json %}
     {{ 'id' | jsonify }}: {% if data.id %}{{ data.id }}{% else %}{{ page.id }}{% endif %},
     {{ 'title' | jsonify }}: "{% if data.title %}{{ data.title | capitalize }} | {% endif %}Project Maps",
     {{ 'version' | jsonify }}: {{ 'https://jsonfeed.org/version/1.1' | jsonify }},
@@ -26,4 +26,4 @@
         {{ data.items[0] | jsonify }},
         {"test": {{ site.slogan | jsonify }}}
     ]
-}{% endcapture -%}
+{% endcapture -%}
