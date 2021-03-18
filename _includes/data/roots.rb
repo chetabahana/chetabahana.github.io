@@ -502,10 +502,11 @@
 * https://shopify.github.io/liquid/tags/iteration/
 * https://www.google.com/search?q=how+to+get+element+from+multiple+array+in+jekyll
 *
-{%- endcomment %}
+{%- endcomment %}{%- assign n = 0 %}
 {%- for item in site.data.roots limit: my_pos %}
-    {%- for obj in item.node %}{% increment my_count %}
-        {%- if my_count != my_pos %}{% continue %}
+    {%- for obj in item.node %}
+        {%- assign n = n | plus: 1 %}
+        {%- if n != my_pos %}{% continue %}
         {%- else %}{% assign my_obj = obj %}{% break %}
         {%- endif %}
     {%- endfor %}
