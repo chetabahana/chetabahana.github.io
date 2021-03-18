@@ -1,5 +1,6 @@
+{%- assign pos = my_pos | minus: 1 -%}
 {%- assign my_roots = '' | split: ',' -%}
-{%- assign my_root = site.data.roots[my_pos] -%}
+{%- assign my_root = site.data.roots[pos] -%}
 {%- assign my_roots = my_roots | push: my_root -%}{%- comment -%}
 * 
 *  Primes Mapping
@@ -503,11 +504,11 @@
 * https://www.google.com/search?q=how+to+get+element+from+multiple+array+in+jekyll
 *
 {%- endcomment %}{%- assign n = 0 %}
-{%- for item in site.data.roots limit: feed.pos %}
+{%- for item in site.data.roots limit: my_pos %}
     {%- assign nodes = item.node | split: ';' %}
     {%- for node in nodes %}
         {%- assign n = n | plus: 1 %}
-        {%- if n != feed.pos %}{% continue %}
+        {%- if n != my_pos %}{% continue %}
         {%- else %}{% assign my_node = node | times: 1 %}{% break %}
         {%- endif %}
     {%- endfor %}
