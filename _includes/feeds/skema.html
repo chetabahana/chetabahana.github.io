@@ -3,7 +3,7 @@
                 <div class="row">
                     <div class="templatemo-line-header">
                         <h4>{{ page.title }}</h4>
-                    </div>{% capture attribute_name %}{{ item.title | handleize }}-{{ i }}-paket{% endcapture %}
+                    </div>{% capture attribute_name %}{{ page.title | handleize }}-{{ i }}-paket{% endcapture %}
                     <div class="col-md-4 skema_left">
                         <label for="{{ attribute_name }}">Paket:</label>
                         <select class="theme" name="attributes[{{ attribute_name }}]" id="{{ attribute_name }}">
