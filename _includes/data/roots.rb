@@ -1,6 +1,6 @@
 {%- assign my_roots = '' | split: ',' -%}
 {%- assign my_root = site.data.roots[my_pos] -%}
-{%- assign my_roots = my_roots | push: my_root %}{%- comment -%}
+{%- assign my_roots = my_roots | push: my_root -%}{%- comment -%}
 * 
 *  Primes Mapping
 *
@@ -57,8 +57,8 @@
 *       |  6  | 19
 *  -----+-----+---------
 *
-{% endcomment %}
-{% comment %}
+{%- endcomment -%}
+{%- comment -%}
 * 
 *  P7:(142857)
 *  
@@ -78,8 +78,8 @@
 *  ------+------+------+-----
 *        |  57  |  57  | 114
 *
-{% endcomment %}
-{% comment %}
+{%- endcomment -%}
+{%- comment -%}
 * 
 *  Scheme 13:9
 *  ===========
@@ -355,8 +355,8 @@
 *  =======+====+=======+====                        Δ         ====
 *   3:4:9 | 30 |300000 | 121 = 118 + log 10³ -------¤         Δ900   
 *
-{% endcomment %}
-{% comment %}
+{%- endcomment -%}
+{%- comment -%}
 *
 *  π(10000) Schema
 *  Injected via 1000 - 50
@@ -423,13 +423,13 @@
 *  =======+====+=======+====                        Δ         ====
 *   3:4:9 | 30 |300000 | 102 = 118 + log 10³ -------¤         Δ900   
 *
-{%- endcomment %}
-{%- comment %}
+{%- endcomment -%}
+{%- comment -%}
 *
 *  π(100000) = 9592
 *
-{% endcomment %}
-{%- comment %}
+{%- endcomment -%}
+{%- comment -%}
 *
 *  π(100000) Schema
 *  Injected to 300000/1000 + 900/100 = 309
@@ -500,11 +500,11 @@
 *
 * https://shopify.github.io/liquid/tags/iteration/
 *
-{%- for i in site.data.roots limit: my_pos %}
-{%- if i == 3 %}{% continue %}
-{%- elsif i == 5 %}{% break %}
-{%- else %}{% assign var = my_pos %}{% endif %}
-{%- endfor %}{%- endcomment %}{% comment -%}
+{%- for i in site.data.roots limit: my_pos -%}
+{%- if i == 3 -%}{%- continue -%}
+{%- elsif i == 5 -%}{%- break -%}
+{%- else -%}{%- assign var = my_pos -%}{%- endif -%}
+{%- endfor -%}{%- endcomment -%}{%- comment -%}
 *
 *  π(10000) Schema
 *  Injected via 1000 - 50
@@ -730,8 +730,8 @@
 * - Number 68 is in the same hexagon along with 50
 * - Reinject number are excatly 102 to 103
 *
-{% endcomment -%}
-{% comment -%}
+{%- endcomment -%}
+{%- comment -%}
 *
 *  π(100th layers) = π(10^11) = 4,118,054,813
 *
