@@ -504,8 +504,8 @@
 *
 {%- endcomment %}
 {%- for item in site.data.roots limit: my_pos %}
-    {%- for obj in item.node %}{% increment my_counter %}
-        {%- if my_counter != my_pos %}{% continue %}
+    {%- for obj in item.node %}{% increment my_count %}
+        {%- if my_count != my_pos %}{% continue %}
         {%- else %}{% assign my_obj = obj %}{% break %}
         {%- endif %}
     {%- endfor %}
