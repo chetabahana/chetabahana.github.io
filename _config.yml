@@ -83,12 +83,6 @@ defaults:
       type: "feeds"
     values:
       layout: "feeds"
-  -
-    scope:
-      path: ""
-      type: "leads"
-    values:
-      layout: "redirect"
 
 # Permalinks
 # https://jekyllrb.com/docs/permalinks/
