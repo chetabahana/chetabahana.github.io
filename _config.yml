@@ -99,7 +99,7 @@ defaults:
 collections:
   leads:
     output: true
-    redirect_from: /:title:output_ext
+    permalink: /:categories/:title:output_ext
   feeds:
     output: true
     permalink: /:categories/:title:output_ext
