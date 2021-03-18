@@ -498,6 +498,7 @@
 *                          |
 *                          └──> Reinjected as vektor 71 to π(1000) = 168
 *
+{% for i in (1..my_pos) %}{% assign my_count[my_pos] = site.data.roots[my_pos][node] | size %}{% endfor %}
 {%- endcomment -%}
 {%- comment -%}
 *
