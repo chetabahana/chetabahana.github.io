@@ -83,6 +83,12 @@ defaults:
       type: "feeds"
     values:
       layout: "feeds"
+  -
+    scope:
+      path: ""
+      type: "leads"
+    values:
+      redirect_from: /:title:output_ext
 
 # Permalinks
 # https://jekyllrb.com/docs/permalinks/
@@ -93,7 +99,6 @@ defaults:
 collections:
   leads:
     output: true
-    permalink: /:title:output_ext
   feeds:
     output: true
     permalink: /:categories/:title:output_ext
