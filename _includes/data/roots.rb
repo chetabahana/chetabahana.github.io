@@ -504,10 +504,11 @@
 *
 {%- endcomment %}{%- assign n = 0 %}
 {%- for item in site.data.roots limit: my_pos %}
-    {%- for obj in item.node %}
+    {%- assign nodes = item.node | split: ';' %}
+    {%- for node in nodes %}
         {%- assign n = n | plus: 1 %}
         {%- if n != my_pos %}{% continue %}
-        {%- else %}{% assign my_obj = obj %}{% break %}
+        {%- else %}{% assign my_obj = node %}{% break %}
         {%- endif %}
     {%- endfor %}
 {%- endfor %}{% comment %}
