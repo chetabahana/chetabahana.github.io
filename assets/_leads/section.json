@@ -2,6 +2,7 @@
 key: 168
 pos: 150
 weight: 7
+category: lead
 ---
 {%- comment -%}
 *  True Prime Pairs:
