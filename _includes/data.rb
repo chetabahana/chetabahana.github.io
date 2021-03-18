@@ -29,6 +29,6 @@
 {% endcomment %}{% if my_feed.path != 'feed.json' %}
         {{ data.items[0] | jsonify }},{% assign my_pos = my_feed.pos | minus:1 %}
         {% include data/roots.rb %}{"roots": {{ my_roots | jsonify }}}
-{%- if my_feed.ext == '.json' and my_feed.myId < 115 %}
+{%- if my_feed.ext == '.json' and data.id < 115 %}
     ]
 }{%- endif %}{% endif %}{% endif -%}
