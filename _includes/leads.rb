@@ -1,4 +1,4 @@
-{%- comment -%}
+{% comment %}
 *
 *  get lead for feeds object inclusion
 *
@@ -6,5 +6,5 @@
 *  https://docs.treepl.co/liquid
 *  https://stackoverflow.com/a/53693728/4058484
 *
-{%- endcomment -%}
-test: 1
+{% endcomment %}{% if my_index %}
+{{ my_tab }}{{ my_tab }}{"brach": {{ my_index | jsonify }}}{% endif %}
