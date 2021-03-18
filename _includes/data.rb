@@ -26,9 +26,9 @@
 *
 *  collect root
 *
-{% endcomment %}{{page.layout }}-{{page.layout.layout }}={{my_feed.layout }}-{{my_feed.layout.layout }}{% if my_feed.path != 'feed.json' %}
+{% endcomment %}{% if my_feed.path != 'feed.json' %}
         {{ data.items[0] | jsonify }},{% assign my_pos = my_feed.pos | minus:1 %}
         {% include data/roots.rb %}{"roots": {{ my_roots | jsonify }}}
-{%- if my_feed.layout.layout != 'default' %}
+{%- if my_feed.layout == 'feeds' %}
     ]
 }{%- endif %}{% endif %}{% endif -%}
