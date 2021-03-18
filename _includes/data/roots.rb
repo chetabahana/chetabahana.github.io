@@ -508,7 +508,7 @@
     {%- for node in nodes %}
         {%- assign n = n | plus: 1 %}
         {%- if n != feed.pos %}{% continue %}
-        {%- else %}{% assign my_obj = node %}{% break %}
+        {%- else %}{% assign my_node = node | times: 1 %}{% break %}
         {%- endif %}
     {%- endfor %}
 {%- endfor %}{% comment %}
