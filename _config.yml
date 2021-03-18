@@ -89,7 +89,6 @@ defaults:
       type: "leads"
     values:
       layout: "redirect"
-      redirect_from: /:title:output_ext
 
 # Permalinks
 # https://jekyllrb.com/docs/permalinks/
@@ -98,10 +97,10 @@ defaults:
 # posts: https://chetabahana.github.io/object/2018/132/05/00/00/00/dummy.json
 
 collections:
-  leads:
+  feeds:
     output: true
     permalink: /:categories/:title:output_ext
-  feeds:
+  leads:
     output: true
     permalink: /:categories/:title:output_ext
   posts:
