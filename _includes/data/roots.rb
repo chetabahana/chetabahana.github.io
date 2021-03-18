@@ -503,11 +503,11 @@
 * https://www.google.com/search?q=how+to+get+element+from+multiple+array+in+jekyll
 *
 {%- endcomment %}{%- assign n = 0 %}
-{%- for item in site.data.roots limit: my_pos %}
+{%- for item in site.data.roots limit: feed.pos %}
     {%- assign nodes = item.node | split: ';' %}
     {%- for node in nodes %}
         {%- assign n = n | plus: 1 %}
-        {%- if n != my_pos %}{% continue %}
+        {%- if n != feed.pos %}{% continue %}
         {%- else %}{% assign my_obj = node %}{% break %}
         {%- endif %}
     {%- endfor %}
