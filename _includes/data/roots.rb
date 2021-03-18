@@ -504,10 +504,10 @@
 *
 {%- endcomment %}{%- assign n = 0 %}
 {%- for item in site.data.roots limit: my_pos %}
-    {%- for obj in item.node %}{{ item.node | jsonify }}
+    {%- for obj in item.node %}
         {%- assign n = n | plus: 1 %}
         {%- if n != my_pos %}{% continue %}
-        {%- else %}{% assign my_obj = item.node[obj] %}{% break %}
+        {%- else %}{{ obj | jsonify }}{% assign my_obj = obj %}{% break %}
         {%- endif %}
     {%- endfor %}
 {%- endfor %}{% comment %}
