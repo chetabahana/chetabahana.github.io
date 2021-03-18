@@ -88,7 +88,7 @@ defaults:
       path: ""
       type: "leads"
     values:
-      redirect_from: /:title:output_ext
+      layout: "redirect"
 
 # Permalinks
 # https://jekyllrb.com/docs/permalinks/
