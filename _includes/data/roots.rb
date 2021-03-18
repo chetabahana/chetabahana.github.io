@@ -498,13 +498,17 @@
 *                          |
 *                          └──> Reinjected as vektor 71 to π(1000) = 168
 *
+* https://gist.github.com/magicznyleszek/9803727
 * https://shopify.github.io/liquid/tags/iteration/
 *
-{%- for i in site.data.roots limit: my_pos -%}
-{%- if i == 3 -%}{%- continue -%}
-{%- elsif i == 5 -%}{%- break -%}
-{%- else -%}{%- assign var = my_pos -%}{%- endif -%}
-{%- endfor -%}{%- endcomment -%}{%- comment -%}
+{%- endcomment %}{%- assign n = 0 %}
+{%- for obj in site.data.roots limit: my_pos %}
+    {%- for item in obj.node %}
+        {%- assign n = n | plus: 1 %}
+        {%- if n != my_pos %}{% continue %}
+        {%- else %}{% assign var = obj.node[item] %}{% break %}{% endif %}
+    {%- endfor %}
+{%- endfor %}{% comment %}
 *
 *  π(10000) Schema
 *  Injected via 1000 - 50
