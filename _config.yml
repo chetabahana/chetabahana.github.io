@@ -95,6 +95,7 @@ collections:
     output: true
     permalink: /:title:output_ext
   feeds:
+    output: true
     permalink: /:categories/:title:output_ext
   posts:
     permalink: /:categories/:year/:y_day/:month/:hour/:minute/:second/:title:output_ext
