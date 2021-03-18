@@ -14,7 +14,7 @@
 *
 *  collect json
 *
-{% endcomment %}{% if page.redirect.from or my_feed.path == 'feed.json' or my_feed.ext == '.json' or my_feed.ext == '.xml' %}{
+{% endcomment %}{% if page.redirect.from or my_feed.path == 'feed.json' or my_feed.ext == '.json' %}{
     {{ 'id' | jsonify }}: {% if data.id %}{{ data.id }}{% else %}{{ page.id }}{% endif %},
     {{ 'title' | jsonify }}: "{% if data.title %}{{ data.title | capitalize }} | {% endif %}Project Maps",
     {{ 'version' | jsonify }}: {{ 'https://jsonfeed.org/version/1.1' | jsonify }},
@@ -29,6 +29,6 @@
 {% endcomment %}{% if my_feed.path != 'feed.json' %}
         {{ data.items[0] | jsonify }},{% assign my_pos = my_feed.pos | minus:1 %}
         {% include data/roots.rb %}{"roots": {{ my_roots | jsonify }}}
-{%- if my_feed.ext == '.json' %}
+{%- if my_feed.ext == '.json' and my_feed.myId < 115 %}
     ]
 }{%- endif %}{% endif %}{% endif -%}
