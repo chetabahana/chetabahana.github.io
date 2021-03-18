@@ -93,7 +93,7 @@ defaults:
 collections:
   leads:
     output: true
-    permalink: /:title:output_ext
+    redirect_from: /:title:output_ext
   feeds:
     output: true
     permalink: /:categories/:title:output_ext
