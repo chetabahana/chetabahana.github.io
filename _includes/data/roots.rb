@@ -510,14 +510,13 @@
 {%- for item in my_roots limit: my_pos %}
     {%- assign size = item.pos | size | minus: 2 %}
     {%- assign my_nodes_pos = item.pos | slice: 0, size %}
-    {%- assign newItem = my_nodes[my_nodes_pos] | default: item %}
-    {%- assign my_nodes = my_nodes | push: newItem %}
+    {%- assign my_nodes = my_nodes | push: forloop.index0 %}
     {%- assign nodes = item.node | split: ';' %}
     {%- for node in nodes %}
         {%- assign n = n | plus: 1 %}
         {%- if n != my_pos -%}
             {%- continue -%}
-        {%- else -%}
+        {%- else -%}{{ my_index | jsonify }}
             {%- assign my_node = node | times: 1 %}{% break -%}
         {%- endif %}
     {%- endfor -%}
