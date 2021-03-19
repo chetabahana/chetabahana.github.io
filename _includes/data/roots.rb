@@ -244,13 +244,12 @@
     {%- assign nodes = item.node | split: ';' %}
     {%- for node in nodes %}
         {%- assign n = n | plus: 1 %}
-        {%- assign my_obj = node | times: 1 %}
-        {%- assign my_node = my_node | push: my_obj %}
+        {%- assign my_root = node | times: 1 %}
+        {%- assign my_node = my_node | push: my_root %}
         {%- if n != my_pos -%}
             {%- continue -%}
         {%- else -%}
             {%- assign my_debug = my_nodes %}
-            {%- assign my_root = node | times: 1 %}
             {%- break -%}
         {%- endif %}
     {%- endfor -%}
