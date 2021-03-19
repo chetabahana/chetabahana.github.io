@@ -232,7 +232,7 @@
 {%- for item in my_roots limit: my_pos %}
     {%- assign size = item.pos | size | minus: 2 %}
     {%- assign my_nodes_pos = item.pos | slice: 0, size %}
-    {%- unless my_keys contains my_nodes_pos and n < 139 %}
+    {%- unless my_keys contains my_nodes_pos %}
         {%- assign my_keys = my_keys | push: my_nodes_pos %}
         {%- assign my_rows = my_rows | push: forloop.index0 %}
     {%- endunless %}
