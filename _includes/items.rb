@@ -13,7 +13,6 @@ comment %}
 *  collect primes
 *
 {% endcomment %}{% assign my_pos = feed.pos %}{% include data/roots.rb %}
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"test": {{ my_test | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"node": {{ my_node }},{% assign pos = my_pos | minus: 1 %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"root": {{ layout.object[pos] | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"weight": {{ feed.weight | jsonify }},
@@ -27,7 +26,8 @@ comment %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"value": {{ feed.value | jsonify }},{% if feed.frame %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"frame": {{ feed.frame | jsonify }},{% endif %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"feeds": {{ feed.tags | jsonify }},{% if feed.ratio %}
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"ratio": {{ feed.ratio | jsonify }},{% endif %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"ratio": {{ feed.ratio | jsonify }},{% endif %}{% if my_debug %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"debug": {{ my_debug | jsonify }},{% endif %}
 {% comment %}
 *
 *  collect all childs
