@@ -495,21 +495,32 @@
 *   3:4:9 | 30 |3000000 | 171 = 168 + log 10³ ---------¤         Δ900   
 *                          |
 *                          └──> Reinjected as vektor 71 to π(1000) = 168
+* Check if the numbers of collected nodes is reaching 10th prime = 29 on the
+* position of π(1000) - 29 = 168 - 29 = 139. Otherwise assign single node.
 *
+* Ref:
 * https://gist.github.com/magicznyleszek/9803727
 * https://shopify.github.io/liquid/tags/iteration/
 * https://www.google.com/search?q=how+to+get+element+from+multiple+array+in+jekyll
+* https://community.shopify.com/c/Shopify-Design/Remove-last-2-characters-of-a-string/td-p/236741
 *
-{%- endcomment %}{% assign n = 0 %}
+{%- endcomment %}
+{%- assign n = 0 %}
+{%- assign my_nodes = '' | split: ',' %}
 {%- for item in my_roots limit: my_pos %}
+    {%- assign size = item.pos | size | minus: 2 %}
+    {%- assign my_nodes_pos = item.pos | slice: 0, size %}
     {%- assign nodes = item.node | split: ';' %}
     {%- for node in nodes %}
         {%- assign n = n | plus: 1 %}
-        {%- if n != my_pos %}{% continue %}
-        {%- else %}{% assign my_node = node | times: 1 %}{% break %}
+        {%- if n != my_pos -%}
+            {%- continue -%}
+        {%- else -%}{{ my_nodes_pos | jsonify }}
+            {%- assign my_node = node | times: 1 %}{% break -%}
         {%- endif %}
     {%- endfor -%}
-{%- endfor %}{% comment -%}
+{%- endfor -%}
+{%- comment -%}
 *
 *  π(10000) Schema
 *  Injected via 1000 - 50
