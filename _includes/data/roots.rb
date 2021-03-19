@@ -254,7 +254,7 @@
         {%- if n != my_pos %}
             {%- continue %}
         {%- else -%}
-            {%- comment %}{% assign my_debug = my_nodes %}{% endcomment %}
+            {%- assign my_debug = my_nodes %}
             {%- assign my_root = node | times: 1 %}
             {%- break %}
         {%- endif %}
