@@ -13,6 +13,7 @@ comment %}
 *  collect primes
 *
 {% endcomment %}{% assign my_pos = feed.pos %}{% include data/roots.rb %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"test": {{ my_test | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"node": {{ my_node }},{% assign pos = my_pos | minus: 1 %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"root": {{ layout.object[pos] | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"weight": {{ feed.weight | jsonify }},
