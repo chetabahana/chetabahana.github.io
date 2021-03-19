@@ -244,7 +244,7 @@
         {%- if n != my_pos -%}
             {%- continue -%}
         {%- else -%}
-            {%- assign my_debug = my_rows %}
+            {%- assign my_debug = my_rows | size %}
             {%- assign my_node = node | times: 1 %}{% break -%}
         {%- endif %}
     {%- endfor -%}
