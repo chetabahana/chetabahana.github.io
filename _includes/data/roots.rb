@@ -249,7 +249,7 @@
         {%- if n != my_pos -%}
             {%- continue -%}
         {%- else -%}
-            {%- assign my_debug = my_nodes | size %}
+            {%- assign my_debug = my_nodes %}
             {%- assign my_node = my_obj %}
             {%- break -%}
         {%- endif %}
