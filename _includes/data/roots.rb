@@ -243,6 +243,7 @@
     {%- else %}
         {%- assign my_frame_pos = my_pos | minus: 139 %}
         {%- assign my_frame = my_nodes[my_frame_pos] %}
+        {%- assign my_root = nil %}
         {%- break %}
     {%- endif %}
     {%- assign nodes = item.node | split: ';' %}
