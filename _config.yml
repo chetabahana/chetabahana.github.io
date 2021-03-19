@@ -101,10 +101,10 @@ collections:
     output: true
     permalink: /:categories/:title:output_ext
   leads:
-    output: false
+    output: true
     permalink: /:categories/:title:output_ext
   posts:
-    output: false
+    output: true
     permalink: /:categories/:year/:y_day/:month/:hour/:minute/:second/:title:output_ext
 
 # Feed Setting
