@@ -495,14 +495,18 @@
 *   3:4:9 | 30 |3000000 | 171 = 168 + log 10³ ---------¤         Δ900   
 *                          |
 *                          └──> Reinjected as vektor 71 to π(1000) = 168
-* Check if the numbers of collected nodes is reaching 10th prime = 29 on the
-* position of π(1000) - 29 = 168 - 29 = 139. Otherwise assign single node.
 *
-* Ref:
-* https://gist.github.com/magicznyleszek/9803727
-* https://shopify.github.io/liquid/tags/iteration/
-* https://www.google.com/search?q=how+to+get+element+from+multiple+array+in+jekyll
-* https://community.shopify.com/c/Shopify-Design/Remove-last-2-characters-of-a-string/td-p/236741
+*  Check if the numbers of collected nodes is reaching 10th prime = 29 on the
+*  position of π(1000) - 29 = 168 - 29 = 139. Otherwise assign single node.
+*
+*  You may see the running code here:
+*  https://chetabahana.github.io/feed.json
+*
+*  Ref:
+*  https://gist.github.com/magicznyleszek/9803727
+*  https://shopify.github.io/liquid/tags/iteration/
+*  https://www.google.com/search?q=how+to+get+element+from+multiple+array+in+jekyll
+*  https://community.shopify.com/c/Shopify-Design/Remove-last-2-characters-of-a-string/td-p/236741
 *
 {%- endcomment %}
 {%- assign n = 0 %}
@@ -516,7 +520,7 @@
         {%- assign n = n | plus: 1 %}
         {%- if n != my_pos -%}
             {%- continue -%}
-        {%- else -%}{{ my_index | jsonify }}
+        {%- else -%}{{ my_nodes | jsonify }}
             {%- assign my_node = node | times: 1 %}{% break -%}
         {%- endif %}
     {%- endfor -%}
@@ -541,10 +545,10 @@
 *  Spin-6 |  90 to 102 |            | 571 to 650 | 650 to 618 | 615 to 602
 *  Spin-7 | 103 to   2 |            |  71 to  50 | 150 to 115 | 200 to 231
 *
-* Note:
-* - Every 6th scheme would be the 1st-layer in a higher level of 1 to π(1000)=168
-* - The layer turns to feed out when π((1000/Φ)+1)+1=π(619)+1=115 landed to 150
-* - See the scheme of this layer on https://chetabahana.github.io/feed.json
+*  Note:
+*  - Every 6th scheme would be the 1st-layer in a higher level of 1 to π(1000)=168
+*  - The layer turns to feed out when π((1000/Φ)+1)+1=π(619)+1=115 landed to 150
+*  - See the scheme of this layer on https://chetabahana.github.io/feed.json
 *
 *    Sub  | i  |    β  | f   
 *  =======+====+=======+=======  ===   ===   ===   ===   ===   === <-- π(1000-50)
@@ -763,14 +767,14 @@
 *  9:9   18:90   27:900   36:9000   45:90000   54:9x10^5  63:9x10^6  72:9x10^7  81:9x10^8  90:9x10^9   99:9x10^10
 *  10:10 19:100  28:1000  37:10000  46:100000  55:10^6    64:10^7    73:10^8    82:10^9    91:10^10   100:10^11
 *
-* For more primes see:
-* https://primes.utm.edu/howmany.html
+*  For more primes see:
+*  https://primes.utm.edu/howmany.html
 *
 {%- endcomment -%}
 {%- comment -%}
 *
-* Here is my quote about prime numbers:
-* Finding the way of ‘how they presence’ is far more important
-* than trying to find ‘how many all of them’ are exactly exist.
+*  Here is my quote about prime numbers:
+*  Finding the way of ‘how they presence’ is far more important
+*  than trying to find ‘how many all of them’ are exactly exist.
 *
 {%- endcomment -%}
