@@ -250,7 +250,7 @@
             {%- continue -%}
         {%- else -%}
             {%- assign my_debug = my_nodes %}
-            {%- assign my_node = node | times: 1 %}
+            {%- assign my_root = node | times: 1 %}
             {%- break -%}
         {%- endif %}
     {%- endfor -%}
