@@ -10,13 +10,13 @@
     {%- assign my_nodes_pos = item.pos | slice: 0, size %}
     {%- if n < 139 %}
         {%- unless my_keys contains my_nodes_pos %}
-            {%- comment %}{% endcomment %}{% assign my_debug = my_nodes %}
             {%- assign my_rows = my_rows | push: forloop.index0 %}
             {%- assign my_keys = my_keys | push: my_nodes_pos %}
             {%- assign my_nodes = my_nodes | push: my_node %}
             {%- assign my_node = '' | split: ',' %}
         {%- endunless %}
     {%- else %}
+        {%- comment %}{% endcomment %}{% assign my_debug = my_nodes %}
         {%- assign my_frame_pos = my_pos | minus: 139 %}
         {%- assign my_frame = my_nodes[my_frame_pos] %}
         {%- assign my_root = nil %}
