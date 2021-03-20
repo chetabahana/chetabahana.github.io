@@ -3,7 +3,6 @@ myId: 98
 key: 100
 pos: 8
 weight: 3
-primes: 1
 category: main
 label: Buka Toko
 tag_name: ubuntu

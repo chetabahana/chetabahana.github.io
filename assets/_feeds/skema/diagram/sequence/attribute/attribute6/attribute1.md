@@ -3,7 +3,6 @@ myId: 93
 key: 11
 pos: 13
 weight: 5
-primes: 50
 category: user
 label: Merchant Center
 tag_name: ubuntu

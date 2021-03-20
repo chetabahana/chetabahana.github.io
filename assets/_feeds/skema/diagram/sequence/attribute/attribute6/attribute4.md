@@ -3,7 +3,6 @@ myId: 96
 key: 1
 pos: 10
 weight: 2
-primes: 200
 category: user
 label: Network
 tag_name: ubuntu

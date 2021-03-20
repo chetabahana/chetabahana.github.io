@@ -3,7 +3,6 @@ myId: 10
 key: 51
 pos: 49
 weight: 1
-primes: 40
 category: user
 value: [29,2,-1,1]
 zones: [1,30,200]

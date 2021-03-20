@@ -3,7 +3,6 @@ myId: 95
 key: 28
 pos: 11
 weight: 3
-primes: 8
 category: user
 label: Portfolio
 tag_name: ubuntu
