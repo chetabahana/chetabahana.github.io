@@ -3,7 +3,6 @@ myId: 17
 key: 50
 pos: 101
 weight: 3
-primes: 30
 category: user
 value: [59,4,1,1]
 pairs: [1,30,1,60,200,1]

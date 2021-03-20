@@ -5,7 +5,6 @@ pos: 7
 to: 6
 from: 5
 weight: 3
-primes: 5
 category: user
 init: external
 flow: external

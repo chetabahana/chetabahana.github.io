@@ -3,7 +3,6 @@ myId: 94
 key: 12
 pos: 12
 weight: 4
-primes: 40
 category: user
 label: Peluang Terbaik
 tag_name: ubuntu
