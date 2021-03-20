@@ -29,7 +29,7 @@
         {%- if n != my_pos %}
             {%- continue %}
         {%- else -%}
-            {%- comment %}{%- assign my_debug = my_nodes %}{% endcomment %}
+            {%- comment %}{% endcomment %}{% assign my_debug = my_nodes %}
             {%- assign my_root = node | times: 1 %}
             {%- assign my_frame = nil %}
             {%- break %}

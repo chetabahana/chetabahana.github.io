@@ -20,6 +20,7 @@ form_engines:
 
 # Repository Settings
 # https://blog.webjeda.com/jekyll-redirect/
+# https://github.com/ethanresnick/json-api-1/blob/gh-pages/_config.yml
 # https://github.com/daattali/beautiful-jekyll/blob/master/_config.yml
 
 include:
@@ -74,7 +75,7 @@ whitelist:
 # https://stackoverflow.com/a/49428493
 # https://jekyllrb.com/docs/collections/
 # https://chetabahana.github.io/app/flowchart.json
-# https://jekyllrb.com/docs/configuration/front-matter-defaults/#glob-patterns-in-front-matter-defaults
+# https://jekyllrb.com/docs/configuration/front-matter-defaults
 
 defaults:
   -
@@ -131,6 +132,7 @@ feed:
 
 highlighter: rouge
 markdown: kramdown
+excerpt_separator: ""
 
 kramdown:
   html_to_native: true
