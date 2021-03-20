@@ -10,7 +10,7 @@
     {%- assign my_nodes_pos = item.pos | slice: 0, size %}
     {%- if n < 139 %}
         {%- unless my_keys contains my_nodes_pos %}
-            {%- comment %}{% assign my_debug = my_nodes %}{% endcomment %}
+            {%- comment %}{% endcomment %}{% assign my_debug = my_nodes %}
             {%- assign my_rows = my_rows | push: forloop.index0 %}
             {%- assign my_keys = my_keys | push: my_nodes_pos %}
             {%- assign my_nodes = my_nodes | push: my_node %}
