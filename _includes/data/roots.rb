@@ -16,9 +16,9 @@
             {%- assign my_node = '' | split: ',' %}
         {%- endunless %}
     {%- else %}
-        {%- comment %}{% endcomment %}{%- assign my_debug = my_nodes %}
         {%- assign my_frame_pos = my_pos | minus: 139 %}
         {%- assign my_frame = my_nodes[my_frame_pos] %}
+        {%- comment %}{% endcomment %}{%- assign my_debug = my_frame %}
         {%- assign my_root = nil %}
         {%- break %}
     {%- endif %}
