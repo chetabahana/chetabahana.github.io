@@ -36,4 +36,4 @@
         {%- endif %}
     {%- endfor %}
     {%- if my_root %}{% break %}{% endif %}
-{%- endfor %}
+{%- endfor -%}
