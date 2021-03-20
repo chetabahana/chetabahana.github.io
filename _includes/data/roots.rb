@@ -226,12 +226,13 @@
 *
 {%- endcomment -%}
 {%- assign n = 0 %}
-{%- assign my_root = nil %}
 {%- assign my_keys = '' | split: ',' %}
 {%- assign my_rows = '' | split: ',' %}
 {%- assign my_node = '' | split: ',' %}
 {%- assign my_nodes = '' | split: ',' %}
 {%- for item in my_roots limit: my_pos %}
+    {%- assign my_root = nil %}
+    {%- assign my_frame = nil %}
     {%- assign size = item.pos | size | minus: 2 %}
     {%- assign my_nodes_pos = item.pos | slice: 0, size %}
     {%- if n < 139 %}
@@ -257,6 +258,7 @@
         {%- else -%}
             {%- comment %}{%- assign my_debug = my_nodes %}{% endcomment %}
             {%- assign my_root = node | times: 1 %}
+            {%- assign my_frame = nil %}
             {%- break %}
         {%- endif %}
     {%- endfor %}
