@@ -15,7 +15,13 @@
             {%- assign my_nodes = my_nodes | push: my_node %}
             {%- assign my_node = '' | split: ',' %}
         {%- endunless %}
-    {%- else %}{{ my_nodes | jsonify }}
+        {%- if n == 139 %}
+            {%- assign my_frame_pos = my_pos | minus: 139 %}
+            {%- assign my_frame = my_nodes[my_frame_pos] %}
+            {%- assign my_root = nil %}
+            {%- break %}
+        {%- endif %}
+    {%- else %}
         {%- assign my_frame_pos = my_pos | minus: 139 %}
         {%- assign my_frame = my_nodes[my_frame_pos] %}
         {%- assign my_root = nil %}
