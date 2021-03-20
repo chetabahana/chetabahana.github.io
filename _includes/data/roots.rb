@@ -26,13 +26,13 @@
         {%- assign n = n | plus: 1 %}
         {%- assign my_obj = node | times: 1 %}
         {%- assign my_node = my_node | push: my_obj %}
-        {%- if n != my_pos %}
-            {%- continue %}
-        {%- else -%}
+        {%- if n == my_pos %}
             {%- comment %}{% assign my_debug = my_nodes %}{% endcomment %}
             {%- assign my_root = node | times: 1 %}
             {%- assign my_frame = nil %}
             {%- break %}
+        {%- else -%}
+            {%- continue %}
         {%- endif %}
     {%- endfor %}
     {%- if my_root %}{% break %}{% endif %}
