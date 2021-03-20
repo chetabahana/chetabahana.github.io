@@ -15,8 +15,7 @@
             {%- assign my_nodes = my_nodes | push: my_node %}
             {%- assign my_node = '' | split: ',' %}
         {%- endunless %}
-    {%- endif %}
-    {%- if my_pos > 139 %}
+    {%- elsif my_pos > 139 %}
         {%- comment %}{% endcomment %}{% assign my_debug = my_nodes %}
         {%- assign my_frame_pos = my_pos | minus: 139 %}
         {%- assign my_frame = my_nodes[my_frame_pos] %}
