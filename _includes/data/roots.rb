@@ -226,6 +226,7 @@
 *
 {%- endcomment -%}
 {%- assign n = 0 %}
+{%- assign my_root = nil %}
 {%- assign my_keys = '' | split: ',' %}
 {%- assign my_rows = '' | split: ',' %}
 {%- assign my_node = '' | split: ',' %}
@@ -240,10 +241,13 @@
             {%- assign my_nodes = my_nodes | push: my_node %}
             {%- assign my_node = '' | split: ',' %}
         {%- endunless %}
-    {%- else %}
+    {%- elsif n >= my_pos %}
         {%- assign my_frame_pos = my_pos | minus: 139 %}
         {%- assign my_frame = my_nodes[my_frame_pos] %}
-        {%- comment %}{%- assign my_root = nil %}{% endcomment %}
+        {%- assign my_root = nil %}
+        {%- break %}
+    {%- else %}
+        {%- continue %}
     {%- endif %}
     {%- assign nodes = item.node | split: ';' %}
     {%- for node in nodes %}
@@ -257,8 +261,9 @@
             {%- assign my_root = node | times: 1 %}
             {%- break %}
         {%- endif %}
-    {%- endfor -%}
-{%- endfor -%}
+    {%- endfor %}
+    {%- if my_root %}{% break %}{% endif %}
+{%- endfor %}
 {%- comment -%}
 *
 *  π(10000) = 1229
