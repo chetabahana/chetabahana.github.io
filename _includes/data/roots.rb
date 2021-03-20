@@ -16,6 +16,7 @@
             {%- assign my_node = '' | split: ',' %}
         {%- endunless %}
     {%- else %}
+        {%- comment %}{% endcomment %}{%- assign my_debug = my_nodes %}
         {%- assign my_frame_pos = my_pos | minus: 139 %}
         {%- assign my_frame = my_nodes[my_frame_pos] %}
         {%- assign my_root = nil %}
@@ -28,8 +29,7 @@
         {%- assign my_node = my_node | push: my_obj %}
         {%- if n != my_pos %}
             {%- continue %}
-        {%- elsif n!= 139 -%}
-            {%- comment %}{%- assign my_debug = my_nodes %}{% endcomment %}
+        {%- else -%}
             {%- assign my_root = node | times: 1 %}
             {%- assign my_frame = nil %}
             {%- break %}
