@@ -8,7 +8,7 @@
     {%- assign my_frame = nil %}
     {%- assign size = item.pos | size | minus: 2 %}
     {%- assign my_nodes_pos = item.pos | slice: 0, size %}
-    {%- if n <= 139 %}
+    {%- if n < 139 %}
         {%- unless my_keys contains my_nodes_pos %}
             {%- comment %}{% assign my_debug = my_nodes %}{% endcomment %}
             {%- assign my_rows = my_rows | push: forloop.index0 %}
