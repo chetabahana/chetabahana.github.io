@@ -92,8 +92,8 @@ defaults:
 
 # Permalinks
 # https://jekyllrb.com/docs/permalinks/
-# feeds: https://chetabahana.github.io/feed.json
-# leads: https://chetabahana.github.io/lead/section.json
+# feeds: https://chetabahana.github.io/main/tree.json
+# leads: https://chetabahana.github.io/leads/section.json
 # posts: https://chetabahana.github.io/object/2018/132/05/00/00/00/dummy.json
 
 collections:

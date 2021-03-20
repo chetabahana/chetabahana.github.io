@@ -26,7 +26,7 @@
 *
 *  collect root
 *
-{% endcomment %}{% if my_feed.path != 'feed.json' %}
+{% endcomment %}{% assign my_roots = site.data.roots %}{% if my_feed.path != 'feed.json' %}
         {{ data.items[0] | jsonify }},{% assign my_pos = my_feed.pos | minus: 1 %}
         {"root": {{ my_roots[my_pos] | jsonify }}}
 {%- if page.layout != 'feeds' %},{% else %}
