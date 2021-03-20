@@ -244,7 +244,6 @@
         {%- assign my_frame_pos = my_pos | minus: 139 %}
         {%- assign my_frame = my_nodes[my_frame_pos] %}
         {%- assign my_root = nil %}
-        {%- break %}
     {%- endif %}
     {%- assign nodes = item.node | split: ';' %}
     {%- for node in nodes %}
@@ -254,7 +253,7 @@
         {%- if n != my_pos %}
             {%- continue %}
         {%- else -%}
-            {%- assign my_debug = my_nodes %}
+            {%- comment %}{%- assign my_debug = my_nodes %}{% endcomment %}
             {%- assign my_root = node | times: 1 %}
             {%- break %}
         {%- endif %}
