@@ -22,6 +22,7 @@
         {%- assign my_root = nil %}
         {%- break %}
     {%- endif %}
+    {%- if my_frame %}{% break %}{% endif %}
     {%- assign nodes = item.node | split: ';' %}
     {%- for node in nodes %}
         {%- assign n = n | plus: 1 %}
