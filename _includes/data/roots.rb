@@ -3,7 +3,9 @@
 *  This script is the implementation of Prime Mapping as described on:
 *  https://github.com/chetabahana/chetabahana.github.io/blob/Chetabahana/_layouts/feed.rb
 *
-{%- endcomment -%}
+{%- endcomment %}
+{%- capture my_debug %}{{ content | strip_html }}{% endcapture %}
+{%- comment %}
 {%- assign n = 0 %}
 {%- assign my_keys = '' | split: ',' %}
 {%- assign my_rows = '' | split: ',' %}
@@ -58,5 +60,4 @@
         {%- assign my_frame = nil %}
         {%- break %}
     {%- endif %}
-{%- endfor %}
-{%- comment %}{% endcomment %}{% capture my_debug %}{{ content | strip_html }}{% endcapture -%}
+{%- endfor -%}
