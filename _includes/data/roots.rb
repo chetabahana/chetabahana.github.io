@@ -4,7 +4,7 @@
 *  https://github.com/chetabahana/chetabahana.github.io/blob/Chetabahana/_layouts/feed.rb
 *
 {%- endcomment %}
-{%- capture my_debug %}{{ content | strip_html }}{% endcapture %}
+{%- capture my_debug %}{{- content -}}{% endcapture %}
 {%- comment %}
 *
 *  Get the roots array
