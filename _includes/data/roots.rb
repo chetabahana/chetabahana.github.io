@@ -9,7 +9,7 @@
 *
 *  Get the roots array
 *
-{%- endcomment %}
+{%- endcomment -%}
 {%- assign n = 0 %}
 {%- assign my_keys = '' | split: ',' %}
 {%- assign my_rows = '' | split: ',' %}
