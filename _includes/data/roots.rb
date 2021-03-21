@@ -50,7 +50,7 @@
         {%- if n != my_pos %}
             {%- continue %}
         {%- else -%}
-            {%- comment %}{% endcomment %}{%- assign my_debug = {{ content }} %}
+            {%- comment %}{% endcomment %}{%- assign my_debug = "content" %}
             {%- assign my_root = node | times: 1 %}
             {%- break %}
         {%- endif %}
