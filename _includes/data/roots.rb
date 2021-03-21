@@ -4,6 +4,11 @@
 {%- assign my_node = '' | split: ',' %}
 {%- assign my_nodes = '' | split: ',' %}
 {%- for item in my_roots limit: my_pos %}
+    {%- comment -%}
+    *
+    *  Get the roots array if the position is a frame
+    *
+    {%- endcomment -%}
     {%- assign my_root = nil %}
     {%- assign my_frame = nil %}
     {%- assign my_fpos = my_pos | minus: 139 %}
@@ -21,6 +26,11 @@
         {%- assign my_frame = my_nodes[my_fpos] %}
     {%- endif %}
     {%- if my_frame %}{% assign my_root = nil %}{% break %}{% endif %}
+    {%- comment -%}
+    *
+    *  Otherwise take the single root value
+    *
+    {%- endcomment -%}
     {%- assign nodes = item.node | split: ';' %}
     {%- for node in nodes %}
         {%- assign n = n | plus: 1 %}
