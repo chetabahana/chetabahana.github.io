@@ -1,3 +1,9 @@
+{%- comment -%}
+*
+*  This script is the implementation of Prime Mapping as described on:
+*  https://github.com/chetabahana/chetabahana.github.io/blob/Chetabahana/_layouts/feed.rb
+*
+{%- endcomment -%}
 {%- assign n = 0 %}
 {%- assign my_keys = '' | split: ',' %}
 {%- assign my_rows = '' | split: ',' %}
