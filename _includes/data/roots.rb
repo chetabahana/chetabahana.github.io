@@ -6,6 +6,10 @@
 {%- endcomment %}
 {%- capture my_debug %}{{ content | strip_html }}{% endcapture %}
 {%- comment %}
+*
+*  Get the roots array
+*
+{%- endcomment %}
 {%- assign n = 0 %}
 {%- assign my_keys = '' | split: ',' %}
 {%- assign my_rows = '' | split: ',' %}
