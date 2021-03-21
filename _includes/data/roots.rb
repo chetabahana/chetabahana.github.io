@@ -1,6 +1,6 @@
 {%- comment -%}
 *
-*  This script is the implementation of Prime Mapping as described on:
+*  This script is the implementation of Prime Mapping as being described on:
 *  https://github.com/chetabahana/chetabahana.github.io/blob/Chetabahana/_layouts/feed.rb
 *
 {%- endcomment %}
