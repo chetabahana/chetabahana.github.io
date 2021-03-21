@@ -27,11 +27,16 @@
             {%- assign my_nodes = my_nodes | push: my_node %}
             {%- assign my_node = '' | split: ',' %}
         {%- endunless %}
-        {%- if n == 139 %}{% assign my_frame = my_nodes[my_fpos] %}{% endif %}
+        {%- if n == 139 %}
+            {%- assign my_frame = my_nodes[my_fpos] %}
+        {%- endif %}
     {%- else %}
         {%- assign my_frame = my_nodes[my_fpos] %}
     {%- endif %}
-    {%- if my_frame %}{% assign my_root = nil %}{% break %}{% endif %}
+    {%- if my_frame %}
+        {%- assign my_root = nil %}
+        {%- break %}
+    {%- endif %}
     {%- comment -%}
     *
     *  Otherwise take the single root value
@@ -50,5 +55,8 @@
             {%- break %}
         {%- endif %}
     {%- endfor %}
-    {%- if my_root %}{%- assign my_frame = nil %}{% break %}{% endif %}
+    {%- if my_root %}
+        {%- assign my_frame = nil %}
+        {%- break %}
+    {%- endif %}
 {%- endfor -%}
