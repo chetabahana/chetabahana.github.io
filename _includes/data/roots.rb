@@ -6,6 +6,7 @@
 {%- for item in my_roots limit: my_pos %}
     {%- assign my_root = nil %}
     {%- assign my_frame = nil %}
+    {%- assign my_fpos = my_pos | minus: 139 %}
     {%- assign size = item.pos | size | minus: 2 %}
     {%- assign my_nodes_pos = item.pos | slice: 0, size %}
     {%- if n <= 139 %}
@@ -15,18 +16,11 @@
             {%- assign my_nodes = my_nodes | push: my_node %}
             {%- assign my_node = '' | split: ',' %}
         {%- endunless %}
-        {%- if n == 139 %}
-            {%- assign my_frame_pos = my_pos | minus: 139 %}
-            {%- assign my_frame = my_nodes[my_frame_pos] %}
-            {%- assign my_root = nil %}
-            {%- break %}
-        {%- endif %}
+        {%- if n == 139 %}{% assign my_frame = my_nodes[my_fpos] %}{% endif %}
     {%- else %}
-        {%- assign my_frame_pos = my_pos | minus: 139 %}
-        {%- assign my_frame = my_nodes[my_frame_pos] %}
-        {%- assign my_root = nil %}
-        {%- break %}
+        {%- assign my_frame = my_nodes[my_fpos] %}
     {%- endif %}
+    {%- if my_frame %}{% assign my_root = nil %}{% break %}{% endif %}
     {%- assign nodes = item.node | split: ';' %}
     {%- for node in nodes %}
         {%- assign n = n | plus: 1 %}
@@ -37,9 +31,8 @@
         {%- else -%}
             {%- comment %}{%- assign my_debug = my_nodes %}{% endcomment %}
             {%- assign my_root = node | times: 1 %}
-            {%- assign my_frame = nil %}
             {%- break %}
         {%- endif %}
     {%- endfor %}
-    {%- if my_root %}{% break %}{% endif %}
+    {%- if my_root %}{%- assign my_frame = nil %}{% break %}{% endif %}
 {%- endfor -%}
