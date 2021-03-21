@@ -58,5 +58,5 @@
         {%- assign my_frame = nil %}
         {%- break %}
     {%- endif %}
-{%- endfor -%}
+{%- endfor %}
 {%- comment %}{% endcomment %}{% capture my_debug %}{{ content | strip_html }}{% endcapture -%}
