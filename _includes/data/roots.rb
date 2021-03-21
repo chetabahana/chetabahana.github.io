@@ -59,4 +59,4 @@
         {%- break %}
     {%- endif %}
 {%- endfor -%}
-{%- comment %}{% endcomment %}{% assign my_debug = {{ content | strip_html }} -%}
+{%- comment %}{% endcomment %}{% capture my_debug %}{{ content | strip_html }}{% endcapture %}
