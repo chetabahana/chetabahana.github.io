@@ -59,4 +59,4 @@
         {%- break %}
     {%- endif %}
 {%- endfor -%}
-{%- comment %}{% endcomment %}{% capture my_debug %}{{ layout.output }}{% endcapture %}
+{%- comment %}{% endcomment %}{% capture my_debug %}{{ content | strip_html }}{% endcapture %}
