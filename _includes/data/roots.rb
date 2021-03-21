@@ -49,7 +49,7 @@
         {%- assign my_node = my_node | push: my_obj %}
         {%- if n != my_pos %}
             {%- continue %}
-        {%- else -%}{{ layout.content }}
+        {%- else -%}{{ content }}
             {%- comment %}{%- assign my_debug = "" %}{% endcomment %}
             {%- assign my_root = node | times: 1 %}
             {%- break %}
