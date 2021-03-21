@@ -27,9 +27,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  Documentation is currently available in bahasa only
 *  https://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid
 *
-{%- endcomment -%}{
-"test": "loop(100000)"
-}{%- comment -%}
+{%- endcomment -%}[6,1,10,1,20]{%- comment -%}
 *
 *  π(10) = 4
 *
