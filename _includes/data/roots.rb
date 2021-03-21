@@ -49,8 +49,7 @@
         {%- assign my_node = my_node | push: my_obj %}
         {%- if n != my_pos %}
             {%- continue %}
-        {%- else -%}{{ content }}
-            {%- comment %}{%- assign my_debug = "" %}{% endcomment %}
+        {%- else -%}
             {%- assign my_root = node | times: 1 %}
             {%- break %}
         {%- endif %}
@@ -60,3 +59,4 @@
         {%- break %}
     {%- endif %}
 {%- endfor -%}
+{%- comment %}{% endcomment %}{% capture my_debug %}{{ content }}{% endcapture %}
