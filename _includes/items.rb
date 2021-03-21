@@ -26,7 +26,7 @@ comment %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"frame": {{ my_frame | jsonify }},{% endif %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"feeds": {{ feed.tags | jsonify }},{% if feed.ratio %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"ratio": {{ feed.ratio | jsonify }},{% endif %}{% if my_debug %}
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"debug": {{ my_debug }},{% endif %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"debug": {{ my_debug | jsonify }},{% endif %}
 {% comment %}
 *
 *  collect all childs
