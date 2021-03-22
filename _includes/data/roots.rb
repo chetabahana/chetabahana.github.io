@@ -59,7 +59,7 @@
 {%- else %}
     {%- capture my_debug %}
         {{- content | strip -}}
-    {%- endcapture -%}
+    {%- endcapture %}
 {%- endif %}
 {%- comment %}
 *
