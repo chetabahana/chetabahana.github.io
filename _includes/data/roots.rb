@@ -7,6 +7,12 @@
 {%- capture my_debug -%}
     {{- content | strip -}}
 {%- endcapture -%}
+{%- comment -%}
+*
+*  Get the position of each Id based on prime hexagon:
+*  https://www.hexspin.com/defining-the-prime-hexagon/
+*
+{%- endcomment -%}
 {%- case myId -%}
     {%- when 1 %}
         {%- assign my_debug = myId -%}
