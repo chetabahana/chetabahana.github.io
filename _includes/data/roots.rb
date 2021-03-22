@@ -52,11 +52,7 @@
 *  Get the c0ntent
 *
 {%- endcomment %}
-{%- if my_debug %}
-    {%- if my_pos == my_debug %}
-        {%- assign my_debug = nil %}
-    {%- endif %}
-{%- else %}
+{%- if !my_debug %}
     {%- capture my_debug -%}
         {{- content | strip -}}
     {%- endcapture -%}
