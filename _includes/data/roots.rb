@@ -14,16 +14,14 @@
 *
 {%- endcomment -%}
 {%- case myId -%}
-    {%- when 1 %}
-        {%- assign my_debug = myId -%}
-    {%- when 2 %}
-        {%- assign my_debug = myId -%}
-    {%- when 3 %}
-        {%- assign my_debug = myId -%}
-    {%- when 4 %}
-        {%- assign my_debug = myId -%}
-    {%- when 5 %}
-        {%- assign my_debug = myId -%}
+    {%- when myId > 0 and myId < 8 %}
+        {%- assign my_debug = 97 | minus: myId -%}
+    {%- when myId > 9 and myId < 28 %}
+        {%- assign my_debug = 39 | plus: myId -%}
+    {%- when myId > 29 and myId < 41 %}
+        {%- assign my_debug = 8 | plus: myId -%}
+    {%- when myId > 41 and myId < 51 %}
+        {%- assign my_debug = 27 | plus: myId -%}
 {%- endcase %}
 {%- comment %}
 *
