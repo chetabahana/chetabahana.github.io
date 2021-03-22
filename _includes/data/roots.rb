@@ -13,16 +13,15 @@
 *  https://www.hexspin.com/defining-the-prime-hexagon/
 *
 {%- endcomment -%}
-{%- case myId -%}
-    {%- when myId > 0 and myId < 8 %}
-        {%- assign my_debug = 97 | minus: myId -%}
-    {%- when myId > 9 and myId < 28 %}
-        {%- assign my_debug = 39 | plus: myId -%}
-    {%- when myId > 29 and myId < 41 %}
-        {%- assign my_debug = 8 | plus: myId -%}
-    {%- when myId > 41 and myId < 51 %}
-        {%- assign my_debug = 27 | plus: myId -%}
-{%- endcase %}
+{%- if myId > 0 and myId < 8 %}
+    {%- assign my_debug = 97 | minus: myId -%}
+{%- elsif myId > 9 and myId < 28 %}
+    {%- assign my_debug = 39 | plus: myId -%}
+{%- elsif myId > 29 and myId < 41 %}
+    {%- assign my_debug = 8 | plus: myId -%}
+{%- elsif myId > 41 and myId < 51 %}
+    {%- assign my_debug = 27 | plus: myId -%}
+{%- endif %}
 {%- comment %}
 *
 *  Get the roots array
