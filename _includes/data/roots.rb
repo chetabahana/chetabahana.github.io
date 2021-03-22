@@ -16,10 +16,16 @@
 {%- assign my_debug = nil %}
 {%- case myId -%}
     {%- when 9 %}{%- assign my_debug = 100 -%}
+    {%- when 13 %}{%- assign my_debug = 110 -%}
+    {%- when 17 %}{%- assign my_debug = 101 -%}
     {%- when 128 %}{%- assign my_debug = 67 -%}
 {%- endcase -%}
 {%- if my_debug -%}{%- assign my_pos = my_debug -%}
     {%- elsif myId >= 1 and myId <= 9 %}{%- assign my_debug = 97 | minus: myId -%}
+    {%- elsif myId >= 10 and myId <= 12 %}{%- assign my_debug = myId | plus: 39 -%}
+    {%- elsif myId >= 14 and myId <= 16 %}{%- assign my_debug = myId | plus: 38 -%}
+    {%- elsif myId >= 18 and myId <= 21 %}{%- assign my_debug = myId | plus: 38 -%}
+    {%- elsif myId >= 22 and myId <= 28 %}{%- assign my_debug = myId | plus: 38 -%}
     {%- elsif myId >= 69 and myId <= 73 %}{%- assign my_debug = myId | minus: 35 -%}
     {%- elsif myId >= 76 and myId <= 77 %}{%- assign my_debug = 105 | minus: myId -%}
     {%- elsif myId >= 78 and myId <= 80 %}{%- assign my_debug = myId | minus: 53 -%}
