@@ -3,12 +3,6 @@
 *  This script is the implementation of Prime Mapping as being described on:
 *  https://github.com/chetabahana/chetabahana.github.io/blob/Chetabahana/_layouts/feed.rb
 *
-{%- endcomment -%}
-{%- capture my_content -%}
-    {{- content | strip -}}
-{%- endcapture -%}
-{%- comment -%}
-*
 *  Get the position of each Id based on prime hexagon:
 *  https://www.hexspin.com/defining-the-prime-hexagon/
 *
@@ -55,8 +49,19 @@
     {%- elsif myId >= 160 and myId <= 164 %}{%- assign my_debug = myId | minus: 10 -%}
     {%- elsif myId >= 165 and myId <= 168 %}{%- assign my_debug = myId | plus: 0 -%}
 {%- endif %}
-{%- if my_pos == my_debug %}
-    {%- assign my_debug = nil %}
+{%- comment %}
+*
+*  Get the c0ntent
+*
+{%- endcomment %}
+{%- if my_debug %}
+    {%- if my_pos == my_debug %}
+        {%- assign my_debug = nil %}
+    {%- endif %}
+{%- else %}
+    {%- capture my_debug -%}
+        {{- content | strip -}}
+    {%- endcapture -%}
 {%- endif %}
 {%- comment %}
 *
