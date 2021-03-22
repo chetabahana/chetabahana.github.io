@@ -18,7 +18,9 @@
     {%- when 9 %}{%- assign my_debug = 100 -%}
     {%- when 13 %}{%- assign my_debug = 110 -%}
     {%- when 17 %}{%- assign my_debug = 101 -%}
+    {%- when 68 %}{%- assign my_debug = 78 -%}
     {%- when 128 %}{%- assign my_debug = 67 -%}
+    {%- when 139 %}{%- assign my_debug = 110 -%}
 {%- endcase -%}
 {%- if my_debug -%}{%- assign my_debug = nil %}
     {%- elsif myId >= 1 and myId <= 9 %}{%- assign my_debug = 97 | minus: myId -%}
@@ -27,7 +29,11 @@
     {%- elsif myId >= 18 and myId <= 21 %}{%- assign my_debug = myId | plus: 38 -%}
     {%- elsif myId >= 22 and myId <= 28 %}{%- assign my_debug = myId | plus: 38 -%}
     {%- elsif myId >= 29 and myId <= 34 %}{%- assign my_debug = myId | plus: 38 -%}
-    {%- elsif myId >= 69 and myId <= 73 %}{%- assign my_debug = myId | minus: 35 -%}
+    {%- elsif myId >= 35 and myId <= 40 %}{%- assign my_debug = myId | plus: 8 -%}
+    {%- elsif myId >= 41 and myId <= 45 %}{%- assign my_debug = myId | plus: 27 -%}
+    {%- elsif myId >= 46 and myId <= 50 %}{%- assign my_debug = myId | minus: 35 -%}
+    {%- elsif myId >= 51 and myId <= 67 %}{%- assign my_debug = myId | minus: 72 -%}
+    {%- elsif myId >= 68 and myId <= 67 %}{%- assign my_debug = myId | minus: 72 -%}
     {%- elsif myId >= 76 and myId <= 77 %}{%- assign my_debug = 105 | minus: myId -%}
     {%- elsif myId >= 78 and myId <= 80 %}{%- assign my_debug = myId | minus: 53 -%}
     {%- elsif myId >= 81 and myId <= 85 %}{%- assign my_debug = myId | minus: 61 -%}
@@ -41,12 +47,17 @@
     {%- elsif myId >= 118 and myId <= 120 %}{%- assign my_debug = myId | minus: 16 -%}
     {%- elsif myId >= 121 and myId <= 123 %}{%- assign my_debug = myId | minus: 14 -%}
     {%- elsif myId >= 124 and myId <= 127 %}{%- assign my_debug = myId | minus: 13 -%}
-    {%- elsif myId >= 140 and myId <= 148 %}{%- assign my_debug = myId | plus: 0 -%}
+    {%- elsif myId >= 129 and myId <= 136 %}{%- assign my_debug = myId | minus: 14 -%}
+    {%- elsif myId >= 137 and myId <= 138 %}{%- assign my_debug = myId | minus: 23 -%}
+    {%- elsif myId >= 140 and myId <= 149 %}{%- assign my_debug = myId | plus: 0 -%}
     {%- elsif myId >= 150 and myId <= 154 %}{%- assign my_debug = myId | plus: 10 -%}
     {%- elsif myId >= 155 and myId <= 159 %}{%- assign my_debug = myId | plus: 0 -%}
-    {%- elsif myId >= 160 and myId <= 161 %}{%- assign my_debug = myId | minus: 10 -%}
+    {%- elsif myId >= 160 and myId <= 164 %}{%- assign my_debug = myId | minus: 10 -%}
+    {%- elsif myId >= 165 and myId <= 168 %}{%- assign my_debug = myId | plus: 0 -%}
 {%- endif %}
-{%- if my_pos == my_debug -%}{%- assign my_debug = nil %}{%- endif %}
+{%- if my_pos == my_debug %}
+    {%- assign my_debug = nil %}
+{%- endif %}
 {%- comment %}
 *
 *  Get the roots array
