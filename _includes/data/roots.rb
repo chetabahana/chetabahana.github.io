@@ -13,6 +13,7 @@
 *  https://www.hexspin.com/defining-the-prime-hexagon/
 *
 {%- endcomment -%}
+{%- assign my_debug = nil %}
 {%- case myId -%}
     {%- when 9 %}{%- assign my_debug = 100 -%}
     {%- when 2 %}{%- assign my_debug = myId -%}
