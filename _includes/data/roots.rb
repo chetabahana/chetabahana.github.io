@@ -16,7 +16,7 @@
     {%- when 128 %}{%- assign my_debug = 67 -%}
     {%- when 139 %}{%- assign my_debug = 110 -%}
 {%- endcase -%}
-{%- if my_pos == my_debug %}{% assign my_debug = nil -%}
+{%- if my_debug %}{% assign my_pos == my_debug -%}
     {%- elsif myId >= 1 and myId <= 9 %}{%- assign my_debug = 97 | minus: myId -%}
     {%- elsif myId >= 10 and myId <= 12 %}{%- assign my_debug = myId | plus: 39 -%}
     {%- elsif myId >= 14 and myId <= 16 %}{%- assign my_debug = myId | plus: 38 -%}
@@ -52,8 +52,12 @@
 *  Get the content
 *
 {%- endcomment %}
-{%- if !my_debug %}
-    {%- capture my_debug -%}
+{%- if my_debug %}
+    {%- if my_pos == my_debug %}
+        {%- assign my_debug = nil %}
+    {%- endif %}
+{%- else %}
+    {%- capture my_debug %}
         {{- content | strip -}}
     {%- endcapture -%}
 {%- endif %}
