@@ -3,8 +3,22 @@
 *  This script is the implementation of Prime Mapping as being described on:
 *  https://github.com/chetabahana/chetabahana.github.io/blob/Chetabahana/_layouts/feed.rb
 *
-{%- endcomment %}
-{%- capture my_debug %}{{- content | strip -}}{% endcapture %}
+{%- endcomment -%}
+{%- capture my_debug -%}
+    {{- content | strip -}}
+{%- endcapture -%}
+{%- case myId -%}
+    {%- when 1 %}
+        {%- assign my_debug = myId -%}
+    {%- when 2 %}
+        {%- assign my_debug = myId -%}
+    {%- when 3 %}
+        {%- assign my_debug = myId -%}
+    {%- when 4 %}
+        {%- assign my_debug = myId -%}
+    {%- when 5 %}
+        {%- assign my_debug = myId -%}
+{%- endcase %}
 {%- comment %}
 *
 *  Get the roots array
