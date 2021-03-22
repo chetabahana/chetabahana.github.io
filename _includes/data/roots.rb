@@ -13,14 +13,23 @@
 *  https://www.hexspin.com/defining-the-prime-hexagon/
 *
 {%- endcomment -%}
-{%- if myId > 0 and myId < 8 %}
-    {%- assign my_debug = 97 | minus: myId -%}
-{%- elsif myId > 9 and myId < 28 %}
-    {%- assign my_debug = 39 | plus: myId -%}
-{%- elsif myId > 29 and myId < 41 %}
-    {%- assign my_debug = 8 | plus: myId -%}
-{%- elsif myId > 41 and myId < 51 %}
-    {%- assign my_debug = 27 | plus: myId -%}
+{%- case myId -%}
+    {%- when 9 %}{%- assign my_debug = 100 -%}
+    {%- when 2 %}{%- assign my_debug = myId -%}
+    {%- when 128 %}{%- assign my_debug = 67 -%}
+{%- endcase -%}
+{%- if my_debug -%}{%- assign my_debug = myId -%}
+    {%- elsif myId > 68 and myId < 74 %}{%- assign my_debug = myId | minus: 38 -%}
+    {%- elsif myId > 75 and myId < 78 %}{%- assign my_debug = 105 | minus: myId -%}
+    {%- elsif myId > 77 and myId < 81 %}{%- assign my_debug = myId | minus: 53 -%}
+    {%- elsif myId > 81 and myId < 86 %}{%- assign my_debug = myId | minus: 61 -%}
+    {%- elsif myId > 117 and myId < 121 %}{%- assign my_debug = myId | minus: 16 -%}
+    {%- elsif myId > 114 and myId < 118 %}{%- assign my_debug = myId | minus: 18 -%}
+    {%- elsif myId > 120 and myId < 124 %}{%- assign my_debug = myId | minus: 14 -%}
+    {%- elsif myId > 123 and myId < 128 %}{%- assign my_debug = myId | minus: 13 -%}
+    {%- elsif myId > 143 and myId < 158 %}{%- assign my_debug = myId | plus: 0 -%}
+    {%- elsif myId > 149 and myId < 159 %}{%- assign my_debug = myId | plus: 10 -%}
+    {%- elsif myId > 159 and myId < 162 %}{%- assign my_debug = myId | minus: 10 -%}
 {%- endif %}
 {%- comment %}
 *
