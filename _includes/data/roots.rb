@@ -19,7 +19,7 @@
     {%- when 2 %}{%- assign my_debug = myId -%}
     {%- when 128 %}{%- assign my_debug = 67 -%}
 {%- endcase -%}
-{%- if my_debug -%}{%- assign my_debug = myId -%}
+{%- if my_debug -%}{%- assign my_pos = my_debug -%}
     {%- elsif myId > 68 and myId < 74 %}{%- assign my_debug = myId | minus: 38 -%}
     {%- elsif myId > 75 and myId < 78 %}{%- assign my_debug = 105 | minus: myId -%}
     {%- elsif myId > 77 and myId < 81 %}{%- assign my_debug = myId | minus: 53 -%}
