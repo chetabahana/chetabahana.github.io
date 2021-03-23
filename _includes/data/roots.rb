@@ -9,43 +9,43 @@
 {%- endcomment -%}
 {%- assign my_debug = nil %}
 {%- case myId -%}
-    {%- when 9 %}{%- assign my_debug = 100 -%}
-    {%- when 13 %}{%- assign my_debug = 110 -%}
-    {%- when 17 %}{%- assign my_debug = 101 -%}
-    {%- when 68 -%}{%- assign my_debug = 78 -%}
-    {%- when 105 %}{%- assign my_debug = 84 -%}
-    {%- when 128 %}{%- assign my_debug = 67 -%}
-    {%- when 139 %}{%- assign my_debug = 110 -%}
+    {%- when 9 %}{%- assign my_debug = 100 -%}{%- comment -%}[23,2,1,1]{%- endcomment -%}
+    {%- when 13 %}{%- assign my_debug = 110 -%}{%- comment -%}[41,2,1,1]{%- endcomment -%}
+    {%- when 17 %}{%- assign my_debug = 101 -%}{%- comment -%}[59,4,1,1]{%- endcomment -%}
+    {%- when 68 -%}{%- assign my_debug = 78 -%}{%- comment -%}[337,5,1,0]{%- endcomment -%}
+    {%- when 105 %}{%- assign my_debug = 84 -%}{%- comment -%}[571,3,-1,1]{%- endcomment -%}
+    {%- when 128 %}{%- assign my_debug = 67 -%}{%- comment -%}[719,0,-1,1]{%- endcomment -%}
+    {%- when 139 %}{%- assign my_debug = 110 -%}{%- comment -%}[797,2,1,1]{%- endcomment -%}
 {%- endcase -%}
 {%- if my_debug %}{% assign my_pos = my_debug -%}
-    {%- elsif myId >= 1 and myId <= 9 %}{%- assign my_debug = 97 | minus: myId -%}
-    {%- elsif myId >= 10 and myId <= 12 %}{%- assign my_debug = myId | plus: 39 -%}
-    {%- elsif myId >= 14 and myId <= 16 %}{%- assign my_debug = myId | plus: 38 -%}
-    {%- elsif myId >= 18 and myId <= 21 %}{%- assign my_debug = myId | plus: 38 -%}
-    {%- elsif myId >= 22 and myId <= 28 %}{%- assign my_debug = myId | plus: 38 -%}
-    {%- elsif myId >= 29 and myId <= 40 %}{%- assign my_debug = myId | plus: 8 -%}
-    {%- elsif myId >= 41 and myId <= 50 %}{%- assign my_debug = myId | plus: 27 -%}
-    {%- elsif myId >= 51 and myId <= 68 %}{%- assign my_debug = myId | plus: 72 -%}
-    {%- elsif myId >= 69 and myId <= 77 %}{%- assign my_debug = 105 | minus: myId -%}
-    {%- elsif myId >= 78 and myId <= 80 %}{%- assign my_debug = myId | minus: 53 -%}
-    {%- elsif myId >= 81 and myId <= 85 %}{%- assign my_debug = myId | minus: 61 -%}
-    {%- elsif myId >= 86 and myId <= 89 %}{%- assign my_debug = 93 | minus: myId -%}
-    {%- elsif myId >= 90 and myId <= 92 %}{%- assign my_debug = myId | minus: 89 -%}
-    {%- elsif myId >= 93 and myId <= 98 %}{%- assign my_debug = 106 | minus: myId -%}
-    {%- elsif myId >= 99 and myId <= 104 %}{%- assign my_debug = myId | minus: 85 -%}
-    {%- elsif myId >= 105 and myId <= 109 %}{%- assign my_debug = 194 | minus: myId -%}
-    {%- elsif myId >= 110 and myId <= 114 %}{%- assign my_debug = myId | minus: 31 -%}
-    {%- elsif myId >= 115 and myId <= 117 %}{%- assign my_debug = myId | minus: 18 -%}
-    {%- elsif myId >= 118 and myId <= 120 %}{%- assign my_debug = myId | minus: 16 -%}
-    {%- elsif myId >= 121 and myId <= 123 %}{%- assign my_debug = myId | minus: 14 -%}
-    {%- elsif myId >= 124 and myId <= 127 %}{%- assign my_debug = myId | minus: 13 -%}
-    {%- elsif myId >= 129 and myId <= 136 %}{%- assign my_debug = myId | minus: 14 -%}
-    {%- elsif myId >= 137 and myId <= 138 %}{%- assign my_debug = myId | minus: 32 -%}
-    {%- elsif myId >= 140 and myId <= 149 %}{%- assign my_debug = myId | plus: 0 -%}
-    {%- elsif myId >= 150 and myId <= 154 %}{%- assign my_debug = myId | plus: 10 -%}
-    {%- elsif myId >= 155 and myId <= 159 %}{%- assign my_debug = myId | plus: 0 -%}
-    {%- elsif myId >= 160 and myId <= 164 %}{%- assign my_debug = myId | minus: 10 -%}
-    {%- elsif myId >= 165 and myId <= 168 %}{%- assign my_debug = myId | plus: 0 -%}
+    {%- elsif myId >= 1 and myId <= 9 %}{%- assign my_debug = 97 | minus: myId -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 10 and myId <= 12 %}{%- assign my_debug = myId | plus: 39 -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 14 and myId <= 16 %}{%- assign my_debug = myId | plus: 38 -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 18 and myId <= 21 %}{%- assign my_debug = myId | plus: 38 -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 22 and myId <= 28 %}{%- assign my_debug = myId | plus: 38 -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 29 and myId <= 40 %}{%- assign my_debug = myId | plus: 8 -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 41 and myId <= 50 %}{%- assign my_debug = myId | plus: 27 -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 51 and myId <= 68 %}{%- assign my_debug = myId | plus: 72 -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 69 and myId <= 77 %}{%- assign my_debug = 105 | minus: myId -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 78 and myId <= 80 %}{%- assign my_debug = myId | minus: 53 -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 81 and myId <= 85 %}{%- assign my_debug = myId | minus: 61 -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 86 and myId <= 89 %}{%- assign my_debug = 93 | minus: myId -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 90 and myId <= 92 %}{%- assign my_debug = myId | minus: 89 -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 93 and myId <= 98 %}{%- assign my_debug = 106 | minus: myId -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 99 and myId <= 104 %}{%- assign my_debug = myId | minus: 85 -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 105 and myId <= 109 %}{%- assign my_debug = 194 | minus: myId -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 110 and myId <= 114 %}{%- assign my_debug = myId | minus: 31 -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 115 and myId <= 117 %}{%- assign my_debug = myId | minus: 18 -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 118 and myId <= 120 %}{%- assign my_debug = myId | minus: 16 -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 121 and myId <= 123 %}{%- assign my_debug = myId | minus: 14 -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 124 and myId <= 127 %}{%- assign my_debug = myId | minus: 13 -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 129 and myId <= 136 %}{%- assign my_debug = myId | minus: 14 -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 137 and myId <= 138 %}{%- assign my_debug = myId | minus: 32 -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 140 and myId <= 149 %}{%- assign my_debug = myId | plus: 0 -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 150 and myId <= 154 %}{%- assign my_debug = myId | plus: 10 -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 155 and myId <= 159 %}{%- assign my_debug = myId | plus: 0 -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 160 and myId <= 164 %}{%- assign my_debug = myId | minus: 10 -%}{%- comment -%}{%- endcomment -%}
+    {%- elsif myId >= 165 and myId <= 168 %}{%- assign my_debug = myId | plus: 0 -%}{%- comment -%}{%- endcomment -%}
 {%- endif %}
 {%- comment %}
 *
