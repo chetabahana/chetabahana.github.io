@@ -9,9 +9,9 @@
 
         <div class="templatemo-service">
             <div class="container">
-                <div class="row">{% assign title = page.title | downcase %}{% assign posts = site.posts | sort: 'weight' %}{{ posts | to_json }}{% for post in posts %}{% if post.path contains title %}
+                <div class="row">{% assign title = page.title | downcase %}{% assign posts = site.posts | sort: 'weight' %}{% for post in posts %}{{ post.path | to_json }}{% if post.path contains title %}
                     <div class="col-md-4">
-                        <div class="templatemo-service-item" >
+                        <div class="templatemo-service-item">
                             <div>
                                 <a href="{{ post.href }}" class="external-link"><img src="{{ post.src }}" alt="icon"/></a>
                                 <span class="templatemo-service-item-header">{{ post.title }}</span>
