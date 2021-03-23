@@ -132,7 +132,6 @@ feed:
 
 highlighter: rouge
 markdown: kramdown
-excerpt_separator: ""
 
 kramdown:
   html_to_native: true
