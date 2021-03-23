@@ -9,7 +9,7 @@
 
         <div class="templatemo-service">
             <div class="container">
-                <div class="row">{% assign title = page.title | downcase %}{% assign posts = site.posts | sort: 'weight' %}{% for post in posts %}{{ post.path | to_json }}{% if post.path contains title %}
+                <div class="row">{% assign title = page.title | downcase %}{% assign posts = site.posts | sort: 'weight' | where_exp:"item", "item.path contains title" %}{% for post in posts %}{{ post.path | to_json }}
                     <div class="col-md-4">
                         <div class="templatemo-service-item">
                             <div>
@@ -22,7 +22,7 @@
                             </div>
                             <br class="clearfix"/>
                         </div>
-                    </div>{% endif %}{% endfor %}
+                    </div>{% endfor %}
                 </div>
             </div><!-- /container -->
         </div><!-- /{{ page.title }} -->
