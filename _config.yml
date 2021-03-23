@@ -52,6 +52,7 @@ livereload: true
 limit_posts: 1000
 timezone: Asia/Jakarta
 collections_dir: assets
+excerpt_separator: <!--end_excerpt-->
 
 # Plugins Setting
 # https://pages.github.com/versions/
