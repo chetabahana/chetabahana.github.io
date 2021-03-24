@@ -16,15 +16,17 @@ if (num !== 3)
 }
 
 var paths = readPaths(objArgs(0));
-var message = "update list of paths\n\nselected files for commit:\n";
+var message = "update " + WScript.ScriptName;
+message = message + "\n\nfiles related to this commit are:\n";
 
 for (var i = 0; i < paths.length; i++)
 {
     message = message + paths[i] + "\n";
 }
 
-message = message + "path of message file is: " + objArgs(1) + "\n";
-message = message + "CWD is: " + objArgs(2) + "\n";
+message = message + "\ndocumentation related are:";
+message = message + "\nhttps://github.com/chetabahana/chetabahana.github.io/wiki";
+message = message + "\nhttps://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid";
 
 var w = fs.OpenTextFile(".github/hook-scripts/git_message.txt", ForWriting);
 /* WScript.Echo(message); */
