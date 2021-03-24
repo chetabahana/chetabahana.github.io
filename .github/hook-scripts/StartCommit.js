@@ -40,15 +40,15 @@ function readPaths(path)
 }
 
 var paths = readPaths(objArgs(0));
-var subject = "update " + line;
-var message = "files related to this commit are:\n";
+var subject = "Update " + line;
+var message = "Files related to this commit are:\n";
 
 for (var i = 0; i < paths.length; i++)
 {
     message = message + paths[i] + "\n";
 }
 
-message = message + "\ndocumentation are available in bahasa:";
+message = message + "\nDocumentation are available in bahasa:";
 message = message + "\nhttps://github.com/chetabahana/chetabahana.github.io/wiki";
 message = message + "\nhttps://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid";
 
