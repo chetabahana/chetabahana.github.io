@@ -53,6 +53,6 @@ message = message + "\nhttps://github.com/chetabahana/chetabahana.github.io/wiki
 message = message + "\nhttps://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid";
 
 var w = fs.OpenTextFile(".github/hook-scripts/git_message.txt", ForWriting);
-w.WriteLine(subject); w.WriteBlankLines(1); w.WriteLine(message);
+w.WriteLine(subject); w.WriteBlankLines(1); w.WriteLine(message); w.Close();
 
 WScript.Quit(0);
