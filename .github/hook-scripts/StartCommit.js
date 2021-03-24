@@ -16,7 +16,7 @@ if (num !== 3)
 }
 
 var paths = readPaths(objArgs(0));
-var message = "list of paths\n\nselected files for commit:\n";
+var message = "update list of paths\n\nselected files for commit:\n";
 
 for (var i = 0; i < paths.length; i++)
 {
