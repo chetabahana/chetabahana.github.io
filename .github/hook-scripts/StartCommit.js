@@ -24,7 +24,7 @@ for (var i = 0; i < paths.length; i++)
     message = message + paths[i] + "\n";
 }
 
-message = message + "\ndocumentation related are:";
+message = message + "\navailable documentation are:";
 message = message + "\nhttps://github.com/chetabahana/chetabahana.github.io/wiki";
 message = message + "\nhttps://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid";
 
