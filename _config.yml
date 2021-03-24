@@ -173,7 +173,6 @@ flow_labels:
 # https://jekyllrb.com/docs/variables/
 # https://stackoverflow.com/a/17260660/4058484
 # https://stackoverflow.com/a/30828197/4058484
-# https://jekyllrb.com/docs/configuration/options/
 
 baseurl: ""
 basedir: _feeds
