@@ -20,6 +20,7 @@ form_engines:
 
 # Repository Settings
 # https://blog.webjeda.com/jekyll-redirect/
+# https://github.com/dotnet/docs/issues/20459#issuecomment-725295168
 # https://github.com/ethanresnick/json-api-1/blob/gh-pages/_config.yml
 # https://github.com/daattali/beautiful-jekyll/blob/master/_config.yml
 
