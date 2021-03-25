@@ -23,6 +23,7 @@ var ForWriting = 2;
 var objArgs = WScript.Arguments;
 var sh = new ActiveXObject("WScript.Shell");
 var fs = new ActiveXObject("Scripting.FileSystemObject");
+var f = "C:/Users/Chetabahana/Searches/hook-scripts/git_message.txt";
 
 if (objArgs.length !== 3)
 {
@@ -59,10 +60,11 @@ message = message + "\nDocumentation are available in bahasa:";
 message = message + "\nhttps://github.com/chetabahana/chetabahana.github.io/wiki";
 message = message + "\nhttps://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid";
 
-/* WScript.Echo(sh.ExpandEnvironmentStrings("%path%"));*/
-/* sh.Run("git config commit.template C:/Users/Chetabahana/Searches/hook-scripts/git_message.txt", 0);*/
+/* WScript %root%\.github\hook-scripts\StartCommit.js
+WScript.Echo(sh.ExpandEnvironmentStrings("%path%"));
+sh.Run("git config commit.template " + f, 0);*/
 
-var w = fs.OpenTextFile("C:/Users/Chetabahana/Searches/hook-scripts/git_message.txt", ForWriting);
+var w = fs.OpenTextFile(f, ForWriting);
 w.WriteLine(subject); w.WriteBlankLines(1); w.WriteLine(message); w.Close();
 
 WScript.Quit(0);
