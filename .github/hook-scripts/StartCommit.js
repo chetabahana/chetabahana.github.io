@@ -1,11 +1,17 @@
 /* 
 this script is a local start-commit hook script.
 
-ref: 
+ref:
+https://stackoverflow.com/a/39960300/4058484
 https://stackoverflow.com/a/64723713/4058484
+https://stackoverflow.com/a/55968763/4058484
+https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
+https://github.com/mrpapercut/wscript#supported-objects
 https://www.robvanderwoude.com/vbstech_data_environment.php
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 https://docs.microsoft.com/en-us/previous-versions//4yyeyb0a(v=vs.85)
+https://www.vbsedit.com/html/6f28899c-d653-4555-8a59-49640b0e32ea.asp
+https://stackoverflow.com/questions/27539157/scripting-git-commands-in-windows
 */
 
 var line;
@@ -14,7 +20,7 @@ var ForReading = 1;
 var ForWriting = 2;
 
 var objArgs = WScript.Arguments;
-var ws = new ActiveXObject("WScript.Shell");
+var sh = new ActiveXObject("WScript.Shell");
 var fs = new ActiveXObject("Scripting.FileSystemObject");
 
 if (objArgs.length !== 3)
@@ -52,7 +58,9 @@ message = message + "\nDocumentation are available in bahasa:";
 message = message + "\nhttps://github.com/chetabahana/chetabahana.github.io/wiki";
 message = message + "\nhttps://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid";
 
+/* sh.Run("git config commit.template .github/hook-scripts/git_message.txt", 0);;*/
 var w = fs.OpenTextFile(".github/hook-scripts/git_message.txt", ForWriting);
 w.WriteLine(subject); w.WriteBlankLines(1); w.WriteLine(message); w.Close();
+/* WScript.Echo(sh.ExpandEnvironmentStrings("%path%"));*/
 
 WScript.Quit(0);
