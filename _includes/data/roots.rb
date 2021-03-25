@@ -3,7 +3,7 @@
 *  This script is the implementation of Prime Mapping as being described on:
 *  https://github.com/chetabahana/chetabahana.github.io/blob/Chetabahana/_layouts/feed.rb
 *
-*  Get the position of each Id based on prime hexagon:
+*  Get the position of each Id based on prime hexagon
 *  https://www.hexspin.com/defining-the-prime-hexagon/
 *
 {%- endcomment -%}
