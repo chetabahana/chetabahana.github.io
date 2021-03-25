@@ -58,9 +58,9 @@ message = message + "\nDocumentation are available in bahasa:";
 message = message + "\nhttps://github.com/chetabahana/chetabahana.github.io/wiki";
 message = message + "\nhttps://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid";
 
+/* WScript.Echo(sh.ExpandEnvironmentStrings("%path%"));*/
 /* sh.Run("git config commit.template .github/hook-scripts/git_message.txt", 0);;*/
 var w = fs.OpenTextFile(".github/hook-scripts/git_message.txt", ForWriting);
 w.WriteLine(subject); w.WriteBlankLines(1); w.WriteLine(message); w.Close();
-/* WScript.Echo(sh.ExpandEnvironmentStrings("%path%"));*/
 
 WScript.Quit(0);
