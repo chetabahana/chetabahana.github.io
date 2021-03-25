@@ -8,6 +8,7 @@ https://stackoverflow.com/a/55968763/4058484
 https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
 https://github.com/mrpapercut/wscript#supported-objects
 https://www.robvanderwoude.com/vbstech_data_environment.php
+https://gist.github.com/BoGnY/f9b1be6393234537c3e247f33e74094a
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 https://docs.microsoft.com/en-us/previous-versions//4yyeyb0a(v=vs.85)
 https://www.vbsedit.com/html/6f28899c-d653-4555-8a59-49640b0e32ea.asp
