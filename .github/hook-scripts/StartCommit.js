@@ -60,9 +60,9 @@ message = message + "\nhttps://github.com/chetabahana/chetabahana.github.io/wiki
 message = message + "\nhttps://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid";
 
 /* WScript.Echo(sh.ExpandEnvironmentStrings("%path%"));*/
-/* sh.Run("git config commit.template .github/hook-scripts/git_message.txt", 0);;*/
+/* sh.Run("git config commit.template C:/Users/Chetabahana/Searches/hook-scripts/git_message.txt", 0);*/
 
-var w = fs.OpenTextFile(".github/hook-scripts/git_message.txt", ForWriting);
+var w = fs.OpenTextFile("C:/Users/Chetabahana/Searches/hook-scripts/git_message.txt", ForWriting);
 w.WriteLine(subject); w.WriteBlankLines(1); w.WriteLine(message); w.Close();
 
 WScript.Quit(0);
