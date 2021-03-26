@@ -4,15 +4,15 @@
 *
 {%- endcomment -%}{% assign myId = feed.myId -%}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"id": {{ myId | jsonify }},{% if myId > 114 %}{% assign my_key = myId | minus: 101 %}{% else %}{% assign my_key = myId | minus: 1 %}{% endif %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"id": {{ myId | jsonify }},{% if myId > 114 %}{% assign my_key = myId | minus: 101 %}{% else %}{% assign my_key = myId | minus: 1 %}{% endif %}{% assign my_pos = feed.pos %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"key": {{ layout.module[my_key] | jsonify }},
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"pos": {{ feed.pos | jsonify }},{% if feed.link %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"pos": {{ my_pos | jsonify }},{% if feed.link %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"link": {{ feed.link | jsonify }},{% endif %}{% 
 comment %}
 *
 *  collect primes
 *
-{% endcomment %}{% assign my_pos = feed.pos %}{% include data/roots.rb %}{% if my_root %}
+{% endcomment %}{% include data/roots.rb %}{% if my_root %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"root": {{ my_root }},{% endif %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"weight": {{ feed.weight | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"title": {{ feed.title | jsonify }},
@@ -22,7 +22,7 @@ comment %}
 *
 {% endcomment %}{% assign my_items = "" | split: "," %}{% for item in feed %}{% assign my_items = my_items | push:item %}{% endfor %}{% assign sorted_items = my_items | sort_natural %}{% for item in sorted_items %}{% unless my_atributs contains item %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}{{ item | jsonify }}: {{ feed[item] | jsonify }},{% endunless %}{% endfor %}
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"value": {{ feed.value | jsonify }},{% if my_frame %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"value": {{ my_value | jsonify }},{% if my_frame %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"frame": {{ my_frame | jsonify }},{% endif %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"feeds": {{ feed.tags | jsonify }},{% if feed.ratio %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"ratio": {{ feed.ratio | jsonify }},{% endif %}{% if my_debug %}
