@@ -8,8 +8,13 @@
 *
 {%- endcomment -%}
 {%- assign my_debug = nil %}
-{%- assign my_value = my_roots[myId].val | split: ';' | times: 1 | join: ',' %}
-{%- case myId -%}
+{%- assign my_value = '' | split: ',' %}
+{%- assign values = my_roots[myId].val | split: ';' %}
+{%- for value in values %}
+    {%- assign my_val = value | times: 1 %}
+    {%- assign my_value = my_value | push: my_val %}
+{%- endfor %}
+{%- case myId %}
     {%- when 9 %}{%- assign my_debug = 100 -%}{%- comment -%}[23,2,1,1]{%- endcomment -%}
     {%- when 13 %}{%- assign my_debug = 110 -%}{%- comment -%}[41,2,1,1]{%- endcomment -%}
     {%- when 17 %}{%- assign my_debug = 101 -%}{%- comment -%}[59,4,1,1]{%- endcomment -%}
