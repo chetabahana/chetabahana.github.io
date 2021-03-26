@@ -58,7 +58,7 @@ for (var i = 0; i < paths.length; i++)
 
 message = message + "\nDocumentation are available in bahasa:";
 message = message + "\nhttps://github.com/chetabahana/chetabahana.github.io/wiki";
-message = message + "\nhttps://github.com/chetabahana/chetabahana.github.io/wiki/Project-Online";
+message = message + "\nhttps://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid";
 
 /* WScript %root%\.github\hook-scripts\StartCommit.js
 WScript.Echo(sh.ExpandEnvironmentStrings("%path%"));*/
