@@ -58,13 +58,13 @@ for (var i = 0; i < paths.length; i++)
 
 message = message + "\nDocumentation are available in bahasa:";
 message = message + "\nhttps://github.com/chetabahana/chetabahana.github.io/wiki";
-message = message + "\nhttps://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid";
+message = message + "\nhttps://github.com/chetabahana/chetabahana.github.io/wiki/Project-Online";
 
 /* WScript %root%\.github\hook-scripts\StartCommit.js
-WScript.Echo(sh.ExpandEnvironmentStrings("%path%"));
-sh.Run("git config commit.template " + f, 0);*/
+WScript.Echo(sh.ExpandEnvironmentStrings("%path%"));*/
 
 var w = fs.OpenTextFile(f, ForWriting);
+sh.Run("git config commit.template " + f, 0);
 w.WriteLine(subject); w.WriteBlankLines(1); w.WriteLine(message); w.Close();
 
 WScript.Quit(0);
