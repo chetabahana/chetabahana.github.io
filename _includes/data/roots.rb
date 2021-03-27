@@ -11,6 +11,7 @@
 *
 {%- endcomment -%}
 {%- assign my_debug = nil %}
+{%- assign my_value = '' | split: ',' %}
 {%- case myId %}
     {%- when 9 %}{%- assign my_debug = 100 -%}{%- comment -%}[23,2,1,1]{%- endcomment -%}
     {%- when 13 %}{%- assign my_debug = 110 -%}{%- comment -%}[41,2,1,1]{%- endcomment -%}
@@ -64,7 +65,6 @@
         {{- content | strip -}}
     {%- endcapture %}
 {%- endif %}
-{%- assign my_value = '' | split: ',' %}
 {%- assign values = my_roots[my_pos].val | split: ';' %}
 {%- for value in values %}
     {%- assign my_val = value | times: 1 %}
@@ -83,7 +83,20 @@
 {%- for item in my_roots limit: my_pos %}
     {%- comment -%}
     *
-    *  Get the roots array if the position is a frame
+    *  Get the roots array if the position is one of the 29 frame
+    *  The sequence is located on the range of 168 minus 29 as below:
+    *  - seq 1 to 19 will turn to be leading at pos 150 to 168
+    *  - seq 20 to 29 will turn to be lagging at pos 149 to 140
+    *  - each of this seq 20 to 29 are attached to the seq 10 to 19 
+    *  - so seq 1 to 9 live as single strand and 10 to 19 as double strands
+    *
+    *  Reference:
+    *  https://user-images.githubusercontent.com/36441664/112737922-eda4df80-8f90-11eb-9898-922e5798092a.gif
+    *  https://user-images.githubusercontent.com/36441664/112737889-9acb2800-8f90-11eb-8b17-4b15a317a717.png
+    *
+    *  Note:
+    *  Documentation is currently available in bahasa only
+    *  https://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid
     *
     {%- endcomment -%}
     {%- assign my_root = nil %}
