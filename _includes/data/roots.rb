@@ -88,20 +88,23 @@
     *  - seq 1 to 19 will turn to be leading at pos 150 to 168
     *  - seq 20 to 29 will turn to be lagging at pos 149 to 140
     *  - each of this seq 20 to 29 are attached to the seq 10 to 19 
-    *  - so seq 1 to 9 live as single strand and 10 to 19 as double strands
+    *  - thus seq 1 to 9 live as single strand and 10 to 19 as double strands
+    *
+    {%- endcomment %}
+    {%- if myId >= 150 and myId <= 168 %}{% assign my_fpos = my_pos | minus: 149 %}
+    {%- elsif myId >= 140 and myId <= 149 %}{% assign my_fpos = 169 | minus: my_pos %}
+    {%- endif %}
+    {%- comment -%}
+    
     *
     *  Reference:
     *  https://user-images.githubusercontent.com/36441664/112737922-eda4df80-8f90-11eb-9898-922e5798092a.gif
+    *  https://user-images.githubusercontent.com/36441664/112738298-390cbd00-8f94-11eb-98aa-f40177769654.png
     *  https://user-images.githubusercontent.com/36441664/112737889-9acb2800-8f90-11eb-8b17-4b15a317a717.png
-    *
-    *  Note:
-    *  Documentation is currently available in bahasa only
-    *  https://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid
     *
     {%- endcomment -%}
     {%- assign my_root = nil %}
     {%- assign my_frame = nil %}
-    {%- assign my_fpos = my_pos | minus: 139 %}
     {%- assign size = item.pos | size | minus: 2 %}
     {%- assign my_nodes_pos = item.pos | slice: 0, size %}
     {%- if n <= 139 %}
@@ -143,3 +146,10 @@
         {%- break %}
     {%- endif %}
 {%- endfor -%}
+{%- comment -%}
+*
+*  Note:
+*  Documentation is currently available in bahasa only
+*  https://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid
+*
+{%- endcomment -%}
