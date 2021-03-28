@@ -50,7 +50,7 @@
         {{- content | strip -}}
     {%- endcapture %}
 {%- endif %}
-{%- assign my_count = my_roots[myId].key %}
+{%- assign my_count = site.data.section[myId].key %}
 {%- comment -%} | where_exp:"item", "item < 2014" | last
 {%- endcomment -%}
 
