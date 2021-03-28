@@ -87,8 +87,9 @@
     *  - thus seq 1 to 9 live as single strand and 10 to 19 as double strands
     *
     {%- endcomment %}
-    {%- if my_pos >= 150 and my_pos <= 168 %}{% assign my_fpos = my_pos | minus: 149 %}
-    {%- elsif my_pos >= 140 and my_pos <= 149 %}{% assign my_fpos = 169 | minus: my_pos %}
+    {%- if my_pos >= 140 and my_pos <= 149 %}{% assign my_fpos = 169 | minus: my_pos %}
+    {%- elsif my_pos >= 150 and my_pos <= 159 %}{% assign my_fpos = my_pos | minus: 149 %}
+    {%- elsif my_pos >= 160 and my_pos <= 168 %}{% assign my_fpos = 179 | minus: my_pos -%}
     {%- endif %}
     {%- comment -%}
     *
