@@ -12,9 +12,6 @@
 {%- endcomment -%}
 {%- assign my_debug = nil %}
 {%- assign my_value = '' | split: ',' %}
-{%- assign my_count = my_roots[myId].key %}
-{%- comment -%} | where_exp:"item", "item < 2014" | last
-{%- endcomment -%}
 {%- case myId %}
     {%- when 9 %}{%- assign my_debug = 100 -%}
     {%- when 13 %}{%- assign my_debug = 110 -%}
@@ -53,6 +50,10 @@
         {{- content | strip -}}
     {%- endcapture %}
 {%- endif %}
+{%- assign my_count = my_roots[myId].key %}
+{%- comment -%} | where_exp:"item", "item < 2014" | last
+{%- endcomment -%}
+
 {%- assign values = my_roots[my_pos].val | split: ';' %}
 {%- for value in values %}
     {%- assign my_val = value | times: 1 %}
