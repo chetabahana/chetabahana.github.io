@@ -23,9 +23,8 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  root[168] = tree[168] - tree[168-1]
 *  tree[168] = 4 + 25 + 139 + 1091 + 8884 = 10143
 *
-*  Note:
-*  Documentation is currently available in bahasa only
-*  https://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid
+*  Ref:
+*  https://jekyllrb.com/docs/liquid/filters/
 *
 {%- endcomment -%}[6,1,10,1,20]{%- comment -%}
 *
@@ -788,5 +787,9 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  Here is my quote about prime numbers:
 *  Finding the way of ‘how they presence’ is far more important
 *  than trying to find ‘how many all of them’ are exactly exist.
+*
+*  Note:
+*  Documentation is currently available in bahasa only
+*  https://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid
 *
 {%- endcomment -%}
