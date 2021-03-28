@@ -4,15 +4,15 @@
 *
 {%- endcomment -%}{% assign myId = feed.myId -%}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"id": {{ myId | jsonify }},{% if myId > 114 %}{% assign my_key = myId | minus: 101 %}{% else %}{% assign my_key = myId | minus: 1 %}{% endif %}{
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"id": {{ myId | jsonify }},{% if myId > 114 %}{% assign my_key = myId | minus: 101 %}{% else %}{% assign my_key = myId | minus: 1 %}{% endif %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"key": {{ layout.module[my_key] | jsonify }},{% 
 comment %}
 *
 *  collect primes
 *
-{% endcomment %}{% include data/roots.rb %}{% if my_root %}
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"pos": {{ my_pos | jsonify }},{% if feed.link %}
-{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"link": {{ feed.link | jsonify }},{% endif %}
+{% endcomment %}{% include data/roots.rb %}{% if my_pos %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"pos": {{ my_pos | jsonify }},{% endif %}{% if feed.link %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"link": {{ feed.link | jsonify }},{% endif %}{% if my_root %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"root": {{ my_root }},{% endif %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"weight": {{ feed.weight | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"title": {{ feed.title | jsonify }},
