@@ -34,12 +34,12 @@
     {%- elsif myId >= 78 and myId <= 80 %}{%- assign my_debug = myId | minus: 53 -%}
     {%- elsif myId >= 81 and myId <= 85 %}{%- assign my_debug = myId | minus: 61 -%}
     {%- elsif myId >= 86 and myId <= 89 %}{%- assign my_debug = 93 | minus: myId -%}
-    {%- elsif myId >= 90 and myId <= 92 %}{%- assign my_debug = myId | minus: 89 -%}
+    {%- elsif myId >= 90 and myId <= 92 %}{%- assign my_debug = myId | plus: 7 -%}
     {%- elsif myId >= 93 and myId <= 98 %}{%- assign my_debug = 106 | minus: myId -%}
     {%- elsif myId >= 99 and myId <= 104 %}{%- assign my_debug = myId | minus: 85 -%}
     {%- elsif myId >= 105 and myId <= 109 %}{%- assign my_debug = 194 | minus: myId -%}
     {%- elsif myId >= 110 and myId <= 114 %}{%- assign my_debug = myId | minus: 31 -%}
-    {%- elsif myId >= 115 and myId <= 117 %}{%- assign my_debug = myId | minus: 18 -%}
+    {%- elsif myId >= 115 and myId <= 117 %}{%- assign my_debug = myId | minus: 114 -%}
     {%- elsif myId >= 118 and myId <= 120 %}{%- assign my_debug = myId | minus: 16 -%}
     {%- elsif myId >= 121 and myId <= 123 %}{%- assign my_debug = myId | minus: 14 -%}
     {%- elsif myId >= 124 and myId <= 127 %}{%- assign my_debug = myId | minus: 13 -%}
