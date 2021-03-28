@@ -12,7 +12,9 @@
 {%- endcomment -%}
 {%- assign my_debug = nil %}
 {%- assign my_value = '' | split: ',' %}
+{%- comment -%}
 {%- assign my_count = my_roots.key | where_exp:"item", "item < 2014" | last %}
+{%- endcomment -%}
 {%- case myId %}
     {%- when 9 %}{%- assign my_debug = 100 -%}
     {%- when 13 %}{%- assign my_debug = 110 -%}
