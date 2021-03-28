@@ -14,6 +14,7 @@ comment %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"pos": {{ my_pos | jsonify }},{% endif %}{% if feed.link %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"link": {{ feed.link | jsonify }},{% endif %}{% if my_root %}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"root": {{ my_root }},{% endif %}
+{% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"count": {{ my_count | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"weight": {{ feed.weight | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"title": {{ feed.title | jsonify }},
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{{ my_tab }}"category": {{ feed.category | jsonify }},{% comment %}
