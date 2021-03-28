@@ -50,10 +50,9 @@
         {{- content | strip -}}
     {%- endcapture %}
 {%- endif %}
-{%- assign my_count = site.data.section[myId].key %}
+{{ site.data.section | find_exp:"item", "item.key < 20" }}
 {%- comment -%} | where_exp:"item", "item < 2014" | last
 {%- endcomment -%}
-
 {%- assign values = my_roots[my_pos].val | split: ';' %}
 {%- for value in values %}
     {%- assign my_val = value | times: 1 %}
