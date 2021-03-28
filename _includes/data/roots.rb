@@ -50,7 +50,7 @@
         {{- content | strip -}}
     {%- endcapture %}
 {%- endif %}
-{{ site.data.section | find_exp:"item", "item.key < 20" }}
+{{ site.data.section | find_exp:"item", "item.key = 20" }}
 {%- comment -%} | where_exp:"item", "item < 2014" | last
 {%- endcomment -%}
 {%- assign values = my_roots[my_pos].val | split: ';' %}
