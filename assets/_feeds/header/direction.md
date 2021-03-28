@@ -1,7 +1,5 @@
 ---
 myId: 120
-key: 45
-pos: 104
 weight: 3
 type: fix
 value: [659,4,-1,1]

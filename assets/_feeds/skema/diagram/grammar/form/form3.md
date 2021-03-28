@@ -1,7 +1,5 @@
 ---
 myId: 12
-key: 53
-pos: 51
 weight: 3
 category: user
 value: [37,1,1,1]

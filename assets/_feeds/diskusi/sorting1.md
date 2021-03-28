@@ -1,7 +1,5 @@
 ---
 myId: 136
-key: 41
-pos: 122
 eight: 1
 type: test
 value: [769,5,1,0]

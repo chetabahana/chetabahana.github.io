@@ -1,7 +1,5 @@
 ---
 myId: 118
-key: 69
-pos: 102
 weight: 1
 type: object
 value: [647,4,-1,1]

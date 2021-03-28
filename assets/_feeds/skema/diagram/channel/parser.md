@@ -1,7 +1,5 @@
 ---
 myId: 105
-key: 19
-pos: 84
 link: 158
 weight: 2
 category: user

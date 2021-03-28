@@ -1,7 +1,5 @@
 ---
 myId: 126
-key: 47
-pos: 113
 weight: 3
 type: test
 value: [701,2,-1,1]

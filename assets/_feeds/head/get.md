@@ -1,7 +1,5 @@
 ---
 myId: 115
-key: 54
-pos: 97
 weight: 1
 type: class
 value: [631,1,-1,2]

@@ -1,7 +1,5 @@
 ---
 myId: 36
-key: 41
-pos: 44
 weight: 1
 category: user
 zones: [10,60]

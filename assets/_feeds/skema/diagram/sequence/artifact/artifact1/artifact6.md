@@ -1,7 +1,5 @@
 ---
 myId: 104
-key: 32
-pos: 19
 weight: 5
 category: user
 label: Portfolio

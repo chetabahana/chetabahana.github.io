@@ -1,7 +1,5 @@
 ---
 myId: 119
-key: 44
-pos: 103
 weight: 2
 type: query
 value: [653,4,1,1]

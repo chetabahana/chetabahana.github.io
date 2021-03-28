@@ -1,7 +1,5 @@
 ---
 myId: 8
-key: 88
-pos: 89
 link: 159
 weight: 3
 category: main

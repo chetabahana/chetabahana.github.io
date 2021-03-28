@@ -1,7 +1,5 @@
 ---
 myId: 96
-key: 1
-pos: 10
 weight: 2
 category: user
 label: Network

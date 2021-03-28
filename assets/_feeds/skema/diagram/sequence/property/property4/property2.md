@@ -1,7 +1,5 @@
 ---
 myId: 87
-key: 8
-pos: 6
 to: 2
 from: 1
 weight: 2

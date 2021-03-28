@@ -1,7 +1,5 @@
 ---
 myId: 100
-key: 14
-pos: 15
 weight: 1
 category: user
 label: Stok Barang

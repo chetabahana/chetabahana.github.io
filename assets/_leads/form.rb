@@ -1,6 +1,4 @@
 ---
-key: 29
-pos: 286
 weight: 2
 ---
 {%- comment -%}

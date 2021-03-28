@@ -1,7 +1,5 @@
 ---
 myId: 91
-key: 26
-pos: 2
 to: 2
 from: 5
 weight: 1

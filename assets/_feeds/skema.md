@@ -1,7 +1,5 @@
 ---
 myId: 154
-key: 37
-pos: 154
 weight: 5
 type: model
 category: section

@@ -1,7 +1,5 @@
 ---
 myId: 93
-key: 11
-pos: 13
 weight: 5
 category: user
 label: Merchant Center

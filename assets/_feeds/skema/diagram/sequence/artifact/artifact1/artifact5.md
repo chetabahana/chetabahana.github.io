@@ -1,7 +1,5 @@
 ---
 myId: 103
-key: 13
-pos: 18
 weight: 4
 category: user
 label: Peluang Terbaik

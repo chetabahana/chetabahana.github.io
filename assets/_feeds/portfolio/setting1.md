@@ -1,7 +1,5 @@
 ---
 myId: 133
-key: 90
-pos: 119
 weight: 1
 type: operation
 value: [751,3,-1,0]

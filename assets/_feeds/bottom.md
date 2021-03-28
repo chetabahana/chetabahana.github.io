@@ -1,7 +1,5 @@
 ---
 myId: 168
-key: 2
-pos: 168
 weight: 11
 category: section
 value: [997,3,1,-3]

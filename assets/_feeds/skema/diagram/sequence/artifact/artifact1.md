@@ -1,7 +1,5 @@
 ---
 myId: 99
-key: 93
-pos: 14
 weight: 1
 category: main
 label: Buka Toko

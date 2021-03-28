@@ -1,7 +1,5 @@
 ---
 myId: 152
-key: 76
-pos: 152
 weight: 3
 category: section
 value: [881,2,-1,-1]
