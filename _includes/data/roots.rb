@@ -11,7 +11,7 @@
 *
 {%- endcomment -%}
 {%- assign my_debug = nil %}
-{%- assign my_count = {{ my_roots.key | find_exp:"item", "item < 2014" %}
+{%- assign my_count = my_roots | find_exp:"item", "item.key < 2014" %}
 {%- assign my_value = '' | split: ',' %}
 {%- case myId %}
     {%- when 9 %}{%- assign my_debug = 100 -%}
