@@ -85,17 +85,19 @@
     *
     *  Get the roots array if the position is one of the 29 frame
     *  The sequence is located on the range of 168 minus 29 as below:
-    *  - seq 1 to 19 will turn to be leading at pos 150 to 168
-    *  - seq 20 to 29 will turn to be lagging at pos 149 to 140
-    *  - each of this seq 20 to 29 are attached to the seq 10 to 19 
+    *  - seq 1 to 19 will turn to be leading at pos 150 up to 168
+    *  - seq 20 to 29 will turn to be lagging at pos 149 down to 140
+    *  - each of this seq 20 to 29 are attached to the seq of 10 to 19 
     *  - thus seq 1 to 9 live as single strand and 10 to 19 as double strands
     *
     {%- endcomment %}
-    {%- if myId >= 150 and myId <= 168 %}{% assign my_fpos = my_pos | minus: 149 %}
-    {%- elsif myId >= 140 and myId <= 149 %}{% assign my_fpos = 169 | minus: my_pos %}
+    {%- if my_pos >= 150 and my_pos <= 168 %}{% assign my_fpos = my_pos | minus: 149 %}
+    {%- elsif my_pos >= 140 and my_pos <= 149 %}{% assign my_fpos = 169 | minus: my_pos %}
     {%- endif %}
     {%- comment -%}
-    
+    *
+    *  You may see the running code here:
+    *  https://chetabahana.github.io/feed.json
     *
     *  Reference:
     *  https://user-images.githubusercontent.com/36441664/112737922-eda4df80-8f90-11eb-9898-922e5798092a.gif
