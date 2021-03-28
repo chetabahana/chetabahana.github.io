@@ -84,7 +84,7 @@
     *  - seq 1 to 10 will turn to be leading at pos 150 up to 159
     *  - seq 11 to 19 will turn to be lagging at pos 168 down to 160
     *  - seq 21 to 29 will turn to be lagging at pos 149 down to 140
-    *  - each of this seq 21 to 29 are attached to the seq of 10 to 19 
+    *  - each of this seq 21 to 29 are attached to the seq of 11 to 19 
     *  - thus seq 1 to 10 live as single strand while 11 to 29 as double
     *
     {%- endcomment %}
