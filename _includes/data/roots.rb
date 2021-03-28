@@ -81,10 +81,11 @@
     *
     *  Get the roots array if the position is one of the 29 frame
     *  The sequence is located on the range of 168 minus 29 as below:
-    *  - seq 1 to 19 will turn to be leading at pos 150 up to 168
-    *  - seq 20 to 29 will turn to be lagging at pos 149 down to 140
-    *  - each of this seq 20 to 29 are attached to the seq of 10 to 19 
-    *  - thus seq 1 to 9 live as single strand and 10 to 19 as double strands
+    *  - seq 1 to 10 will turn to be leading at pos 150 up to 159
+    *  - seq 11 to 19 will turn to be lagging at pos 168 down to 160
+    *  - seq 21 to 29 will turn to be lagging at pos 149 down to 140
+    *  - each of this seq 21 to 29 are attached to the seq of 10 to 19 
+    *  - thus seq 1 to 10 live as single strand while 11 to 29 as double
     *
     {%- endcomment %}
     {%- if my_pos >= 140 and my_pos <= 149 %}{% assign my_fpos = 169 | minus: my_pos %}
