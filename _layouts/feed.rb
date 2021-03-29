@@ -220,18 +220,6 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  =======+====+=====+====                        Δ         ==== ---> π(1000)
 *   3:4:9 | 30 |3000 | 71 = 68 + log 10³ ---------¤         Δ900   
 *
-*  Check if the numbers of collected nodes is reaching 10th prime = 29 on the
-*  position of π(1000) - 29 = 168 - 29 = 139. Otherwise assign single node.
-*
-*  You may see the running code here:
-*  https://chetabahana.github.io/feed.json
-*
-*  Ref:
-*  https://gist.github.com/magicznyleszek/9803727
-*  https://shopify.github.io/liquid/tags/iteration/
-*  https://www.google.com/search?q=how+to+get+element+from+multiple+array+in+jekyll
-*  https://community.shopify.com/c/Shopify-Design/Remove-last-2-characters-of-a-string/td-p/236741
-*
 {%- endcomment -%}
 {%- comment -%}
 *
@@ -596,3 +584,4 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  https://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid
 *
 {%- endcomment -%}
+{{- my_count -}}

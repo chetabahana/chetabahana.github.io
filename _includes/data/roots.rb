@@ -120,6 +120,12 @@
     {%- assign my_frame = nil %}
     {%- assign size = item.pos | size | minus: 2 %}
     {%- assign my_nodes_pos = item.pos | slice: 0, size %}
+    {%- comment -%}
+    *
+    *  Check if the numbers of collected nodes is reaching 10th prime = 29 on the
+    *  position of π(1000) - 29 = 168 - 29 = 139. Otherwise assign single node.
+    *
+    {%- endcomment -%}
     {%- if n <= 139 %}
         {%- unless my_keys contains my_nodes_pos %}
             {%- assign my_rows = my_rows | push: forloop.index0 %}
@@ -139,7 +145,7 @@
     {%- endif %}
     {%- comment -%}
     *
-    *  Otherwise take the single root value
+    *  Take the root value to assign single node
     *
     {%- endcomment -%}
     {%- assign nodes = item.node | split: ';' %}
@@ -160,6 +166,15 @@
     {%- endif %}
 {%- endfor -%}
 {%- comment -%}
+*
+*  You may see the running code here:
+*  https://chetabahana.github.io/feed.json
+*
+*  Ref:
+*  https://gist.github.com/magicznyleszek/9803727
+*  https://shopify.github.io/liquid/tags/iteration/
+*  https://www.google.com/search?q=how+to+get+element+from+multiple+array+in+jekyll
+*  https://community.shopify.com/c/Shopify-Design/Remove-last-2-characters-of-a-string/td-p/236741
 *
 *  Note:
 *  Documentation is currently available in bahasa only
