@@ -45,27 +45,11 @@
 {%- if my_debug %}
     {%- assign my_pos = my_debug %}
     {%- assign my_debug = nil %}
-{%- else %}
-    {%- capture my_debug %}
-        {{- content | strip -}}
-    {%- endcapture %}
-{%- endif %}
-{%- assign values = my_roots[my_pos].val | split: ';' %}
-{%- for value in values %}
-    {%- assign my_val = value | times: 1 %}
-    {%- assign my_value = my_value | push: my_val %}
-{%- endfor %}
-{%- comment %}
-*
-*  Get the roots array
-*
-{%- endcomment %}
-{%- assign n = 0 %}
-{%- assign my_keys = '' | split: ',' %}
-{%- assign my_rows = '' | split: ',' %}
-{%- assign my_node = '' | split: ',' %}
-{%- assign my_nodes = '' | split: ',' %}
-{%- for item in my_roots limit: my_pos %}
+    {%- assign values = my_roots[my_pos].val | split: ';' %}
+    {%- for value in values %}
+        {%- assign my_val = value | times: 1 %}
+        {%- assign my_value = my_value | push: my_val %}
+    {%- endfor %}
     {%- comment -%}
     *
     *  Get the roots array if the position is one of the 29 frame
@@ -92,6 +76,22 @@
     *  https://user-images.githubusercontent.com/36441664/112737889-9acb2800-8f90-11eb-8b17-4b15a317a717.png
     *
     {%- endcomment -%}
+{%- else %}
+    {%- capture my_debug %}
+        {{- content | strip -}}
+    {%- endcapture %}
+{%- endif %}
+{%- comment %}
+*
+*  Get the roots array
+*
+{%- endcomment %}
+{%- assign n = 0 %}
+{%- assign my_keys = '' | split: ',' %}
+{%- assign my_rows = '' | split: ',' %}
+{%- assign my_node = '' | split: ',' %}
+{%- assign my_nodes = '' | split: ',' %}
+{%- for item in my_roots limit: my_pos %}
     {%- assign my_root = nil %}
     {%- assign my_frame = nil %}
     {%- assign size = item.pos | size | minus: 2 %}
