@@ -10,33 +10,10 @@
 *  Reference based on prime hexagon:
 *  https://www.hexspin.com/defining-the-prime-hexagon/
 *
-{%- endcomment -%}
-{%- assign π10 = 4 -%}
-{%- assign π100 = 25 -%}
-{%- assign π1000 = 168 -%}
-{%- assign π10000 = 1229 -%}
-{%- assign π100000 = 9592 -%}
-{%- assign π_10 = 10 | minus: 1  -%}
-{%- assign π_100 = my_roots[π_10].key | minus: 1  -%}
-{%- assign π_1000 = my_roots[π_100].key | minus: 1  -%}
-{%- comment %}
-*
-*  Get counting
-*
-{%- endcomment %}
-{%- assign my_count = π10 -%}
-{%- assign my_count = my_count | plus: π100 -%}
-{%- assign my_count = my_count | plus: π1000 | minus: my_roots[π_10].key -%}
-{%- assign my_count = my_count | plus: π10000 | minus: my_roots[π_100].key | minus: my_roots[π_10].key -%}
-{%- assign my_count = my_count | plus: π100000 | minus: my_roots[π_1000].key | minus: my_roots[π_100].key -%}
-{%- assign my_count = content | times: 1 -%}
-{%- comment %}
-*
-*  Get the position
-*
 {%- endcomment %}
 {%- assign my_debug = nil %}
 {%- assign my_value = '' | split: ',' %}
+{%- assign my_count = content | times: 1 -%}
 {%- case myId %}
     {%- when 9 %}{%- assign my_debug = 100 -%}
     {%- when 13 %}{%- assign my_debug = 110 -%}
