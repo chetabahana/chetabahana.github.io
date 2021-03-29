@@ -148,8 +148,8 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  ------|------|-----+-----+------
 *
 {%- endcomment -%}
-{%- assign my_count = π10 -%}
-{%- assign my_count = my_count | plus: π100 %}
+{%- assign my_loop = π10 -%}
+{%- assign my_loop = my_loop | plus: π100 %}
 {%- comment -%}
 *
 *  π(1000) Schema
@@ -160,7 +160,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 {%- assign π1000 = 168 %}
 {%- assign π_10 = 10 | minus: 1 %}
 {%- assign my_roots = site.data.roots %}
-{%- assign my_count = my_count | plus: π1000 | minus: my_roots[π_10].key %}
+{%- assign my_loop = my_loop | plus: π1000 | minus: my_roots[π_10].key %}
 {%- comment -%}
 *
 *    Sub  | i  |   β | f   
@@ -234,7 +234,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 {%- endcomment -%}
 {%- assign π10000 = 1229 -%}
 {%- assign π_100 = my_roots[π_10].key | minus: 1 %}
-{%- assign my_count = my_count | plus: π10000 | minus: my_roots[π_100].key | minus: my_roots[π_10].key %}
+{%- assign my_loop = my_loop | plus: π10000 | minus: my_roots[π_100].key | minus: my_roots[π_10].key %}
 {%- comment %}
 *
 *    Sub  | i  |    β  | f   
@@ -309,7 +309,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 {%- endcomment %}
 {%- assign π100000 = 9592 -%}
 {%- assign π_1000 = my_roots[π_100].key | minus: 1 -%}
-{%- assign my_count = my_count | plus: π100000 | minus: my_roots[π_1000].key | minus: my_roots[π_100].key %}
+{%- assign my_loop = my_loop | plus: π100000 | minus: my_roots[π_1000].key | minus: my_roots[π_100].key %}
 {%- comment %}
 *
 *    Sub  | i  |    β  | f   
@@ -592,4 +592,4 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  https://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid
 *
 {%- endcomment -%}
-{{- my_count -}}
+{{- my_loop -}}
