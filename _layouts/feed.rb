@@ -158,11 +158,14 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  ------|------|-----+-----+------
 *
 {%- endcomment -%}
-{%- comment %}
+{%- comment -%}
 * 
 *  π(1000) Schema
 *  Injected via 168 = π(1000)
-*  {%- assign my_count = my_count | plus: π1000 | minus: my_roots[π_10].key -%}
+*  loop(1000) => π(1000) - 10th = 168 - 29 = 25 + 114 = 139 
+{%- endcomment -%}
+{%- assign my_count = my_count | plus: π1000 | minus: my_roots[π_10].key %}
+{%- comment -%}
 *
 *    Sub  | i  |   β | f   
 *  =======+====+=====+=======  ===   ===   ===   ===   ===   ===
