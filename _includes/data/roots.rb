@@ -4,6 +4,7 @@
 *  https://github.com/chetabahana/chetabahana.github.io/blob/Chetabahana/_layouts/feed.rb
 *
 *  Get the position of each Id:
+*  https://github.com/chetabahana/r12a.github.io
 *  https://github.com/chetabahana/hexagon/pull/2
 
 *  Reference based on prime hexagon:
