@@ -10,9 +10,9 @@
 *  https://www.hexspin.com/defining-the-prime-hexagon/
 *
 {%- endcomment -%}
-{%- assign my_count = 4 -%}
-{%- assign π(100) = 25 -%}
-{%- assign my_count = my_count | plus: π(100) -%}
+{%- assign π(10) = 4 -%}
+{%- assign my_count = π(10) -%}
+{%- assign my_count = my_count | plus: 25 -%}
 {%- assign my_count = my_count | plus: 168 | minus: my_roots[9].key -%}
 {%- assign my_count = my_count | plus: 1229 | minus: my_roots[28].key | minus: my_roots[9].key -%}
 {%- assign my_count = my_count | plus: 9592 | minus: my_roots[108].key | minus: my_roots[28].key -%}
