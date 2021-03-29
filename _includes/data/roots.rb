@@ -81,7 +81,7 @@
         {{- content | strip -}}
     {%- endcapture %}
 {%- endif %}
-{%- for item in my_roots limit: my_pos %}
+{%- for item in my_roots %}
     {%- assign my_vkey = item.key | times: 1 %}
     {%- if my_vkey < 10 %}
         {%- assign my_count = my_vkey %}
