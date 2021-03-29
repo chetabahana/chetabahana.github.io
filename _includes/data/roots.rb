@@ -29,7 +29,7 @@
 {%- assign my_count = my_count | plus: π1000 | minus: my_roots[π_10].key -%}
 {%- assign my_count = my_count | plus: π10000 | minus: my_roots[π_100].key | minus: my_roots[π_10].key -%}
 {%- assign my_count = my_count | plus: π100000 | minus: my_roots[π_1000].key | minus: my_roots[π_100].key -%}
-{%- assign my_count = {{ content }} -%}
+{%- assign my_count = page.content -%}
 {%- comment %}
 *
 *  Get the position
