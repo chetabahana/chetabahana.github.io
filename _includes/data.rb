@@ -15,7 +15,7 @@
 *  collect json
 *
 {% endcomment %}{% if page.redirect.from or my_feed.path == 'feed.json' or my_feed.ext == '.json' %}{
-    {{ 'id' | jsonify }}: {% if data.id %}{{ data.id }}{% else %}{{ page.id }}{% assign my_count = {{ content }} %}{% endif %},
+    {{ 'id' | jsonify }}: {% if data.id %}{{ data.id }}{% else %}{{ page.id }}{% assign my_count = content %}{% endif %},
     {{ 'title' | jsonify }}: "{% if data.title %}{{ data.title | capitalize }} | {% endif %}Project Maps",
     {{ 'version' | jsonify }}: {{ 'https://jsonfeed.org/version/1.1' | jsonify }},
     {{ 'home_page_url' | jsonify }}: {{ '/' | absolute_url | jsonify }},
