@@ -12,7 +12,7 @@
 {%- endcomment -%}
 {%- assign my_count = 4 -%}
 {%- assign my_count = my_count | plus: 25 -%}
-{%- assign my_count = my_count | plus: 168 | minus: 29 -%}
+{%- assign my_count = my_count | plus: 168 | minus: my_roots[10].key -%}
 {%- assign my_count = my_count | plus: 1229 | minus: 109 | minus: 29 -%}
 {%- assign my_count = my_count | plus: 9592 | minus: 599 | minus: 109 -%}
 {%- comment %}
