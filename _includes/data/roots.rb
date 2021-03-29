@@ -10,15 +10,7 @@
 *  https://www.hexspin.com/defining-the-prime-hexagon/
 *
 {%- endcomment -%}
-{%- assign n = 0 %}
-{%- for item in my_roots %}
-    {%- assign n = n | plus: 1 %}
-    {%- assign my_vkey = item.key | times: 1 %}
-    {%- if my_vkey < 100000 %}
-        {%- assign my_count = n %}
-    {%- else -%}
-        {%- break %}
-    {%- endif %}
+{%- assign my_count = 4 | plus: 25 | plus: 139 | plus: 1091 | plus: 8884 %}
 {%- endfor %}
 {%- comment %}
 *
