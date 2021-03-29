@@ -10,6 +10,21 @@
 *  https://www.hexspin.com/defining-the-prime-hexagon/
 *
 {%- endcomment -%}
+{%- assign n = 0 %}
+{%- for item in my_roots %}
+    {%- assign n = n | plus: 1 %}
+    {%- assign my_vkey = item.key | times: 1 %}
+    {%- if my_vkey < 100 %}
+        {%- assign my_count = n %}
+    {%- else -%}
+        {%- break %}
+    {%- endif %}
+{%- endfor %}
+{%- comment %}
+*
+*  Get the position
+*
+{%- endcomment %}
 {%- assign my_debug = nil %}
 {%- assign my_value = '' | split: ',' %}
 {%- case myId %}
@@ -81,14 +96,6 @@
         {{- content | strip -}}
     {%- endcapture %}
 {%- endif %}
-{%- for item in my_roots %}
-    {%- assign my_vkey = item.key | times: 1 %}
-    {%- if my_vkey < 10 %}
-        {%- assign my_count = my_vkey %}
-    {%- else -%}
-        {%- break %}
-    {%- endif %}
-{%- endfor %}
 {%- comment %}
 *
 *  Get the roots array
