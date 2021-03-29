@@ -25,8 +25,13 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  tree[168] = 4 + 25 + 139 + 1091 + 8884 = 10143
 *
 *  Ref:
+*  https://learn.cloudcannon.com/
 *  https://jekyllrb.com/docs/liquid/filters/
-*  https://github.com/chetabahana/chetabahana.github.io/releases
+*  https://github.com/planetjekyll/quickrefs
+*  https://stackoverflow.com/a/26835896/4058484
+*  https://stackoverflow.com/a/35453910/4058484
+*  https://github.com/jekyll/jekyll/issues/5868#issuecomment-278073983
+*
 *
 {%- endcomment -%}
 {%- comment -%}
@@ -574,6 +579,9 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *
 {%- endcomment -%}
 {%- comment -%}
+*
+*  You may see the running code here:
+*  https://chetabahana.github.io/feed.json
 *
 *  Here is my quote about prime numbers:
 *  Finding the way of ‘how they presence’ is far more important

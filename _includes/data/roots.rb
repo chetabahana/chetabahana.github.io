@@ -151,6 +151,7 @@
 *  Ref:
 *  https://gist.github.com/magicznyleszek/9803727
 *  https://shopify.github.io/liquid/tags/iteration/
+*  https://github.com/chetabahana/chetabahana.github.io/releases
 *  https://www.google.com/search?q=how+to+get+element+from+multiple+array+in+jekyll
 *  https://community.shopify.com/c/Shopify-Design/Remove-last-2-characters-of-a-string/td-p/236741
 *
