@@ -13,8 +13,8 @@
 {%- assign my_count = 4 -%}
 {%- assign my_count = my_count | plus: 25 -%}
 {%- assign my_count = my_count | plus: 168 | minus: my_roots[9].key -%}
-{%- assign my_count = my_count | plus: 1229 | minus: 109 | minus: my_roots[9].key -%}
-{%- assign my_count = my_count | plus: 9592 | minus: 599 | minus: 109 -%}
+{%- assign my_count = my_count | plus: 1229 | minus: my_roots[28].key | minus: my_roots[9].key -%}
+{%- assign my_count = my_count | plus: 9592 | minus: my_roots[598].key | minus: my_roots[28].key -%}
 {%- comment %}
 *
 *  Get the position
