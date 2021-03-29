@@ -10,7 +10,11 @@
 *  https://www.hexspin.com/defining-the-prime-hexagon/
 *
 {%- endcomment -%}
-{%- assign my_count = 168 | plus: 1091 | plus: 8884 %}
+{%- assign my_count = 4 -%}
+{%- assign my_count = my_count | plus: 25 -%}
+{%- assign my_count = my_count | plus: 139 -%}
+{%- assign my_count = my_count | plus: 1091 -%}
+{%- assign my_count = my_count | plus: 8884 -%}
 {%- comment %}
 *
 *  Get the position
