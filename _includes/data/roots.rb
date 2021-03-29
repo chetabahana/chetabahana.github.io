@@ -16,7 +16,7 @@
 {%- assign π1000 = 168 -%}
 {%- assign π10000 = 1229 -%}
 {%- assign π100000 = 9592 -%}
-{%- assign π_10 = 10 | minus: 1  -%}
+{%- assign π_10 = 9 | minus: 1  -%}
 {%- assign π_100 = my_roots[π_10].key | minus: 1  -%}
 {%- assign π_1000 = my_roots[π_100].key | minus: 1  -%}
 {%- comment %}
@@ -29,6 +29,7 @@
 {%- assign my_count = my_count | plus: π1000 | minus: my_roots[π_10].key -%}
 {%- assign my_count = my_count | plus: π10000 | minus: my_roots[π_100].key | minus: my_roots[π_10].key -%}
 {%- assign my_count = my_count | plus: π100000 | minus: my_roots[π_1000].key | minus: my_roots[π_100].key -%}
+{%- assign my_count = 10143 | minus: my_count -%}
 {%- comment %}
 *
 *  Get the position
