@@ -13,7 +13,6 @@
 {%- endcomment %}
 {%- assign my_debug = nil %}
 {%- assign my_value = '' | split: ',' %}
-{%- assign my_count = content | times: 1 -%}
 {%- case myId %}
     {%- when 9 %}{%- assign my_debug = 100 -%}
     {%- when 13 %}{%- assign my_debug = 110 -%}
