@@ -28,27 +28,10 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  https://jekyllrb.com/docs/liquid/filters/
 *  https://github.com/chetabahana/chetabahana.github.io/releases
 *
-{%- endcomment -%}[6,1,10,1,20]{%- comment -%}
-*
-*  π(10) = 4
-*
-{%- endcomment -%}
-{%- comment -%}
-* 
-*  π(10) Schema
-*
-{%- endcomment -%}
-{%- comment -%}
-*
-*  π(100) = 25
-*
 {%- endcomment -%}
 {%- comment -%}
 * 
 *  π(100) Schema
-*  {%- assign my_count = π10 -%}
-*  {%- assign my_count = my_count | plus: π100 -%}
-*
 *  True Prime Pairs:
 *  (5,7), (11,13), (17,19)
 *  
@@ -116,6 +99,8 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *              43
 *
 {%- endcomment -%}
+{%- assign π10 = 4 -%}
+{%- assign π100 = 25 -%}
 {%- comment -%}
 *
 *  layer | node | sub |  i  |  f
@@ -158,12 +143,18 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  ------|------|-----+-----+------
 *
 {%- endcomment -%}
+{%- assign my_count = π10 -%}
+{%- assign my_count = my_count | plus: π100 %}
 {%- comment -%}
-* 
+*
 *  π(1000) Schema
 *  Injected via 168 = π(1000)
 *  loop(1000) => π(1000) - 10th = 168 - 29 = 25 + 114 = 139 
-{%- endcomment -%}
+*
+{%- endcomment %}
+{%- assign π1000 = 168 %}
+{%- assign π_10 = 10 | minus: 1 %}
+{%- assign my_roots = site.data.roots %}
 {%- assign my_count = my_count | plus: π1000 | minus: my_roots[π_10].key %}
 {%- comment -%}
 *
@@ -246,7 +237,12 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *
 *  π(10000) Schema
 *  loop(10000) => π(10000) - (10th)th - 10th = 1229 - 109 - 29 = 1091
-*  {%- assign my_count = my_count | plus: π10000 | minus: my_roots[π_100].key | minus: my_roots[π_10].key -%}
+*
+{%- endcomment -%}
+{%- assign π10000 = 1229 -%}
+{%- assign π_100 = my_roots[π_10].key | minus: 1 %}
+{%- assign my_count = my_count | plus: π10000 | minus: my_roots[π_100].key | minus: my_roots[π_10].key %}
+{%- comment %}
 *
 *    Sub  | i  |    β  | f   
 *  =======+====+=======+=======  ===   ===   ===   ===   ===   === <-- π(1000-50)
@@ -310,13 +306,18 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  =======+====+=======+====                        Δ         ====
 *   3:4:9 | 30 | 30000 | 52 = 118 + log 10³ -------¤         Δ900   
 *
-{%- endcomment -%}
-{%- comment %}
+{%- endcomment %}
+{%- comment -%}
 *
 *  π(10000) Schema
 *  Injected via 1000 - 50
 *  loop(100000) => π(100000) - ((10th)th)th - (10th)th = 9592 - 599 - 109 = 8884
-*  {%- assign my_count = my_count | plus: π100000 | minus: my_roots[π_1000].key | minus: my_roots[π_100].key -%}
+*
+{%- endcomment %}
+{%- assign π100000 = 9592 -%}
+{%- assign π_1000 = my_roots[π_100].key | minus: 1 -%}
+{%- assign my_count = my_count | plus: π100000 | minus: my_roots[π_1000].key | minus: my_roots[π_100].key %}
+{%- comment %}
 *
 *    Sub  | i  |    β  | f   
 *  =======+====+=======+=======  ===   ===   ===   ===   ===   === <-- π(1000-50)
