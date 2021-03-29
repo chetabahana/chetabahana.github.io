@@ -1,0 +1,1476 @@
+root,form,frequency,translation
+27;28;42,I,1,to run away;to flee
+27;28;4A,I,13,to refuse
+27;2A;4A,I,264,to come;to bring
+27;2A;4A,IV,271,to give
+27;2B;31,I,1,to transmit;to be related
+27;2B;31,IV,5,to prefer
+27;2C;31,I,1,to work for recompense
+27;2C;31,X,2,to hire
+27;2C;44,II,2,to appoint
+27;2E;30,I,127,to take;to seize
+27;2E;30,III,9,to call;to account;to punish
+27;2E;30,VIII,124,to take
+27;2E;31,II,15,to delay;to give respite
+27;2E;31,V,3,to delay;to stay behind
+27;2E;31,X,6,to delay;to postpone
+27;2F;4A,II,5,to discharge;to deliver
+27;30;46,I,23,to permit
+27;30;46,II,3,to announce;to proclaim
+27;30;46,IV,2,to announce
+27;30;46,V,2,to announce;to declare
+27;30;46,X,12,to ask permission
+27;30;4A,IV,15,to harm;to trouble
+27;32;31,IV,1,to strengthen
+27;32;32,I,1,to incite
+27;32;41,I,1,to approach
+27;33;31,I,1,to take captive
+27;33;33,II,3,to found
+27;33;41,IV,1,to anger
+27;33;48,I,4,to grieve
+27;41;43,I,16,to delude;to turn away
+27;41;44,I,3,to set
+27;43;44,I,93,to eat;to consume
+27;44;2A,I,1,to deprive
+27;44;41,II,5,to join;to reconcile
+27;44;45,I,3,to suffer
+27;44;48,I,1,to spare
+27;44;48,IV,1,to swear;to vow
+27;44;48,VIII,1,to swear
+27;45;31,I,77,to order;to command
+27;45;31,VIII,2,to consult
+27;45;46,I,20,to feel secure
+27;45;46,IV,537,to believe
+27;45;46,VIII,1,to be entrusted
+27;46;33,IV,5,to perceive
+27;46;33,X,1,to ask permission
+27;46;4A,I,1,to come (time)
+27;48;28,II,1,to repeat
+27;48;2F,I,1,to tire
+27;48;4A,I,5,to seek shelter
+27;48;4A,IV,9,to give shelter
+27;4A;2F,II,9,to support;to strengthen
+28;27;33,I,40,to be wretched;to be evil
+28;27;33,VIII,2,to grieve
+28;2A;43,II,1,to cut off
+28;2A;44,V,1,to devote
+28;2B;2B,I,5,to disperse
+28;2C;33,VII,1,to gush;to flow
+28;2D;2B,I,1,to search;to scratch
+28;2E;33,I,5,to diminish;to deprive
+28;2E;44,I,10,to be stingy;to withhold
+28;2F;27,I,12,to begin;to originate
+28;2F;27,IV,3,to originate
+28;2F;39,VIII,1,to innovate
+28;2F;44,II,23,to change
+28;2F;44,IV,3,to substitute
+28;2F;44,V,3,to exchange
+28;2F;44,X,3,to replace
+28;2F;48,I,11,to become apparent
+28;2F;48,IV,15,to reveal;to disclose
+28;30;31,II,1,to squander;to waste
+28;31;27,I,1,to bring into existence
+28;31;27,II,2,to absolve;to clear
+28;31;27,IV,2,to heal;to cure
+28;31;27,V,5,to disown
+28;31;2C,V,1,to display
+28;31;2D,I,3,to leave;to cease
+28;31;31,I,2,to be good;to be kind
+28;31;32,I,5,to come forth;to go out
+28;31;32,II,2,to make manifest
+28;31;42,I,1,to be dazzled;to be frightened
+28;31;43,III,8,to bless
+28;31;43,VI,9,to be blessed
+28;31;45,IV,1,to determine;to conclude
+28;33;31,I,1,to scowl;to frown
+28;33;33,I,1,to crumble;to crush
+28;33;37,I,16,to extend;to stretch
+28;33;44,IV,2,to give up;to destruction
+28;33;45,V,1,to smile
+28;34;31,II,38,to give glad tidings
+28;34;31,III,2,to have relations
+28;34;31,IV,1,to receive glad tidings
+28;34;31,X,7,to rejoice
+28;35;31,I,3,to perceive;to watch
+28;35;31,II,1,to be made;to see
+28;35;31,IV,29,to see
+28;37;27,II,1,to lag behind
+28;37;31,I,1,to take lightly
+28;37;34,I,5,to seize
+28;37;44,I,1,to become futile
+28;37;44,IV,4,to make vain;to nullify
+28;37;46,I,2,to be concealed
+28;39;2B,I,52,to raise;to resurrect;to send
+28;39;2B,VII,1,to send forth
+28;39;2B;31,I,2,to overturn;to scatter
+28;39;2F,I,2,to become distant;to take away
+28;39;2F,III,1,to lengthen
+28;3A;4A,I,25,to seek;to oppress
+28;3A;4A,VII,6,to be appropiate
+28;3A;4A,VIII,34,to seek
+28;42;4A,I,3,to remain
+28;42;4A,IV,1,to spare;to remain
+28;43;4A,I,5,to weep
+28;43;4A,IV,1,to make weep
+28;44;33,IV,1,to despair
+28;44;39,I,1,to swallow
+28;44;3A,I,40,to reach
+28;44;3A,II,6,to convey
+28;44;3A,IV,5,to convey
+28;44;48,I,20,to test
+28;44;48,IV,2,to test
+28;44;48,VIII,8,to test;to try
+28;46;4A,I,11,to construct;to build
+28;47;2A,I,2,to be bewildered;to be dumbfounded
+28;47;44,VIII,1,to pray humbly
+28;48;27,I,6,to incur;to turn back
+28;48;27,II,6,to settle
+28;48;27,V,4,to settle
+28;48;31,I,2,to perish
+28;4A;2A,I,1,to spend the night
+28;4A;2A,II,4,to plan by night
+28;4A;2F,I,1,to be perished
+28;4A;36,IX,3,to become white
+28;4A;39,III,6,to pledge allegiance
+28;4A;39,VI,1,to make commercial transaction
+28;4A;46,II,35,to make clear
+28;4A;46,IV,1,to explain
+28;4A;46,V,18,to become clear
+28;4A;46,X,1,to make clear
+2A;28;28,I,2,to perish
+2A;28;31,II,2,to destory
+2A;28;39,I,9,to follow
+2A;28;39,IV,15,to follow
+2A;28;39,VIII,136,to follow
+2A;31;41,IV,3,to give luxury
+2A;31;43,I,40,to leave
+2A;42;46,IV,1,to perfect
+2A;44;44,I,1,to put down
+2A;44;48,I,61,to recite
+2A;45;45,I,4,to be fulfilled;to be completed
+2A;45;45,IV,16,to fulfill;to complete;to perfect
+2A;48;28,I,63,to repent;to turn
+2A;4A;47,I,1,to wander
+2B;28;2A,I,1,to be firm
+2B;28;2A,II,10,to make firm
+2B;28;2A,IV,2,to restrain;to confirm
+2B;28;37,II,1,to make lag behind
+2B;2E;46,IV,2,to battle;to subdue
+2B;42;41,I,6,to find;to gain dominance
+2B;42;44,I,4,to be heavy
+2B;42;44,IV,1,to be heavy
+2B;42;44,VI,1,to be heavy
+2B;45;31,IV,2,to bear fruit
+2B;46;4A,I,1,to fold up
+2B;46;4A,X,1,to except
+2B;48;28,II,1,to reward
+2B;48;28,IV,3,to reward
+2B;48;31,IV,5,to raise;to plough
+2C;27;31,I,3,to cry for help
+2C;28;4A,I,1,to bring;to gather
+2C;28;4A,VIII,10,to choose
+2C;2B;2B,VIII,1,to uproot
+2C;2D;2F,I,12,to reject;to deny
+2C;2F;44,III,25,to argue;to dispute
+2C;31;2D,I,1,to commit
+2C;31;2D,VIII,1,to commit
+2C;31;31,I,1,to drag
+2C;31;39,V,1,to sip
+2C;31;45,I,3,to let incite
+2C;31;45,IV,5,to commit crime
+2C;31;4A,I,57,to flow;to run
+2C;32;39,I,1,to show intolerance;to be perturbed
+2C;32;4A,I,73,to reward;to recompense
+2C;32;4A,III,1,to recompense
+2C;33;33,V,1,to spy
+2C;39;44,I,340,to make
+2C;41;48,I,1,to forsake
+2C;44;28,IV,1,to raise
+2C;44;2F,I,2,to flog
+2C;44;48,I,2,to reveal
+2C;44;48,II,2,to reveal
+2C;45;2D,I,1,to run wild
+2C;45;39,I,22,to gather;to collect
+2C;45;39,IV,4,to resolve;to agree;to put;together
+2C;45;39,VIII,2,to gather
+2C;46;28,I,1,to keep away
+2C;46;28,II,1,to remove from
+2C;46;28,V,1,to avoid
+2C;46;28,VIII,9,to avoid
+2C;46;2D,I,2,to incline
+2C;46;46,I,1,to cover
+2C;47;2F,III,27,to strive
+2C;47;31,I,5,to speak loudly
+2C;47;32,II,2,to furnish
+2C;47;44,I,5,to be ignorant
+2C;48;28,I,1,to carve
+2C;48;28,IV,8,to answer;to respond
+2C;48;28,X,28,to answer;to respond
+2C;48;31,III,1,to be neighbours
+2C;48;31,IV,6,to protect
+2C;48;31,X,1,to seek protection
+2C;48;32,III,4,to cross;to pass beyond
+2C;48;32,VI,1,to overlook
+2C;48;33,I,1,to enter
+2C;48;39,I,1,to be hungry
+2C;4A;27,I,278,to come
+2D;28;28,II,1,to endear
+2D;28;28,IV,64,to love;to like
+2D;28;28,X,4,to prefer
+2D;28;31,I,2,to delight
+2D;28;33,I,2,to detain
+2D;28;37,I,12,to become worthless
+2D;28;37,IV,4,to make worthless
+2D;2C;2C,I,1,to perform pilgrimage;to argue
+2D;2C;2C,III,12,to argue
+2D;2C;2C,VI,1,to dispute
+2D;2F;2B,II,3,to report;to narate
+2D;2F;2B,IV,3,to cause;to bring about
+2D;2F;2F,I,2,to oppose
+2D;2F;2F,III,2,to oppose
+2D;30;31,I,12,to fear;to beware
+2D;30;31,II,2,to warn
+2D;31;28,III,2,to wage war
+2D;31;2B,I,1,to sow
+2D;31;35,I,3,to desire
+2D;31;36,II,2,to urge;to encourage
+2D;31;41,II,4,to distort
+2D;31;42,II,3,to burn
+2D;31;42,VIII,1,to burn
+2D;31;43,II,1,to move
+2D;31;45,II,39,to forbid;to make unlawful
+2D;31;4A,I,1,to seek
+2D;32;46,I,37,to grieve
+2D;33;28,I,44,to think
+2D;33;28,III,3,to take;to account
+2D;33;28,VIII,3,to take into account;to expect;to think
+2D;33;2F,I,3,to envy
+2D;33;31,X,1,to tire
+2D;33;33,I,1,to inquire;to kill
+2D;33;33,IV,3,to perceive
+2D;33;33,V,1,to inquire
+2D;33;46,I,3,to be the best;to be good
+2D;33;46,IV,21,to do good
+2D;34;31,I,37,to gather;to raise
+2D;35;2D;35,I,1,to become manifest
+2D;35;2F,I,1,to reap
+2D;35;31,I,2,to restrain;to besiege
+2D;35;31,IV,2,to hold back;to wrap up
+2D;35;44,II,1,to make apparent
+2D;35;46,IV,5,to guard;to protect
+2D;35;4A,IV,10,to count;to calculate;to enumerate
+2D;36;31,I,7,to approach;to attend
+2D;36;31,IV,3,to bring
+2D;36;36,I,2,to feel the urge
+2D;36;36,VI,1,to feel the urge
+2D;37;45,I,1,to crush
+2D;41;38,I,7,to guard;to protect
+2D;41;38,III,4,to guard
+2D;41;38,X,1,to be entrusted
+2D;41;41,I,1,to border
+2D;41;48,IV,1,to press
+2D;42;42,I,20,to justify;to prove true
+2D;42;42,IV,4,to justify;to establish
+2D;42;42,X,2,to be guilty;to have right
+2D;43;45,I,45,to judge
+2D;43;45,II,2,to make judge
+2D;43;45,IV,2,to perfect;to establish
+2D;43;45,VI,1,to judge
+2D;44;41,I,12,to swear
+2D;44;42,I,1,to shave
+2D;44;44,I,14,to descend;to be lawful
+2D;44;44,IV,20,to make lawful
+2D;44;4A,II,4,to adorn
+2D;45;2F,I,1,to praise
+2D;45;44,I,41,to carry;to bear
+2D;45;44,II,5,to place;to entrust
+2D;45;44,VIII,3,to carry;to bear
+2D;45;4A,I,1,to heat
+2D;46;2B,I,1,to break oath
+2D;46;43,VIII,1,to destroy
+2D;48;30,X,2,to overcome;to have advantage
+2D;48;31,I,1,to return
+2D;48;31,III,2,to talk
+2D;48;37,IV,17,to surround;to encompass
+2D;48;44,I,3,to come
+2D;4A;2F,I,1,to avoid
+2D;4A;36,I,1,to menstruate
+2D;4A;41,I,1,to be unjust
+2D;4A;42,I,10,to surround;to encompass;to envelope
+2D;4A;4A,I,7,to live
+2D;4A;4A,II,4,to greet
+2D;4A;4A,IV,51,to give life
+2D;4A;4A,X,9,to let live;to be shy;to be ashamed
+2E;28;2A,IV,2,to be humble
+2E;28;2B,I,1,to be bad
+2E;28;37,V,1,to confound
+2E;28;48,I,1,to subside
+2E;2A;45,I,5,to seal
+2E;2F;39,I,2,to deceive
+2E;2F;39,III,2,to deceive
+2E;30;44,I,1,to forsake
+2E;31;28,IV,1,to destroy
+2E;31;2C,I,53,to go out;to come out;to depart;to leave
+2E;31;2C,IV,99,to bring forth;to drive out
+2E;31;2C,X,4,to bring out
+2E;31;31,I,12,to fall
+2E;31;35,I,4,to guess;to lie
+2E;31;42,I,4,to falsely attribute;to tear
+2E;32;4A,I,1,to be disgraced
+2E;32;4A,IV,12,to disgrace
+2E;33;27,I,1,to be despised
+2E;33;31,I,16,to lose
+2E;33;31,IV,2,to give less;to make deficient
+2E;33;41,I,8,to cause;to swallow
+2E;34;39,I,2,to become humble
+2E;34;4A,I,40,to fear
+2E;35;35,VIII,2,to choose
+2E;35;41,I,2,to fasten
+2E;35;45,VIII,8,to dispute
+2E;36;39,I,1,to be soft
+2E;37;27,IV,2,to err;to make mistake
+2E;37;28,III,3,to address
+2E;37;37,I,1,to write
+2E;37;41,I,3,to snatch
+2E;37;41,V,3,to do away with;to sweep;to take away
+2E;41;2A,III,1,to be silent
+2E;41;2A,VI,2,to murmur
+2E;41;36,I,3,to lower
+2E;41;41,I,3,to be light
+2E;41;41,II,8,to lighten
+2E;41;41,X,3,to take lightly;to bluff
+2E;41;4A,I,6,to hide
+2E;41;4A,IV,18,to conceal;to hide
+2E;41;4A,X,3,to hide
+2E;44;2F,I,2,to live forever
+2E;44;2F,IV,2,to adhere
+2E;44;35,I,1,to seclude
+2E;44;35,IV,2,to choose;to be sincere
+2E;44;35,X,1,to select
+2E;44;37,I,1,to mix
+2E;44;37,III,1,to associate
+2E;44;37,VIII,3,to join;to absorb;to mingle
+2E;44;39,I,1,to remove
+2E;44;41,I,5,to succeed;to come after
+2E;44;41,II,1,to leave behind
+2E;44;41,III,2,to oppose;to differ
+2E;44;41,IV,14,to break;to fail
+2E;44;41,V,1,to remain behind
+2E;44;41,VIII,35,to differ
+2E;44;41,X,5,to grant succession
+2E;44;42,I,184,to create
+2E;44;48,I,25,to pass away
+2E;44;48,II,1,to leave
+2E;44;48,V,1,to become empty
+2E;48;36,I,9,to engage in idle talk;to converse vainly
+2E;48;41,I,83,to fear;to be afraid
+2E;48;41,II,4,to frighten;to threaten
+2E;48;44,II,3,to bestow
+2E;48;46,I,5,to betray
+2E;48;46,VIII,2,to deceive
+2E;4A;28,I,4,to fail
+2E;4A;31,V,2,to select;to choose
+2E;4A;31,VIII,4,to choose
+2E;4A;44,II,1,to seem
+2F;28;31,II,4,to dispose;to arrange
+2F;28;31,IV,4,to turn away;to depart
+2F;28;31,V,4,to ponder
+2F;2D;36,IV,2,to refute
+2F;2D;48,I,1,to spread
+2F;2E;44,I,76,to enter
+2F;2E;44,IV,42,to admit
+2F;31;27,I,4,to avert;to repel;to prevent
+2F;31;27,VI,1,to dispute
+2F;31;2C,X,2,to gradually lead
+2F;31;33,I,5,to study;to learn
+2F;31;43,IV,6,to overtake;to grasp
+2F;31;43,VI,3,to overtake;to arrest
+2F;31;4A,I,12,to know
+2F;31;4A,IV,17,to make known
+2F;33;33,I,1,to bury
+2F;33;48,I,1,to bury
+2F;39;39,I,2,to thrust;to repulse
+2F;39;48,I,170,to call;to invite;to pray
+2F;39;48,VIII,3,to call;to ask
+2F;41;39,I,5,to defend;to deliver;to repel
+2F;41;39,III,1,to defend
+2F;43;43,I,2,to crush;to level
+2F;44;44,I,7,to indicate;to show;to direct
+2F;44;48,I,1,to come down
+2F;44;48,IV,2,to present;to let down
+2F;45;2F;45,I,1,to destroy
+2F;45;31,II,8,to destroy
+2F;45;3A,I,1,to break
+2F;46;48,I,2,to approach;to draw
+2F;47;46,IV,2,to compromise
+2F;48;31,I,1,to revolve
+2F;48;31,IV,1,to carry out
+2F;48;44,III,1,to alternate
+2F;48;45,I,7,to be as long as
+2F;4A;46,I,1,to acknowledge
+2F;4A;46,VI,1,to contract
+30;28;2D,I,5,to slaughter;to sacrifice
+30;28;2D,II,3,to slaughter
+30;2E;31,VIII,1,to store
+30;31;27,I,6,to create;to produce;to multiply
+30;31;48,I,1,to scatter
+30;43;31,I,84,to remember;to mention
+30;43;31,II,18,to remind
+30;43;31,V,51,to receive admonition
+30;43;31,VIII,1,to remember
+30;43;48,II,1,to slaughter
+30;44;44,I,1,to humiliate
+30;44;44,II,2,to tame
+30;44;44,IV,1,to humiliate
+30;47;28,I,35,to go;to take away
+30;47;28,IV,11,to remove;to take away
+30;47;44,I,1,to forget
+30;48;2F,I,1,to keep back
+30;48;42,I,36,to taste
+30;48;42,IV,22,to cause taste
+30;4A;39,IV,1,to spread
+31;27;4A,I,271,to see
+31;27;4A,III,2,to show off
+31;27;4A,IV,40,to show
+31;27;4A,VI,2,to come in sight
+31;28;2D,I,1,to profit
+31;28;35,V,13,to await
+31;28;37,I,3,to strengthen;to make firm
+31;28;37,III,1,to be constant
+31;28;48,I,4,to increase;to swell
+31;28;48,II,2,to bring up
+31;28;48,IV,2,to increase;to make numerous
+31;2A;39,I,1,to enjoy
+31;2A;44,II,2,to recite
+31;2C;2C,I,1,to shake
+31;2C;39,I,79,to return
+31;2C;39,VI,1,to return
+31;2C;41,I,2,to quake
+31;2C;45,I,5,to stone
+31;2C;48,I,22,to hope;to expect;to desire
+31;2C;48,IV,3,to defer;to postpone
+31;2D;28,I,2,to be vast
+31;2D;45,I,28,to have mercy
+31;2F;2F,I,36,to turn back;to return
+31;2F;2F,V,1,to waver
+31;2F;2F,VIII,8,to turn back;to return
+31;2F;41,I,1,to be close behind
+31;2F;4A,I,1,to perish
+31;2F;4A,IV,3,to ruin
+31;2F;4A,V,1,to fall
+31;32;42,I,61,to provide
+31;33;44,IV,130,to send
+31;33;48,I,1,to make
+31;34;2F,I,1,to be led aright
+31;36;39,I,1,to suckle
+31;36;39,IV,5,to nurse;to suckle
+31;36;39,X,1,to suckle
+31;36;48,I,38,to be pleased
+31;36;48,IV,3,to please;to satisfy
+31;36;48,VI,2,to agree
+31;36;48,VIII,3,to approve
+31;39;4A,I,2,to pasture;to observe
+31;39;4A,III,2,to observe
+31;3A;28,I,4,to desire;to prefer
+31;41;39,I,22,to raise
+31;42;28,I,3,to respect
+31;42;28,V,2,to be vigilant
+31;42;28,VIII,4,to watch
+31;42;4A,I,1,to ascend
+31;42;4A,VIII,1,to ascend
+31;43;28,I,9,to ride;to embark
+31;43;28,II,1,to assemble
+31;43;33,IV,2,to cast back;to plunge
+31;43;36,I,3,to flee;to strike
+31;43;39,I,5,to bow
+31;43;45,I,1,to heap
+31;43;46,I,2,to incline
+31;45;4A,I,9,to throw;to accuse
+31;47;28,I,3,to fear
+31;47;28,IV,1,to terrify
+31;47;28,X,1,to terrify
+31;47;42,I,5,to cover
+31;47;42,IV,3,to be hard on;to overburden;to cover
+31;48;2D,IV,1,to bring
+31;48;2F,III,8,to seduce;to demand;to get permission
+31;48;2F,IV,139,to intend;to desire;to want;to wish
+31;48;3A,I,3,to turn
+31;4A;28,VIII,9,to doubt
+31;4A;46,I,1,to cover
+32;2C;31,VIII,1,to repell
+32;2C;48,IV,2,to drive
+32;2D;32;2D,I,1,to draw away
+32;31;39,I,2,to plant;to sow
+32;31;4A,VIII,1,to look down
+32;39;45,I,13,to claim
+32;41;41,I,1,to hasten
+32;43;48,I,1,to purify
+32;43;48,II,12,to purify
+32;43;48,V,8,to purify
+32;44;32;44,I,3,to shake
+32;44;41,IV,4,to bring near
+32;44;42,IV,1,to make slip
+32;44;44,I,2,to slip
+32;44;44,IV,1,to make slip
+32;44;44,X,1,to make slip
+32;46;4A,I,2,to commit adultery
+32;47;42,I,3,to depart;to perish
+32;48;2C,II,5,to marry;to be paired
+32;48;2F,V,1,to take provision
+32;48;31,I,1,to visit
+32;48;31,VI,1,to incline away
+32;48;44,I,3,to cease
+32;4A;2F,I,49,to increase
+32;4A;2F,VIII,8,to increase
+32;4A;3A,I,6,to deviate;to turn away;to swerve
+32;4A;3A,IV,2,to deviate
+32;4A;44,I,8,to cease
+32;4A;44,II,1,to seperate
+32;4A;44,V,1,to be apart
+32;4A;46,II,26,to make fair-seeming
+32;4A;46,V,1,to beautify
+33;27;44,I,106,to ask
+33;27;44,VI,9,to question;to ask;to inquire
+33;27;45,I,3,to tire
+33;28;28,I,2,to insult
+33;28;2A,I,1,to have Sabbath
+33;28;2D,I,2,to swim;to float
+33;28;2D,II,42,to glorify;to praise
+33;28;3A,IV,1,to bestow
+33;28;42,I,20,to precede
+33;28;42,III,1,to race
+33;28;42,VIII,5,to race
+33;2A;31,VIII,1,to cover
+33;2C;2F,I,35,to prostrate
+33;2C;31,I,1,to burn
+33;2C;31,II,1,to overflow
+33;2C;46,I,3,to imprison
+33;2C;48,I,1,to cover with darkness
+33;2D;28,I,2,to drag
+33;2D;2A,IV,1,to destroy
+33;2D;31,I,3,to bewitch;to delude
+33;2E;31,I,11,to ridicule;to mock
+33;2E;31,II,22,to subject;to impose
+33;2E;31,X,1,to mock
+33;2E;37,I,2,to anger;to enrage
+33;2E;37,IV,1,to anger
+33;31;2D,I,1,to take out
+33;31;2D,II,3,to release
+33;31;31,I,1,to please
+33;31;31,IV,18,to conceal
+33;31;39,III,9,to hasten
+33;31;41,IV,6,to be extravagant;to exceed;to transgress
+33;31;42,I,4,to steal
+33;31;42,VIII,1,to steal
+33;31;4A,I,1,to pass;to set out
+33;31;4A,IV,6,to travel;to take
+33;37;2D,I,1,to spread out
+33;37;31,I,1,to write
+33;37;48,I,1,to attack
+33;39;2F,I,1,to be glad
+33;39;31,II,1,to set ablaze
+33;39;4A,I,20,to strive;to run
+33;41;31,IV,1,to brighten
+33;41;39,I,1,to drag
+33;41;43,I,2,to shed
+33;41;47,I,1,to fool
+33;42;37,I,3,to fall;to regret
+33;42;37,III,1,to drop
+33;42;37,IV,3,to cause;toll;to cause;to fall
+33;42;4A,I,12,to water;to give drink
+33;42;4A,IV,8,to give drink
+33;42;4A,X,2,to ask for water
+33;43;2A,I,1,to calm
+33;43;31,II,1,to dazzle
+33;43;46,I,15,to dwell;to live;to rest
+33;43;46,IV,5,to make dwell;to settle;to lodge
+33;44;28,I,1,to snatch away
+33;44;2E,I,1,to withdraw
+33;44;2E,VII,2,to pass;to detach
+33;44;37,II,2,to give power
+33;44;41,I,5,to pass (before)
+33;44;41,IV,2,to do before;to send before
+33;44;42,I,1,to smite
+33;44;43,I,12,to insert;to make enter
+33;44;44,V,1,to slip away
+33;44;45,II,6,to submit;to greet;to pay
+33;44;45,IV,22,to submit
+33;45;39,I,78,to hear;to listen
+33;45;39,IV,13,to make hear
+33;45;39,V,1,to listen
+33;45;39,VIII,16,to listen
+33;45;46,IV,1,to nourish
+33;45;48,II,8,to name
+33;46;47,V,1,to change with time
+33;47;45,III,1,to draw
+33;48;27,I,30,to be evil
+33;48;27,IV,5,to do evil
+33;48;2F,IX,2,to become black
+33;48;31,V,1,to climb over
+33;48;3A,IV,1,to swallow
+33;48;42,I,7,to drive
+33;48;44,II,4,to entice;to suggest
+33;48;45,I,4,to afflict
+33;48;45,IV,1,to pasture
+33;48;4A,I,1,to level
+33;48;4A,II,13,to fashion;to proportion
+33;48;4A,III,1,to level
+33;48;4A,VIII,35,to be equal;to be alike;to establish
+33;4A;2D,I,1,to move about
+33;4A;31,I,16,to travel
+33;4A;31,II,5,to move
+33;4A;44,I,1,to flow
+33;4A;44,IV,1,to cause flow
+34;28;47,II,1,to make appear
+34;28;47,VI,4,to look alike;to seem alike
+34;2C;31,I,1,to arise
+34;2E;35,I,1,to stare
+34;2F;2F,I,6,to strengthen
+34;2F;2F,VIII,1,to blow furiously
+34;31;28,I,15,to drink
+34;31;28,IV,1,to make drink
+34;31;2D,I,5,to expand;to open
+34;31;2F,II,1,to disperse
+34;31;39,I,2,to ordain
+34;31;42,IV,1,to shine
+34;31;43,III,1,to be a partner
+34;31;43,IV,71,to associate partners
+34;31;4A,I,4,to sell
+34;31;4A,VIII,21,to buy;to purchase;to exchange
+34;37;37,IV,1,to be unjust
+34;39;31,I,25,to perceive;to realize
+34;39;31,IV,2,to perceive;to be aware
+34;39;44,VIII,1,to flare
+34;3A;41,I,1,to impassion
+34;3A;44,I,1,to keep busy
+34;41;39,I,5,to intercede
+34;41;42,IV,2,to fear;to be afraid
+34;41;4A,I,2,to heal;to cure
+34;42;42,I,2,to make difficult;to cleave
+34;42;42,III,7,to oppose
+34;42;42,V,3,to split
+34;42;42,VII,5,to split
+34;42;48,I,4,to suffer;to be wretched;to be distressed
+34;43;31,I,46,to be grateful;to give thanks
+34;43;48,I,1,to complain
+34;43;48,VIII,1,to complain
+34;45;2A,IV,1,to rejoice
+34;45;32,VIII,1,to shrink with aversion
+34;45;44,VIII,2,to contain
+34;47;2F,I,44,to testify;to bear witness
+34;47;2F,IV,7,to make witness
+34;47;2F,X,2,to call;to witness
+34;47;48,VIII,8,to desire
+34;48;31,III,1,to consult
+34;48;31,IV,1,to point
+34;48;4A,I,1,to scald
+34;4A;27,I,236,to will;to wish
+34;4A;39,I,1,to spread
+35;28;28,I,4,to pour
+35;28;2D,II,1,to seize in the morning
+35;28;2D,IV,28,to become
+35;28;31,I,58,to be patient
+35;28;31,III,1,to be patient
+35;28;31,VIII,3,to be patient;to be steadfast
+35;28;48,I,1,to incline
+35;2D;28,I,1,to protect
+35;2D;28,III,2,to keep company
+35;2F;2F,I,37,to turn away;to avert;to hinder
+35;2F;2F,II,1,to hinder
+35;2F;31,I,1,to proceed
+35;2F;31,IV,1,to take away
+35;2F;39,I,1,to proclaim
+35;2F;39,II,1,to have headache
+35;2F;39,V,1,to be divided
+35;2F;41,I,4,to turn away
+35;2F;42,I,15,to be truthful;to fulfill
+35;2F;42,II,10,to accept truth;to admit;to confirm;to believe
+35;2F;42,V,6,to give charity
+35;2F;4A,V,1,to give attention
+35;31;2E,VIII,1,to cry
+35;31;2E,X,1,to cry for help
+35;31;31,IV,4,to persist
+35;31;41,I,14,to divert;to turn away
+35;31;41,II,10,to explain
+35;31;41,VII,1,to turn away
+35;31;45,I,1,to pluck
+35;39;2F,I,1,to ascend
+35;39;2F,IV,1,to run uphill
+35;39;2F,V,1,to climb
+35;39;31,II,1,to turn
+35;39;42,I,2,to faint;to fall dead
+35;3A;48,I,2,to incline
+35;41;2D,I,6,to overlook
+35;41;48,IV,2,to choose
+35;41;48,VIII,12,to choose
+35;43;43,I,1,to strike
+35;44;28,I,2,to crucify
+35;44;28,II,4,to crucify
+35;44;2D,I,2,to be righteous
+35;44;2D,IV,28,to correct;to reform;to improve;to make peace
+35;44;48,II,12,to pray;to bless
+35;44;4A,I,13,to burn
+35;44;4A,II,1,to burn
+35;44;4A,IV,4,to burn
+35;44;4A,VIII,2,to warm
+35;45;45,I,2,to become deaf
+35;45;45,IV,1,to make deaf
+35;46;39,I,15,to make;to construct;to do
+35;46;39,VIII,1,to choose
+35;47;31,I,1,to melt
+35;48;28,IV,64,to strike;to befall;to bestow
+35;48;31,I,1,to incline
+35;48;31,II,4,to form;to fashion;to shape
+35;48;45,I,2,to fast
+35;4A;2F,VIII,1,to hunt
+35;4A;31,I,1,to reach
+36;2D;43,I,7,to laugh
+36;2D;43,IV,1,to make laugh
+36;2D;48,I,1,to expose
+36;31;28,I,55,to strike;to set forth
+36;31;31,I,19,to harm
+36;31;31,III,3,to suffer;to be harmed
+36;31;31,VIII,7,to force;to compell
+36;31;39,I,1,to humble
+36;31;39,V,3,to humble
+36;39;41,I,2,to weaken
+36;39;41,III,9,to double;to multiply
+36;39;41,X,8,to be oppressed
+36;44;44,I,53,to go astray;to err;to lose
+36;44;44,IV,64,to let go astray;to mislead
+36;45;45,I,2,to draw (near)
+36;47;27,III,1,to imitate
+36;48;27,IV,3,to light;to flash;to glow
+36;4A;39,IV,10,to let go waste;to neglect
+36;4A;41,II,1,to offer hospitality
+36;4A;42,I,7,to straiten
+36;4A;42,II,1,to distress
+37;28;39,I,11,to seal
+37;2D;48,I,1,to spread
+37;31;2D,I,1,to cast
+37;31;2F,I,3,to send away;to drive away
+37;39;45,I,5,to eat;to taste;to feed
+37;39;45,IV,13,to feed
+37;39;45,X,1,to ask for food
+37;39;46,I,1,to defame
+37;3A;4A,I,12,to transgress;to overflow
+37;3A;4A,IV,1,to make transgress
+37;41;27,IV,3,to extinguish;to put out
+37;41;42,I,3,to begin
+37;44;28,I,1,to seek
+37;44;39,I,2,to rise
+37;44;39,IV,1,to inform
+37;44;39,VIII,7,to look
+37;44;42,II,10,to divorce
+37;44;42,VII,9,to set out;to proceeed;to go forth
+37;45;2B,I,2,to;touch
+37;45;33,I,5,to blind;to destory;to obliterate
+37;45;39,I,8,to hope;to desire
+37;45;46,XII,9,to be satisfied;to be secure;to be content
+37;47;31,I,1,to purify
+37;47;31,II,9,to purify
+37;47;31,V,5,to cleanse;to purify
+37;48;39,I,2,to obey
+37;48;39,II,1,to prompt
+37;48;39,IV,72,to obey
+37;48;39,V,2,to volunteer
+37;48;39,X,42,to be able;to;to be capable
+37;48;41,I,8,to circulate;to go around
+37;48;41,V,2,to walk;to circumambulate
+37;48;42,II,1,to encircle the neck
+37;48;42,IV,1,to afford
+37;48;44,I,3,to prolong;to grow long
+37;48;44,VI,1,to prolong
+37;48;4A,I,1,to fold
+37;4A;28,I,3,to seem suitable;to remit;to do well
+37;4A;31,I,1,to fly
+37;4A;31,V,3,to ascribe an evil omen
+38;41;31,IV,1,to give victory
+38;44;44,I,9,to continue;to remain
+38;44;44,II,2,to shade
+38;44;45,I,110,to oppress;to wrong
+38;44;45,IV,1,to darken
+38;45;27,I,1,to suffer from thirst
+38;46;46,I,47,to think;to assume;to guess
+38;47;31,I,10,to appear;to become manifest
+38;47;31,III,6,to support;to back
+38;47;31,IV,8,to make apparent;to reveal
+38;47;31,VI,2,to support
+39;28;27,I,1,to care
+39;28;2B,I,1,to be amused
+39;28;2F,I,122,to worship
+39;28;2F,II,1,to enslave
+39;28;31,I,1,to interpret
+39;28;31,VIII,1,to learn a lesson
+39;28;33,I,2,to frown
+39;2A;28,X,4,to ask for favor
+39;2A;2F,IV,14,to prepare
+39;2A;44,I,1,to drag
+39;2A;48,I,5,to be insolent;to exceed;to rebell
+39;2B;31,I,1,to discover
+39;2B;31,IV,1,to make known
+39;2B;48,I,5,to act wickedly;to commit evil
+39;2C;28,I,8,to wonder;to be amazed;to be astonished
+39;2C;28,IV,11,to please;to impress
+39;2C;32,I,1,to be unable
+39;2C;32,IV,4,to escape
+39;2C;44,I,5,to hasten
+39;2C;44,II,5,to hasten
+39;2C;44,IV,1,to make hasten
+39;2C;44,V,1,to hurry
+39;2C;44,X,19,to seek;to hasten
+39;2F;2F,I,7,to count
+39;2F;2F,II,1,to count
+39;2F;2F,IV,20,to prepare
+39;2F;2F,VIII,1,to count
+39;2F;44,I,14,to be just
+39;2F;48,I,3,to transgress;to pass beyond
+39;2F;48,III,1,to be enemies
+39;2F;48,V,3,to transgress
+39;2F;48,VIII,15,to transgress
+39;30;28,II,41,to punish
+39;30;31,VIII,5,to make excuse
+39;31;2C,I,5,to ascend
+39;31;34,I,2,to erect;to construct
+39;31;36,I,11,to display;to present;to expose;to turn away
+39;31;36,II,1,to hint
+39;31;36,IV,32,to turn away
+39;31;41,I,20,to know;to recognize
+39;31;41,II,2,to make known
+39;31;41,VI,2,to know;to recognize
+39;31;41,VIII,3,to acknowledge;to confess
+39;31;48,VIII,1,to seize
+39;31;4A,I,1,to unclothe
+39;32;28,I,2,to escape
+39;32;31,II,3,to honour;to assist
+39;32;32,I,1,to overpower
+39;32;32,II,1,to strengthen
+39;32;32,IV,1,to honor
+39;32;44,I,1,to set aside
+39;32;44,VIII,7,to withdraw;to leave;to keep away
+39;32;45,I,4,to resolve;to decide;to determine
+39;33;31,VI,1,to disagree
+39;33;39;33,I,1,to depart
+39;33;4A,I,30,to perhaps
+39;34;31,III,1,to live
+39;34;48,I,1,to turn away
+39;35;31,I,2,to press
+39;35;45,I,3,to save;to protect
+39;35;45,VIII,5,to hold fast
+39;35;45,X,1,to save
+39;35;4A,I,27,to disobey
+39;36;36,I,2,to bite
+39;36;44,I,2,to hinder;to constrain
+39;37;44,II,1,to leave untended
+39;37;48,I,1,to take
+39;37;48,IV,8,to give
+39;38;45,II,2,to honor
+39;38;45,IV,1,to make great
+39;41;41,X,3,to refrain;to be chaste
+39;41;48,I,27,to forgive;to pardon
+39;42;28,II,2,to look back;to return
+39;42;28,III,6,to retaliate
+39;42;28,IV,1,to penalize
+39;42;2F,I,1,to pledge
+39;42;2F,II,1,to contract
+39;42;31,I,5,to hamstrung
+39;42;44,I,49,to understand;to reason
+39;43;41,I,1,to devote
+39;44;45,I,382,to know
+39;44;45,II,41,to teach
+39;44;45,V,2,to learn
+39;44;46,IV,12,to declare;to reveal;to proclaim
+39;44;48,I,20,to be exalted;to be high
+39;44;48,IV,8,to come
+39;44;48,X,1,to overcome
+39;45;2F,V,1,to intend
+39;45;31,I,4,to maintain;to build on
+39;45;31,II,5,to grant life
+39;45;31,VIII,1,to perform Umrah
+39;45;31,X,1,to settle
+39;45;44,I,276,to do;to work
+39;45;47,I,7,to wander blindly
+39;45;4A,I,7,to be blind
+39;45;4A,II,1,to obscure
+39;46;2A,I,3,to suffer;to be distressed
+39;46;2A,IV,1,to put into difficulty
+39;46;48,I,1,to be humbled
+39;47;2F,I,6,to make a covenant;to promise
+39;47;2F,III,11,to make a covenant
+39;48;2F,I,18,to return
+39;48;2F,IV,18,to return
+39;48;30,I,10,to seek refuge
+39;48;30,IV,1,to seek refuge
+39;48;30,X,4,to seek refuge
+39;48;44,I,1,to oppress
+39;48;46,IV,2,to help
+39;48;46,VI,2,to help
+39;48;46,X,4,to seek help
+39;4A;28,I,1,to cause defect
+39;4A;4A,I,2,to tire
+3A;2F;31,III,2,to leave behind
+3A;2F;48,I,3,to leave early
+3A;31;28,I,2,to set
+3A;31;31,I,15,to deceive;to delude
+3A;31;41,VIII,1,to take
+3A;31;42,IV,17,to drown
+3A;31;48,IV,2,to overpower;to arouse
+3A;33;44,I,1,to wash
+3A;33;44,VIII,1,to bathe
+3A;34;48,I,13,to cover
+3A;34;48,II,3,to cover
+3A;34;48,IV,4,to cover
+3A;34;48,V,1,to cover
+3A;34;48,X,2,to cover
+3A;36;28,I,6,to be angry
+3A;36;36,I,4,to lower
+3A;37;34,IV,1,to darken
+3A;41;31,I,65,to forgive
+3A;41;31,X,40,to ask forgiveness
+3A;41;44,I,1,to neglect
+3A;41;44,IV,1,to make heedless
+3A;44;28,I,15,to overcome;to defeat
+3A;44;38,I,2,to be stern
+3A;44;38,X,1,to become thick
+3A;44;42,II,1,to close
+3A;44;44,I,5,to defraud;to chain;to shackle
+3A;44;48,I,2,to exceed
+3A;44;4A,I,1,to boil
+3A;45;32,VI,1,to wink
+3A;45;36,IV,1,to close
+3A;46;45,I,2,to take as war booty
+3A;46;4A,I,15,to avail;to prosper
+3A;46;4A,IV,28,to avail;to enrich
+3A;46;4A,X,4,to be self-sufficient
+3A;48;2B,IV,1,to be relieved
+3A;48;2B,X,4,to seek help
+3A;48;35,I,1,to dive
+3A;48;4A,I,3,to err;to go astray
+3A;48;4A,IV,8,to mislead;to lead astray
+3A;4A;28,VIII,1,to backbite
+3A;4A;2B,IV,1,to be given rain
+3A;4A;31,II,4,to change
+3A;4A;31,V,1,to change
+3A;4A;36,I,2,to subside;to fall short
+3A;4A;38,I,3,to anger;to enrage
+41;2A;27,I,1,to cease
+41;2A;2D,I,16,to open;to give victory
+41;2A;2D,II,1,to open
+41;2A;2D,X,3,to seek victory
+41;2A;31,I,1,to invent
+41;2A;31,II,1,to subside
+41;2A;42,I,1,to part
+41;2A;46,I,23,to persecute;to test;to try
+41;2A;4A,IV,5,to give ruling;to explain;to advise
+41;2A;4A,X,6,to seek ruling;to inquire;to ask
+41;2C;31,I,2,to give lie
+41;2C;31,II,6,to cause gush
+41;2C;31,V,1,to gush forth
+41;2C;31,VII,1,to gush forth
+41;2F;4A,I,1,to ransom
+41;2F;4A,III,1,to ransom
+41;2F;4A,VIII,7,to offer ransom
+41;31;2C,I,1,to be cleft asunder
+41;31;2D,I,16,to rejoice
+41;31;31,I,6,to flee
+41;31;34,I,1,to spread
+41;31;36,I,9,to specify;to ordain;to make obligatory
+41;31;37,I,1,to hasten
+41;31;37,II,5,to neglect;to fail
+41;31;3A,I,2,to finish
+41;31;3A,IV,3,to pour
+41;31;42,I,5,to divide
+41;31;42,II,9,to differentiate;to make distinction
+41;31;42,III,1,to part
+41;31;42,V,8,to be divided
+41;31;4A,I,1,to invent
+41;31;4A,VIII,50,to invent
+41;32;32,X,3,to incite;to scare;to drive out
+41;32;39,I,3,to be terrified;to be afraid
+41;32;39,II,1,to remove fear
+41;33;2D,I,2,to make room
+41;33;2D,V,1,to make room
+41;33;2F,I,3,to be corrupted;to be ruined
+41;33;2F,IV,15,to cause corruption
+41;33;42,I,10,to disobey defiantly
+41;34;44,I,4,to lose courage
+41;35;44,I,5,to set out;to depart;to judge
+41;35;44,II,17,to make clear;to explain in detail
+41;36;2D,I,1,to shame
+41;36;36,VII,3,to rush;to disperse
+41;36;44,II,17,to bestow;to prefer;to favor
+41;36;44,V,1,to assert superiority
+41;36;48,IV,1,to go
+41;37;31,I,10,to create
+41;37;31,VII,1,to be cleft asunder
+41;39;44,I,88,to do
+41;42;2F,I,2,to miss
+41;42;2F,V,1,to inspect
+41;42;47,I,19,to understand
+41;42;47,V,1,to obtain understanding
+41;43;31,II,1,to think
+41;43;31,V,17,to ponder;to reflect
+41;43;47,V,1,to wonder
+41;44;2D,IV,27,to succeed
+41;44;42,VII,1,to part
+41;46;2F,II,1,to weaken in mind
+41;47;45,II,1,to give understanding
+41;48;2A,I,3,to escape
+41;48;31,I,3,to overflow;to gush forth;to boil up
+41;48;32,I,3,to be successful;to attain
+41;48;36,II,1,to entrust
+41;48;42,IV,1,to recover
+41;4A;27,I,3,to return
+41;4A;27,IV,3,to give;to restore
+41;4A;27,V,1,to incline
+41;4A;36,I,2,to overflow
+41;4A;36,IV,7,to depart
+42;28;31,IV,1,to provide a grave
+42;28;33,VIII,1,to acquire
+42;28;36,I,5,to withhold;to withdraw;to close
+42;28;44,I,9,to accept
+42;28;44,IV,9,to approach
+42;28;44,V,10,to accept
+42;2A;31,I,1,to be stingy
+42;2A;44,I,83,to kill
+42;2A;44,II,4,to kill
+42;2A;44,III,54,to fight
+42;2A;44,VIII,4,to fight
+42;2D;45,VIII,1,to attempt
+42;2F;2F,I,4,to tear
+42;2F;31,I,25,to restrict;to control;to have power
+42;2F;31,II,16,to determine;to plot
+42;2F;33,II,1,to sanctify
+42;2F;45,I,2,to precede;to proceed
+42;2F;45,II,27,to send forth;to offer
+42;2F;45,V,2,to precede;to proceed
+42;2F;45,X,4,to advance;to precede
+42;2F;48,VIII,1,to follow
+42;30;41,I,9,to cast;to throw;to hurl
+42;31;27,I,16,to read;to recite
+42;31;27,IV,1,to make recite
+42;31;28,I,11,to approach;to go near
+42;31;28,II,5,to bring close
+42;31;28,VIII,5,to approach;to go near
+42;31;31,I,5,to cool;to comfort
+42;31;31,IV,4,to ratify;to affirm
+42;31;31,X,1,to remain
+42;31;36,I,1,to pass
+42;31;36,IV,6,to lend;to loan
+42;31;41,VIII,4,to commit;to acquire;to earn
+42;33;37,IV,3,to be just
+42;33;45,I,2,to distribute
+42;33;45,III,1,to swear
+42;33;45,IV,20,to swear
+42;33;45,VI,1,to distribute
+42;33;45,X,1,to seek division
+42;33;48,I,3,to harden
+42;34;39;31,IV,1,to shiver
+42;35;2F,I,1,to be moderate
+42;35;31,I,1,to shorten
+42;35;31,IV,1,to cease
+42;35;35,I,20,to narrate
+42;35;45,I,1,to shatter
+42;36;36,VII,1,to collapse
+42;36;4A,I,59,to decree;to decide;to judge
+42;37;39,I,12,to cut
+42;37;39,II,12,to cut;to divide
+42;37;39,V,5,to cut;to severe
+42;39;2F,I,12,to sit
+42;41;48,I,1,to pursue
+42;41;48,II,4,to send;to follow
+42;44;28,I,1,to return
+42;44;28,II,6,to turn;to alternate
+42;44;28,V,1,to turn around
+42;44;28,VII,17,to turn back;to return
+42;44;39,IV,1,to withhold
+42;44;44,I,1,to be little
+42;44;44,II,1,to make few
+42;44;44,IV,1,to carry
+42;44;4A,I,1,to be displeased
+42;46;2A,I,2,to be obedient
+42;46;37,I,4,to despair
+42;47;31,I,1,to oppress
+42;48;44,I,1618,to say
+42;48;44,V,2,to fabricate;to make up
+42;48;45,I,33,to stand up;to rise;to establish
+42;48;45,IV,54,to establish
+42;48;45,X,10,to be upright;to be straight;to stand firm
+42;4A;36,II,2,to appoint;to destine
+43;28;28,I,1,to cast
+43;28;2A,I,3,to be disgraced
+43;28;31,I,8,to be great
+43;28;31,II,4,to magnify
+43;28;31,IV,1,to admire greatly
+43;28;31,V,2,to be arrogant
+43;28;31,X,40,to be arrogant
+43;28;43;28,I,1,to overturn
+43;2A;28,I,49,to write;to prescribe;to ordain
+43;2A;28,III,1,to give writing
+43;2A;28,VIII,1,to write
+43;2A;45,I,21,to conceal;to hide
+43;2B;31,I,2,to be many;to be numerous
+43;2B;31,II,1,to increase
+43;2B;31,IV,2,to be many;to be frequent
+43;2B;31,X,3,to multiply;to acquire more
+43;2F;31,VII,1,to fall and lose luster
+43;2F;4A,IV,1,to withhold
+43;30;28,I,11,to deny;to lie
+43;30;28,II,176,to deny;to reject
+43;31;45,II,2,to honor
+43;31;45,IV,4,to honor;to make comfortable;to be generous
+43;31;47,I,17,to dislike;to hate
+43;31;47,II,1,to make hateful
+43;31;47,IV,5,to compel;to force
+43;33;28,I,62,to earn
+43;33;28,VIII,5,to earn
+43;33;48,I,3,to clothe;to cover
+43;34;37,I,1,to strip away
+43;34;41,I,14,to remove;to uncover
+43;41;31,I,289,to disbelieve
+43;41;31,II,14,to remove
+43;41;31,IV,1,to be ngrateful;to deny
+43;41;41,I,8,to restrain;to withhold;to avert
+43;41;44,I,3,to take charge;to nurse;to rear
+43;41;44,II,1,to put in care
+43;41;44,IV,1,to entrust
+43;41;4A,I,32,to be sufficient
+43;44;27,I,1,to protect
+43;44;41,II,7,to burden
+43;44;45,II,20,to speak
+43;44;45,V,4,to speak
+43;45;44,IV,2,to perfect;to complete
+43;46;32,I,3,to hoard
+43;46;46,IV,3,to conceal
+43;48;2F,I,24,to be near;to nearly do;to almost do
+43;48;31,II,3,to wrap
+43;48;46,I,1358,to be
+43;48;4A,I,1,to brand
+43;4A;2F,I,8,to scheme;to plot;to plan
+43;4A;44,I,2,to measure
+43;4A;44,VIII,2,to measure
+43;4A;46,X,2,to give in;to submit
+44;28;2B,I,30,to remain;to stay;to hesitate;to delay
+44;28;33,I,11,to obscure;to confuse;to mix;to wear
+44;2C;2C,I,2,to persist
+44;2D;2F,IV,3,to deviate;to distort
+44;2D;42,I,2,to join
+44;2D;42,IV,4,to join
+44;30;30,I,1,to delight
+44;32;45,IV,3,to compel;to make adhere
+44;37;41,V,1,to be cautious
+44;38;4A,I,1,to blaze
+44;39;28,I,9,to play
+44;39;46,I,23,to curse
+44;3A;48,I,1,to make noise
+44;41;2A,I,1,to turn away
+44;41;2A,VIII,2,to look back
+44;41;2D,I,1,to burn
+44;41;38,I,1,to utter
+44;41;41,VIII,1,to wind
+44;41;48,IV,3,to find
+44;42;37,VIII,2,to pick
+44;42;41,I,3,to swallow
+44;42;45,VIII,1,to swallow
+44;42;4A,I,14,to receive;to meet
+44;42;4A,II,6,to grant;to receive
+44;42;4A,III,3,to they meet
+44;42;4A,IV,71,to cast;to throw;to meet;to offer
+44;42;4A,V,4,to cast;to throw;to offer
+44;42;4A,VIII,7,to meet
+44;45;32,I,3,to criticize;to insult
+44;45;33,I,4,to;touch;to have contact
+44;45;33,VIII,1,to seek
+44;45;45,I,2,to bring forward;to come
+44;47;2B,I,2,to loll the;tongue
+44;47;45,IV,1,to inspire
+44;47;48,I,1,to distract;to divert
+44;47;48,IV,4,to distract;to divert
+44;48;2A,I,1,to not be
+44;48;45,I,3,to blame
+44;48;45,VI,1,to blame
+44;48;4A,I,3,to distort
+44;48;4A,II,1,to turn aside
+44;4A;2A,I,1,to deprive
+44;4A;33,I,89,to not be
+44;4A;46,I,2,to deal gently;to relax
+44;4A;46,IV,1,to make pliable
+45;2A;39,II,18,to grant;to bestow;to provide
+45;2A;39,V,11,to enjoy
+45;2A;39,X,6,to profit;to benifit;to enjoy
+45;2B;44,V,1,to assume a likeness
+45;2D;35,II,2,to purify;to purge
+45;2D;42,I,2,to destroy
+45;2D;46,VIII,2,to test;to examine
+45;2D;48,I,3,to eliminate;to erase
+45;2F;2F,I,13,to spread;to extend;to prolong
+45;2F;2F,IV,10,to reinforce;to extend;to provide;to aid
+45;31;2C,I,2,to release
+45;31;2D,I,1,to be insolent
+45;31;2F,I,1,to persist
+45;31;31,I,10,to pass;to continue
+45;31;36,I,1,to be ill
+45;31;4A,I,4,to dispute;to doubt
+45;31;4A,III,1,to argue
+45;31;4A,VIII,5,to dispute;to doubt
+45;32;42,II,2,to disintegrate;to disperse
+45;33;2D,I,3,to wipe
+45;33;2E,I,1,to transform
+45;33;33,I,56,to;touch
+45;33;33,VI,2,to;touch
+45;33;43,II,1,to hold fast
+45;33;43,IV,18,to retain;to withhold
+45;33;43,X,3,to grasp;to hold fast
+45;33;48,IV,1,to reach evening
+45;34;4A,I,21,to walk
+45;36;4A,I,4,to go on;to continue;to pass
+45;37;31,IV,7,to shower;to send rain
+45;37;48,V,1,to swagger
+45;43;2B,I,4,to stay;to remain
+45;43;31,I,22,to plot;to scheme;to plan
+45;43;46,II,13,to establish
+45;43;46,IV,1,to give power
+45;44;27,I,6,to fill
+45;44;27,VIII,1,to fill
+45;44;43,I,44,to possess;to have power
+45;44;44,IV,3,to dictate
+45;44;48,IV,9,to give respite
+45;46;39,I,12,to prevent
+45;46;46,I,16,to favor
+45;46;4A,I,3,to wish
+45;46;4A,II,2,to arouse desire
+45;46;4A,IV,3,to emit
+45;46;4A,V,6,to wish
+45;47;2F,I,1,to prepare
+45;47;2F,II,1,to spread
+45;47;44,II,2,to give respite
+45;47;44,IV,1,to give respite
+45;48;2A,I,39,to die
+45;48;2A,IV,21,to cause death
+45;48;2C,I,1,to surge
+45;48;31,I,2,to shake;to sway
+45;4A;2F,I,3,to shake
+45;4A;31,I,1,to get provision
+45;4A;32,I,2,to sepearte;to distinguish;to stand apart
+45;4A;32,V,1,to burst
+45;4A;32,VIII,1,to stand apart
+45;4A;44,I,3,to deviate;to assult;to incline
+46;27;4A,I,3,to distance;to become remote;to keep away
+46;28;27,II,46,to inform
+46;28;27,IV,4,to inform
+46;28;27,X,1,to ask;to inform
+46;28;2A,I,1,to produce
+46;28;2A,IV,16,to make grow
+46;28;30,I,10,to throw;to cast
+46;28;30,VIII,2,to withdraw
+46;28;32,VI,1,to call
+46;28;37,X,1,to draw correct conclusion
+46;2A;42,I,1,to raise
+46;2B;31,VIII,1,to scatter
+46;2C;48,I,2,to save;to escape
+46;2C;48,II,37,to save;to deliver
+46;2C;48,III,1,to consult privately
+46;2C;48,IV,23,to save
+46;2C;48,VI,4,to hold secret counsel
+46;2D;2A,I,4,to carve
+46;2D;31,I,1,to sacrifice
+46;2F;48,I,1,to call
+46;2F;48,III,44,to call
+46;30;31,I,4,to vow;to worn
+46;30;31,IV,44,to warn
+46;32;39,I,10,to take way;to remove;to withdraw
+46;32;39,III,1,to dispute
+46;32;39,VI,7,to dispute;to disagree
+46;32;3A,I,4,to cause discord
+46;32;41,IV,2,to be intoxicated
+46;32;44,I,6,to descend;to bring down
+46;32;44,II,62,to send down;to reveal
+46;32;44,IV,183,to send down;to reveal
+46;32;44,V,7,to descend;to bring down
+46;33;2E,I,2,to abolish;to abrogate
+46;33;2E,X,1,to transcribe
+46;33;41,I,3,to scatter;to blow away;to blast
+46;33;44,I,2,to descend;to hasten
+46;33;4A,I,35,to forget
+46;33;4A,IV,7,to make forget
+46;34;27,II,1,to bring up
+46;34;27,IV,20,to produce;to raise
+46;34;31,I,3,to spread;to lay open
+46;34;31,IV,3,to raise;to revive;to resurrect
+46;34;31,VIII,3,to disperse
+46;34;32,I,2,to rise
+46;34;32,IV,1,to raise
+46;35;28,I,2,to be fixed;to labour
+46;35;2A,IV,2,to listen;to play attention
+46;35;2D,I,5,to advise
+46;35;31,I,59,to help
+46;35;31,VI,1,to help
+46;35;31,VIII,7,to defend;to help
+46;35;31,X,2,to seek help
+46;36;2C,I,1,to roast
+46;37;42,I,9,to speak
+46;37;42,IV,2,to make speak
+46;38;31,I,87,to look;to see
+46;38;31,IV,12,to give respite
+46;38;31,VIII,8,to wait
+46;39;42,I,1,to shout
+46;39;45,I,18,to be excellent
+46;39;45,II,1,to favor
+46;39;45,IV,17,to bestow favor
+46;3A;36,IV,1,to shake
+46;41;2E,I,19,to blow;to breathe
+46;41;2F,I,4,to be exhausted
+46;41;30,I,3,to pass
+46;41;31,I,8,to go forth
+46;41;33,V,1,to breathe
+46;41;33,VI,1,to aspire
+46;41;34,I,1,to pasture
+46;41;39,I,31,to profit;to benifit
+46;41;42,III,2,to be hypocritical
+46;41;42,IV,68,to spend
+46;41;4A,I,1,to exile
+46;42;28,II,1,to explore
+46;42;30,IV,4,to save
+46;42;30,X,1,to take back
+46;42;31,I,1,to blow
+46;42;35,I,7,to decrease;to reduce;to lessen
+46;42;36,I,6,to break
+46;42;36,IV,1,to weigh
+46;42;45,I,4,to resent;to take revenge
+46;42;45,VIII,6,to take retribution
+46;43;2B,I,6,to break (oath)
+46;43;2D,I,14,to marry
+46;43;2D,IV,3,to marry
+46;43;2D,X,1,to marry
+46;43;31,I,1,to feel unfamiliar
+46;43;31,II,1,to disguise
+46;43;31,IV,3,to deny
+46;43;33,I,1,to turn
+46;43;33,II,1,to reverse
+46;43;35,I,2,to turn
+46;43;41,X,3,to disdain
+46;47;31,I,2,to repel
+46;47;4A,I,32,to forbid
+46;47;4A,VI,1,to forbid
+46;47;4A,VIII,16,to refrain;to cease;to desist
+46;48;27,I,1,to burden
+46;48;28,IV,11,to turn
+46;4A;44,I,11,to reach
+47;27;2A,I,4,to bring
+47;28;37,I,8,to go down
+47;2C;2F,V,1,to arise from sleep for prayer
+47;2C;31,I,5,to avoid
+47;2C;31,III,16,to emigrate
+47;2C;39,I,1,to sleep
+47;2F;45,II,1,to demolish
+47;2F;4A,I,144,to guide
+47;2F;4A,VIII,40,to be guided
+47;31;39,I,2,to rush;to hasten
+47;32;27,X,21,to mock;to ridicule
+47;32;32,I,1,to shake
+47;32;32,VIII,4,to stir;to move
+47;32;45,I,2,to defeat
+47;34;34,I,1,to bring down leaves
+47;44;43,I,5,to die;to be destroyed
+47;44;43,IV,51,to destroy
+47;44;44,IV,4,to;to be dedicated
+47;45;45,I,8,to determine;to plan;to plot;to desire
+47;45;45,IV,1,to worry
+47;48;2F,I,11,to be Jewish
+47;48;31,VII,1,to collapse
+47;48;46,IV,2,to humiliate
+47;48;4A,I,8,to desire
+47;48;4A,X,1,to entice
+47;4A;27,II,2,to facilitate
+47;4A;2A,I,1,to Come on
+47;4A;2C,I,2,to wither;to dry
+47;4A;45,I,1,to roam
+48;28;42,IV,1,to destroy
+48;2A;31,I,1,to deprive
+48;2B;42,III,1,to bound
+48;2B;42,IV,1,to bind
+48;2C;28,I,1,to be down
+48;2C;2F,I,106,to find
+48;2C;33,IV,3,to feel;to sense
+48;2C;41,IV,1,to make expedition
+48;2C;44,I,3,to feel fear;to be afraid
+48;2C;47,II,2,to direct;to turn
+48;2C;47,V,1,to turn
+48;2D;4A,IV,72,to reveal;to inspire
+48;2F;2F,I,17,to love;to wish
+48;2F;39,I,1,to disregard
+48;2F;39,II,1,to forsake
+48;30;31,I,45,to leave;to forsake
+48;31;2B,I,13,to inherit
+48;31;2B,IV,12,to make inherit
+48;31;2F,I,2,to come
+48;31;2F,IV,1,to lead
+48;31;4A,III,4,to hide;to conceal;to cover
+48;31;4A,IV,1,to ignite
+48;31;4A,VI,2,to hide
+48;32;31,I,7,to bear
+48;32;39,I,3,to set in rows
+48;32;39,IV,2,to grant power
+48;32;46,I,3,to weigh
+48;33;37,I,1,to penetrate the center
+48;33;39,I,6,to encompass;to extend
+48;33;42,I,1,to envelops
+48;33;42,VIII,1,to be full
+48;33;45,I,1,to brand
+48;33;48;33,I,4,to whisper
+48;35;41,I,13,to attribute;to ascribe
+48;35;44,I,10,to join;to reach
+48;35;44,II,1,to convey
+48;35;4A,I,1,to make
+48;35;4A,II,11,to enjoin
+48;35;4A,IV,5,to make;to instruct;to enjoin
+48;35;4A,VI,5,to enjoin;to transmit
+48;36;39,I,21,to deliver;to give birth
+48;36;39,IV,1,to be active
+48;37;27,I,3,to step;to trod;to trample
+48;37;27,III,1,to adjust
+48;39;2F,I,70,to promise
+48;39;2F,III,4,to appoint
+48;39;2F,IV,1,to threaten
+48;39;2F,VI,1,to make an appointment
+48;39;38,I,15,to instruct;to advise;to preach
+48;39;4A,I,1,to be conscious
+48;39;4A,IV,2,to hoard;to keep
+48;41;36,IV,1,to hasten
+48;41;42,II,1,to cause reconciliation
+48;41;4A,II,18,to pay in full;to fulfill
+48;41;4A,IV,18,to fulfill
+48;41;4A,V,24,to pass away;to die
+48;41;4A,X,1,to take in full
+48;42;28,I,1,to spread
+48;42;2A,II,1,to be gathered;to an appointed time
+48;42;2F,IV,5,to kindle;to heat;to ignite;to light
+48;42;2F,X,1,to kindle
+48;42;31,II,1,to respect
+48;42;39,I,12,to fall;to occur;to fulfill
+48;42;39,IV,1,to cause
+48;42;41,I,3,to make stand
+48;42;4A,I,16,to save;to protect
+48;42;4A,VIII,166,to be righteous;to fear (Allah)
+48;43;27,V,1,to lean
+48;43;27,VIII,1,to recline
+48;43;32,I,1,to strike
+48;43;44,II,2,to entrust;to put in charge
+48;43;44,V,40,to put trust
+48;44;2C,I,3,to penetrate;to pass
+48;44;2C,IV,10,to cause enter
+48;44;2F,I,9,to beget;to be born
+48;44;4A,I,1,to be close
+48;44;4A,II,30,to turn
+48;44;4A,V,78,to turn
+48;46;4A,I,1,to slacken
+48;47;28,I,22,to grant;to bestow
+48;47;46,I,5,to weaken
+4A;27;33,I,8,to despair
+4A;27;33,X,2,to despair;to give up hope
+4A;33;31,II,11,to make easy
+4A;33;31,V,2,to be easy
+4A;33;31,X,2,to obtain with ease
+4A;42;46,IV,12,to believe firmly
+4A;42;46,X,2,to be convinced;to be certain
+4A;45;45,V,3,to aim;to do tayammum
