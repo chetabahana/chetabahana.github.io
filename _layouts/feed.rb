@@ -31,7 +31,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  https://stackoverflow.com/a/26835896/4058484
 *  https://stackoverflow.com/a/35453910/4058484
 *  https://github.com/jekyll/jekyll/issues/5868#issuecomment-278073983
-*
+*  https://stackoverflow.com/questions/3490505/is-there-a-notepad-with-github-plugin/41884020
 *
 {%- endcomment -%}
 {%- comment -%}
