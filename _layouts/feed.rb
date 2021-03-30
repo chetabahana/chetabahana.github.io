@@ -47,7 +47,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  π(10) = 4
 *
 {%- endcomment -%}
-{%- assign my_loops = layout.primes %}
+{%- assign my_primes = layout.primes %}
 {%- comment -%}
 * 
 *  π(100) Schema
@@ -174,6 +174,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 {%- assign π1000 = 168 %}
 {%- assign π_10 = 10 | minus: 1 %}
 {%- assign my_roots = site.data.roots %}
+{%- assign my_loops = "" | split: "," %}
 {%- assign my_loop = my_loop | plus: π1000 | minus: my_roots[π_10].key %}
 {%- for i in (1..168) %}{% assign my_loops = my_loops | push: forloop.index %}{% endfor -%}
 {%- comment -%}
@@ -399,7 +400,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
     {%- assign nkey = my_roots[forloop.index].key | times: 1 %}
     {%- assign rkey = ckey | divided_by: cvar | ceil | plus: 1 | times: cvar %}
     {%- if ckey > cvar and ckey < rvar and nkey > rkey %}
-        {%- assign my_loops = my_loops | push: forloop.index %}
+        {%- assign my_primes = my_primes | push: forloop.index %}
     {%- endif -%}
 {%- endfor %}
 {%- comment -%}
