@@ -391,10 +391,11 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 {%- endcomment -%}
 {%- for item in my_roots %}
     {%- if forloop.index < 5 %}{% continue %}{% endif -%}
+    {%- assign avar = 1 %}{% assign a_size = item.key | size | minus: 1 %}
+    {%- for i in (1..a_size) %}{% assign avar = avar | times: 10 %}{% endfor %}
+    {%- assign bvar = avar | times: 10 %}
     {%- assign ckey = item.key | times: 1 %}
     {%- assign nkey = my_roots[forloop.index].key | times: 1 %}
-    {%- assign avar = ckey | divided_by: 100 | ceil | plus: 1 | times: 10 %}
-    {%- assign bvar = avar | times: 10 %}
     {%- assign rkey = ckey | divided_by: avar | ceil | plus: 1 | times: avar %}
     {%- if ckey > avar and ckey < bvar and nkey > rkey %}
         {%- assign my_loops = my_loops | push: forloop.index %}
