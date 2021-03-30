@@ -393,7 +393,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
     {%- assign ckey = item.key | times: 1 %}
     {%- assign nkey = my_roots[forloop.index].key | times: 1 %}
     {%- assign rkey = ckey | divided_by: 10 | ceil | plus: 1 | times: 10 %}
-    {%- if ckey > 10 and ckey < 100 and nkey > rkey %}{{ forloop.index }}:{{ ckey }},{{ nkey }},{{ rkey }}-
+    {%- if ckey > 10 and ckey < 100 and nkey > rkey %}
         {%- assign my_loops = my_loops | push: forloop.index %}
     {%- endif -%}
 {%- endfor %}
