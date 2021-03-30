@@ -6,7 +6,7 @@
 *  Get the position of each Id:
 *  https://github.com/chetabahana/r12a.github.io
 *  https://github.com/chetabahana/hexagon/pull/2
-
+*
 *  Reference based on prime hexagon:
 *  https://www.hexspin.com/defining-the-prime-hexagon/
 *
@@ -151,6 +151,7 @@
 *  https://gist.github.com/magicznyleszek/9803727
 *  https://shopify.github.io/liquid/tags/iteration/
 *  https://github.com/chetabahana/chetabahana.github.io/releases
+*  https://github.com/jekyll/jekyll/issues/5868#issuecomment-278073983
 *  https://www.google.com/search?q=how+to+get+element+from+multiple+array+in+jekyll
 *  https://community.shopify.com/c/Shopify-Design/Remove-last-2-characters-of-a-string/td-p/236741
 *
