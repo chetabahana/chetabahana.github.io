@@ -13,28 +13,6 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 * 
 *  Primes Mapping
 *
-*  Loop:
-*  loop(10) => π(10) = 29 - 25 = 4 
-*  loop(100) => π(100) = 25 - 0 = 29 - 4 = 25
-*  loop(1000) => π(1000) - 10th = 168 - 29 = 25 + 114 = 139 
-*  loop(10000) => π(10000) - (10th)th - 10th = 1229 - 109 - 29 = 1091
-*  loop(100000) => π(100000) - ((10th)th)th - (10th)th = 9592 - 599 - 109 = 8884
-*
-*  Root:
-*  root[168] = tree[168] - tree[168-1]
-*  tree[168] = 4 + 25 + 139 + 1091 + 8884 = 10143
-*  here we will create an array to define 168 roots on this 10143
-*
-*  Ref:
-*  https://learn.cloudcannon.com/
-*  https://jekyllrb.com/docs/liquid/filters/
-*  https://github.com/planetjekyll/quickrefs
-*  https://stackoverflow.com/a/26835896/4058484
-*  https://stackoverflow.com/a/35453910/4058484
-*
-{%- endcomment -%}
-{%- comment -%}
-*
 *  π(1) = 0
 *  π(2) = 1
 *  π(3) = 2
@@ -63,11 +41,33 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  π(800) = 139
 *  π(900) = 154
 *  π(1000) = 168
-*
+* 
 {%- endcomment -%}
 {%- assign my_primes = layout.primes %}
 {%- comment -%}
-* 
+*
+*  Loop:
+*  loop(10) => π(10) = 29 - 25 = 4 
+*  loop(100) => π(100) = 25 - 0 = 29 - 4 = 25
+*  loop(1000) => π(1000) - 10th = 168 - 29 = 25 + 114 = 139 
+*  loop(10000) => π(10000) - (10th)th - 10th = 1229 - 109 - 29 = 1091
+*  loop(100000) => π(100000) - ((10th)th)th - (10th)th = 9592 - 599 - 109 = 8884
+*
+*  Root:
+*  root[168] = tree[168] - tree[168-1]
+*  tree[168] = 4 + 25 + 139 + 1091 + 8884 = 10143
+*  here we will create an array to define 168 roots on this 10143
+*
+*  Ref:
+*  https://learn.cloudcannon.com/
+*  https://jekyllrb.com/docs/liquid/filters/
+*  https://github.com/planetjekyll/quickrefs
+*  https://stackoverflow.com/a/26835896/4058484
+*  https://stackoverflow.com/a/35453910/4058484
+*
+{%- endcomment -%}
+{%- comment -%}
+*
 *  π(100) Schema
 *  True Prime Pairs:
 *  (5,7), (11,13), (17,19)
