@@ -176,7 +176,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
     {%- for j in my_primes %}
         {%- if i < j %}
             {%- continue %}
-        {%- endif %}
+        {%- else %}
             {%- assign k = i | minus: forloop.index %}
             {%- break %}
         {%- endif %}
