@@ -33,6 +33,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  https://stackoverflow.com/a/35453910/4058484
 *
 {%- endcomment -%}
+{%- assign my_roots = site.data.roots %}
 {%- comment -%}
 * 
 *  π(100) Schema
@@ -77,6 +78,8 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *        |  57  |  57  | 114
 *
 {%- endcomment -%}
+{%- assign π10 = 4 -%}
+{%- assign π100 = 25 -%}
 {%- comment -%}
 * 
 *  Scheme 13:9
@@ -103,8 +106,10 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *              43
 *
 {%- endcomment -%}
-{%- assign π10 = 4 -%}
-{%- assign π100 = 25 -%}
+{%- assign n = 0 %}
+{%- for item in my_roots %}
+    {%- assign n = n | plus: 1 %}
+{%- endfor %}
 {%- comment -%}
 *
 *  layer | node | sub |  i  |  f
@@ -158,7 +163,6 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 {%- endcomment %}
 {%- assign π1000 = 168 %}
 {%- assign π_10 = 10 | minus: 1 %}
-{%- assign my_roots = site.data.roots %}
 {%- assign my_loop = my_loop | plus: π1000 | minus: my_roots[π_10].key %}
 {%- comment -%}
 *
