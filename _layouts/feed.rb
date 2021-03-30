@@ -33,8 +33,21 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  https://stackoverflow.com/a/35453910/4058484
 *
 {%- endcomment -%}
+{%- comment -%}
+*
+*  π(1) = 0
+*  π(2) = 1
+*  π(3) = 2
+*  π(4) = 2
+*  π(5) = 3
+*  π(6) = 3
+*  π(7) = 4
+*  π(8) = 4
+*  π(9) = 4
+*  π(10) = 4
+*
+{%- endcomment -%}
 {%- assign my_loops = layout.primes %}
-{%- assign my_roots = site.data.roots %}
 {%- comment -%}
 * 
 *  π(100) Schema
@@ -160,6 +173,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 {%- endcomment %}
 {%- assign π1000 = 168 %}
 {%- assign π_10 = 10 | minus: 1 %}
+{%- assign my_roots = site.data.roots %}
 {%- assign my_loop = my_loop | plus: π1000 | minus: my_roots[π_10].key %}
 {%- comment -%}
 *
@@ -378,7 +392,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 {%- for item in my_roots %}
     {%- assign ckey = item.key | times: 1 %}
     {%- assign nkey = my_roots[forloop.index].key | times: 1 %}
-    {%- assign rkey = ckey | divided_by: 10 | ceil | times: 10 %}
+    {%- assign rkey = ckey | divided_by: 10 %}{%- assign rkey = rkey | ceil %}{%- assign rkey = rkey | times: 10 %}
     {%- if ckey > 10 and ckey < 100 and nkey > rkey %}{{ forloop.index }}:{{ ckey }},{{ nkey }},{{ rkey }}-
         {%- assign my_loops = my_loops | push: forloop.index %}
     {%- endif -%}
