@@ -225,15 +225,6 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *   3:4:9 | 30 |3000 | 71 = 68 + log 10³ ---------¤         Δ900   
 *
 {%- endcomment -%}
-{%- assign n = 0 %}
-{%- assign my_loops = '' | split: ',' %}
-{%- for item in my_roots %}
-    {%- assign n = n | plus: 1 %}
-    {%- assign vkey = item.key | times: 1 %}
-    {%- if vkey < 10 %}
-        {%- assign my_loops = my_loops | push: n %}
-    {%- endif -%}
-{%- endfor %}
 {%- comment -%}
 *
 *  π(10000) Schema
@@ -383,6 +374,15 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *   3:4:9 | 30 |300000 | 121 = 118 + log 10³ -------¤         Δ900   
 *
 {%- endcomment -%}
+{%- assign n = 0 %}
+{%- assign my_loops = [0,1,2,2,3,3,4.4.4,4] %}
+{%- for item in my_roots %}
+    {%- assign n = n | plus: 1 %}
+    {%- assign vkey = item.key | times: 1 %}
+    {%- if vkey < 10 %}
+        {%- assign my_loops = my_loops | push: n %}
+    {%- endif -%}
+{%- endfor %}
 {%- comment -%}
 *
 *  π(10000) Schema
