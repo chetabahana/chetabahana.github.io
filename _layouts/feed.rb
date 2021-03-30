@@ -150,6 +150,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 {%- endcomment -%}
 {%- assign my_loop = π10 -%}
 {%- assign my_loop = my_loop | plus: π100 %}
+{%- assign my_loops = [0,1,2,2,3,3,4,4,4,4] %}
 {%- comment -%}
 *
 *  π(1000) Schema
@@ -375,7 +376,6 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *
 {%- endcomment -%}
 {%- assign n = 0 %}
-{%- assign my_loops = [0,1,2,2,3,3,4.4.4,4] %}
 {%- for item in my_roots %}
     {%- assign n = n | plus: 1 %}
     {%- assign vkey = item.key | times: 1 %}
