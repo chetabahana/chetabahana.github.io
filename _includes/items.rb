@@ -1,6 +1,6 @@
 {%- comment -%}
 *
-*  collect id
+*  collect id's
 *
 {%- endcomment -%}{% assign myId = feed.myId -%}
 {% for i in (1..my_size) %}{{ my_tab }}{% endfor %}{
