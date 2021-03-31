@@ -632,9 +632,10 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  than trying to find ‘how many all of them’ are exactly exist.
 *
 *  Note:
-*  Documentation are currently available in bahasa only
+*  Documentations are currently available in bahasa only
 *  https://github.com/chetabahana/chetabahana.github.io/wiki
 *  https://github.com/chetabahana/chetabahana.github.io/wiki/18
+*  https://github.com/chetabahana/chetabahana.github.io/wiki/Skema
 *  https://github.com/chetabahana/chetabahana.github.io/wiki/Publishing
 *  https://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid
 *
