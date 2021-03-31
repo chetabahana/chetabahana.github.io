@@ -1,21 +1,25 @@
-{% comment %}
+{%- comment %}
 *
 *  collect feed
 *
-{% endcomment %}{% if page.redirect.from %}{% assign my_slug = page.redirect.from | split: '/' | last | split: '.' | first | prepend: '/' %}{% assign feed = site.feeds | where_exp:'item', 'item.path contains my_slug' %}{% assign my_feed = feed[0] %}{% else %}{% assign my_feed = page %}{% endif %}{% comment %}
+{% endcomment %}{% if page.redirect.from %}{% assign my_slug = page.redirect.from | split: '/' | last | split: '.' | first | prepend: '/' %}{% assign feed = site.feeds | where_exp:'item', 'item.path contains my_slug' %}{% assign my_feed = feed[0] %}{% else %}{% assign my_feed = page %}{% endif %}
+{%- comment %}
 *
 *  collect hash
 *
-{% endcomment %}{% assign my_data = site.data %}{% assign my_datas = '' | split: ',' %}{% assign my_hash = my_feed.path | remove_first: '_' | split: '/' | pop %}{% for hash in my_hash %}{% assign _hash = hash | prepend: '_' %}{% assign my_data = my_data[_hash] %}{% assign my_datas = my_datas | push: my_data %}{% endfor %}{% comment %}
+{% endcomment %}{% assign my_data = site.data %}{% assign my_datas = '' | split: ',' %}{% assign my_hash = my_feed.path | remove_first: '_' | split: '/' | pop %}{% for hash in my_hash %}{% assign _hash = hash | prepend: '_' %}{% assign my_data = my_data[_hash] %}{% assign my_datas = my_datas | push: my_data %}{% endfor %}
+{%- comment %}
 *
 *  collect data
 *
-{% endcomment %}{% if my_feed.myId > 114 %}{% assign myId = my_feed.myId | modulo: 100 %}{% else %}{% assign myId = my_feed.myId %}{% endif %}{% for hashs in my_datas %}{% for hash in hashs %}{% if hash[1].id == myId %}{% assign data = hash[1] %}{% endif %}{% endfor %}{%- endfor -%}{% comment %}
+{% endcomment %}{% if my_feed.myId > 114 %}{% assign myId = my_feed.myId | modulo: 100 %}{% else %}{% assign myId = my_feed.myId %}{% endif %}{% for hashs in my_datas %}{% for hash in hashs %}{% if hash[1].id == myId %}{% assign data = hash[1] %}{% endif %}{% endfor %}{%- endfor -%}
+{%- comment %}
 *
 *  collect item
 *
 {% endcomment %}{% if page.redirect.from or my_feed.path == 'feed.json' or my_feed.ext == '.json' %}{
-    {{ 'id' | jsonify }}: {% if data.id %}{{ data.id }}{% else %}{{ page.id }}{% assign my_content = content | remove: '[' | remove: ']'  | split: ',' %}{% assign my_count = '' | split: ',' %}{% for item in my_content %}{% assign citem = item | times: 1 %}{% assign my_count = my_count | push: citem %}{% endfor %}{% endif %},{% comment %}
+    {{ 'id' | jsonify }}: {% if data.id %}{{ data.id }}{% else %}{{ page.id }}{% assign my_content = content | remove: '[' | remove: ']'  | split: ',' %}{% assign my_count = '' | split: ',' %}{% for item in my_content %}{% assign citem = item | times: 1 %}{% assign my_count = my_count | push: citem %}{% endfor %}{% endif %},
+{% comment %}
 *
 *  collect json
 *
@@ -25,7 +29,8 @@
     {{ 'feed_url' | jsonify }}: {{ page.url | absolute_url | jsonify }},
     {{ 'description' | jsonify }}: {{ site.slogan | jsonify }},
     {{ 'user_comment' | jsonify }}: {{ 'This feed allows you to read the project mapping' | jsonify }},
-    {{ 'items' | jsonify }}: [{% comment %}
+    {{ 'items' | jsonify }}: [
+{%- comment %}
 *
 *  collect root
 *
