@@ -19,11 +19,12 @@
 *
 {% endcomment %}{% if page.redirect.from or my_feed.path == 'feed.json' or my_feed.ext == '.json' %}{
     {{ 'id' | jsonify }}: {% if data.id %}{{ data.id }}{% else %}{{ page.id }}{% assign my_content = content | remove: '[' | remove: ']'  | split: ',' %}{% assign my_count = '' | split: ',' %}{% for item in my_content %}{% assign citem = item | times: 1 %}{% assign my_count = my_count | push: citem %}{% endfor %}{% endif %},
-{% comment %}
+{%- comment %}
 *
 *  collect json
 *
-{% endcomment %}{{ 'title' | jsonify }}: "{% if data.title %}{{ data.title | capitalize }} | {% endif %}Project Maps",
+{% endcomment %}
+    {{ 'title' | jsonify }}: "{% if data.title %}{{ data.title | capitalize }} | {% endif %}Project Maps",
     {{ 'version' | jsonify }}: {{ 'https://jsonfeed.org/version/1.1' | jsonify }},
     {{ 'home_page_url' | jsonify }}: {{ '/' | absolute_url | jsonify }},
     {{ 'feed_url' | jsonify }}: {{ page.url | absolute_url | jsonify }},
