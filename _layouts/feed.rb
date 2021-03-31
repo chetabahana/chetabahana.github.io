@@ -1,6 +1,6 @@
 ---
 layout: default
-primes: [0,1,2,2,3,3,4,4,4,4,8,10,12,15,17,19,22,24,25,46,62,78,95,109,125,139,154,168]
+primes: [0,1,2,2,3,3,4,4,4,4]
 object: [2,8,3,33,60,4,99,57,47,13,55,76,65,98,59,24,22,63,58,49,66,64,61,62,48,5,9,110]
 method: [13,16,18,21,23,25,28,30,32,34,36,38,40,42,45,47,49,51,53,55,57,59,61,63,65,67,69,71,73,75,77]
 number: [1st,2nd,3rd,4th,5th,6th,8th,1/10,1/8,1/6,1/5,1/4,2/3,1/3,1/2,1,2,3,4,5,6,7,5,9,10,11,12,19,10,20,30,40,50,60,70,80,90,99,100,200,300,1000,2000,3000,5000,50000,100000]
@@ -23,27 +23,9 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  π(8) = 4
 *  π(9) = 4
 *  π(10) = 4
-*  π(20) = 8
-*  π(30) = 10
-*  π(40) = 12
-*  π(50) = 15
-*  π(60) = 17
-*  π(70) = 19
-*  π(80) = 22
-*  π(90) = 24
-*  π(100) = 25
-*  π(200) = 46
-*  π(300) = 62
-*  π(400) = 78
-*  π(500) = 95
-*  π(600) = 109
-*  π(700) = 125
-*  π(800) = 139
-*  π(900) = 154
-*  π(1000) = 168
 * 
 {%- endcomment -%}
-{%- assign my_primes = layout.primes %}
+{%- assign my_loops = layout.primes %}
 {%- comment -%}
 *
 *  π(100) Schema
@@ -172,17 +154,6 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 {%- assign my_roots = site.data.roots %}
 {%- assign my_loops = "" | split: "," -%}
 {%- assign my_loop = my_loop | plus: π1000 | minus: my_roots[π_10].key %}
-{%- for i in (0..168) %}
-    {%- for j in my_primes %}
-        {%- if i > j %}
-            {%- continue %}
-        {%- else %}
-            {%- assign k = i | minus: forloop.index | minus: 1 %}
-            {%- break %}
-        {%- endif %}
-    {%- endfor %}
-    {%- assign my_loops = my_loops | push: k -%}
-{%- endfor %}
 {%- comment -%}
 *
 *    Sub  | i  |   β | f
@@ -414,7 +385,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *
 {%- endcomment -%}
 {%- for item in my_roots %}
-    {%- if forloop.index0 < 168 %}{% continue %}{% endif -%}
+    {%- if forloop.index0 < 5 %}{% continue %}{% endif -%}
     {%- assign rvar = 1 %}{% assign a_size = item.key | size %}
     {%- for i in (1..a_size) %}{% assign rvar = rvar | times: 10 %}{% endfor %}
     {%- assign cvar = rvar | divided_by: 10 %}
@@ -422,7 +393,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
     {%- assign nkey = my_roots[forloop.index].key | times: 1 %}
     {%- assign rkey = ckey | divided_by: cvar | ceil | plus: 1 | times: cvar %}
     {%- if ckey > cvar and ckey < rvar and nkey > rkey %}
-        {%- assign my_primes = my_primes | push: forloop.index %}
+        {%- assign my_loops = my_loops | push: forloop.index %}
     {%- endif -%}
 {%- endfor %}
 {%- comment -%}
