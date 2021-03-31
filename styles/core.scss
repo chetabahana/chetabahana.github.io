@@ -54,14 +54,14 @@
 
 #diagram {
     position: absolute;
-    min-height: 364px;
+    min-height: 398px;
     z-index: 999;
     width: 100%;
 }
 
 svg.sequence {
-    min-height: 398px;
-    width: 780px;
+    min-width: 805px;
+    height: 100%;
 }
 
 .diagram-sequence {
