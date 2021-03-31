@@ -594,8 +594,8 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *
 *  Conclutions:
 *  - Primes distribution is folded within 3 (three) forms of 168, 329 and 289 which are connected in base 10
-*  - The 2 (two) form of 329 and 289 lead to golden ratio which both are framed within 168 via P(7): 142857
-*  - Cyclic is formed by 29 to 30 that carried by 36 to 66,102 in form of 2,60,40 and landed to 168 by 66.
+*  - The 2 (two) forms of 329 and 289 lead to golden ratio which both are framed within 168 via P(7): 142857
+*  - Cyclic is formed by 29 to 30 that carried out by 36 to 66,102 in form of 2,60,40 followed by 66 to 168.
 *
 *  Ref:
 *  https://primes.utm.edu/howmany.html
