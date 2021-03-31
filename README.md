@@ -89,14 +89,12 @@ Here are the URLs as samples that pointing to our [forked projects](https://gith
 - GraphQL API v4: https://developer.github.com/v4/explorer/
 
 ## Pustaka
-Disarankan untuk disimak sebelum melangkah lebih jauh:  
-Project Release: https://github.com/chetabahana/chetabahana.github.io/releases
-Dokumentasi Project: https://github.com/chetabahana/chetabahana.github.io/wiki
+Pustaka utama berada di [Project Release](https://github.com/chetabahana/chetabahana.github.io/releases) dan [Dokumentasi Project](https://github.com/chetabahana/chetabahana.github.io/wiki)
 <p align="center"> 
 <a href="https://chetabahana.com/#after_header1_3"><img src="https://user-images.githubusercontent.com/36441664/38942532-44c87736-4359-11e8-9ad4-56f7d2b68ced.png" alt="Alokasi Pustaka Online Chetabahana"></a><br>
 Gambar-2: Alokasi Pustaka Online <a href= "https://chetabahana.com">Chetabahana</a>
 </p>
-
+Disarankan juga untuk disimak sebelum melangkah lebih jauh:  
 - [Cara Buka Toko Online dan Optimasi Internal](https://chetabahana.blogspot.com/)
 - [Cara Optimasi Eksternal Toko dengan Shop SEO](https://chetabahana.wordpress.com/)
 - [Channel Youtube Chetabahana](https://www.youtube.com/channel/UCZlPku9beXzdROCknYLuRNg?view_as=subscriber)
