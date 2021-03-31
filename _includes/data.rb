@@ -18,7 +18,7 @@
 *  collect item
 *
 {% endcomment %}{% if page.redirect.from or my_feed.path == 'feed.json' or my_feed.ext == '.json' %}{
-    {{ 'id' | jsonify }}: {% if data.id %}{{ data.id }}{% else %}{{ page.id }}{% assign my_content = content | remove: '[' | remove: ']'  | split: ',' %}{% assign my_count = '' | split: ',' %}{% for item in my_content %}{% assign citem = item | times: 1 %}{% assign my_count = my_count | push: citem %}{% endfor %}{% endif %},
+    {{ 'id' | jsonify }}: {% if data.id %}{{ data.id }}{% else %}{{ content }}{% endif %},
 {%- comment %}
 *
 *  collect json
