@@ -593,6 +593,11 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  9:9   18:90   27:900   36:9000   45:90000   54:9x10^5  63:9x10^6  72:9x10^7  81:9x10^8  90:9x10^9   99:9x10^10
 *  10:10 19:100  28:1000  37:10000  46:100000  55:10^6    64:10^7    73:10^8    82:10^9    91:10^10   100:10^11
 *
+*  Conclutions:
+*  - Primes distribution is folded within 3 (three) forms of 168, 329 and 289 which are connected in base 10
+*  - The 2 (two) form of 329 and 289 lead to golden ratio which both are framed within 168 via P(7): 142857
+*  - Cyclic is formed by 29 to 30 that carried by 36 to 66,102 in form of 2,60,40 and landed to 168 by 66.
+*
 *  Ref:
 *  https://primes.utm.edu/howmany.html
 *  https://math.stackexchange.com/a/3545726
