@@ -157,6 +157,6 @@
 *
 *  Note:
 *  Documentation is currently available in bahasa only
-*  https://github.com/chetabahana/chetabahana.github.io/wiki/Jekyll-Liquid
+*  https://github.com/chetabahana/chetabahana.github.io/wiki/18
 *
 {%- endcomment -%}
