@@ -95,6 +95,7 @@ Pustaka utama berada di [Project Release](https://github.com/chetabahana/chetaba
 Gambar-2: Alokasi Pustaka Online <a href= "https://chetabahana.com">Chetabahana</a>
 </p>
 Disarankan juga untuk disimak sebelum melangkah lebih jauh:  
+
 - [Cara Buka Toko Online dan Optimasi Internal](https://chetabahana.blogspot.com/)
 - [Cara Optimasi Eksternal Toko dengan Shop SEO](https://chetabahana.wordpress.com/)
 - [Channel Youtube Chetabahana](https://www.youtube.com/channel/UCZlPku9beXzdROCknYLuRNg?view_as=subscriber)
