@@ -7,7 +7,7 @@ WE ARE GOING TO WIN THE MARKET!
 </p>  
 
 
-|[![Chetabahana Project](https://avatars1.githubusercontent.com/u/36441664?v=10&s=20)](https://github.com/chetabahana) |This [repo](#repository "Project Repository") is courtesy of [Chetabahana Project](https://github.com/MarketLeader "We are providing an Integrated Open Source Project about The World of e-Commerce."). Find all of them on [The Project Map](https://marketleader.github.io/#bagan-projek "Project Mapping").|[![Chetabahana Project](https://avatars2.githubusercontent.com/u/36441943?v=10&s=20)](https://github.com/MarketLeader) |
+|[![Chetabahana Project](https://avatars1.githubusercontent.com/u/36441664?v=10&s=20)](https://github.com/chetabahana) |This [repo](#repository "Project Repository") is courtesy of [Chetabahana Project](https://github.com/MarketLeader "We are providing an Integrated Open Source Project about The World of e-Commerce."). Find all of them on [The Project Map](https://github.com/chetabahana/chetabahana.github.io/wiki/Skema#Implementasi "Project Mapping").|[![Chetabahana Project](https://avatars2.githubusercontent.com/u/36441943?v=10&s=20)](https://github.com/MarketLeader) |
 |:----|----|----:|
 
 # Tutorial Github & Jeckyll
@@ -90,13 +90,14 @@ Here are the URLs as samples that pointing to our [forked projects](https://gith
 
 ## Pustaka
 Disarankan untuk disimak sebelum melangkah lebih jauh:  
+Project Release: https://github.com/chetabahana/chetabahana.github.io/releases
 Dokumentasi Project: https://github.com/chetabahana/chetabahana.github.io/wiki
 <p align="center"> 
 <a href="https://chetabahana.com/#after_header1_3"><img src="https://user-images.githubusercontent.com/36441664/38942532-44c87736-4359-11e8-9ad4-56f7d2b68ced.png" alt="Alokasi Pustaka Online Chetabahana"></a><br>
 Gambar-2: Alokasi Pustaka Online <a href= "https://chetabahana.com">Chetabahana</a>
 </p>
 
-- [Cara Buka Toko Online WinMarket dan Optimasi Internal](https://chetabahana.blogspot.com/)
+- [Cara Buka Toko Online dan Optimasi Internal](https://chetabahana.blogspot.com/)
 - [Cara Optimasi Eksternal Toko dengan Shop SEO](https://chetabahana.wordpress.com/)
 - [Channel Youtube Chetabahana](https://www.youtube.com/channel/UCZlPku9beXzdROCknYLuRNg?view_as=subscriber)
 - [e-Books Chetabahana](https://www.scribd.com/user/401259110/Chetabahana)
@@ -109,8 +110,6 @@ Project ini dipublikasikan dengan lisensi berikut:
 Berikut ini beberapa catatan sebagai penutup:  
 - Projek ini diprioriostaskan bagi peminat [e-Commerce di Indonesia](https://www.youtube.com/watch?v=dd__L8Jh2c4&t=25s) 🇮🇩
 - Status masih pengembangan dan pengetesan implementasi
-- Syarat untuk bergabung silahkan [Daftar ID WinMarket](https://chetabahana.com/info/tentang-89.html)
-- Tim WinMarket welcome untuk bergabung.
 
 Terimakasih atas kunjungannya.  
 Met menyimak.. :pray:  
