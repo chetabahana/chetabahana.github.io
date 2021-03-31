@@ -434,7 +434,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  Note:
 *  - Every 6th scheme would be the 1st-layer in a higher level of 1 to π(1000)=168
 *  - The layer turns to feed out when π((1000/Φ)+1)+1=π(619)+1=115 landed to 150
-*  - See the scheme of this layer on https://chetabahana.github.io/feed.json
+*  - See the scheme of this layer on https://chetabahana.github.io/feeds.xml
 *
 {%- endcomment -%}
 {%- comment -%}
@@ -569,7 +569,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *   18  |  - | 30 | 36 |  - |  - |  - |  - |  - |  - |  - |  - |  - | -  | 102|   - |  -  |  - |  - | <- ∑=168
 *  =====+====+====+====+====+====+====+====+====+====+====+====+====+====+====+=====+=====+====+====+
 *    1  |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 | 10 | 11 | 12 | 13 | 14 | 15 |  16 |  17 | 18 | 19 |
-*               Δ    Δ                                                     Δ
+*               Δ    Δ                                                      Δ
 *
 * Note:
 * - The marked number with * are outside of group 18 vs 19 
