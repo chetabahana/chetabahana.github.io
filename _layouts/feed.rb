@@ -571,11 +571,12 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  =====+====+====+====+====+====+====+====+====+====+====+====+====+====+====+=====+=====+====+====+
 *    1  |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 | 10 | 11 | 12 | 13 | 14 | 15 |  16 |  17 | 18 | 19 |
 *               Δ    Δ                                                      Δ
+*              29   30                                                     66
 *
 * Note:
 * - The marked number with * are outside of group 18 vs 19 
 * - Number 68 is in the same hexagon along with 50
-* - Reinject number are excatly 102 to 103
+* - Reinject number are excatly 102 to 168
 *
 {%- endcomment -%}
 {%- comment -%}
