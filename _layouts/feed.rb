@@ -22,6 +22,10 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  π(8) = 4
 *  π(9) = 4
 *  π(10) = 4
+*
+*  Reference:
+*  https://primes.utm.edu/howmany.html
+*  https://math.stackexchange.com/a/3545726
 * 
 {%- endcomment -%}
 {%- assign my_loops = layout.layers %}
@@ -227,6 +231,9 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  =======+====+=====+====                        Δ         ==== --> π(1000)
 *   3:4:9 | 30 |3000 | 71 = 68 + log 10³ ---------¤         Δ900   
 *
+*  Reference:
+*  https://chetabahana.github.io/images/skema/flowchart.png
+*
 {%- endcomment -%}
 {%- comment -%}
 *
@@ -304,6 +311,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  Reference:
 *  https://chetabahana.github.io/images/skema/loop19.png
 *  https://chetabahana.github.io/images/skema/loop36.png
+*  https://chetabahana.github.io/images/skema/loop50.png
 *
 {%- endcomment %}
 {%- comment -%}
@@ -555,6 +563,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *
 *  Reference:
 *  https://chetabahana.github.io/images/skema/flowchart.png
+*  https://raw.githubusercontent.com/chetabahana/hexagon/Chetabahana/tests/primes114.csv
 *
 {%- endcomment -%}
 {%- comment -%}
@@ -610,6 +619,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 * - Reinject number are excatly 102 to 168
 *
 *  Reference:
+*  https://chetabahana.github.io/images/skema/loop36.png
 *  https://chetabahana.github.io/images/skema/loop50.png
 *  https://chetabahana.github.io/images/skema/hexagon.png
 *
@@ -645,10 +655,8 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  - Primes distribution is folded within 3 (three) forms of 168, 329 and 289 which are connected in base 10
 *  - The 2 (two) forms of 329 and 289 perform golden ratio which root are framed within 618 via P(7): 142857
 *  - This lead to cyclic since 29 to 30 is carried out by 36 to (66,102) of (2,60,40) followed by 66 to 168.
-*
 *  Reference:
-*  https://primes.utm.edu/howmany.html
-*  https://math.stackexchange.com/a/3545726
+*  https://chetabahana.github.io/images/skema/root29.png
 *  https://chetabahana.github.io/images/skema/base10.png
 *
 {%- endcomment -%}
