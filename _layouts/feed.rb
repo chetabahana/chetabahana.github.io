@@ -46,6 +46,9 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *       |  6  | 19
 *  -----+-----+---------
 *
+*  Reference:
+*  https://chetabahana.github.io/images/skema/root66.png
+*
 {%- endcomment -%}
 {%- assign π10 = 4 -%}
 {%- assign π100 = 25 -%}
@@ -69,6 +72,9 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *   114  |      |      |
 *  ------+------+------+-----
 *        |  57  |  57  | 114
+*
+*  Reference:
+*  https://chetabahana.github.io/images/skema/in-out.jpg
 *
 {%- endcomment -%}
 {%- comment -%}
@@ -95,6 +101,11 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  (9)110-139: 30 =5x6 <--¤-- (129/17-139/27)
 *              --
 *              43
+*
+*  Reference:
+*  https://chetabahana.github.io/images/skema/user.png
+*  https://chetabahana.github.io/images/skema/root139.png
+*  https://chetabahana.github.io/images/skema/replication.png
 *
 {%- endcomment -%}
 {%- comment -%}
@@ -292,6 +303,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *
 *  Reference:
 *  https://chetabahana.github.io/images/skema/loop19.png
+*  https://chetabahana.github.io/images/skema/loop36.png
 *
 {%- endcomment %}
 {%- comment -%}
@@ -368,6 +380,10 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  =======+=====+=======+====                                   ====
 *   3:4:9 | 636 |300000 | 121 = 118 + log 10³ -------¤ → Δ102 → Δ66 --> Δ168
 *
+*  Reference:
+*  https://chetabahana.github.io/images/skema/root29.png
+*  https://chetabahana.github.io/images/skema/root89.png
+*
 {%- endcomment %}
 {%- comment -%}
 *
@@ -440,6 +456,11 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  - The layer turns to feed out when π((1000/Φ)+1)+1=π(619)+1=115 landed to 150
 *  - See the scheme of this layer on https://chetabahana.github.io/feeds.xml
 *
+*  Reference:
+*  https://chetabahana.github.io/images/skema/feed.png
+*  https://chetabahana.github.io/images/skema/loop150.png
+*  https://chetabahana.github.io/images/skema/grammar.png
+*
 {%- endcomment -%}
 {%- comment -%}
 *
@@ -485,6 +506,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *
 *  Reference:
 *  https://chetabahana.github.io/images/skema/zeta.png
+*  https://chetabahana.github.io/images/skema/root168.png
 *  https://medium.com/cantors-paradise/the-riemann-hypothesis-explained-fa01c1f75d3f
 *
 {%- endcomment -%}
@@ -530,6 +552,9 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *    168 |  31   208    90 |  31   208    50 | 943 | 1729  → 102 
 *                       Δ
 *                     77|78
+*
+*  Reference:
+*  https://chetabahana.github.io/images/skema/flowchart.png
 *
 {%- endcomment -%}
 {%- comment -%}
@@ -584,6 +609,10 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 * - Number 68 is in the same hexagon along with 50
 * - Reinject number are excatly 102 to 168
 *
+*  Reference:
+*  https://chetabahana.github.io/images/skema/loop50.png
+*  https://chetabahana.github.io/images/skema/hexagon.png
+*
 {%- endcomment -%}
 {%- comment -%}
 * 
@@ -617,9 +646,10 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  - The 2 (two) forms of 329 and 289 perform golden ratio which root are framed within 618 via P(7): 142857
 *  - This lead to cyclic since 29 to 30 is carried out by 36 to (66,102) of (2,60,40) followed by 66 to 168.
 *
-*  Ref:
+*  Reference:
 *  https://primes.utm.edu/howmany.html
 *  https://math.stackexchange.com/a/3545726
+*  https://chetabahana.github.io/images/skema/base10.png
 *
 {%- endcomment -%}
 {{- my_loops | jsonify -}}
