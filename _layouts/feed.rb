@@ -288,7 +288,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  =======+====+=======+====                       ===  ====  ---- ---> 329
 *  *3:4:8 | 329| 20000 | 51 = 100 + 3 x (2x3)      10³  Δ600  Δ300
 *  =======+====+=======+====                        Δ         ====
-*   3:4:9 | 30 | 30000 | 52 = 118 + log 10³ -------¤          Δ900   
+*   3:4:9 | 30 | 30000 | 52 = 118 + log 10³ --------¤  → Δ10  → Δ2 --> Δ102
 *
 {%- endcomment %}
 {%- comment -%}
@@ -363,7 +363,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  =======+====+=======+====                       ===   ===   --- ---> 289
 *  *3:4:8 | 29 |200000 | 118 = 100 + 3 x (2x3)      Δ2   Δ60   Δ40
 *  =======+====+=======+====                        Δ          ====
-*   3:4:9 | 30 |300000 | 121 = 118 + log 10³ -------¤  → Δ10  → Δ2  →  Δ102
+*   3:4:9 | 30 |300000 | 121 = 118 + log 10³ -------¤ → Δ102 → Δ66 --> Δ168
 *
 {%- endcomment %}
 {%- comment -%}
@@ -607,8 +607,8 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *
 *  Conclutions:
 *  - Primes distribution is folded within 3 (three) forms of 168, 329 and 289 which are connected in base 10
-*  - The 2 (two) forms of 329 and 289 lead to golden ratio which both are framed within 168 via P(7): 142857
-*  - Cyclic is formed by 29 to 30 carried out by 36 to (66,102) in forms of (2,60,40) followed by 66 to 168.
+*  - The 2 (two) forms of 329 and 289 perform golden ratio which root are framed within 618 via P(7): 142857
+*  - This lead to cyclic since 29 to 30 is carried out by 36 to (66,102) of (2,60,40) followed by 66 to 168.
 *
 *  Ref:
 *  https://primes.utm.edu/howmany.html
