@@ -373,54 +373,6 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 {%- endfor %}
 {%- comment -%}
 *
-*  π(10000) Schema
-*  Injected via 1000 - 50
-*
-*  Note:
-*  - Consider that the prime hexagon is 6 (six) spin
-*  - There is no 7th hexagon so 619 is landed on hexagon-1 as 0’
-*  - Reference: https://www.hexspin.com/0-1-and-negative-numbers/
-*
-*  Cyclic |  Hexagon   | i(Leading) | j(Lagging) | i(Lagging) | j(Leading)
-*  =======+============+============+============+============+============
-*  Spin-1 | 103 to   2 |            |  71 to  50 | 150 to 115 | 200 to 231
-*  Spin-2 |   3 to  29 |            | 171 to 250 | 231 to 200 | 408 to 497 
-*  Spin-3 |  30 to  68 |            | 271 to 350 | 497 to 408 | 315 to 302
-*  Spin-4 |  69 to  70 |            | 371 to 450 | 736 to 529 | 415 to 402
-*  Spin-5 |  71 to  89 |            | 471 to 550 | 550 to 518 | 515 to 502
-*  Spin-6 |  90 to 102 |            | 571 to 650 | 650 to 618 | 615 to 602
-*  Spin-7 | 103 to   2 |            |  71 to  50 | 150 to 115 | 200 to 231
-*
-*  Relation between π(1000)=168 and π((1000/Φ)+1)+1=π(619)+1=115
-*  2,60,40: 168, (60x10)/2 + 29 = 329, (40x10)/2 + 60 + 29 = 289
-*
-*        329                       ← 618 →                       289
-*  +-------------+                                           +-------------+
-*  | π(A) = 1/AV |  →  Exponential → log QC/log (π(A))   →   | ∑ = QC x AV |
-*  +-------------+                                           +-------------+
-*         Δ                    +--------------+                     Δ
-*         |                    | P(7): 142857 |                     |
-*         |                    +--------------+                     |
-*      60 |                                                         | 40
-*         |         Exponential    ← 168 →      Linear              |
-*         |        +--------------+          +-------------+        |
-*         └ ─ ─ ─ ─| log (π(A))/q |  q = AV  |  log(QC/q)  | ─ ─ ─ ─┘
-*                  +--------------+          +-------------+
-*                        28      ← 28!=5995 →     d(14)
-*
-*  Note:
-*  - Every 6th scheme would be the 1st-layer in a higher level of 1 to π(1000)=168
-*  - The layer turns to feed out when π((1000/Φ)+1)+1=π(619)+1=115 landed to 150
-*  - See the scheme of this layer on https://chetabahana.github.io/feeds.xml
-*
-*  Reference:
-*  https://chetabahana.github.io/images/skema/feed.png
-*  https://chetabahana.github.io/images/skema/loop150.png
-*  https://chetabahana.github.io/images/skema/grammar.png
-*
-{%- endcomment -%}
-{%- comment -%}
-*
 *  Tabulate Prime Vektors ζ(s)
 *
 *  ----------------------+-----+-----+-----+                                    ---
@@ -465,25 +417,6 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  https://chetabahana.github.io/images/skema/zeta.png
 *  https://chetabahana.github.io/images/skema/root168.png
 *  https://medium.com/cantors-paradise/the-riemann-hypothesis-explained-fa01c1f75d3f
-*
-{%- endcomment -%}
-{%- comment -%}
-*
-*  1729 = 7 x 13 x 19
-*  1729 / 7 = 13 x 19 = 247
-*  
-*  1729 = 7 x 13 x 19
-*         7 + 13 = 20 = d(2)
-*                       └──  2 x 19 = 38
-*
-*  +----+----+----+----+----+----+----+----+----+----+----+----+----+----+
-*  |  1 |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 | 10 | 11 | 12 | 13 | 14 |
-*  +----+----+----+----+----+----+----+----+----+----+----+----+----+----+
-*  |  3 |  4 |  3 |  4 |  5 |  2 |  3 |  2 |  2 |  1 |  2 |  5 |  1 |  1 | 38 
-*  +----+----+----+----+----+----+----+----+----+----+----+----+----+----+----   285
-*  |  3 |  8 |  9 | 16 | 25 | 12 | 21 | 16 | 18 | 10 | 22 | 60 | 13 | 14 | 247 
-*  +----+----+----+----+----+----+----+----+----+----+----+----+----+----+  Δ
-*  |-- 38 ---|              |-- 33 ---|                        |--  27 --|  └── 289-42
 *
 {%- endcomment -%}
 {%- comment -%}
@@ -540,6 +473,73 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  Reference:
 *  https://chetabahana.github.io/images/skema/user.png
 *  https://chetabahana.github.io/images/skema/root139.png
+*
+{%- endcomment -%}
+{%- comment -%}
+*
+*  π(10000) Schema
+*  Injected via 1000 - 50
+*
+*  Note:
+*  - Consider that the prime hexagon is 6 (six) spin
+*  - There is no 7th hexagon so 619 is landed on hexagon-1 as 0’
+*  - Reference: https://www.hexspin.com/0-1-and-negative-numbers/
+*
+*  Cyclic |  Hexagon   | i(Leading) | j(Lagging) | i(Lagging) | j(Leading)
+*  =======+============+============+============+============+============
+*  Spin-1 | 103 to   2 |            |  71 to  50 | 150 to 115 | 200 to 231
+*  Spin-2 |   3 to  29 |            | 171 to 250 | 231 to 200 | 408 to 497 
+*  Spin-3 |  30 to  68 |            | 271 to 350 | 497 to 408 | 315 to 302
+*  Spin-4 |  69 to  70 |            | 371 to 450 | 736 to 529 | 415 to 402
+*  Spin-5 |  71 to  89 |            | 471 to 550 | 550 to 518 | 515 to 502
+*  Spin-6 |  90 to 102 |            | 571 to 650 | 650 to 618 | 615 to 602
+*  Spin-7 | 103 to   2 |            |  71 to  50 | 150 to 115 | 200 to 231
+*
+*  Relation between π(1000)=168 and π((1000/Φ)+1)+1=π(619)+1=115
+*  2,60,40: 168, (60x10)/2 + 29 = 329, (40x10)/2 + 60 + 29 = 289
+*
+*        329                       ← 618 →                       289
+*  +-------------+                                           +-------------+
+*  | π(A) = 1/AV |  →  Exponential → log QC/log (π(A))   →   | ∑ = QC x AV |
+*  +-------------+                                           +-------------+
+*         Δ                    +--------------+                     Δ
+*         |                    | P(7): 142857 |                     |
+*         |                    +--------------+                     |
+*      60 |                                                         | 40
+*         |         Exponential    ← 168 →      Linear              |
+*         |        +--------------+          +-------------+        |
+*         └ ─ ─ ─ ─| log (π(A))/q |  q = AV  |  log(QC/q)  | ─ ─ ─ ─┘
+*                  +--------------+          +-------------+
+*                        28      ← 28!=5995 →     d(14)
+*
+*  Note:
+*  - Every 6th scheme would be the 1st-layer in a higher level of 1 to π(1000)=168
+*  - The layer turns to feed out when π((1000/Φ)+1)+1=π(619)+1=115 landed to 150
+*  - See the scheme of this layer on https://chetabahana.github.io/feeds.xml
+*
+*  Reference:
+*  https://chetabahana.github.io/images/skema/feed.png
+*  https://chetabahana.github.io/images/skema/loop150.png
+*  https://chetabahana.github.io/images/skema/grammar.png
+*
+{%- endcomment -%}
+{%- comment -%}
+*
+*  1729 = 7 x 13 x 19
+*  1729 / 7 = 13 x 19 = 247
+*  
+*  1729 = 7 x 13 x 19
+*         7 + 13 = 20 = d(2)
+*                       └──  2 x 19 = 38
+*
+*  +----+----+----+----+----+----+----+----+----+----+----+----+----+----+
+*  |  1 |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 | 10 | 11 | 12 | 13 | 14 |
+*  +----+----+----+----+----+----+----+----+----+----+----+----+----+----+
+*  |  3 |  4 |  3 |  4 |  5 |  2 |  3 |  2 |  2 |  1 |  2 |  5 |  1 |  1 | 38 
+*  +----+----+----+----+----+----+----+----+----+----+----+----+----+----+----   285
+*  |  3 |  8 |  9 | 16 | 25 | 12 | 21 | 16 | 18 | 10 | 22 | 60 | 13 | 14 | 247
+*  +----+----+----+----+----+----+----+----+----+----+----+----+----+----+  Δ
+*  |-- 38 ---|              |-- 33 ---|                        |--  27 --|  └── 289-42
 *
 {%- endcomment -%}
 {%- comment -%}
