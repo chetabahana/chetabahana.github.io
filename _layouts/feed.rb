@@ -495,28 +495,6 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  Spin-6 |  90 to 102 |            | 571 to 650 | 650 to 618 | 615 to 602
 *  Spin-7 | 103 to   2 |            |  71 to  50 | 150 to 115 | 200 to 231
 *
-*  Relation between π(1000)=168 and π((1000/Φ)+1)+1=π(619)+1=115
-*  2,60,40: 168, (60x10)/2 + 29 = 329, (40x10)/2 + 60 + 29 = 289
-*
-*        329                       ← 618 →                       289
-*  +-------------+                                           +-------------+
-*  | π(A) = 1/AV |  →  Exponential → log QC/log (π(A))   →   | ∑ = QC x AV |
-*  +-------------+                                           +-------------+
-*         Δ                    +--------------+                     Δ
-*         |                    | P(7): 142857 |                     |
-*         |                    +--------------+                     |
-*      60 |                                                         | 40
-*         |         Exponential    ← 168 →      Linear              |
-*         |        +--------------+          +-------------+        |
-*         └ ─ ─ ─ ─| log (π(A))/q |  q = AV  |  log(QC/q)  | ─ ─ ─ ─┘
-*                  +--------------+          +-------------+
-*                        28      ← 28!=5995 →     d(14)
-*
-*  Note:
-*  - Every 6th scheme would be the 1st-layer in a higher level of 1 to π(1000)=168
-*  - The layer turns to feed out when π((1000/Φ)+1)+1=π(619)+1=115 landed to 150
-*  - See the scheme of this layer on https://chetabahana.github.io/feeds.xml
-*
 *  Reference:
 *  https://chetabahana.github.io/images/skema/feed.png
 *  https://chetabahana.github.io/images/skema/loop150.png
@@ -660,6 +638,29 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  - Primes distribution is folded within 3 (three) forms of 168, 329 and 289 which are connected in base 10
 *  - The 2 (two) forms of 329 and 289 perform golden ratio which root are framed within 618 via P(7): 142857
 *  - This lead to cyclic since 29 to 30 is carried out by 36 to (66,102) of (2,60,40) followed by 66 to 168.
+*
+*  Relation between π(1000)=168 and π((1000/Φ)+1)+1=π(619)+1=115
+*  2,60,40: 168, (60x10)/2 + 29 = 329, (40x10)/2 + 60 + 29 = 289
+*
+*        329                        ← 618 →                      289
+*  +-------------+                                           +-------------+
+*  | π(A) = 1/AV |  →  Exponential → log QC/log (π(A))   →   | ∑ = QC x AV |
+*  +-------------+                                           +-------------+
+*         Δ                    +--------------+                     Δ
+*         |                    | P(7): 142857 |                     |
+*         |                    +--------------+                     |
+*      60 |                                                         | 40
+*         |         Exponential     ← 168 →     Linear              |
+*         |        +--------------+          +-------------+        |
+*         └ ─ ─ ─ ─| log (π(A))/q |  q = AV  |  log(QC/q)  | ─ ─ ─ ─┘
+*                  +--------------+          +-------------+
+*                        28      ← 28!=5995 →     d(14)
+*
+*  Note:
+*  - Every 6th scheme would be the 1st-layer in a higher level of 1 to π(1000)=168
+*  - The layer turns to feed out when π((1000/Φ)+1)+1=π(619)+1=115 landed to 150
+*  - See the scheme of this layer on https://chetabahana.github.io/feeds.xml
+*
 *  Reference:
 *  https://chetabahana.github.io/images/skema/root29.png
 *  https://chetabahana.github.io/images/skema/base10.png
