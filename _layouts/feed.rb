@@ -143,7 +143,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  ------+------+-----+-----+-----+---- 102’,168+161=329”,2+36=38*
 *        |      |     |  13 |  20 |  38 
 *        |      |  7  +-----+-----+
-*        |  5   |     |  14 |21,22|  40,41  = (19-17)x -----
+*        |  5   |     |  14 |21,22|  40,41 = (19-17)x ------
 *        |      |-----+-----+-----+                         |
 *        |      |     |  15 |  23 |  42                    6x + 13x = 19x
 *    3   +------+  8  +-----+-----+                         |
@@ -432,10 +432,10 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  π(10000) Schema
 *  Injected via 1000 - 50
 *
-* Note:
-* - Consider that the prime hexagon is 6 (six) spin
-* - There is no 7th hexagon so 619 is landed on hexagon-1 as 0’
-* - Reference: https://www.hexspin.com/0-1-and-negative-numbers/
+*  Note:
+*  - Consider that the prime hexagon is 6 (six) spin
+*  - There is no 7th hexagon so 619 is landed on hexagon-1 as 0’
+*  - Reference: https://www.hexspin.com/0-1-and-negative-numbers/
 *
 *  Cyclic |  Hexagon   | i(Leading) | j(Lagging) | i(Lagging) | j(Leading)
 *  =======+============+============+============+============+============
@@ -531,7 +531,7 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  1729 = 7 x 13 x 19
 *         7 + 13 = 20 = d(2)
 *                       └──  2 x 19 = 38
-*  
+*
 *  +----+----+----+----+----+----+----+----+----+----+----+----+----+----+
 *  |  1 |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 | 10 | 11 | 12 | 13 | 14 |
 *  +----+----+----+----+----+----+----+----+----+----+----+----+----+----+
@@ -618,10 +618,10 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *               Δ    Δ                                                      Δ
 *              29   30                                                     66
 *
-* Note:
-* - The marked number with * are outside of group 18 vs 19 
-* - Number 68 is in the same hexagon along with 50
-* - Reinject number are excatly 102 to 168
+*  Note:
+*  - The marked number with * are outside of group 18 vs 19 
+*  - Number 68 is in the same hexagon along with 50
+*  - Reinject number are excatly 102 to 168
 *
 *  Reference:
 *  https://chetabahana.github.io/images/skema/loop36.png
