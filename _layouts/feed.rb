@@ -98,6 +98,10 @@ layer | node | sub |  i  |  f
       |      |     |  18 |
 ------|------|-----+-----+------
 *
+*  Reference:
+*  https://chetabahana.github.io/images/skema/spin.png
+*  https://chetabahana.github.io/images/skema/minor.png
+*
 {%- endcomment -%}
 {%- comment -%}
 *
@@ -139,11 +143,10 @@ layer | node | sub |  i  |  f
       |      |  9  +-----+
       |      |     |  18 |
 ------|------|-----+-----+------
-                   | (19)| ----> 1
+                   | (19)| ----> 1√
 *
 *  Reference:
-*  https://chetabahana.github.io/images/skema/spin.png
-*  https://chetabahana.github.io/images/skema/minor.png
+*  https://www.hexspin.com/0-1-and-negative-numbers/
 *  https://chetabahana.github.io/images/skema/hexagon.png
 *
 {%- endcomment -%}
@@ -151,11 +154,11 @@ layer | node | sub |  i  |  f
 *
 layer | node | sub |  i  |  f
 ------+------+-----+----------
-      |      |     | (1) | (2x)√
+      |      |     |  1  | (2,3)√
       |      |  1  +-----+
       |  1   |     |  2  |  7      (5)
       |      |-----+-----+
-      |      |     |  3  | ..
+      |      |     |  3  | (11)
   1   +------+  2  +-----+----
       |      |     |  4  | 13
       |      +-----+-----+
@@ -187,6 +190,10 @@ layer | node | sub |  i  |  f
       |      |  9  +-----+
       |      |     |  18 |
 ------|------|-----+-----+------
+*
+*  Reference:
+*  https://chetabahana.github.io/images/skema/first.png
+*  https://chetabahana.github.io/images/skema/hexagon.png
 *
 {%- endcomment %}
 {%- comment %}
