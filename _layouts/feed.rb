@@ -103,15 +103,15 @@ layer | node | sub |  i  |  f
 *
 layer | node | sub |  i  |  f
 ------+------+-----+----------
-      |      |     |  1  | ..
+      |      |     |  1  | (5)
       |      |  1  +-----+
       |  1   |     |  2  | (7)     (5)
       |      |-----+-----+
-      |      |     |  3  | ..
+      |      |     |  3  | (11)
   1   +------+  2  +-----+----
       |      |     |  4  | (13)
       |      +-----+-----+
-      |  2   |     |  5  | ..      (7)
+      |  2   |     |  5  | (17)    (7)
       |      |  3  +-----+
       |      |     |  6  | (19)
 ------+------+-----+-----+------------   36 » 6®
@@ -139,6 +139,12 @@ layer | node | sub |  i  |  f
       |      |  9  +-----+
       |      |     |  18 |
 ------|------|-----+-----+------
+                   | (19)| ----> 1
+*
+*  Reference:
+*  https://chetabahana.github.io/images/skema/spin.png
+*  https://chetabahana.github.io/images/skema/minor.png
+*  https://chetabahana.github.io/images/skema/hexagon.png
 *
 {%- endcomment -%}
 {%- comment -%}
@@ -181,7 +187,6 @@ layer | node | sub |  i  |  f
       |      |  9  +-----+
       |      |     |  18 |
 ------|------|-----+-----+------
-                   | (19}| ----> 1
 *
 {%- endcomment %}
 {%- comment %}
