@@ -33,7 +33,6 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 {%- assign my_loops = layout.layers %}
 {%- comment -%}
 *
-*  π(100) Schema
 *  True Prime Pairs:
 *  (5,7), (11,13), (17,19)
 *  
@@ -53,11 +52,14 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  -----+-----+---------
 *
 *  Reference:
-*  https://chetabahana.github.io/images/skema/root66.png
-*  https://chetabahana.github.io/images/skema/centric.jpg
+*  https://www.youtube.com/watch?v=fQL4KRH3wUQ&t=202s
+*  https://primes.utm.edu/curios/page.php?curio_id=2817
 *
 {%- endcomment %}
 {%- comment -%}
+*
+*  True Prime Pairs:
+*  (5,7), (11,13), (17,19)
 *
 layer | node | sub |  i  |  f
 ------+------+-----+----------
@@ -195,8 +197,8 @@ layer | node | sub |  i  |  f
 *  https://chetabahana.github.io/images/skema/first.png
 *  https://chetabahana.github.io/images/skema/hexagon.png
 *
-{%- endcomment %}
-{%- comment %}
+{%- endcomment -%}
+{%- comment -%}
 *
 layer | node | sub |  i  |  f
 ------+------+-----+----------
@@ -572,6 +574,10 @@ layer | node | sub |  i  |  k  |  f
       |      |  9  +-----+-----+
       |      |     |  18 |  29 | {68}
 ------|------|-----+-----+------
+*
+*  Reference:
+*  https://chetabahana.github.io/images/skema/root66.png
+*  https://chetabahana.github.io/images/skema/centric.jpg
 *
 {%- endcomment %}
 {%- comment %}
