@@ -36,7 +36,7 @@ layout: default
     {%- if variable == null %}{{- my_tabs }}{{ data | jsonify }}{% else %}{% capture my_tabn %}
     {{ my_tabs }}{% endcapture -%}{{- my_tabs }}{
     {%- for items in variable -%}{{ items.first }}
-        {%- if !items.first -%}
+        {%- if items.first == null -%}
             {{- my_tabn }}ss{{ items[0] | jsonify }}: {{ items[1] | jsonify }}
         {%- else -%}
             {%- for item in items -%}

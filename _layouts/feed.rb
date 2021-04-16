@@ -28,8 +28,8 @@ assets: [29,6116,3481,3747,2804,3050,3320,1233,2498,1833,1917,1777,853,830,655,1
 *  https://math.stackexchange.com/a/3545726
 * 
 {%- endcomment -%}
-{%- assign π10 = 4 %}
-{%- assign π100 = 25 %}
+{%- assign p10 = 4 %}
+{%- assign p100 = 25 %}
 {%- assign my_loops = layout.layers %}
 {%- comment -%}
 *
@@ -572,15 +572,15 @@ layer | node | sub |  i  |  k  |  f
       |      |-----+-----+-----+
       |  6   |     |  17 |  28 |  50 = 46 + 4
       |      |  9  +-----+-----+
-      |      |     |  18 |  29 | {68}
+      |      |     |  18 |  29 |  68
 ------|------|-----+-----+------
 *
 *  Reference:
 *  https://chetabahana.github.io/images/skema/root66.png
 *  https://chetabahana.github.io/images/skema/centric.jpg
 *
-{%- endcomment %}
-{%- comment %}
+{%- endcomment -%}
+{%- comment -%}
 *
 *  layer | node | sub |  i  |  k  |  f
 *  ------+------+-----+-----+-----+-----
@@ -626,8 +626,8 @@ layer | node | sub |  i  |  k  |  f
 *  https://chetabahana.github.io/images/skema/loop369.png
 *
 {%- endcomment -%}
-{%- assign my_loop = π10 -%}
-{%- assign my_loop = my_loop | plus: π100 %}
+{%- assign my_loop = p10 -%}
+{%- assign my_loop = my_loop | plus: p100 %}
 {%- comment -%}
 *
 *  π(1000) Schema
@@ -635,10 +635,10 @@ layer | node | sub |  i  |  k  |  f
 *  loop(1000) => π(1000) - 10th = 168 - 29 = 25 + 114 = 139 
 *
 {%- endcomment %}
-{%- assign π1000 = 168 %}
-{%- assign π_10 = 10 | minus: 1 %}
+{%- assign p1000 = 168 %}
+{%- assign p_10 = 10 | minus: 1 %}
 {%- assign my_roots = site.data.roots %}
-{%- assign my_loop = my_loop | plus: π1000 | minus: my_roots[π_10].key %}
+{%- assign my_loop = my_loop | plus: p1000 | minus: my_roots[p_10].key %}
 {%- comment -%}
 *
 *    Sub  |  i |   β | f
@@ -714,9 +714,9 @@ layer | node | sub |  i  |  k  |  f
 *  loop(10000) => π(10000) - (10th)th - 10th = 1229 - 109 - 29 = 1091
 *
 {%- endcomment -%}
-{%- assign π10000 = 1229 -%}
-{%- assign π_100 = my_roots[π_10].key | minus: 1 %}
-{%- assign my_loop = my_loop | plus: π10000 | minus: my_roots[π_100].key | minus: my_roots[π_10].key %}
+{%- assign p10000 = 1229 -%}
+{%- assign p_100 = my_roots[p_10].key | minus: 1 %}
+{%- assign my_loop = my_loop | plus: p10000 | minus: my_roots[p_100].key | minus: my_roots[p_10].key %}
 {%- comment %}
 *
 *    Sub  |   i |     β | f   
@@ -793,9 +793,9 @@ layer | node | sub |  i  |  k  |  f
 *  loop(100000) => π(100000) - ((10th)th)th - (10th)th = 9592 - 599 - 109 = 8884
 *
 {%- endcomment %}
-{%- assign π100000 = 9592 -%}
-{%- assign π_1000 = my_roots[π_100].key | minus: 1 -%}
-{%- assign my_loop = my_loop | plus: π100000 | minus: my_roots[π_1000].key | minus: my_roots[π_100].key %}
+{%- assign p100000 = 9592 -%}
+{%- assign p_1000 = my_roots[p_100].key | minus: 1 -%}
+{%- assign my_loop = my_loop | plus: p100000 | minus: my_roots[p_1000].key | minus: my_roots[p_100].key %}
 {%- comment %}
 *
 *    Sub  |   i |    β  | f   
