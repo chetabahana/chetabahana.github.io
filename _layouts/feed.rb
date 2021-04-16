@@ -195,8 +195,8 @@ layer | node | sub |  i  |  f
 *  https://chetabahana.github.io/images/skema/first.png
 *  https://chetabahana.github.io/images/skema/hexagon.png
 *
-{%- endcomment %}
-{%- comment %}
+{%- endcomment -%}
+{%- comment -%}
 *
 layer | node | sub |  i  |  f
 ------+------+-----+----------
