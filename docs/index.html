@@ -11,7 +11,7 @@ layout: null
 *  https://chetabahana.github.io/
 *
 {% endcomment %}
-{%- assign sections = site.feeds -%}
+{%- assign sections = site.feeds | sort: 'weight' -%}
 <!DOCTYPE html>
 <html lang="id">
     <head>
