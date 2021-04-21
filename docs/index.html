@@ -1,22 +1,4 @@
 ---
 layout: null
 ---
-{% comment %}
-*
-*  This loop loops through a collection called `feeds` with category 'section'
-*  and sorts it by the front matter variable 'weight' and than render
-*  each of the {{ output }} with their own layout
-*
-*  To provide it with an online work you may see the running code here:
-*  https://chetabahana.github.io/
-*
-{% endcomment %}
-{%- assign sections = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'section'" -%}
-<!DOCTYPE html>
-<html lang="id">
-    <head>
-{% for section in sections %}
-{{ section.output }}
-{% endfor %}
-    </body>
-</html>
+test
