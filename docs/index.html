@@ -1,4 +1,5 @@
 ---
 layout: null
 ---
-test
+{%- assign sections = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'section'" -%}
+test assign
