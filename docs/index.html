@@ -11,4 +11,5 @@ layout: null
 *  https://chetabahana.github.io/
 *
 {% endcomment %}
-test assign
+{%- assign bsections = site.feeds | sort: 'weight' | where_exp:"item", "item.category == 'section'" -%}
+test site.feeds
