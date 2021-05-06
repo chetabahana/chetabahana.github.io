@@ -1068,6 +1068,7 @@ layer | node | sub |  i  |  k  |  f
 *  - Number 68 is in the same hexagon along with 50
 *  - Reinject number are excatly 102 to 168
 *  - It sign as 2 to 68 which is 66
+*  - Thus congruent to 30+36
 *
 *  Reference:
 *  https://chetabahana.github.io/images/skema/loop36.png
