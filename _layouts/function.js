@@ -156,7 +156,7 @@ function filterBy(data, filters = {}) {
   });
 }
 
-// xet params 
+// set params 
 var myIdcounter = 0;
 var top_menu_height = 0;
 
