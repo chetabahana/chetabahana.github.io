@@ -97,20 +97,27 @@ jQuery(function($)
         //chetabahana-portfolio
         $(".templatemo-project-gallery").simplyScroll();
 
-    });
-
-    // Window.onload event will be executed only when all page resources
-    // ( images, audio, video etc ) has been downloaded in the page.
-    $(window).on('load', function()
-    {
 		// automatically generate unique DOM ids using jQuery-ui
 		// https://stackoverflow.com/a/20061124/4058484
 		window.uniqueId = function(){
 			return 'myid-' + myIdcounter++;
 		}
 			
+    });
+
+    // Window.onload event will be executed only when all page resources
+    // ( images, audio, video etc ) has been downloaded in the page.
+    $(window).on('load', function()
+    {
         // unbind external link
         $('.external-link').unbind('click');
+
+        // assign base id
+		$('.theme').each(function (i, e) {
+			var id = uniqueId();
+			var name = uniqueId();
+			$(e).attr('name', name).attr('id', id);
+		});
 
         // draw diagram
         $.getScript('/diagram.js?t=' + $.now(), function() {
