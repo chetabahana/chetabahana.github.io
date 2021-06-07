@@ -112,12 +112,6 @@ jQuery(function($)
 
         });
 
-        // automatically generate unique DOM ids using jQuery-ui
-        // https://stackoverflow.com/a/20061124/4058484
-		window.uniqueId = function(){
-			return 'myid-' + myIdcounter++;
-		}
-		
     });
 
     //catch Scrollspy event
@@ -125,6 +119,12 @@ jQuery(function($)
         //if ($('#diagram svg').width() < $('#diagram').width()) draw.change();
     })
 
+	// automatically generate unique DOM ids using jQuery-ui
+	// https://stackoverflow.com/a/20061124/4058484
+	window.uniqueId = function(){
+		return 'myid-' + myIdcounter++;
+	}
+		
 });
 
 // init scrollTo 
