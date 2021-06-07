@@ -112,7 +112,8 @@ jQuery(function($)
         // unbind external link
         $('.external-link').unbind('click');
 
-        // assign base id
+        // assign unique id
+        // https://api.jqueryui.com/uniqueId/
         $('.theme').each(function (i, e) {
             var id = uniqueId();
             var name = uniqueId();
