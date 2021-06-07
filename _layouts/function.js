@@ -2,7 +2,7 @@ jQuery(function($)
 {
     // jQuery document.ready will be executed just after html dom tree has been parsed out.
     // So it is far more earlier executed than window onload.
-    $(document).ready( function()
+    $(document).ready(function()
     {
         // to stick navbar on top and hash
         top_menu_height = $('.templatemo-top-menu').height();
@@ -112,6 +112,12 @@ jQuery(function($)
 
         });
 
+        // automatically generate unique DOM ids using jQuery-ui
+        // https://stackoverflow.com/a/20061124/4058484
+		window.uniqueId = function(){
+			return 'myid-' + myIdcounter++;
+		}
+		
     });
 
     //catch Scrollspy event
@@ -149,6 +155,10 @@ function filterBy(data, filters = {}) {
   });
 }
 
+// xet params 
+var myIdcounter = 0;
+var top_menu_height = 0;
+
 // set editor
 var editor = ace.edit("editor");
 editor.setOptions({fontSize: "10pt"});
@@ -159,4 +169,3 @@ editor.getSession().on('change', _.debounce(function() {draw.diagram();}, 100));
 // get params 
 var params, regex = /[?&]([^=#]+)=([^&#]*)/g, url = window.location.href, params = {}, match;
 while(match = regex.exec(url)) {params[match[1]] = match[2];}
-var top_menu_height = 0;
