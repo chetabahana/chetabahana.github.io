@@ -103,10 +103,17 @@ jQuery(function($)
     // ( images, audio, video etc ) has been downloaded in the page.
     $(window).on('load', function()
     {
+		// automatically generate unique DOM ids using jQuery-ui
+		// https://stackoverflow.com/a/20061124/4058484
+		window.uniqueId = function(){
+			return 'myid-' + myIdcounter++;
+		}
+			
         // unbind external link
         $('.external-link').unbind('click');
-        $.getScript('/diagram.js?t=' + $.now(), function() {
 
+        // draw diagram
+        $.getScript('/diagram.js?t=' + $.now(), function() {
             $('.theme').val('hand');
             draw.getJSON();
 
@@ -119,12 +126,6 @@ jQuery(function($)
         //if ($('#diagram svg').width() < $('#diagram').width()) draw.change();
     })
 
-	// automatically generate unique DOM ids using jQuery-ui
-	// https://stackoverflow.com/a/20061124/4058484
-	window.uniqueId = function(){
-		return 'myid-' + myIdcounter++;
-	}
-		
 });
 
 // init scrollTo 
