@@ -47,7 +47,7 @@ getting-started/
 .astropy
 .minttyrc
 .gitconfig
-.matplotlib
+.matplotlib/
 
 # Default directories
 Music/
