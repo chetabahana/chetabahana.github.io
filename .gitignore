@@ -38,7 +38,7 @@ getting-started/
 # dotenv environment variables file
 .aws
 .env
-.ssh
+.ssh/
 .azure
 .gnupg
 .keras
