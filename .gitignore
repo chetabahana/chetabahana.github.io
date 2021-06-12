@@ -7,6 +7,7 @@ yarn-error.log*
 
 # Runtime data
 pids
+*.ini
 *.dat
 *.pid
 *.seed
@@ -60,14 +61,18 @@ typings/
 # dotenv environment variables file
 .env
 .ssh
+.minttyrc
 .gitconfig
+.python_history
 
 # next.js build output
 .next
 
 # Default directories
 source/
+Videos/
 AppData/
+Contacts/
 OneDrive/
 Searches/
 MicrosoftEdgeBackups/
