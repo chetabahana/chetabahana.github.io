@@ -35,16 +35,16 @@ getting-started/
 .python_history
 .node_repl_history
 
-# dotenv environment variables file
-.aws
+# dotenv environment
 .env
-.ssh
-.azure
-.gnupg
-.keras
-.docker
-.eclipse
-.astropy
+.aws/
+.ssh/
+.azure/
+.gnupg/
+.keras/
+.docker/
+.eclipse/
+.astropy/
 .minttyrc
 .gitconfig
 .matplotlib/
