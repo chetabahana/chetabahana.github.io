@@ -7,6 +7,7 @@ yarn-error.log*
 
 # Runtime data
 pids
+*.dat
 *.pid
 *.seed
 *.pid.lock
@@ -35,6 +36,8 @@ build/Release
 # Dependency directories
 #node_modules/
 jspm_packages/
+nvvp_workspace/
+getting-started/
 
 # TypeScript v1 declaration files
 typings/
@@ -56,6 +59,15 @@ typings/
 
 # dotenv environment variables file
 .env
+.ssh
+.gitconfig
 
 # next.js build output
 .next
+
+# Default directories
+source/
+AppData/
+OneDrive/
+Searches/
+MicrosoftEdgeBackups/
