@@ -58,15 +58,22 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
+# next.js build output
+.next
+
 # dotenv environment variables file
+.aws
 .env
 .ssh
+.azure
+.gnupg
+.astropy
+.keras
+.docker
+.eclipse
 .minttyrc
 .gitconfig
 .python_history
-
-# next.js build output
-.next
 
 # Default directories
 source/
