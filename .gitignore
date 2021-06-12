@@ -8,6 +8,7 @@ yarn-error.log*
 # Runtime data
 pids
 *.ini
+*.lnk
 *.dat
 *.pid
 *.seed
@@ -76,10 +77,13 @@ typings/
 .python_history
 
 # Default directories
+Music/
+Links/
 source/
 Videos/
 AppData/
 Contacts/
 OneDrive/
 Searches/
+Downloads/
 MicrosoftEdgeBackups/
