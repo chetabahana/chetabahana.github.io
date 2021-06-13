@@ -20,7 +20,7 @@ pids
 build/Release
 
 # Dependency directories
-#node_modules/
+node_modules/
 jspm_packages/
 nvvp_workspace/
 getting-started/
