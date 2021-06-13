@@ -20,7 +20,7 @@ pids
 build/Release
 
 # Dependency directories
-#node_modules/
+node_modules/
 jspm_packages/
 nvvp_workspace/
 getting-started/
@@ -40,6 +40,7 @@ getting-started/
 .aws/
 .ssh/
 .azure/
+.conda/
 .gnupg/
 .keras/
 .docker/
@@ -48,6 +49,7 @@ getting-started/
 .minttyrc
 .gitconfig
 .matplotlib/
+.virtualenvs/
 
 # Default directories
 Music/
