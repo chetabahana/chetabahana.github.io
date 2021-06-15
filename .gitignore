@@ -1,3 +1,27 @@
+# Default
+Music/
+Links/
+source/
+Videos/
+AppData/
+Contacts/
+OneDrive/
+Searches/
+Pictures/
+Libraries/
+Documents/
+Downloads/
+Favorites/
+AccountPictures/
+MicrosoftEdgeBackups/
+
+# Dependency
+build/
+node_modules/
+jspm_packages/
+nvvp_workspace/
+getting-started/
+
 # Logs
 logs
 *.log
@@ -6,7 +30,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Runtime data
+# Runtime
 pids
 *.ini
 *.lnk
@@ -16,21 +40,10 @@ pids
 *.seed
 *.pid.lock
 
-# Compiled binary
-build/Release
-
-# Dependency directories
-node_modules/
-jspm_packages/
-nvvp_workspace/
-getting-started/
-
-# Optional cache directory
+# Optional
 .npm
-.eslintcache
-
-# Optional history
 .next
+.eslintcache
 .bash_history
 .python_history
 .node_repl_history
@@ -40,9 +53,10 @@ getting-started/
 .aws/
 .ssh/
 .azure/
-.conda/
 .gnupg/
 .keras/
+.conda/
+.condarc
 .docker/
 .eclipse/
 .astropy/
@@ -50,16 +64,3 @@ getting-started/
 .gitconfig
 .matplotlib/
 .virtualenvs/
-
-# Default directories
-Music/
-Links/
-source/
-Videos/
-AppData/
-Contacts/
-OneDrive/
-Searches/
-Downloads/
-Favorites/
-MicrosoftEdgeBackups/
