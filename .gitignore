@@ -1,57 +1,4 @@
-# Logs
-logs
-*.log
-ntuser.*
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Runtime data
-pids
-*.ini
-*.lnk
-*.dat
-*.tgz
-*.pid
-*.seed
-*.pid.lock
-
-# Compiled binary
-build/Release
-
-# Dependency directories
-node_modules/
-jspm_packages/
-nvvp_workspace/
-getting-started/
-
-# Optional cache directory
-.npm
-.eslintcache
-
-# Optional history
-.next
-.bash_history
-.python_history
-.node_repl_history
-
-# dotenv environment
-.env
-.aws/
-.ssh/
-.azure/
-.conda/
-.gnupg/
-.keras/
-.docker/
-.eclipse/
-.astropy/
-.minttyrc
-.gitconfig
-.matplotlib/
-.virtualenvs/
-
-# Default directories
+# Default
 Music/
 Links/
 source/
@@ -67,3 +14,53 @@ Downloads/
 Favorites/
 AccountPictures/
 MicrosoftEdgeBackups/
+
+# Dependency
+build/
+node_modules/
+jspm_packages/
+nvvp_workspace/
+getting-started/
+
+# Logs
+logs
+*.log
+ntuser.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime
+pids
+*.ini
+*.lnk
+*.dat
+*.tgz
+*.pid
+*.seed
+*.pid.lock
+
+# Optional
+.npm
+.next
+.eslintcache
+.bash_history
+.python_history
+.node_repl_history
+
+# dotenv environment
+.env
+.aws/
+.ssh/
+.azure/
+.gnupg/
+.keras/
+.conda/
+.condarc
+.docker/
+.eclipse/
+.astropy/
+.minttyrc
+.gitconfig
+.matplotlib/
+.virtualenvs/
