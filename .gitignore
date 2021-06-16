@@ -48,7 +48,7 @@ pids
 .python_history
 .node_repl_history
 
-# dotenv environment
+# Dotenvs
 .env
 .aws/
 .ssh/
