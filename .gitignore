@@ -58,6 +58,7 @@ pids
 .gnupg/
 .keras/
 .conda/
+.cloud/
 .condarc
 .docker/
 .eclipse/
