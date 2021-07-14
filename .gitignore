@@ -18,6 +18,19 @@ Favorites/
 AccountPictures/
 MicrosoftEdgeBackups/
 
+# Permission denied
+Recent/
+SendTo/
+Cookies/
+NetHood/
+PrintHood/
+Templates/
+Start Menu/
+My Documents/
+Local Settings/
+Application Data/
+assets/System Volume Information/
+
 # Dependency
 build/
 node_modules/
